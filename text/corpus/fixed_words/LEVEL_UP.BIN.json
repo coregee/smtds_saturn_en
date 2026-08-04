@@ -1,0 +1,11 @@
+[
+  {
+    "kind": "learned_magic",
+    "file_offset": "0x8f2c",
+    "word_count": 6,
+    "jp": "魔法を習得",
+    "tr": "Learned Magic",
+    "reviewed": false,
+    "excluded": false
+  }
+]

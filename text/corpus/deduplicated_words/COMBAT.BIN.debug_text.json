@@ -1,0 +1,242 @@
+[
+  {
+    "index": 0,
+    "kind": "battle_test_actor",
+    "locations": [
+      {
+        "file_offset": "0x5451c",
+        "word_count": 7,
+        "boundary_word": "0x8000"
+      }
+    ],
+    "jp": "葛葉キョウジ",
+    "tr": "Kyouji",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 1,
+    "kind": "battle_test_actor",
+    "locations": [
+      {
+        "file_offset": "0x5452c",
+        "word_count": 3,
+        "boundary_word": "0x8000"
+      }
+    ],
+    "jp": "レイ",
+    "tr": "Rei",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 2,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55a08",
+        "word_count": 5,
+        "boundary_word": "0x8000"
+      }
+    ],
+    "jp": "…………",
+    "tr": "............",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 3,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55a32",
+        "word_count": 6,
+        "boundary_word": "0x8000"
+      }
+    ],
+    "jp": "……………",
+    "tr": "...............",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 4,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55a5c",
+        "word_count": 7,
+        "boundary_word": "0x8000"
+      }
+    ],
+    "jp": "………………",
+    "tr": "..................",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 5,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55a86",
+        "word_count": 8,
+        "boundary_word": "0x8000"
+      }
+    ],
+    "jp": "…………………",
+    "tr": ".....................",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 6,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55ab0",
+        "word_count": 2,
+        "boundary_word": "0x00ca"
+      },
+      {
+        "file_offset": "0x55ada",
+        "word_count": 2,
+        "boundary_word": "0x00ca"
+      },
+      {
+        "file_offset": "0x55b04",
+        "word_count": 2,
+        "boundary_word": "0x00ca"
+      },
+      {
+        "file_offset": "0x55b2e",
+        "word_count": 2,
+        "boundary_word": "0x00ca"
+      }
+    ],
+    "jp": "バグ",
+    "tr": "BUG",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 7,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55ab6",
+        "word_count": 10,
+        "boundary_word": "0x00cb"
+      },
+      {
+        "file_offset": "0x55ae0",
+        "word_count": 10,
+        "boundary_word": "0x00cb"
+      },
+      {
+        "file_offset": "0x55b0a",
+        "word_count": 10,
+        "boundary_word": "0x00cb"
+      },
+      {
+        "file_offset": "0x55b34",
+        "word_count": 10,
+        "boundary_word": "0x00cb"
+      }
+    ],
+    "jp": "これとは話せないはず",
+    "tr": "Cannot talk to this",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 8,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55acc",
+        "word_count": 2,
+        "boundary_word": "0x0000"
+      }
+    ],
+    "jp": "WK",
+    "tr": "WK",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 9,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55ad2",
+        "word_count": 3,
+        "boundary_word": "0x8000"
+      }
+    ],
+    "jp": "NO",
+    "tr": "NO",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 10,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55af6",
+        "word_count": 3,
+        "boundary_word": "0x0000"
+      }
+    ],
+    "jp": "BAD",
+    "tr": "BAD",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 11,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55afe",
+        "word_count": 2,
+        "boundary_word": "0x8000"
+      }
+    ],
+    "jp": "S",
+    "tr": "S",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 12,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55b20",
+        "word_count": 6,
+        "boundary_word": "0x8000"
+      }
+    ],
+    "jp": "DCODE",
+    "tr": "DCODE",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 13,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55b4a",
+        "word_count": 6,
+        "boundary_word": "0x8000"
+      }
+    ],
+    "jp": "EXIST",
+    "tr": "EXIST",
+    "reviewed": false,
+    "excluded": false
+  }
+]

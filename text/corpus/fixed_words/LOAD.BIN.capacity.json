@@ -1,0 +1,11 @@
+[
+  {
+    "kind": "capacity_number",
+    "file_offset": "0xb1ae",
+    "word_count": 3,
+    "jp": "129",
+    "tr": "129",
+    "reviewed": false,
+    "excluded": false
+  }
+]

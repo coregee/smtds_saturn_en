@@ -1,0 +1,29 @@
+{
+  "source_cue": "Shin Megami Tensei - Devil Summoner (Japan) (Rev B).cue",
+  "source_revision": {
+    "name": "Shin Megami Tensei: Devil Summoner (Japan) (Rev B)",
+    "tracks": [
+      {
+        "number": 1,
+        "mode": "MODE1/2352",
+        "file_type": "BINARY",
+        "indexes": {
+          "1": 0
+        },
+        "size": 430467744,
+        "sha256": "9fb801057082ff482343a45667120ac2af5374ecdf848b22ec3d082922662b6f"
+      },
+      {
+        "number": 2,
+        "mode": "AUDIO",
+        "file_type": "BINARY",
+        "indexes": {
+          "0": 0,
+          "1": 150
+        },
+        "size": 18926544,
+        "sha256": "3775364bd418c7b9179c5fd19fd34ae81cf659230acd7add8932044a67d30b3a"
+      }
+    ]
+  }
+}

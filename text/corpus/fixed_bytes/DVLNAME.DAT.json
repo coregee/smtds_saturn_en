@@ -1,0 +1,2554 @@
+[
+  {
+    "record": 0,
+    "file_offset": "0x0000",
+    "jp": "ヴィシュヌ",
+    "tr": "Vishnu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 1,
+    "file_offset": "0x0008",
+    "jp": "アメン‐ラー",
+    "tr": "Amon-Ra",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 2,
+    "file_offset": "0x0010",
+    "jp": "オーディン",
+    "tr": "Odin",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 3,
+    "file_offset": "0x0018",
+    "jp": "ハチマン",
+    "tr": "Hachiman",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 4,
+    "file_offset": "0x0020",
+    "jp": "プロメテウス",
+    "tr": "Prometheus",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 5,
+    "file_offset": "0x0028",
+    "jp": "インティ",
+    "tr": "Inti",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 6,
+    "file_offset": "0x0030",
+    "jp": "アナト",
+    "tr": "Anat",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 7,
+    "file_offset": "0x0038",
+    "jp": "ラクシュミ",
+    "tr": "Lakshmi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 8,
+    "file_offset": "0x0040",
+    "jp": "パラスアテナ",
+    "tr": "Pallas Athena",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 9,
+    "file_offset": "0x0048",
+    "jp": "ブリジット",
+    "tr": "Brigid",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 10,
+    "file_offset": "0x0050",
+    "jp": "エルズリー",
+    "tr": "Eruzuli",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 11,
+    "file_offset": "0x0058",
+    "jp": "スカアハ",
+    "tr": "Scathach",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 12,
+    "file_offset": "0x0060",
+    "jp": "ナキサワメ",
+    "tr": "Nakisawame",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 13,
+    "file_offset": "0x0068",
+    "jp": "メタトロン",
+    "tr": "Metatron",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 14,
+    "file_offset": "0x0070",
+    "jp": "スラオシャ",
+    "tr": "Sraosha",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 15,
+    "file_offset": "0x0078",
+    "jp": "サンダルフォン",
+    "tr": "Sandalphon",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 16,
+    "file_offset": "0x0080",
+    "jp": "アズラエル",
+    "tr": "Azrael",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 17,
+    "file_offset": "0x0088",
+    "jp": "ライラ",
+    "tr": "Lailah",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 18,
+    "file_offset": "0x0090",
+    "jp": "ヴィクター",
+    "tr": "Victor",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 19,
+    "file_offset": "0x0098",
+    "jp": "ガルーダ",
+    "tr": "Garuda",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 20,
+    "file_offset": "0x00a0",
+    "jp": "ヤタガラス",
+    "tr": "Yatagarasu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 21,
+    "file_offset": "0x00a8",
+    "jp": "ヴィゾフニル",
+    "tr": "Vidofnir",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 22,
+    "file_offset": "0x00b0",
+    "jp": "フェニックス",
+    "tr": "Phoenix",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 23,
+    "file_offset": "0x00b8",
+    "jp": "ハンサ",
+    "tr": "Hamsa",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 24,
+    "file_offset": "0x00c0",
+    "jp": "ハオマ",
+    "tr": "Haoma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 25,
+    "file_offset": "0x00c8",
+    "jp": "ククノチ",
+    "tr": "Kukunochi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 26,
+    "file_offset": "0x00d0",
+    "jp": "ダフネ",
+    "tr": "Daphne",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 27,
+    "file_offset": "0x00d8",
+    "jp": "オシラサマ",
+    "tr": "Oshira-sama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 28,
+    "file_offset": "0x00e0",
+    "jp": "カーマ",
+    "tr": "Kama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 29,
+    "file_offset": "0x00e8",
+    "jp": "ヤリーロ",
+    "tr": "Jarilo",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 30,
+    "file_offset": "0x00f0",
+    "jp": "ネコショウグン",
+    "tr": "Neko Shogun",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 31,
+    "file_offset": "0x00f8",
+    "jp": "カンバリ",
+    "tr": "Kanbari",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 32,
+    "file_offset": "0x0100",
+    "jp": "ヘイムルダム",
+    "tr": "Heimdall",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 33,
+    "file_offset": "0x0108",
+    "jp": "ハヌマーン",
+    "tr": "Hanuman",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 34,
+    "file_offset": "0x0110",
+    "jp": "クルースニク",
+    "tr": "Kresnik",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 35,
+    "file_offset": "0x0118",
+    "jp": "クー‐フーリン",
+    "tr": "Cu Chulainn",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 36,
+    "file_offset": "0x0120",
+    "jp": "マウイ",
+    "tr": "Maui",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 37,
+    "file_offset": "0x0128",
+    "jp": "ジャンバヴァン",
+    "tr": "Jambavan",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 38,
+    "file_offset": "0x0130",
+    "jp": "イクティニケ",
+    "tr": "Ictinike",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 39,
+    "file_offset": "0x0138",
+    "jp": "コンス",
+    "tr": "Khonsu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 40,
+    "file_offset": "0x0140",
+    "jp": "バロン",
+    "tr": "Barong",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 41,
+    "file_offset": "0x0148",
+    "jp": "ウカノミタマ",
+    "tr": "Ukano Mitama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 42,
+    "file_offset": "0x0150",
+    "jp": "キマイラ",
+    "tr": "Chimera",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 43,
+    "file_offset": "0x0158",
+    "jp": "アヌビス",
+    "tr": "Anubis",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 44,
+    "file_offset": "0x0160",
+    "jp": "カマプアア",
+    "tr": "Kamapua'a",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 45,
+    "file_offset": "0x0168",
+    "jp": "スレイプニル",
+    "tr": "Sleipnir",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 46,
+    "file_offset": "0x0170",
+    "jp": "パピルサグ",
+    "tr": "Pabilsag",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 47,
+    "file_offset": "0x0178",
+    "jp": "アイラーヴァタ",
+    "tr": "Airavata",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 48,
+    "file_offset": "0x0180",
+    "jp": "ヤツフサ",
+    "tr": "Yatsufusa",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 49,
+    "file_offset": "0x0188",
+    "jp": "アピス",
+    "tr": "Apis",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 50,
+    "file_offset": "0x0190",
+    "jp": "カイチ",
+    "tr": "Xiezhai",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 51,
+    "file_offset": "0x0198",
+    "jp": "シーサー",
+    "tr": "Shiisaa",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 52,
+    "file_offset": "0x01a0",
+    "jp": "サラマンダー",
+    "tr": "Salamander",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 53,
+    "file_offset": "0x01a8",
+    "jp": "ウンディーネ",
+    "tr": "Undine",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 54,
+    "file_offset": "0x01b0",
+    "jp": "シルフ",
+    "tr": "Sylph",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 55,
+    "file_offset": "0x01b8",
+    "jp": "ノーム",
+    "tr": "Gnome",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 56,
+    "file_offset": "0x01c0",
+    "jp": "サキミタマ",
+    "tr": "Saki Mitama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 57,
+    "file_offset": "0x01c8",
+    "jp": "クシミタマ",
+    "tr": "Kusi Mitama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 58,
+    "file_offset": "0x01d0",
+    "jp": "アラミタマ",
+    "tr": "Ara Mitama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 59,
+    "file_offset": "0x01d8",
+    "jp": "ニギミタマ",
+    "tr": "Nigi Mitama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 60,
+    "file_offset": "0x01e0",
+    "jp": "ラーマ",
+    "tr": "Rama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 61,
+    "file_offset": "0x01e8",
+    "jp": "カンテイセイクン",
+    "tr": "Guan Yu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 62,
+    "file_offset": "0x01f0",
+    "jp": "ファリードゥーン",
+    "tr": "Fariedone",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 63,
+    "file_offset": "0x01f8",
+    "jp": "ヨシツネ",
+    "tr": "Yoshitsune",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 64,
+    "file_offset": "0x0200",
+    "jp": "ジャンヌ‐ダルク",
+    "tr": "Jeanne d'Arc",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 65,
+    "file_offset": "0x0208",
+    "jp": "シヴァ",
+    "tr": "Shiva",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 66,
+    "file_offset": "0x0210",
+    "jp": "スサノオ",
+    "tr": "Susano-o",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 67,
+    "file_offset": "0x0218",
+    "jp": "カルティケーヤ",
+    "tr": "Kartikeya",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 68,
+    "file_offset": "0x0220",
+    "jp": "セイテンタイセイ",
+    "tr": "Seiten Taisei",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 69,
+    "file_offset": "0x0228",
+    "jp": "トリグラフ",
+    "tr": "Triglav",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 70,
+    "file_offset": "0x0230",
+    "jp": "オグン",
+    "tr": "Ogun",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 71,
+    "file_offset": "0x0238",
+    "jp": "カーリー",
+    "tr": "Kali",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 72,
+    "file_offset": "0x0240",
+    "jp": "キュベレ",
+    "tr": "Cybele",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 73,
+    "file_offset": "0x0248",
+    "jp": "ブラックマリア",
+    "tr": "Black Maria",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 74,
+    "file_offset": "0x0250",
+    "jp": "セドナ",
+    "tr": "Sedna",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 75,
+    "file_offset": "0x0258",
+    "jp": "ハリティー",
+    "tr": "Hariti",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 76,
+    "file_offset": "0x0260",
+    "jp": "セクメト",
+    "tr": "Sekhmet",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 77,
+    "file_offset": "0x0268",
+    "jp": "キクリヒメ",
+    "tr": "Kikuri-Hime",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 78,
+    "file_offset": "0x0270",
+    "jp": "マリシテン",
+    "tr": "Marici",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 79,
+    "file_offset": "0x0278",
+    "jp": "ビシャモンテン",
+    "tr": "Bishamonten",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 80,
+    "file_offset": "0x0280",
+    "jp": "トール",
+    "tr": "Thor",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 81,
+    "file_offset": "0x0288",
+    "jp": "タケミカヅチ",
+    "tr": "Take-Mikazuchi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 82,
+    "file_offset": "0x0290",
+    "jp": "ショウキ",
+    "tr": "Zhong Kui",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 83,
+    "file_offset": "0x0298",
+    "jp": "ティール",
+    "tr": "Tyr",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 84,
+    "file_offset": "0x02a0",
+    "jp": "ナガスネヒコ",
+    "tr": "Nagasunehiko",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 85,
+    "file_offset": "0x02a8",
+    "jp": "オトゴドウジ",
+    "tr": "Otogo-Douji",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 86,
+    "file_offset": "0x02b0",
+    "jp": "ショクイン",
+    "tr": "Zhu Yin",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 87,
+    "file_offset": "0x02b8",
+    "jp": "アナンタ",
+    "tr": "Ananta",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 88,
+    "file_offset": "0x02c0",
+    "jp": "イルルヤンカシュ",
+    "tr": "Illuyanka",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 89,
+    "file_offset": "0x02c8",
+    "jp": "パトリムパス",
+    "tr": "Patrimpas",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 90,
+    "file_offset": "0x02d0",
+    "jp": "ケツアルカトル",
+    "tr": "Quetzalcoatl",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 91,
+    "file_offset": "0x02d8",
+    "jp": "ケルプ",
+    "tr": "Cherub",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 92,
+    "file_offset": "0x02e0",
+    "jp": "ソロネ",
+    "tr": "Throne",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 93,
+    "file_offset": "0x02e8",
+    "jp": "ドミニオン",
+    "tr": "Dominion",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 94,
+    "file_offset": "0x02f0",
+    "jp": "ヴァーチャー",
+    "tr": "Virtue",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 95,
+    "file_offset": "0x02f8",
+    "jp": "パワー",
+    "tr": "Power",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 96,
+    "file_offset": "0x0300",
+    "jp": "プリンシパリティ",
+    "tr": "Principality",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 97,
+    "file_offset": "0x0308",
+    "jp": "アークエンジェル",
+    "tr": "Archangel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 98,
+    "file_offset": "0x0310",
+    "jp": "エンジェル",
+    "tr": "Angel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 99,
+    "file_offset": "0x0318",
+    "jp": "ルフ",
+    "tr": "Rukh",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 100,
+    "file_offset": "0x0320",
+    "jp": "タイホウ",
+    "tr": "Da Peng",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 101,
+    "file_offset": "0x0328",
+    "jp": "ホラワカ",
+    "tr": "Holawaka",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 102,
+    "file_offset": "0x0330",
+    "jp": "カラドリウス",
+    "tr": "Caladrius",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 103,
+    "file_offset": "0x0338",
+    "jp": "タクヒ",
+    "tr": "Tuofei",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 104,
+    "file_offset": "0x0340",
+    "jp": "ヤマチチ",
+    "tr": "Yamachichi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 105,
+    "file_offset": "0x0348",
+    "jp": "バー",
+    "tr": "Ba",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 106,
+    "file_offset": "0x0350",
+    "jp": "ガネーシャ",
+    "tr": "Ganesha",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 107,
+    "file_offset": "0x0358",
+    "jp": "ペリ",
+    "tr": "Peri",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 108,
+    "file_offset": "0x0360",
+    "jp": "シウテクトリ",
+    "tr": "Xiuhtecuhtli",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 109,
+    "file_offset": "0x0368",
+    "jp": "テング",
+    "tr": "Tengu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 110,
+    "file_offset": "0x0370",
+    "jp": "マルト",
+    "tr": "Maruts",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 111,
+    "file_offset": "0x0378",
+    "jp": "シャイターン",
+    "tr": "Shaytan",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 112,
+    "file_offset": "0x0380",
+    "jp": "アガシオン",
+    "tr": "Agathion",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 113,
+    "file_offset": "0x0388",
+    "jp": "オベロン",
+    "tr": "Oberon",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 114,
+    "file_offset": "0x0390",
+    "jp": "ティターニア",
+    "tr": "Titania",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 115,
+    "file_offset": "0x0398",
+    "jp": "スプリガン",
+    "tr": "Spriggan",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 116,
+    "file_offset": "0x03a0",
+    "jp": "ローレライ",
+    "tr": "Lorelei",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 117,
+    "file_offset": "0x03a8",
+    "jp": "ドモヴォーイ",
+    "tr": "Domovoi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 118,
+    "file_offset": "0x03b0",
+    "jp": "ジャックランタン",
+    "tr": "Jack-o'-Lantern",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 119,
+    "file_offset": "0x03b8",
+    "jp": "ジャックフロスト",
+    "tr": "Jack Frost",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 120,
+    "file_offset": "0x03c0",
+    "jp": "キジムナー",
+    "tr": "Kijimunaa",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 121,
+    "file_offset": "0x03c8",
+    "jp": "ピクシー",
+    "tr": "Pixie",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 122,
+    "file_offset": "0x03d0",
+    "jp": "ウロボロス",
+    "tr": "Ouroboros",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 123,
+    "file_offset": "0x03d8",
+    "jp": "ヤマタノオロチ",
+    "tr": "Yamata-no-Orochi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 124,
+    "file_offset": "0x03e0",
+    "jp": "ユルング",
+    "tr": "Yurlungur",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 125,
+    "file_offset": "0x03e8",
+    "jp": "クエレプレ",
+    "tr": "Culebre",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 126,
+    "file_offset": "0x03f0",
+    "jp": "ナーガ",
+    "tr": "Naga",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 127,
+    "file_offset": "0x03f8",
+    "jp": "ヴィーヴル",
+    "tr": "Vouivre",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 128,
+    "file_offset": "0x0400",
+    "jp": "ヤトノカミ",
+    "tr": "Yato no Kami",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 129,
+    "file_offset": "0x0408",
+    "jp": "ケルベロス",
+    "tr": "Cerberus",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 130,
+    "file_offset": "0x0410",
+    "jp": "アーマーン",
+    "tr": "Ammut",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 131,
+    "file_offset": "0x0418",
+    "jp": "ドゥン",
+    "tr": "Gdon",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 132,
+    "file_offset": "0x0420",
+    "jp": "ショウジョウ",
+    "tr": "Hsing-Hsing",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 133,
+    "file_offset": "0x0428",
+    "jp": "ネコマタ",
+    "tr": "Nekomata",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 134,
+    "file_offset": "0x0430",
+    "jp": "カタキラウワ",
+    "tr": "Katakirauwa",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 135,
+    "file_offset": "0x0438",
+    "jp": "ヘアリージャック",
+    "tr": "Hairy Jack",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 136,
+    "file_offset": "0x0440",
+    "jp": "カブソ",
+    "tr": "Kabuso",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 137,
+    "file_offset": "0x0448",
+    "jp": "イナバシロウサギ",
+    "tr": "Hare of Inaba",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 138,
+    "file_offset": "0x0450",
+    "jp": "アエロファンテ",
+    "tr": "Aerophant",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 139,
+    "file_offset": "0x0458",
+    "jp": "マメダヌキ",
+    "tr": "Mamedanuki",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 140,
+    "file_offset": "0x0460",
+    "jp": "オリバーくん",
+    "tr": "Oliver",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 141,
+    "file_offset": "0x0468",
+    "jp": "ゴグマゴク",
+    "tr": "Gogmagog",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 142,
+    "file_offset": "0x0470",
+    "jp": "ティターン",
+    "tr": "Titan",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 143,
+    "file_offset": "0x0478",
+    "jp": "オオミツヌ",
+    "tr": "Oumitsunu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 144,
+    "file_offset": "0x0480",
+    "jp": "カワンチャ",
+    "tr": "Kwancha",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 145,
+    "file_offset": "0x0488",
+    "jp": "ドワーフ",
+    "tr": "Dwarf",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 146,
+    "file_offset": "0x0490",
+    "jp": "リブ",
+    "tr": "Ribhu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 147,
+    "file_offset": "0x0498",
+    "jp": "コロポックル",
+    "tr": "Koropokkur",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 148,
+    "file_offset": "0x04a0",
+    "jp": "ノッカー",
+    "tr": "Knocker",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 149,
+    "file_offset": "0x04a8",
+    "jp": "ヒュプノス",
+    "tr": "Hypnos",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 150,
+    "file_offset": "0x04b0",
+    "jp": "サキュバス",
+    "tr": "Succubus",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 151,
+    "file_offset": "0x04b8",
+    "jp": "インキュバス",
+    "tr": "Incubus",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 152,
+    "file_offset": "0x04c0",
+    "jp": "ヒノエンマ",
+    "tr": "Hinoenma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 153,
+    "file_offset": "0x04c8",
+    "jp": "ザントマン",
+    "tr": "Sandman",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 154,
+    "file_offset": "0x04d0",
+    "jp": "キキーモラ",
+    "tr": "Kikimora",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 155,
+    "file_offset": "0x04d8",
+    "jp": "ナハトコボルト",
+    "tr": "Nacht Kobold",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 156,
+    "file_offset": "0x04e0",
+    "jp": "アブラクサス",
+    "tr": "Abraxas",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 157,
+    "file_offset": "0x04e8",
+    "jp": "ボティス",
+    "tr": "Botis",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 158,
+    "file_offset": "0x04f0",
+    "jp": "バルバトス",
+    "tr": "Barbatos",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 159,
+    "file_offset": "0x04f8",
+    "jp": "プールソン",
+    "tr": "Purson",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 160,
+    "file_offset": "0x0500",
+    "jp": "ビフロンス",
+    "tr": "Bifrons",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 161,
+    "file_offset": "0x0508",
+    "jp": "ニスロク",
+    "tr": "Nisroc",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 162,
+    "file_offset": "0x0510",
+    "jp": "メルコム",
+    "tr": "Melchom",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 163,
+    "file_offset": "0x0518",
+    "jp": "ストラス",
+    "tr": "Stolas",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 164,
+    "file_offset": "0x0520",
+    "jp": "ヤクシャ",
+    "tr": "Yaksha",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 165,
+    "file_offset": "0x0528",
+    "jp": "ベルセルク",
+    "tr": "Berserker",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 166,
+    "file_offset": "0x0530",
+    "jp": "プルキシ",
+    "tr": "Pulukishi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 167,
+    "file_offset": "0x0538",
+    "jp": "ヨモツイクサ",
+    "tr": "Yomotsu-Ikusa",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 168,
+    "file_offset": "0x0540",
+    "jp": "トケビ",
+    "tr": "Dokkaebi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 169,
+    "file_offset": "0x0548",
+    "jp": "ヤマワロ",
+    "tr": "Yamawaro",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 170,
+    "file_offset": "0x0550",
+    "jp": "ボーグル",
+    "tr": "Bogle",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 171,
+    "file_offset": "0x0558",
+    "jp": "ランダ",
+    "tr": "Rangda",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 172,
+    "file_offset": "0x0560",
+    "jp": "ダーキニー",
+    "tr": "Dakini",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 173,
+    "file_offset": "0x0568",
+    "jp": "アマゾーン",
+    "tr": "Amazon",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 174,
+    "file_offset": "0x0570",
+    "jp": "ユキジョロウ",
+    "tr": "Yuki Jyorou",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 175,
+    "file_offset": "0x0578",
+    "jp": "トドメキ",
+    "tr": "Todomeki",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 176,
+    "file_offset": "0x0580",
+    "jp": "リャナンシー",
+    "tr": "Leanan Sidhe",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 177,
+    "file_offset": "0x0588",
+    "jp": "ヨモツシコメ",
+    "tr": "Yomotsu-Shikome",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 178,
+    "file_offset": "0x0590",
+    "jp": "パレス",
+    "tr": "Pales",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 179,
+    "file_offset": "0x0598",
+    "jp": "トウテツ",
+    "tr": "Taotie",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 180,
+    "file_offset": "0x05a0",
+    "jp": "カナロア",
+    "tr": "Kanaloa",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 181,
+    "file_offset": "0x05a8",
+    "jp": "ケモシ",
+    "tr": "Chemosh",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 182,
+    "file_offset": "0x05b0",
+    "jp": "パチャカマク",
+    "tr": "Pachacamac",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 183,
+    "file_offset": "0x05b8",
+    "jp": "カウ",
+    "tr": "Kau",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 184,
+    "file_offset": "0x05c0",
+    "jp": "アンズー",
+    "tr": "Anzu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 185,
+    "file_offset": "0x05c8",
+    "jp": "チン",
+    "tr": "Zhen",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 186,
+    "file_offset": "0x05d0",
+    "jp": "スチュパリデス",
+    "tr": "Stymphalides",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 187,
+    "file_offset": "0x05d8",
+    "jp": "イツマデ",
+    "tr": "Itsumade",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 188,
+    "file_offset": "0x05e0",
+    "jp": "モー‐ショボー",
+    "tr": "Moh Shuvuu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 189,
+    "file_offset": "0x05e8",
+    "jp": "ヒッポウ",
+    "tr": "Hippou",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 190,
+    "file_offset": "0x05f0",
+    "jp": "エス",
+    "tr": "Es",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 191,
+    "file_offset": "0x05f8",
+    "jp": "ザックーム",
+    "tr": "Zaccoum",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 192,
+    "file_offset": "0x0600",
+    "jp": "アルラウネ",
+    "tr": "Alraune",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 193,
+    "file_offset": "0x0608",
+    "jp": "マンドレイク",
+    "tr": "Mandrake",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 194,
+    "file_offset": "0x0610",
+    "jp": "ジュボッコ",
+    "tr": "Jubokko",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 195,
+    "file_offset": "0x0618",
+    "jp": "モト",
+    "tr": "Mot",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 196,
+    "file_offset": "0x0620",
+    "jp": "ゲーデ",
+    "tr": "Guedhe",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 197,
+    "file_offset": "0x0628",
+    "jp": "チェルノボグ",
+    "tr": "Chernobog",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 198,
+    "file_offset": "0x0630",
+    "jp": "タナトス",
+    "tr": "Thanatos",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 199,
+    "file_offset": "0x0638",
+    "jp": "イシュタム",
+    "tr": "Ixtab",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 200,
+    "file_offset": "0x0640",
+    "jp": "トウコツ",
+    "tr": "Taowu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 201,
+    "file_offset": "0x0648",
+    "jp": "カトブレパス",
+    "tr": "Catoblepas",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 202,
+    "file_offset": "0x0650",
+    "jp": "フォービ",
+    "tr": "Porewit",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 203,
+    "file_offset": "0x0658",
+    "jp": "ヌエ",
+    "tr": "Nue",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 204,
+    "file_offset": "0x0660",
+    "jp": "スイコ",
+    "tr": "Suiko",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 205,
+    "file_offset": "0x0668",
+    "jp": "アーヴァンク",
+    "tr": "Afanc",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 206,
+    "file_offset": "0x0670",
+    "jp": "ワイラ",
+    "tr": "Waira",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 207,
+    "file_offset": "0x0678",
+    "jp": "グレンデル",
+    "tr": "Grendel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 208,
+    "file_offset": "0x0680",
+    "jp": "ギリメカラ",
+    "tr": "Girimekhala",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 209,
+    "file_offset": "0x0688",
+    "jp": "ガシャドクロ",
+    "tr": "Gashadokuro",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 210,
+    "file_offset": "0x0690",
+    "jp": "オセロット",
+    "tr": "Ocelot",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 211,
+    "file_offset": "0x0698",
+    "jp": "アシナガ",
+    "tr": "Ashinaga",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 212,
+    "file_offset": "0x06a0",
+    "jp": "テナガ",
+    "tr": "Tenaga",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 213,
+    "file_offset": "0x06a8",
+    "jp": "オーガ",
+    "tr": "Ogre",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 214,
+    "file_offset": "0x06b0",
+    "jp": "パトリオット",
+    "tr": "Patriot",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 215,
+    "file_offset": "0x06b8",
+    "jp": "ゾンビコップ",
+    "tr": "Zombie Cop",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 216,
+    "file_offset": "0x06c0",
+    "jp": "アゴニー",
+    "tr": "Agony",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 217,
+    "file_offset": "0x06c8",
+    "jp": "ラスタマン",
+    "tr": "Rastaman",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 218,
+    "file_offset": "0x06d0",
+    "jp": "ワックスワーク",
+    "tr": "Waxwork",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 219,
+    "file_offset": "0x06d8",
+    "jp": "スケアクロー",
+    "tr": "Scarecrow",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 220,
+    "file_offset": "0x06e0",
+    "jp": "モスマン",
+    "tr": "Mothman",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 221,
+    "file_offset": "0x06e8",
+    "jp": "ミルメコレオ",
+    "tr": "Myrmecolion",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 222,
+    "file_offset": "0x06f0",
+    "jp": "オキクムシ",
+    "tr": "Okiku-Mushi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 223,
+    "file_offset": "0x06f8",
+    "jp": "ヨーウィー",
+    "tr": "Yowie",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 224,
+    "file_offset": "0x0700",
+    "jp": "ウブ",
+    "tr": "Ubu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 225,
+    "file_offset": "0x0708",
+    "jp": "シュウ",
+    "tr": "Chi You",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 226,
+    "file_offset": "0x0710",
+    "jp": "ネルガル",
+    "tr": "Nergal",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 227,
+    "file_offset": "0x0718",
+    "jp": "ラーフ",
+    "tr": "Rahu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 228,
+    "file_offset": "0x0720",
+    "jp": "ロキ",
+    "tr": "Loki",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 229,
+    "file_offset": "0x0728",
+    "jp": "バロール",
+    "tr": "Balor",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 230,
+    "file_offset": "0x0730",
+    "jp": "ヴァスキ",
+    "tr": "Vasuki",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 231,
+    "file_offset": "0x0738",
+    "jp": "ムシュフシュ",
+    "tr": "Mushussu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 232,
+    "file_offset": "0x0740",
+    "jp": "ピュートーン",
+    "tr": "Python",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 233,
+    "file_offset": "0x0748",
+    "jp": "バジリスク",
+    "tr": "Basilisk",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 234,
+    "file_offset": "0x0750",
+    "jp": "ウワバミ",
+    "tr": "Uwabami",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 235,
+    "file_offset": "0x0758",
+    "jp": "アスプ",
+    "tr": "Asp",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 236,
+    "file_offset": "0x0760",
+    "jp": "トウビョウ",
+    "tr": "Toubyou",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 237,
+    "file_offset": "0x0768",
+    "jp": "ヴェータラ",
+    "tr": "Vetala",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 238,
+    "file_offset": "0x0770",
+    "jp": "クドラク",
+    "tr": "Kudlak",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 239,
+    "file_offset": "0x0778",
+    "jp": "ツォロム",
+    "tr": "Dzolob",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 240,
+    "file_offset": "0x0780",
+    "jp": "エンク",
+    "tr": "Enku",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 241,
+    "file_offset": "0x0788",
+    "jp": "グール",
+    "tr": "Ghoul",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 242,
+    "file_offset": "0x0790",
+    "jp": "オバリヨン",
+    "tr": "Obariyon",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 243,
+    "file_offset": "0x0798",
+    "jp": "ガキ",
+    "tr": "Preta",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 244,
+    "file_offset": "0x07a0",
+    "jp": "マカーブル",
+    "tr": "Macabre",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 245,
+    "file_offset": "0x07a8",
+    "jp": "レギオン",
+    "tr": "Legion",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 246,
+    "file_offset": "0x07b0",
+    "jp": "インフェルノ",
+    "tr": "Inferno",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 247,
+    "file_offset": "0x07b8",
+    "jp": "トルソー",
+    "tr": "Torso",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 248,
+    "file_offset": "0x07c0",
+    "jp": "クイックシルバー",
+    "tr": "Quicksilver",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 249,
+    "file_offset": "0x07c8",
+    "jp": "ポルターガイスト",
+    "tr": "Poltergeist",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 250,
+    "file_offset": "0x07d0",
+    "jp": "ドッペルゲンガー",
+    "tr": "Doppelganger",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 251,
+    "file_offset": "0x07d8",
+    "jp": "タトゥーマン",
+    "tr": "Tattooed Man",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 252,
+    "file_offset": "0x07e0",
+    "jp": "キラーチョッパー",
+    "tr": "Killer Chopper",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 253,
+    "file_offset": "0x07e8",
+    "jp": "フーリガン",
+    "tr": "Hooligan",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 254,
+    "file_offset": "0x07f0",
+    "jp": "スライム",
+    "tr": "Slime",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 255,
+    "file_offset": "0x07f8",
+    "jp": "シェイ",
+    "tr": "Shei",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 256,
+    "file_offset": "0x0800",
+    "jp": "シェイ",
+    "tr": "Shei",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 257,
+    "file_offset": "0x0808",
+    "jp": "シェイ",
+    "tr": "Shei",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 258,
+    "file_offset": "0x0810",
+    "jp": "シェイ",
+    "tr": "Shei",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 259,
+    "file_offset": "0x0818",
+    "jp": "シェイ",
+    "tr": "Shei",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 260,
+    "file_offset": "0x0820",
+    "jp": "ナゾのおとこ",
+    "tr": "Mysterious Man",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 261,
+    "file_offset": "0x0828",
+    "jp": "クミコ",
+    "tr": "Kumiko",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 262,
+    "file_offset": "0x0830",
+    "jp": "ドリー‐カドモン",
+    "tr": "Dolly Kadmon",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 263,
+    "file_offset": "0x0838",
+    "jp": "ガキ",
+    "tr": "Preta",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 264,
+    "file_offset": "0x0840",
+    "jp": "スライム",
+    "tr": "Slime",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 265,
+    "file_offset": "0x0848",
+    "jp": "ピシャーチャ",
+    "tr": "Pisaca",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 266,
+    "file_offset": "0x0850",
+    "jp": "フグルマ",
+    "tr": "Fuguruma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 267,
+    "file_offset": "0x0858",
+    "jp": "ヤコウ",
+    "tr": "Yakou",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 268,
+    "file_offset": "0x0860",
+    "jp": "アシナガ",
+    "tr": "Ashinaga",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 269,
+    "file_offset": "0x0868",
+    "jp": "テナガ",
+    "tr": "Tenaga",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 270,
+    "file_offset": "0x0870",
+    "jp": "イヌイ",
+    "tr": "Inui",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 271,
+    "file_offset": "0x0878",
+    "jp": "ぶたいへい",
+    "tr": "Platoon Soldier",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 272,
+    "file_offset": "0x0880",
+    "jp": "Pガルガンチュア",
+    "tr": "Proto Gargantua",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 273,
+    "file_offset": "0x0888",
+    "jp": "シド",
+    "tr": "Sid",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 274,
+    "file_offset": "0x0890",
+    "jp": "シキオウジ",
+    "tr": "Shiki-Ouji",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 275,
+    "file_offset": "0x0898",
+    "jp": "ストリゴイイ",
+    "tr": "Strigoii",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 276,
+    "file_offset": "0x08a0",
+    "jp": "ストリゲス",
+    "tr": "Strix",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 277,
+    "file_offset": "0x08a8",
+    "jp": "カシヤマ",
+    "tr": "Kashiyama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 278,
+    "file_offset": "0x08b0",
+    "jp": "エンク",
+    "tr": "Enku",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 279,
+    "file_offset": "0x08b8",
+    "jp": "ダンタリアン",
+    "tr": "Dantalian",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 280,
+    "file_offset": "0x08c0",
+    "jp": "ユリア",
+    "tr": "Julia",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 281,
+    "file_offset": "0x08c8",
+    "jp": "スピーディー",
+    "tr": "Speedy",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 282,
+    "file_offset": "0x08d0",
+    "jp": "ミキヤ",
+    "tr": "Mikiya",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 283,
+    "file_offset": "0x08d8",
+    "jp": "オルゴンゴースト",
+    "tr": "Orgone Ghost",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 284,
+    "file_offset": "0x08e0",
+    "jp": "オルゴンゴースト",
+    "tr": "Orgone Ghost",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 285,
+    "file_offset": "0x08e8",
+    "jp": "クバンダ",
+    "tr": "Kumbhanda",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 286,
+    "file_offset": "0x08f0",
+    "jp": "カンテイセイクン",
+    "tr": "Guan Yu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 287,
+    "file_offset": "0x08f8",
+    "jp": "テンドウ",
+    "tr": "Tendou",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 288,
+    "file_offset": "0x0900",
+    "jp": "デミウルゴス",
+    "tr": "Demiurge",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 289,
+    "file_offset": "0x0908",
+    "jp": "シド",
+    "tr": "Sid",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 290,
+    "file_offset": "0x0910",
+    "jp": "カロン",
+    "tr": "Charon",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 291,
+    "file_offset": "0x0918",
+    "jp": "オオマガツヒ",
+    "tr": "Oo Magatsuhi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 292,
+    "file_offset": "0x0920",
+    "jp": "ヤソマガツヒ",
+    "tr": "Yaso Magatsuhi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 293,
+    "file_offset": "0x0928",
+    "jp": "シド",
+    "tr": "Sid",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 294,
+    "file_offset": "0x0930",
+    "jp": "イナルナ",
+    "tr": "Inaruna",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 295,
+    "file_offset": "0x0938",
+    "jp": "イナルナ",
+    "tr": "Inaruna",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 296,
+    "file_offset": "0x0940",
+    "jp": "イナルナ",
+    "tr": "Inaruna",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 297,
+    "file_offset": "0x0948",
+    "jp": "ガルガンチュア",
+    "tr": "Gargantua",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 298,
+    "file_offset": "0x0950",
+    "jp": "ガルガンチュアQ",
+    "tr": "Gargantua Q",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 299,
+    "file_offset": "0x0958",
+    "jp": "ガルガンチュアX",
+    "tr": "Gargantua X",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 300,
+    "file_offset": "0x0960",
+    "jp": "ガルガンチュア8",
+    "tr": "Gargantua 8",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 301,
+    "file_offset": "0x0968",
+    "jp": "ホクトセイクン",
+    "tr": "Beidou Xingjun",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 302,
+    "file_offset": "0x0970",
+    "jp": "ナントセイクン",
+    "tr": "Nandou Xingjun",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 303,
+    "file_offset": "0x0978",
+    "jp": "デビルバスターズ",
+    "tr": "Devil Busters",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 304,
+    "file_offset": "0x0980",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 305,
+    "file_offset": "0x0988",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 306,
+    "file_offset": "0x0990",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 307,
+    "file_offset": "0x0998",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 308,
+    "file_offset": "0x09a0",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 309,
+    "file_offset": "0x09a8",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 310,
+    "file_offset": "0x09b0",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 311,
+    "file_offset": "0x09b8",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 312,
+    "file_offset": "0x09c0",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 313,
+    "file_offset": "0x09c8",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 314,
+    "file_offset": "0x09d0",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 315,
+    "file_offset": "0x09d8",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 316,
+    "file_offset": "0x09e0",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 317,
+    "file_offset": "0x09e8",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 318,
+    "file_offset": "0x09f0",
+    "jp": "ボスりざーぶ",
+    "tr": "Boss Reserve",
+    "reviewed": false,
+    "excluded": false
+  }
+]

@@ -1,0 +1,1019 @@
+[
+  {
+    "kind": "charmed_tlk_bst",
+    "file_offset": "0x5455c",
+    "word_count": 22,
+    "jp": "オオ… オヌシハ 素晴ラシイ…",
+    "tr": "OHH... YOU ARE MAGNIFICENT...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_kemo",
+    "file_offset": "0x54588",
+    "word_count": 22,
+    "jp": "クーン クーン{maru_symbol}",
+    "tr": "WHIMPER... WHIMPER{maru_symbol}",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_tlk_kofu",
+    "file_offset": "0x545b4",
+    "word_count": 22,
+    "jp": "そなた… まさに 日本一の 漢よのう…",
+    "tr": "You... truly are Japan's finest man...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_nbl_m",
+    "file_offset": "0x545e0",
+    "word_count": 22,
+    "jp": "あぁ この胸の高なりはいったい……",
+    "tr": "Ah... Why does my heart pound so...?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_tlk_hirk",
+    "file_offset": "0x5460c",
+    "word_count": 22,
+    "jp": "ああ 貴方って なんてステキなの…",
+    "tr": "Oh... You are simply marvelous...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_tlk_yngm",
+    "file_offset": "0x54638",
+    "word_count": 22,
+    "jp": "おまえって ほんと最高 いい奴だよな{GLYPH:010d}",
+    "tr": "You're the best. What a great guy!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_grl",
+    "file_offset": "0x54664",
+    "word_count": 22,
+    "jp": "アタシだけを 見つめて『",
+    "tr": "Look only at me!『",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_tlk_boy",
+    "file_offset": "0x54690",
+    "word_count": 22,
+    "jp": "おじさんのいうこと なんでもきくよ！",
+    "tr": "I'll do anything you say, mister!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_cld_f",
+    "file_offset": "0x546bc",
+    "word_count": 22,
+    "jp": "おじちゃん 捨てないで～",
+    "tr": "Don't leave me, miiister!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_tlk_lady",
+    "file_offset": "0x546e8",
+    "word_count": 22,
+    "jp": "アタシは あなたのもの…好きにして『",
+    "tr": "I'm yours... Do whatever you like...『",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_tlk_crzy",
+    "file_offset": "0x54714",
+    "word_count": 22,
+    "jp": "ヒィイイイイイ ヒィッ ヒィッ ヒヒ！！",
+    "tr": "Heeeeeee! Hee! Hee! Hee-hee!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_jijy",
+    "file_offset": "0x54740",
+    "word_count": 22,
+    "jp": "もう おまえさんしか見えないんじゃァ『",
+    "tr": "You are all I see now, young one...『",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_cyni",
+    "file_offset": "0x5476c",
+    "word_count": 22,
+    "jp": "きみのひとみの中に俺が見える まじで",
+    "tr": "I see myself in your eyes. Seriously.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_tlk_west",
+    "file_offset": "0x54798",
+    "word_count": 22,
+    "jp": "いや あんた もう最高やな よっ 大将！",
+    "tr": "You're the best, boss!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_slm",
+    "file_offset": "0x547c4",
+    "word_count": 22,
+    "jp": "好ギガァ！ 大大大大好ギガァ！！",
+    "tr": "L-love ya! I l-love ya so much!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "charmed_fallback",
+    "file_offset": "0x547f0",
+    "word_count": 22,
+    "jp": "敵魅了中仮MES会話種族F会話不能",
+    "tr": "The charmed enemy cannot speak.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_tlk_bst",
+    "file_offset": "0x5481c",
+    "word_count": 22,
+    "jp": "コウシテ イルノモ ナカナカ ヨイナ…",
+    "tr": "THIS IS RATHER PLEASANT...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_kemo",
+    "file_offset": "0x54848",
+    "word_count": 22,
+    "jp": "ヌウ・・・オレサマ ウキウキ{maru_symbol}",
+    "tr": "NGH... I AM GIDDY{maru_symbol}",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_tlk_kofu",
+    "file_offset": "0x54874",
+    "word_count": 22,
+    "jp": "いやはや 我は 満足じゃ はっはっはっ",
+    "tr": "Well, well. I am content. Ha ha ha!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_nbl_m",
+    "file_offset": "0x548a0",
+    "word_count": 22,
+    "jp": "美しい ここは夢の様に美しい",
+    "tr": "Beautiful... This place is like a dream.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_tlk_hirk",
+    "file_offset": "0x548cc",
+    "word_count": 22,
+    "jp": "わたくし 幸せよ もう最高ですわ！",
+    "tr": "I'm so happy. This is simply divine!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_tlk_yngm",
+    "file_offset": "0x548f8",
+    "word_count": 22,
+    "jp": "いや{GLYPH:010d} マジ気分最高だな{GLYPH:010d} へっへ{GLYPH:010d}！",
+    "tr": "Man, I seriously feel great! Heh!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_grl",
+    "file_offset": "0x54924",
+    "word_count": 22,
+    "jp": "キャハハハ……なんかー まわってるしー",
+    "tr": "Ahaha... Like, everything is spinning!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_tlk_boy",
+    "file_offset": "0x54950",
+    "word_count": 22,
+    "jp": "なあんか いいきもち なんでかなあ？",
+    "tr": "I feel really good... How come?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_cld_f",
+    "file_offset": "0x5497c",
+    "word_count": 22,
+    "jp": "あははは なんかぁ 笑いがとまらなぁい{maru_symbol}",
+    "tr": "Ahahaha! I can't stop laughing{maru_symbol}",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_tlk_lady",
+    "file_offset": "0x549a8",
+    "word_count": 22,
+    "jp": "アタシ幸せよ もう どうでもいい…",
+    "tr": "I'm happy... I don't care anymore...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_tlk_crzy",
+    "file_offset": "0x549d4",
+    "word_count": 22,
+    "jp": "ハハハハハ ヒヒヒヒヒ ホホホッホ",
+    "tr": "Hahaha! Heeheehee! Hohoho!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_jijy",
+    "file_offset": "0x54a00",
+    "word_count": 22,
+    "jp": "ヒャッヒャ～！ ウヒャヒャッヒャ～！！",
+    "tr": "Hya-hya! U-hya-hya-hya!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_cyni",
+    "file_offset": "0x54a2c",
+    "word_count": 22,
+    "jp": "ぼかぁ～きみといる時が 一番幸せなんだ",
+    "tr": "I'm happiest when I'm with you.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_tlk_west",
+    "file_offset": "0x54a58",
+    "word_count": 22,
+    "jp": "いやあ もうかって ウハウハやな～！",
+    "tr": "Ahh, makin' money feels great!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_slm",
+    "file_offset": "0x54a84",
+    "word_count": 22,
+    "jp": "おでバァ 宇宙イヂィ 美美美美ジイィ",
+    "tr": "I'm m-most beautiful in all space!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "happy_fallback",
+    "file_offset": "0x54ab0",
+    "word_count": 22,
+    "jp": "敵幸福中仮MES会話種族F会話不能",
+    "tr": "The happy enemy cannot speak.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_tlk_bst",
+    "file_offset": "0x54adc",
+    "word_count": 22,
+    "jp": "クッ アヤシゲナ 術ニオチタカ… 不覚…",
+    "tr": "NGH... A FOUL SPELL... I WAS CARELESS...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_kemo",
+    "file_offset": "0x54b08",
+    "word_count": 22,
+    "jp": "ヌウ・・・喰イモノ ニオイ・・・ドコダ",
+    "tr": "NGH... FOOD SMELL... WHERE IS IT?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_tlk_kofu",
+    "file_offset": "0x54b34",
+    "word_count": 22,
+    "jp": "くっ 幻なの…か ぬおう… うりゃっ",
+    "tr": "Gah... An illusion...? Nngh... Hiyah!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_nbl_m",
+    "file_offset": "0x54b60",
+    "word_count": 22,
+    "jp": "おのれ まやかしとはひきょうな！",
+    "tr": "Curse you. Such trickery is cowardly!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_tlk_hirk",
+    "file_offset": "0x54b8c",
+    "word_count": 22,
+    "jp": "フフッ ああ貴方がたくさんいるわ… フフ",
+    "tr": "Hee hee... Oh, so many of you... Hee.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_tlk_yngm",
+    "file_offset": "0x54bb8",
+    "word_count": 22,
+    "jp": "あん？ ここどこだ{GLYPH:010d}？ 何だ おまえ？",
+    "tr": "Huh? Where am I? Who are you?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_grl",
+    "file_offset": "0x54be4",
+    "word_count": 22,
+    "jp": "アンタ 左肩んとこの子供ダレ？",
+    "tr": "Who's that kid on your left shoulder?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_tlk_boy",
+    "file_offset": "0x54c10",
+    "word_count": 22,
+    "jp": "おじさん ここどこ あれ？ あれれ？",
+    "tr": "Mister, where am I? Huh? Huhhh?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_cld_f",
+    "file_offset": "0x54c3c",
+    "word_count": 22,
+    "jp": "あははは おじちゃん へんなかお～{maru_symbol}",
+    "tr": "Ahaha! Mister, your face looks funny{maru_symbol}",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_tlk_lady",
+    "file_offset": "0x54c68",
+    "word_count": 22,
+    "jp": "あなただれなの？ あれ？ アタシはだれ？",
+    "tr": "Who are you...? Wait... Who am I?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_tlk_crzy",
+    "file_offset": "0x54c94",
+    "word_count": 22,
+    "jp": "私 変ですよ 普通に話してますよね？",
+    "tr": "How odd... I'm talking normally, right?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_jijy",
+    "file_offset": "0x54cc0",
+    "word_count": 22,
+    "jp": "わしのメガネ どこやったァ！？",
+    "tr": "Where'd I put my glasses?!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_cyni",
+    "file_offset": "0x54cec",
+    "word_count": 22,
+    "jp": "はははは 皆 死んでしまえばいいんだ！",
+    "tr": "Ha-ha-ha! Everyone should just die!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_tlk_west",
+    "file_offset": "0x54d18",
+    "word_count": 22,
+    "jp": "はよ 金出さんかい！！ まだか ボケが～",
+    "tr": "Cash, now! Hurry it up, ya fool!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_slm",
+    "file_offset": "0x54d44",
+    "word_count": 22,
+    "jp": "ゴンゲ{maru_symbol}レゲレレレヂベ♂ンバェェ！！",
+    "tr": "Grrngh{maru_symbol} Blehlehleh... Bwaaagh!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "confused_fallback",
+    "file_offset": "0x54d70",
+    "word_count": 22,
+    "jp": "敵混乱中仮MES会話種族F会話不能",
+    "tr": "The confused enemy cannot speak.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_tlk_bst",
+    "file_offset": "0x54d9c",
+    "word_count": 22,
+    "jp": "コレ以上ノ 対話ハ 無駄ダ… モウヨセ…",
+    "tr": "FURTHER TALK IS USELESS... STOP NOW...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_kemo",
+    "file_offset": "0x54dc8",
+    "word_count": 22,
+    "jp": "グオォォォォ！！",
+    "tr": "GOOOOOO!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_tlk_kofu",
+    "file_offset": "0x54df4",
+    "word_count": 22,
+    "jp": "語りおうても 時間だけを失うのみ…",
+    "tr": "Further parley would only waste time...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_nbl_m",
+    "file_offset": "0x54e20",
+    "word_count": 22,
+    "jp": "そろそろ終わりに致しましょうか",
+    "tr": "Shall we bring this to an end?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_tlk_hirk",
+    "file_offset": "0x54e4c",
+    "word_count": 22,
+    "jp": "あら 貴方 誰だったかしら？ ホホホホホ",
+    "tr": "My, who were you again? Hohohohoho.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_tlk_yngm",
+    "file_offset": "0x54e78",
+    "word_count": 22,
+    "jp": "もう おまえと話すことなんか ね{GLYPH:010d}よ！！",
+    "tr": "I'm done talking to you!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_grl",
+    "file_offset": "0x54ea4",
+    "word_count": 22,
+    "jp": "グッチャグチャに 引き裂いてやるから！",
+    "tr": "I'll tear you to pieces!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_tlk_boy",
+    "file_offset": "0x54ed0",
+    "word_count": 22,
+    "jp": "ボク おじさんのこと キライだっ！！",
+    "tr": "I hate you, mister!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_cld_f",
+    "file_offset": "0x54efc",
+    "word_count": 22,
+    "jp": "おじちゃん 死刑ぇ～{maru_symbol}",
+    "tr": "Death penalty for you, mister!{maru_symbol}",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_tlk_lady",
+    "file_offset": "0x54f28",
+    "word_count": 22,
+    "jp": "あなたって ヒドイ人… ほんと最低ね…",
+    "tr": "You're awful... Truly the worst...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_tlk_crzy",
+    "file_offset": "0x54f54",
+    "word_count": 22,
+    "jp": "ああん？ なんだ？ ん？ あ？ え？",
+    "tr": "Huh? What? Hm? Ah? Eh?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_jijy",
+    "file_offset": "0x54f80",
+    "word_count": 22,
+    "jp": "カンニンブクロのオッポが切れたぞォ！",
+    "tr": "My patience has run out!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_cyni",
+    "file_offset": "0x54fac",
+    "word_count": 22,
+    "jp": "きみ まじで殺す",
+    "tr": "I am seriously going to kill you.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_tlk_west",
+    "file_offset": "0x54fd8",
+    "word_count": 22,
+    "jp": "まだ 用あんのか？ あかん あかん！",
+    "tr": "Still need somethin'? Nah, no way!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_slm",
+    "file_offset": "0x55004",
+    "word_count": 22,
+    "jp": "おばえぇぇぇぇ 許許許許ザネエェ！！",
+    "tr": "Y-youuuu... I won't forgive you!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "enraged_fallback",
+    "file_offset": "0x55030",
+    "word_count": 22,
+    "jp": "敵怒中仮MES会話種族F会話不能",
+    "tr": "The enemy is too enraged to speak.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_tlk_bst",
+    "file_offset": "0x5505c",
+    "word_count": 22,
+    "jp": "フッ… ナンダト イウノダ フッ…",
+    "tr": "HMPH... WHAT DID YOU SAY? HMPH...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_kemo",
+    "file_offset": "0x55088",
+    "word_count": 22,
+    "jp": "オレサマ オマエ マルカジリ！！",
+    "tr": "I EAT YOU WHOLE!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_tlk_kofu",
+    "file_offset": "0x550b4",
+    "word_count": 22,
+    "jp": "やめよ 我が怒り すぐには おさまらぬ",
+    "tr": "Enough. My anger will not soon abate.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_nbl_m",
+    "file_offset": "0x550e0",
+    "word_count": 22,
+    "jp": "さあ 剣をお取りなさい",
+    "tr": "Now, take your sword.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_tlk_hirk",
+    "file_offset": "0x5510c",
+    "word_count": 22,
+    "jp": "すこし 考えさせて いただくわ",
+    "tr": "Allow me a moment to think.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_tlk_yngm",
+    "file_offset": "0x55138",
+    "word_count": 22,
+    "jp": "待てよ！ ちょっとは ほっといてくれよ！",
+    "tr": "Hold it! Leave me alone for a while!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_grl",
+    "file_offset": "0x55164",
+    "word_count": 22,
+    "jp": "刺してやる ホンキよ",
+    "tr": "I'll stab you. I mean it!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_tlk_boy",
+    "file_offset": "0x55190",
+    "word_count": 22,
+    "jp": "おじさん！ ボク おこってるんだからね！",
+    "tr": "Mister! I'm really mad at you!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_cld_f",
+    "file_offset": "0x551bc",
+    "word_count": 22,
+    "jp": "おじちゃんの ばかぁ～！！",
+    "tr": "Mister, you idiot!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_tlk_lady",
+    "file_offset": "0x551e8",
+    "word_count": 22,
+    "jp": "待って 今は あなたと話したくない…",
+    "tr": "Wait. I don't want to talk right now...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_tlk_crzy",
+    "file_offset": "0x55214",
+    "word_count": 22,
+    "jp": "なんだあ？？ なんだ？？ なんだよう！！",
+    "tr": "What?? What?? What is it!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_jijy",
+    "file_offset": "0x55240",
+    "word_count": 22,
+    "jp": "ちと おきゅうをすえてやろうかのゥ",
+    "tr": "Perhaps I'll teach you a lesson...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_cyni",
+    "file_offset": "0x5526c",
+    "word_count": 22,
+    "jp": "ばかとは 話したくない",
+    "tr": "I don't talk to fools.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_tlk_west",
+    "file_offset": "0x55298",
+    "word_count": 22,
+    "jp": "なんや 考え 改めるまで 話さへんで～",
+    "tr": "I won't talk till ya change your mind.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_slm",
+    "file_offset": "0x552c4",
+    "word_count": 22,
+    "jp": "おでヲォ バガバガバガバガニズルナァ！",
+    "tr": "D-don't make a f-f-f-fool of me!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "talk_blocked_fallback",
+    "file_offset": "0x552f0",
+    "word_count": 22,
+    "jp": "敵禁止中仮MES会話種族F会話不能",
+    "tr": "The enemy refuses to speak.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_tlk_bst",
+    "file_offset": "0x5531c",
+    "word_count": 22,
+    "jp": "オイ ヤメテオケ ヤツトノ対話ハ 無駄ダ",
+    "tr": "STOP... TALKING TO THAT ONE IS FUTILE.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_kemo",
+    "file_offset": "0x55348",
+    "word_count": 22,
+    "jp": "ヌウ・・・オレサマ ハラペコ",
+    "tr": "NGH... I AM HUNGRY.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_tlk_kofu",
+    "file_offset": "0x55374",
+    "word_count": 22,
+    "jp": "やめておくがよい 意味を持たぬことはな",
+    "tr": "You should stop. It serves no purpose.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_nbl_m",
+    "file_offset": "0x553a0",
+    "word_count": 22,
+    "jp": "この様な外道を のさばらせてはおけません",
+    "tr": "I cannot let such a fiend run free.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_tlk_hirk",
+    "file_offset": "0x553cc",
+    "word_count": 22,
+    "jp": "こんな方と お話し しても 無駄よ",
+    "tr": "Speaking to such a person is pointless.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_tlk_yngm",
+    "file_offset": "0x553f8",
+    "word_count": 22,
+    "jp": "つまんね{GLYPH:010d}ヤツだから 構うことね{GLYPH:010d}よ！！",
+    "tr": "He's a bore. Don't waste your time!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_grl",
+    "file_offset": "0x55424",
+    "word_count": 22,
+    "jp": "刺してやろうよ こんなの",
+    "tr": "Let's stab this creep!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_tlk_boy",
+    "file_offset": "0x55450",
+    "word_count": 22,
+    "jp": "このおじさん あいてにしちゃ ダメだよ！",
+    "tr": "Don't mess with this old guy!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_cld_f",
+    "file_offset": "0x5547c",
+    "word_count": 22,
+    "jp": "早く 血ぃ出そぉ 出そぉ～{maru_symbol}",
+    "tr": "Make him bleed! Make him bleed~{maru_symbol}",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_tlk_lady",
+    "file_offset": "0x554a8",
+    "word_count": 22,
+    "jp": "だめよ！！ あんなヒドイ人 相手にしちゃ",
+    "tr": "No! Don't waste time on that brute!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_tlk_crzy",
+    "file_offset": "0x554d4",
+    "word_count": 22,
+    "jp": "やめろおおおお やめろ やめろ やめろお",
+    "tr": "Stoooop! Stop! Stop! Stooop!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_jijy",
+    "file_offset": "0x55500",
+    "word_count": 22,
+    "jp": "これも定めじゃけェ カンニンしてくれェ",
+    "tr": "Such is fate. Forgive me, young one.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_cyni",
+    "file_offset": "0x5552c",
+    "word_count": 22,
+    "jp": "あんな奴 死んでいいよ",
+    "tr": "That one can die for all I care.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_tlk_west",
+    "file_offset": "0x55558",
+    "word_count": 22,
+    "jp": "あいつ あかん！ ほっとけ！ ほっとけ！",
+    "tr": "He's no good! Leave him! Leave him!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_slm",
+    "file_offset": "0x55584",
+    "word_count": 22,
+    "jp": "おばえモォ 手手手手手伝エェ",
+    "tr": "Y-you too... h-h-h-help meee!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "ally_veto_fallback",
+    "file_offset": "0x555b0",
+    "word_count": 22,
+    "jp": "敵他禁止中仮MES会話種族F会話不能",
+    "tr": "We should not speak with this one.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_tlk_bst",
+    "file_offset": "0x555dc",
+    "word_count": 22,
+    "jp": "イイ 月夜ダ… ウオオオオオ…！！！",
+    "tr": "A FINE MOONLIT NIGHT... AWOOOO...!!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_kemo",
+    "file_offset": "0x55608",
+    "word_count": 22,
+    "jp": "アオォォォ！ アオアオォォォォ！！",
+    "tr": "AWOOOO! AWO-AWOOOOOO!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_tlk_kofu",
+    "file_offset": "0x55634",
+    "word_count": 22,
+    "jp": "今拉の 月は 美しい…",
+    "tr": "The moon is beautiful tonight...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_nbl_m",
+    "file_offset": "0x55660",
+    "word_count": 22,
+    "jp": "何かが起こりそうな 夜ですね",
+    "tr": "It seems something may happen tonight.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_tlk_hirk",
+    "file_offset": "0x5568c",
+    "word_count": 22,
+    "jp": "ああ 美しい月… わたくしドキドキするわ",
+    "tr": "Ah, the lovely moon... My heart races.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_tlk_yngm",
+    "file_offset": "0x556b8",
+    "word_count": 22,
+    "jp": "こんな明るい夜は どっか遊び 行きて{GLYPH:010d}な",
+    "tr": "Bright night. I wanna go have some fun.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_grl",
+    "file_offset": "0x556e4",
+    "word_count": 22,
+    "jp": "月に1度は ゴキゲンナナメよ！",
+    "tr": "Once a month, I'm in a terrible mood!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_tlk_boy",
+    "file_offset": "0x55710",
+    "word_count": 22,
+    "jp": "よふかしだ よふかしだ ワーイ ワーイ",
+    "tr": "We can stay up late! Yay! Yay!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_cld_f",
+    "file_offset": "0x5573c",
+    "word_count": 22,
+    "jp": "おいしそぉ～な月だねぇ うふふふ",
+    "tr": "The moon looks sooo tasty~ Hee hee!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_tlk_lady",
+    "file_offset": "0x55768",
+    "word_count": 22,
+    "jp": "ねえ… アタシ いつもよりキレイでしょ…",
+    "tr": "Say... Don't I look prettier than usual?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_tlk_crzy",
+    "file_offset": "0x55794",
+    "word_count": 22,
+    "jp": "ウオオオオオオ オオオオォォオォオォ！！",
+    "tr": "Woooooo! Woo-woo-woooooo!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_jijy",
+    "file_offset": "0x557c0",
+    "word_count": 22,
+    "jp": "オォオォ 満月かい 風流じゃのゥ",
+    "tr": "Ohh, ohh. A full moon? How refined.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_cyni",
+    "file_offset": "0x557ec",
+    "word_count": 22,
+    "jp": "月にかわって……なんでもねぇよ",
+    "tr": "In the name of the moon... Never mind.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_tlk_west",
+    "file_offset": "0x55818",
+    "word_count": 22,
+    "jp": "ええ 月夜や！！ 一杯やりたいなあ～！！",
+    "tr": "Nice moon tonight! Time for a drink!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_slm",
+    "file_offset": "0x55844",
+    "word_count": 22,
+    "jp": "グゲェ 丸イ月月月 美美美美ジイィ",
+    "tr": "Guh... R-round moon... s-so p-prettyyy...",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "full_moon_fallback",
+    "file_offset": "0x55870",
+    "word_count": 22,
+    "jp": "満月中仮MES会話種族F会話不能",
+    "tr": "The full moon leaves me unable to speak.",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "comp_signal_happy",
+    "file_offset": "0x5589c",
+    "word_count": 22,
+    "jp": "COMP SIGNAL{GLYPH:010d}＞「HAPPY」",
+    "tr": "COMP SIGNAL{GLYPH:010d}> \"HAPPY\"",
+    "reviewed": true,
+    "excluded": false
+  }
+]

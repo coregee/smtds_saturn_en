@@ -1,0 +1,1298 @@
+[
+  {
+    "index": 0,
+    "pointer_offset": "0x0000",
+    "file_offset": "0x0400",
+    "jp": "要ラヌワ・・・{n}シマッテオケ。",
+    "tr": "I HAVE NO NEED OF IT... PUT IT AWAY.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 1,
+    "pointer_offset": "0x0002",
+    "file_offset": "0x0420",
+    "jp": "ソレ、イラナイ。{n}オレニハ、イラナイ。",
+    "tr": "THAT, NO NEED. I DO NOT NEED IT.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 2,
+    "pointer_offset": "0x0004",
+    "file_offset": "0x0448",
+    "jp": "我には要り用のない物。{n}もとに収めておくがよろし。",
+    "tr": "I have no need of such a thing. You would do well to put it away.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 3,
+    "pointer_offset": "0x0006",
+    "file_offset": "0x047c",
+    "jp": "ふむ、文字通りつまらないものですね。{n}私は遠慮させていただきましょう。",
+    "tr": "Hmm. A trifle in every sense of the word. I shall decline.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 4,
+    "pointer_offset": "0x0008",
+    "file_offset": "0x04c4",
+    "jp": "わたくしに、まさかそのような不粋な物が{n}似合うと、お思いではないでしょうね。",
+    "tr": "Surely you do not imagine such a tasteless thing would suit me.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 5,
+    "pointer_offset": "0x000a",
+    "file_offset": "0x0512",
+    "jp": "なんだよそれ、要らねえよそんなもん。",
+    "tr": "What the hell is that? I don't need it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 6,
+    "pointer_offset": "0x000c",
+    "file_offset": "0x0538",
+    "jp": "なにそれー、あんたバカじゃないの？",
+    "tr": "What's that supposed to be? Are you stupid?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 7,
+    "pointer_offset": "0x000e",
+    "file_offset": "0x055c",
+    "jp": "子供を物でつるつもりなの？{n}まったく大人ってのは・・・。",
+    "tr": "You think you can bribe a kid with stuff? Adults, I swear...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 8,
+    "pointer_offset": "0x0010",
+    "file_offset": "0x0596",
+    "jp": "おじちゃん、あたし、そんなの要らない。",
+    "tr": "Uncle, I don't need that.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 9,
+    "pointer_offset": "0x0012",
+    "file_offset": "0x05be",
+    "jp": "まあ、嬉しい。{n}でも、気持ちだけ頂くことにするわね。",
+    "tr": "Oh, how sweet. But it's the thought that counts.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 10,
+    "pointer_offset": "0x0014",
+    "file_offset": "0x05f4",
+    "jp": "えへへへへ、いいもんくれんじゃねえか。{n}さっそく捨ててやるよ。",
+    "tr": "Heh heh heh! What a lovely gift. I'll throw it away at once.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 11,
+    "pointer_offset": "0x0016",
+    "file_offset": "0x0634",
+    "jp": "ふぉっふぉっふぉっ、{n}そいつは、わしには不用のものじゃのう。",
+    "tr": "Ho ho ho! I have no use for that.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 12,
+    "pointer_offset": "0x0018",
+    "file_offset": "0x0672",
+    "jp": "キミ、ゴミはくずかごに捨てたまえ。{n}そんなもの渡されても困るんだよ。",
+    "tr": "Trash belongs in the bin. Don't burden me with it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 13,
+    "pointer_offset": "0x001a",
+    "file_offset": "0x06b8",
+    "jp": "そんなしょーもないもん、いるか！{n}もっとましなもん、持ってこい。",
+    "tr": "Who wants that worthless junk?! Bring me something decent.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 14,
+    "pointer_offset": "0x001c",
+    "file_offset": "0x06fa",
+    "jp": "ヌルヌル？{n}ズーズーズズー・・・。",
+    "tr": "SQUELCH? SLURP, SLURP, SLURRRP...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 15,
+    "pointer_offset": "0x001e",
+    "file_offset": "0x071e",
+    "jp": "・・・・・・・・。",
+    "tr": "........",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 16,
+    "pointer_offset": "0x0020",
+    "file_offset": "0x0732",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 17,
+    "pointer_offset": "0x0022",
+    "file_offset": "0x0734",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 18,
+    "pointer_offset": "0x0024",
+    "file_offset": "0x0736",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 19,
+    "pointer_offset": "0x0026",
+    "file_offset": "0x0738",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 20,
+    "pointer_offset": "0x0028",
+    "file_offset": "0x073a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 21,
+    "pointer_offset": "0x002a",
+    "file_offset": "0x073c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 22,
+    "pointer_offset": "0x002c",
+    "file_offset": "0x073e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 23,
+    "pointer_offset": "0x002e",
+    "file_offset": "0x0740",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 24,
+    "pointer_offset": "0x0030",
+    "file_offset": "0x0742",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 25,
+    "pointer_offset": "0x0032",
+    "file_offset": "0x0744",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 26,
+    "pointer_offset": "0x0034",
+    "file_offset": "0x0746",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 27,
+    "pointer_offset": "0x0036",
+    "file_offset": "0x0748",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 28,
+    "pointer_offset": "0x0038",
+    "file_offset": "0x074a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 29,
+    "pointer_offset": "0x003a",
+    "file_offset": "0x074c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 30,
+    "pointer_offset": "0x003c",
+    "file_offset": "0x074e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 31,
+    "pointer_offset": "0x003e",
+    "file_offset": "0x0750",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 32,
+    "pointer_offset": "0x0040",
+    "file_offset": "0x0752",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 33,
+    "pointer_offset": "0x0042",
+    "file_offset": "0x0754",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 34,
+    "pointer_offset": "0x0044",
+    "file_offset": "0x0756",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 35,
+    "pointer_offset": "0x0046",
+    "file_offset": "0x0758",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 36,
+    "pointer_offset": "0x0048",
+    "file_offset": "0x075a",
+    "jp": "フム、モラオウカ。",
+    "tr": "HMM. I WILL TAKE IT.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 37,
+    "pointer_offset": "0x004a",
+    "file_offset": "0x076e",
+    "jp": "ソレ、モラウゾ。",
+    "tr": "THAT, I TAKE.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 38,
+    "pointer_offset": "0x004c",
+    "file_offset": "0x0780",
+    "jp": "特に要り用の物ではないが、{n}収めておくことにするぞえ。",
+    "tr": "I have no particular need of it, but I shall keep it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 39,
+    "pointer_offset": "0x004e",
+    "file_offset": "0x07b8",
+    "jp": "貴殿からの贈り物、{n}有難く、頂くことにしよう。",
+    "tr": "I gratefully accept your gift.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 40,
+    "pointer_offset": "0x0050",
+    "file_offset": "0x07e8",
+    "jp": "今回は、これで我慢してあげますわ。",
+    "tr": "This time, I'll just put up with it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 41,
+    "pointer_offset": "0x0052",
+    "file_offset": "0x080c",
+    "jp": "それ、俺にくれるのか？{n}まあ、もらっといてやるよ。",
+    "tr": "You're giving that to me? Fine, I'll take it off your hands.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 42,
+    "pointer_offset": "0x0054",
+    "file_offset": "0x0840",
+    "jp": "ちょっとぉ、他に何かないわけ？{n}まあ、仕方ないわね、もらってあげるわ。",
+    "tr": "Seriously, that's all you have? Oh, fine. I'll take it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 43,
+    "pointer_offset": "0x0056",
+    "file_offset": "0x0888",
+    "jp": "ありがとう、おじさん。{n}子供は素直に受け取らなきゃね。",
+    "tr": "Thanks, mister. A good kid knows when to accept a gift.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 44,
+    "pointer_offset": "0x0058",
+    "file_offset": "0x08c0",
+    "jp": "あたし、つまんなくても、物って大好き。{n}おじちゃん、ありがとね。",
+    "tr": "Even boring gifts are still gifts! Thanks, mister.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 45,
+    "pointer_offset": "0x005a",
+    "file_offset": "0x0902",
+    "jp": "まあ、嬉しい。{n}次はもっと、いいものくれるんでしょう？",
+    "tr": "Oh, how lovely. You'll bring me something even nicer next time, won't you?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 46,
+    "pointer_offset": "0x005c",
+    "file_offset": "0x093a",
+    "jp": "そんなの要らねえよ。{n}もっとくれ。",
+    "tr": "I don't need that. Give me more.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 47,
+    "pointer_offset": "0x005e",
+    "file_offset": "0x095e",
+    "jp": "豊かなことは、ええことじゃのう。{n}頂くぞい。",
+    "tr": "Abundance is a fine thing. I'll take it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 48,
+    "pointer_offset": "0x0060",
+    "file_offset": "0x098c",
+    "jp": "どうしてもと言うのでしたら、{n}仕方ない、引き取ってあげましょう。",
+    "tr": "If you insist, I suppose I can take it off your hands.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 49,
+    "pointer_offset": "0x0062",
+    "file_offset": "0x09ce",
+    "jp": "まぁそんぐらいで、まけといたろか。{n}おおきに。",
+    "tr": "Well, I reckon that'll do. Much obliged.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 50,
+    "pointer_offset": "0x0064",
+    "file_offset": "0x09fe",
+    "jp": "ピチャッピチャッ、{n}ズズー・・・。",
+    "tr": "SPLISH, SPLASH... SLURRRP...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 51,
+    "pointer_offset": "0x0066",
+    "file_offset": "0x0a22",
+    "jp": "・・・・・・・・。",
+    "tr": "........",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 52,
+    "pointer_offset": "0x0068",
+    "file_offset": "0x0a36",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 53,
+    "pointer_offset": "0x006a",
+    "file_offset": "0x0a38",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 54,
+    "pointer_offset": "0x006c",
+    "file_offset": "0x0a3a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 55,
+    "pointer_offset": "0x006e",
+    "file_offset": "0x0a3c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 56,
+    "pointer_offset": "0x0070",
+    "file_offset": "0x0a3e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 57,
+    "pointer_offset": "0x0072",
+    "file_offset": "0x0a40",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 58,
+    "pointer_offset": "0x0074",
+    "file_offset": "0x0a42",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 59,
+    "pointer_offset": "0x0076",
+    "file_offset": "0x0a44",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 60,
+    "pointer_offset": "0x0078",
+    "file_offset": "0x0a46",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 61,
+    "pointer_offset": "0x007a",
+    "file_offset": "0x0a48",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 62,
+    "pointer_offset": "0x007c",
+    "file_offset": "0x0a4a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 63,
+    "pointer_offset": "0x007e",
+    "file_offset": "0x0a4c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 64,
+    "pointer_offset": "0x0080",
+    "file_offset": "0x0a4e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 65,
+    "pointer_offset": "0x0082",
+    "file_offset": "0x0a50",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 66,
+    "pointer_offset": "0x0084",
+    "file_offset": "0x0a52",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 67,
+    "pointer_offset": "0x0086",
+    "file_offset": "0x0a54",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 68,
+    "pointer_offset": "0x0088",
+    "file_offset": "0x0a56",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 69,
+    "pointer_offset": "0x008a",
+    "file_offset": "0x0a58",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 70,
+    "pointer_offset": "0x008c",
+    "file_offset": "0x0a5a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 71,
+    "pointer_offset": "0x008e",
+    "file_offset": "0x0a5c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 72,
+    "pointer_offset": "0x0090",
+    "file_offset": "0x0a5e",
+    "jp": "ツネヅネ、嬉シイコトヲ、シテクレル。{n}人間ニ、シテオクニハ、モッタイナイナ。",
+    "tr": "YOU ALWAYS DO THINGS THAT PLEASE ME. IT IS A WASTE TO LEAVE YOU HUMAN.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 73,
+    "pointer_offset": "0x0092",
+    "file_offset": "0x0aac",
+    "jp": "オレ、ウレシイ。スゴク、ウレシイ。{n}コンゴトモ、ヨロシク。",
+    "tr": "ME HAPPY. VERY HAPPY. WE STAY TOGETHER.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 74,
+    "pointer_offset": "0x0094",
+    "file_offset": "0x0ae8",
+    "jp": "我らのきずな、{n}より堅固に結ばれていく。",
+    "tr": "The bond between us grows ever stronger.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 75,
+    "pointer_offset": "0x0096",
+    "file_offset": "0x0b12",
+    "jp": "貴殿に忠誠を誓う時も、{n}そう遠くはないだろう。",
+    "tr": "The day I swear my loyalty to you may not be far off.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 76,
+    "pointer_offset": "0x0098",
+    "file_offset": "0x0b42",
+    "jp": "そんなに私のことが気になりますの？{n}今夜、つきあってあげてもよくってよ。",
+    "tr": "Am I really on your mind that much? Perhaps I'll keep you company tonight.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 77,
+    "pointer_offset": "0x009a",
+    "file_offset": "0x0b8c",
+    "jp": "忠誠度アーップ！{n}＞俺の気持ちが上がった。",
+    "tr": "Loyalty up! > My feelings for you increased.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 78,
+    "pointer_offset": "0x009c",
+    "file_offset": "0x0bb8",
+    "jp": "あたし・・・、いつかきっと、{n}あなたのモノになったげる。",
+    "tr": "I... One day, I know I'll be yours.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 79,
+    "pointer_offset": "0x009e",
+    "file_offset": "0x0bf2",
+    "jp": "へえ、ボクの欲しい物よくわかるね。{n}おじさん、いいとこあるじゃん。",
+    "tr": "Wow, you really know what I like. You're not so bad, mister.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 80,
+    "pointer_offset": "0x00a0",
+    "file_offset": "0x0c36",
+    "jp": "ねぇ、おじちゃんって、{n}なんでこんなに優しいの。アリガトウ。",
+    "tr": "Why are you always so nice, mister? Thank you.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 81,
+    "pointer_offset": "0x00a2",
+    "file_offset": "0x0c74",
+    "jp": "あら素敵！プレゼントって、{n}幾つになっても、嬉しいものなのよね。",
+    "tr": "How lovely! No matter your age, a present is always a joy.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 82,
+    "pointer_offset": "0x00a4",
+    "file_offset": "0x0cb6",
+    "jp": "ふざけんじゃねえぞ、コラ！{n}スゲエ、嬉しいじゃねえか。",
+    "tr": "Don't screw with me, punk! Damn, this makes me happy!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 83,
+    "pointer_offset": "0x00a6",
+    "file_offset": "0x0cee",
+    "jp": "先の短い年寄りには、もったいないのう。{n}いつも感謝してるぞい。",
+    "tr": "This is too good for an old man with little time left. I am always grateful.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 84,
+    "pointer_offset": "0x00a8",
+    "file_offset": "0x0d2e",
+    "jp": "物欲を利用しようというのですか・・・。{n}・・・なるほどね。",
+    "tr": "Trying to buy my favor with material goods...? I see.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 85,
+    "pointer_offset": "0x00aa",
+    "file_offset": "0x0d6a",
+    "jp": "やったー、おおきに、ありがとう。{n}ごっつ嬉しいなぁ。",
+    "tr": "All right! Thanks a million. I'm over the moon!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 86,
+    "pointer_offset": "0x00ac",
+    "file_offset": "0x0da0",
+    "jp": "ズーズーズー！{n}ズーズズー！",
+    "tr": "SLURP, SLURP, SLURP! SLURP-SLURRRP!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 87,
+    "pointer_offset": "0x00ae",
+    "file_offset": "0x0dbe",
+    "jp": "・・・・・・・・。",
+    "tr": "........",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 88,
+    "pointer_offset": "0x00b0",
+    "file_offset": "0x0dd2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 89,
+    "pointer_offset": "0x00b2",
+    "file_offset": "0x0dd4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 90,
+    "pointer_offset": "0x00b4",
+    "file_offset": "0x0dd6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 91,
+    "pointer_offset": "0x00b6",
+    "file_offset": "0x0dd8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 92,
+    "pointer_offset": "0x00b8",
+    "file_offset": "0x0dda",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 93,
+    "pointer_offset": "0x00ba",
+    "file_offset": "0x0ddc",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 94,
+    "pointer_offset": "0x00bc",
+    "file_offset": "0x0dde",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 95,
+    "pointer_offset": "0x00be",
+    "file_offset": "0x0de0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 96,
+    "pointer_offset": "0x00c0",
+    "file_offset": "0x0de2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 97,
+    "pointer_offset": "0x00c2",
+    "file_offset": "0x0de4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 98,
+    "pointer_offset": "0x00c4",
+    "file_offset": "0x0de6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 99,
+    "pointer_offset": "0x00c6",
+    "file_offset": "0x0de8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 100,
+    "pointer_offset": "0x00c8",
+    "file_offset": "0x0dea",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 101,
+    "pointer_offset": "0x00ca",
+    "file_offset": "0x0dec",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 102,
+    "pointer_offset": "0x00cc",
+    "file_offset": "0x0dee",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 103,
+    "pointer_offset": "0x00ce",
+    "file_offset": "0x0df0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 104,
+    "pointer_offset": "0x00d0",
+    "file_offset": "0x0df2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 105,
+    "pointer_offset": "0x00d2",
+    "file_offset": "0x0df4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 106,
+    "pointer_offset": "0x00d4",
+    "file_offset": "0x0df6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 107,
+    "pointer_offset": "0x00d6",
+    "file_offset": "0x0df8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 108,
+    "pointer_offset": "0x00d8",
+    "file_offset": "0x0dfa",
+    "jp": "長イ、ツキアイニ、ナリソウダナ。",
+    "tr": "IT SEEMS WE WILL BE TOGETHER A LONG TIME.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 109,
+    "pointer_offset": "0x00da",
+    "file_offset": "0x0e1c",
+    "jp": "キサマ、ヨクシテクレル。{n}ダカラ、オレサマ、カワル。",
+    "tr": "YOU TREAT ME GOOD. SO I CHANGE.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 110,
+    "pointer_offset": "0x00dc",
+    "file_offset": "0x0e52",
+    "jp": "年々歳々花相似、歳々年々人不同・・・。{n}然し、我は永遠の忠誠を誓うなり。",
+    "tr": "Year after year, the flowers remain, while men grow old... Yet my loyalty shall be eternal.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 111,
+    "pointer_offset": "0x00de",
+    "file_offset": "0x0e9c",
+    "jp": "貴殿と出会えたことを、感謝する。{n}感謝だけでは足りんかもな・・・。",
+    "tr": "I am grateful that our paths crossed. Though perhaps gratitude alone is not enough...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 112,
+    "pointer_offset": "0x00e0",
+    "file_offset": "0x0ee0",
+    "jp": "今までつくしてくれたお礼をしたいわ。",
+    "tr": "I want to repay you for all you have done for me.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 113,
+    "pointer_offset": "0x00e2",
+    "file_offset": "0x0f06",
+    "jp": "俺も恩義を知らないわけじゃねぇからな。{n}いいぜ、業魔殿に連れていけよ。",
+    "tr": "I'm not one to forget a debt. All right, take me to the Gouma-den.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 114,
+    "pointer_offset": "0x00e4",
+    "file_offset": "0x0f4e",
+    "jp": "ここまでされちゃ、アタシだって・・・、{n}私を業魔殿へ連れてって！",
+    "tr": "After all you've done, even I... Take me to the Gouma-den!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 115,
+    "pointer_offset": "0x00e6",
+    "file_offset": "0x0f90",
+    "jp": "今度から、おじさんのこと、{n}お兄さんって呼ぶよ。いいだろ・・・。",
+    "tr": "From now on, I'll call you big brother instead of mister. That's okay, right...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 116,
+    "pointer_offset": "0x00e8",
+    "file_offset": "0x0fd2",
+    "jp": "おじちゃん、あたしがいないと困る？{n}いつも、いっしょにいてあげるね。",
+    "tr": "Would you miss me if I were gone, mister? I'll stay with you forever.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 117,
+    "pointer_offset": "0x00ea",
+    "file_offset": "0x1018",
+    "jp": "あなたの気持ちだけで十分なのに・・・。{n}アタシ、いつもあなたの側にいたい・・・。",
+    "tr": "Your feelings alone are enough... I want to stay by your side forever...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 118,
+    "pointer_offset": "0x00ec",
+    "file_offset": "0x106a",
+    "jp": "オレとおまえは、ウッキーだ。{n}これからも、よきウッキーでいよう。",
+    "tr": "You and me are monkey buddies. Let's stay good monkey buddies forever.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 119,
+    "pointer_offset": "0x00ee",
+    "file_offset": "0x10ac",
+    "jp": "わしのような老いぼれでよければ、{n}今後もお世話になろうかの、ほっほっほ。",
+    "tr": "If an old codger like me will do, I shall remain in your care. Ho ho ho!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 120,
+    "pointer_offset": "0x00f0",
+    "file_offset": "0x10f6",
+    "jp": "よくここまで俺の関心をひいたな。{n}ま、お約束だ。いいぜ、好きにしろよ。",
+    "tr": "You've done well to hold my interest this long. A promise is a promise. Do as you please.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 121,
+    "pointer_offset": "0x00f2",
+    "file_offset": "0x113e",
+    "jp": "いろいろ世話になったから、{n}このぐらいでなんか、お返しせんとなぁ。",
+    "tr": "You've done a lot for me. It's time I returned the favor.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 122,
+    "pointer_offset": "0x00f4",
+    "file_offset": "0x1182",
+    "jp": "ズズーッピチャッ！！！{n}ズズズーーッ！！！",
+    "tr": "SLUUURP-SPLASH!!! SLURRRRP!!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 123,
+    "pointer_offset": "0x00f6",
+    "file_offset": "0x11ae",
+    "jp": "・・・・・・・・。",
+    "tr": "........",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 124,
+    "pointer_offset": "0x00f8",
+    "file_offset": "0x11c2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 125,
+    "pointer_offset": "0x00fa",
+    "file_offset": "0x11c4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 126,
+    "pointer_offset": "0x00fc",
+    "file_offset": "0x11c6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 127,
+    "pointer_offset": "0x00fe",
+    "file_offset": "0x11c8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 128,
+    "pointer_offset": "0x0100",
+    "file_offset": "0x11ca",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 129,
+    "pointer_offset": "0x0102",
+    "file_offset": "0x11cc",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 130,
+    "pointer_offset": "0x0104",
+    "file_offset": "0x11ce",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 131,
+    "pointer_offset": "0x0106",
+    "file_offset": "0x11d0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 132,
+    "pointer_offset": "0x0108",
+    "file_offset": "0x11d2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 133,
+    "pointer_offset": "0x010a",
+    "file_offset": "0x11d4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 134,
+    "pointer_offset": "0x010c",
+    "file_offset": "0x11d6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 135,
+    "pointer_offset": "0x010e",
+    "file_offset": "0x11d8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 136,
+    "pointer_offset": "0x0110",
+    "file_offset": "0x11da",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 137,
+    "pointer_offset": "0x0112",
+    "file_offset": "0x11dc",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 138,
+    "pointer_offset": "0x0114",
+    "file_offset": "0x11de",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 139,
+    "pointer_offset": "0x0116",
+    "file_offset": "0x11e0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 140,
+    "pointer_offset": "0x0118",
+    "file_offset": "0x11e2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 141,
+    "pointer_offset": "0x011a",
+    "file_offset": "0x11e4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 142,
+    "pointer_offset": "0x011c",
+    "file_offset": "0x11e6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 143,
+    "pointer_offset": "0x011e",
+    "file_offset": "0x11e8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  }
+]

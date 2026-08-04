@@ -1,0 +1,3224 @@
+[
+  {
+    "index": 0,
+    "pointer_offset": "0x0000",
+    "file_offset": "0x0800",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 1,
+    "pointer_offset": "0x0002",
+    "file_offset": "0x0801",
+    "jp": "DragonーATM",
+    "tr": "Dragon_ATM",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 2,
+    "pointer_offset": "0x0004",
+    "file_offset": "0x080c",
+    "jp": "Stinger",
+    "tr": "Stinger",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 3,
+    "pointer_offset": "0x0006",
+    "file_offset": "0x0814",
+    "jp": "PZーFaust",
+    "tr": "PZ_Faust",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 4,
+    "pointer_offset": "0x0008",
+    "file_offset": "0x081d",
+    "jp": "Ryukaku",
+    "tr": "Dragon_Horn",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 5,
+    "pointer_offset": "0x000a",
+    "file_offset": "0x0825",
+    "jp": "GーHorn",
+    "tr": "Gjallerhorn",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 6,
+    "pointer_offset": "0x000c",
+    "file_offset": "0x082c",
+    "jp": "Tenketusin",
+    "tr": "Fatal_Needle",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 7,
+    "pointer_offset": "0x000e",
+    "file_offset": "0x0837",
+    "jp": "Potion",
+    "tr": "Medicine",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 8,
+    "pointer_offset": "0x0010",
+    "file_offset": "0x083e",
+    "jp": "AーKingyo",
+    "tr": "Phys_Ward",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 9,
+    "pointer_offset": "0x0012",
+    "file_offset": "0x0847",
+    "jp": "AーKakusei",
+    "tr": "Revival_Bead",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 10,
+    "pointer_offset": "0x0014",
+    "file_offset": "0x0851",
+    "jp": "DisーSTONE",
+    "tr": "Dis_Stone",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 11,
+    "pointer_offset": "0x0016",
+    "file_offset": "0x085b",
+    "jp": "DisーPALYZE",
+    "tr": "Dis_Paralyze",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 12,
+    "pointer_offset": "0x0018",
+    "file_offset": "0x0866",
+    "jp": "DisーPOISON",
+    "tr": "Dis_Poison",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 13,
+    "pointer_offset": "0x001a",
+    "file_offset": "0x0871",
+    "jp": "DisーCHARM",
+    "tr": "Dis_Charm",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 14,
+    "pointer_offset": "0x001c",
+    "file_offset": "0x087b",
+    "jp": "AーChinsin",
+    "tr": "Zen_Talisman",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 15,
+    "pointer_offset": "0x001e",
+    "file_offset": "0x0885",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 16,
+    "pointer_offset": "0x0020",
+    "file_offset": "0x0886",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 17,
+    "pointer_offset": "0x0022",
+    "file_offset": "0x0887",
+    "jp": "FinalーGuard",
+    "tr": "Final_Guard",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 18,
+    "pointer_offset": "0x0024",
+    "file_offset": "0x0893",
+    "jp": "AーChinkai",
+    "tr": "Magic_Ward",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 19,
+    "pointer_offset": "0x0026",
+    "file_offset": "0x089d",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 20,
+    "pointer_offset": "0x0028",
+    "file_offset": "0x089e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 21,
+    "pointer_offset": "0x002a",
+    "file_offset": "0x089f",
+    "jp": "Picture",
+    "tr": "Picture",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 22,
+    "pointer_offset": "0x002c",
+    "file_offset": "0x08a7",
+    "jp": "Statue",
+    "tr": "Statue",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 23,
+    "pointer_offset": "0x002e",
+    "file_offset": "0x08ae",
+    "jp": "Pot",
+    "tr": "Odd_Pot",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 24,
+    "pointer_offset": "0x0030",
+    "file_offset": "0x08b2",
+    "jp": "Orb",
+    "tr": "Bead",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 25,
+    "pointer_offset": "0x0032",
+    "file_offset": "0x08b6",
+    "jp": "ManaーStone",
+    "tr": "Life_Stone",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 26,
+    "pointer_offset": "0x0034",
+    "file_offset": "0x08c1",
+    "jp": "CakraーDrop",
+    "tr": "Chakra_Drop",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 27,
+    "pointer_offset": "0x0036",
+    "file_offset": "0x08cc",
+    "jp": "CakraーChip",
+    "tr": "Chakra_Chip",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 28,
+    "pointer_offset": "0x0038",
+    "file_offset": "0x08d7",
+    "jp": "CakraーPot",
+    "tr": "Chakra_Pot",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 29,
+    "pointer_offset": "0x003a",
+    "file_offset": "0x08e1",
+    "jp": "Soma",
+    "tr": "Soma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 30,
+    "pointer_offset": "0x003c",
+    "file_offset": "0x08e6",
+    "jp": "HangonーKo",
+    "tr": "Balm_of_Life",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 31,
+    "pointer_offset": "0x003e",
+    "file_offset": "0x08f0",
+    "jp": "Kinーtan",
+    "tr": "Golden_Pill",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 32,
+    "pointer_offset": "0x0040",
+    "file_offset": "0x08f8",
+    "jp": "SーHigh",
+    "tr": "S_High",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 33,
+    "pointer_offset": "0x0042",
+    "file_offset": "0x08ff",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 34,
+    "pointer_offset": "0x0044",
+    "file_offset": "0x0900",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 35,
+    "pointer_offset": "0x0046",
+    "file_offset": "0x0901",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 36,
+    "pointer_offset": "0x0048",
+    "file_offset": "0x0902",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 37,
+    "pointer_offset": "0x004a",
+    "file_offset": "0x0903",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 38,
+    "pointer_offset": "0x004c",
+    "file_offset": "0x0904",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 39,
+    "pointer_offset": "0x004e",
+    "file_offset": "0x0905",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 40,
+    "pointer_offset": "0x0050",
+    "file_offset": "0x0906",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 41,
+    "pointer_offset": "0x0052",
+    "file_offset": "0x0907",
+    "jp": "AーKinju",
+    "tr": "Cursed_Talisman",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 42,
+    "pointer_offset": "0x0054",
+    "file_offset": "0x090f",
+    "jp": "Gleipnir",
+    "tr": "Gleipnir",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 43,
+    "pointer_offset": "0x0056",
+    "file_offset": "0x0918",
+    "jp": "AーSikai",
+    "tr": "A_Shikai",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 44,
+    "pointer_offset": "0x0058",
+    "file_offset": "0x0920",
+    "jp": "StunーGrenade",
+    "tr": "Stun_Grenade",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 45,
+    "pointer_offset": "0x005a",
+    "file_offset": "0x092d",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 46,
+    "pointer_offset": "0x005c",
+    "file_offset": "0x092e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 47,
+    "pointer_offset": "0x005e",
+    "file_offset": "0x092f",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 48,
+    "pointer_offset": "0x0060",
+    "file_offset": "0x0930",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 49,
+    "pointer_offset": "0x0062",
+    "file_offset": "0x0931",
+    "jp": "AGI",
+    "tr": "Agi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 50,
+    "pointer_offset": "0x0064",
+    "file_offset": "0x0935",
+    "jp": "AGIRAO",
+    "tr": "Agilao",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 51,
+    "pointer_offset": "0x0066",
+    "file_offset": "0x093c",
+    "jp": "MahaーAGI",
+    "tr": "Maragi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 52,
+    "pointer_offset": "0x0068",
+    "file_offset": "0x0945",
+    "jp": "MahaーAGION",
+    "tr": "Maragion",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 53,
+    "pointer_offset": "0x006a",
+    "file_offset": "0x0950",
+    "jp": "BUFU",
+    "tr": "Bufu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 54,
+    "pointer_offset": "0x006c",
+    "file_offset": "0x0955",
+    "jp": "BUFULA",
+    "tr": "Bufula",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 55,
+    "pointer_offset": "0x006e",
+    "file_offset": "0x095c",
+    "jp": "MahaーBUFU",
+    "tr": "Mabufu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 56,
+    "pointer_offset": "0x0070",
+    "file_offset": "0x0966",
+    "jp": "MahaーBUFULA",
+    "tr": "Mabufula",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 57,
+    "pointer_offset": "0x0072",
+    "file_offset": "0x0972",
+    "jp": "ZIO",
+    "tr": "Zio",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 58,
+    "pointer_offset": "0x0074",
+    "file_offset": "0x0976",
+    "jp": "ZIONGA",
+    "tr": "Zionga",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 59,
+    "pointer_offset": "0x0076",
+    "file_offset": "0x097d",
+    "jp": "MahaーZIO",
+    "tr": "Mazio",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 60,
+    "pointer_offset": "0x0078",
+    "file_offset": "0x0986",
+    "jp": "MahaーZIONGA",
+    "tr": "Mazionga",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 61,
+    "pointer_offset": "0x007a",
+    "file_offset": "0x0992",
+    "jp": "ZAN",
+    "tr": "Zan",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 62,
+    "pointer_offset": "0x007c",
+    "file_offset": "0x0996",
+    "jp": "ZANMA",
+    "tr": "Zanma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 63,
+    "pointer_offset": "0x007e",
+    "file_offset": "0x099c",
+    "jp": "MahaーZAN",
+    "tr": "Mazan",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 64,
+    "pointer_offset": "0x0080",
+    "file_offset": "0x09a5",
+    "jp": "MahaーZANMA",
+    "tr": "Mazanma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 65,
+    "pointer_offset": "0x0082",
+    "file_offset": "0x09b0",
+    "jp": "PSY",
+    "tr": "Psi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 66,
+    "pointer_offset": "0x0084",
+    "file_offset": "0x09b4",
+    "jp": "PSYO",
+    "tr": "Psio",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 67,
+    "pointer_offset": "0x0086",
+    "file_offset": "0x09b9",
+    "jp": "MahaーPSY",
+    "tr": "Mapsi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 68,
+    "pointer_offset": "0x0088",
+    "file_offset": "0x09c2",
+    "jp": "MahaーPSYO",
+    "tr": "Mapsio",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 69,
+    "pointer_offset": "0x008a",
+    "file_offset": "0x09cc",
+    "jp": "HAMA",
+    "tr": "Hama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 70,
+    "pointer_offset": "0x008c",
+    "file_offset": "0x09d1",
+    "jp": "HANMA",
+    "tr": "Hanma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 71,
+    "pointer_offset": "0x008e",
+    "file_offset": "0x09d7",
+    "jp": "HAMAON",
+    "tr": "Hamaon",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 72,
+    "pointer_offset": "0x0090",
+    "file_offset": "0x09de",
+    "jp": "MUDO",
+    "tr": "Mudo",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 73,
+    "pointer_offset": "0x0092",
+    "file_offset": "0x09e3",
+    "jp": "MUDORA",
+    "tr": "Mudola",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 74,
+    "pointer_offset": "0x0094",
+    "file_offset": "0x09ea",
+    "jp": "MUDOーON",
+    "tr": "Mudoon",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 75,
+    "pointer_offset": "0x0096",
+    "file_offset": "0x09f2",
+    "jp": "MEGIDO",
+    "tr": "Megido",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 76,
+    "pointer_offset": "0x0098",
+    "file_offset": "0x09f9",
+    "jp": "MEGIDORA",
+    "tr": "Megidola",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 77,
+    "pointer_offset": "0x009a",
+    "file_offset": "0x0a02",
+    "jp": "MEGIDORAON",
+    "tr": "Megidolaon",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 78,
+    "pointer_offset": "0x009c",
+    "file_offset": "0x0a0d",
+    "jp": "DOLUMINER",
+    "tr": "Dormina",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 79,
+    "pointer_offset": "0x009e",
+    "file_offset": "0x0a17",
+    "jp": "MARINーKARIN",
+    "tr": "Marin_Karin",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 80,
+    "pointer_offset": "0x00a0",
+    "file_offset": "0x0a23",
+    "jp": "SIBABU",
+    "tr": "Shibaboo",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 81,
+    "pointer_offset": "0x00a2",
+    "file_offset": "0x0a2a",
+    "jp": "SHUFF",
+    "tr": "Shuff",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 82,
+    "pointer_offset": "0x00a4",
+    "file_offset": "0x0a30",
+    "jp": "SHUFFLE",
+    "tr": "Shuffle",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 83,
+    "pointer_offset": "0x00a6",
+    "file_offset": "0x0a38",
+    "jp": "SHUFFLER",
+    "tr": "Shuffler",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 84,
+    "pointer_offset": "0x00a8",
+    "file_offset": "0x0a41",
+    "jp": "KYO",
+    "tr": "Kyou",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 85,
+    "pointer_offset": "0x00aa",
+    "file_offset": "0x0a45",
+    "jp": "HAーKYO",
+    "tr": "Hakyou",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 86,
+    "pointer_offset": "0x00ac",
+    "file_offset": "0x0a4c",
+    "jp": "SIーKYO",
+    "tr": "Shikyou",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 87,
+    "pointer_offset": "0x00ae",
+    "file_offset": "0x0a53",
+    "jp": "SIPANI",
+    "tr": "Shipani",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 88,
+    "pointer_offset": "0x00b0",
+    "file_offset": "0x0a5a",
+    "jp": "HAPIRUMA",
+    "tr": "Hapilma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 89,
+    "pointer_offset": "0x00b2",
+    "file_offset": "0x0a63",
+    "jp": "MAKAーFUJI",
+    "tr": "Makafuji",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 90,
+    "pointer_offset": "0x00b4",
+    "file_offset": "0x0a6d",
+    "jp": "TARUーNda",
+    "tr": "Tarunda",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 91,
+    "pointer_offset": "0x00b6",
+    "file_offset": "0x0a76",
+    "jp": "RAKUーNda",
+    "tr": "Rakunda",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 92,
+    "pointer_offset": "0x00b8",
+    "file_offset": "0x0a7f",
+    "jp": "SUKUーNda",
+    "tr": "Sukunda",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 93,
+    "pointer_offset": "0x00ba",
+    "file_offset": "0x0a88",
+    "jp": "DEーKaja",
+    "tr": "Dekaja",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 94,
+    "pointer_offset": "0x00bc",
+    "file_offset": "0x0a90",
+    "jp": "DIA",
+    "tr": "Dia",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 95,
+    "pointer_offset": "0x00be",
+    "file_offset": "0x0a94",
+    "jp": "DIAーRAMA",
+    "tr": "Diarama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 96,
+    "pointer_offset": "0x00c0",
+    "file_offset": "0x0a9d",
+    "jp": "DIAーRAHAN",
+    "tr": "Diarahan",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 97,
+    "pointer_offset": "0x00c2",
+    "file_offset": "0x0aa7",
+    "jp": "MeーDIA",
+    "tr": "Media",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 98,
+    "pointer_offset": "0x00c4",
+    "file_offset": "0x0aae",
+    "jp": "MeーDIARAMA",
+    "tr": "Mediarama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 99,
+    "pointer_offset": "0x00c6",
+    "file_offset": "0x0ab9",
+    "jp": "MeーDIARAHAN",
+    "tr": "Mediarahan",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 100,
+    "pointer_offset": "0x00c8",
+    "file_offset": "0x0ac5",
+    "jp": "POSMーDi",
+    "tr": "Posumudi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 101,
+    "pointer_offset": "0x00ca",
+    "file_offset": "0x0acd",
+    "jp": "PHASーDi",
+    "tr": "Phasedi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 102,
+    "pointer_offset": "0x00cc",
+    "file_offset": "0x0ad5",
+    "jp": "CARMーDi",
+    "tr": "Charmdi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 103,
+    "pointer_offset": "0x00ce",
+    "file_offset": "0x0add",
+    "jp": "PETRAーDi",
+    "tr": "Petradi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 104,
+    "pointer_offset": "0x00d0",
+    "file_offset": "0x0ae6",
+    "jp": "CLOSーDi",
+    "tr": "Mutudi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 105,
+    "pointer_offset": "0x00d2",
+    "file_offset": "0x0aee",
+    "jp": "PALYLAーDi",
+    "tr": "Paraladi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 106,
+    "pointer_offset": "0x00d4",
+    "file_offset": "0x0af8",
+    "jp": "METAMOーDi",
+    "tr": "Metamodi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 107,
+    "pointer_offset": "0x00d6",
+    "file_offset": "0x0b02",
+    "jp": "PATORA",
+    "tr": "Patra",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 108,
+    "pointer_offset": "0x00d8",
+    "file_offset": "0x0b09",
+    "jp": "MeーPATORA",
+    "tr": "Me_Patra",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 109,
+    "pointer_offset": "0x00da",
+    "file_offset": "0x0b13",
+    "jp": "RECARM",
+    "tr": "Recarm",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 110,
+    "pointer_offset": "0x00dc",
+    "file_offset": "0x0b1a",
+    "jp": "SamaーRECARM",
+    "tr": "Samarecarm",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 111,
+    "pointer_offset": "0x00de",
+    "file_offset": "0x0b26",
+    "jp": "RECARMーDora",
+    "tr": "Recarmdra",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 112,
+    "pointer_offset": "0x00e0",
+    "file_offset": "0x0b32",
+    "jp": "TETRAJA",
+    "tr": "Tetraja",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 113,
+    "pointer_offset": "0x00e2",
+    "file_offset": "0x0b3a",
+    "jp": "TETRAーKarn",
+    "tr": "Tetrakarn",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 114,
+    "pointer_offset": "0x00e4",
+    "file_offset": "0x0b45",
+    "jp": "MAKARAーKarn",
+    "tr": "Makarakarn",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 115,
+    "pointer_offset": "0x00e6",
+    "file_offset": "0x0b51",
+    "jp": "TARUーKaja",
+    "tr": "Tarukaja",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 116,
+    "pointer_offset": "0x00e8",
+    "file_offset": "0x0b5b",
+    "jp": "RAKUーKaja",
+    "tr": "Rakukaja",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 117,
+    "pointer_offset": "0x00ea",
+    "file_offset": "0x0b65",
+    "jp": "SUKUーKaja",
+    "tr": "Sukukaja",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 118,
+    "pointer_offset": "0x00ec",
+    "file_offset": "0x0b6f",
+    "jp": "MAKAーKaja",
+    "tr": "Makakaja",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 119,
+    "pointer_offset": "0x00ee",
+    "file_offset": "0x0b79",
+    "jp": "DEーKunda",
+    "tr": "Dekunda",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 120,
+    "pointer_offset": "0x00f0",
+    "file_offset": "0x0b82",
+    "jp": "NECROMA",
+    "tr": "Necroma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 121,
+    "pointer_offset": "0x00f2",
+    "file_offset": "0x0b8a",
+    "jp": "SABBATH",
+    "tr": "Sabbath",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 122,
+    "pointer_offset": "0x00f4",
+    "file_offset": "0x0b92",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 123,
+    "pointer_offset": "0x00f6",
+    "file_offset": "0x0b93",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 124,
+    "pointer_offset": "0x00f8",
+    "file_offset": "0x0b94",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 125,
+    "pointer_offset": "0x00fa",
+    "file_offset": "0x0b95",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 126,
+    "pointer_offset": "0x00fc",
+    "file_offset": "0x0b96",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 127,
+    "pointer_offset": "0x00fe",
+    "file_offset": "0x0b97",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 128,
+    "pointer_offset": "0x0100",
+    "file_offset": "0x0b98",
+    "jp": "FIREーBREATH",
+    "tr": "Fire_Breath",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 129,
+    "pointer_offset": "0x0102",
+    "file_offset": "0x0ba4",
+    "jp": "HELLISHーFLAME",
+    "tr": "Hellfire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 130,
+    "pointer_offset": "0x0104",
+    "file_offset": "0x0bb2",
+    "jp": "BLIZZARDーBREATH",
+    "tr": "Blizzard_Breath",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 131,
+    "pointer_offset": "0x0106",
+    "file_offset": "0x0bc2",
+    "jp": "ABSOLUTELYーZERO",
+    "tr": "Glacial_Blast",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 132,
+    "pointer_offset": "0x0108",
+    "file_offset": "0x0bd2",
+    "jp": "SWINGーTHUNDER",
+    "tr": "Shock",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 133,
+    "pointer_offset": "0x010a",
+    "file_offset": "0x0be0",
+    "jp": "THUNDERーBREAK",
+    "tr": "Thunder_Break",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 134,
+    "pointer_offset": "0x010c",
+    "file_offset": "0x0bee",
+    "jp": "BRAINーBURST",
+    "tr": "Brain_Burst",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 135,
+    "pointer_offset": "0x010e",
+    "file_offset": "0x0bfa",
+    "jp": "OUTSIDER’SーLAW",
+    "tr": "Foul_Law",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 136,
+    "pointer_offset": "0x0110",
+    "file_offset": "0x0c09",
+    "jp": "VENOMーFLASH",
+    "tr": "Venom_Flash",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 137,
+    "pointer_offset": "0x0112",
+    "file_offset": "0x0c15",
+    "jp": "BRAHMAーSUTRA",
+    "tr": "Brahmastra",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 138,
+    "pointer_offset": "0x0114",
+    "file_offset": "0x0c22",
+    "jp": "BINDーVOICE",
+    "tr": "Bind_Voice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 139,
+    "pointer_offset": "0x0116",
+    "file_offset": "0x0c2d",
+    "jp": "MAGNETICーSTORM",
+    "tr": "Magnetic_Storm",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 140,
+    "pointer_offset": "0x0118",
+    "file_offset": "0x0c3c",
+    "jp": "PANICーVOICE",
+    "tr": "Panic_Voice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 141,
+    "pointer_offset": "0x011a",
+    "file_offset": "0x0c48",
+    "jp": "HAPPYーDANCE",
+    "tr": "Happy_Dance",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 142,
+    "pointer_offset": "0x011c",
+    "file_offset": "0x0c54",
+    "jp": "LAUGHINGーYAKUSI",
+    "tr": "Buddha's_Laugh",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 143,
+    "pointer_offset": "0x011e",
+    "file_offset": "0x0c64",
+    "jp": "VENOMーBREATH",
+    "tr": "Venom_Breath",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 144,
+    "pointer_offset": "0x0120",
+    "file_offset": "0x0c71",
+    "jp": "INSANITYーEYE",
+    "tr": "Insanity_Eyes",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 145,
+    "pointer_offset": "0x0122",
+    "file_offset": "0x0c7e",
+    "jp": "SEXYーDANCE",
+    "tr": "Sexy_Dance",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 146,
+    "pointer_offset": "0x0124",
+    "file_offset": "0x0c89",
+    "jp": "CRADLEーSONG",
+    "tr": "Lullaby",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 147,
+    "pointer_offset": "0x0126",
+    "file_offset": "0x0c95",
+    "jp": "PALYZEーEYE",
+    "tr": "Paralyzing_Glare",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 148,
+    "pointer_offset": "0x0128",
+    "file_offset": "0x0ca0",
+    "jp": "ARACHNOーWIRE",
+    "tr": "Arachno_Wire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 149,
+    "pointer_offset": "0x012a",
+    "file_offset": "0x0cad",
+    "jp": "PETRAーEYE",
+    "tr": "Petrifying_Glare",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 150,
+    "pointer_offset": "0x012c",
+    "file_offset": "0x0cb7",
+    "jp": "NURSE",
+    "tr": "Nurse",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 151,
+    "pointer_offset": "0x012e",
+    "file_offset": "0x0cbd",
+    "jp": "SAINTーSONG",
+    "tr": "Saint's_Song",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 152,
+    "pointer_offset": "0x0130",
+    "file_offset": "0x0cc8",
+    "jp": "HOLDーINーMYーARMS",
+    "tr": "Warm_Embrace",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 153,
+    "pointer_offset": "0x0132",
+    "file_offset": "0x0cd8",
+    "jp": "UNTOUCHEDーZONE",
+    "tr": "Barrier",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 154,
+    "pointer_offset": "0x0134",
+    "file_offset": "0x0ce7",
+    "jp": "GAEAーWALL",
+    "tr": "Earth_Wall",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 155,
+    "pointer_offset": "0x0136",
+    "file_offset": "0x0cf1",
+    "jp": "PENTAーWALL",
+    "tr": "Penta_Wall",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 156,
+    "pointer_offset": "0x0138",
+    "file_offset": "0x0cfc",
+    "jp": "BLOODーSUCKER",
+    "tr": "Life_Drain",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 157,
+    "pointer_offset": "0x013a",
+    "file_offset": "0x0d09",
+    "jp": "MIRRORーPRISON",
+    "tr": "Mirror_Prison",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 158,
+    "pointer_offset": "0x013c",
+    "file_offset": "0x0d17",
+    "jp": "PHOTO’NーSHOT",
+    "tr": "Photon_Shot",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 159,
+    "pointer_offset": "0x013e",
+    "file_offset": "0x0d24",
+    "jp": "FIOREーSPLENDIDO",
+    "tr": "Fiore_Splendido",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 160,
+    "pointer_offset": "0x0140",
+    "file_offset": "0x0d34",
+    "jp": "EVILーEYE",
+    "tr": "Evil_Gaze",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 161,
+    "pointer_offset": "0x0142",
+    "file_offset": "0x0d3d",
+    "jp": "DEATHーRING",
+    "tr": "Death_Ring",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 162,
+    "pointer_offset": "0x0144",
+    "file_offset": "0x0d48",
+    "jp": "DEMON’SーLURE",
+    "tr": "Demon's_Lure",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 163,
+    "pointer_offset": "0x0146",
+    "file_offset": "0x0d55",
+    "jp": "SPITEーSHOUT",
+    "tr": "Spite_Shout",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 164,
+    "pointer_offset": "0x0148",
+    "file_offset": "0x0d61",
+    "jp": "AQUAーWALL",
+    "tr": "Water_Wall",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 165,
+    "pointer_offset": "0x014a",
+    "file_offset": "0x0d6b",
+    "jp": "FLAMEーWALL",
+    "tr": "Flame_Wall",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 166,
+    "pointer_offset": "0x014c",
+    "file_offset": "0x0d76",
+    "jp": "PSYCHOーBARRIER",
+    "tr": "Psycho_Barrier",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 167,
+    "pointer_offset": "0x014e",
+    "file_offset": "0x0d85",
+    "jp": "JUDGMENT",
+    "tr": "Judgment",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 168,
+    "pointer_offset": "0x0150",
+    "file_offset": "0x0d8e",
+    "jp": "JUSTICEーHEAVEN",
+    "tr": "Holy_Wrath",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 169,
+    "pointer_offset": "0x0152",
+    "file_offset": "0x0d9d",
+    "jp": "VAMPIREーKISS",
+    "tr": "Vampire_Kiss",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 170,
+    "pointer_offset": "0x0154",
+    "file_offset": "0x0daa",
+    "jp": "SOULーJACK",
+    "tr": "Soul_Jack",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 171,
+    "pointer_offset": "0x0156",
+    "file_offset": "0x0db4",
+    "jp": "DEMON’SーLURE",
+    "tr": "Demon's_Lure",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 172,
+    "pointer_offset": "0x0158",
+    "file_offset": "0x0dc1",
+    "jp": "VOLCANICKER",
+    "tr": "Volcanicker",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 173,
+    "pointer_offset": "0x015a",
+    "file_offset": "0x0dcd",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 174,
+    "pointer_offset": "0x015c",
+    "file_offset": "0x0dce",
+    "jp": "CRYINGーSCREAM",
+    "tr": "Lamentation_Roar",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 175,
+    "pointer_offset": "0x015e",
+    "file_offset": "0x0ddc",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 176,
+    "pointer_offset": "0x0160",
+    "file_offset": "0x0ddd",
+    "jp": "MAGICーBULLET",
+    "tr": "Magic_Bullet",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 177,
+    "pointer_offset": "0x0162",
+    "file_offset": "0x0dea",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 178,
+    "pointer_offset": "0x0164",
+    "file_offset": "0x0deb",
+    "jp": "ANGEL’SーKISS",
+    "tr": "Angel's_Kiss",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 179,
+    "pointer_offset": "0x0166",
+    "file_offset": "0x0df8",
+    "jp": "DEMON’SーKISS",
+    "tr": "Demon's_Kiss",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 180,
+    "pointer_offset": "0x0168",
+    "file_offset": "0x0e05",
+    "jp": "VIRGINーPRAY",
+    "tr": "Maiden's_Prayer",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 181,
+    "pointer_offset": "0x016a",
+    "file_offset": "0x0e11",
+    "jp": "PSYCHOーBRUST",
+    "tr": "Psycho_Blast",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 182,
+    "pointer_offset": "0x016c",
+    "file_offset": "0x0e1e",
+    "jp": "LUCKYーSTEP",
+    "tr": "Lucky_Step",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 183,
+    "pointer_offset": "0x016e",
+    "file_offset": "0x0e29",
+    "jp": "SONICーBOOM",
+    "tr": "Vacuum_Wave",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 184,
+    "pointer_offset": "0x0170",
+    "file_offset": "0x0e34",
+    "jp": "HEYーHEYーHEY",
+    "tr": "Taunt",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 185,
+    "pointer_offset": "0x0172",
+    "file_offset": "0x0e40",
+    "jp": "ORAーORAーORA",
+    "tr": "Intimidate",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 186,
+    "pointer_offset": "0x0174",
+    "file_offset": "0x0e4c",
+    "jp": "ACTIVEーSONG",
+    "tr": "Rousing_Song",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 187,
+    "pointer_offset": "0x0176",
+    "file_offset": "0x0e58",
+    "jp": "DIEーHARD",
+    "tr": "Die_Hard",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 188,
+    "pointer_offset": "0x0178",
+    "file_offset": "0x0e61",
+    "jp": "VICEーGOSPEL",
+    "tr": "Vice_Gospel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 189,
+    "pointer_offset": "0x017a",
+    "file_offset": "0x0e6d",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 190,
+    "pointer_offset": "0x017c",
+    "file_offset": "0x0e6e",
+    "jp": "SHOOTINGー8STARS",
+    "tr": "Qixing_Jiangtian",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 191,
+    "pointer_offset": "0x017e",
+    "file_offset": "0x0e7e",
+    "jp": "BRIGHTENー7STARS",
+    "tr": "Six_Shining_Stars",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 192,
+    "pointer_offset": "0x0180",
+    "file_offset": "0x0e8e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 193,
+    "pointer_offset": "0x0182",
+    "file_offset": "0x0e8f",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 194,
+    "pointer_offset": "0x0184",
+    "file_offset": "0x0e90",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 195,
+    "pointer_offset": "0x0186",
+    "file_offset": "0x0e91",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 196,
+    "pointer_offset": "0x0188",
+    "file_offset": "0x0e92",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 197,
+    "pointer_offset": "0x018a",
+    "file_offset": "0x0e93",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 198,
+    "pointer_offset": "0x018c",
+    "file_offset": "0x0e94",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 199,
+    "pointer_offset": "0x018e",
+    "file_offset": "0x0e95",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 200,
+    "pointer_offset": "0x0190",
+    "file_offset": "0x0e96",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 201,
+    "pointer_offset": "0x0192",
+    "file_offset": "0x0e97",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 202,
+    "pointer_offset": "0x0194",
+    "file_offset": "0x0e98",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 203,
+    "pointer_offset": "0x0196",
+    "file_offset": "0x0e99",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 204,
+    "pointer_offset": "0x0198",
+    "file_offset": "0x0e9a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 205,
+    "pointer_offset": "0x019a",
+    "file_offset": "0x0e9b",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 206,
+    "pointer_offset": "0x019c",
+    "file_offset": "0x0e9c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 207,
+    "pointer_offset": "0x019e",
+    "file_offset": "0x0e9d",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 208,
+    "pointer_offset": "0x01a0",
+    "file_offset": "0x0e9e",
+    "jp": "CUTTINGーEDGE",
+    "tr": "Arm_Chopper",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 209,
+    "pointer_offset": "0x01a2",
+    "file_offset": "0x0eab",
+    "jp": "DEADLYーGOーROUND",
+    "tr": "Spin_Slash",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 210,
+    "pointer_offset": "0x01a4",
+    "file_offset": "0x0ebb",
+    "jp": "SKULLーCLACK",
+    "tr": "Skull_Crack",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 211,
+    "pointer_offset": "0x01a6",
+    "file_offset": "0x0ec7",
+    "jp": "DEATHーBOUND",
+    "tr": "Deathbound",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 212,
+    "pointer_offset": "0x01a8",
+    "file_offset": "0x0ed3",
+    "jp": "VENOMーZAPPER",
+    "tr": "Blight",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 213,
+    "pointer_offset": "0x01aa",
+    "file_offset": "0x0ee0",
+    "jp": "SCHNEIDENーAXT",
+    "tr": "Giant_Slice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 214,
+    "pointer_offset": "0x01ac",
+    "file_offset": "0x0eee",
+    "jp": "MACHーSTRIKE",
+    "tr": "Mach_Thrust",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 215,
+    "pointer_offset": "0x01ae",
+    "file_offset": "0x0efa",
+    "jp": "BARBECUE",
+    "tr": "Skewer",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 216,
+    "pointer_offset": "0x01b0",
+    "file_offset": "0x0f03",
+    "jp": "MINCEーMASTER",
+    "tr": "Atom_Slicer",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 217,
+    "pointer_offset": "0x01b2",
+    "file_offset": "0x0f10",
+    "jp": "MISTYーBLADE",
+    "tr": "Mist_Slash",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 218,
+    "pointer_offset": "0x01b4",
+    "file_offset": "0x0f1c",
+    "jp": "LIGHTNINGーBLADE",
+    "tr": "Lightning_Slash",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 219,
+    "pointer_offset": "0x01b6",
+    "file_offset": "0x0f2c",
+    "jp": "QUICKーMURDER",
+    "tr": "Lightning_Speed",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 220,
+    "pointer_offset": "0x01b8",
+    "file_offset": "0x0f39",
+    "jp": "MASSーGENOCIDE",
+    "tr": "Mass_Genocide",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 221,
+    "pointer_offset": "0x01ba",
+    "file_offset": "0x0f47",
+    "jp": "PHANTOMーEDGE",
+    "tr": "Empty_Wave",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 222,
+    "pointer_offset": "0x01bc",
+    "file_offset": "0x0f54",
+    "jp": "JAMPINGーKNEE",
+    "tr": "Jumping_Knee",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 223,
+    "pointer_offset": "0x01be",
+    "file_offset": "0x0f61",
+    "jp": "VULCANーKICK",
+    "tr": "Vulcan_Kick",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 224,
+    "pointer_offset": "0x01c0",
+    "file_offset": "0x0f6d",
+    "jp": "STUNーCRASH",
+    "tr": "Stun_Crash",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 225,
+    "pointer_offset": "0x01c2",
+    "file_offset": "0x0f78",
+    "jp": "FLYINGーKNEE",
+    "tr": "Flying_Knee",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 226,
+    "pointer_offset": "0x01c4",
+    "file_offset": "0x0f84",
+    "jp": "METEORーFIST",
+    "tr": "Meteor_Fist",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 227,
+    "pointer_offset": "0x01c6",
+    "file_offset": "0x0f90",
+    "jp": "WOLFーCLAW",
+    "tr": "Wolfpack_Fist",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 228,
+    "pointer_offset": "0x01c8",
+    "file_offset": "0x0f9a",
+    "jp": "MORTALーBLOW",
+    "tr": "Hell_Thrust",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 229,
+    "pointer_offset": "0x01ca",
+    "file_offset": "0x0fa6",
+    "jp": "INNGA",
+    "tr": "Cause_'n'_Effect",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 230,
+    "pointer_offset": "0x01cc",
+    "file_offset": "0x0fac",
+    "jp": "RASEN",
+    "tr": "Screw_Slap",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 231,
+    "pointer_offset": "0x01ce",
+    "file_offset": "0x0fb2",
+    "jp": "SCATTER",
+    "tr": "Tear_Apart",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 232,
+    "pointer_offset": "0x01d0",
+    "file_offset": "0x0fba",
+    "jp": "VENOMーCLAW",
+    "tr": "Venom_Claw",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 233,
+    "pointer_offset": "0x01d2",
+    "file_offset": "0x0fc5",
+    "jp": "PALYZEーCLAW",
+    "tr": "Stun_Claw",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 234,
+    "pointer_offset": "0x01d4",
+    "file_offset": "0x0fd1",
+    "jp": "FLAPーWINGS",
+    "tr": "Wing_Flap",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 235,
+    "pointer_offset": "0x01d6",
+    "file_offset": "0x0fdc",
+    "jp": "VENOMーNEEDLE",
+    "tr": "Venom_Needle",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 236,
+    "pointer_offset": "0x01d8",
+    "file_offset": "0x0fe9",
+    "jp": "PALYZEーNEEDLE",
+    "tr": "Paralyze_Needle",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 237,
+    "pointer_offset": "0x01da",
+    "file_offset": "0x0ff7",
+    "jp": "MINCEーNEEDLE",
+    "tr": "Mince_Needle",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 238,
+    "pointer_offset": "0x01dc",
+    "file_offset": "0x1004",
+    "jp": "SNIPE",
+    "tr": "Aim",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 239,
+    "pointer_offset": "0x01de",
+    "file_offset": "0x100a",
+    "jp": "HAPPYーTRIGGER",
+    "tr": "Random_Fire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 240,
+    "pointer_offset": "0x01e0",
+    "file_offset": "0x1018",
+    "jp": "LUCKYーTRIGGER",
+    "tr": "Lucky_Trigger",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 241,
+    "pointer_offset": "0x01e2",
+    "file_offset": "0x1026",
+    "jp": "PICKING",
+    "tr": "Peck",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 242,
+    "pointer_offset": "0x01e4",
+    "file_offset": "0x102e",
+    "jp": "BIRDーGIMLET",
+    "tr": "Bird_Gimlet",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 243,
+    "pointer_offset": "0x01e6",
+    "file_offset": "0x103a",
+    "jp": "CHEWING",
+    "tr": "Bite_Off",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 244,
+    "pointer_offset": "0x01e8",
+    "file_offset": "0x1042",
+    "jp": "SPIRALーBITE",
+    "tr": "Spiral_Bite",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 245,
+    "pointer_offset": "0x01ea",
+    "file_offset": "0x104e",
+    "jp": "TACKLE",
+    "tr": "Tackle",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 246,
+    "pointer_offset": "0x01ec",
+    "file_offset": "0x1055",
+    "jp": "LARIAT",
+    "tr": "Lariat",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 247,
+    "pointer_offset": "0x01ee",
+    "file_offset": "0x105c",
+    "jp": "GUILLOTINEーHEEL",
+    "tr": "Guillotine_Heel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 248,
+    "pointer_offset": "0x01f0",
+    "file_offset": "0x106c",
+    "jp": "VENOMーBITE",
+    "tr": "Venom_Bite",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 249,
+    "pointer_offset": "0x01f2",
+    "file_offset": "0x1077",
+    "jp": "CHARMーBITE",
+    "tr": "Charm_Bite",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 250,
+    "pointer_offset": "0x01f4",
+    "file_offset": "0x1082",
+    "jp": "PETRAーBITE",
+    "tr": "Stone_Bite",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 251,
+    "pointer_offset": "0x01f6",
+    "file_offset": "0x108d",
+    "jp": "ETHERーMACE",
+    "tr": "Ether_Mace",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 252,
+    "pointer_offset": "0x01f8",
+    "file_offset": "0x1098",
+    "jp": "FLAREーRUSH",
+    "tr": "Flare_Rush",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 253,
+    "pointer_offset": "0x01fa",
+    "file_offset": "0x10a3",
+    "jp": "RUMBLEーRUSH",
+    "tr": "Rumble_Rush",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 254,
+    "pointer_offset": "0x01fc",
+    "file_offset": "0x10af",
+    "jp": "BLOODYーFESTA",
+    "tr": "Chi_Blast",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 255,
+    "pointer_offset": "0x01fe",
+    "file_offset": "0x10bc",
+    "jp": "FIREーFISTーAMEN",
+    "tr": "Cauterizing_Fist",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 256,
+    "pointer_offset": "0x0200",
+    "file_offset": "0x10cb",
+    "jp": "HORSEーSHOE",
+    "tr": "Horse-Leg_Kick",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 257,
+    "pointer_offset": "0x0202",
+    "file_offset": "0x10d6",
+    "jp": "KARATAKE",
+    "tr": "Bamboo_Slice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 258,
+    "pointer_offset": "0x0204",
+    "file_offset": "0x10df",
+    "jp": "CRITICALーSLASH",
+    "tr": "Critical_Slash",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 259,
+    "pointer_offset": "0x0206",
+    "file_offset": "0x10ee",
+    "jp": "CHINーLOCK",
+    "tr": "Strangle_Drop",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 260,
+    "pointer_offset": "0x0208",
+    "file_offset": "0x10f8",
+    "jp": "KILLINGーSTEP",
+    "tr": "Killing_Step",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 261,
+    "pointer_offset": "0x020a",
+    "file_offset": "0x1105",
+    "jp": "HASSOーBEAT",
+    "tr": "Hassou_Tobi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 262,
+    "pointer_offset": "0x020c",
+    "file_offset": "0x1110",
+    "jp": "AMAZINGーGNAW",
+    "tr": "Eat_Whole",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 263,
+    "pointer_offset": "0x020e",
+    "file_offset": "0x111d",
+    "jp": "FANATICーEATER",
+    "tr": "Swallow",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 264,
+    "pointer_offset": "0x0210",
+    "file_offset": "0x112b",
+    "jp": "DIABLEーDEーCORPS",
+    "tr": "Devil_in_the_Flesh",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 265,
+    "pointer_offset": "0x0212",
+    "file_offset": "0x113b",
+    "jp": "MASHーFLESH",
+    "tr": "Arm_Swing",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 266,
+    "pointer_offset": "0x0214",
+    "file_offset": "0x1146",
+    "jp": "KAMIKAZE",
+    "tr": "Meat_Bullet",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 267,
+    "pointer_offset": "0x0216",
+    "file_offset": "0x114f",
+    "jp": "CHERRYーBLOSSOM",
+    "tr": "Scattered_Flowers",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 268,
+    "pointer_offset": "0x0218",
+    "file_offset": "0x115e",
+    "jp": "TATAMIーSHIELD",
+    "tr": "Tatami_Shield",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 269,
+    "pointer_offset": "0x021a",
+    "file_offset": "0x116c",
+    "jp": "FURIーFURIーWALL",
+    "tr": "Frilly_Wall",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 270,
+    "pointer_offset": "0x021c",
+    "file_offset": "0x117b",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 271,
+    "pointer_offset": "0x021e",
+    "file_offset": "0x117c",
+    "jp": "RUNーAWAY",
+    "tr": "ESCAPE",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 272,
+    "pointer_offset": "0x0220",
+    "file_offset": "0x1185",
+    "jp": "GENOCIDEーFIST",
+    "tr": "GENOCIDE_FIST",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 273,
+    "pointer_offset": "0x0222",
+    "file_offset": "0x1193",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 274,
+    "pointer_offset": "0x0224",
+    "file_offset": "0x1194",
+    "jp": "MISSーCOLDーHEART",
+    "tr": "Cold_Mistress",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 275,
+    "pointer_offset": "0x0226",
+    "file_offset": "0x11a4",
+    "jp": "REST",
+    "tr": "REST",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 276,
+    "pointer_offset": "0x0228",
+    "file_offset": "0x11a9",
+    "jp": "DEAD",
+    "tr": "DEAD",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 277,
+    "pointer_offset": "0x022a",
+    "file_offset": "0x11ae",
+    "jp": "UNDEAD",
+    "tr": "UNDEAD",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 278,
+    "pointer_offset": "0x022c",
+    "file_offset": "0x11b5",
+    "jp": "STONE",
+    "tr": "STONE",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 279,
+    "pointer_offset": "0x022e",
+    "file_offset": "0x11bb",
+    "jp": "PALYZE",
+    "tr": "PALYZE",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 280,
+    "pointer_offset": "0x0230",
+    "file_offset": "0x11c2",
+    "jp": "VAMP",
+    "tr": "VAMP",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 281,
+    "pointer_offset": "0x0232",
+    "file_offset": "0x11c7",
+    "jp": "MIRROR",
+    "tr": "MIRROR",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 282,
+    "pointer_offset": "0x0234",
+    "file_offset": "0x11ce",
+    "jp": "CARD",
+    "tr": "CARD",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 283,
+    "pointer_offset": "0x0236",
+    "file_offset": "0x11d3",
+    "jp": "CHARM",
+    "tr": "CHARM",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 284,
+    "pointer_offset": "0x0238",
+    "file_offset": "0x11d9",
+    "jp": "FREEZE",
+    "tr": "FREEZE",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 285,
+    "pointer_offset": "0x023a",
+    "file_offset": "0x11e0",
+    "jp": "SHOCK",
+    "tr": "SHOCK",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 286,
+    "pointer_offset": "0x023c",
+    "file_offset": "0x11e6",
+    "jp": "SLEEP",
+    "tr": "SLEEP",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 287,
+    "pointer_offset": "0x023e",
+    "file_offset": "0x11ec",
+    "jp": "BIND",
+    "tr": "BIND",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 288,
+    "pointer_offset": "0x0240",
+    "file_offset": "0x11f1",
+    "jp": "PANIC",
+    "tr": "PANIC",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 289,
+    "pointer_offset": "0x0242",
+    "file_offset": "0x11f7",
+    "jp": "HAPPY",
+    "tr": "HAPPY",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 290,
+    "pointer_offset": "0x0244",
+    "file_offset": "0x11fd",
+    "jp": "POISON",
+    "tr": "POISON",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 291,
+    "pointer_offset": "0x0246",
+    "file_offset": "0x1204",
+    "jp": "CLOSE",
+    "tr": "MUTE",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 292,
+    "pointer_offset": "0x0248",
+    "file_offset": "0x120a",
+    "jp": "HP",
+    "tr": "HP",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 293,
+    "pointer_offset": "0x024a",
+    "file_offset": "0x120d",
+    "jp": "MP",
+    "tr": "MP",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 294,
+    "pointer_offset": "0x024c",
+    "file_offset": "0x1210",
+    "jp": "HP＆MP",
+    "tr": "HP&MP",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 295,
+    "pointer_offset": "0x024e",
+    "file_offset": "0x1216",
+    "jp": "MAX＿HP",
+    "tr": "MAX_HP",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 296,
+    "pointer_offset": "0x0250",
+    "file_offset": "0x121d",
+    "jp": "攻撃力",
+    "tr": "Atk",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 297,
+    "pointer_offset": "0x0252",
+    "file_offset": "0x1221",
+    "jp": "防御力",
+    "tr": "Def",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 298,
+    "pointer_offset": "0x0254",
+    "file_offset": "0x1225",
+    "jp": "命中力",
+    "tr": "Acc",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 299,
+    "pointer_offset": "0x0256",
+    "file_offset": "0x1229",
+    "jp": "魔法威力",
+    "tr": "Magic",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 300,
+    "pointer_offset": "0x0258",
+    "file_offset": "0x122e",
+    "jp": "Level",
+    "tr": "Level",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 301,
+    "pointer_offset": "0x025a",
+    "file_offset": "0x1234",
+    "jp": "Now＿in＿{OP:a3}{OP:a0}",
+    "tr": "Now_in_{OP:a3}{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 302,
+    "pointer_offset": "0x025c",
+    "file_offset": "0x123e",
+    "jp": "SWORD{OP:a0}",
+    "tr": "SWORD{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 303,
+    "pointer_offset": "0x025e",
+    "file_offset": "0x1245",
+    "jp": "GUN{OP:a0}",
+    "tr": "GUN{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 304,
+    "pointer_offset": "0x0260",
+    "file_offset": "0x124a",
+    "jp": "{OP:a2}{OP:a0}",
+    "tr": "{OP:a2}{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 305,
+    "pointer_offset": "0x0262",
+    "file_offset": "0x124d",
+    "jp": "【{OP:a1}】{OP:a0}",
+    "tr": "[{OP:a1}]{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 306,
+    "pointer_offset": "0x0264",
+    "file_offset": "0x1252",
+    "jp": "COMP{OP:a0}",
+    "tr": "COMP{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 307,
+    "pointer_offset": "0x0266",
+    "file_offset": "0x1258",
+    "jp": "GUARD{OP:a0}",
+    "tr": "GUARD{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 308,
+    "pointer_offset": "0x0268",
+    "file_offset": "0x125f",
+    "jp": "MOVE{OP:a0}",
+    "tr": "MOVE{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 309,
+    "pointer_offset": "0x026a",
+    "file_offset": "0x1265",
+    "jp": "RETURN{OP:a0}",
+    "tr": "RETURN{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 310,
+    "pointer_offset": "0x026c",
+    "file_offset": "0x126d",
+    "jp": "ESCAPE{OP:a0}",
+    "tr": "ESCAPE{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 311,
+    "pointer_offset": "0x026e",
+    "file_offset": "0x1275",
+    "jp": "GUARD{OP:a0}",
+    "tr": "GUARD{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 312,
+    "pointer_offset": "0x0270",
+    "file_offset": "0x127c",
+    "jp": "ATTACK{OP:a0}",
+    "tr": "ATTACK{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 313,
+    "pointer_offset": "0x0272",
+    "file_offset": "0x1284",
+    "jp": "Boycott{OP:a0}",
+    "tr": "Boycott{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 314,
+    "pointer_offset": "0x0274",
+    "file_offset": "0x128d",
+    "jp": "GO{OP:a0}",
+    "tr": "GO{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 315,
+    "pointer_offset": "0x0276",
+    "file_offset": "0x1291",
+    "jp": "OFFENSE{OP:a0}",
+    "tr": "OFFENSE{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 316,
+    "pointer_offset": "0x0278",
+    "file_offset": "0x129a",
+    "jp": "DEFENSE{OP:a0}",
+    "tr": "DEFENSE{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 317,
+    "pointer_offset": "0x027a",
+    "file_offset": "0x12a3",
+    "jp": "＿MAGIC{OP:a0}",
+    "tr": "_MAGIC{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 318,
+    "pointer_offset": "0x027c",
+    "file_offset": "0x12ab",
+    "jp": "＿EXTRA{OP:a0}",
+    "tr": "_EXTRA{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 319,
+    "pointer_offset": "0x027e",
+    "file_offset": "0x12b3",
+    "jp": "ー会心ー{OP:a0}",
+    "tr": "CRITICAL{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 320,
+    "pointer_offset": "0x0280",
+    "file_offset": "0x12b9",
+    "jp": "ー必殺ー{OP:a0}",
+    "tr": "_FATAL_{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 321,
+    "pointer_offset": "0x0282",
+    "file_offset": "0x12bf",
+    "jp": "ー反射ー{OP:a0}",
+    "tr": "_REFLECT_{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 322,
+    "pointer_offset": "0x0284",
+    "file_offset": "0x12c5",
+    "jp": "ー物理反射ー{OP:a0}",
+    "tr": "Phys_Rfl{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 323,
+    "pointer_offset": "0x0286",
+    "file_offset": "0x12cd",
+    "jp": "ー魔法反射ー{OP:a0}",
+    "tr": "MAG_REFLECT{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 324,
+    "pointer_offset": "0x0288",
+    "file_offset": "0x12d5",
+    "jp": "ー{OP:a2}ー{OP:a0}",
+    "tr": "_{OP:a2}_{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 325,
+    "pointer_offset": "0x028a",
+    "file_offset": "0x12da",
+    "jp": "ー呪殺防御ー{OP:a0}",
+    "tr": "DEATH_GUARD{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 326,
+    "pointer_offset": "0x028c",
+    "file_offset": "0x12e2",
+    "jp": "吸収{OP:a0}",
+    "tr": "DRAIN{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 327,
+    "pointer_offset": "0x028e",
+    "file_offset": "0x12e6",
+    "jp": "Damage＿{NUM}{OP:a0}",
+    "tr": "Damage_{NUM}{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 328,
+    "pointer_offset": "0x0290",
+    "file_offset": "0x12f0",
+    "jp": "無効果{OP:a0}",
+    "tr": "No_Effect{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 329,
+    "pointer_offset": "0x0292",
+    "file_offset": "0x12f5",
+    "jp": "効果持続中ー無効ー{OP:a0}",
+    "tr": "Already_Up{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 330,
+    "pointer_offset": "0x0294",
+    "file_offset": "0x1300",
+    "jp": "回避{OP:a0}",
+    "tr": "Dodge{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 331,
+    "pointer_offset": "0x0296",
+    "file_offset": "0x1304",
+    "jp": "失敗{OP:a0}",
+    "tr": "Miss{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 332,
+    "pointer_offset": "0x0298",
+    "file_offset": "0x1308",
+    "jp": "攻撃範囲外{OP:a0}",
+    "tr": "Outranged{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 333,
+    "pointer_offset": "0x029a",
+    "file_offset": "0x130f",
+    "jp": "{OP:a4}＿量無{OP:a0}",
+    "tr": "{OP:a4}_Empty{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 334,
+    "pointer_offset": "0x029c",
+    "file_offset": "0x1315",
+    "jp": "{OP:a4}＿不足{OP:a0}",
+    "tr": "No_{OP:a4}{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 335,
+    "pointer_offset": "0x029e",
+    "file_offset": "0x131b",
+    "jp": "{OP:a4}＿回復{OP:a0}",
+    "tr": "{OP:a4}_Up{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 336,
+    "pointer_offset": "0x02a0",
+    "file_offset": "0x1321",
+    "jp": "{OP:a3}＿回復{OP:a0}",
+    "tr": "{OP:a3}_Up{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 337,
+    "pointer_offset": "0x02a2",
+    "file_offset": "0x1327",
+    "jp": "正気奪回{OP:a0}",
+    "tr": "Sane{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 338,
+    "pointer_offset": "0x02a4",
+    "file_offset": "0x132d",
+    "jp": "復活{OP:a0}",
+    "tr": "Revived{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 339,
+    "pointer_offset": "0x02a6",
+    "file_offset": "0x1331",
+    "jp": "{OP:a4}＿UP↑{OP:a0}",
+    "tr": "{OP:a4}_UP↑{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 340,
+    "pointer_offset": "0x02a8",
+    "file_offset": "0x1338",
+    "jp": "{OP:a4}＿DOWN↓{OP:a0}",
+    "tr": "{OP:a4}_DOWN↓{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 341,
+    "pointer_offset": "0x02aa",
+    "file_offset": "0x1341",
+    "jp": "防御壁＿出現{OP:a0}",
+    "tr": "Barrier_Up{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 342,
+    "pointer_offset": "0x02ac",
+    "file_offset": "0x1349",
+    "jp": "反射壁＿出現{OP:a0}",
+    "tr": "Repel_Up{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 343,
+    "pointer_offset": "0x02ae",
+    "file_offset": "0x1351",
+    "jp": "Kaja＿解除{OP:a0}",
+    "tr": "Kaja_Off{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 344,
+    "pointer_offset": "0x02b0",
+    "file_offset": "0x135a",
+    "jp": "Kunda＿解除{OP:a0}",
+    "tr": "Kunda_Off{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 345,
+    "pointer_offset": "0x02b2",
+    "file_offset": "0x1364",
+    "jp": "Protect{OP:a0}",
+    "tr": "Protect{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 346,
+    "pointer_offset": "0x02b4",
+    "file_offset": "0x136d",
+    "jp": "【AーSikai】＿消滅{OP:a0}",
+    "tr": "A-Shikai_Off{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 347,
+    "pointer_offset": "0x02b6",
+    "file_offset": "0x137b",
+    "jp": "ー弾切ー{OP:a0}",
+    "tr": "No_Ammo{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 348,
+    "pointer_offset": "0x02b8",
+    "file_offset": "0x1381",
+    "jp": "EXTERMINATE{OP:a0}",
+    "tr": "EXTERMINATED{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 349,
+    "pointer_offset": "0x02ba",
+    "file_offset": "0x138e",
+    "jp": "{OP:a3}{OP:a0}",
+    "tr": "{OP:a3}{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 350,
+    "pointer_offset": "0x02bc",
+    "file_offset": "0x1391",
+    "jp": "ATTACK{OP:a0}",
+    "tr": "ATTACK{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 351,
+    "pointer_offset": "0x02be",
+    "file_offset": "0x1399",
+    "jp": "OFFENSE",
+    "tr": "OFFENSE",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 352,
+    "pointer_offset": "0x02c0",
+    "file_offset": "0x13a1",
+    "jp": "DEFENSE",
+    "tr": "DEFENSE",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 353,
+    "pointer_offset": "0x02c2",
+    "file_offset": "0x13a9",
+    "jp": "＿MAGIC",
+    "tr": "_MAGIC",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 354,
+    "pointer_offset": "0x02c4",
+    "file_offset": "0x13b0",
+    "jp": "＿EXTRA",
+    "tr": "_EXTRA",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 355,
+    "pointer_offset": "0x02c6",
+    "file_offset": "0x13b7",
+    "jp": "COMP＿UNIT＿回復{OP:a0}",
+    "tr": "COMP_Healed{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 356,
+    "pointer_offset": "0x02c8",
+    "file_offset": "0x13c5",
+    "jp": "COMP＿UNIT＿復活{OP:a0}",
+    "tr": "COMP_Revived{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 357,
+    "pointer_offset": "0x02ca",
+    "file_offset": "0x13d3",
+    "jp": "ー不所持ー{OP:a0}",
+    "tr": "NOT_POSSESS{OP:a0}",
+    "reviewed": false,
+    "excluded": false
+  }
+]

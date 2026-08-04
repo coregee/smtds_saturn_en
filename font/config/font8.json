@@ -1,0 +1,39 @@
+{
+  "file": "FONT8.FON",
+  "atlas": {
+    "file": "../atlas/font8.json",
+    "columns": 16,
+    "scale": 4
+  },
+  "format": {
+    "width": 8,
+    "height": 8,
+    "bpp": 1,
+    "row_stride": 1,
+    "glyph_stride": 8
+  },
+  "repack": {
+    "use_font_file": true,
+    "preserve_unreplaced": true,
+    "source": "../source/galmuri7/Galmuri7.ttf",
+    "render": {
+      "size": 7,
+      "placement": "origin",
+      "anchor": "la",
+      "offset_x": 0,
+      "offset_y": 0,
+      "stroke_width": 0,
+      "antialias": true,
+      "glyph_offsets": [
+        {
+          "characters": "gjpqy,",
+          "offset_y": -1
+        }
+      ]
+    },
+    "metrics": {
+      "code_limit": 256,
+      "measurement": "ink"
+    }
+  }
+}

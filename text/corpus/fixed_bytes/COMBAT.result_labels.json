@@ -1,0 +1,18 @@
+[
+  {
+    "key": "life_stones",
+    "source_hex": "5d4c45",
+    "jp": "ませき",
+    "tr": "Life Stones",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "key": "beads",
+    "source_hex": "5c41ce7546",
+    "jp": "ほうぎょく",
+    "tr": "Beads",
+    "reviewed": false,
+    "excluded": false
+  }
+]

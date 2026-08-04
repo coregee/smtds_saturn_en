@@ -1,0 +1,46 @@
+{
+  "actions": {
+    "recommend": {
+      "offset_x": 0,
+      "offset_y": 0,
+      "selection_box": {
+        "offset_x": 0,
+        "offset_y": 0,
+        "width": 40,
+        "height": 16
+      }
+    },
+    "unequip": {
+      "offset_x": 0,
+      "offset_y": 0,
+      "selection_box": {
+        "offset_x": 0,
+        "offset_y": 0,
+        "width": 40,
+        "height": 16
+      }
+    }
+  },
+  "item_names": {
+    "offset_x": 0,
+    "offset_y": -1
+  },
+  "base_stats": {
+    "strength": { "offset_x": -6, "offset_y": 0 },
+    "intelligence": { "offset_x": -6, "offset_y": 0 },
+    "magic": { "offset_x": -6, "offset_y": 0 },
+    "vitality": { "offset_x": -6, "offset_y": 0 },
+    "agility": { "offset_x": -6, "offset_y": 0 },
+    "luck": { "offset_x": -6, "offset_y": 0 }
+  },
+  "derived_stats": {
+    "sword_attack": { "offset_x": -16, "offset_y": 0 },
+    "sword_accuracy": { "offset_x": -16, "offset_y": 0 },
+    "gun_attack": { "offset_x": -16, "offset_y": 0 },
+    "gun_accuracy": { "offset_x": -16, "offset_y": 0 },
+    "defense": { "offset_x": -16, "offset_y": 0 },
+    "evasion": { "offset_x": -16, "offset_y": 0 },
+    "magic_power": { "offset_x": -16, "offset_y": 0 },
+    "magic_effect": { "offset_x": -16, "offset_y": 0 }
+  }
+}

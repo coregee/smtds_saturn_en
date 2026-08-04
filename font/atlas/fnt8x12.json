@@ -1,0 +1,39 @@
+{
+  "file": "FNT8X12.FON",
+  "note": "Main glyph mapping for battle/console messages. Don't need to replace.",
+  "atlas": {
+    "numbers": [
+      {
+        "replace": false,
+        "start": 1,
+        "characters": "0123456789"
+      }
+    ],
+    "letters": [
+      {
+        "replace": false,
+        "start": 12,
+        "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      },
+      {
+        "replace": false,
+        "start": 38,
+        "characters": "abcdefghijklnmopqrstuvwxyz"
+      }
+    ],
+    "symbols": [
+      {
+        "replace": false,
+        "0": { "　": " " },
+        "64": { "ー": "-" },
+        "65": { "＿": "_" },
+        "68": { "＆": "&" },
+        "69": { "【": "[" },
+        "70": { "】": "]" },
+        "71": { "’": "'" },
+        "66": "↑",
+        "67": "↓"
+      }
+    ]
+  }
+}

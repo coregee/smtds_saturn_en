@@ -1,0 +1,154 @@
+[
+  {
+    "file_offset": "0x0000",
+    "word_count": 22,
+    "jp": "悪魔との戦闘",
+    "tr": "Fight with a demon.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x002c",
+    "word_count": 22,
+    "jp": "悪魔との会話",
+    "tr": "Converse with a demon.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x0058",
+    "word_count": 22,
+    "jp": "戦闘からの離脱を試行",
+    "tr": "Try to leave the battle.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x0084",
+    "word_count": 22,
+    "jp": "オート戦闘→で設定変更",
+    "tr": "Change auto settings.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x00b0",
+    "word_count": 22,
+    "jp": "武器による直接攻撃",
+    "tr": "Attack with a melee weapon.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x00dc",
+    "word_count": 22,
+    "jp": "銃による直接攻撃",
+    "tr": "Attack with a ranged weapon.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x0108",
+    "word_count": 22,
+    "jp": "仲魔の呼び出し",
+    "tr": "Summon a demon.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x0134",
+    "word_count": 22,
+    "jp": "魔法を使用",
+    "tr": "Use magic.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x0160",
+    "word_count": 22,
+    "jp": "アイテムを使用",
+    "tr": "Use an item.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x018c",
+    "word_count": 22,
+    "jp": "隣接するキャラと位置を変更",
+    "tr": "Swap positions with an adjacent ally.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x01b8",
+    "word_count": 22,
+    "jp": "攻撃を防御",
+    "tr": "Defend against an attack.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x01e4",
+    "word_count": 22,
+    "jp": "行動を「VICE」で選択",
+    "tr": "Takes action according to personality.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x0210",
+    "word_count": 22,
+    "jp": "攻撃系の行動を「VICE」で選択",
+    "tr": "Takes offensive actions.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x023c",
+    "word_count": 22,
+    "jp": "防御系の行動を「VICE」で選択",
+    "tr": "Takes defensive actions.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x0268",
+    "word_count": 22,
+    "jp": "COMP内へ帰還",
+    "tr": "Return to the COMP.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x0294",
+    "word_count": 22,
+    "jp": "通常の直接攻撃",
+    "tr": "Perform a regular attack.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x02c0",
+    "word_count": 22,
+    "jp": "特殊物理／魔法行動",
+    "tr": "Use a skill.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x02ec",
+    "word_count": 22,
+    "jp": "設定どおりにオート戦闘",
+    "tr": "Use existing auto settings.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "file_offset": "0x0318",
+    "word_count": 22,
+    "jp": "前回ターンでの入力どおりにオート戦闘",
+    "tr": "Repeat the previous turn.",
+    "reviewed": false,
+    "excluded": false
+  }
+]

@@ -1,0 +1,4 @@
+image/
+generated/
+atlas/*_original.png
+atlas/*_replaced.png

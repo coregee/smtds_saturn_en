@@ -1,0 +1,70 @@
+[
+  {
+    "kind": "start_without_save_warning",
+    "spans": [
+      {
+        "file_offset": "0xb020",
+        "word_count": 30
+      },
+      {
+        "file_offset": "0xb070",
+        "word_count": 30
+      }
+    ],
+    "jp": "このままゲームを開始した場合記録を保存することができません。{n}それでもゲームを開始する場合はスタートボタンを押して下さい。",
+    "tr": "If you begin now, your progress cannot be saved.{n}To begin anyway, press START.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "insufficient_free_space_instructions",
+    "spans": [
+      {
+        "file_offset": "0xb0c0",
+        "word_count": 33
+      },
+      {
+        "file_offset": "0xb110",
+        "word_count": 65
+      }
+    ],
+    "jp": "このゲームの記録を、保存するためには、129の空き容量が必要です。{n}セガサターン本体の保存データ管理画面で他ゲームの記録を消す、またはカートリッジRAMにコピーしてからゲームを再スタートして下さい。",
+    "tr": "This game requires 129 blocks to save.{n}Free blocks using the Sega Saturn save data screen, or move data to cartridge RAM and restart the game.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "save_capacity_error",
+    "spans": [
+      {
+        "file_offset": "0xb1be",
+        "word_count": 15
+      },
+      {
+        "file_offset": "0xb1dc",
+        "word_count": 17
+      }
+    ],
+    "jp": "容量不足のためセーブできません{n}セーブには129ブロックが必要です",
+    "tr": "Not enough space to save.{n}Save requires 129 blocks.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "load_failure",
+    "spans": [
+      {
+        "file_offset": "0xb1fe",
+        "word_count": 20
+      },
+      {
+        "file_offset": "0xb22a",
+        "word_count": 10
+      }
+    ],
+    "jp": "ファイルを正しくロードできませんでした。{n}やり直してください。",
+    "tr": "Could not load file.{n}Please try again.",
+    "reviewed": false,
+    "excluded": false
+  }
+]

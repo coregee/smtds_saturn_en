@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "title",
+    "file_offset": "0x6fac",
+    "capacity_bytes": 20,
+    "jp": "Sound Test Program",
+    "tr": "Sound Test Program",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "kind": "request_number",
+    "file_offset": "0x6fc0",
+    "capacity_bytes": 8,
+    "jp": "Req No ",
+    "tr": "Req No ",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "kind": "sound_effect_request_number",
+    "file_offset": "0x6fc8",
+    "capacity_bytes": 12,
+    "jp": "Se Req No ",
+    "tr": "Se Req No ",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "kind": "exit_message",
+    "file_offset": "0x6fd4",
+    "capacity_bytes": 18,
+    "jp": "Sound Test Exit!!",
+    "tr": "Sound Test Exit!!",
+    "reviewed": false,
+    "excluded": true
+  }
+]

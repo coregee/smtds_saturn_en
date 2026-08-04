@@ -1,0 +1,8473 @@
+[
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 0,
+        "page": 0,
+        "file_offset": "0x5000",
+        "content_start_word": 0,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}おでノながまダイジニ{BEAT}ジジジジ{BEAT}ジデグレェ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} Take good care{BEAT} care of my fr-fr-fr{BEAT}friend...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 1,
+        "page": 0,
+        "file_offset": "0x5042",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 2,
+        "page": 0,
+        "file_offset": "0x509c",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{offered_item}ヤロウ{BEAT}ヤロウヤロウ",
+    "tr": "Guh-guh-guh-gehh... I give you {offered_item}{BEAT} give-give...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Opening fragment for messages 1-2; page 1 (record 2) completes the gift by asking the player to care for the demon's ally."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 1,
+        "page": 1,
+        "file_offset": "0x5042",
+        "content_start_word": 22,
+        "content_end_word": 44,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 2,
+        "page": 1,
+        "file_offset": "0x509c",
+        "content_start_word": 22,
+        "content_end_word": 44,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでノながまダイジニ{BEAT}ジジジジ{BEAT}ジデグレェ",
+    "tr": "Take good care of my fr{BEAT} fr-fr-fr{BEAT}friend...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Closing fragment for messages 1-2; page 0 (record 1) gives the offered item before this request."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 3,
+        "page": 0,
+        "file_offset": "0x50f6",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}愛愛愛{BEAT}愛用ジデル傷薬ヲヤロウ{BEAT}ヤロウゥ",
+    "tr": "Love, love, love{BEAT} I'll give you my favorite medicine{BEAT} m-medicine...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 3,
+        "page": 1,
+        "file_offset": "0x50f6",
+        "content_start_word": 32,
+        "content_end_word": 66,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでガァヌッデヤル{BEAT}ルルルゥ{n}{WAIT}エンリョォズルズルズル{BEAT}ズルナァ",
+    "tr": "I'll rub it on you{BEAT} rub-rub...{WAIT} Don't hold{BEAT} hold back...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 4,
+        "page": 0,
+        "file_offset": "0x517c",
+        "content_start_word": 0,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゾゾゾゾ{BEAT}ゾノガワリィ{n}おでノながまダイジニジジジジ{BEAT}ジデグレェ",
+    "tr": "In-in-in{BEAT} in return, take good care of my fr-fr-fr{BEAT}friend...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 5,
+        "page": 0,
+        "file_offset": "0x51c2",
+        "content_start_word": 0,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}ゲ元元元{BEAT}元気ガァ？{n}{WAIT}おでバ元気{BEAT}気気気気ガァ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} Are you w-w-w{BEAT}well?{WAIT} I'm well{BEAT} well-well-well...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 5,
+        "page": 1,
+        "file_offset": "0x51c2",
+        "content_start_word": 36,
+        "content_end_word": 44,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ",
+    "tr": "Guh-guh-guh-gehh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 6,
+        "page": 0,
+        "file_offset": "0x521c",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}来デヤッダゾ{BEAT}ゾゾゾォ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} I c-came{BEAT} came to see you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 7,
+        "page": 0,
+        "file_offset": "0x5248",
+        "content_start_word": 0,
+        "content_end_word": 22,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "マダマダ{BEAT}マダながまニナッデ欲ジイガ{BEAT}ガァ",
+    "tr": "D-do you still{BEAT} still want me as your a-ally{BEAT} ally...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 8,
+        "page": 0,
+        "file_offset": "0x5276",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "なって欲しい",
+    "tr": "I want you to.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 9,
+        "page": 0,
+        "file_offset": "0x5284",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 261,
+        "page": 0,
+        "file_offset": "0x80ba",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "断る",
+    "tr": "Refuse.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 10,
+        "page": 0,
+        "file_offset": "0x528a",
+        "content_start_word": 0,
+        "content_end_word": 24,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ヨジヨジィ{n}{WAIT}ゾッヂニ行ッデヤロウヤロウ{BEAT}ヤロウ",
+    "tr": "All r-right...{WAIT} I'll go with you{BEAT} with you, with you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 11,
+        "page": 0,
+        "file_offset": "0x52bc",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ヨジヨジィ{n}ゾレジャ{BEAT}ジャジャアァ",
+    "tr": "All r-right... See{BEAT} see you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 12,
+        "page": 0,
+        "file_offset": "0x52e0",
+        "content_start_word": 0,
+        "content_end_word": 29,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "おでおでおで{BEAT}おでガァ{n}ミニミニミニ{BEAT}ミニグイガラガァ！？",
+    "tr": "Am-am-am{BEAT} am I u-u-u{BEAT}ugly?!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 12,
+        "page": 1,
+        "file_offset": "0x52e0",
+        "content_start_word": 30,
+        "content_end_word": 38,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 13,
+        "page": 1,
+        "file_offset": "0x532e",
+        "content_start_word": 29,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 29,
+        "page": 2,
+        "file_offset": "0x5628",
+        "content_start_word": 74,
+        "content_end_word": 82,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ！！",
+    "tr": "Aaaaaaagh!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 13,
+        "page": 0,
+        "file_offset": "0x532e",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 29,
+        "page": 0,
+        "file_offset": "0x5628",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "おでおでおで{BEAT}おでガァ{n}ミニミニミニ{BEAT}ミニグイガラガァ！",
+    "tr": "Am-am-am{BEAT} am I u-u-u{BEAT}ugly?!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 14,
+        "page": 0,
+        "file_offset": "0x537a",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばええええぇ{n}見ヅゲ{BEAT}ヅゲヅゲヅゲダゾォ",
+    "tr": "Y-y-you... I f-found{BEAT} found-found you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 15,
+        "page": 0,
+        "file_offset": "0x53a6",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ウラミ{BEAT}ミミミバラザデオグベギガァ",
+    "tr": "This grudge{BEAT} gr-gr-grudge cannot go unavenged...!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 16,
+        "page": 0,
+        "file_offset": "0x53ce",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "返り討ちにしてやる",
+    "tr": "I'll turn the tables on you.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 17,
+        "page": 0,
+        "file_offset": "0x53e2",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "なんの話だ？",
+    "tr": "What are you talking about?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 18,
+        "page": 0,
+        "file_offset": "0x53f0",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲェ{n}でびるざばなぁ{BEAT}ざばなぁオオ{BEAT}オゾルベジィ",
+    "tr": "Guhh... Devil Sum{BEAT} Summoners are s-sc{BEAT}scary...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 18,
+        "page": 1,
+        "file_offset": "0x53f0",
+        "content_start_word": 27,
+        "content_end_word": 46,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オオオオ{BEAT}オボエデロ{BEAT}デロデロデロォ！",
+    "tr": "Ooooh{BEAT} you'll r-remember{BEAT} remember this!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 19,
+        "page": 0,
+        "file_offset": "0x544e",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ウガアアアア{BEAT}アァ！！",
+    "tr": "Gwaaaaa{BEAT}aagh!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 20,
+        "page": 0,
+        "file_offset": "0x5466",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ウ？{n}{WAIT}ナ{BEAT}ナ{BEAT}ナンノ話ダッダッゲェ？",
+    "tr": "Huh?{WAIT} Wh{BEAT} wh-what{BEAT} were we talking about...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 20,
+        "page": 1,
+        "file_offset": "0x5466",
+        "content_start_word": 20,
+        "content_end_word": 44,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "アアアアアアァ！{n}オボオボオボ{BEAT}オボエデネェ！！",
+    "tr": "Aaaaaagh! I d-d-don't{BEAT} don't remember!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 20,
+        "page": 2,
+        "file_offset": "0x5466",
+        "content_start_word": 45,
+        "content_end_word": 61,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ヂギジョォヂギジョ{BEAT}ジョォ！！",
+    "tr": "D-d-damn{BEAT} damn it!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 21,
+        "page": 0,
+        "file_offset": "0x54e2",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ジジジジ{BEAT}ジラバッグレルガァ！{n}{WAIT}許ザザ{BEAT}ザザザネェ！！",
+    "tr": "D-d-don't{BEAT} don't stand me up!{WAIT} I won't f-f{BEAT}forgive you!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 22,
+        "page": 0,
+        "file_offset": "0x551c",
+        "content_start_word": 0,
+        "content_end_word": 7,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 28,
+        "page": 0,
+        "file_offset": "0x55c0",
+        "content_start_word": 0,
+        "content_end_word": 7,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "おばええええぇ",
+    "tr": "Y-y-you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 23,
+        "page": 0,
+        "file_offset": "0x552c",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえニヤルモノ取ッデ来ダ{BEAT}ダダダゾォ",
+    "tr": "I brought s-something for you{BEAT} for you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 24,
+        "page": 0,
+        "file_offset": "0x5556",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ありがとう",
+    "tr": "Thanks.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 25,
+        "page": 0,
+        "file_offset": "0x5562",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "いらない",
+    "tr": "I don't want it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 26,
+        "page": 0,
+        "file_offset": "0x556c",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 27,
+        "page": 0,
+        "file_offset": "0x5596",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 28,
+        "page": 2,
+        "file_offset": "0x55c0",
+        "content_start_word": 31,
+        "content_end_word": 51,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{offered_item}ガアアアアァ{n}ヨロヨロ{BEAT}ヨロゴベェ！",
+    "tr": "It's {offered_item}! Be h-h{BEAT}happy!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 28,
+        "page": 1,
+        "file_offset": "0x55c0",
+        "content_start_word": 8,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "人ノ好好好好{BEAT}好意バァ{n}素直ニ受ゲロゲロォ",
+    "tr": "When someone shows you k-k-k-kind{BEAT}kindness, just accept it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 29,
+        "page": 1,
+        "file_offset": "0x5628",
+        "content_start_word": 29,
+        "content_end_word": 73,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ミニミニミニ{BEAT}ミニグイ奴ノォ{n}オグリモノ{BEAT}モノモノバァ{n}受ゲラレ{BEAT}ラレラレネエノガァ！！",
+    "tr": "You c-can't{BEAT} can't accept a g-gift{BEAT} gift-gift from someone u-u-ugly{BEAT} ugly like me?!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 30,
+        "page": 0,
+        "file_offset": "0x56ce",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 382,
+        "page": 0,
+        "file_offset": "0x9b86",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オオオオオォ{n}おでノ{BEAT}ダダ{BEAT}魂ノ叫ビヲ{BEAT}ギギギ{BEAT}聞イデグレェ",
+    "tr": "Ooooooh... Listen{BEAT} l-listen to the c-c{BEAT} cry{BEAT} cry of my s-s-s{BEAT}soul...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 31,
+        "page": 0,
+        "file_offset": "0x570e",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 156,
+        "page": 0,
+        "file_offset": "0x6c4e",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 252,
+        "page": 0,
+        "file_offset": "0x7ed8",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 298,
+        "page": 0,
+        "file_offset": "0x8782",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 334,
+        "page": 0,
+        "file_offset": "0x8ef8",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 335,
+        "page": 0,
+        "file_offset": "0x8f58",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 341,
+        "page": 0,
+        "file_offset": "0x90fe",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ",
+    "tr": "Guh-guh-guh-gehh...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: among this shared record's locations, message 334 continues to the recruitment introduction in record 335, while message 335 continues to the deferred-recruitment farewell in record 336."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 32,
+        "page": 0,
+        "file_offset": "0x5720",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえ{BEAT}ええええぇ！{n}無無無無{BEAT}無視ズルナ{BEAT}ナァ！！",
+    "tr": "Y-y-you{BEAT} you! D-d-d-don't{BEAT} don't ignore{BEAT} ignore me!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 33,
+        "page": 0,
+        "file_offset": "0x5756",
+        "content_start_word": 0,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 42,
+        "page": 0,
+        "file_offset": "0x59da",
+        "content_start_word": 0,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 43,
+        "page": 0,
+        "file_offset": "0x5a12",
+        "content_start_word": 0,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}痛痛痛痛{BEAT}痛エヨォ{n}壊レル{BEAT}レルルルルゥ",
+    "tr": "Aaaaaagh! It h-h-h{BEAT}hurts! I'm breaking{BEAT} breaking apart...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 34,
+        "page": 0,
+        "file_offset": "0x578e",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}{WAIT}ゲゲゲゲ{BEAT}消ザナイデグレェ",
+    "tr": "Aaaaaagh!{WAIT} D-d-d-don't{BEAT} don't erase me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 35,
+        "page": 0,
+        "file_offset": "0x57ba",
+        "content_start_word": 0,
+        "content_end_word": 13,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "助ゲデ{BEAT}ゲデゲデゲデグレェ",
+    "tr": "H-help{BEAT} help-help-help me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 36,
+        "page": 0,
+        "file_offset": "0x57d6",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "攻撃をやめる",
+    "tr": "Stop attacking.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 37,
+        "page": 0,
+        "file_offset": "0x57e4",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "問答無用",
+    "tr": "No discussion.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 38,
+        "page": 0,
+        "file_offset": "0x57ee",
+        "content_start_word": 0,
+        "content_end_word": 15,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 40,
+        "page": 0,
+        "file_offset": "0x58ce",
+        "content_start_word": 0,
+        "content_end_word": 15,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲェ{n}アアアア{BEAT}アリガダヤァ",
+    "tr": "Guhh... Th-th-thank{BEAT} thank the gods...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 39 page 0 continues through pages 1-2 (records 46-47), where the demon explains how it will give thanks."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 38,
+        "page": 1,
+        "file_offset": "0x57ee",
+        "content_start_word": 16,
+        "content_end_word": 47,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オ礼ガ{BEAT}ガガガガジダイィ{n}{WAIT}おばえド契約{BEAT}約約約約ジヨウゥ",
+    "tr": "I w-w-w-want{BEAT} want to thank you...{WAIT} I'll form a con{BEAT} contract-contract-contract with you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 39,
+        "page": 0,
+        "file_offset": "0x584e",
+        "content_start_word": 0,
+        "content_end_word": 15,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲェ{n}アアアア{BEAT}アリガダヤァ",
+    "tr": "Guhh... Th-th-thank{BEAT} thank the gods...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 39,
+        "page": 1,
+        "file_offset": "0x584e",
+        "content_start_word": 16,
+        "content_end_word": 29,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "オ礼ガ{BEAT}ガガガガジダイィ",
+    "tr": "I w-w-w-want{BEAT} want to thank you...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 39 page 1 links the thanks on page 0 (record 45) to the promised errand on page 2 (record 47)."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 39,
+        "page": 2,
+        "file_offset": "0x584e",
+        "content_start_word": 30,
+        "content_end_word": 63,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナニガ取ッデ来ル{BEAT}ルルルガラ{n}ゴノ辺ニイデグレ{BEAT}グレグレグレェ",
+    "tr": "I'll go fetch s-something{BEAT} something... Wait around here{BEAT} here-here-here...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 39 page 2 completes the promise introduced across pages 0-1 (records 45-46)."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 40,
+        "page": 1,
+        "file_offset": "0x58ce",
+        "content_start_word": 16,
+        "content_end_word": 62,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オ礼ガ{BEAT}ガガガガジダイィ{n}{WAIT}おばえニアノ世世世{BEAT}世ヲォ{n}見ゼデヤロ{BEAT}ヤロヤロヤロウゥ！！",
+    "tr": "I w-w-w-want{BEAT} want to thank you...{WAIT} I'll sh-sh-sh{BEAT} show{BEAT} show-show-show you the other world!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 41,
+        "page": 0,
+        "file_offset": "0x594c",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "おばええええぇ{n}ゾウ悲悲悲{BEAT}悲悲ジイゴド言ウナァ",
+    "tr": "Y-y-you... Don't say s-s-s{BEAT}such a sad thing...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 41,
+        "page": 1,
+        "file_offset": "0x594c",
+        "content_start_word": 27,
+        "content_end_word": 70,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゴゴゴ{BEAT}ゴンナおでデモォ{n}おばえノ役ニィ立デ{BEAT}立デ立デルゾォ{n}契約{BEAT}約約約約ズルガァ",
+    "tr": "E-e-e{BEAT} even I can be u-use{BEAT} useful to you... Let us form a con{BEAT} contract-contract-contract...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 44,
+        "page": 0,
+        "file_offset": "0x5a4a",
+        "content_start_word": 0,
+        "content_end_word": 43,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "エエエエエェ{n}おばえダグザン{BEAT}ダグザンダグザン{BEAT}ンン{n}{BEAT}持ッデルジャネエエエエエガァ",
+    "tr": "H-heyyyy... You've got l-lots{BEAT} lots and lots{BEAT} lots{BEAT} already...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 44,
+        "page": 1,
+        "file_offset": "0x5a4a",
+        "content_start_word": 44,
+        "content_end_word": 79,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゾレ以上バイライライラ{BEAT}イラネエダロォ{n}おで持ッデ帰{BEAT}ルルルルルゥ",
+    "tr": "You don't n-need{BEAT} need any more... I'll take it h-home{BEAT} home-home-home...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 45,
+        "page": 0,
+        "file_offset": "0x5aea",
+        "content_start_word": 0,
+        "content_end_word": 23,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}持持持{BEAT}持ッデネエジャネエガァ",
+    "tr": "Aaaaaagh! You d-d-don't{BEAT} don't have it!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 46,
+        "page": 0,
+        "file_offset": "0x5b1a",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ガガガガ{BEAT}確認ジドゲェ",
+    "tr": "Ch-ch-ch-check{BEAT} check again...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 47,
+        "page": 0,
+        "file_offset": "0x5b32",
+        "content_start_word": 0,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ウゾヲヅグヤツ{BEAT}ヤツヤツヤツバァ{n}ジゴグニオオオオ{BEAT}落ヂロォ",
+    "tr": "L-l-liars{BEAT} liars-liars-liars can g-go{BEAT} go to hell!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 48,
+        "page": 0,
+        "file_offset": "0x5b74",
+        "content_start_word": 0,
+        "content_end_word": 24,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 60,
+        "page": 0,
+        "file_offset": "0x5d54",
+        "content_start_word": 0,
+        "content_end_word": 24,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "でででで{BEAT}でびるざばなぁ{n}オオオオ{BEAT}オゾロジヤァ",
+    "tr": "Dev-Dev-Devil{BEAT} Devil Summoners are s-sc{BEAT}scary...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 49,
+        "page": 0,
+        "file_offset": "0x5ba6",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 76,
+        "page": 0,
+        "file_offset": "0x6068",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "何ガ{BEAT}用ガ用ガァ{BEAT}用ナノガァ？",
+    "tr": "What{BEAT} what-what do you{BEAT} you want?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 50,
+        "page": 0,
+        "file_offset": "0x5bca",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 77,
+        "page": 0,
+        "file_offset": "0x608c",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 105,
+        "page": 0,
+        "file_offset": "0x6494",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "仲魔になれ",
+    "tr": "Join me.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 51,
+        "page": 0,
+        "file_offset": "0x5bd6",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 78,
+        "page": 0,
+        "file_offset": "0x6098",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 106,
+        "page": 0,
+        "file_offset": "0x64a0",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "なんかくれ",
+    "tr": "Give me something.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 52,
+        "page": 0,
+        "file_offset": "0x5be2",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 79,
+        "page": 0,
+        "file_offset": "0x60a4",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 107,
+        "page": 0,
+        "file_offset": "0x64ac",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "話がある",
+    "tr": "Let's talk.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 53,
+        "page": 0,
+        "file_offset": "0x5bec",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 80,
+        "page": 0,
+        "file_offset": "0x60ae",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 108,
+        "page": 0,
+        "file_offset": "0x64b6",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "消えてくれ",
+    "tr": "Get lost.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 54,
+        "page": 0,
+        "file_offset": "0x5bf8",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ボボボボ{BEAT}欲ジイィ",
+    "tr": "I-I-I{BEAT} I want it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 55,
+        "page": 0,
+        "file_offset": "0x5c0c",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 57,
+        "page": 0,
+        "file_offset": "0x5cb2",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ググググ{BEAT}苦ジイィ{n}おでノ話ヲ{BEAT}話ヲォ{n}ギギギギ{BEAT}聞イデグレェ",
+    "tr": "I-it{BEAT} it hurts... Listen to my s-story{BEAT} story... P-please{BEAT} please hear me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 56,
+        "page": 0,
+        "file_offset": "0x5c4c",
+        "content_start_word": 0,
+        "content_end_word": 29,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ギョギョギョギョ{BEAT}今日バァ{n}ギゲギゲ{BEAT}機嫌ガイイ{BEAT}イイィ",
+    "tr": "Gyo-gyo-gyo-gyo{BEAT} I'm in a g-g{BEAT} good mood{BEAT} mood today...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 56,
+        "page": 1,
+        "file_offset": "0x5c4c",
+        "content_start_word": 30,
+        "content_end_word": 50,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おおおお{BEAT}おばえニィ{n}{offered_item}ヤロウ{BEAT}ヤロウ",
+    "tr": "I-I-I'll{BEAT} I'll give you {offered_item}{BEAT} give it to you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 58,
+        "page": 0,
+        "file_offset": "0x5cf2",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}話ガ話ガ{BEAT}ガガガガァ",
+    "tr": "Aaaaaagh! A t-talk{BEAT} talk...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 59,
+        "page": 0,
+        "file_offset": "0x5d16",
+        "content_start_word": 0,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おおおお{BEAT}おでモォ{n}話ガ話ガ{BEAT}ガガガガァ{n}ジジジジ{BEAT}ジダイィ",
+    "tr": "I-I-I{BEAT} I also w-want{BEAT} want to t-t-t{BEAT}talk...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 61,
+        "page": 0,
+        "file_offset": "0x5d86",
+        "content_start_word": 0,
+        "content_end_word": 29,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}人人人人{BEAT}人間ガ{BEAT}ガァ{n}寄ッデ{BEAT}寄ッデ来ルゥ",
+    "tr": "Aaaaaagh! A h-h-h-human{BEAT} human is c-c{BEAT} coming{BEAT} coming closer!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 62,
+        "page": 0,
+        "file_offset": "0x5dc2",
+        "content_start_word": 0,
+        "content_end_word": 13,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "何ジニ来来来来{BEAT}来ルゥ？",
+    "tr": "Wh-wh-wh-why{BEAT} why did you come?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 63,
+        "page": 0,
+        "file_offset": "0x5dde",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 91,
+        "page": 0,
+        "file_offset": "0x628e",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 119,
+        "page": 0,
+        "file_offset": "0x6650",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "仲魔探し",
+    "tr": "Looking for allies.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 64,
+        "page": 0,
+        "file_offset": "0x5de8",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 92,
+        "page": 0,
+        "file_offset": "0x6298",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 120,
+        "page": 0,
+        "file_offset": "0x665a",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "鍛練",
+    "tr": "Training.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 65,
+        "page": 0,
+        "file_offset": "0x5dee",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 93,
+        "page": 0,
+        "file_offset": "0x629e",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 121,
+        "page": 0,
+        "file_offset": "0x6660",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "悪魔退治",
+    "tr": "Hunting demons.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 66,
+        "page": 0,
+        "file_offset": "0x5df8",
+        "content_start_word": 0,
+        "content_end_word": 7,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 94,
+        "page": 0,
+        "file_offset": "0x62a8",
+        "content_start_word": 0,
+        "content_end_word": 7,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 122,
+        "page": 0,
+        "file_offset": "0x666a",
+        "content_start_word": 0,
+        "content_end_word": 7,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "よけいなお世話",
+    "tr": "None of your business.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 67,
+        "page": 0,
+        "file_offset": "0x5e08",
+        "content_start_word": 0,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 68,
+        "page": 0,
+        "file_offset": "0x5e4e",
+        "content_start_word": 0,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "なななな{BEAT}ながまダドォ？{n}ナリデェ{BEAT}ナリデェヨォ{n}なななな{BEAT}ながまぁ",
+    "tr": "A-a-a{BEAT} an ally? I w-want{BEAT} want to be... your a-a-a{BEAT}ally...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 69,
+        "page": 0,
+        "file_offset": "0x5e94",
+        "content_start_word": 0,
+        "content_end_word": 33,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "鍛練ヲ{BEAT}鍛練ヲォ{n}オオオオ{BEAT}オゾロジヤァ{n}ダダダ{BEAT}倒ザ{BEAT}倒ザレルゥ",
+    "tr": "T-training{BEAT} training...? H-h-h{BEAT}how scary... I'll g-g-get{BEAT} get beaten{BEAT} beaten up...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 70,
+        "page": 0,
+        "file_offset": "0x5ed8",
+        "content_start_word": 0,
+        "content_end_word": 36,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ああああ{BEAT}あぐまヲォ{n}殺ズ{BEAT}殺ズ殺ズノガァ？{n}あぐまバァヅヅ{BEAT}強エゾォ",
+    "tr": "Y-you're{BEAT} you're killing d-demons{BEAT} killing them? D-demons are v-v-very{BEAT}very strong...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 71,
+        "page": 0,
+        "file_offset": "0x5f22",
+        "content_start_word": 0,
+        "content_end_word": 36,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オオオオ{BEAT}オゾロジヤァ{n}{offered_item}ヤルガラ{BEAT}ヤルガラァ{n}ニニニニ{BEAT}逃ガジデグレェ",
+    "tr": "Ooooh{BEAT} how scary... I'll give you {offered_item}{BEAT} give it to you... So l-l-let{BEAT} let me go...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 72,
+        "page": 0,
+        "file_offset": "0x5f6c",
+        "content_start_word": 0,
+        "content_end_word": 41,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オオオオ{BEAT}オゾロジヤァ{n}痛ェ{BEAT}痛ェダ{BEAT}ダロウナァ{n}ヅライ{BEAT}ヅライダダダ{BEAT}ダロウナァ",
+    "tr": "Ooooh{BEAT} how scary... That must h-hurt{BEAT} hurt{BEAT} so much... It must be h-hard{BEAT} hard, hard{BEAT} on you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 73,
+        "page": 0,
+        "file_offset": "0x5fc0",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナナナナ{BEAT}何言ウガァ{n}おでバガ{BEAT}バガバガバガニジダガァ",
+    "tr": "Wh-wh-what{BEAT} what did you say?! You m-made{BEAT} made-made-made a fool of me!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 74,
+        "page": 0,
+        "file_offset": "0x5ffa",
+        "content_start_word": 0,
+        "content_end_word": 36,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナナナナ{BEAT}何言ウガァ{n}おでバガ{BEAT}バガバガバガニジダガァ{n}許ザ{BEAT}ザザネェ",
+    "tr": "Wh-wh-what{BEAT} what did you say?! You m-made{BEAT} made-made-made a fool of me! I won't f-f{BEAT}forgive you!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 75,
+        "page": 0,
+        "file_offset": "0x6044",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナナナナ{BEAT}ナンダァ人間{BEAT}間間間間",
+    "tr": "Wh-wh-wh-what{BEAT} what is it, h-human{BEAT} human-human-human?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 81,
+        "page": 0,
+        "file_offset": "0x60ba",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ミミミミ{BEAT}ミヅゲェ",
+    "tr": "F-f-f-found{BEAT} found you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 82,
+        "page": 0,
+        "file_offset": "0x60ce",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲゲェ{n}{WAIT}タダ{BEAT}タダタダジャ{BEAT}ダメダメダァ",
+    "tr": "Guh-guh-gehh...{WAIT} You c-can't{BEAT} can't pass for f-free{BEAT} free-free...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 83,
+        "page": 0,
+        "file_offset": "0x6102",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "タダ{BEAT}タダタダジャ{BEAT}ダメダメダァ",
+    "tr": "You c-can't{BEAT} can't pass for f-free{BEAT} free-free...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 84,
+        "page": 0,
+        "file_offset": "0x6126",
+        "content_start_word": 0,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おおおお{BEAT}おばえニィ{n}グレデヤルモノ{BEAT}モノモノモノバァ{n}ナナナナ{BEAT}ナイィ",
+    "tr": "I-I-I{BEAT} I don't h-have{BEAT} have-have-have a-anything{BEAT} anything to give you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 85,
+        "page": 0,
+        "file_offset": "0x6172",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 113,
+        "page": 0,
+        "file_offset": "0x6598",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おおおお{BEAT}おでモォ{n}話ガ{BEAT}話ガァ{n}ジジジジ{BEAT}ジダイィ",
+    "tr": "I-I-I{BEAT} I also h-have{BEAT} have something I w-w-w{BEAT}want to say...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 86,
+        "page": 0,
+        "file_offset": "0x61a8",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲゲェ{n}{WAIT}ダダダダ{BEAT}助ゲデグレェ",
+    "tr": "Guh-guh-gehh...{WAIT} H-h-h-help{BEAT} help me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 87,
+        "page": 0,
+        "file_offset": "0x61d0",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オオオオ{BEAT}オゾロジヤァ{n}消エ{BEAT}消エダグナナ{BEAT}ナイィ",
+    "tr": "Ooooh{BEAT} how scary... I d-d-don't{BEAT} don't want to d-disappear{BEAT} disappear...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 88,
+        "page": 0,
+        "file_offset": "0x6204",
+        "content_start_word": 0,
+        "content_end_word": 38,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ググググ{BEAT}苦ジイィ{n}おばえニ分ガルノガ{BEAT}ノガァ？{n}ゴノ痛痛痛痛{BEAT}痛ザガァ",
+    "tr": "I-it{BEAT} it hurts... Do you u-understand{BEAT} understand this p-p-p-pain{BEAT} pain of mine?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 89,
+        "page": 0,
+        "file_offset": "0x6252",
+        "content_start_word": 0,
+        "content_end_word": 14,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえぇ何者{BEAT}者者ダダアァ",
+    "tr": "Wh-who are you{BEAT} you-you...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 90,
+        "page": 0,
+        "file_offset": "0x6270",
+        "content_start_word": 0,
+        "content_end_word": 14,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 118,
+        "page": 0,
+        "file_offset": "0x6632",
+        "content_start_word": 0,
+        "content_end_word": 14,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "何ジデ{BEAT}何ジデイイ{BEAT}イルゥ",
+    "tr": "Wh-what{BEAT} what are you d-doing{BEAT} doing here?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 95,
+        "page": 0,
+        "file_offset": "0x62b8",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 96,
+        "page": 0,
+        "file_offset": "0x62ee",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでモながま{BEAT}ながまヲォ{n}ザザザザ{BEAT}探ジデルンガァ",
+    "tr": "I'm looking for a fr-friend{BEAT} friend too... S-s-s-searching{BEAT} searching...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 97,
+        "page": 0,
+        "file_offset": "0x6324",
+        "content_start_word": 0,
+        "content_end_word": 33,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ダダダダ{BEAT}鍛練ガァ{n}あぐま殺ズ殺ズ{BEAT}殺ズノガァ？{n}倒ズノガ{BEAT}ガァ？",
+    "tr": "T-t-t{BEAT} training...? K-k-killing{BEAT} killing demons? B-beating them{BEAT} beating them...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 98,
+        "page": 0,
+        "file_offset": "0x6368",
+        "content_start_word": 0,
+        "content_end_word": 36,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ああああ{BEAT}あぐまヲォ{n}殺ズ殺ズ{BEAT}殺ズノガァ？{n}あぐまバァヅヅ{BEAT}強エゾォ",
+    "tr": "Y-you're{BEAT} you're killing d-demons{BEAT} killing them? D-demons are v-v-very{BEAT}very strong...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 99,
+        "page": 0,
+        "file_offset": "0x63b2",
+        "content_start_word": 0,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでヲ助ゲ{BEAT}助ゲ助ゲ助ゲデグレェ{n}ダダダダ{BEAT}ダノムゥ",
+    "tr": "H-help me{BEAT} help-help-help me... P-p-p-please{BEAT} please...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 100,
+        "page": 0,
+        "file_offset": "0x63ea",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 114,
+        "page": 0,
+        "file_offset": "0x65ce",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 116,
+        "page": 0,
+        "file_offset": "0x660a",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 128,
+        "page": 0,
+        "file_offset": "0x6806",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 157,
+        "page": 0,
+        "file_offset": "0x6c60",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 213,
+        "page": 0,
+        "file_offset": "0x773a",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 214,
+        "page": 0,
+        "file_offset": "0x7786",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 215,
+        "page": 0,
+        "file_offset": "0x77d2",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲグゲゲェ",
+    "tr": "Guh-guh-gehh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 101,
+        "page": 0,
+        "file_offset": "0x63f8",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナナナナ{BEAT}何言ウガァ{n}{WAIT}グゲグゲゲェ",
+    "tr": "Wh-wh-what{BEAT} what are you saying?{WAIT} Guh-guh-gehh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 102,
+        "page": 0,
+        "file_offset": "0x641e",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナナナナ{BEAT}何言ウガァ{n}おでバガ{BEAT}バガバガニズルナァ",
+    "tr": "Wh-wh-what{BEAT} what are you saying?! Don't m-make{BEAT} make-make a fool of me!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 103,
+        "page": 0,
+        "file_offset": "0x6454",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "何ガ用ガ{BEAT}用ガァ？{n}ググググ{BEAT}苦ジイィ",
+    "tr": "Wh-what do you w-want{BEAT} want? I-it{BEAT} it hurts...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 104,
+        "page": 0,
+        "file_offset": "0x647c",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ハハハハ{BEAT}早グ言エェ",
+    "tr": "H-h-h-hurry{BEAT} hurry up and say it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 109,
+        "page": 0,
+        "file_offset": "0x64c2",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ヨゴヨゴ{BEAT}ヨゴゼェ",
+    "tr": "G-g-give{BEAT} give it to me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 110,
+        "page": 0,
+        "file_offset": "0x64d6",
+        "content_start_word": 0,
+        "content_end_word": 41,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでモながま{BEAT}ながまガ欲ジイィ{n}ググググ{BEAT}苦ジミヲォ{n}分ゲデ{BEAT}分ゲ分ゲデ{BEAT}ヤルゥ",
+    "tr": "I want an a-ally{BEAT} ally too... I'll sh-share{BEAT} share my s-suffering{BEAT} suffering with{BEAT} with you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 111,
+        "page": 0,
+        "file_offset": "0x652a",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゴノググググ{BEAT}苦ジミヲォ{n}グレデヤロウ{BEAT}ヤロウガァ",
+    "tr": "I'll g-give{BEAT} give you this s-suffering{BEAT} suffering of mine...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 112,
+        "page": 0,
+        "file_offset": "0x6560",
+        "content_start_word": 0,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゴノググググ{BEAT}苦ジミヲォ{n}グレデヤル{BEAT}ヤルヤルヤルゥ",
+    "tr": "I'll g-give{BEAT} give you this s-suffering{BEAT} suffering-suffering-suffering...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 115,
+        "page": 0,
+        "file_offset": "0x65dc",
+        "content_start_word": 0,
+        "content_end_word": 22,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "イヤ{BEAT}イヤイヤダァ{n}消エダグ{BEAT}ダグダグナイィ",
+    "tr": "N-no{BEAT} no-no... I d-don't want{BEAT} want-want to disappear...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 117,
+        "page": 0,
+        "file_offset": "0x6618",
+        "content_start_word": 0,
+        "content_end_word": 12,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえ何者{BEAT}者者者ダァ",
+    "tr": "Wh-who are you{BEAT} you-you-you...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 123,
+        "page": 0,
+        "file_offset": "0x667a",
+        "content_start_word": 0,
+        "content_end_word": 48,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 124,
+        "page": 0,
+        "file_offset": "0x66dc",
+        "content_start_word": 0,
+        "content_end_word": 48,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでモながま{BEAT}ながまガ欲ジイィ{n}痛痛{BEAT}痛グネェガラァ{n}おばえモゴッヂノゼゼゼ{BEAT}世界ヘ来イィ",
+    "tr": "I want an a-ally{BEAT} ally too... It doesn't h-hurt{BEAT} hurt here... You should c-come to this w-w-w{BEAT}world too...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 125,
+        "page": 0,
+        "file_offset": "0x673e",
+        "content_start_word": 0,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 126,
+        "page": 0,
+        "file_offset": "0x6786",
+        "content_start_word": 0,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ああああ{BEAT}あぐまヲォ{n}殺ズ殺ズ{BEAT}殺ズノガァ{n}あぐまバァヅヅ{BEAT}強エゾォ",
+    "tr": "Y-you're{BEAT} you're killing d-demons{BEAT} killing them? D-demons are v-v-very{BEAT}very strong...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 127,
+        "page": 0,
+        "file_offset": "0x67ce",
+        "content_start_word": 0,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでヲ助ゲ{BEAT}助ゲ助ゲデグレェ{n}オオオオ{BEAT}オネゲエダァ",
+    "tr": "H-help me{BEAT} help-help me... I b-b-b-beg{BEAT} beg you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 129,
+        "page": 0,
+        "file_offset": "0x6814",
+        "content_start_word": 0,
+        "content_end_word": 10,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナナナナ{BEAT}何言ウガァ",
+    "tr": "Wh-wh-what{BEAT} what did you say?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 130,
+        "page": 0,
+        "file_offset": "0x682a",
+        "content_start_word": 0,
+        "content_end_word": 15,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グヂゴダエズル{BEAT}ズルズルナァ",
+    "tr": "D-d-don't{BEAT} don't talk back...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 131,
+        "page": 0,
+        "file_offset": "0x684a",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グガアアアアァ{n}痛痛痛痛{BEAT}痛ェヨォ",
+    "tr": "Gwaaaaaagh! It h-h-h-hurts{BEAT} hurts...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 132,
+        "page": 0,
+        "file_offset": "0x686e",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえニゴノ痛痛痛痛{BEAT}痛ザ分ガルガァ",
+    "tr": "Can you understand this p-p-p-pain{BEAT} pain of mine?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 133,
+        "page": 0,
+        "file_offset": "0x6898",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "わかる",
+    "tr": "I understand.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 134,
+        "page": 0,
+        "file_offset": "0x68a0",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 229,
+        "page": 0,
+        "file_offset": "0x7a44",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "わからない",
+    "tr": "I don't understand.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 135,
+        "page": 0,
+        "file_offset": "0x68ac",
+        "content_start_word": 0,
+        "content_end_word": 7,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "わかりたくない",
+    "tr": "I don't want to understand.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 136,
+        "page": 0,
+        "file_offset": "0x68bc",
+        "content_start_word": 0,
+        "content_end_word": 22,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}分ガッデグレ{BEAT}グレグレルノガァ",
+    "tr": "Aaaaaagh! Y-you understand{BEAT} understand-understand me...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 137,
+        "page": 0,
+        "file_offset": "0x68ea",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ジャジャジャ{BEAT}ジャアァ{n}おばえモながまニジデヤル{BEAT}ヤルヤルゥ",
+    "tr": "Th-th-then{BEAT} then I'll make you an ally{BEAT} ally-ally...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 138,
+        "page": 0,
+        "file_offset": "0x692a",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}分分分{BEAT}分ガッデグレェ",
+    "tr": "Aaaaaagh! U-u-understand{BEAT} understand-understand me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 139,
+        "page": 0,
+        "file_offset": "0x6950",
+        "content_start_word": 0,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おおおお{BEAT}おばえモォ{n}同ジ痛痛痛痛{BEAT}痛ミィ{n}味ワウガイイ{BEAT}イイイィ",
+    "tr": "Y-y-you{BEAT} you can t-taste{BEAT} taste the s-same pain{BEAT} pain as me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 140,
+        "page": 0,
+        "file_offset": "0x6996",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 141,
+        "page": 0,
+        "file_offset": "0x6a12",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ゾゾゾゾ{BEAT}ゾレデモォ{n}でびるさばなぁ{BEAT}ざばなぁガァ",
+    "tr": "E-e-even{BEAT} even so, you're a Devil Sum{BEAT} Summoner...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 140 page 0 continues on page 1 (record 122), asking the Summoner to understand demons and accept the speaker as an ally."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 140,
+        "page": 1,
+        "file_offset": "0x6996",
+        "content_start_word": 26,
+        "content_end_word": 61,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "あぐまノ気持ヂ{BEAT}ヂヂヂ分ガッデグレェ{n}ながま{BEAT}がまがまナッデグレェ",
+    "tr": "U-understand a demon's f-feelings{BEAT} feelings... Become my a-ally{BEAT} ally-ally...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 140 page 1 completes the address begun on page 0 (record 121)."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 141,
+        "page": 1,
+        "file_offset": "0x6a12",
+        "content_start_word": 26,
+        "content_end_word": 46,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "あぐまノ気持ヂ{BEAT}ヂヂヂ分ガレゼデヤルゥ",
+    "tr": "I'll m-make you understand a demon's f-feelings{BEAT} feelings...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 142,
+        "page": 0,
+        "file_offset": "0x6a70",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえ{BEAT}ええええぇ{n}あぐま見デドドドド{BEAT}ドウ思ウゥ",
+    "tr": "Y-y-you{BEAT} you... What do you th-th-th-think{BEAT} think of demons?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 143,
+        "page": 0,
+        "file_offset": "0x6aa6",
+        "content_start_word": 0,
+        "content_end_word": 15,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "あぐま美美美{BEAT}美ジイダロガァ",
+    "tr": "D-demons are b-b-beau{BEAT}beautiful, aren't they?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 144,
+        "page": 0,
+        "file_offset": "0x6ac6",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "美しい",
+    "tr": "They're beautiful.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 145,
+        "page": 0,
+        "file_offset": "0x6ace",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "種類による",
+    "tr": "It depends on the demon.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 146,
+        "page": 0,
+        "file_offset": "0x6ada",
+        "content_start_word": 0,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}ジョジョジョ{BEAT}正直ナ奴ガァ{n}気ニ入ッ{BEAT}ッッッダァ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} An h-h-h-honest{BEAT} honest one, huh? I l-like{BEAT} like-like-like you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 146,
+        "page": 1,
+        "file_offset": "0x6ada",
+        "content_start_word": 35,
+        "content_end_word": 55,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{offered_item}ヤロウ{BEAT}ヤロウゥ{n}ジジ{BEAT}ジマッドゲェ",
+    "tr": "I'll give you {offered_item}{BEAT} give it to you... Take g-g{BEAT}good care of it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 147,
+        "page": 0,
+        "file_offset": "0x6b4a",
+        "content_start_word": 0,
+        "content_end_word": 15,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}美美美{BEAT}美ジイィ",
+    "tr": "Aaaaaagh! B-b-b{BEAT}beautiful...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 148,
+        "page": 0,
+        "file_offset": "0x6b6a",
+        "content_start_word": 0,
+        "content_end_word": 23,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}ジョジョジョ{BEAT}正直ナ奴ガァ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} An h-h-h-honest{BEAT} honest one, huh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 149,
+        "page": 0,
+        "file_offset": "0x6b9a",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おおおお{BEAT}おでノゴドヲォ{n}ミニミニミニ{BEAT}ミニグイド言ウノガァ",
+    "tr": "Y-y-you{BEAT} you called me u-u-u{BEAT}ugly...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 150,
+        "page": 0,
+        "file_offset": "0x6bda",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ググググ{BEAT}苦ジイィ{n}助ゲデ{BEAT}ゲデゲデグレェ",
+    "tr": "I-it{BEAT} it hurts... H-help{BEAT} help-help me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 151,
+        "page": 0,
+        "file_offset": "0x6c06",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "助助{BEAT}助ゲデグレェ",
+    "tr": "H-help{BEAT} help me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 152,
+        "page": 0,
+        "file_offset": "0x6c1a",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 188,
+        "page": 0,
+        "file_offset": "0x7278",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "苦痛を終わらせる",
+    "tr": "End its suffering.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 153,
+        "page": 0,
+        "file_offset": "0x6c2c",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "後ずさる",
+    "tr": "Back away.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 154,
+        "page": 0,
+        "file_offset": "0x6c36",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "見守る",
+    "tr": "Watch.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 155,
+        "page": 0,
+        "file_offset": "0x6c3e",
+        "content_start_word": 0,
+        "content_end_word": 7,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "早グ{BEAT}グググゥ",
+    "tr": "H-hurry{BEAT} hurry...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 157,
+        "page": 1,
+        "file_offset": "0x6c60",
+        "content_start_word": 7,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "逃ゲ{BEAT}逃ゲナイデグレェ{n}アアアアアァ",
+    "tr": "D-don't run{BEAT} run away... Aaaaaagh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 158,
+        "page": 0,
+        "file_offset": "0x6c94",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "逃ゲ{BEAT}逃ゲナイデグレェ",
+    "tr": "D-don't run{BEAT} run away...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 159,
+        "page": 0,
+        "file_offset": "0x6cac",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ",
+    "tr": "Aaaaaagh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 160,
+        "page": 0,
+        "file_offset": "0x6cba",
+        "content_start_word": 0,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}止止止{BEAT}止マッダァ{n}苦ジイ{BEAT}苦ジイノ止マッダァ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} It st-st-stopped{BEAT} stopped... The s-suffering{BEAT} suffering stopped...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 160 page 0 continues through pages 1-2 (records 143-144), explaining why the demon may join."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 160,
+        "page": 1,
+        "file_offset": "0x6cba",
+        "content_start_word": 35,
+        "content_end_word": 68,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "おばえガアダダ{BEAT}ダダダガグゥ{n}見デイデグレダ{BEAT}ダダダダガラダァ",
+    "tr": "B-b-because{BEAT} because you kept w-watching{BEAT} watching over me...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 160 page 1 supplies the reason linking the relief on page 0 (record 142) to the recruitment offer on page 2 (record 144)."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 160,
+        "page": 2,
+        "file_offset": "0x6cba",
+        "content_start_word": 69,
+        "content_end_word": 89,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ながま{BEAT}がまがまナッデヤッデモイイゾォ",
+    "tr": "I m-might become your a-ally{BEAT} ally-ally after all...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 160 page 2 completes pages 0-1 (records 142-143)."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 161,
+        "page": 0,
+        "file_offset": "0x6d6e",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "あぐま倒ジデヘェヘェヘェ{BEAT}平気ナノガァ",
+    "tr": "Does b-beating demons{BEAT} beating them not bother you...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 162,
+        "page": 0,
+        "file_offset": "0x6d98",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "平気",
+    "tr": "It doesn't bother me.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 163,
+        "page": 0,
+        "file_offset": "0x6d9e",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "気がとがめる",
+    "tr": "I feel guilty.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 164,
+        "page": 0,
+        "file_offset": "0x6dac",
+        "content_start_word": 0,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "でびるさばなぁ{BEAT}ざばなぁ{n}オオオオ{BEAT}オゾロジヤァ{n}{offered_item}ヤロウ{BEAT}ヤロウ",
+    "tr": "Devil Sum{BEAT} Summoners are o-o-o{BEAT}oh so scary... I'll give you {offered_item}{BEAT} give it to you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 165,
+        "page": 0,
+        "file_offset": "0x6df2",
+        "content_start_word": 0,
+        "content_end_word": 13,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 328,
+        "page": 0,
+        "file_offset": "0x8e10",
+        "content_start_word": 0,
+        "content_end_word": 13,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オオオオオォ{n}アアアアアァ",
+    "tr": "Ooooooh... Aaaaaagh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 166,
+        "page": 0,
+        "file_offset": "0x6e0e",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゾゾゾゾ{BEAT}ゾウガァ{n}{WAIT}グゲグゲグゲゲェ",
+    "tr": "I-I-is{BEAT} is that so...?{WAIT} Guh-guh-guh-gehh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 167,
+        "page": 0,
+        "file_offset": "0x6e36",
+        "content_start_word": 0,
+        "content_end_word": 43,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ウウウウ{BEAT}ウゾヲヅグナァ{n}おでだぢノ痛痛痛{BEAT}痛ミヲォ{n}分ガラゼデヤル{BEAT}ヤルヤルゥ",
+    "tr": "D-d-d-don't{BEAT} don't lie... I'll m-make you feel{BEAT} feel our p-pain{BEAT} pain-our-pain...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 168,
+        "page": 0,
+        "file_offset": "0x6e8e",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゴブガガェ{n}ンゾベギミバ{maru_symbol}ジォ",
+    "tr": "Gugobugagae... Nzobegimiva'jo.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 169,
+        "page": 0,
+        "file_offset": "0x6eb2",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゲゴロギビゲバンォ？",
+    "tr": "Gegorogi bigebango?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 170,
+        "page": 0,
+        "file_offset": "0x6eca",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "はい",
+    "tr": "Yes.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 171,
+        "page": 0,
+        "file_offset": "0x6ed0",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "いいえ",
+    "tr": "No.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 172,
+        "page": 0,
+        "file_offset": "0x6ed8",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "？？",
+    "tr": "Huh?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 173,
+        "page": 0,
+        "file_offset": "0x6ede",
+        "content_start_word": 0,
+        "content_end_word": 41,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ゾゾゾゾ{BEAT}ゾウガァ{n}おばえナガナガ{BEAT}ナガナガ見ドゴロアルガァ{n}気ニ入ッ{BEAT}ッッダァ",
+    "tr": "I-I-is{BEAT} is that so...? You have q-quite{BEAT} quite some promise... I l-like{BEAT} like-like you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 173,
+        "page": 1,
+        "file_offset": "0x6ede",
+        "content_start_word": 42,
+        "content_end_word": 59,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{offered_item}ヤロウ{BEAT}ヤロウ{n}{WAIT}グゲグゲゲェ",
+    "tr": "I'll give you {offered_item}{BEAT} give it to you...{WAIT} Guh-guh-gehh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 174,
+        "page": 0,
+        "file_offset": "0x6f56",
+        "content_start_word": 0,
+        "content_end_word": 41,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゾゾゾゾ{BEAT}ゾウガァ{n}おばえナガナガ{BEAT}ナガナガ見ドゴロアルガァ{n}気ニ入ッ{BEAT}ッッダァ",
+    "tr": "I-I-is{BEAT} is that so...? You have q-quite{BEAT} quite some promise... I l-like{BEAT} like-like you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 175,
+        "page": 0,
+        "file_offset": "0x6faa",
+        "content_start_word": 0,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 176,
+        "page": 0,
+        "file_offset": "0x6ffe",
+        "content_start_word": 0,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}オオオオオォ{n}ナンナンナン{BEAT}ナンデェゴドダァ",
+    "tr": "Aaaaaagh! Ooooooh... Wh-wh-wh-what{BEAT} what does this mean...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 175,
+        "page": 1,
+        "file_offset": "0x6faa",
+        "content_start_word": 31,
+        "content_end_word": 41,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オゾロジヤ{BEAT}ヤヤヤァ",
+    "tr": "How s-s-scary{BEAT} scary-scary...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 177,
+        "page": 0,
+        "file_offset": "0x703c",
+        "content_start_word": 0,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 178,
+        "page": 0,
+        "file_offset": "0x70aa",
+        "content_start_word": 0,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ゾゾゾゾ{BEAT}ゾウガァ{n}おばえガ言ウナラ{BEAT}言ウナラァ{n}ジガダナイ{BEAT}イイイイィ",
+    "tr": "I-I-is{BEAT} is that so...? If you i-insist{BEAT} insist... I s-s-suppose{BEAT} suppose I must...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: this shared page 0 begins messages 177-178; page 1 (record 163) completes the thought with the decision to become an ally."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 177,
+        "page": 1,
+        "file_offset": "0x703c",
+        "content_start_word": 38,
+        "content_end_word": 54,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 178,
+        "page": 1,
+        "file_offset": "0x70aa",
+        "content_start_word": 38,
+        "content_end_word": 54,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ながまニナッデヤロウ{BEAT}ヤロウゥ",
+    "tr": "I'll become your a-ally{BEAT} ally...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: this shared page 1 completes \"I suppose I must...\" on page 0 (record 162) for messages 177-178."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 179,
+        "page": 0,
+        "file_offset": "0x7118",
+        "content_start_word": 0,
+        "content_end_word": 22,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}オボジロイ奴{BEAT}奴奴奴ガァ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} What an i-i-interesting one{BEAT} one-one-one...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 180,
+        "page": 0,
+        "file_offset": "0x7146",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オオオオオォ{n}アアアアアァ{n}オボオボ{BEAT}オボエデロォ",
+    "tr": "Ooooooh... Aaaaaagh! R-r-remember{BEAT} remember this...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 181,
+        "page": 0,
+        "file_offset": "0x717a",
+        "content_start_word": 0,
+        "content_end_word": 15,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "分ガラナイ{BEAT}分ガラナイダドォ？",
+    "tr": "You d-don't understand{BEAT} don't understand...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 181,
+        "page": 1,
+        "file_offset": "0x717a",
+        "content_start_word": 16,
+        "content_end_word": 36,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}ジガダ{BEAT}ジガダナイィ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} I c-can't{BEAT} can't help it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 182,
+        "page": 0,
+        "file_offset": "0x71c4",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}エエエエエェ{n}バガバガバガ{BEAT}バガニジダナァ",
+    "tr": "Aaaaaagh! Heeeeey! You m-m-made{BEAT} made-made a fool of me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 183,
+        "page": 0,
+        "file_offset": "0x71fe",
+        "content_start_word": 0,
+        "content_end_word": 16,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ギョンゴレベニェ{n}ベニベベニベェ",
+    "tr": "Gyongolebenye... Benibebenibee.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 184,
+        "page": 0,
+        "file_offset": "0x7220",
+        "content_start_word": 0,
+        "content_end_word": 15,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "何ガヤッデグレ{BEAT}ヤッデグレェ",
+    "tr": "D-do something for me{BEAT} do it for me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 185,
+        "page": 0,
+        "file_offset": "0x7240",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "苦ジミヲ忘レザゼデ{BEAT}ザゼデグレェ",
+    "tr": "M-make me forget{BEAT} forget my suffering...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 186,
+        "page": 0,
+        "file_offset": "0x7264",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "うたう",
+    "tr": "Sing.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 187,
+        "page": 0,
+        "file_offset": "0x726c",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "早口ことば",
+    "tr": "Recite a tongue twister.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 189,
+        "page": 0,
+        "file_offset": "0x728a",
+        "content_start_word": 0,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}美美美{BEAT}美ジイィ{n}今ノおでニピッダピッダ{BEAT}ピッダリダ{BEAT}ダァ",
+    "tr": "Aaaaaagh! B-b-b{BEAT}beautiful... That was p-perfect{BEAT} perfect-perfect{BEAT} perfect for me...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 190 page 0 continues through pages 1-3 (records 177-179), where the demon asks the hero to hear its song, sings, and reacts."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 189,
+        "page": 1,
+        "file_offset": "0x728a",
+        "content_start_word": 38,
+        "content_end_word": 57,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オレイ{BEAT}オレイニィ{n}{offered_item}ヤロウヤロウゥ",
+    "tr": "As th-thanks{BEAT} thanks, I'll give you {offered_item}...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 190,
+        "page": 0,
+        "file_offset": "0x72fe",
+        "content_start_word": 0,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}美美美{BEAT}美ジイィ{n}今ノおでニピッダピッダ{BEAT}ピッダリダ{BEAT}ダァ",
+    "tr": "Aaaaaagh! B-b-b{BEAT}beautiful... That was p-perfect{BEAT} perfect-perfect{BEAT} perfect for me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 190,
+        "page": 1,
+        "file_offset": "0x72fe",
+        "content_start_word": 38,
+        "content_end_word": 72,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ジャジャ{BEAT}ジャア今度バァ{n}おでノウダヲ聞イデグレェ{n}{WAIT}聞グノガァ",
+    "tr": "Th-th-then{BEAT} then, next time... Listen to my song...{WAIT} Will you listen?",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 190 page 1 links the praise on page 0 (record 176) to the song on page 2 (record 178)."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 190,
+        "page": 2,
+        "file_offset": "0x72fe",
+        "content_start_word": 73,
+        "content_end_word": 94,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "{OP:8025}グゲグゲグゲゲェ{n}{WAIT}ボゲボゲゲエエエェ{OP:8020}",
+    "tr": "{OP:8025}Guh-guh-guh-gehh...{WAIT} Boge-bogehhh...{OP:8020}",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 190 page 2 is the song requested on page 1 (record 177); page 3 (record 179) reacts to it."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 190,
+        "page": 3,
+        "file_offset": "0x72fe",
+        "content_start_word": 95,
+        "content_end_word": 122,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲ？{n}{WAIT}ナンガァゾンナニ{BEAT}ニィ緊張ズルナヨ{BEAT}ヨォ",
+    "tr": "Guh?{WAIT} Why are you s-so{BEAT} so nervous{BEAT} nervous...?",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 190 page 3 closes the song sequence across pages 0-2 (records 176-178)."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 191,
+        "page": 0,
+        "file_offset": "0x73f4",
+        "content_start_word": 0,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ガガグギ{BEAT}ガガゴゲェ{n}{BEAT}ガガガガゴォ{n}{WAIT}グゲグゲゲェ",
+    "tr": "Ga-ga-gugi{BEAT} ga-ga-gogeh...{BEAT} Ga-ga-ga-gagoh...{WAIT} Guh-guh-gehh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 191,
+        "page": 1,
+        "file_offset": "0x73f4",
+        "content_start_word": 28,
+        "content_end_word": 41,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでウマイ{BEAT}ウマイガァ？",
+    "tr": "Was I g-good{BEAT} good...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 192,
+        "page": 0,
+        "file_offset": "0x7448",
+        "content_start_word": 0,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ゴガギノギャグガァ{n}{BEAT}ヨグガギ喰ウ{BEAT}ギャグガァ{n}アアアアアァ",
+    "tr": "Gogagi no gag gag gah...{BEAT} Yogu gagi gagger{BEAT} gag gag gah... Aaaaaagh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 192,
+        "page": 1,
+        "file_offset": "0x7448",
+        "content_start_word": 33,
+        "content_end_word": 50,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "言エネエェ言エエエ{BEAT}エネエエエェ",
+    "tr": "I c-can't say it{BEAT} can't-c-can't say it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 193,
+        "page": 0,
+        "file_offset": "0x74ae",
+        "content_start_word": 0,
+        "content_end_word": 13,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "早早早{BEAT}早グヤッデグレェ",
+    "tr": "H-h-hurry{BEAT} hurry up and do it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 194,
+        "page": 0,
+        "file_offset": "0x74ca",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}ゾウヂャネエ{BEAT}ネエェ",
+    "tr": "Aaaaaagh! That's n-not it{BEAT} not it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 195,
+        "page": 0,
+        "file_offset": "0x74ee",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえモおでノながまニ{BEAT}ながまニナレェ",
+    "tr": "You become my a-ally{BEAT} ally too...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 196,
+        "page": 0,
+        "file_offset": "0x751a",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "なる",
+    "tr": "Accept.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 197,
+        "page": 0,
+        "file_offset": "0x7520",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ならない",
+    "tr": "Refuse.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 198,
+        "page": 0,
+        "file_offset": "0x752a",
+        "content_start_word": 0,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}ながまニ{BEAT}ながまニ入デデデデデ{BEAT}ヤルゥ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} I'll let you j-join{BEAT} join my a-a-a-allies{BEAT} allies...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 199,
+        "page": 0,
+        "file_offset": "0x7568",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}ミヅゲ{BEAT}ミヅゲェ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} F-found you{BEAT} found you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 200,
+        "page": 0,
+        "file_offset": "0x758e",
+        "content_start_word": 0,
+        "content_end_word": 24,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナンダド{BEAT}ナンダドォ{n}ゾレジャ{BEAT}ジャジャジャアァ",
+    "tr": "Wh-what{BEAT} what did you say...? Then g-goodbye{BEAT} bye-bye...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 201,
+        "page": 0,
+        "file_offset": "0x75c0",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "イーガラながまニナナナナ{BEAT}ナレェ",
+    "tr": "J-just become my a-a-a-ally{BEAT} ally...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 202,
+        "page": 0,
+        "file_offset": "0x75e4",
+        "content_start_word": 0,
+        "content_end_word": 16,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえノガガガ{BEAT}体ァ{n}ヨゴゼェ",
+    "tr": "G-g-give me{BEAT} me your body...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 203,
+        "page": 0,
+        "file_offset": "0x7606",
+        "content_start_word": 0,
+        "content_end_word": 13,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでノ体ドォ交換ジヨウゥ",
+    "tr": "Let's trade bodies...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 204,
+        "page": 0,
+        "file_offset": "0x7622",
+        "content_start_word": 0,
+        "content_end_word": 7,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "交換してもいい",
+    "tr": "Agree to the exchange.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 205,
+        "page": 0,
+        "file_offset": "0x7632",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "嫌だ",
+    "tr": "Refuse.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 206,
+        "page": 0,
+        "file_offset": "0x7638",
+        "content_start_word": 0,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 207,
+        "page": 0,
+        "file_offset": "0x768e",
+        "content_start_word": 0,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアア{BEAT}アリガデェ{n}マズバ{BEAT}マズバおばえヲォ{n}ゾノ体ガラ追イ{BEAT}追イ追イ出ズガァ",
+    "tr": "Aaaaaagh{BEAT} thank you... F-first{BEAT} first I'll d-drive{BEAT} drive-drive you out of that body...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 208,
+        "page": 0,
+        "file_offset": "0x76e4",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナンダドォ",
+    "tr": "What...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 209,
+        "page": 0,
+        "file_offset": "0x76f0",
+        "content_start_word": 0,
+        "content_end_word": 12,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ウバッデヤル{BEAT}ヤルヤルゥ",
+    "tr": "I'll t-take it{BEAT} take-take it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 210,
+        "page": 0,
+        "file_offset": "0x770a",
+        "content_start_word": 0,
+        "content_end_word": 13,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゴッヂニ来イ{BEAT}来イ来イィ",
+    "tr": "C-come here{BEAT} come-come...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 211,
+        "page": 0,
+        "file_offset": "0x7726",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "近づく",
+    "tr": "Approach.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 212,
+        "page": 0,
+        "file_offset": "0x772e",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "近づかない",
+    "tr": "Stay back.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 213,
+        "page": 1,
+        "file_offset": "0x773a",
+        "content_start_word": 7,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 214,
+        "page": 1,
+        "file_offset": "0x7786",
+        "content_start_word": 7,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "イイ根性ジデル{BEAT}ジデルナおばえぇ{n}早死ニ{BEAT}死ニズルゾォ",
+    "tr": "You've got g-good nerve{BEAT} good nerve... You'll d-die young{BEAT} die young...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 215,
+        "page": 1,
+        "file_offset": "0x77d2",
+        "content_start_word": 7,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでガ{BEAT}ガガァオゾロジイガァ{n}オゾロジイノガ{BEAT}ガガァ",
+    "tr": "Am I{BEAT} am I scary...? Are you scared of me{BEAT} of me...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 216,
+        "page": 0,
+        "file_offset": "0x7818",
+        "content_start_word": 0,
+        "content_end_word": 33,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでガ{BEAT}ガガァオゾロジイガァ{n}オゾロジイノバゴレガラダ{BEAT}ダダァ",
+    "tr": "Am I{BEAT} am I scary...? The scary part is coming n-now{BEAT} now...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 217,
+        "page": 0,
+        "file_offset": "0x785c",
+        "content_start_word": 0,
+        "content_end_word": 14,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえジャマママママ{BEAT}ダァ",
+    "tr": "Y-you're in my w-w-w-w-way{BEAT} way...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 218,
+        "page": 0,
+        "file_offset": "0x787a",
+        "content_start_word": 0,
+        "content_end_word": 12,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ザッザド消エロ消エロォ",
+    "tr": "Hurry up and disappear...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 219,
+        "page": 0,
+        "file_offset": "0x7894",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "立ち去る",
+    "tr": "Leave.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 220,
+        "page": 0,
+        "file_offset": "0x789e",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "去らない",
+    "tr": "Stay.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 221,
+        "page": 0,
+        "file_offset": "0x78a8",
+        "content_start_word": 0,
+        "content_end_word": 7,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "オオオオオォ？",
+    "tr": "Ooooooh?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 221,
+        "page": 1,
+        "file_offset": "0x78a8",
+        "content_start_word": 8,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "おばえナガナガ{BEAT}ナガナガイイ奴ガァ{n}バナバナ{BEAT}話ノ分ガル男ガァ",
+    "tr": "Y-you're q-quite{BEAT} quite a good one... A m-man{BEAT} man who listens to reason...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 221,
+        "page": 2,
+        "file_offset": "0x78a8",
+        "content_start_word": 43,
+        "content_end_word": 55,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ヂョッド待待待{BEAT}待デェ",
+    "tr": "W-w-wait{BEAT} wait!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 222,
+        "page": 0,
+        "file_offset": "0x7918",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲゲェ{n}{WAIT}イイ気味味味味味ダ{BEAT}ダァ",
+    "tr": "Guh-guh-gehh...{WAIT} S-s-serves you right{BEAT} right...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 223,
+        "page": 0,
+        "file_offset": "0x7942",
+        "content_start_word": 0,
+        "content_end_word": 14,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ナナナナ{BEAT}何ガ用ナノガァ？",
+    "tr": "Wh-wh-wh-what{BEAT} what do you want?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 223,
+        "page": 1,
+        "file_offset": "0x7942",
+        "content_start_word": 15,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ながま{BEAT}がまがまニィジデグレルノガ{BEAT}ガァ？",
+    "tr": "Will you m-make me{BEAT} make me your a-a-ally{BEAT} ally...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 224,
+        "page": 0,
+        "file_offset": "0x798e",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グガガガガガァ{n}口惜ジヤ{BEAT}口惜ジヤァ",
+    "tr": "Gwaaaaaagh! H-how mortifying{BEAT} mortifying...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 225,
+        "page": 0,
+        "file_offset": "0x79b4",
+        "content_start_word": 0,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでバ救救{BEAT}救ワレナイノガァ？{n}ダダダダ{BEAT}誰モおでヲォ{n}ゴノ苦ジミガラ{BEAT}ラララァ",
+    "tr": "Can I n-never be saved{BEAT} saved...? W-w-will{BEAT} will no one free me from this s-suffering{BEAT} suffering...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 226,
+        "page": 0,
+        "file_offset": "0x7a0a",
+        "content_start_word": 0,
+        "content_end_word": 15,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "救救{BEAT}救ッデグレナイノガァ？",
+    "tr": "W-won't you save{BEAT} save me...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 227,
+        "page": 0,
+        "file_offset": "0x7a2a",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 248,
+        "page": 0,
+        "file_offset": "0x7eb0",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 373,
+        "page": 0,
+        "file_offset": "0x992e",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "そうだ",
+    "tr": "That's right.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 228,
+        "page": 0,
+        "file_offset": "0x7a32",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "そんなことはない",
+    "tr": "That's not true.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 230,
+        "page": 0,
+        "file_offset": "0x7a50",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}痛痛痛ェ",
+    "tr": "Aaaaaagh! It hurts...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 231,
+        "page": 0,
+        "file_offset": "0x7a68",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}おばえニモ味味味{BEAT}味アワゼデヤルゥ",
+    "tr": "Aaaaaagh! I'll m-make you taste{BEAT} taste it too...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 232,
+        "page": 0,
+        "file_offset": "0x7a9c",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえガ救ッデ{BEAT}救ッデグレルノガァ？",
+    "tr": "Will you s-save me{BEAT} save me...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 233,
+        "page": 0,
+        "file_offset": "0x7ac4",
+        "content_start_word": 0,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ウロヅギ回ッデ{BEAT}回ッデイレバァ{n}助ゲデグレル奴ニ{BEAT}奴ニ出会エルガァ？",
+    "tr": "If I keep w-wandering{BEAT} wandering, will I meet s-someone{BEAT} someone who will save me...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 233,
+        "page": 1,
+        "file_offset": "0x7ac4",
+        "content_start_word": 36,
+        "content_end_word": 45,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "分ガッダ{BEAT}ダダダァ",
+    "tr": "I u-understand{BEAT} understand...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 234,
+        "page": 0,
+        "file_offset": "0x7b20",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ゾウガァ{n}おばえジョジョ{BEAT}正直ナ奴ガァ",
+    "tr": "I see... You're an h-h-honest{BEAT} honest one...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 234,
+        "page": 1,
+        "file_offset": "0x7b20",
+        "content_start_word": 21,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{offered_item}ヤロウ{BEAT}ヤロウ",
+    "tr": "I'll give you {offered_item}{BEAT} give it to you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 235,
+        "page": 0,
+        "file_offset": "0x7b5e",
+        "content_start_word": 0,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ゾウガァ{n}おでバ永遠ニ{BEAT}永遠ニィ{n}ゴンナズズズズ{BEAT}姿デェ",
+    "tr": "I see... Am I to remain like th-th-this{BEAT} this forever{BEAT} forever...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Continues into message 235 page 1: page 0 asks whether it must remain in this form forever, and page 1 answers that it hates the idea."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 235,
+        "page": 1,
+        "file_offset": "0x7b5e",
+        "content_start_word": 31,
+        "content_end_word": 40,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "イヤ{BEAT}ヤヤヤヤガァ",
+    "tr": "I h-hate{BEAT} hate-hate-hate it...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Completes message 235 page 0: it hates the prospect of remaining in its present form forever."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 236,
+        "page": 0,
+        "file_offset": "0x7bb0",
+        "content_start_word": 0,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでバ美美美{BEAT}美ジイガァ{n}{WAIT}ゾノ女女{BEAT}女ド比ベデェ",
+    "tr": "Am I b-b-beau{BEAT}beautiful...{WAIT} Compared with th-that woman{BEAT} that woman...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 237,
+        "page": 0,
+        "file_offset": "0x7be8",
+        "content_start_word": 0,
+        "content_end_word": 13,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ドッヂガ美{BEAT}美美ジイガァ",
+    "tr": "Which of us is more b-beau{BEAT}beautiful?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 238,
+        "page": 0,
+        "file_offset": "0x7c04",
+        "content_start_word": 0,
+        "content_end_word": 1,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{demon_name}",
+    "tr": "{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 239,
+        "page": 0,
+        "file_offset": "0x7c08",
+        "content_start_word": 0,
+        "content_end_word": 1,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{rei_name}",
+    "tr": "{rei_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 240,
+        "page": 0,
+        "file_offset": "0x7c0c",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ノーコメント",
+    "tr": "No comment.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 241,
+        "page": 0,
+        "file_offset": "0x7c1a",
+        "content_start_word": 0,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}ゾウダロ{BEAT}ゾウダロォ{n}{offered_item}ヤロウ{BEAT}ヤロウ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} That's r-right{BEAT} that's right... I'll give you {offered_item}{BEAT} give it to you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 241,
+        "page": 1,
+        "file_offset": "0x7c1a",
+        "content_start_word": 31,
+        "content_end_word": 52,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "{rei_name}：なによ、そんなもの！{n}こうしてやる！！",
+    "tr": "{rei_name}: What good is that thing?! Here, take this!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 241,
+        "page": 2,
+        "file_offset": "0x7c1a",
+        "content_start_word": 53,
+        "content_end_word": 61,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "{OP:8025}バキャッ！！{OP:8020}",
+    "tr": "{OP:8025}CRUNCH!!{OP:8020}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 241,
+        "page": 3,
+        "file_offset": "0x7c1a",
+        "content_start_word": 62,
+        "content_end_word": 87,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}{BEAT}ナンデェゴドヲォゴノ{BEAT}女女女女ァ",
+    "tr": "Aaaaaagh!{BEAT} Wh-what have you done{BEAT} done, woman?!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 242,
+        "page": 0,
+        "file_offset": "0x7cca",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえええええぇ{n}目ガ{BEAT}目ガ目ガァ{n}笑ッデルガ{BEAT}ガガガァ",
+    "tr": "Y-y-you... Your e-eyes{BEAT} eyes are l-laughing{BEAT} laughing at me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 243,
+        "page": 0,
+        "file_offset": "0x7d04",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 251,
+        "page": 0,
+        "file_offset": "0x7eca",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オオオオオォ",
+    "tr": "Ooooooh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 243,
+        "page": 1,
+        "file_offset": "0x7d04",
+        "content_start_word": 7,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "{rei_name}：叫んだって、{n}きれいになれないよ。",
+    "tr": "{rei_name}: Screaming won't make you beautiful.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 243,
+        "page": 2,
+        "file_offset": "0x7d04",
+        "content_start_word": 27,
+        "content_end_word": 62,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}ジャジャ{BEAT}ジャアァ{n}ドウズレバ美美{BEAT}美ジグナレルンガァ",
+    "tr": "Aaaaaagh! Th-th-then{BEAT} then... How can I become b-beau{BEAT}beautiful...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 243,
+        "page": 3,
+        "file_offset": "0x7d04",
+        "content_start_word": 63,
+        "content_end_word": 77,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゾォオボエ{BEAT}オボエデロォ",
+    "tr": "D-d-damn you... R-remember{BEAT} remember this...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 244,
+        "page": 0,
+        "file_offset": "0x7da0",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オオオオオォ{n}ゾンナ女ニニ{BEAT}ニィ{n}負ゲル{BEAT}負ゲルワゲガナイィ",
+    "tr": "Ooooooh... I c-can't lose{BEAT} lose to a woman like that{BEAT} lose to her...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 245,
+        "page": 0,
+        "file_offset": "0x7de0",
+        "content_start_word": 0,
+        "content_end_word": 36,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}おばえガイヂバン美{BEAT}美美美ジイドォ{n}言ウノガ{BEAT}ノガガァ？",
+    "tr": "Aaaaaagh! Are you s-s-saying I'm the most beau{BEAT}beautiful{BEAT} beautiful of all...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 246,
+        "page": 0,
+        "file_offset": "0x7e2a",
+        "content_start_word": 0,
+        "content_end_word": 45,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ドウゼおでおで{BEAT}おでガァ{n}ミニミニ{BEAT}ミニグイッデ言イダインダロォ{n}ヂグジョ{BEAT}ジョジョォ",
+    "tr": "You just want to s-say{BEAT} say I'm u-u{BEAT}ugly anyway... D-d-damn{BEAT} damn you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 247,
+        "page": 0,
+        "file_offset": "0x7e86",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでヲながまニ{BEAT}ながまニジダイノガァ？",
+    "tr": "You want to m-make me your a-ally{BEAT} ally...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 249,
+        "page": 0,
+        "file_offset": "0x7eb8",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 374,
+        "page": 0,
+        "file_offset": "0x9936",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "違う",
+    "tr": "No.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 250,
+        "page": 0,
+        "file_offset": "0x7ebe",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "かなり違う",
+    "tr": "Not even close.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 253,
+        "page": 0,
+        "file_offset": "0x7eea",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "嫌ヨ嫌ヨモ好ギ{BEAT}好ギ好ギノウヂガァ？",
+    "tr": "D-does 'no' mean y-yes{BEAT} yes-yes deep down...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 254,
+        "page": 0,
+        "file_offset": "0x7f12",
+        "content_start_word": 0,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ンンンンンァ{n}おでガミニミニ{BEAT}ミニグイガラガァ{n}許{BEAT}許許ザネェ",
+    "tr": "Nnnnnngh... Is it because I'm u-u{BEAT}ugly...? I won't f-forgive{BEAT} forgive-forgive you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 255,
+        "page": 0,
+        "file_offset": "0x7f54",
+        "content_start_word": 0,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}美{BEAT}美美ジイモノガラァ{n}目ヲゾラゾラ{BEAT}ゾラズナァ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} D-don't look away{BEAT} look away from something b-beau{BEAT}beautiful...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 256,
+        "page": 0,
+        "file_offset": "0x7f9c",
+        "content_start_word": 0,
+        "content_end_word": 48,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナゼ{BEAT}ナナゼナゼバッギリ言ウゥ{n}おでゾンナニミニミニ{BEAT}ミニグイガァ？{n}許ザザザ{BEAT}ザザネエェ",
+    "tr": "Wh-why{BEAT} why say it so bluntly...? Am I r-really that u-u{BEAT}ugly? I won't f-f-forgive{BEAT} forgive you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 257,
+        "page": 0,
+        "file_offset": "0x7ffe",
+        "content_start_word": 0,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}嫌ガレバ嫌嫌{BEAT}嫌ガルボドォ{n}おでモエデグル{BEAT}ルルルゥ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} The more you h-h-hate{BEAT} hate me, the more f-fired up{BEAT} fired up I get...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 258,
+        "page": 0,
+        "file_offset": "0x804a",
+        "content_start_word": 0,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでヲ連連連{BEAT}連レデッデグレェ{n}悪イゴド少ジモヤラ{BEAT}ヤラヤラネエガラァ",
+    "tr": "T-t-take me{BEAT} take me with you... I won't do a s-single bad thing{BEAT} thing-thing, I promise...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 259,
+        "page": 0,
+        "file_offset": "0x8096",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "連レ{BEAT}連レ出ジデグレェ",
+    "tr": "T-take me out{BEAT} take me away...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 260,
+        "page": 0,
+        "file_offset": "0x80ae",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "連れて行く",
+    "tr": "Take it along.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 262,
+        "page": 0,
+        "file_offset": "0x80c0",
+        "content_start_word": 0,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}マズバおばえノ目目{BEAT}目ザワリナながまヲォ{n}殺ズ{BEAT}殺ズ殺ズノダァ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} F-first, your a-ally g-gets{BEAT} gets in my way... K-kill{BEAT} kill-kill them...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 263,
+        "page": 0,
+        "file_offset": "0x8116",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}ジャアおばえノ体ヲ{BEAT}体ヲォ{n}借リルゾゾォ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} Then I'll b-borrow your body{BEAT} your body...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 263,
+        "page": 1,
+        "file_offset": "0x8116",
+        "content_start_word": 32,
+        "content_end_word": 50,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "痛痛{BEAT}痛グネエガラ動動{BEAT}動グナヨォ",
+    "tr": "It won't h-hurt{BEAT} hurt, so d-don't move{BEAT} don't move...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 264,
+        "page": 0,
+        "file_offset": "0x817c",
+        "content_start_word": 0,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オオオオオァ{n}痛{BEAT}痛痛エヨォ苦ジ{BEAT}ジジイヨォ{n}おでヲフビンニ思ワ{BEAT}思ワネエノガァ",
+    "tr": "Oooooagh! It h-h-hurts{BEAT} hurts! I-it{BEAT} it hurts... Don't you f-feel sorry{BEAT} sorry for me?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 265,
+        "page": 0,
+        "file_offset": "0x81d2",
+        "content_start_word": 0,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オオオオオォ{n}痛{BEAT}痛痛エヨォ苦ジ{BEAT}ジジイヨォ{n}おでヲフビンニ思ワ{BEAT}思ワネエノガァ",
+    "tr": "Ooooooh! It h-h-hurts{BEAT} hurts! I-it{BEAT} it hurts... Don't you f-feel sorry{BEAT} sorry for me?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 266,
+        "page": 0,
+        "file_offset": "0x8228",
+        "content_start_word": 0,
+        "content_end_word": 10,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 294,
+        "page": 0,
+        "file_offset": "0x872a",
+        "content_start_word": 0,
+        "content_end_word": 10,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "置イデゲ{BEAT}エエエエェ",
+    "tr": "L-leave it{BEAT} leave it here...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 267,
+        "page": 0,
+        "file_offset": "0x823e",
+        "content_start_word": 0,
+        "content_end_word": 12,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{requested_item}置イデゲ{BEAT}デゲデゲェ",
+    "tr": "Leave {requested_item} here{BEAT} here-here...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 268,
+        "page": 0,
+        "file_offset": "0x8258",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "要求をのむ",
+    "tr": "Meet its demand.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 269,
+        "page": 0,
+        "file_offset": "0x8264",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "無視する",
+    "tr": "Ignore it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 270,
+        "page": 0,
+        "file_offset": "0x826e",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "マダマダマダマ{BEAT}ダダァ",
+    "tr": "N-not yet{BEAT} not-not yet...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 271,
+        "page": 0,
+        "file_offset": "0x8286",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "マダマダマダマ{BEAT}ダダァ{n}おばえノイイイイ{BEAT}命置イデゲデゲェ",
+    "tr": "N-not yet{BEAT} not-not yet... Leave your l-life{BEAT} life here...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 272,
+        "page": 0,
+        "file_offset": "0x82c6",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえええええぇ{n}ビビ{BEAT}人ノ話ヲ聞ゲ聞ゲ{BEAT}聞ゲェ",
+    "tr": "Y-y-you... L-l-listen{BEAT} listen when s-someone speaks{BEAT} speaks...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 273,
+        "page": 0,
+        "file_offset": "0x82fa",
+        "content_start_word": 0,
+        "content_end_word": 29,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ジャジャ{BEAT}ジャアァ{n}おばえノイイイイ{BEAT}命置イデゲデゲェ",
+    "tr": "Th-th-then{BEAT} then... Leave your l-life{BEAT} life here...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 274,
+        "page": 0,
+        "file_offset": "0x8336",
+        "content_start_word": 0,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "美ジ{BEAT}美ジイネエヂャンドォ{n}ガガガガ{BEAT}合体合体{BEAT}ザゼデグレェ",
+    "tr": "I want to be a b-beau{BEAT}beautiful lady... L-l-let me f-fuse{BEAT} fuse{BEAT} fuse with one...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 275,
+        "page": 0,
+        "file_offset": "0x8378",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ガガガガ{BEAT}合体合体{BEAT}ザゼデグレルガァ？",
+    "tr": "Will you l-l-let me f-fuse{BEAT} fuse{BEAT} fuse with one...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 276,
+        "page": 0,
+        "file_offset": "0x83a2",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "約束する",
+    "tr": "Promise.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 277,
+        "page": 0,
+        "file_offset": "0x83ac",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "却下",
+    "tr": "Refuse.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 278,
+        "page": 0,
+        "file_offset": "0x83b2",
+        "content_start_word": 0,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}ボボボボ{BEAT}本当ガァ{n}早グ美ジグナリ{BEAT}ナリナリナリデェ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} I-is that t-true{BEAT} true...? Hurry and make me b-beau{BEAT}beautiful-beautiful-beautiful...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 279,
+        "page": 0,
+        "file_offset": "0x83fe",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}オオオオオゥ{n}合体{BEAT}合体合体ガァ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} Ooooooh... F-fusion{BEAT} fusion-fusion...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 280,
+        "page": 0,
+        "file_offset": "0x8434",
+        "content_start_word": 0,
+        "content_end_word": 33,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでガミニミニ{BEAT}ミニグイガラガァ{n}ナッドグイガネエ{BEAT}イガネエェ",
+    "tr": "Is it because I'm u-u{BEAT}ugly...? I c-can't accept that{BEAT} can't accept it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 281,
+        "page": 0,
+        "file_offset": "0x8478",
+        "content_start_word": 0,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでガミニミニ{BEAT}ミニグイガラガァ{n}ユユユユ{BEAT}許ザネ{BEAT}ネネェ",
+    "tr": "Is it because I'm u-u{BEAT}ugly...? I w-w-won't{BEAT} forgive{BEAT} forgive-forgive you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 282,
+        "page": 0,
+        "file_offset": "0x84b6",
+        "content_start_word": 0,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでノ魂ノザザザザ{BEAT}叫ビヲォ{n}聞イデグレ{BEAT}グレグレェ",
+    "tr": "Listen to the c-c-c-cry{BEAT} cry of my soul{BEAT} listen-listen...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 283,
+        "page": 0,
+        "file_offset": "0x84ee",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "行グゼ{BEAT}ゼゼゼゼェ",
+    "tr": "H-here I go{BEAT} go-go-go...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 284,
+        "page": 0,
+        "file_offset": "0x8502",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "聞いてやる",
+    "tr": "Listen.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 285,
+        "page": 0,
+        "file_offset": "0x850e",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "黙らせる",
+    "tr": "Silence it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 286,
+        "page": 0,
+        "file_offset": "0x8518",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "始末する",
+    "tr": "Finish it off.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 287,
+        "page": 0,
+        "file_offset": "0x8522",
+        "content_start_word": 0,
+        "content_end_word": 36,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "好ギ{BEAT}ダダダァ{n}ダダダダ大好ギダァ{n}{WAIT}おでヲながま{BEAT}ながまニジデグレェ",
+    "tr": "I l-love{BEAT} love-love you... I r-r-really love you...{WAIT} Make me your a-ally{BEAT} ally...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 287,
+        "page": 1,
+        "file_offset": "0x8522",
+        "content_start_word": 37,
+        "content_end_word": 50,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "連レ出ジデグレ{BEAT}グレグレェ",
+    "tr": "T-take me away{BEAT} take-take me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 288,
+        "page": 0,
+        "file_offset": "0x8588",
+        "content_start_word": 0,
+        "content_end_word": 47,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 290,
+        "page": 0,
+        "file_offset": "0x8634",
+        "content_start_word": 0,
+        "content_end_word": 47,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "←→→{BEAT}P{10c}KェPPPィKェ{n}PPPィ{BEAT}→Kェェェ{n}{WAIT}↑↑↓↓←→←→{BEAT}イイイィ{BEAT}エエエエェ",
+    "tr": "Left, right, right{BEAT} P K... P-P-P... K... P-P-P{BEAT} Right, K...{WAIT} Up, up, down, down, left, right, left, right{BEAT} A-A-A{BEAT} B-B-B...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 289,
+        "page": 0,
+        "file_offset": "0x85e8",
+        "content_start_word": 0,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "好ギ{BEAT}ダダダァ{n}ダダダダ大好ギダァ{n}{WAIT}おでノながま{BEAT}ながまニナッデグレェ",
+    "tr": "I l-love{BEAT} love-love you... I r-r-really love you...{WAIT} Become my a-ally{BEAT} ally...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 291,
+        "page": 0,
+        "file_offset": "0x8694",
+        "content_start_word": 0,
+        "content_end_word": 33,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ウウウウウゥ{n}聞ギダグナイノガ{BEAT}ナイノガァ{n}ジガダナ{BEAT}ナナナナイィ",
+    "tr": "Uuuugh... You d-don't want to listen{BEAT} don't want to...? It c-can't be helped{BEAT} can't be helped...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 292,
+        "page": 0,
+        "file_offset": "0x86d8",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "←←Gィィ",
+    "tr": "Left, left, G...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 292,
+        "page": 1,
+        "file_offset": "0x86d8",
+        "content_start_word": 6,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}ダメダメダメダァ",
+    "tr": "Aaaaaagh! N-no, no, no...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 293,
+        "page": 0,
+        "file_offset": "0x8704",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}オダオダオダ{BEAT}オ助ゲェ",
+    "tr": "Aaaaaagh! H-h-h-help{BEAT} help me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 295,
+        "page": 0,
+        "file_offset": "0x8740",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゾゴノオオオ{BEAT}女置イデゲ{BEAT}デゲデゲェ",
+    "tr": "L-leave that w-woman{BEAT} woman here{BEAT} here-here...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 296,
+        "page": 0,
+        "file_offset": "0x876a",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "置いてく",
+    "tr": "Leave her.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 297,
+        "page": 0,
+        "file_offset": "0x8774",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "とんでもない",
+    "tr": "Absolutely not.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 298,
+        "page": 1,
+        "file_offset": "0x8782",
+        "content_start_word": 9,
+        "content_end_word": 36,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "{rei_name}：ちょ、ちょっと！{n}置いてくって、どういうことよ！！",
+    "tr": "{rei_name}: W-wait! What do you mean, leave me?!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 298,
+        "page": 2,
+        "file_offset": "0x8782",
+        "content_start_word": 37,
+        "content_end_word": 54,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "好ギ{BEAT}ダダダァ{n}ダダダダ大好ギダァ",
+    "tr": "I l-love{BEAT} love-love you... I r-r-really love you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 298,
+        "page": 3,
+        "file_offset": "0x8782",
+        "content_start_word": 55,
+        "content_end_word": 62,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{rei_name}：やめてー！",
+    "tr": "{rei_name}: Stop it!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 299,
+        "page": 0,
+        "file_offset": "0x8800",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "女バ女バモラッダゾォ",
+    "tr": "The woman is mine now...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 299,
+        "page": 1,
+        "file_offset": "0x8800",
+        "content_start_word": 12,
+        "content_end_word": 33,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "女ァ{BEAT}おでノ子子子子{BEAT}子ヲ産ンデグレェ",
+    "tr": "W-woman{BEAT} woman, b-bear my c-c-c-children{BEAT} children...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 299,
+        "page": 2,
+        "file_offset": "0x8800",
+        "content_start_word": 34,
+        "content_end_word": 66,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "{rei_name}：ちょっと。{n}2人とも、なに勝手なこと言ってんのよ！{n}{BEAT}あっ！",
+    "tr": "{rei_name}: Hey! Both of you, stop deciding this without me!{BEAT} Ah!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 299,
+        "page": 3,
+        "file_offset": "0x8800",
+        "content_start_word": 67,
+        "content_end_word": 88,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "本当に置いてかないでよ。{n}{BEAT}ちょっとー！！",
+    "tr": "Seriously, don't leave me behind!{BEAT} Heeey!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 300,
+        "page": 0,
+        "file_offset": "0x88b2",
+        "content_start_word": 0,
+        "content_end_word": 38,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 301,
+        "page": 0,
+        "file_offset": "0x8928",
+        "content_start_word": 0,
+        "content_end_word": 38,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}おでガミニミニ{BEAT}ミニグイガラガァ？{n}ゾウナノ{BEAT}ナノナノガァ？",
+    "tr": "Aaaaaagh! Is it because I'm u-u{BEAT}ugly...? I-is that it{BEAT} it-it...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 300,
+        "page": 1,
+        "file_offset": "0x88b2",
+        "content_start_word": 39,
+        "content_end_word": 51,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 301,
+        "page": 1,
+        "file_offset": "0x8928",
+        "content_start_word": 39,
+        "content_end_word": 51,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "{rei_name}：分かってるじゃない。",
+    "tr": "{rei_name}: At least you know it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 300,
+        "page": 2,
+        "file_offset": "0x88b2",
+        "content_start_word": 52,
+        "content_end_word": 58,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 301,
+        "page": 2,
+        "file_offset": "0x8928",
+        "content_start_word": 52,
+        "content_end_word": 58,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オアオアアァ",
+    "tr": "Oaaaaagh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 302,
+        "page": 0,
+        "file_offset": "0x899e",
+        "content_start_word": 0,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "SSSS{BEAT}SWORDヲ外ゼェ{n}話バゾレガラ{BEAT}ゾレガラダァ",
+    "tr": "R-r-r-remove{BEAT} remove your SWORD... Then we can t-talk{BEAT} talk...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 303,
+        "page": 0,
+        "file_offset": "0x89dc",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "外ズズズ{BEAT}ズノダァ",
+    "tr": "R-r-remove{BEAT} remove it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 304,
+        "page": 0,
+        "file_offset": "0x89f0",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "外す",
+    "tr": "Remove it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 305,
+        "page": 0,
+        "file_offset": "0x89f6",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "外さない",
+    "tr": "Keep it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 306,
+        "page": 0,
+        "file_offset": "0x8a00",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "イイ{BEAT}イイイイダロウゥ",
+    "tr": "G-good{BEAT} good-good-good...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 307,
+        "page": 0,
+        "file_offset": "0x8a18",
+        "content_start_word": 0,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "イイ{BEAT}イイイイダロウゥ{n}モウオゾロジイモノ{BEAT}モノモノバナイィ",
+    "tr": "G-good{BEAT} good-good-good... Nothing s-scary{BEAT} scary-scary remains...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 308,
+        "page": 0,
+        "file_offset": "0x8a5a",
+        "content_start_word": 0,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 309,
+        "page": 0,
+        "file_offset": "0x8ad2",
+        "content_start_word": 0,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}オゾロジヤ{BEAT}ヤヤヤァ{n}SSSS{BEAT}SWORDオゾロジヤァ",
+    "tr": "Aaaaaagh! How s-s-scary{BEAT} scary-scary... S-S-S{BEAT}SWORDs are scary...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 308,
+        "page": 1,
+        "file_offset": "0x8a5a",
+        "content_start_word": 36,
+        "content_end_word": 59,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{offered_item}ヤル{BEAT}ヤルヤルガラァ{n}逃{BEAT}逃ガジデグレレェ",
+    "tr": "I'll give you {offered_item}{BEAT} give-give it to you... So l-let me escape{BEAT} let me go...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 310,
+        "page": 0,
+        "file_offset": "0x8b1a",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}おばえガ憎イイイ{BEAT}イィ",
+    "tr": "Aaaaaagh! I h-h-hate you{BEAT} hate you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 311,
+        "page": 0,
+        "file_offset": "0x8b42",
+        "content_start_word": 0,
+        "content_end_word": 10,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえガガ{BEAT}ガガガァ",
+    "tr": "Y-you{BEAT} you-you-you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 312,
+        "page": 0,
+        "file_offset": "0x8b58",
+        "content_start_word": 0,
+        "content_end_word": 12,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえガ憎イイイ{BEAT}イィ",
+    "tr": "I h-h-hate you{BEAT} hate you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 313,
+        "page": 0,
+        "file_offset": "0x8b72",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "あやまる",
+    "tr": "Apologize.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 314,
+        "page": 0,
+        "file_offset": "0x8b7c",
+        "content_start_word": 0,
+        "content_end_word": 5,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "理由を聞く",
+    "tr": "Ask why.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 315,
+        "page": 0,
+        "file_offset": "0x8b88",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ガンを飛ばす",
+    "tr": "Glare at it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 316,
+        "page": 0,
+        "file_offset": "0x8b96",
+        "content_start_word": 0,
+        "content_end_word": 47,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲェ{n}{WAIT}オバエゲッゴウイ{BEAT}イイイイ奴ガァ{n}おでガ守ッデヤロウガ{BEAT}ヤロウガァ",
+    "tr": "Guh-guh-guh-gehh...{WAIT} You're a p-pretty good{BEAT} good-good one... I'll protect you{BEAT} protect you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 317,
+        "page": 0,
+        "file_offset": "0x8bf6",
+        "content_start_word": 0,
+        "content_end_word": 46,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}アヤマッ{BEAT}ッッデモおばえガ頭下ゲ{BEAT}ゲデモォ{n}おでノダダダダ{BEAT}魂バ救ワレネェ",
+    "tr": "Aaaaaagh! Even if you a-apologize{BEAT} apologize, even if you b-bow your head{BEAT} bow... My s-s-s-soul{BEAT} soul won't be saved...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 318,
+        "page": 0,
+        "file_offset": "0x8c54",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえノダダダダ{BEAT}魂ィ{n}美ジ{BEAT}美ジイガラダ{BEAT}ダァ{n}アアアアアァ",
+    "tr": "Because your s-s-s-soul{BEAT} soul is b-beau{BEAT}beautiful{BEAT} beautiful... Aaaaaagh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 319,
+        "page": 0,
+        "file_offset": "0x8c94",
+        "content_start_word": 0,
+        "content_end_word": 22,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえニ分分{BEAT}分ガッデ{n}ダマルガガガ{BEAT}ガァ",
+    "tr": "Y-you understand{BEAT} understand... So I'll sh-shut up{BEAT} shut up...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 320,
+        "page": 0,
+        "file_offset": "0x8cc2",
+        "content_start_word": 0,
+        "content_end_word": 46,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ざざざざ{BEAT}ざばなぁメェ{n}オゾロジオゾロジ{BEAT}オゾロジヤァ{n}次バ{BEAT}ババダダジャオガ{BEAT}オガネェ",
+    "tr": "D-d-d-damn{BEAT} Summoner... S-s-scary{BEAT} scary, so scary... N-next time{BEAT} next time I won't h-hold back{BEAT} hold back...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 321,
+        "page": 0,
+        "file_offset": "0x8d20",
+        "content_start_word": 0,
+        "content_end_word": 15,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "憎イイイイィ{n}魂ヨゴゼゼゼゼェ",
+    "tr": "I h-hate you... Give me your soul...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 322,
+        "page": 0,
+        "file_offset": "0x8d40",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ググゲグゲェ",
+    "tr": "Guh-guh-gehh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 323,
+        "page": 0,
+        "file_offset": "0x8d4e",
+        "content_start_word": 0,
+        "content_end_word": 10,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{requested_item}ヨヨヨ{BEAT}ヨゴゼェ",
+    "tr": "G-g-give me{BEAT} give me {requested_item}...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 324,
+        "page": 0,
+        "file_offset": "0x8d64",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オアアアアァ{n}持ッデナナナ{BEAT}ナイノガァ",
+    "tr": "Oaaaaagh... Y-you don't have it{BEAT} don't have it...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 325,
+        "page": 0,
+        "file_offset": "0x8d8c",
+        "content_start_word": 0,
+        "content_end_word": 33,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでヲバガバガバガ{BEAT}バガニズルナァ{n}帰ルゥ帰ルノノノノノ{BEAT}ダァ",
+    "tr": "D-don't make a f-f-fool{BEAT} fool of me... I'm g-going home{BEAT} going-going home...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 326,
+        "page": 0,
+        "file_offset": "0x8dd0",
+        "content_start_word": 0,
+        "content_end_word": 16,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 331,
+        "page": 0,
+        "file_offset": "0x8e7c",
+        "content_start_word": 0,
+        "content_end_word": 16,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "マダ{BEAT}マダマダマダマダ欲ジイィ",
+    "tr": "I w-want more{BEAT} more-more-more-more...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 327,
+        "page": 0,
+        "file_offset": "0x8df2",
+        "content_start_word": 0,
+        "content_end_word": 14,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゾゾゾゾ{BEAT}ゾレジャ{BEAT}ジャアァ",
+    "tr": "Th-th-th{BEAT} then g-goodbye{BEAT} goodbye...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 329,
+        "page": 0,
+        "file_offset": "0x8e2c",
+        "content_start_word": 0,
+        "content_end_word": 13,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "何ガァヨゴヨゴ{BEAT}ヨゴゼェ",
+    "tr": "G-g-give me something{BEAT} give it...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 330,
+        "page": 0,
+        "file_offset": "0x8e48",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オアアアアァ？{n}何モナイジャ{BEAT}ジャジャネエガァ",
+    "tr": "Oaaaaagh? Y-you have n-nothing{BEAT} nothing at all!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 332,
+        "page": 0,
+        "file_offset": "0x8e9e",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}モウイイ{BEAT}イイイイィ",
+    "tr": "Aaaaaagh! That's e-enough{BEAT} enough-enough...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 333,
+        "page": 0,
+        "file_offset": "0x8ec4",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでヲバガバガバガ{BEAT}バガニズルナァ{n}オオオオオォ",
+    "tr": "D-don't make a f-f-fool{BEAT} fool of me... Ooooooh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 334,
+        "page": 1,
+        "file_offset": "0x8ef8",
+        "content_start_word": 9,
+        "content_end_word": 47,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 346,
+        "page": 0,
+        "file_offset": "0x91ea",
+        "content_start_word": 0,
+        "content_end_word": 38,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでバ{race}ノノノノノォ{n}{demon_name}ダダダダダァ{n}ヂガラニナッデヤルヤル{BEAT}ヤルゥ",
+    "tr": "I am {demon_name} of the {race} clan. I'll lend you my s-strength{BEAT} strength...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 334 page 1 completes its shared page-0 lead-in (record 36); this record also owns standalone message 346."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 335,
+        "page": 1,
+        "file_offset": "0x8f58",
+        "content_start_word": 9,
+        "content_end_word": 53,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "マダ今度ニズルガァ{BEAT}ガァガァ{n}ながまバゾノ時{BEAT}時時時ダ{BEAT}ダァ{n}ジャジャジャ{BEAT}ジャアナァ",
+    "tr": "We'll do it n-next time{BEAT} next-next... I'll become your a-ally then{BEAT} then-then{BEAT} then... G-g-goodbye{BEAT} goodbye...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Fragment context: message 335 page 1 completes its shared page-0 lead-in (record 36)."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 336,
+        "page": 0,
+        "file_offset": "0x8fc4",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 337,
+        "page": 0,
+        "file_offset": "0x901a",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ググゲグゲェ{n}{WAIT}ゴレデ満{BEAT}満満満満足ガァ",
+    "tr": "Guh-guh-gehh...{WAIT} Are you s-s-s-satisfied{BEAT} satisfied now...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 336,
+        "page": 1,
+        "file_offset": "0x8fc4",
+        "content_start_word": 22,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ガワリニ{BEAT}ニニニィ{n}{offered_item}ヤロウ{BEAT}ヤロウゥ",
+    "tr": "In r-return{BEAT} return-return... I'll give you {offered_item}{BEAT} give it to you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 337,
+        "page": 1,
+        "file_offset": "0x901a",
+        "content_start_word": 22,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "満足足足{BEAT}足ガァ",
+    "tr": "Are you s-s-s-satisfied{BEAT} satisfied...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 338,
+        "page": 0,
+        "file_offset": "0x9058",
+        "content_start_word": 0,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "マダマダマダマダ{BEAT}ガグジデルダロウゥ{n}{WAIT}見ゼデミミミミ{BEAT}ミロォ",
+    "tr": "You're still h-hiding something{BEAT} hiding it, aren't you...?{WAIT} Sh-show me{BEAT} show me...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 339,
+        "page": 0,
+        "file_offset": "0x909a",
+        "content_start_word": 0,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}苦{BEAT}苦苦苦ジイヨオォ{n}痛痛痛{BEAT}痛エヨオォ",
+    "tr": "Aaaaaagh! I-it{BEAT} it-it-it hurts... It h-h-hurts{BEAT} hurts...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 339,
+        "page": 1,
+        "file_offset": "0x909a",
+        "content_start_word": 28,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "交渉ドコロ{BEAT}ドコロジャネエェ",
+    "tr": "I c-can't negotiate{BEAT} can't negotiate like this...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 340,
+        "page": 0,
+        "file_offset": "0x90f0",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "オアアアアァ",
+    "tr": "Oaaaaagh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 342,
+        "page": 0,
+        "file_offset": "0x9110",
+        "content_start_word": 0,
+        "content_end_word": 15,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "オアアアアァ{n}ウエエエエエエェ",
+    "tr": "Oaaaaagh! Uweeeeegh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 342,
+        "page": 1,
+        "file_offset": "0x9110",
+        "content_start_word": 16,
+        "content_end_word": 55,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえガ憎イ{BEAT}イイィ{n}おでノ前ニ出デ出デ出デ{BEAT}出デグルナァ{n}壊壊壊ズゾ{BEAT}ゾォ",
+    "tr": "I h-hate you{BEAT} hate you... N-never appear before me{BEAT} before me again... I'll b-b-break you{BEAT} break you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 343,
+        "page": 0,
+        "file_offset": "0x9180",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "渡す",
+    "tr": "Hand it over.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 344,
+        "page": 0,
+        "file_offset": "0x9186",
+        "content_start_word": 0,
+        "content_end_word": 4,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ことわる",
+    "tr": "Refuse.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 345,
+        "page": 0,
+        "file_offset": "0x9190",
+        "content_start_word": 0,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "マダ今度ニズルガァ{BEAT}ガァガァ{n}ながまバゾノ時{BEAT}時時時ダ{BEAT}ダァ",
+    "tr": "We'll do it n-next time{BEAT} next-next... I'll become your a-ally then{BEAT} then-then{BEAT} then...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 345,
+        "page": 1,
+        "file_offset": "0x9190",
+        "content_start_word": 32,
+        "content_end_word": 44,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ジャジャジャ{BEAT}ジャアナァ",
+    "tr": "G-g-goodbye{BEAT} goodbye...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 347,
+        "page": 0,
+        "file_offset": "0x9238",
+        "content_start_word": 0,
+        "content_end_word": 24,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 348,
+        "page": 0,
+        "file_offset": "0x9346",
+        "content_start_word": 0,
+        "content_end_word": 24,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ア{n}アア{n}{WAIT}アアアアアアアアアアアエアエアアアァ",
+    "tr": "Ah... Aah...{WAIT} Aaaaaaaaaaagh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 347,
+        "page": 1,
+        "file_offset": "0x9238",
+        "content_start_word": 25,
+        "content_end_word": 48,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 348,
+        "page": 1,
+        "file_offset": "0x9346",
+        "content_start_word": 25,
+        "content_end_word": 48,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "光光光{BEAT}光光ガァ！{n}{WAIT}苦{BEAT}苦苦苦ジイイイイイィ",
+    "tr": "L-l-l-light{BEAT} light!{WAIT} It h-hurts{BEAT} hurts-hurts-hurts...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 347,
+        "page": 2,
+        "file_offset": "0x9238",
+        "content_start_word": 49,
+        "content_end_word": 90,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 348,
+        "page": 2,
+        "file_offset": "0x9346",
+        "content_start_word": 49,
+        "content_end_word": 90,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ながま{BEAT}がまがまぁナリデェノニィ{n}おばえノゾバニ{BEAT}ニニニィ{n}行ゲ行ゲ{BEAT}行ゲネェ",
+    "tr": "I w-wanted to become your a-ally{BEAT} ally-ally... But I c-can't go{BEAT} go to your side{BEAT} go-go...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Continues through message 347 pages 3-4: unable to join the party, it leaves an item in its place and asks the player to cherish it as a keepsake."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 347,
+        "page": 3,
+        "file_offset": "0x9238",
+        "content_start_word": 91,
+        "content_end_word": 112,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ガワリニ{BEAT}ニニニニィ{n}{offered_item}置イデグ{BEAT}デグゥ",
+    "tr": "In my p-place{BEAT} place-place-place... I'll leave you {offered_item}{BEAT} leave it...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Continues message 347 page 2 and leads into page 4: the item is left in place of the demon that cannot join."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 347,
+        "page": 4,
+        "file_offset": "0x9238",
+        "content_start_word": 113,
+        "content_end_word": 134,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでダド思ッデ大{BEAT}大切大切ニジデグレェ",
+    "tr": "Think of it as m-me and take g-good{BEAT} good care of it...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Completes message 347 pages 2-3: the demon asks the player to cherish the item left in its stead."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 348,
+        "page": 3,
+        "file_offset": "0x9346",
+        "content_start_word": 91,
+        "content_end_word": 115,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでニ何{BEAT}何何何ヲジダァ{n}オゾロ{BEAT}オゾロジヤァ",
+    "tr": "Wh-what{BEAT} what did you do to me...? H-how t-terrifying{BEAT} terrifying...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 349,
+        "page": 0,
+        "file_offset": "0x942e",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 359,
+        "page": 0,
+        "file_offset": "0x9640",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "グゲェ",
+    "tr": "Guhh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 349,
+        "page": 1,
+        "file_offset": "0x942e",
+        "content_start_word": 4,
+        "content_end_word": 45,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 359,
+        "page": 1,
+        "file_offset": "0x9640",
+        "content_start_word": 4,
+        "content_end_word": 45,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "丸丸丸丸丸丸丸丸丸丸{BEAT}丸ゥ{n}イイイイイイイイイイ{BEAT}イィ{n}月月月月月月月月月月{BEAT}月ィ",
+    "tr": "ROUND ROUND ROUND ROUND ROUND{BEAT} ROUND...{n}FULL FULL FULL FULL FULL{BEAT} FULL...{n}MOON MOON MOON MOON MOON{BEAT} MOON...",
+    "reviewed": false,
+    "excluded": false,
+    "note": "The authored line breaks are semantic: each of the six columns reads ROUND / FULL / MOON vertically. The follow-up choices are adapted to four, five, and six so the original third-choice answer remains correct within the FONT16 width."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 350,
+        "page": 0,
+        "file_offset": "0x948a",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ドド{BEAT}ドウダァ縦ニモ読メダ{BEAT}ダダダロウゥ",
+    "tr": "H-how{BEAT} how's that...? You could read it d-downward too{BEAT} downward, right...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 351,
+        "page": 0,
+        "file_offset": "0x94b6",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "読めた",
+    "tr": "I read it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 352,
+        "page": 0,
+        "file_offset": "0x94be",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "なんのことだ",
+    "tr": "What are you talking about?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 353,
+        "page": 0,
+        "file_offset": "0x94cc",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ヨヨヨヨ{BEAT}ヨグ読メダナアァ{n}ボウビ{BEAT}ビビビビダアァ",
+    "tr": "Y-you read it well{BEAT} read it well... Here's your r-reward{BEAT} reward-reward-reward...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 353,
+        "page": 1,
+        "file_offset": "0x94cc",
+        "content_start_word": 26,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{offered_item}グレデヤル{BEAT}ルルゥ",
+    "tr": "I'll give you {offered_item}{BEAT} give it to you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 354,
+        "page": 0,
+        "file_offset": "0x9518",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "デデデデ{BEAT}デモォ{n}横横{BEAT}横ニバァ読メネェ{n}{WAIT}グゲェ",
+    "tr": "B-b-b-but{BEAT} but... You can't read it s-sideways{BEAT} sideways...{WAIT} Guhh...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 355,
+        "page": 0,
+        "file_offset": "0x954e",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "以以以以{BEAT}以上ゥ",
+    "tr": "Th-th-th-that's all{BEAT} all...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 356,
+        "page": 0,
+        "file_offset": "0x9560",
+        "content_start_word": 0,
+        "content_end_word": 10,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ジョウガネ{BEAT}ネネネェ",
+    "tr": "C-can't be helped{BEAT} helped-helped...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 356,
+        "page": 1,
+        "file_offset": "0x9560",
+        "content_start_word": 11,
+        "content_end_word": 29,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ザイジョガラヤッデ{BEAT}ヤッデヤルガァ",
+    "tr": "I'll s-start over from the beginning{BEAT} start over...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 357,
+        "page": 0,
+        "file_offset": "0x959c",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 358,
+        "page": 0,
+        "file_offset": "0x95fe",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 366,
+        "page": 0,
+        "file_offset": "0x971c",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 368,
+        "page": 0,
+        "file_offset": "0x97a6",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "おばえええええぇ！",
+    "tr": "Y-y-you!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 357,
+        "page": 1,
+        "file_offset": "0x959c",
+        "content_start_word": 10,
+        "content_end_word": 48,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 366,
+        "page": 1,
+        "file_offset": "0x971c",
+        "content_start_word": 10,
+        "content_end_word": 48,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 368,
+        "page": 1,
+        "file_offset": "0x97a6",
+        "content_start_word": 10,
+        "content_end_word": 48,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "人ノ話バァ耳ノアナ{BEAT}アナアナアナァ{n}ガッボジッデヨグ聞イドゲ{BEAT}ゲゲゲェ",
+    "tr": "When someone talks, o-open your ears{BEAT} ears-ears wide and l-listen carefully{BEAT} listen-listen...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 358,
+        "page": 1,
+        "file_offset": "0x95fe",
+        "content_start_word": 10,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "体ヲ張ッダ{BEAT}ダダァ{n}笑笑笑笑{BEAT}笑イヲォ！！",
+    "tr": "A f-full-body{BEAT} full-body c-comedy{BEAT} comedy routine!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 359,
+        "page": 2,
+        "file_offset": "0x9640",
+        "content_start_word": 46,
+        "content_end_word": 52,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ザザ{BEAT}ザデェ",
+    "tr": "W-well{BEAT} well then...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 360,
+        "page": 0,
+        "file_offset": "0x96aa",
+        "content_start_word": 0,
+        "content_end_word": 23,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでバァ何回{BEAT}回回回{OP:8022}月{OP:8020}ド言ッダガナァ？",
+    "tr": "H-how many times{BEAT} times did I say {OP:8022}MOON{OP:8020}?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 361,
+        "page": 0,
+        "file_offset": "0x96da",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "7回",
+    "tr": "Four times.",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Localized count choice for the six-column ROUND / FULL / MOON grid in record 357; the original correct branch remains the third choice."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 362,
+        "page": 0,
+        "file_offset": "0x96e2",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "9回",
+    "tr": "Five times.",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Localized count choice for the six-column ROUND / FULL / MOON grid in record 357; the original correct branch remains the third choice."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 363,
+        "page": 0,
+        "file_offset": "0x96ea",
+        "content_start_word": 0,
+        "content_end_word": 3,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "11回",
+    "tr": "Six times.",
+    "reviewed": false,
+    "excluded": false,
+    "note": "Localized correct answer for the six-column ROUND / FULL / MOON grid in record 357; this preserves the original third-choice branch."
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 365,
+        "page": 0,
+        "file_offset": "0x96f4",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 367,
+        "page": 0,
+        "file_offset": "0x977e",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲェ{n}{WAIT}話ニナラナラ{BEAT}ナラネエガァ",
+    "tr": "Guhh...{WAIT} I c-can't talk to you{BEAT} can't talk...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 369,
+        "page": 0,
+        "file_offset": "0x9808",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 370,
+        "page": 0,
+        "file_offset": "0x986a",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ヲヲヲヲヲォ{n}{WAIT}ズゲエナァおばええええぇ",
+    "tr": "Ooooooh!{WAIT} You're a-amazing...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 369,
+        "page": 1,
+        "file_offset": "0x9808",
+        "content_start_word": 22,
+        "content_end_word": 41,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ジョウギン{offered_item}{n}グレデヤロ{BEAT}ロロロウゥ",
+    "tr": "As a p-prize, I'll give you {offered_item}{BEAT} give-give-give it to you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 369,
+        "page": 2,
+        "file_offset": "0x9808",
+        "content_start_word": 42,
+        "content_end_word": 48,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ザラバ{BEAT}バァ",
+    "tr": "F-farewell{BEAT} farewell...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 370,
+        "page": 1,
+        "file_offset": "0x986a",
+        "content_start_word": 22,
+        "content_end_word": 48,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでガながま{BEAT}ながまニィ{n}ナッデヤロウ{BEAT}ヤロウゥ",
+    "tr": "I'll become your a-ally{BEAT} ally... I'll j-join you{BEAT} join you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 371,
+        "page": 0,
+        "file_offset": "0x98cc",
+        "content_start_word": 0,
+        "content_end_word": 36,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ザザザザ{BEAT}最近{n}おでノマネヲジデル{n}奴奴奴{BEAT}奴ガイルッデ聞イダガァ",
+    "tr": "I-I-I-I heard{BEAT} heard someone has been i-imitating me lately... S-s-s-someone{BEAT} someone...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 372,
+        "page": 0,
+        "file_offset": "0x9916",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえガ{BEAT}ガガガァ！？",
+    "tr": "Is it y-you{BEAT} you-you-you?!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 375,
+        "page": 0,
+        "file_offset": "0x993c",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 376,
+        "page": 0,
+        "file_offset": "0x99d6",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 377,
+        "page": 0,
+        "file_offset": "0x9a2e",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "おばえええええぇ！{n}{WAIT}おでノファン{BEAT}ファンファンガァ？",
+    "tr": "Y-y-you!{WAIT} Are you my f-fan{BEAT} fan-fan...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 375,
+        "page": 1,
+        "file_offset": "0x993c",
+        "content_start_word": 29,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "{offered_item}グレデヤル{BEAT}ヤルヤルゥ",
+    "tr": "I'll give you {offered_item}{BEAT} give-give it to you...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 375,
+        "page": 2,
+        "file_offset": "0x993c",
+        "content_start_word": 43,
+        "content_end_word": 76,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ゴレガラモおでノドゴヘェ{n}ヂョグヂョグ遊ビニ{BEAT}ビニビニ来イィ",
+    "tr": "Keep v-visiting me... Come p-play{BEAT} play-play often...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 376,
+        "page": 1,
+        "file_offset": "0x99d6",
+        "content_start_word": 29,
+        "content_end_word": 43,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ながま{BEAT}ながまナッデヤルゥ",
+    "tr": "I'll become your a-ally{BEAT} ally...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 377,
+        "page": 1,
+        "file_offset": "0x9a2e",
+        "content_start_word": 29,
+        "content_end_word": 47,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでドォ合体{BEAT}合体合体ジヨオォ！！",
+    "tr": "F-fuse with me{BEAT} fuse-fuse with me!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 378,
+        "page": 0,
+        "file_offset": "0x9a8e",
+        "content_start_word": 0,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おばえジャ{BEAT}ジャジャジャアァネエノガァ{n}{WAIT}ヅバラネ{BEAT}ラネラネェ",
+    "tr": "You're n-not the one{BEAT} not-not-not the one...?{WAIT} How b-boring{BEAT} boring-boring...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 379,
+        "page": 0,
+        "file_offset": "0x9ad0",
+        "content_start_word": 0,
+        "content_end_word": 23,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ドゴ{BEAT}ドゴドゴダアァ{n}{WAIT}ドゴニイル{BEAT}イルルゥ",
+    "tr": "W-where{BEAT} where-where is it...?{WAIT} Where is it{BEAT} is it...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 380,
+        "page": 0,
+        "file_offset": "0x9b00",
+        "content_start_word": 0,
+        "content_end_word": 10,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "おばえええええぇ！！",
+    "tr": "Y-y-you!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 380,
+        "page": 1,
+        "file_offset": "0x9b00",
+        "content_start_word": 11,
+        "content_end_word": 48,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おでノファン{BEAT}ファンファンジャ{n}ネエノガ{BEAT}ガガガァ！{n}{WAIT}許ザザネネェ！！",
+    "tr": "You're n-not my fan{BEAT} not-not a fan{BEAT} fan...?{WAIT} I won't f-forgive you!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 381,
+        "page": 0,
+        "file_offset": "0x9b62",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲェ丸イ月月月美美美美ジイィ",
+    "tr": "Guhh... The round, round moon is b-b-beau-beau-beautiful...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 383,
+        "page": 0,
+        "file_offset": "0x9bc6",
+        "content_start_word": 0,
+        "content_end_word": 21,
+        "boundary_codes": [
+          "8002"
+        ]
+      }
+    ],
+    "jp": "アアアアアァ{n}{WAIT}ゲゲゲゲ{BEAT}消ザナイデグレェ",
+    "tr": "Aaaaaah...{WAIT} D-d-d-don't{BEAT} erase meee!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 383,
+        "page": 1,
+        "file_offset": "0x9bc6",
+        "content_start_word": 22,
+        "content_end_word": 49,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "助ゲデ{BEAT}ゲデゲデゲデグレェ{n}{offered_item}置イデグガラ{BEAT}ラララァ",
+    "tr": "H-help{BEAT} help-help-help meee! I'll leave {offered_item},{BEAT} s-sooo...",
+    "reviewed": false,
+    "excluded": false
+  }
+]

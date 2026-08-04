@@ -1,0 +1,362 @@
+[
+  {
+    "kind": "main_staff_00",
+    "file_offset": "0x19fa8",
+    "word_count": 5,
+    "jp": "岡田 耕始",
+    "tr": "Koji Okada",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_01",
+    "file_offset": "0x19fb4",
+    "word_count": 5,
+    "jp": "金子 一馬",
+    "tr": "Kazuma Kaneko",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_02",
+    "file_offset": "0x19fc0",
+    "word_count": 5,
+    "jp": "佐藤 雅実",
+    "tr": "Masami Sato",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_03",
+    "file_offset": "0x19fcc",
+    "word_count": 4,
+    "jp": "國枝 剛",
+    "tr": "Tsuyoshi Kunieda",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_04",
+    "file_offset": "0x19fd8",
+    "word_count": 4,
+    "jp": "迎 一彌",
+    "tr": "Kazuya Mukai",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_05",
+    "file_offset": "0x19fe4",
+    "word_count": 5,
+    "jp": "矢部 直也",
+    "tr": "Naoya Yabe",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_06",
+    "file_offset": "0x19ff0",
+    "word_count": 5,
+    "jp": "堀越 正弘",
+    "tr": "Masahiro Horikoshi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_07",
+    "file_offset": "0x19ffc",
+    "word_count": 5,
+    "jp": "細谷 友博",
+    "tr": "Tomohiro Hosoya",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_08",
+    "file_offset": "0x1a008",
+    "word_count": 4,
+    "jp": "山口 太",
+    "tr": "Futoshi Yamaguchi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_09",
+    "file_offset": "0x1a014",
+    "word_count": 6,
+    "jp": "伊藤 龍太郎",
+    "tr": "Ryutaro Ito",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_10",
+    "file_offset": "0x1a020",
+    "word_count": 5,
+    "jp": "礒貝 正吾",
+    "tr": "Shogo Isogai",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_11",
+    "file_offset": "0x1a02c",
+    "word_count": 5,
+    "jp": "細野 雄士",
+    "tr": "Yuji Hosono",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_12",
+    "file_offset": "0x1a038",
+    "word_count": 4,
+    "jp": "橋野 桂",
+    "tr": "Katsura Hashino",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_13",
+    "file_offset": "0x1a044",
+    "word_count": 4,
+    "jp": "谷川 一",
+    "tr": "Hajime Tanigawa",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_14",
+    "file_offset": "0x1a050",
+    "word_count": 4,
+    "jp": "秋山 豊",
+    "tr": "Yutaka Akiyama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_15",
+    "file_offset": "0x1a05c",
+    "word_count": 4,
+    "jp": "境 一憲",
+    "tr": "Kazunori Sakai",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_16",
+    "file_offset": "0x1a068",
+    "word_count": 6,
+    "jp": "佐藤 佐和子",
+    "tr": "Sawako Sato",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_17",
+    "file_offset": "0x1a074",
+    "word_count": 5,
+    "jp": "村上 哲也",
+    "tr": "Tetsuya Murakami",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_18",
+    "file_offset": "0x1a080",
+    "word_count": 4,
+    "jp": "野口 暁",
+    "tr": "Akira Noguchi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_19",
+    "file_offset": "0x1a08c",
+    "word_count": 5,
+    "jp": "高島 志郎",
+    "tr": "Shiro Takashima",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_20",
+    "file_offset": "0x1a098",
+    "word_count": 5,
+    "jp": "岩崎 智美",
+    "tr": "Tomomi Iwasaki",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_21",
+    "file_offset": "0x1a0a4",
+    "word_count": 6,
+    "jp": "片岡 いずみ",
+    "tr": "Izumi Kataoka",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_22",
+    "file_offset": "0x1a0b0",
+    "word_count": 4,
+    "jp": "塩 哲",
+    "tr": "Satoshi Shio",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_23",
+    "file_offset": "0x1a0bc",
+    "word_count": 6,
+    "jp": "五十嵐 達也",
+    "tr": "Tatsuya Igarashi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_24",
+    "file_offset": "0x1a0c8",
+    "word_count": 5,
+    "jp": "副島 成記",
+    "tr": "Shigenori Soejima",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_25",
+    "file_offset": "0x1a0d4",
+    "word_count": 4,
+    "jp": "河崎 淳",
+    "tr": "Jun Kawasaki",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_26",
+    "file_offset": "0x1a0e0",
+    "word_count": 4,
+    "jp": "増子 司",
+    "tr": "Tsukasa Masuko",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "main_staff_27",
+    "file_offset": "0x1a0ec",
+    "word_count": 5,
+    "jp": "田崎 寿子",
+    "tr": "Hisako Tasaki",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_00",
+    "file_offset": "0x20304",
+    "word_count": 5,
+    "jp": "北原 育大",
+    "tr": "Ikudai Kitahara",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_01",
+    "file_offset": "0x20312",
+    "word_count": 5,
+    "jp": "住谷 義博",
+    "tr": "Yoshihiro Sumiya",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_02",
+    "file_offset": "0x20320",
+    "word_count": 5,
+    "jp": "戸田 貴弘",
+    "tr": "Takahiro Toda",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_03",
+    "file_offset": "0x2032e",
+    "word_count": 4,
+    "jp": "大竹 麗",
+    "tr": "Rei Otake",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_04",
+    "file_offset": "0x2033c",
+    "word_count": 5,
+    "jp": "香西 邦彦",
+    "tr": "Kunihiko Kozai",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_05",
+    "file_offset": "0x2034a",
+    "word_count": 5,
+    "jp": "秋山 隆利",
+    "tr": "Takatoshi Akiyama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_06",
+    "file_offset": "0x20358",
+    "word_count": 5,
+    "jp": "吉村 圭司",
+    "tr": "Keiji Yoshimura",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_07",
+    "file_offset": "0x20366",
+    "word_count": 5,
+    "jp": "瓜生 夏樹",
+    "tr": "Natsuki Uryu",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_08",
+    "file_offset": "0x20374",
+    "word_count": 5,
+    "jp": "関根 和人",
+    "tr": "Kazuto Sekine",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_09",
+    "file_offset": "0x20382",
+    "word_count": 5,
+    "jp": "藤田 崇洋",
+    "tr": "Takahiro Fujita",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_10",
+    "file_offset": "0x203ac",
+    "word_count": 5,
+    "jp": "吉田 悦子",
+    "tr": "Etsuko Yoshida",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "test_staff_11",
+    "file_offset": "0x203ba",
+    "word_count": 5,
+    "jp": "村井 博昭",
+    "tr": "Hiroaki Murai",
+    "reviewed": false,
+    "excluded": false
+  }
+]

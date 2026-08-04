@@ -1,0 +1,433 @@
+{
+  "version": 1,
+  "method": "complete decoded Cinepak review and RGB555 raster/tile contact-sheet review",
+  "assets": [
+    {
+      "path": "GAMEOVER.CPK",
+      "format": "sega_film_cinepak",
+      "review": "complete 25.16-second movie",
+      "fingerprint": {
+        "size": 4689540,
+        "sha256": "9ef971c97c1fb980f261c6d7fb3fd77d377d6f323525cd825c2ce90961b0f71e"
+      },
+      "text": [
+        {
+          "kind": "baked_title",
+          "jp": "GAME OVER",
+          "tr": "GAME OVER"
+        }
+      ]
+    },
+    {
+      "path": "ATL_LOGO.CPK",
+      "format": "sega_film_cinepak",
+      "review": "complete 13.06-second movie",
+      "fingerprint": {
+        "size": 3878952,
+        "sha256": "40e8cc0554339d7dec03955ba0fe9c4d05835c1e3d44bf9f560a4b53d40851bc"
+      },
+      "text": [
+        {
+          "kind": "baked_logo",
+          "jp": "ATLUS",
+          "tr": "ATLUS"
+        }
+      ]
+    },
+    {
+      "path": "END_ROLL.BIN",
+      "format": "mixed_binary_and_raster",
+      "review": "complete credit heading/role inventory; encoded names are catalogued separately",
+      "fingerprint": {
+        "size": 132128,
+        "sha256": "b72559e959c0e4392557b540f9bd09652cb06d9c061a160f9274e2f2fed63b5f"
+      },
+      "text": [
+        {
+          "kind": "baked_credit_label",
+          "jp": "STAFF",
+          "tr": "STAFF"
+        },
+        {
+          "kind": "baked_credit_label",
+          "jp": "Director",
+          "tr": "Director"
+        },
+        {
+          "kind": "baked_credit_label",
+          "jp": "Art Director",
+          "tr": "Art Director"
+        },
+        {
+          "kind": "baked_credit_label",
+          "jp": "Programmer",
+          "tr": "Programmer"
+        },
+        {
+          "kind": "baked_credit_label",
+          "jp": "Planner",
+          "tr": "Planner"
+        },
+        {
+          "kind": "baked_credit_label",
+          "jp": "Graphic Designer",
+          "tr": "Graphic Designer"
+        },
+        {
+          "kind": "baked_credit_label",
+          "jp": "Sound Composer",
+          "tr": "Sound Composer"
+        },
+        {
+          "kind": "baked_credit_label",
+          "jp": "Test Player",
+          "tr": "Test Player"
+        },
+        {
+          "kind": "baked_credit_label",
+          "jp": "Special Thanks",
+          "tr": "Special Thanks"
+        },
+        {
+          "kind": "baked_credit_label",
+          "jp": "PRESENTED BY",
+          "tr": "PRESENTED BY"
+        },
+        {
+          "kind": "baked_credit_label",
+          "jp": "ATLUS",
+          "tr": "ATLUS"
+        }
+      ]
+    },
+    {
+      "path": "TUKI.CHR",
+      "format": "rgb555_raster_or_tiles",
+      "review": "complete 184x128 RGB555 8x8-tile atlas",
+      "fingerprint": {
+        "size": 47104,
+        "sha256": "ce5ed1d34424565663791e833d74791555e0e6bf2714426f55690d30722e2283"
+      },
+      "text": [
+        {
+          "kind": "baked_compass_label",
+          "jp": "N",
+          "tr": "N"
+        },
+        {
+          "kind": "baked_compass_label",
+          "jp": "E",
+          "tr": "E"
+        },
+        {
+          "kind": "baked_compass_label",
+          "jp": "S",
+          "tr": "S"
+        },
+        {
+          "kind": "baked_compass_label",
+          "jp": "W",
+          "tr": "W"
+        }
+      ]
+    },
+    {
+      "path": "BAD_P1.CHR",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete manual visual review.",
+      "fingerprint": {
+        "size": 8192,
+        "sha256": "c7067e465afe09d239404975baccfb8696b93afab141f8e91da5e1899303412d"
+      },
+      "no_text": "Decoded as a 64x64 RGB555 8x8-tile atlas; interface patterns/icons only."
+    },
+    {
+      "path": "BAD_P2.CHR",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete manual visual review.",
+      "fingerprint": {
+        "size": 8192,
+        "sha256": "38036dc8fd6d3594881850b20353ff58bd2a0ea09751bdfbadf9fa340ce4635f"
+      },
+      "no_text": "Decoded as a 64x64 RGB555 8x8-tile atlas; interface patterns/icons only."
+    },
+    {
+      "path": "GOMI.CHR",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete manual visual review.",
+      "fingerprint": {
+        "size": 10752,
+        "sha256": "63061561eb49a9f1156ec3dadd00b6d3a93149b6f6f6b62fb8c0ea7414725518"
+      },
+      "no_text": "Decoded as a 96x56 RGB555 8x8-tile atlas; small UI graphics only."
+    },
+    {
+      "path": "OPENING.CPK",
+      "format": "sega_film_cinepak",
+      "review": "Complete manual visual review.",
+      "fingerprint": {
+        "size": 23244424,
+        "sha256": "081a4a201db7f3193fa318ffa8e8812c38b852cae9ad44918deb95fc1946bf18"
+      },
+      "no_text": "Full 92.6-second Cinepak sampled at five-second intervals; no game-facing captions."
+    },
+    {
+      "path": "P_PANEL.CHR",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete manual visual review.",
+      "fingerprint": {
+        "size": 32256,
+        "sha256": "4c3c5621ab2c7ca85c7f471d7e62c8c414ed6613bcd3a3270d3ce86caa4b874f"
+      },
+      "no_text": "Decoded as a 144x112 linear RGB555 image; panel and meter graphics only."
+    },
+    {
+      "path": "TAITLFIX.CPK",
+      "format": "sega_film_cinepak",
+      "review": "Complete 9-second, 108-frame title animation.",
+      "fingerprint": {
+        "size": 969864,
+        "sha256": "59824441a5a2cb35be50151eff7b228ea88d7ce365e4593a44b1de224541553c"
+      },
+      "no_text": "Animated occult disc and moon/sun emblem used beneath the separate TITLE.BIN wordmarks; no language-bearing text."
+    },
+    {
+      "path": "TESTLOGO.COF",
+      "format": "rgb888_direct_color_raster",
+      "review": "Complete 352x240 fully composed title-raster review.",
+      "fingerprint": {
+        "size": 337920,
+        "sha256": "ad96a1648fb1958f73087ee7298fe1467c227d44a5388ccd6370843c21962500"
+      },
+      "text": [
+        {
+          "kind": "baked_title",
+          "jp": "真・女神転生 デビルサマナー",
+          "tr": "Shin Megami Tensei: Devil Summoner"
+        }
+      ]
+    },
+    {
+      "path": "SAVE.BIN",
+      "format": "mixed_sh2_overlay_and_rgb555_rasters",
+      "review": "Complete targeted review of the four storage-selector sprites and their runtime descriptors.",
+      "fingerprint": {
+        "size": 334736,
+        "sha256": "49ce5a24f811a70b94e9ab1af327fff2e1150eb455fc1d690adc78961a68f744"
+      },
+      "text": [
+        {
+          "kind": "baked_storage_selector",
+          "jp": "本体",
+          "tr": "INTERNAL"
+        },
+        {
+          "kind": "baked_storage_selector",
+          "jp": "カートリッジ",
+          "tr": "CARTRIDGE"
+        }
+      ]
+    },
+    {
+      "path": "LOAD.BIN",
+      "format": "mixed_sh2_overlay_and_rgb555_rasters",
+      "review": "Complete targeted review of the four storage-selector sprites and their runtime descriptors.",
+      "fingerprint": {
+        "size": 338552,
+        "sha256": "100740f4671c2b4f150cfba0b539e75ee122415ec5c1dc9aeeb2f21663a1b446"
+      },
+      "text": [
+        {
+          "kind": "baked_storage_selector",
+          "jp": "本体",
+          "tr": "INTERNAL"
+        },
+        {
+          "kind": "baked_storage_selector",
+          "jp": "カートリッジ",
+          "tr": "CARTRIDGE"
+        }
+      ]
+    },
+    {
+      "path": "MMP/MMP0CHR.COF",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 162768,
+        "sha256": "c2b84df3edd38df7f9545f555e642cbdbc7469962c38443b3c885fe736b926f4"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP0MDL.COF",
+      "format": "mmp_layout_metadata",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 55736,
+        "sha256": "d605300e61de9cc41b3ba3057394babeecb37056ad081c8e97281f885b1f3002"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP1CHR.COF",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 190048,
+        "sha256": "8ffe09ac556a2a6b6da6b34debf39f49d96095c589915bccb788cca472d4eff5"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP1MDL.COF",
+      "format": "mmp_layout_metadata",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 52480,
+        "sha256": "47afe9e4cda3b5d5c96c49d0c2f192e8da9587f6d0f0da31ff09780c4391d151"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP2CHR.COF",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 215664,
+        "sha256": "4831a81a59c4df71d8dc26a744cbb828fd244304a89a5379fbaabade8bc5200f"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP2MDL.COF",
+      "format": "mmp_layout_metadata",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 46052,
+        "sha256": "e1d5a4a491f3776b86e34ba33a9d35638015a7d10bcf54cba5fca04430c2b63c"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP3CHR.COF",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 184600,
+        "sha256": "92f4b1f1977728cf22418acd42fd98776edeb2899c07722946432135b44c0512"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP3MDL.COF",
+      "format": "mmp_layout_metadata",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 43876,
+        "sha256": "3b1f58e33ee2b8d7d284c8cea79c4034f39c5b6d3da27d31cabf4128632693d3"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP4CHR.COF",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 181360,
+        "sha256": "877ecec920f9a26321018f9551363531965f42a960b8fdd23e7fadf6495bf00e"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP4MDL.COF",
+      "format": "mmp_layout_metadata",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 45548,
+        "sha256": "35025537583c4f0ad95778950226cbc771ee79957186167d1adf901c63a8adb0"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP5CHR.COF",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 189464,
+        "sha256": "d9438025150b770943eb55e8971f59fadeb7f295f600dae60e78d69fbfbb69ef"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP5MDL.COF",
+      "format": "mmp_layout_metadata",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 58748,
+        "sha256": "b837b07657de1d0755232da9f3bc93a01bde0169e335ebf2cc67c6b1454b8b04"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP6CHR.COF",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 132040,
+        "sha256": "b97754e72323c0db64783d575796baa7818e16b47bc4467f232b55d387c0e820"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMP6MDL.COF",
+      "format": "mmp_layout_metadata",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 57328,
+        "sha256": "101ea90fe9d0877e8658b3f664dae81f572c9d4a1162f2049005758346cd8508"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/PMENUCHR.COF",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 68240,
+        "sha256": "8dc58342ce3e13fbdd395b7a969952def08c3fab33d8d8cfc9ca0ba175672fce"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/PMENUMDL.COF",
+      "format": "mmp_layout_metadata",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 572,
+        "sha256": "62256269d9ddbb4fdfb7fcdd9f18e247fb0d71d29e67c15c8a1082c8d971816c"
+      },
+      "no_text": "Decoded MMP tiles, icons, or structural records; no language-bearing text."
+    },
+    {
+      "path": "MMP/MMBG00.COF",
+      "format": "mixed_binary_and_raster",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 160948,
+        "sha256": "d1175aa0beee944dd2db1d4b49833b1ef1b4649ca60a66f57cc81b4da005c396"
+      },
+      "no_text": "Decoded 352x224 aerial city photograph; no language-bearing text."
+    },
+    {
+      "path": "MMP/NAMEBG.COF",
+      "format": "rgb555_raster_or_tiles",
+      "review": "Complete MMP graphics and structure review.",
+      "fingerprint": {
+        "size": 174388,
+        "sha256": "285bf182541a27fb57b18ac21ef876a9c0e2042acb609cd0302eddec7ae31275"
+      },
+      "no_text": "Decoded 352x224 blank name-entry panel; no language-bearing text."
+    }
+  ]
+}

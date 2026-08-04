@@ -1,0 +1,21 @@
+{
+  "file": "FONT6.FON",
+  "note": "Used for party panel HP/MP text. No need to swap out.",
+  "atlas": {
+    "numbers": [
+      {
+        "replace": false,
+        "start": 1,
+        "characters": "0123456789"
+      }
+    ],
+    "characters": [
+      {
+        "replace": false,
+        "11": ".",
+        "12": "H",
+        "13": "M"
+      }
+    ]
+  }
+}

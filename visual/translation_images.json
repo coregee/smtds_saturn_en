@@ -1,0 +1,397 @@
+{
+  "version": 2,
+  "images": [
+    {
+      "file": "tex3d_arca_chr_037.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/037.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_039.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/039.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_040.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/040.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_042.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/042.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_043.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/043.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_045.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/045.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_046.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/046.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_048.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/048.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_049.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/049.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_050.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/050.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_051.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/051.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_052.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/052.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_054.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/054.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_055.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/055.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_056.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/056.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_058.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/058.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_059.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/059.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_060.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ARCA_CHR/060.png"
+      ]
+    },
+    {
+      "file": "tex3d_arca_chr_075_076.png",
+      "layout": "horizontal",
+      "targets": [
+        "TEX3D/ARCA_CHR/075.png",
+        "TEX3D/ARCA_CHR/076.png"
+      ]
+    },
+    {
+      "file": "tex3d_chi_chr_048.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/CHI_CHR/048.png"
+      ]
+    },
+    {
+      "file": "tex3d_chi_chr_049_050.png",
+      "layout": "horizontal",
+      "targets": [
+        "TEX3D/CHI_CHR/049.png",
+        "TEX3D/CHI_CHR/050.png"
+      ]
+    },
+    {
+      "file": "tex3d_cyu_chr_017.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/CYU_CHR/017.png"
+      ]
+    },
+    {
+      "file": "tex3d_cyu_chr_029.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/CYU_CHR/029.png"
+      ]
+    },
+    {
+      "file": "tex3d_cyu_chr_031.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/CYU_CHR/031.png",
+        "TEX3D/ICYU_CHR/031.png"
+      ]
+    },
+    {
+      "file": "tex3d_cyu_chr_039.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/CYU_CHR/039.png"
+      ]
+    },
+    {
+      "file": "tex3d_cyu_chr_041.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/CYU_CHR/041.png",
+        "TEX3D/ICYU_CHR/041.png"
+      ]
+    },
+    {
+      "file": "tex3d_cyu_chr_060.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/CYU_CHR/060.png"
+      ]
+    },
+    {
+      "file": "tex3d_cyu_chr_071.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/CYU_CHR/071.png"
+      ]
+    },
+    {
+      "file": "tex3d_cyu_chr_072.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/CYU_CHR/072.png"
+      ]
+    },
+    {
+      "file": "tex3d_dout_chr_068.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/DOUT_CHR/068.png"
+      ]
+    },
+    {
+      "file": "tex3d_haku_chr_076.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/HAKU_CHR/076.png"
+      ]
+    },
+    {
+      "file": "tex3d_hdai_chr_037_038.png",
+      "layout": "horizontal",
+      "targets": [
+        "TEX3D/HDAI_CHR/037.png",
+        "TEX3D/HDAI_CHR/038.png"
+      ]
+    },
+    {
+      "file": "tex3d_hhak_chr_032_033.png",
+      "layout": "horizontal",
+      "targets": [
+        "TEX3D/HHAK_CHR/032.png",
+        "TEX3D/HHAK_CHR/033.png"
+      ]
+    },
+    {
+      "file": "tex3d_hout_chr_022.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/HOUT_CHR/022.png"
+      ]
+    },
+    {
+      "file": "tex3d_icyu_chr_016.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ICYU_CHR/016.png"
+      ]
+    },
+    {
+      "file": "tex3d_icyu_chr_029.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ICYU_CHR/029.png"
+      ]
+    },
+    {
+      "file": "tex3d_icyu_chr_039.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ICYU_CHR/039.png"
+      ]
+    },
+    {
+      "file": "tex3d_icyu_chr_060.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ICYU_CHR/060.png"
+      ]
+    },
+    {
+      "file": "tex3d_icyu_chr_072.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ICYU_CHR/072.png"
+      ]
+    },
+    {
+      "file": "tex3d_idai_chr_039_040.png",
+      "layout": "horizontal",
+      "targets": [
+        "TEX3D/IDAI_CHR/039.png",
+        "TEX3D/IDAI_CHR/040.png"
+      ]
+    },
+    {
+      "file": "tex3d_iden_chr_043_044.png",
+      "layout": "horizontal",
+      "targets": [
+        "TEX3D/IDEN_CHR/043.png",
+        "TEX3D/IDEN_CHR/044.png"
+      ]
+    },
+    {
+      "file": "tex3d_iman_chr_022.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/IMAN_CHR/022.png"
+      ]
+    },
+    {
+      "file": "tex3d_itos_chr_046.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/ITOS_CHR/046.png"
+      ]
+    },
+    {
+      "file": "tex3d_itv_chr_045_046.png",
+      "layout": "horizontal",
+      "targets": [
+        "TEX3D/ITV_CHR/045.png",
+        "TEX3D/ITV_CHR/046.png"
+      ]
+    },
+    {
+      "file": "tex3d_shi_chr_061.png",
+      "layout": "identity",
+      "targets": [
+        "TEX3D/SHI_CHR/061.png"
+      ]
+    },
+    {
+      "file": "tex3d_shi_chr_063_064.png",
+      "layout": "horizontal",
+      "targets": [
+        "TEX3D/SHI_CHR/063.png",
+        "TEX3D/SHI_CHR/064.png"
+      ]
+    },
+    {
+      "file": "saveload_internal_selected.png",
+      "layout": "identity",
+      "targets": [
+        "SAVE/storage/internal_selected.png",
+        "LOAD/storage/internal_selected.png"
+      ]
+    },
+    {
+      "file": "saveload_internal_idle.png",
+      "layout": "identity",
+      "targets": [
+        "SAVE/storage/internal_idle.png",
+        "LOAD/storage/internal_idle.png"
+      ]
+    },
+    {
+      "file": "saveload_cartridge_selected.png",
+      "layout": "identity",
+      "targets": [
+        "SAVE/storage/cartridge_selected.png",
+        "LOAD/storage/cartridge_selected.png"
+      ]
+    },
+    {
+      "file": "saveload_cartridge_idle.png",
+      "layout": "identity",
+      "targets": [
+        "SAVE/storage/cartridge_idle.png",
+        "LOAD/storage/cartridge_idle.png"
+      ]
+    },
+    {
+      "file": "title_devil_summoner.png",
+      "layout": "identity",
+      "targets": [
+        "TITLE/devil_summoner.png"
+      ]
+    },
+    {
+      "file": "title_emblems.png",
+      "layout": "identity",
+      "targets": [
+        "TITLE/emblems.png"
+      ]
+    },
+    {
+      "file": "title_full_title_screen.png",
+      "layout": "identity",
+      "targets": [
+        "TITLE/full_title_screen.png"
+      ]
+    },
+    {
+      "file": "title_shin_megami_tensei.png",
+      "layout": "identity",
+      "targets": [
+        "TITLE/shin_megami_tensei.png"
+      ]
+    }
+  ]
+}

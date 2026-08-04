@@ -1,0 +1,24 @@
+[tool.ruff]
+required-version = "==0.15.22"
+target-version = "py311"
+extend-exclude = ["rom"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "RUF022"]
+
+[tool.ruff.lint.per-file-ignores]
+"engine/script/equipment_ui/reference.py" = ["E402"]
+
+[tool.mypy]
+python_version = "3.11"
+files = [
+    "build.py",
+    "engine/script/context.py",
+    "engine/script/generated_asset.py",
+    "engine/script/registry.py",
+    "text/script/runtime_ui.py",
+]
+check_untyped_defs = true
+warn_unused_ignores = true
+follow_imports = "skip"
+ignore_missing_imports = true

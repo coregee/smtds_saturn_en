@@ -1,0 +1,496 @@
+[
+  {
+    "kind": "battle_messages",
+    "spans": [
+      {
+        "file_offset": "0x9e3a",
+        "word_count": 8
+      }
+    ],
+    "jp": "バトルメッセージ",
+    "tr": "Battle Messages",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "auto_map",
+    "spans": [
+      {
+        "file_offset": "0x9e4a",
+        "word_count": 8
+      }
+    ],
+    "jp": "オートマッピング",
+    "tr": "Auto Map",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "party_panel",
+    "spans": [
+      {
+        "file_offset": "0x9e5a",
+        "word_count": 8
+      }
+    ],
+    "jp": "パーティーパネル",
+    "tr": "Party Panel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "demon_analyze",
+    "spans": [
+      {
+        "file_offset": "0x9e6a",
+        "word_count": 8
+      }
+    ],
+    "jp": "デビルアナライズ",
+    "tr": "Demon Analyze",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "sound",
+    "spans": [
+      {
+        "file_offset": "0x9e7a",
+        "word_count": 8
+      }
+    ],
+    "jp": "サウンド",
+    "tr": "Sound",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "magic_order",
+    "spans": [
+      {
+        "file_offset": "0x9e8a",
+        "word_count": 8
+      }
+    ],
+    "jp": "魔法の表示順序",
+    "tr": "Magic Order",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "item_order",
+    "spans": [
+      {
+        "file_offset": "0x9e9a",
+        "word_count": 8
+      }
+    ],
+    "jp": "ITEM表示順序",
+    "tr": "Item Order",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "speed_fast",
+    "spans": [
+      {
+        "file_offset": "0x9eaa",
+        "word_count": 8
+      }
+    ],
+    "jp": "速い",
+    "tr": "Fast",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "speed_normal",
+    "spans": [
+      {
+        "file_offset": "0x9eba",
+        "word_count": 8
+      }
+    ],
+    "jp": "普通",
+    "tr": "Normal",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "speed_slow",
+    "spans": [
+      {
+        "file_offset": "0x9eca",
+        "word_count": 8
+      }
+    ],
+    "jp": "遅い",
+    "tr": "Slow",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "party_fixed",
+    "spans": [
+      {
+        "file_offset": "0x9eda",
+        "word_count": 8
+      }
+    ],
+    "jp": "固定",
+    "tr": "Fixed",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "party_free",
+    "spans": [
+      {
+        "file_offset": "0x9eea",
+        "word_count": 8
+      }
+    ],
+    "jp": "フリー",
+    "tr": "Free",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "graph",
+    "spans": [
+      {
+        "file_offset": "0x9efa",
+        "word_count": 8
+      }
+    ],
+    "jp": "グラフ",
+    "tr": "Graph",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "max",
+    "spans": [
+      {
+        "file_offset": "0x9f0a",
+        "word_count": 8
+      }
+    ],
+    "jp": "MAX",
+    "tr": "MAX",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "display_normal",
+    "spans": [
+      {
+        "file_offset": "0x9f1a",
+        "word_count": 8
+      }
+    ],
+    "jp": "通常表示",
+    "tr": "Normal",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "display_reverse",
+    "spans": [
+      {
+        "file_offset": "0x9f2a",
+        "word_count": 8
+      }
+    ],
+    "jp": "逆順表示",
+    "tr": "Reverse",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "stereo",
+    "spans": [
+      {
+        "file_offset": "0x9f3a",
+        "word_count": 8
+      }
+    ],
+    "jp": "ステレオ",
+    "tr": "Stereo",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "mono",
+    "spans": [
+      {
+        "file_offset": "0x9f4a",
+        "word_count": 8
+      }
+    ],
+    "jp": "モノラル",
+    "tr": "Mono",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "controls",
+    "spans": [
+      {
+        "file_offset": "0x9f6a",
+        "word_count": 9
+      }
+    ],
+    "jp": "コントロールパッド",
+    "tr": "Controls",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "mode_normal",
+    "spans": [
+      {
+        "file_offset": "0x9f7c",
+        "word_count": 9
+      }
+    ],
+    "jp": "ノーマル",
+    "tr": "Normal",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "mode_custom",
+    "spans": [
+      {
+        "file_offset": "0x9f8e",
+        "word_count": 6
+      }
+    ],
+    "jp": "カスタム",
+    "tr": "Custom",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "assist_heal",
+    "spans": [
+      {
+        "file_offset": "0x9fa0",
+        "word_count": 5
+      }
+    ],
+    "jp": "回復",
+    "tr": "Recovery",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "assist_skill",
+    "spans": [
+      {
+        "file_offset": "0x9faa",
+        "word_count": 5
+      }
+    ],
+    "jp": "補助・特殊",
+    "tr": "Special",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "assist_buff",
+    "spans": [
+      {
+        "file_offset": "0x9fb4",
+        "word_count": 5
+      }
+    ],
+    "jp": "攻撃",
+    "tr": "Attack",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "assist_attack_support",
+    "spans": [
+      {
+        "file_offset": "0x9fbe",
+        "word_count": 5
+      }
+    ],
+    "jp": "攻撃補助",
+    "tr": "Debuff",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "assist_item",
+    "spans": [
+      {
+        "file_offset": "0x9fc8",
+        "word_count": 5
+      }
+    ],
+    "jp": "消費タイプ",
+    "tr": "Consumable",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "assist_gem",
+    "spans": [
+      {
+        "file_offset": "0x9fd2",
+        "word_count": 5
+      }
+    ],
+    "jp": "宝石",
+    "tr": "Jewel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "assist_equip",
+    "spans": [
+      {
+        "file_offset": "0x9fdc",
+        "word_count": 5
+      }
+    ],
+    "jp": "装備タイプ",
+    "tr": "Equipment",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "action_full_cancel",
+    "spans": [
+      {
+        "file_offset": "0x42b46",
+        "word_count": 8
+      }
+    ],
+    "jp": "ラージキャンセル",
+    "tr": "Full Cancel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "action_cancel",
+    "spans": [
+      {
+        "file_offset": "0x42b56",
+        "word_count": 8
+      }
+    ],
+    "jp": "キャンセル",
+    "tr": "Cancel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "action_confirm",
+    "spans": [
+      {
+        "file_offset": "0x42b66",
+        "word_count": 8
+      }
+    ],
+    "jp": "決定",
+    "tr": "Confirm",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "action_help",
+    "spans": [
+      {
+        "file_offset": "0x42b76",
+        "word_count": 8
+      }
+    ],
+    "jp": "ヘルプ表示",
+    "tr": "Show Help",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "action_recover",
+    "spans": [
+      {
+        "file_offset": "0x42b86",
+        "word_count": 8
+      }
+    ],
+    "jp": "オートリカバー",
+    "tr": "Auto Recover",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "action_command",
+    "spans": [
+      {
+        "file_offset": "0x42b96",
+        "word_count": 8
+      }
+    ],
+    "jp": "コマンド",
+    "tr": "Command",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "action_auto_map",
+    "spans": [
+      {
+        "file_offset": "0x42ba6",
+        "word_count": 8
+      }
+    ],
+    "jp": "オートマップ",
+    "tr": "Auto Map",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "action_analyze",
+    "spans": [
+      {
+        "file_offset": "0x42bb6",
+        "word_count": 8
+      }
+    ],
+    "jp": "デビルアナライズ",
+    "tr": "Demon Analyze",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "footer_assign",
+    "spans": [
+      {
+        "file_offset": "0x42bd6",
+        "word_count": 9
+      }
+    ],
+    "jp": "スタート：設定変更",
+    "tr": "START: Assign",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "footer_finish",
+    "spans": [
+      {
+        "file_offset": "0x42be8",
+        "word_count": 9
+      }
+    ],
+    "jp": "スタート：設定終了",
+    "tr": "START: End",
+    "reviewed": false,
+    "excluded": false
+  }
+]

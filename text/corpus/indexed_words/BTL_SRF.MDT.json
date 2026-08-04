@@ -1,0 +1,3269 @@
+[
+  {
+    "index": 0,
+    "pointer_offset": "0x0000",
+    "file_offset": "0x0400",
+    "jp": "オイ、ショウカンシ、{n}ナニカイッタカ？{demon_name}",
+    "tr": "HEY, SUMMONER...{n}YOU SAY SOMETHING?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 1,
+    "pointer_offset": "0x0002",
+    "file_offset": "0x042a",
+    "jp": "ア～、ダル～。{n}チョット、マッテクレ。{demon_name}",
+    "tr": "UGH... SO TIRED...{n}WAIT A LITTLE.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 2,
+    "pointer_offset": "0x0004",
+    "file_offset": "0x0454",
+    "jp": "なにゆえ、そなたは{n}戦うのじゃ？{demon_name}",
+    "tr": "Why do you fight?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 3,
+    "pointer_offset": "0x0006",
+    "file_offset": "0x0478",
+    "jp": "高みの見物とでも、{n}シャレこもうか。{demon_name}",
+    "tr": "I'll sit back and{n}enjoy the show.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 4,
+    "pointer_offset": "0x0008",
+    "file_offset": "0x04a0",
+    "jp": "誰に命令しているのか、{n}わかっていらっしゃる？{demon_name}",
+    "tr": "Do you know who{n}you're ordering around?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 5,
+    "pointer_offset": "0x000a",
+    "file_offset": "0x04d2",
+    "jp": "なあ、俺、後で、{n}合体させられんの？{demon_name}",
+    "tr": "Hey, are you going to{n}fuse me later?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 6,
+    "pointer_offset": "0x000c",
+    "file_offset": "0x04fa",
+    "jp": "やっだ、もー、足首、{n}いった～い。{demon_name}",
+    "tr": "Oh, come on!{n}My ankles hurt!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 7,
+    "pointer_offset": "0x000e",
+    "file_offset": "0x0520",
+    "jp": "おじさんさー、だれでも{n}殺っちゃうんだね。{demon_name}",
+    "tr": "You'll kill anyone,{n}won't you, pops?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 8,
+    "pointer_offset": "0x0010",
+    "file_offset": "0x054e",
+    "jp": "おじちゃんってさあ、{n}らんぼう・・・だよね。{demon_name}",
+    "tr": "You're pretty violent,{n}aren't you, mister?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 9,
+    "pointer_offset": "0x0012",
+    "file_offset": "0x057e",
+    "jp": "ねえ、口紅はげてないか{n}見てくれない？{demon_name}",
+    "tr": "Hey, has my lipstick{n}come off? Take a look.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 10,
+    "pointer_offset": "0x0014",
+    "file_offset": "0x05a8",
+    "jp": "ボイコットは人の名だ。{n}・・・知ってた？{demon_name}",
+    "tr": "Boycott was a man's name.{n}Did you know that?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 11,
+    "pointer_offset": "0x0016",
+    "file_offset": "0x05d4",
+    "jp": "そんなことよりなー、{n}若いの、はげんどるか？{demon_name}",
+    "tr": "More importantly, young man...{n}Keeping at it?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 12,
+    "pointer_offset": "0x0018",
+    "file_offset": "0x0604",
+    "jp": "自分が何をしているか、{n}わかっているんですか？{demon_name}",
+    "tr": "Do you understand{n}what you're doing?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 13,
+    "pointer_offset": "0x001a",
+    "file_offset": "0x0636",
+    "jp": "そんなことゆ～ても、{n}やらへんで～。{demon_name}",
+    "tr": "Say what you like.{n}I still won't do it.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 14,
+    "pointer_offset": "0x001c",
+    "file_offset": "0x065e",
+    "jp": "ズズー！ズズー！{demon_name}",
+    "tr": "SLURP! SLURP!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 15,
+    "pointer_offset": "0x001e",
+    "file_offset": "0x0672",
+    "jp": "・・・・・・・・。{demon_name}",
+    "tr": "........{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 16,
+    "pointer_offset": "0x0020",
+    "file_offset": "0x0688",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 17,
+    "pointer_offset": "0x0022",
+    "file_offset": "0x068a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 18,
+    "pointer_offset": "0x0024",
+    "file_offset": "0x068c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 19,
+    "pointer_offset": "0x0026",
+    "file_offset": "0x068e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 20,
+    "pointer_offset": "0x0028",
+    "file_offset": "0x0690",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 21,
+    "pointer_offset": "0x002a",
+    "file_offset": "0x0692",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 22,
+    "pointer_offset": "0x002c",
+    "file_offset": "0x0694",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 23,
+    "pointer_offset": "0x002e",
+    "file_offset": "0x0696",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 24,
+    "pointer_offset": "0x0030",
+    "file_offset": "0x0698",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 25,
+    "pointer_offset": "0x0032",
+    "file_offset": "0x069a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 26,
+    "pointer_offset": "0x0034",
+    "file_offset": "0x069c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 27,
+    "pointer_offset": "0x0036",
+    "file_offset": "0x069e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 28,
+    "pointer_offset": "0x0038",
+    "file_offset": "0x06a0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 29,
+    "pointer_offset": "0x003a",
+    "file_offset": "0x06a2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 30,
+    "pointer_offset": "0x003c",
+    "file_offset": "0x06a4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 31,
+    "pointer_offset": "0x003e",
+    "file_offset": "0x06a6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 32,
+    "pointer_offset": "0x0040",
+    "file_offset": "0x06a8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 33,
+    "pointer_offset": "0x0042",
+    "file_offset": "0x06aa",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 34,
+    "pointer_offset": "0x0044",
+    "file_offset": "0x06ac",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 35,
+    "pointer_offset": "0x0046",
+    "file_offset": "0x06ae",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 36,
+    "pointer_offset": "0x0048",
+    "file_offset": "0x06b0",
+    "jp": "イイカラ、ワタシニ{n}マカセロ。{demon_name}",
+    "tr": "ENOUGH.{n}LEAVE TO ME.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 37,
+    "pointer_offset": "0x004a",
+    "file_offset": "0x06d2",
+    "jp": "オレサマ、メイレイ、{n}キライ、ダマッテロ。{demon_name}",
+    "tr": "ME HATE ORDERS.{n}YOU SHUT UP.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 38,
+    "pointer_offset": "0x004c",
+    "file_offset": "0x0700",
+    "jp": "我に命令するとは、{n}おろかしい奴よのう。{demon_name}",
+    "tr": "How foolish of you{n}to give me orders.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 39,
+    "pointer_offset": "0x004e",
+    "file_offset": "0x072c",
+    "jp": "こうするのが、最も、{n}合理的な方法なのだ。{demon_name}",
+    "tr": "This is the most{n}rational course of action.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 40,
+    "pointer_offset": "0x0050",
+    "file_offset": "0x075a",
+    "jp": "わたくし、やりたい事を{n}させて頂くわ。{demon_name}",
+    "tr": "I shall do{n}as I please.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 41,
+    "pointer_offset": "0x0052",
+    "file_offset": "0x0784",
+    "jp": "お前なー、命令すんのは{n}召喚だけにしとけよ。{demon_name}",
+    "tr": "The only order you get{n}to give is 'Summon.'{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 42,
+    "pointer_offset": "0x0054",
+    "file_offset": "0x07b4",
+    "jp": "あんた、けっこう、{n}口うるさいのね。{demon_name}",
+    "tr": "You're awfully bossy,{n}aren't you?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 43,
+    "pointer_offset": "0x0056",
+    "file_offset": "0x07dc",
+    "jp": "ボクねー、おじさん、{n}シンヨーできないなぁ。{demon_name}",
+    "tr": "I don't trust you,{n}mister.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 44,
+    "pointer_offset": "0x0058",
+    "file_offset": "0x080c",
+    "jp": "おじちゃんのいうこと、{n}ときどきわかんなぁい。{demon_name}",
+    "tr": "Sometimes I don't get{n}what you say, mister.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 45,
+    "pointer_offset": "0x005a",
+    "file_offset": "0x083e",
+    "jp": "クリスマスに、一人で{n}いたい、女もいるのよ。{demon_name}",
+    "tr": "Some women want to be{n}alone on Christmas.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 46,
+    "pointer_offset": "0x005c",
+    "file_offset": "0x086e",
+    "jp": "おまえは、オレレレレ、{n}オレじゃねえんだよ。{demon_name}",
+    "tr": "You're... m-me-me-me...{n}You're not me!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 47,
+    "pointer_offset": "0x005e",
+    "file_offset": "0x089e",
+    "jp": "ヒャッヒャッヒャ～、{n}若いもんは、黙っとれ。{demon_name}",
+    "tr": "Heh heh heh!{n}Quiet, youngster.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 48,
+    "pointer_offset": "0x0060",
+    "file_offset": "0x08ce",
+    "jp": "違うなぁ、キミには{n}わからないのかなぁ？{demon_name}",
+    "tr": "No, no. Do you truly{n}not understand?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 49,
+    "pointer_offset": "0x0062",
+    "file_offset": "0x08fa",
+    "jp": "こんなもんで・・・、{n}ええやろ？{demon_name}",
+    "tr": "This'll do...{n}Right?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 50,
+    "pointer_offset": "0x0064",
+    "file_offset": "0x091e",
+    "jp": "ズル？{demon_name}",
+    "tr": "SLURP?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 51,
+    "pointer_offset": "0x0066",
+    "file_offset": "0x0928",
+    "jp": "・・・・・・・・。{demon_name}",
+    "tr": "........{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 52,
+    "pointer_offset": "0x0068",
+    "file_offset": "0x093e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 53,
+    "pointer_offset": "0x006a",
+    "file_offset": "0x0940",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 54,
+    "pointer_offset": "0x006c",
+    "file_offset": "0x0942",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 55,
+    "pointer_offset": "0x006e",
+    "file_offset": "0x0944",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 56,
+    "pointer_offset": "0x0070",
+    "file_offset": "0x0946",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 57,
+    "pointer_offset": "0x0072",
+    "file_offset": "0x0948",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 58,
+    "pointer_offset": "0x0074",
+    "file_offset": "0x094a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 59,
+    "pointer_offset": "0x0076",
+    "file_offset": "0x094c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 60,
+    "pointer_offset": "0x0078",
+    "file_offset": "0x094e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 61,
+    "pointer_offset": "0x007a",
+    "file_offset": "0x0950",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 62,
+    "pointer_offset": "0x007c",
+    "file_offset": "0x0952",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 63,
+    "pointer_offset": "0x007e",
+    "file_offset": "0x0954",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 64,
+    "pointer_offset": "0x0080",
+    "file_offset": "0x0956",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 65,
+    "pointer_offset": "0x0082",
+    "file_offset": "0x0958",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 66,
+    "pointer_offset": "0x0084",
+    "file_offset": "0x095a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 67,
+    "pointer_offset": "0x0086",
+    "file_offset": "0x095c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 68,
+    "pointer_offset": "0x0088",
+    "file_offset": "0x095e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 69,
+    "pointer_offset": "0x008a",
+    "file_offset": "0x0960",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 70,
+    "pointer_offset": "0x008c",
+    "file_offset": "0x0962",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 71,
+    "pointer_offset": "0x008e",
+    "file_offset": "0x0964",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 72,
+    "pointer_offset": "0x0090",
+    "file_offset": "0x0966",
+    "jp": "オマエノ命令、{n}ゼッタイ、聞カナイ！{demon_name}",
+    "tr": "YOUR ORDERS...{n}ME NEVER OBEY!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 73,
+    "pointer_offset": "0x0092",
+    "file_offset": "0x098e",
+    "jp": "メイレイ、イヤ！！{n}オマエ、黙ル、イイ！{demon_name}",
+    "tr": "ORDERS, BAD!{n}YOU SHUT UP! GOOD!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 74,
+    "pointer_offset": "0x0094",
+    "file_offset": "0x09ba",
+    "jp": "そこまで突っ込んだ{n}命令は聞かん！！{demon_name}",
+    "tr": "I won't take orders{n}that detailed!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 75,
+    "pointer_offset": "0x0096",
+    "file_offset": "0x09e2",
+    "jp": "私に指図は必要ない。{n}よって命令は無視する！{demon_name}",
+    "tr": "I need no direction.{n}Your order is ignored!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 76,
+    "pointer_offset": "0x0098",
+    "file_offset": "0x0a12",
+    "jp": "そこまでの指図は、{n}聞けないですわ！！{demon_name}",
+    "tr": "I cannot follow an order{n}that presumptuous!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 77,
+    "pointer_offset": "0x009a",
+    "file_offset": "0x0a3c",
+    "jp": "そこまでいうなら、{n}俺はこうする。{demon_name}",
+    "tr": "If you insist,{n}then I'll do this.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 78,
+    "pointer_offset": "0x009c",
+    "file_offset": "0x0a62",
+    "jp": "そんな命令、グッバイ、{n}さよならってカンジー。{demon_name}",
+    "tr": "That order? Goodbye,{n}farewell, see ya!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 79,
+    "pointer_offset": "0x009e",
+    "file_offset": "0x0a94",
+    "jp": "あれしろ、これしろ、{n}やだぁー！もー！！{demon_name}",
+    "tr": "Do this, do that...{n}No! Enough already!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 80,
+    "pointer_offset": "0x00a0",
+    "file_offset": "0x0ac0",
+    "jp": "ゴーでいいったら！！{n}ゴーにしてよぉ～！！{demon_name}",
+    "tr": "I said GO!{n}Set me to GO!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 81,
+    "pointer_offset": "0x00a2",
+    "file_offset": "0x0aee",
+    "jp": "言いなりは絶対にイヤ！{n}かまわないで！！{demon_name}",
+    "tr": "I refuse to obey!{n}Leave me alone!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 82,
+    "pointer_offset": "0x00a4",
+    "file_offset": "0x0b1a",
+    "jp": "やい、召喚師・・・、{n}GOにしとけよ！！{demon_name}",
+    "tr": "Hey, Summoner...{n}Just set me to GO!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 83,
+    "pointer_offset": "0x00a6",
+    "file_offset": "0x0b46",
+    "jp": "若い者のたわごとなぞ、{n}聞かんのじゃい！！{demon_name}",
+    "tr": "I won't heed a{n}youngster's nonsense!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 84,
+    "pointer_offset": "0x00a8",
+    "file_offset": "0x0b74",
+    "jp": "信用がないんですね。{n}ご命令は却下します。{demon_name}",
+    "tr": "You show no trust.{n}Your order is denied.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 85,
+    "pointer_offset": "0x00aa",
+    "file_offset": "0x0ba2",
+    "jp": "えらい、召喚師やな。{n}聞かへんで。{demon_name}",
+    "tr": "Some Summoner you are.{n}I'm not listening.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 86,
+    "pointer_offset": "0x00ac",
+    "file_offset": "0x0bc8",
+    "jp": "ズル！ズルル！{demon_name}",
+    "tr": "SLURP! SLURRRP!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 87,
+    "pointer_offset": "0x00ae",
+    "file_offset": "0x0bda",
+    "jp": "・・・・・・・・。{demon_name}",
+    "tr": "........{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 88,
+    "pointer_offset": "0x00b0",
+    "file_offset": "0x0bf0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 89,
+    "pointer_offset": "0x00b2",
+    "file_offset": "0x0bf2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 90,
+    "pointer_offset": "0x00b4",
+    "file_offset": "0x0bf4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 91,
+    "pointer_offset": "0x00b6",
+    "file_offset": "0x0bf6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 92,
+    "pointer_offset": "0x00b8",
+    "file_offset": "0x0bf8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 93,
+    "pointer_offset": "0x00ba",
+    "file_offset": "0x0bfa",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 94,
+    "pointer_offset": "0x00bc",
+    "file_offset": "0x0bfc",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 95,
+    "pointer_offset": "0x00be",
+    "file_offset": "0x0bfe",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 96,
+    "pointer_offset": "0x00c0",
+    "file_offset": "0x0c00",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 97,
+    "pointer_offset": "0x00c2",
+    "file_offset": "0x0c02",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 98,
+    "pointer_offset": "0x00c4",
+    "file_offset": "0x0c04",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 99,
+    "pointer_offset": "0x00c6",
+    "file_offset": "0x0c06",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 100,
+    "pointer_offset": "0x00c8",
+    "file_offset": "0x0c08",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 101,
+    "pointer_offset": "0x00ca",
+    "file_offset": "0x0c0a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 102,
+    "pointer_offset": "0x00cc",
+    "file_offset": "0x0c0c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 103,
+    "pointer_offset": "0x00ce",
+    "file_offset": "0x0c0e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 104,
+    "pointer_offset": "0x00d0",
+    "file_offset": "0x0c10",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 105,
+    "pointer_offset": "0x00d2",
+    "file_offset": "0x0c12",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 106,
+    "pointer_offset": "0x00d4",
+    "file_offset": "0x0c14",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 107,
+    "pointer_offset": "0x00d6",
+    "file_offset": "0x0c16",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 108,
+    "pointer_offset": "0x00d8",
+    "file_offset": "0x0c18",
+    "jp": "ワカラヌ奴・・・{n}・・・キカヌ。{demon_name}",
+    "tr": "YOU NEVER LEARN...{n}ME NOT LISTEN.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 109,
+    "pointer_offset": "0x00da",
+    "file_offset": "0x0c3c",
+    "jp": "コマンドイレスギ！！{n}・・コマンド、ッテ？{demon_name}",
+    "tr": "TOO MANY COMMANDS!{n}...WHAT IS COMMAND?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 110,
+    "pointer_offset": "0x00dc",
+    "file_offset": "0x0c6a",
+    "jp": "いやじゃ！！{n}聞きとうない！！{demon_name}",
+    "tr": "No!{n}I don't want to hear it!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 111,
+    "pointer_offset": "0x00de",
+    "file_offset": "0x0c8c",
+    "jp": "「GO」を待っている。{demon_name}{n}それまではこうだ！！",
+    "tr": "I'm waiting for GO.{n}Until then, I do this!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 112,
+    "pointer_offset": "0x00e0",
+    "file_offset": "0x0cbc",
+    "jp": "残念でしたわね！{n}全部、あなたのせいよ！{demon_name}",
+    "tr": "Too bad!{n}It's all your fault!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 113,
+    "pointer_offset": "0x00e2",
+    "file_offset": "0x0ce8",
+    "jp": "やるよ、やるよ、{n}でも、こーんなの。{demon_name}",
+    "tr": "Fine, fine, I'll act...{n}But like this.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 114,
+    "pointer_offset": "0x00e4",
+    "file_offset": "0x0d10",
+    "jp": "ざったいわねー。{n}聞きゃしないわよ！！{demon_name}",
+    "tr": "You're so fussy.{n}I'm not listening!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 115,
+    "pointer_offset": "0x00e6",
+    "file_offset": "0x0d3a",
+    "jp": "子供を責めると、{n}手がつけられんじょー！{demon_name}",
+    "tr": "Pick on a child and{n}I'll throw a tantrum!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 116,
+    "pointer_offset": "0x00e8",
+    "file_offset": "0x0d66",
+    "jp": "ゴーがいいったら～！！{n}好きにさせてよぅ！！{demon_name}",
+    "tr": "I said GO!{n}Let me do what I want!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 117,
+    "pointer_offset": "0x00ea",
+    "file_offset": "0x0d96",
+    "jp": "し～た～が～い～{n}ま～せ～ん～。ね？{demon_name}",
+    "tr": "I~ won't~ o~bey~.{n}Okay?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 118,
+    "pointer_offset": "0x00ec",
+    "file_offset": "0x0dbe",
+    "jp": "う、う、うがっー！！{demon_name}",
+    "tr": "U-u-ugahhh!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 119,
+    "pointer_offset": "0x00ee",
+    "file_offset": "0x0dd6",
+    "jp": "召喚師がそれじゃの～、{n}命令なぞ、無視じゃ！！{demon_name}",
+    "tr": "With a Summoner like you,{n}I'll ignore every order!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 120,
+    "pointer_offset": "0x00f0",
+    "file_offset": "0x0e08",
+    "jp": "あなたは自己チュウ？{n}私は自己チュウです。{demon_name}",
+    "tr": "You're self-centered?{n}So am I.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 121,
+    "pointer_offset": "0x00f2",
+    "file_offset": "0x0e36",
+    "jp": "そこまで指示しといて、{n}わしは、これやがな。{demon_name}",
+    "tr": "After all those instructions,{n}this is what I'm doing.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 122,
+    "pointer_offset": "0x00f4",
+    "file_offset": "0x0e66",
+    "jp": "ズズッ！ズズズッ！！{demon_name}",
+    "tr": "SLURP! SLURRRRP!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 123,
+    "pointer_offset": "0x00f6",
+    "file_offset": "0x0e7e",
+    "jp": "・・・・・・・・。{demon_name}",
+    "tr": "........{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 124,
+    "pointer_offset": "0x00f8",
+    "file_offset": "0x0e94",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 125,
+    "pointer_offset": "0x00fa",
+    "file_offset": "0x0e96",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 126,
+    "pointer_offset": "0x00fc",
+    "file_offset": "0x0e98",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 127,
+    "pointer_offset": "0x00fe",
+    "file_offset": "0x0e9a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 128,
+    "pointer_offset": "0x0100",
+    "file_offset": "0x0e9c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 129,
+    "pointer_offset": "0x0102",
+    "file_offset": "0x0e9e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 130,
+    "pointer_offset": "0x0104",
+    "file_offset": "0x0ea0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 131,
+    "pointer_offset": "0x0106",
+    "file_offset": "0x0ea2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 132,
+    "pointer_offset": "0x0108",
+    "file_offset": "0x0ea4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 133,
+    "pointer_offset": "0x010a",
+    "file_offset": "0x0ea6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 134,
+    "pointer_offset": "0x010c",
+    "file_offset": "0x0ea8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 135,
+    "pointer_offset": "0x010e",
+    "file_offset": "0x0eaa",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 136,
+    "pointer_offset": "0x0110",
+    "file_offset": "0x0eac",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 137,
+    "pointer_offset": "0x0112",
+    "file_offset": "0x0eae",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 138,
+    "pointer_offset": "0x0114",
+    "file_offset": "0x0eb0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 139,
+    "pointer_offset": "0x0116",
+    "file_offset": "0x0eb2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 140,
+    "pointer_offset": "0x0118",
+    "file_offset": "0x0eb4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 141,
+    "pointer_offset": "0x011a",
+    "file_offset": "0x0eb6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 142,
+    "pointer_offset": "0x011c",
+    "file_offset": "0x0eb8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 143,
+    "pointer_offset": "0x011e",
+    "file_offset": "0x0eba",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 144,
+    "pointer_offset": "0x0120",
+    "file_offset": "0x0ebc",
+    "jp": "ナニカ変ナ、気分ダナ。{demon_name}",
+    "tr": "SOMETHING FEEL...{n}STRANGE.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 145,
+    "pointer_offset": "0x0122",
+    "file_offset": "0x0ed6",
+    "jp": "ムラムラムラ。{n}オレッテ・・イッタイ。{demon_name}",
+    "tr": "ME ALL WORKED UP...{n}WHAT HAPPEN TO ME?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 146,
+    "pointer_offset": "0x0124",
+    "file_offset": "0x0f00",
+    "jp": "どうしてか、ココロ{n}はりさけそうじゃ！！{demon_name}",
+    "tr": "Why does my heart feel{n}as if it will burst?!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 147,
+    "pointer_offset": "0x0126",
+    "file_offset": "0x0f2c",
+    "jp": "・・・すまぬ！{demon_name}",
+    "tr": "...Forgive me!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 148,
+    "pointer_offset": "0x0128",
+    "file_offset": "0x0f3e",
+    "jp": "わたくしときたら、{n}心乱れて・・・。{demon_name}",
+    "tr": "How unlike me...{n}My heart is in turmoil.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 149,
+    "pointer_offset": "0x012a",
+    "file_offset": "0x0f66",
+    "jp": "ムラムラすんぜぇ～、{n}ちきしょー！！{demon_name}",
+    "tr": "I'm getting all worked up,{n}damn it!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 150,
+    "pointer_offset": "0x012c",
+    "file_offset": "0x0f8e",
+    "jp": "ちょっと、やだぁ～、{n}私、変になっちゃった。{demon_name}",
+    "tr": "Oh no...{n}Something's come over me.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 151,
+    "pointer_offset": "0x012e",
+    "file_offset": "0x0fbe",
+    "jp": "おじさんたち、{n}しんじゃえー！！{demon_name}",
+    "tr": "You old guys{n}can all die!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 152,
+    "pointer_offset": "0x0130",
+    "file_offset": "0x0fe2",
+    "jp": "おじちゃんたち、{n}しんじゃえー！！{demon_name}",
+    "tr": "You old guys{n}can all die!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 153,
+    "pointer_offset": "0x0132",
+    "file_offset": "0x1008",
+    "jp": "あたしは、夜の蝶。{n}浮気なLady。{demon_name}",
+    "tr": "A butterfly of the night...{n}A fickle lady.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 154,
+    "pointer_offset": "0x0134",
+    "file_offset": "0x1030",
+    "jp": "ハァ、ハァ、ハァ・・。{demon_name}",
+    "tr": "PANT... PANT...{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 155,
+    "pointer_offset": "0x0136",
+    "file_offset": "0x104a",
+    "jp": "ヒャヒッ、ヒャヒ～！！{demon_name}",
+    "tr": "HEE HEE! HYAH-HA-HA!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 156,
+    "pointer_offset": "0x0138",
+    "file_offset": "0x1064",
+    "jp": "キミたちのこと、実は、{n}嫌ってたんだ。{demon_name}",
+    "tr": "Truth be told,{n}I've always hated you.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 157,
+    "pointer_offset": "0x013a",
+    "file_offset": "0x108e",
+    "jp": "たまりまへんわ。{demon_name}",
+    "tr": "I can't take this!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 158,
+    "pointer_offset": "0x013c",
+    "file_offset": "0x10a2",
+    "jp": "ピチャピチャピチャ？{demon_name}",
+    "tr": "SPLISH, SPLASH, SPLISH?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 159,
+    "pointer_offset": "0x013e",
+    "file_offset": "0x10ba",
+    "jp": "・・・・・・・・。{demon_name}",
+    "tr": "........{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 160,
+    "pointer_offset": "0x0140",
+    "file_offset": "0x10d0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 161,
+    "pointer_offset": "0x0142",
+    "file_offset": "0x10d2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 162,
+    "pointer_offset": "0x0144",
+    "file_offset": "0x10d4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 163,
+    "pointer_offset": "0x0146",
+    "file_offset": "0x10d6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 164,
+    "pointer_offset": "0x0148",
+    "file_offset": "0x10d8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 165,
+    "pointer_offset": "0x014a",
+    "file_offset": "0x10da",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 166,
+    "pointer_offset": "0x014c",
+    "file_offset": "0x10dc",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 167,
+    "pointer_offset": "0x014e",
+    "file_offset": "0x10de",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 168,
+    "pointer_offset": "0x0150",
+    "file_offset": "0x10e0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 169,
+    "pointer_offset": "0x0152",
+    "file_offset": "0x10e2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 170,
+    "pointer_offset": "0x0154",
+    "file_offset": "0x10e4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 171,
+    "pointer_offset": "0x0156",
+    "file_offset": "0x10e6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 172,
+    "pointer_offset": "0x0158",
+    "file_offset": "0x10e8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 173,
+    "pointer_offset": "0x015a",
+    "file_offset": "0x10ea",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 174,
+    "pointer_offset": "0x015c",
+    "file_offset": "0x10ec",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 175,
+    "pointer_offset": "0x015e",
+    "file_offset": "0x10ee",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 176,
+    "pointer_offset": "0x0160",
+    "file_offset": "0x10f0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 177,
+    "pointer_offset": "0x0162",
+    "file_offset": "0x10f2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 178,
+    "pointer_offset": "0x0164",
+    "file_offset": "0x10f4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 179,
+    "pointer_offset": "0x0166",
+    "file_offset": "0x10f6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 180,
+    "pointer_offset": "0x0168",
+    "file_offset": "0x10f8",
+    "jp": "ハテ、ワタシハ、{n}ナニヲ、シテイルノダ？{demon_name}",
+    "tr": "HMM... WHAT AM I...{n}DOING?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 181,
+    "pointer_offset": "0x016a",
+    "file_offset": "0x1124",
+    "jp": "クルッテール、{n}カンジテール。{demon_name}",
+    "tr": "GOING CRAZY...{n}FEELING CRAZY...{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 182,
+    "pointer_offset": "0x016c",
+    "file_offset": "0x1146",
+    "jp": "我、思う故に我あり。{n}天上天下唯我独尊・・。{demon_name}",
+    "tr": "I think, therefore I am...{n}I alone am honored...{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 183,
+    "pointer_offset": "0x016e",
+    "file_offset": "0x1176",
+    "jp": "私は、何をしてるのだ！{n}・・・わからない！！{demon_name}",
+    "tr": "What am I doing?!{n}...I don't know!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 184,
+    "pointer_offset": "0x0170",
+    "file_offset": "0x11a6",
+    "jp": "どうなってますの？{demon_name}",
+    "tr": "What is happening?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 185,
+    "pointer_offset": "0x0172",
+    "file_offset": "0x11bc",
+    "jp": "どーなってんだ！{n}わけわかんねえんだよ！{demon_name}",
+    "tr": "What's going on?!{n}I don't understand!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 186,
+    "pointer_offset": "0x0174",
+    "file_offset": "0x11e8",
+    "jp": "もう、チンプンカンプン{n}って感じー。{demon_name}",
+    "tr": "Nothing makes{n}any sense!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 187,
+    "pointer_offset": "0x0176",
+    "file_offset": "0x1210",
+    "jp": "何やっていいんだか、{n}全然わかんないも～ん！{demon_name}",
+    "tr": "I have no idea{n}what I'm supposed to do!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 188,
+    "pointer_offset": "0x0178",
+    "file_offset": "0x1240",
+    "jp": "おじちゃん、{n}何をすればいいの？{demon_name}",
+    "tr": "Mister, what am I{n}supposed to do?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 189,
+    "pointer_offset": "0x017a",
+    "file_offset": "0x1264",
+    "jp": "あたし、何やってるの？{n}こんなとこで。{demon_name}",
+    "tr": "What am I doing{n}in a place like this?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 190,
+    "pointer_offset": "0x017c",
+    "file_offset": "0x128e",
+    "jp": "ヌヒャラポーン！{demon_name}",
+    "tr": "NUHYARA-POOON!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 191,
+    "pointer_offset": "0x017e",
+    "file_offset": "0x12a2",
+    "jp": "はて、何をしようと、{n}思とったんじゃろうか？{demon_name}",
+    "tr": "Now, what was I{n}about to do?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 192,
+    "pointer_offset": "0x0180",
+    "file_offset": "0x12d2",
+    "jp": "・・！？・・あれっ！？{demon_name}",
+    "tr": "...!? Huh?!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 193,
+    "pointer_offset": "0x0182",
+    "file_offset": "0x12ec",
+    "jp": "わけわからんて。{demon_name}",
+    "tr": "I don't understand!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 194,
+    "pointer_offset": "0x0184",
+    "file_offset": "0x1300",
+    "jp": "ピチャ、ヌルッ？{n}ズズー！ズズズズー！！{demon_name}",
+    "tr": "SPLISH... SQUELCH?{n}SLURP! SLURRRRP!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 195,
+    "pointer_offset": "0x0186",
+    "file_offset": "0x132c",
+    "jp": "・・・・・・・・。{demon_name}",
+    "tr": "........{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 196,
+    "pointer_offset": "0x0188",
+    "file_offset": "0x1342",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 197,
+    "pointer_offset": "0x018a",
+    "file_offset": "0x1344",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 198,
+    "pointer_offset": "0x018c",
+    "file_offset": "0x1346",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 199,
+    "pointer_offset": "0x018e",
+    "file_offset": "0x1348",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 200,
+    "pointer_offset": "0x0190",
+    "file_offset": "0x134a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 201,
+    "pointer_offset": "0x0192",
+    "file_offset": "0x134c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 202,
+    "pointer_offset": "0x0194",
+    "file_offset": "0x134e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 203,
+    "pointer_offset": "0x0196",
+    "file_offset": "0x1350",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 204,
+    "pointer_offset": "0x0198",
+    "file_offset": "0x1352",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 205,
+    "pointer_offset": "0x019a",
+    "file_offset": "0x1354",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 206,
+    "pointer_offset": "0x019c",
+    "file_offset": "0x1356",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 207,
+    "pointer_offset": "0x019e",
+    "file_offset": "0x1358",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 208,
+    "pointer_offset": "0x01a0",
+    "file_offset": "0x135a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 209,
+    "pointer_offset": "0x01a2",
+    "file_offset": "0x135c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 210,
+    "pointer_offset": "0x01a4",
+    "file_offset": "0x135e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 211,
+    "pointer_offset": "0x01a6",
+    "file_offset": "0x1360",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 212,
+    "pointer_offset": "0x01a8",
+    "file_offset": "0x1362",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 213,
+    "pointer_offset": "0x01aa",
+    "file_offset": "0x1364",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 214,
+    "pointer_offset": "0x01ac",
+    "file_offset": "0x1366",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 215,
+    "pointer_offset": "0x01ae",
+    "file_offset": "0x1368",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 216,
+    "pointer_offset": "0x01b0",
+    "file_offset": "0x136a",
+    "jp": "オオ・・・、{n}ココチヨイゾ。{demon_name}",
+    "tr": "OOH...{n}THIS FEEL GOOD.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 217,
+    "pointer_offset": "0x01b2",
+    "file_offset": "0x138a",
+    "jp": "シアワセ、キブン、{n}ユメ、キブン。{demon_name}",
+    "tr": "HAPPY FEELING...{n}DREAM FEELING...{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 218,
+    "pointer_offset": "0x01b4",
+    "file_offset": "0x13b0",
+    "jp": "・・・至福の極みじゃ。{demon_name}",
+    "tr": "...This is perfect bliss.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 219,
+    "pointer_offset": "0x01b6",
+    "file_offset": "0x13ca",
+    "jp": "私は今、気分がいい。{demon_name}",
+    "tr": "I feel wonderful.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 220,
+    "pointer_offset": "0x01b8",
+    "file_offset": "0x13e2",
+    "jp": "私、ハイなテンションで{n}ございますことよ。{demon_name}",
+    "tr": "Why, I am positively{n}giddy!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 221,
+    "pointer_offset": "0x01ba",
+    "file_offset": "0x1410",
+    "jp": "むかつくほどに、{n}幸せなんだよ、今の俺。{demon_name}",
+    "tr": "I'm so happy{n}it's sickening.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 222,
+    "pointer_offset": "0x01bc",
+    "file_offset": "0x143c",
+    "jp": "気持ちイーっ！{demon_name}",
+    "tr": "This feels great!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 223,
+    "pointer_offset": "0x01be",
+    "file_offset": "0x144e",
+    "jp": "ウキウキ。{n}おじさん、遊ぼうよ！！{demon_name}",
+    "tr": "Whee!{n}Mister, let's play!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 224,
+    "pointer_offset": "0x01c0",
+    "file_offset": "0x1474",
+    "jp": "うふふ、見て見てぇ～、{n}チョウチョさん見っけ！{demon_name}",
+    "tr": "Tee hee! Look!{n}I found a butterfly!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 225,
+    "pointer_offset": "0x01c2",
+    "file_offset": "0x14a6",
+    "jp": "ウフフ・・・。{n}いいわ、とてもいいわ。{demon_name}",
+    "tr": "Ohoho...{n}Lovely. Simply lovely.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 226,
+    "pointer_offset": "0x01c4",
+    "file_offset": "0x14d0",
+    "jp": "ウォー！ぶっちぎるぜ！{n}ハイブリ、ジャンキー！{demon_name}",
+    "tr": "Whoa! Full throttle!{n}Hyper junkie!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 227,
+    "pointer_offset": "0x01c6",
+    "file_offset": "0x1502",
+    "jp": "はァ～、カッポ～レ、{n}カッポ～レ！{demon_name}",
+    "tr": "HAAH, KAPPORE,{n}KAPPORE!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 228,
+    "pointer_offset": "0x01c8",
+    "file_offset": "0x1528",
+    "jp": "ムフッ、ムフフフッ。{demon_name}",
+    "tr": "MMM... HEH HEH HEH.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 229,
+    "pointer_offset": "0x01ca",
+    "file_offset": "0x1540",
+    "jp": "めっちゃ、ええ感じや。{n}いても～たるわ～。{demon_name}",
+    "tr": "This feels bloody great.{n}I'll knock you flat!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 230,
+    "pointer_offset": "0x01cc",
+    "file_offset": "0x156e",
+    "jp": "ピチャチャチャ！{n}ズズー！ズズズズー！！{demon_name}",
+    "tr": "SPLISH-SPLASH-SPLISH!{n}SLURP! SLURRRRP!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 231,
+    "pointer_offset": "0x01ce",
+    "file_offset": "0x159a",
+    "jp": "・・・・・・・・。{demon_name}",
+    "tr": "........{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 232,
+    "pointer_offset": "0x01d0",
+    "file_offset": "0x15b0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 233,
+    "pointer_offset": "0x01d2",
+    "file_offset": "0x15b2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 234,
+    "pointer_offset": "0x01d4",
+    "file_offset": "0x15b4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 235,
+    "pointer_offset": "0x01d6",
+    "file_offset": "0x15b6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 236,
+    "pointer_offset": "0x01d8",
+    "file_offset": "0x15b8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 237,
+    "pointer_offset": "0x01da",
+    "file_offset": "0x15ba",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 238,
+    "pointer_offset": "0x01dc",
+    "file_offset": "0x15bc",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 239,
+    "pointer_offset": "0x01de",
+    "file_offset": "0x15be",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 240,
+    "pointer_offset": "0x01e0",
+    "file_offset": "0x15c0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 241,
+    "pointer_offset": "0x01e2",
+    "file_offset": "0x15c2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 242,
+    "pointer_offset": "0x01e4",
+    "file_offset": "0x15c4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 243,
+    "pointer_offset": "0x01e6",
+    "file_offset": "0x15c6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 244,
+    "pointer_offset": "0x01e8",
+    "file_offset": "0x15c8",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 245,
+    "pointer_offset": "0x01ea",
+    "file_offset": "0x15ca",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 246,
+    "pointer_offset": "0x01ec",
+    "file_offset": "0x15cc",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 247,
+    "pointer_offset": "0x01ee",
+    "file_offset": "0x15ce",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 248,
+    "pointer_offset": "0x01f0",
+    "file_offset": "0x15d0",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 249,
+    "pointer_offset": "0x01f2",
+    "file_offset": "0x15d2",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 250,
+    "pointer_offset": "0x01f4",
+    "file_offset": "0x15d4",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 251,
+    "pointer_offset": "0x01f6",
+    "file_offset": "0x15d6",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 252,
+    "pointer_offset": "0x01f8",
+    "file_offset": "0x15d8",
+    "jp": "ホウ、ニゲルノカ・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "OH? YOU RUN AWAY...{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 253,
+    "pointer_offset": "0x01fa",
+    "file_offset": "0x15f6",
+    "jp": "ニゲル、ナドトハ・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "YOU WOULD... RUN AWAY?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 254,
+    "pointer_offset": "0x01fc",
+    "file_offset": "0x1614",
+    "jp": "逃げるも、また策・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Flight is also a strategy...{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 255,
+    "pointer_offset": "0x01fe",
+    "file_offset": "0x1632",
+    "jp": "・・・もう二度と・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "...Never again...{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 256,
+    "pointer_offset": "0x0200",
+    "file_offset": "0x1650",
+    "jp": "お逃げになるの？・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Are you leaving...?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 257,
+    "pointer_offset": "0x0202",
+    "file_offset": "0x166e",
+    "jp": "逃げるが勝ちかい・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "So running wins...{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 258,
+    "pointer_offset": "0x0204",
+    "file_offset": "0x168c",
+    "jp": "ちょっとまってよ・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Wait...{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 259,
+    "pointer_offset": "0x0206",
+    "file_offset": "0x16aa",
+    "jp": "逃さないもんね！・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "I won't let you escape!{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 260,
+    "pointer_offset": "0x0208",
+    "file_offset": "0x16c8",
+    "jp": "あー！負けイヌー・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Ha! What a loser!{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 261,
+    "pointer_offset": "0x020a",
+    "file_offset": "0x16e6",
+    "jp": "あら、どちらへ？・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Oh? Where are you going?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 262,
+    "pointer_offset": "0x020c",
+    "file_offset": "0x1704",
+    "jp": "ランナウェ～イ！・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "RUN AWAAAY!{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 263,
+    "pointer_offset": "0x020e",
+    "file_offset": "0x1722",
+    "jp": "・・・・待たんか・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "...Wait!{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 264,
+    "pointer_offset": "0x0210",
+    "file_offset": "0x1740",
+    "jp": "・・・・・ふぅん・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "...Hmm.{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 265,
+    "pointer_offset": "0x0212",
+    "file_offset": "0x175e",
+    "jp": "どこいくんやぁ！・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Where d'you think you're going?!{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 266,
+    "pointer_offset": "0x0214",
+    "file_offset": "0x177c",
+    "jp": "ピチャ、ピチャッ・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "SPLISH, SPLASH...{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 267,
+    "pointer_offset": "0x0216",
+    "file_offset": "0x179a",
+    "jp": "造魔",
+    "tr": "Zoma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 268,
+    "pointer_offset": "0x0218",
+    "file_offset": "0x17a0",
+    "jp": "・・・・・・・・・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "........{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 269,
+    "pointer_offset": "0x021a",
+    "file_offset": "0x17be",
+    "jp": "待アァテェイィィ・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "WAAAIIIT!{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 270,
+    "pointer_offset": "0x021c",
+    "file_offset": "0x17dc",
+    "jp": "逃げるでない・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Do not flee.{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 271,
+    "pointer_offset": "0x021e",
+    "file_offset": "0x17f6",
+    "jp": "ニガサンゾオー・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "NOT LET YOU ESCAPE!{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 272,
+    "pointer_offset": "0x0220",
+    "file_offset": "0x1812",
+    "jp": "逃げるのか・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "You're running away?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 273,
+    "pointer_offset": "0x0222",
+    "file_offset": "0x182a",
+    "jp": "逃げるのかい・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "You're running away?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 274,
+    "pointer_offset": "0x0224",
+    "file_offset": "0x1844",
+    "jp": "逃亡するのか・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "You intend to flee?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 275,
+    "pointer_offset": "0x0226",
+    "file_offset": "0x185e",
+    "jp": "逃げるな・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Don't run.{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 276,
+    "pointer_offset": "0x0228",
+    "file_offset": "0x1874",
+    "jp": "マテ、逃ゲルノカ・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "WAIT. YOU RUN AWAY?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 277,
+    "pointer_offset": "0x022a",
+    "file_offset": "0x1892",
+    "jp": "逃げるのカ・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "You are fleeing?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 278,
+    "pointer_offset": "0x022c",
+    "file_offset": "0x18aa",
+    "jp": "君は逃げるのか・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "You would flee?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 279,
+    "pointer_offset": "0x022e",
+    "file_offset": "0x18c6",
+    "jp": "逃げちゃイヤーん・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Don't run away!{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 280,
+    "pointer_offset": "0x0230",
+    "file_offset": "0x18e4",
+    "jp": "逃げるなよぉ・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Don't you run!{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 281,
+    "pointer_offset": "0x0232",
+    "file_offset": "0x18fe",
+    "jp": "逃亡するか・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Will you flee?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 282,
+    "pointer_offset": "0x0234",
+    "file_offset": "0x1916",
+    "jp": "逃がすものか・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "I will not let you escape.{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 283,
+    "pointer_offset": "0x0236",
+    "file_offset": "0x1930",
+    "jp": "極道に背を向ける・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "Turning your back on a yakuza...{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 284,
+    "pointer_offset": "0x0238",
+    "file_offset": "0x194e",
+    "jp": "戦わぬというのか・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "You refuse to fight?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 285,
+    "pointer_offset": "0x023a",
+    "file_offset": "0x196c",
+    "jp": "逃げるのカ・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "You are fleeing?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 286,
+    "pointer_offset": "0x023c",
+    "file_offset": "0x1984",
+    "jp": "逃げるのカ・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "You are fleeing?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 287,
+    "pointer_offset": "0x023e",
+    "file_offset": "0x199c",
+    "jp": "逃げるのか・{demon_name}・{demon_name}・{demon_name}",
+    "tr": "You're running away?{demon_name}{demon_name}{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 288,
+    "pointer_offset": "0x0240",
+    "file_offset": "0x19b4",
+    "jp": "ソレモヨカロウ。{demon_name}",
+    "tr": "THAT ALSO GOOD.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 289,
+    "pointer_offset": "0x0242",
+    "file_offset": "0x19c8",
+    "jp": "オモワナカッタ！！{demon_name}",
+    "tr": "ME NOT EXPECT THAT!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 290,
+    "pointer_offset": "0x0244",
+    "file_offset": "0x19de",
+    "jp": "我、再会を望むなり。{demon_name}",
+    "tr": "I hope we meet again.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 291,
+    "pointer_offset": "0x0246",
+    "file_offset": "0x19f6",
+    "jp": "私の前に現れるな！！{demon_name}",
+    "tr": "Never show yourself{n}before me again!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 292,
+    "pointer_offset": "0x0248",
+    "file_offset": "0x1a0e",
+    "jp": "なら、逃げるがいいわ。{demon_name}",
+    "tr": "Then flee.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 293,
+    "pointer_offset": "0x024a",
+    "file_offset": "0x1a28",
+    "jp": "今回は見逃してやるぜ。{demon_name}",
+    "tr": "I'll let you go this time.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 294,
+    "pointer_offset": "0x024c",
+    "file_offset": "0x1a42",
+    "jp": "なら、また今度ね・・。{demon_name}",
+    "tr": "Well, until next time...{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 295,
+    "pointer_offset": "0x024e",
+    "file_offset": "0x1a5c",
+    "jp": "ウシャー！覚えとき！{demon_name}",
+    "tr": "Hah! Remember this!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 296,
+    "pointer_offset": "0x0250",
+    "file_offset": "0x1a74",
+    "jp": "行っちゃえ！しっしっ！{demon_name}",
+    "tr": "Go on! Shoo, shoo!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 297,
+    "pointer_offset": "0x0252",
+    "file_offset": "0x1a8e",
+    "jp": "さみしくなるわね・・。{demon_name}",
+    "tr": "I'll be lonely without you...{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 298,
+    "pointer_offset": "0x0254",
+    "file_offset": "0x1aa8",
+    "jp": "キャーーー！！{demon_name}",
+    "tr": "EEEEK!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 299,
+    "pointer_offset": "0x0256",
+    "file_offset": "0x1aba",
+    "jp": "待てといっとろーが！！{demon_name}",
+    "tr": "I told you to wait!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 300,
+    "pointer_offset": "0x0258",
+    "file_offset": "0x1ad4",
+    "jp": "やはり、下らん奴だ。{demon_name}",
+    "tr": "As I thought, you're worthless.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 301,
+    "pointer_offset": "0x025a",
+    "file_offset": "0x1aec",
+    "jp": "この辺にしといたろか。{demon_name}",
+    "tr": "I'll leave it at that.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 302,
+    "pointer_offset": "0x025c",
+    "file_offset": "0x1b06",
+    "jp": "ズズー。{demon_name}",
+    "tr": "SLURP.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 303,
+    "pointer_offset": "0x025e",
+    "file_offset": "0x1b12",
+    "jp": "造魔",
+    "tr": "Zoma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 304,
+    "pointer_offset": "0x0260",
+    "file_offset": "0x1b18",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 305,
+    "pointer_offset": "0x0262",
+    "file_offset": "0x1b1a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 306,
+    "pointer_offset": "0x0264",
+    "file_offset": "0x1b1c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 307,
+    "pointer_offset": "0x0266",
+    "file_offset": "0x1b1e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 308,
+    "pointer_offset": "0x0268",
+    "file_offset": "0x1b20",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 309,
+    "pointer_offset": "0x026a",
+    "file_offset": "0x1b22",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 310,
+    "pointer_offset": "0x026c",
+    "file_offset": "0x1b24",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 311,
+    "pointer_offset": "0x026e",
+    "file_offset": "0x1b26",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 312,
+    "pointer_offset": "0x0270",
+    "file_offset": "0x1b28",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 313,
+    "pointer_offset": "0x0272",
+    "file_offset": "0x1b2a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 314,
+    "pointer_offset": "0x0274",
+    "file_offset": "0x1b2c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 315,
+    "pointer_offset": "0x0276",
+    "file_offset": "0x1b2e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 316,
+    "pointer_offset": "0x0278",
+    "file_offset": "0x1b30",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 317,
+    "pointer_offset": "0x027a",
+    "file_offset": "0x1b32",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 318,
+    "pointer_offset": "0x027c",
+    "file_offset": "0x1b34",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 319,
+    "pointer_offset": "0x027e",
+    "file_offset": "0x1b36",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 320,
+    "pointer_offset": "0x0280",
+    "file_offset": "0x1b38",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 321,
+    "pointer_offset": "0x0282",
+    "file_offset": "0x1b3a",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 322,
+    "pointer_offset": "0x0284",
+    "file_offset": "0x1b3c",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 323,
+    "pointer_offset": "0x0286",
+    "file_offset": "0x1b3e",
+    "jp": "",
+    "tr": "",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "index": 324,
+    "pointer_offset": "0x0288",
+    "file_offset": "0x1b40",
+    "jp": "ノガサヌ。{demon_name}",
+    "tr": "NOT LET YOU ESCAPE.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 325,
+    "pointer_offset": "0x028a",
+    "file_offset": "0x1b4e",
+    "jp": "オモウナ！！{demon_name}",
+    "tr": "DO NOT THINK YOU CAN!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 326,
+    "pointer_offset": "0x028c",
+    "file_offset": "0x1b5e",
+    "jp": "逃さぬも、また策なり。{demon_name}",
+    "tr": "Preventing escape is{n}also a strategy.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 327,
+    "pointer_offset": "0x028e",
+    "file_offset": "0x1b78",
+    "jp": "生きては帰しません。{demon_name}",
+    "tr": "You will not leave alive.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 328,
+    "pointer_offset": "0x0290",
+    "file_offset": "0x1b90",
+    "jp": "いいから死になさい。{demon_name}",
+    "tr": "Just die already.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 329,
+    "pointer_offset": "0x0292",
+    "file_offset": "0x1ba8",
+    "jp": "甘いねぇ。{demon_name}",
+    "tr": "How naive.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 330,
+    "pointer_offset": "0x0294",
+    "file_offset": "0x1bb6",
+    "jp": "勝手すぎない？{demon_name}",
+    "tr": "Isn't that rather selfish?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 331,
+    "pointer_offset": "0x0296",
+    "file_offset": "0x1bc8",
+    "jp": "どんくさぁ～。{demon_name}",
+    "tr": "How clumsy!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 332,
+    "pointer_offset": "0x0298",
+    "file_offset": "0x1bda",
+    "jp": "このイヌっころめ～！！{demon_name}",
+    "tr": "You mangy mutt!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 333,
+    "pointer_offset": "0x029a",
+    "file_offset": "0x1bf4",
+    "jp": "私、まだ足りないわ！！{demon_name}",
+    "tr": "I haven't had enough!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 334,
+    "pointer_offset": "0x029c",
+    "file_offset": "0x1c0e",
+    "jp": "まだだ！！{demon_name}",
+    "tr": "Not yet!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 335,
+    "pointer_offset": "0x029e",
+    "file_offset": "0x1c1c",
+    "jp": "よしよし、いい子じゃ。{demon_name}",
+    "tr": "There, there. Good child.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 336,
+    "pointer_offset": "0x02a0",
+    "file_offset": "0x1c36",
+    "jp": "それで？{demon_name}",
+    "tr": "And?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 337,
+    "pointer_offset": "0x02a2",
+    "file_offset": "0x1c42",
+    "jp": "にがさへんで～！！{demon_name}",
+    "tr": "I won't let ya get away!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 338,
+    "pointer_offset": "0x02a4",
+    "file_offset": "0x1c58",
+    "jp": "ヌ・ヌ・ヌル？{demon_name}",
+    "tr": "S-S-SQUELCH?{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 339,
+    "pointer_offset": "0x02a6",
+    "file_offset": "0x1c6a",
+    "jp": "造魔",
+    "tr": "Zoma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 340,
+    "pointer_offset": "0x02a8",
+    "file_offset": "0x1c70",
+    "jp": "！！！！！{demon_name}",
+    "tr": "!!!!!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 341,
+    "pointer_offset": "0x02aa",
+    "file_offset": "0x1c7e",
+    "jp": "ウワーッハーッハーッ。{demon_name}",
+    "tr": "WAH-HA-HA-HA!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 342,
+    "pointer_offset": "0x02ac",
+    "file_offset": "0x1c98",
+    "jp": "その力、示してみよ！{demon_name}",
+    "tr": "Show me your power!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 343,
+    "pointer_offset": "0x02ae",
+    "file_offset": "0x1cb0",
+    "jp": "ニゲラレンゾー！{demon_name}",
+    "tr": "YOU CANNOT ESCAPE!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 344,
+    "pointer_offset": "0x02b0",
+    "file_offset": "0x1cc4",
+    "jp": "無駄だ、無駄だ。{demon_name}",
+    "tr": "Futile. Utterly futile.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 345,
+    "pointer_offset": "0x02b2",
+    "file_offset": "0x1cd8",
+    "jp": "無駄なことは、おやめ。{demon_name}",
+    "tr": "Do stop wasting your effort.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 346,
+    "pointer_offset": "0x02b4",
+    "file_offset": "0x1cf2",
+    "jp": "敵前逃亡は銃殺だ！{demon_name}",
+    "tr": "Desertion is punishable{n}by firing squad!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 347,
+    "pointer_offset": "0x02b6",
+    "file_offset": "0x1d08",
+    "jp": "殺すぞ！{demon_name}",
+    "tr": "I'll kill you!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 348,
+    "pointer_offset": "0x02b8",
+    "file_offset": "0x1d14",
+    "jp": "オマエヲ殺ス。{demon_name}",
+    "tr": "KILL YOU.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 349,
+    "pointer_offset": "0x02ba",
+    "file_offset": "0x1d26",
+    "jp": "今度は容赦しませんヨ。{demon_name}",
+    "tr": "Next time, I won't be lenient.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 350,
+    "pointer_offset": "0x02bc",
+    "file_offset": "0x1d40",
+    "jp": "私のエナジーとなれ。{demon_name}",
+    "tr": "Become my energy.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 351,
+    "pointer_offset": "0x02be",
+    "file_offset": "0x1d58",
+    "jp": "わたしの歌を聞いてね。{demon_name}",
+    "tr": "Listen to my song.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 352,
+    "pointer_offset": "0x02c0",
+    "file_offset": "0x1d72",
+    "jp": "このサウンドを聞けぇ！{demon_name}",
+    "tr": "Listen to this sound!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 353,
+    "pointer_offset": "0x02c2",
+    "file_offset": "0x1d8c",
+    "jp": "逃亡犯は死刑だ。{demon_name}",
+    "tr": "Fugitives are put to death.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 354,
+    "pointer_offset": "0x02c4",
+    "file_offset": "0x1da0",
+    "jp": "桃園の誓いにかけても！{demon_name}",
+    "tr": "By the Oath of{n}the Peach Garden!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 355,
+    "pointer_offset": "0x02c6",
+    "file_offset": "0x1dba",
+    "jp": "そうはいかん。{demon_name}",
+    "tr": "I think not.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 356,
+    "pointer_offset": "0x02c8",
+    "file_offset": "0x1dcc",
+    "jp": "逃げられぬぞ。{demon_name}",
+    "tr": "There is no escape.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 357,
+    "pointer_offset": "0x02ca",
+    "file_offset": "0x1dde",
+    "jp": "やはり中身はニセ者か。{demon_name}",
+    "tr": "So the man inside{n}is an impostor after all.{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 358,
+    "pointer_offset": "0x02cc",
+    "file_offset": "0x1df8",
+    "jp": "イナルナ姫が復活するゾ{demon_name}",
+    "tr": "Princess Inaruna will rise!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 359,
+    "pointer_offset": "0x02ce",
+    "file_offset": "0x1e12",
+    "jp": "わらわに血を捧げよ！{demon_name}",
+    "tr": "Offer me your blood!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 360,
+    "pointer_offset": "0x02d0",
+    "file_offset": "0x1e2a",
+    "jp": "わぁ、おとすおちる{n}こわれるうっ！！{demon_name}",
+    "tr": "Whoa! Don't drop it!{n}It'll break!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 361,
+    "pointer_offset": "0x02d2",
+    "file_offset": "0x1e54",
+    "jp": "こんないいものを{n}なげるなぁっ！！{demon_name}",
+    "tr": "Don't throw something{n}this valuable!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "index": 362,
+    "pointer_offset": "0x02d4",
+    "file_offset": "0x1e7c",
+    "jp": "モノの値うちのわからん{n}クズどもめ覚悟しろ！{demon_name}",
+    "tr": "You scum who know no value,{n}prepare yourselves!{demon_name}",
+    "reviewed": false,
+    "excluded": false
+  }
+]

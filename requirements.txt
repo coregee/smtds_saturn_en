@@ -1,0 +1,4 @@
+capstone==5.0.9
+pillow==12.2.0
+ruff==0.15.22
+mypy==1.17.1

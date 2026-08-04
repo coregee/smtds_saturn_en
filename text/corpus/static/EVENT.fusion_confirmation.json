@@ -1,0 +1,80 @@
+[
+  {
+    "kind": "confirm_prompt",
+    "spans": [
+      {
+        "file_offset": "0x5458e",
+        "word_count": 9
+      }
+    ],
+    "jp": "合体させてよいか？",
+    "tr": "Shall I fuse them?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "level_too_low",
+    "spans": [
+      {
+        "file_offset": "0x545b6",
+        "word_count": 20
+      }
+    ],
+    "jp": "残念だが、おまえのレベルでは合体できない",
+    "tr": "I'm afraid your level is too low.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "duplicate_demon",
+    "spans": [
+      {
+        "file_offset": "0x545de",
+        "word_count": 11
+      }
+    ],
+    "jp": "同じ仲魔がいるようだな",
+    "tr": "You already have this demon.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "begin_fusion",
+    "spans": [
+      {
+        "file_offset": "0x54606",
+        "word_count": 8
+      }
+    ],
+    "jp": "では合体させるぞ",
+    "tr": "Then let us begin.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "label_yes",
+    "spans": [
+      {
+        "file_offset": "0x5462e",
+        "word_count": 3
+      }
+    ],
+    "jp": "YES",
+    "tr": "Yes",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "label_no",
+    "spans": [
+      {
+        "file_offset": "0x54636",
+        "word_count": 2
+      }
+    ],
+    "jp": "NO",
+    "tr": "No",
+    "reviewed": false,
+    "excluded": false
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "file": "FONT12.FON",
+  "atlas": {
+    "file": "../atlas/font12.json",
+    "columns": 24,
+    "scale": 3
+  },
+  "format": {
+    "width": 12,
+    "height": 12,
+    "bpp": 1,
+    "row_stride": 2,
+    "glyph_stride": 32
+  },
+  "repack": {
+    "use_font_file": true,
+    "source": "../source/ark-pixel-font/ark-pixel-12px-proportional-latin.otf",
+    "render": {
+      "size": 11,
+      "placement": "origin",
+      "anchor": "la",
+      "offset_x": 0,
+      "offset_y": -1,
+      "stroke_width": 0,
+      "antialias": false,
+      "glyph_offsets": [
+        {
+          "characters": "acegmnopqrsuvwxyz",
+          "offset_y": -1
+        }
+      ]
+    },
+    "metrics": {
+      "code_limit": 256,
+      "measurement": "ink",
+      "space_advance": 3
+    }
+  }
+}

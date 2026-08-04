@@ -1,0 +1,2811 @@
+[
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 0,
+        "page": 0,
+        "file_offset": "0x5000",
+        "content_start_word": 0,
+        "content_end_word": 58,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "怪しい教授：ケケケ、ワテの造魔は、{n}ごっつ強うなって完成や。カンペキやで。{n}ワテって、つくづく天才やね。ケケケケケ。",
+    "tr": "Suspicious Professor: Keh heh heh! My Zoma is{n}finished, and it's crazy strong. It's perfect!{n}I really am a genius! Keh heh heh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 1,
+        "page": 0,
+        "file_offset": "0x5078",
+        "content_start_word": 0,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 10,
+        "page": 0,
+        "file_offset": "0x54c0",
+        "content_start_word": 0,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 19,
+        "page": 0,
+        "file_offset": "0x598a",
+        "content_start_word": 0,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 28,
+        "page": 0,
+        "file_offset": "0x5dc4",
+        "content_start_word": 0,
+        "content_end_word": 42,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ン？誰や？{n}ここは、天才ドクター・スリル様の研究室や{n}勝手に入りこんだらアカンでぇ。",
+    "tr": "Huh? Who are you?{n}This is the great genius Dr. Thrill's laboratory.{n}You can't just barge in here!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 1,
+        "page": 1,
+        "file_offset": "0x5078",
+        "content_start_word": 44,
+        "content_end_word": 88,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "そや、ワテのかわいい造魔ガルガンチュアの{n}完成テストしたろ。{n}おまえ実験台にしたるでぇ。",
+    "tr": "I know! I'll give my darling Zoma Gargantua{n}its final test.{n}You can be the guinea pig!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 1,
+        "page": 2,
+        "file_offset": "0x5078",
+        "content_start_word": 90,
+        "content_end_word": 107,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ほな、行けや！！ガルガンチュア！！",
+    "tr": "Go get 'em!! Gargantua!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 2,
+        "page": 0,
+        "file_offset": "0x5152",
+        "content_start_word": 0,
+        "content_end_word": 51,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ドクター・スリル：プロト・ガルガンチュア{n}は、ワヤにされてもうたが、今度は完成体の{n}ガルガンチュアや。",
+    "tr": "Dr. Thrill: Proto Gargantua got wrecked,{n}but this one's the finished model: Gargantua!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 2,
+        "page": 1,
+        "file_offset": "0x5152",
+        "content_start_word": 53,
+        "content_end_word": 67,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ごっつ強いでぇ、ケケケケケ。",
+    "tr": "It's crazy strong! Keh heh heh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 3,
+        "page": 0,
+        "file_offset": "0x51dc",
+        "content_start_word": 0,
+        "content_end_word": 39,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ン？誰や？{n}ああっ！おまえは、ワテのプロト造魔くんを{n}ワヤにしよってからに！！",
+    "tr": "Huh? Who are you?{n}Ah! You're the punk who wrecked{n}my little Proto Zoma!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 3,
+        "page": 1,
+        "file_offset": "0x51dc",
+        "content_start_word": 41,
+        "content_end_word": 72,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ちょうどええわ。完成したガルガンチュアが{n}いてもうたるでぇ！！",
+    "tr": "Perfect timing. My finished Gargantua{n}will clobber you!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 3,
+        "page": 2,
+        "file_offset": "0x51dc",
+        "content_start_word": 74,
+        "content_end_word": 110,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ほな、行けや！！ガルガンチュア！！{n}プロト造魔くんのカタキ取ったれや！！",
+    "tr": "Go get 'em!! Gargantua!!{n}Avenge my little Proto Zoma!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 4,
+        "page": 0,
+        "file_offset": "0x52bc",
+        "content_start_word": 0,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ガルガンチュア：はっ、ドクター・スリル様{n}こいつを倒します。",
+    "tr": "Gargantua: Yes, Dr. Thrill.{n}I will defeat this intruder.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 5,
+        "page": 0,
+        "file_offset": "0x52fc",
+        "content_start_word": 0,
+        "content_end_word": 38,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ドクター・スリル：かっ、完成体が！{n}完成体のガルガンチュアがやられよった！！",
+    "tr": "Dr. Thrill: M-My finished model!{n}My completed Gargantua was beaten!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 5,
+        "page": 1,
+        "file_offset": "0x52fc",
+        "content_start_word": 40,
+        "content_end_word": 84,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "なんてことしよるんや！{n}このオトシマエは、いつかキッチリつけたる{n}さかい、覚えときや！！",
+    "tr": "What the heck did you do?!{n}One day I'll settle the score for good,{n}so don't you forget it!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 6,
+        "page": 0,
+        "file_offset": "0x53a8",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 7,
+        "page": 0,
+        "file_offset": "0x53ea",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 15,
+        "page": 0,
+        "file_offset": "0x5870",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 16,
+        "page": 0,
+        "file_offset": "0x58b2",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 24,
+        "page": 0,
+        "file_offset": "0x5cb0",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 25,
+        "page": 0,
+        "file_offset": "0x5cf2",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 33,
+        "page": 0,
+        "file_offset": "0x61ba",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 34,
+        "page": 0,
+        "file_offset": "0x61fc",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "＞倒した造魔の中から、何か出てきた。",
+    "tr": "> Something emerged from the defeated Zoma.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 6,
+        "page": 1,
+        "file_offset": "0x53a8",
+        "content_start_word": 20,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 15,
+        "page": 1,
+        "file_offset": "0x5870",
+        "content_start_word": 20,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 24,
+        "page": 1,
+        "file_offset": "0x5cb0",
+        "content_start_word": 20,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 33,
+        "page": 1,
+        "file_offset": "0x61ba",
+        "content_start_word": 20,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "謎の人形を手に入れた。",
+    "tr": "Obtained Mysterious Doll.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 7,
+        "page": 1,
+        "file_offset": "0x53ea",
+        "content_start_word": 20,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 16,
+        "page": 1,
+        "file_offset": "0x58b2",
+        "content_start_word": 20,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 25,
+        "page": 1,
+        "file_offset": "0x5cf2",
+        "content_start_word": 20,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 34,
+        "page": 1,
+        "file_offset": "0x61fc",
+        "content_start_word": 20,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ドリー・カドモンを手に入れた。",
+    "tr": "Obtained Dolly Kadmon.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 8,
+        "page": 0,
+        "file_offset": "0x5434",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 17,
+        "page": 0,
+        "file_offset": "0x58fc",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 26,
+        "page": 0,
+        "file_offset": "0x5d3c",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 35,
+        "page": 0,
+        "file_offset": "0x6246",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "＞誰もいない……。",
+    "tr": "> No one is here...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 9,
+        "page": 0,
+        "file_offset": "0x544a",
+        "content_start_word": 0,
+        "content_end_word": 57,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "怪しい教授：ケケケ、ワテの造魔は、{n}改良に成功して、ごっつごっつ強うなった{n}ワテって、ほんま天才やね。ケケケケケ。",
+    "tr": "Suspicious Professor: Keh heh heh! I improved{n}my Zoma, and now it's crazy, crazy strong!{n}I really am a genius! Keh heh heh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 10,
+        "page": 1,
+        "file_offset": "0x54c0",
+        "content_start_word": 44,
+        "content_end_word": 91,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "そや、ワテのかわいいかわいい{n}ガルガンチュアQの改良完成テストしたる。{n}おまえが実験台やでぇ。",
+    "tr": "I know! I'll give my darling, darling{n}Gargantua Q its final test.{n}You can be the guinea pig!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 10,
+        "page": 2,
+        "file_offset": "0x54c0",
+        "content_start_word": 93,
+        "content_end_word": 138,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 12,
+        "page": 2,
+        "file_offset": "0x565e",
+        "content_start_word": 77,
+        "content_end_word": 122,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランパート・スーツ着せたったさかい、{n}おまえが、いくらどついても、{n}きかへんのや、ボケぇ。",
+    "tr": "I put it in a Rampart Suit,{n}so no matter how hard you pound on it,{n}you won't even scratch it, dummy!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 10,
+        "page": 3,
+        "file_offset": "0x54c0",
+        "content_start_word": 140,
+        "content_end_word": 159,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ほな、いてまえ！！ガルガンチュアQ！！",
+    "tr": "Go crush 'em!! Gargantua Q!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 11,
+        "page": 0,
+        "file_offset": "0x5602",
+        "content_start_word": 0,
+        "content_end_word": 44,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ドクター・スリル：天才は、決してくじけん{n}もんや。そやさかい、できたでぇ。{n}ケケケケケ。",
+    "tr": "Dr. Thrill: A genius never gives up.{n}That's why I finally did it!{n}Keh heh heh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 12,
+        "page": 0,
+        "file_offset": "0x565e",
+        "content_start_word": 0,
+        "content_end_word": 36,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ン？誰や？{n}ああっ！おまえは、ワテの造魔くんを{n}ワヤにしよってからに！！",
+    "tr": "Huh? Who are you?{n}Ah! You're the punk who wrecked my little Zoma!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 12,
+        "page": 1,
+        "file_offset": "0x565e",
+        "content_start_word": 38,
+        "content_end_word": 75,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "だが、今度はちゃうでぇ。ガルガンチュアQ{n}がおまえの息の根止めたるでぇ！！",
+    "tr": "But this time is different! Gargantua Q{n}will put an end to you!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 12,
+        "page": 3,
+        "file_offset": "0x565e",
+        "content_start_word": 124,
+        "content_end_word": 153,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ほな、行けや！！ガルガンチュアQ！！{n}手加減無用やでぇ！！",
+    "tr": "Go get 'em!! Gargantua Q!!{n}Don't hold back!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 13,
+        "page": 0,
+        "file_offset": "0x5794",
+        "content_start_word": 0,
+        "content_end_word": 41,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ガルガンチュアQ：ホホホホゥ。{n}了解した、ドクター・スリル。{n}こいつをブチのめす！",
+    "tr": "Gargantua Q: Ho ho hooo!{n}Got it, Dr. Thrill!{n}I'll smash this punk!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 14,
+        "page": 0,
+        "file_offset": "0x57ea",
+        "content_start_word": 0,
+        "content_end_word": 36,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ドクター・スリル：なっ、なんで！{n}ガルガンチュアQが負けなあかんのや！！",
+    "tr": "Dr. Thrill: W-Why?!{n}How could Gargantua Q lose?!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 14,
+        "page": 1,
+        "file_offset": "0x57ea",
+        "content_start_word": 38,
+        "content_end_word": 65,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ワテは、絶対このままでは終わらんでぇ！{n}覚えときや！！",
+    "tr": "I'm not finished yet!{n}Don't you forget it!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 18,
+        "page": 0,
+        "file_offset": "0x5912",
+        "content_start_word": 0,
+        "content_end_word": 58,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "怪しい教授：ケケケ、ワテの造魔は、{n}ごっつ強うなって、もう無敵や。ケケケケケ{n}ワテ、自分の才能がつくづく恐ろしいで。",
+    "tr": "Suspicious Professor: Keh heh heh! My Zoma{n}is crazy strong now--practically invincible!{n}Even I'm scared of my own talent. Keh heh heh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 19,
+        "page": 1,
+        "file_offset": "0x598a",
+        "content_start_word": 44,
+        "content_end_word": 97,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "そういう、あかんたれには、おしおきや。{n}ワテの究極の造魔ガルガンチュアXが{n}おまえを、おしおきしたるでぇ。",
+    "tr": "A worthless punk like you needs a lesson.{n}My ultimate Zoma, Gargantua X,{n}will teach you one!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 19,
+        "page": 2,
+        "file_offset": "0x598a",
+        "content_start_word": 99,
+        "content_end_word": 118,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ほな、いてまえ！！ガルガンチュアX！！",
+    "tr": "Go get 'em!! Gargantua X!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 20,
+        "page": 0,
+        "file_offset": "0x5a7a",
+        "content_start_word": 0,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ドクター・スリル：前の造魔はやられたが{n}今度こそ、負けへんでぇ。",
+    "tr": "Dr. Thrill: My last Zoma was beaten,{n}but this time I won't lose!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 20,
+        "page": 1,
+        "file_offset": "0x5a7a",
+        "content_start_word": 34,
+        "content_end_word": 85,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ついにできたでぇ、究極の造魔、{n}ガルガンチュアXや。もうこれ以上のもんは{n}でけへんで。究極や！無敵や！",
+    "tr": "I finally did it--the ultimate Zoma,{n}Gargantua X! Nothing better can be made!{n}Ultimate! Invincible!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 21,
+        "page": 0,
+        "file_offset": "0x5b28",
+        "content_start_word": 0,
+        "content_end_word": 24,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ン？誰や？{n}おおっ、ちょうどええ時に来よったな。",
+    "tr": "Huh? Who are you?{n}Oh, you showed up at just the right time.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 21,
+        "page": 1,
+        "file_offset": "0x5b28",
+        "content_start_word": 26,
+        "content_end_word": 76,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ワテのガルガンチュアXが、{n}おまえをあの世に送ったるでぇ！！{n}ワヤにされた造魔のうらみもはらしたる！",
+    "tr": "My Gargantua X will send you{n}straight to the next world!!{n}It'll avenge every Zoma you wrecked!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 21,
+        "page": 2,
+        "file_offset": "0x5b28",
+        "content_start_word": 78,
+        "content_end_word": 104,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ほな、いてこましたらんかい！！{n}ガルガンチュアX！！",
+    "tr": "Go wipe 'em out!!{n}Gargantua X!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 22,
+        "page": 0,
+        "file_offset": "0x5bfc",
+        "content_start_word": 0,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ガルガンチュアX：わかった、スリル。{n}こいつを殺せばいいのだな。",
+    "tr": "Gargantua X: Understood, Thrill.{n}I just have to kill this one.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 23,
+        "page": 0,
+        "file_offset": "0x5c40",
+        "content_start_word": 0,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ドクター・スリル：あっ、ああっ！{n}ガルガンチュアXがやられてもうた！！",
+    "tr": "Dr. Thrill: N-No!{n}Gargantua X was beaten!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 23,
+        "page": 1,
+        "file_offset": "0x5c40",
+        "content_start_word": 37,
+        "content_end_word": 54,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ワテは、どないしたらええんや……。",
+    "tr": "What am I supposed to do now...?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 27,
+        "page": 0,
+        "file_offset": "0x5d52",
+        "content_start_word": 0,
+        "content_end_word": 55,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "怪しい教授：うーん、ワテの造魔は、{n}どこまで強うなってくんやろ、もうワテにも{n}止められまへんなぁ、ケケケケケ。",
+    "tr": "Suspicious Professor: Hmm, just how strong{n}will my Zoma get? Even I can't stop it now!{n}Keh heh heh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 28,
+        "page": 1,
+        "file_offset": "0x5dc4",
+        "content_start_word": 44,
+        "content_end_word": 83,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "不法侵入しよるクソガキは、ワテの造魔{n}ガルガンチュア8が、ドつきまわしたるわ。",
+    "tr": "A trespassing brat like you is gonna get{n}pummeled by my Zoma, Gargantua 8!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 28,
+        "page": 2,
+        "file_offset": "0x5dc4",
+        "content_start_word": 85,
+        "content_end_word": 132,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ガルガンチュア8は、超強ーぃ伝説の拳法家{n}をモデルにしたスペシャル・リミックス{n}バージョンや。",
+    "tr": "Gargantua 8 is a special remix version{n}modeled after a super-strong legendary{n}martial artist!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 28,
+        "page": 3,
+        "file_offset": "0x5dc4",
+        "content_start_word": 134,
+        "content_end_word": 161,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 30,
+        "page": 3,
+        "file_offset": "0x5f94",
+        "content_start_word": 122,
+        "content_end_word": 149,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ほな、いったれ！！肉体の悪魔！！{n}ガルガンチュア8！！",
+    "tr": "Now go get 'em!! Devil in the Flesh!!{n}Gargantua 8!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 29,
+        "page": 0,
+        "file_offset": "0x5f0a",
+        "content_start_word": 0,
+        "content_end_word": 32,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ドクター・スリル：ワテの全てを注ぎこんだ{n}造魔が、ついに完成や。",
+    "tr": "Dr. Thrill: At last, the Zoma I poured{n}everything into is complete!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 29,
+        "page": 1,
+        "file_offset": "0x5f0a",
+        "content_start_word": 34,
+        "content_end_word": 67,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "今度は、肉体そのものが武器になる格闘戦用{n}造魔やでぇ、ケケケケケ。",
+    "tr": "This time it's a close-combat Zoma{n}whose own body is a weapon! Keh heh heh!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 30,
+        "page": 0,
+        "file_offset": "0x5f94",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "来たな。{n}ここが、おまえの最期の場所や。",
+    "tr": "There you are.{n}This is where you die.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 30,
+        "page": 1,
+        "file_offset": "0x5f94",
+        "content_start_word": 22,
+        "content_end_word": 62,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ワテのガルガンチュア8が、{n}おまえを、ギッタンギッタンに{n}ドつきまわしたるでぇ。",
+    "tr": "My Gargantua 8 will pound you{n}into a pulp!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 30,
+        "page": 2,
+        "file_offset": "0x5f94",
+        "content_start_word": 64,
+        "content_end_word": 120,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "なんちゅーたかて、ガルガンチュア8は{n}超強ーぃ伝説の拳法家をモデルにした{n}スペシャル・リミックス・バージョンや。",
+    "tr": "After all, Gargantua 8 is a special remix version{n}modeled after a super-strong legendary{n}martial artist!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 31,
+        "page": 0,
+        "file_offset": "0x60c2",
+        "content_start_word": 0,
+        "content_end_word": 18,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ガルガンチュア8：オラオラオラァ！！",
+    "tr": "Gargantua 8: ORA ORA ORAAA!!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 32,
+        "page": 0,
+        "file_offset": "0x60ea",
+        "content_start_word": 0,
+        "content_end_word": 39,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ドクター・スリル：……ま、負けた……。{n}わてのガルガンチュア8が、負けよった。",
+    "tr": "Dr. Thrill: ...I-I lost...{n}My Gargantua 8 actually lost.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 32,
+        "page": 1,
+        "file_offset": "0x60ea",
+        "content_start_word": 41,
+        "content_end_word": 90,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ガルガンチュア8まで、負けてもうた。{n}ワテ、造魔くん造りたおすの、ヤメるで。{n}もう、さっぱワヤや。",
+    "tr": "Even Gargantua 8 lost.{n}I'm done making Zoma.{n}It's all completely ruined.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 32,
+        "page": 2,
+        "file_offset": "0x60ea",
+        "content_start_word": 92,
+        "content_end_word": 102,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ほな、サイナラ……。",
+    "tr": "Well then... Goodbye...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 36,
+        "page": 0,
+        "file_offset": "0x625c",
+        "content_start_word": 0,
+        "content_end_word": 10,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：ヒーホー！",
+    "tr": "Jack-o'-Lantern: Hee-ho!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 36,
+        "page": 1,
+        "file_offset": "0x625c",
+        "content_start_word": 12,
+        "content_end_word": 22,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 44,
+        "page": 1,
+        "file_offset": "0x650e",
+        "content_start_word": 54,
+        "content_end_word": 64,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 45,
+        "page": 3,
+        "file_offset": "0x6592",
+        "content_start_word": 72,
+        "content_end_word": 82,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 47,
+        "page": 3,
+        "file_offset": "0x6742",
+        "content_start_word": 112,
+        "content_end_word": 122,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "フロスト：ヒーホー！",
+    "tr": "Jack Frost: Hee-ho!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 36,
+        "page": 2,
+        "file_offset": "0x625c",
+        "content_start_word": 24,
+        "content_end_word": 62,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：アクマをいじめる、{n}ワルいニンゲン、デビルバスターを{n}やっつける！",
+    "tr": "Jack-o'-Lantern: We'll beat the bad humans{n}who bully demons--the Devil Busters!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 36,
+        "page": 3,
+        "file_offset": "0x625c",
+        "content_start_word": 64,
+        "content_end_word": 76,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "フロスト：やっつけるー！",
+    "tr": "Jack Frost: Beat 'em!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 36,
+        "page": 4,
+        "file_offset": "0x625c",
+        "content_start_word": 78,
+        "content_end_word": 103,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：オレたち、{n}デビルバスター・バスターズ！",
+    "tr": "Jack-o'-Lantern: We're the{n}Devil Buster Busters!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 36,
+        "page": 5,
+        "file_offset": "0x625c",
+        "content_start_word": 105,
+        "content_end_word": 116,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "フロスト：バスターズ！",
+    "tr": "Jack Frost: Busters!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 37,
+        "page": 0,
+        "file_offset": "0x6348",
+        "content_start_word": 0,
+        "content_end_word": 16,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：おまえ、ニンゲンだろ？",
+    "tr": "Jack-o'-Lantern: You're a human, right?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 37,
+        "page": 1,
+        "file_offset": "0x6348",
+        "content_start_word": 18,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 37,
+        "page": 3,
+        "file_offset": "0x6348",
+        "content_start_word": 49,
+        "content_end_word": 58,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "フロスト：だろー？",
+    "tr": "Jack Frost: Right?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 37,
+        "page": 2,
+        "file_offset": "0x6348",
+        "content_start_word": 29,
+        "content_end_word": 47,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：おまえデビルバスターだろ？",
+    "tr": "Jack-o'-Lantern: You're a Devil Buster, right?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 38,
+        "page": 0,
+        "file_offset": "0x63be",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：だったら、すぐやっつけてやる！",
+    "tr": "Jack-o'-Lantern: Then we'll beat you up right now!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 38,
+        "page": 1,
+        "file_offset": "0x63be",
+        "content_start_word": 22,
+        "content_end_word": 31,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 43,
+        "page": 3,
+        "file_offset": "0x6474",
+        "content_start_word": 66,
+        "content_end_word": 75,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 48,
+        "page": 3,
+        "file_offset": "0x683a",
+        "content_start_word": 66,
+        "content_end_word": 75,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "フロスト：やるー！",
+    "tr": "Jack Frost: Beat you up!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 39,
+        "page": 0,
+        "file_offset": "0x6400",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：ちがうのか？{n}じゃあ、デビルサマナーだな！",
+    "tr": "Jack-o'-Lantern: No?{n}Then you're a Devil Summoner!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 39,
+        "page": 1,
+        "file_offset": "0x6400",
+        "content_start_word": 28,
+        "content_end_word": 37,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 43,
+        "page": 1,
+        "file_offset": "0x6474",
+        "content_start_word": 36,
+        "content_end_word": 45,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 48,
+        "page": 1,
+        "file_offset": "0x683a",
+        "content_start_word": 36,
+        "content_end_word": 45,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "フロスト：だなー！",
+    "tr": "Jack Frost: Yeah!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 40,
+        "page": 0,
+        "file_offset": "0x644e",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "＞どうしますか？",
+    "tr": "> What will you do?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 41,
+        "page": 0,
+        "file_offset": "0x6460",
+        "content_start_word": 0,
+        "content_end_word": 2,
+        "boundary_codes": [
+          "8000"
+        ],
+        "reader": "raw_u16"
+      }
+    ],
+    "jp": "戦う",
+    "tr": "Fight",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 42,
+        "page": 0,
+        "file_offset": "0x6466",
+        "content_start_word": 0,
+        "content_end_word": 6,
+        "boundary_codes": [
+          "8000"
+        ],
+        "reader": "raw_u16"
+      }
+    ],
+    "jp": "相手にしない",
+    "tr": "Ignore them",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 43,
+        "page": 0,
+        "file_offset": "0x6474",
+        "content_start_word": 0,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 48,
+        "page": 0,
+        "file_offset": "0x683a",
+        "content_start_word": 0,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：ヒーホー！{n}おれたちに、はむかうなんて{n}イイどきょうだな！",
+    "tr": "Jack-o'-Lantern: Hee-ho!{n}You've got guts, standing up to us!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 43,
+        "page": 2,
+        "file_offset": "0x6474",
+        "content_start_word": 47,
+        "content_end_word": 64,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 48,
+        "page": 2,
+        "file_offset": "0x683a",
+        "content_start_word": 47,
+        "content_end_word": 64,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：ようし、やっつけてやる！",
+    "tr": "Jack-o'-Lantern: All right! We'll beat you up!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 44,
+        "page": 0,
+        "file_offset": "0x650e",
+        "content_start_word": 0,
+        "content_end_word": 52,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 49,
+        "page": 0,
+        "file_offset": "0x68d4",
+        "content_start_word": 0,
+        "content_end_word": 52,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ランタン：ようし、かわいそうだから、{n}きょうは、このへんにしといてやる。{n}じゃあな！ヒーホー！ヒーホー！",
+    "tr": "Jack-o'-Lantern: All right, we feel sorry for you,{n}so we'll let you off for today.{n}Bye! Hee-ho! Hee-ho!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 45,
+        "page": 0,
+        "file_offset": "0x6592",
+        "content_start_word": 0,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：ややっ、ヒキョウなニンゲンめ！{n}シッポをまいてにげるのか！？",
+    "tr": "Jack-o'-Lantern: Hey! You cowardly human!{n}Are you turning tail and running away?!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 45,
+        "page": 1,
+        "file_offset": "0x6592",
+        "content_start_word": 37,
+        "content_end_word": 46,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "フロスト：のかー！",
+    "tr": "Jack Frost: Running away?!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 45,
+        "page": 2,
+        "file_offset": "0x6592",
+        "content_start_word": 48,
+        "content_end_word": 70,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：やあい、ヒキョウもの！{n}ヒーホー！",
+    "tr": "Jack-o'-Lantern: Nyah-nyah, coward!{n}Hee-ho!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 46,
+        "page": 0,
+        "file_offset": "0x663a",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：また、あらわれたな！{n}ジャアクな、ニンゲンめ！",
+    "tr": "Jack-o'-Lantern: There you are again,{n}you evil human!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 46,
+        "page": 1,
+        "file_offset": "0x663a",
+        "content_start_word": 30,
+        "content_end_word": 60,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "オレたち、デビルバスター・バスターズが、{n}タイジしてやるぞ！",
+    "tr": "The Devil Buster Busters{n}will punish you!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 46,
+        "page": 2,
+        "file_offset": "0x663a",
+        "content_start_word": 62,
+        "content_end_word": 72,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "フロスト：やるぞー！",
+    "tr": "Jack Frost: Punish you!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 46,
+        "page": 3,
+        "file_offset": "0x663a",
+        "content_start_word": 74,
+        "content_end_word": 109,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：いのちがおしくば、もうにどと{n}アクマをいじめないと、ちかえ！",
+    "tr": "Jack-o'-Lantern: If you value your life,{n}swear you'll never bully demons again!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 46,
+        "page": 4,
+        "file_offset": "0x663a",
+        "content_start_word": 111,
+        "content_end_word": 121,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "フロスト：ちかえー！",
+    "tr": "Jack Frost: Swear it!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 46,
+        "page": 5,
+        "file_offset": "0x663a",
+        "content_start_word": 123,
+        "content_end_word": 131,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "＞ちかいますか？",
+    "tr": "> Will you swear?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 47,
+        "page": 0,
+        "file_offset": "0x6742",
+        "content_start_word": 0,
+        "content_end_word": 45,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：ヒーホー！そうか、そうか！{n}やったー、ジャアクなデビルバスターを{n}こらしめたぞ！",
+    "tr": "Jack-o'-Lantern: Hee-ho! That's right!{n}Hooray! We taught that evil Devil Buster{n}a lesson!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 47,
+        "page": 1,
+        "file_offset": "0x6742",
+        "content_start_word": 47,
+        "content_end_word": 58,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "フロスト：しめたぞー！",
+    "tr": "Jack Frost: Taught 'em!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 47,
+        "page": 2,
+        "file_offset": "0x6742",
+        "content_start_word": 60,
+        "content_end_word": 110,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ランタン：ヒーホー！ヒーホー！おれたち、{n}むてきのデビルバスター・バスターズ！{n}ヒーホー！ヒーホー！",
+    "tr": "Jack-o'-Lantern: Hee-ho! Hee-ho! We're the{n}invincible Devil Buster Busters!{n}Hee-ho! Hee-ho!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 50,
+        "page": 0,
+        "file_offset": "0x6940",
+        "content_start_word": 0,
+        "content_end_word": 20,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "タカシ：よお、なんとか戦ってるようだな。",
+    "tr": "Takashi: Hey. Looks like you're managing{n}to hold your own.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 51,
+        "page": 0,
+        "file_offset": "0x696c",
+        "content_start_word": 0,
+        "content_end_word": 51,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "だが、見られた戦いぶりじゃねぇ。{n}1ついいことを教えてやろう。{n}事務所に戻って、奥の部屋に入ってみな。",
+    "tr": "But you're still painful to watch.{n}I'll give you one useful tip.{n}Go back to the office and check the back room.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 51,
+        "page": 1,
+        "file_offset": "0x696c",
+        "content_start_word": 53,
+        "content_end_word": 100,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "魔法を1つ覚えられるぜ。{n}といっても、おまえは魔法が使えねぇから、{n}レイに覚えてもらうんだな。",
+    "tr": "There's a spell you can learn there.{n}You can't use magic yourself,{n}so have Rei learn it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 51,
+        "page": 2,
+        "file_offset": "0x696c",
+        "content_start_word": 102,
+        "content_end_word": 106,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "あばよ。",
+    "tr": "Later.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 52,
+        "page": 0,
+        "file_offset": "0x6a44",
+        "content_start_word": 0,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "右の悪魔：よくぞ来られた。{n}汝、葛葉キョウジの身体を借る魂、{n}{last_name}{first_name}よ。",
+    "tr": "Demon on Right: Thou hast come far.{n}{first_name} {last_name}, soul who borrows{n}the body of Kyouji Kuzunoha.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 52,
+        "page": 1,
+        "file_offset": "0x6a44",
+        "content_start_word": 37,
+        "content_end_word": 67,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "我はホクトセイクン。{n}七星の下に、人間どもの死を司っておる。",
+    "tr": "I am Beidou Xingjun.{n}Beneath the Seven Stars, I hold dominion{n}over the deaths of humankind.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 52,
+        "page": 2,
+        "file_offset": "0x6a44",
+        "content_start_word": 69,
+        "content_end_word": 102,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "左の悪魔：わしはナントセイクン。{n}人間たちの、生の面倒をみておる。",
+    "tr": "Demon on Left: I am Nandou Xingjun.{n}I watch over the lives of humankind.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 52,
+        "page": 3,
+        "file_offset": "0x6a44",
+        "content_start_word": 104,
+        "content_end_word": 146,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ホクトセイクン：この奥は、{n}悪魔どもの太極たる場所。{n}最強の悪魔どもが巣食うておる。",
+    "tr": "Beidou Xingjun: Beyond us lies{n}the demons' supreme realm.{n}The mightiest among them make their lairs there.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 52,
+        "page": 4,
+        "file_offset": "0x6a44",
+        "content_start_word": 148,
+        "content_end_word": 193,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ナントセイクン：それでも汝が{n}この先に進まんとするならば、{n}この道を開けてやらんでもない。",
+    "tr": "Nandou Xingjun: Yet if thou wouldst pass beyond,{n}we may be persuaded to open the way.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 52,
+        "page": 5,
+        "file_offset": "0x6a44",
+        "content_start_word": 195,
+        "content_end_word": 227,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ホクトセイクン：だがそれは、{n}我らが汝の力を、認めたならばの話。",
+    "tr": "Beidou Xingjun: But only if we judge{n}thy strength worthy.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 52,
+        "page": 6,
+        "file_offset": "0x6a44",
+        "content_start_word": 229,
+        "content_end_word": 269,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ナントセイクン：満ちたる月が{n}絶え入る前に、わしらを倒すことが{n}出来るならばな。",
+    "tr": "Nandou Xingjun: If thou canst defeat us{n}before the full moon breathes its last.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 52,
+        "page": 7,
+        "file_offset": "0x6a44",
+        "content_start_word": 271,
+        "content_end_word": 296,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ナントセイクン：さあ、いかが致す。{n}悪魔召喚師殿。",
+    "tr": "Nandou Xingjun: What sayest thou,{n}honored Devil Summoner?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 52,
+        "page": 8,
+        "file_offset": "0x6a44",
+        "content_start_word": 298,
+        "content_end_word": 305,
+        "boundary_codes": [
+          "8000"
+        ]
+      },
+      {
+        "bank": 0,
+        "message": 53,
+        "page": 1,
+        "file_offset": "0x6ca8",
+        "content_start_word": 36,
+        "content_end_word": 43,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "＞戦いますか？",
+    "tr": "> Fight them?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 53,
+        "page": 0,
+        "file_offset": "0x6ca8",
+        "content_start_word": 0,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ナントセイクン：またも来られたか、{n}悪魔召喚師殿。{n}我らと戦うのか？",
+    "tr": "Nandou Xingjun: Thou hast returned,{n}honored Devil Summoner.{n}Wilt thou fight us?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 54,
+        "page": 0,
+        "file_offset": "0x6d00",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ホクトセイクン：では参られい。{n}汝、流転する魂、{last_name}{first_name}よ。",
+    "tr": "Beidou Xingjun: Then come forth.{n}{first_name} {last_name}, thou ever-turning soul.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 55,
+        "page": 0,
+        "file_offset": "0x6d3c",
+        "content_start_word": 0,
+        "content_end_word": 43,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ホクトセイクン：御見事であった。{n}汝の器量であれば、この先を進むことも{n}可能であろう。",
+    "tr": "Beidou Xingjun: Well fought.{n}With thy mettle, thou mayst be able{n}to press onward.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 55,
+        "page": 1,
+        "file_offset": "0x6d3c",
+        "content_start_word": 45,
+        "content_end_word": 74,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナントセイクン：では行かれるがよい。{n}くれぐれも達者でな。",
+    "tr": "Nandou Xingjun: Then go on thy way.{n}Mayst thou fare well.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 56,
+        "page": 0,
+        "file_offset": "0x6dd4",
+        "content_start_word": 0,
+        "content_end_word": 41,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ホクトセイクン：……残念だが、{n}このくらいの力量では{n}ここを通すわけにはいかぬな。",
+    "tr": "Beidou Xingjun: ...Regrettably,{n}with strength such as this,{n}I cannot permit thee to pass.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 56,
+        "page": 1,
+        "file_offset": "0x6dd4",
+        "content_start_word": 43,
+        "content_end_word": 88,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ナントセイクン：まあ、今日のところは{n}わしらの攻めに果てなかったことを{n}よしとするがよい。",
+    "tr": "Nandou Xingjun: For now, take comfort{n}that our assault did not claim thy life.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 56,
+        "page": 2,
+        "file_offset": "0x6dd4",
+        "content_start_word": 90,
+        "content_end_word": 124,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ホクトセイクン：では、戻られい。{n}己を鍛え直したなら、また来られよ。",
+    "tr": "Beidou Xingjun: Now return.{n}Train thyself anew, then come again.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 57,
+        "page": 0,
+        "file_offset": "0x6ed0",
+        "content_start_word": 0,
+        "content_end_word": 30,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ナントセイクン：うむ、それもよかろう。{n}何も急ぐ事は無いわ。",
+    "tr": "Nandou Xingjun: Mm. That too is well.{n}There is no need to hurry.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 58,
+        "page": 0,
+        "file_offset": "0x6f10",
+        "content_start_word": 0,
+        "content_end_word": 11,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "＞向こうへ行きますか？",
+    "tr": "> Go to the other side?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 59,
+        "page": 0,
+        "file_offset": "0x6f28",
+        "content_start_word": 0,
+        "content_end_word": 22,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ナントセイクン：ここから出るのかな？{n}{last_name}殿。",
+    "tr": "Nandou Xingjun: Wouldst thou leave this place,{n}{last_name}?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 59,
+        "page": 1,
+        "file_offset": "0x6f28",
+        "content_start_word": 24,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "＞ここから出ますか？",
+    "tr": "> Leave this place?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 60,
+        "page": 0,
+        "file_offset": "0x6f6e",
+        "content_start_word": 0,
+        "content_end_word": 16,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ホクトセイクン：では、さらばだ。",
+    "tr": "Beidou Xingjun: Then farewell.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 61,
+        "page": 0,
+        "file_offset": "0x6f92",
+        "content_start_word": 0,
+        "content_end_word": 22,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "ホクトセイクン：そうか。{n}では、戻るがよい。",
+    "tr": "Beidou Xingjun: I see.{n}Then return.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 62,
+        "page": 0,
+        "file_offset": "0x6fc2",
+        "content_start_word": 0,
+        "content_end_word": 34,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "ホームレスの男：よお、あんた葛葉キョウジ{n}だけど、ホントは{last_name}{first_name}だろ。",
+    "tr": "Homeless Man: Hey, you're Kyouji Kuzunoha,{n}but you're really {first_name} {last_name}, right?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 62,
+        "page": 1,
+        "file_offset": "0x6fc2",
+        "content_start_word": 36,
+        "content_end_word": 63,
+        "boundary_codes": [
+          "8003",
+          "8002"
+        ]
+      }
+    ],
+    "jp": "なんだか、地下もさわがしくなってきてよお{n}かなわんぜ。",
+    "tr": "Things are getting noisy underground too.{n}It's driving me nuts.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 62,
+        "page": 2,
+        "file_offset": "0x6fc2",
+        "content_start_word": 65,
+        "content_end_word": 114,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "こうやって、かなアミがあって通れねぇ{n}とこがイッパイあっけどよお、{n}そのうち、通れるようになるぜ。",
+    "tr": "There are lots of places blocked by chain-link{n}fences like this, but sooner or later,{n}you'll be able to get through.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 63,
+        "page": 0,
+        "file_offset": "0x70aa",
+        "content_start_word": 0,
+        "content_end_word": 12,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "まあ、がんばってくれや。",
+    "tr": "Well, keep at it.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 64,
+        "page": 0,
+        "file_offset": "0x70c6",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "よおし、そろそろ、いいだろう。{n}この奥に行ってみな。",
+    "tr": "All right, it should be about time.{n}Go see what's back there.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 65,
+        "page": 0,
+        "file_offset": "0x70fe",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "キョウジ：まて、おれの装備を取っていく。{n}こっちだ。",
+    "tr": "Kyouji: Wait. I'm taking my gear with me.{n}It's this way.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 66,
+        "page": 0,
+        "file_offset": "0x7136",
+        "content_start_word": 0,
+        "content_end_word": 40,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "キョウジ：ここには、おれの武器や防具を{n}集めておいた。おれは、これを装備して戦う",
+    "tr": "Kyouji: I gathered my weapons and armor here.{n}I'm equipping them before we fight.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 67,
+        "page": 0,
+        "file_offset": "0x718a",
+        "content_start_word": 0,
+        "content_end_word": 23,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "キョウジ：まだ、残っている武器防具を{n}取るぞ。",
+    "tr": "Kyouji: There are still some weapons and armor{n}left here. Let's take them.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 68,
+        "page": 0,
+        "file_offset": "0x71bc",
+        "content_start_word": 0,
+        "content_end_word": 40,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おれの武器防具は、全て取った。{n}装備させてくれ。それから、シドを追って{n}行こう。",
+    "tr": "That's all of my gear.{n}Equip me with it. Then we'll go after Sid.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 69,
+        "page": 0,
+        "file_offset": "0x7210",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "物を持ち過ぎだ。おれの武器防具がまったく{n}取れなかった。",
+    "tr": "You're carrying too much.{n}I couldn't take any of my gear.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 70,
+        "page": 0,
+        "file_offset": "0x724c",
+        "content_start_word": 0,
+        "content_end_word": 23,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "物を持ち過ぎだ。おれの装備が{n}まだ残っている。",
+    "tr": "You're carrying too much.{n}Some of my gear is still here.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 71,
+        "page": 0,
+        "file_offset": "0x727e",
+        "content_start_word": 0,
+        "content_end_word": 28,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "キョウジ：ここには、おれの武器防具は{n}もう残っていない。",
+    "tr": "Kyouji: There's none of my gear left here.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 72,
+        "page": 0,
+        "file_offset": "0x72ba",
+        "content_start_word": 0,
+        "content_end_word": 8,
+        "boundary_codes": [
+          "8003",
+          "8000"
+        ]
+      }
+    ],
+    "jp": "{item_name}を手に入れた。",
+    "tr": "Obtained {item_name}.",
+    "reviewed": false,
+    "excluded": false
+  }
+]

@@ -1,0 +1,3907 @@
+[
+  {
+    "table": "races",
+    "index": 0,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f974",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44386",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54828",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x543c0",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18d90",
+        "word_count": 4
+      }
+    ],
+    "jp": "魔神",
+    "tr": "Deity",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 1,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f97a",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4438c",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5482e",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x543c8",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18d98",
+        "word_count": 4
+      }
+    ],
+    "jp": "女神",
+    "tr": "Megami",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 2,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f980",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44392",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54834",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x543d0",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18da0",
+        "word_count": 4
+      }
+    ],
+    "jp": "大天使",
+    "tr": "Herald",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 3,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f986",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44398",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5483a",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x543d8",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18da8",
+        "word_count": 4
+      }
+    ],
+    "jp": "霊鳥",
+    "tr": "Avian",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 4,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f98c",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4439e",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54840",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x543e0",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18db0",
+        "word_count": 4
+      }
+    ],
+    "jp": "神樹",
+    "tr": "Tree",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 5,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f992",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443a4",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54846",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x543e8",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18db8",
+        "word_count": 4
+      }
+    ],
+    "jp": "秘神",
+    "tr": "Enigma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 6,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f998",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443aa",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5484c",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x543f0",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18dc0",
+        "word_count": 4
+      }
+    ],
+    "jp": "幻魔",
+    "tr": "Genma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 7,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f99e",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443b0",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54852",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x543f8",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18dc8",
+        "word_count": 4
+      }
+    ],
+    "jp": "神獣",
+    "tr": "Avatar",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 8,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9a4",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443b6",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54858",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54400",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18dd0",
+        "word_count": 4
+      }
+    ],
+    "jp": "聖獣",
+    "tr": "Holy",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 9,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9aa",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443bc",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5485e",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54408",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18dd8",
+        "word_count": 4
+      }
+    ],
+    "jp": "精霊",
+    "tr": "Element",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 10,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9b0",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443c2",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54864",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54410",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18de0",
+        "word_count": 4
+      }
+    ],
+    "jp": "御魂",
+    "tr": "Mitama",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 11,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9b6",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443c8",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5486a",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54418",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18de8",
+        "word_count": 4
+      }
+    ],
+    "jp": "英雄",
+    "tr": "Hero",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 12,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9bc",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443ce",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54870",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54420",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18df0",
+        "word_count": 4
+      }
+    ],
+    "jp": "破壊神",
+    "tr": "Fury",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 13,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9c2",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443d4",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54876",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54428",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18df8",
+        "word_count": 4
+      }
+    ],
+    "jp": "地母神",
+    "tr": "Lady",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 14,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9c8",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443da",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5487c",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54430",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e00",
+        "word_count": 4
+      }
+    ],
+    "jp": "鬼神",
+    "tr": "Kishin",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 15,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9ce",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443e0",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54882",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54438",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e08",
+        "word_count": 4
+      }
+    ],
+    "jp": "龍神",
+    "tr": "Dragon",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 16,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9d4",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443e6",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54888",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54440",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e10",
+        "word_count": 4
+      }
+    ],
+    "jp": "天使",
+    "tr": "Divine",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 17,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9da",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443ec",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5488e",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54448",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e18",
+        "word_count": 4
+      }
+    ],
+    "jp": "妖鳥",
+    "tr": "Flight",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 18,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9e0",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443f2",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54894",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54450",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e20",
+        "word_count": 4
+      }
+    ],
+    "jp": "妖魔",
+    "tr": "Yoma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 19,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9e6",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443f8",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5489a",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54458",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e28",
+        "word_count": 4
+      }
+    ],
+    "jp": "妖精",
+    "tr": "Fairy",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 20,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9ec",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x443fe",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548a0",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54460",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e30",
+        "word_count": 4
+      }
+    ],
+    "jp": "龍王",
+    "tr": "Snake",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 21,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9f2",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44404",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548a6",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54468",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e38",
+        "word_count": 4
+      }
+    ],
+    "jp": "魔獣",
+    "tr": "Beast",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 22,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9f8",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4440a",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548ac",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54470",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e40",
+        "word_count": 4
+      }
+    ],
+    "jp": "珍獣",
+    "tr": "UMA",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 23,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1f9fe",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44410",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548b2",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54478",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e48",
+        "word_count": 4
+      }
+    ],
+    "jp": "地霊",
+    "tr": "Jirae",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 24,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa04",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44416",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548b8",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54480",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e50",
+        "word_count": 4
+      }
+    ],
+    "jp": "夜魔",
+    "tr": "Night",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 25,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa0a",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4441c",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548be",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54488",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e58",
+        "word_count": 4
+      }
+    ],
+    "jp": "堕天使",
+    "tr": "Fallen",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 26,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa10",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44422",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548c4",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54490",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e60",
+        "word_count": 4
+      }
+    ],
+    "jp": "妖鬼",
+    "tr": "Brute",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 27,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa16",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44428",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548ca",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54498",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e68",
+        "word_count": 4
+      }
+    ],
+    "jp": "鬼女",
+    "tr": "Femme",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 28,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa1c",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4442e",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548d0",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544a0",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e70",
+        "word_count": 4
+      }
+    ],
+    "jp": "邪神",
+    "tr": "Vile",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 29,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa22",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44434",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548d6",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544a8",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e78",
+        "word_count": 4
+      }
+    ],
+    "jp": "凶鳥",
+    "tr": "Raptor",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 30,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa28",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4443a",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548dc",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544b0",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e80",
+        "word_count": 4
+      }
+    ],
+    "jp": "妖樹",
+    "tr": "Wood",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 31,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa2e",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44440",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548e2",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544b8",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e88",
+        "word_count": 4
+      }
+    ],
+    "jp": "死神",
+    "tr": "Reaper",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 32,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa34",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44446",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548e8",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544c0",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e90",
+        "word_count": 4
+      }
+    ],
+    "jp": "妖獣",
+    "tr": "Wilder",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 33,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa3a",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4444c",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548ee",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544c8",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18e98",
+        "word_count": 4
+      }
+    ],
+    "jp": "邪鬼",
+    "tr": "Jaki",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 34,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa40",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44452",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548f4",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544d0",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18ea0",
+        "word_count": 4
+      }
+    ],
+    "jp": "屍鬼",
+    "tr": "Haunt",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 35,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa46",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44458",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x548fa",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544d8",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18ea8",
+        "word_count": 4
+      }
+    ],
+    "jp": "妖虫",
+    "tr": "Vermin",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 36,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa4c",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4445e",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54900",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544e0",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18eb0",
+        "word_count": 4
+      }
+    ],
+    "jp": "魔王",
+    "tr": "Tyrant",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 37,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa52",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44464",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54906",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544e8",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18eb8",
+        "word_count": 4
+      }
+    ],
+    "jp": "邪龍",
+    "tr": "Drake",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 38,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa58",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4446a",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5490c",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544f0",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18ec0",
+        "word_count": 4
+      }
+    ],
+    "jp": "幽鬼",
+    "tr": "Ghost",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 39,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa5e",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44470",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54912",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x544f8",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18ec8",
+        "word_count": 4
+      }
+    ],
+    "jp": "悪霊",
+    "tr": "Spirit",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 40,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa64",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44476",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54918",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54500",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18ed0",
+        "word_count": 4
+      }
+    ],
+    "jp": "外道",
+    "tr": "Foul",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 41,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa6a",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4447c",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5491e",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54508",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18ed8",
+        "word_count": 4
+      }
+    ],
+    "jp": "造魔",
+    "tr": "Zoma",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "races",
+    "index": 42,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa70",
+        "word_count": 3
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44482",
+        "word_count": 3
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54924",
+        "word_count": 3
+      },
+      {
+        "source": "COMBAT.BIN",
+        "file_offset": "0x54510",
+        "word_count": 4
+      },
+      {
+        "source": "MSGR.COF",
+        "file_offset": "0x18ee0",
+        "word_count": 4
+      }
+    ],
+    "jp": "人",
+    "tr": "Human",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 0,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa76",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44488",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5492a",
+        "word_count": 17
+      }
+    ],
+    "jp": "物理攻撃に弱{n}魔法を反射",
+    "tr": "Weak: Physical{n}Reflects: Magic",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 1,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fa98",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x444aa",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5494c",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎に弱",
+    "tr": "Weak: Fire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 2,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1faba",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x444cc",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5496e",
+        "word_count": 17
+      }
+    ],
+    "jp": "物理に強{n}破魔無効",
+    "tr": "Resists: Physical{n}Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 3,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fadc",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x444ee",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54990",
+        "word_count": 17
+      }
+    ],
+    "jp": "魔法に強{n}破魔無効",
+    "tr": "Resists: Magic{n}Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 4,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fafe",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44510",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x549b2",
+        "word_count": 17
+      }
+    ],
+    "jp": "全攻撃に強{n}破魔無効",
+    "tr": "Resists: All{n}Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 5,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fb20",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44532",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x549d4",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎反射{n}氷結に弱{n}破魔無効",
+    "tr": "Reflects: Fire{n}Weak: Ice, Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 6,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fb42",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44554",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x549f6",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎無効{n}氷結に弱{n}破魔無効",
+    "tr": "Nulls: Fire, Expel{n}Weak: Ice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 7,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fb64",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44576",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54a18",
+        "word_count": 17
+      }
+    ],
+    "jp": "氷結反射{n}火炎に弱{n}破魔無効",
+    "tr": "Reflects: Ice{n}Weak: Fire, Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 8,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fb86",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44598",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54a3a",
+        "word_count": 17
+      }
+    ],
+    "jp": "衝・念に強{n}火炎に弱{n}破魔無効",
+    "tr": "Resists: Force, Psy{n}Weak: Fire, Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 9,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fba8",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x445ba",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54a5c",
+        "word_count": 17
+      }
+    ],
+    "jp": "氷結無効{n}破魔無効",
+    "tr": "Nulls: Ice, Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 10,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fbca",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x445dc",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54a7e",
+        "word_count": 17
+      }
+    ],
+    "jp": "電撃反射{n}剣技に強{n}破魔無効",
+    "tr": "Reflects: Elec{n}Resists: Sword, Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 11,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fbec",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x445fe",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54aa0",
+        "word_count": 17
+      }
+    ],
+    "jp": "電撃無効{n}破魔無効",
+    "tr": "Nulls: Elec, Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 12,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fc0e",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44620",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54ac2",
+        "word_count": 17
+      }
+    ],
+    "jp": "衝撃反射{n}技に強破魔無効",
+    "tr": "Reflects: Force{n}Resists: Demon Atk, Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 13,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fc30",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44642",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54ae4",
+        "word_count": 17
+      }
+    ],
+    "jp": "呪殺反射{n}破魔無効",
+    "tr": "Reflects: Death{n}Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 14,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fc52",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44664",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54b06",
+        "word_count": 17
+      }
+    ],
+    "jp": "念動吸収{n}破魔・呪殺無効",
+    "tr": "Drains: Psy{n}Nulls: Expel, Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 15,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fc74",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44686",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54b28",
+        "word_count": 17
+      }
+    ],
+    "jp": "突撃・技・剣技反射{n}破魔無効",
+    "tr": "Reflects: Rush, Skill, Sword Skill{n}Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 16,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fc96",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x446a8",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54b4a",
+        "word_count": 17
+      }
+    ],
+    "jp": "呪殺に強{n}破魔無効",
+    "tr": "Resists: Death{n}Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 17,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fcb8",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x446ca",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54b6c",
+        "word_count": 17
+      }
+    ],
+    "jp": "破魔反射{n}物理に強",
+    "tr": "Reflects: Expel{n}Resists: Physical",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 18,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fcda",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x446ec",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54b8e",
+        "word_count": 17
+      }
+    ],
+    "jp": "突撃に弱{n}精神・魔力・破魔無効",
+    "tr": "Weak: Rush{n}Nulls: Mind, Ruin, Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 19,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fcfc",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4470e",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54bb0",
+        "word_count": 17
+      }
+    ],
+    "jp": "衝撃に強{n}特技に強{n}破魔無効",
+    "tr": "Resists: Force, Demon Atk{n}Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 20,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fd1e",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44730",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54bd2",
+        "word_count": 17
+      }
+    ],
+    "jp": "電撃に強{n}破魔無効",
+    "tr": "Resists: Elec{n}Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 21,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fd40",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44752",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54bf4",
+        "word_count": 17
+      }
+    ],
+    "jp": "念動・精神・魔力反射{n}破魔無効",
+    "tr": "Reflects: Psy, Mind, Ruin{n}Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 22,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fd62",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44774",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54c16",
+        "word_count": 17
+      }
+    ],
+    "jp": "破魔・呪殺反射{n}技・剣技に弱",
+    "tr": "Reflects: Expel, Death{n}Weak: Skill, Sword Skill",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 23,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fd84",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44796",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54c38",
+        "word_count": 17
+      }
+    ],
+    "jp": "魔法に強{n}悪魔の攻撃・突撃に弱",
+    "tr": "Resists: Magic{n}Weak: Demon attacks, Rush",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 24,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fda6",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x447b8",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54c5a",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎吸収{n}氷結・ガンに弱",
+    "tr": "Drains: Fire{n}Weak: Ice, Gun",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 25,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fdc8",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x447da",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54c7c",
+        "word_count": 17
+      }
+    ],
+    "jp": "電撃吸収{n}呪殺・ガンに弱",
+    "tr": "Drains: Elec{n}Weak: Death, Gun",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 26,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fdea",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x447fc",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54c9e",
+        "word_count": 17
+      }
+    ],
+    "jp": "衝撃に強{n}ガンに弱",
+    "tr": "Resists: Force{n}Weak: Gun",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 27,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fe0c",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4481e",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54cc0",
+        "word_count": 17
+      }
+    ],
+    "jp": "破魔・呪殺反射{n}火炎に弱",
+    "tr": "Reflects: Expel, Death{n}Weak: Fire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 28,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fe2e",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44840",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54ce2",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎に弱{n}呪殺無効",
+    "tr": "Weak: Fire{n}Nulls: Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 29,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fe50",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44862",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54d04",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎に弱",
+    "tr": "Weak: Fire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 30,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fe72",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44884",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54d26",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎・氷結に強{n}破魔無効",
+    "tr": "Resists: Fire, Ice{n}Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 31,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fe94",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x448a6",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54d48",
+        "word_count": 17
+      }
+    ],
+    "jp": "衝撃に強{n}呪殺に弱{n}破魔無効",
+    "tr": "Resists: Force{n}Weak: Death, Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 32,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1feb6",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x448c8",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54d6a",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎・氷結に弱{n}破魔・呪殺無効",
+    "tr": "Weak: Fire, Ice{n}Nulls: Expel, Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 33,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fed8",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x448ea",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54d8c",
+        "word_count": 17
+      }
+    ],
+    "jp": "魔法は吸収か無効物理に弱",
+    "tr": "Drains or nulls Magic{n}Weak: Physical",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 34,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1fefa",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4490c",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54dae",
+        "word_count": 17
+      }
+    ],
+    "jp": "電撃・衝撃・念動に強",
+    "tr": "Resists: Elec, Force, Psy",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 35,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1ff1c",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4492e",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54dd0",
+        "word_count": 17
+      }
+    ],
+    "jp": "呪殺に弱{n}他の魔法には強",
+    "tr": "Weak: Death{n}Resists: Other magic",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 36,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1ff3e",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44950",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54df2",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎・氷結に強{n}電撃に弱",
+    "tr": "Resists: Fire, Ice{n}Weak: Elec",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 37,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1ff60",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44972",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54e14",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎吸収{n}氷結に弱",
+    "tr": "Drains: Fire{n}Weak: Ice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 38,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1ff82",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44994",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54e36",
+        "word_count": 17
+      }
+    ],
+    "jp": "氷結反射{n}火炎・突撃に弱",
+    "tr": "Reflects: Ice{n}Weak: Fire, Rush",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 39,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1ffa4",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x449b6",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54e58",
+        "word_count": 17
+      }
+    ],
+    "jp": "衝撃反射{n}呪殺に弱",
+    "tr": "Reflects: Force{n}Weak: Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 40,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1ffc6",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x449d8",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54e7a",
+        "word_count": 17
+      }
+    ],
+    "jp": "電撃吸収{n}念動に弱{n}破魔無効",
+    "tr": "Drains: Elec{n}Weak: Psy, Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 41,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x1ffe8",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x449fa",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54e9c",
+        "word_count": 17
+      }
+    ],
+    "jp": "破魔・呪殺反射{n}物理に弱",
+    "tr": "Reflects: Expel, Death{n}Weak: Physical",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 42,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2000a",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44a1c",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54ebe",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎・氷結・電撃に強",
+    "tr": "Resists: Fire, Ice, Elec",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 43,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2002c",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44a3e",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54ee0",
+        "word_count": 17
+      }
+    ],
+    "jp": "魔法反射{n}物理に弱",
+    "tr": "Reflects: Magic{n}Weak: Physical",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 44,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2004e",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44a60",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54f02",
+        "word_count": 17
+      }
+    ],
+    "jp": "魔法に強{n}物理に弱",
+    "tr": "Resists: Magic{n}Weak: Physical",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 45,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20070",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44a82",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54f24",
+        "word_count": 17
+      }
+    ],
+    "jp": "剣に強{n}氷結・衝撃・ガンに弱",
+    "tr": "Resists: Sword{n}Weak: Ice, Force, Gun",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 46,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20092",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44aa4",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54f46",
+        "word_count": 17
+      }
+    ],
+    "jp": "呪殺反射{n}電撃に弱",
+    "tr": "Reflects: Death{n}Weak: Elec",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 47,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x200b4",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44ac6",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54f68",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎無効{n}氷結に弱",
+    "tr": "Nulls: Fire{n}Weak: Ice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 48,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x200d6",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44ae8",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54f8a",
+        "word_count": 17
+      }
+    ],
+    "jp": "衝撃に強{n}物理に強",
+    "tr": "Resists: Force, Physical",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 49,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x200f8",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44b0a",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54fac",
+        "word_count": 17
+      }
+    ],
+    "jp": "氷結吸収{n}火炎に弱",
+    "tr": "Drains: Ice{n}Weak: Fire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 50,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2011a",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44b2c",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54fce",
+        "word_count": 17
+      }
+    ],
+    "jp": "電撃吸収{n}呪殺無効",
+    "tr": "Drains: Elec{n}Nulls: Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 51,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2013c",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44b4e",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x54ff0",
+        "word_count": 17
+      }
+    ],
+    "jp": "電撃に強",
+    "tr": "Resists: Elec",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 52,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2015e",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44b70",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55012",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎吸収",
+    "tr": "Drains: Fire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 53,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20180",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44b92",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55034",
+        "word_count": 17
+      }
+    ],
+    "jp": "物理に強{n}電撃に弱",
+    "tr": "Resists: Physical{n}Weak: Elec",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 54,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x201a2",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44bb4",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55056",
+        "word_count": 17
+      }
+    ],
+    "jp": "呪殺吸収{n}氷結・電撃無効",
+    "tr": "Drains: Death{n}Nulls: Ice, Elec",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 55,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x201c4",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44bd6",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55078",
+        "word_count": 17
+      }
+    ],
+    "jp": "破魔・呪殺吸収{n}剣技に弱",
+    "tr": "Drains: Expel, Death{n}Weak: Sword",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 56,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x201e6",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44bf8",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5509a",
+        "word_count": 17
+      }
+    ],
+    "jp": "衝撃・念動に強",
+    "tr": "Resists: Force, Psy",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 57,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20208",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44c1a",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x550bc",
+        "word_count": 17
+      }
+    ],
+    "jp": "呪殺・神経無効{n}火炎・破魔に弱",
+    "tr": "Nulls: Death, Nerve{n}Weak: Fire, Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 58,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2022a",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44c3c",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x550de",
+        "word_count": 17
+      }
+    ],
+    "jp": "呪殺・ガン無効{n}破魔に弱",
+    "tr": "Nulls: Death, Gun{n}Weak: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 59,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2024c",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44c5e",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55100",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎反射{n}念動無効{n}氷結に弱",
+    "tr": "Reflects: Fire, Nulls: Psy{n}Weak: Ice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 60,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2026e",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44c80",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55122",
+        "word_count": 17
+      }
+    ],
+    "jp": "火炎・氷結に弱",
+    "tr": "Weak: Fire, Ice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 61,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20290",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44ca2",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55144",
+        "word_count": 17
+      }
+    ],
+    "jp": "物理反射{n}呪殺に弱{n}魔法に弱",
+    "tr": "Reflects: Physical{n}Weak: Death, Magic",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 62,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x202b2",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44cc4",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55166",
+        "word_count": 17
+      }
+    ],
+    "jp": "火・氷・電吸収{n}破魔呪殺無効",
+    "tr": "Drains: Fire, Ice, Elec{n}Nulls: Expel, Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 63,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x202d4",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44ce6",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55188",
+        "word_count": 17
+      }
+    ],
+    "jp": "破魔呪殺反射{n}物理に強",
+    "tr": "Reflects: Expel, Death{n}Resists: Physical",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 64,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x202f6",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44d08",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x551aa",
+        "word_count": 17
+      }
+    ],
+    "jp": "呪殺無効",
+    "tr": "Nulls: Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 65,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20318",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44d2a",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x551cc",
+        "word_count": 17
+      }
+    ],
+    "jp": "破魔・呪殺・精神・神経無効",
+    "tr": "Nulls: Expel, Death,{n}Mind, Nerve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 66,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2033a",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44d4c",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x551ee",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 67,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2035c",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44d6e",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55210",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 68,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2037e",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44d90",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55232",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 69,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x203a0",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44db2",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55254",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 70,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x203c2",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44dd4",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55276",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 71,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x203e4",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44df6",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55298",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 72,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20406",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44e18",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x552ba",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 73,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20428",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44e3a",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x552dc",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 74,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2044a",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44e5c",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x552fe",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 75,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2046c",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44e7e",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55320",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 76,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2048e",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44ea0",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55342",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 77,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x204b0",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44ec2",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55364",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 78,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x204d2",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44ee4",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55386",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 79,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x204f4",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44f06",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x553a8",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 80,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20516",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44f28",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x553ca",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 81,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20538",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44f4a",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x553ec",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 82,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2055a",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44f6c",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5540e",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 83,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2057c",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44f8e",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55430",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 84,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2059e",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44fb0",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55452",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 85,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x205c0",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44fd2",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55474",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 86,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x205e2",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x44ff4",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55496",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 87,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20604",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x45016",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x554b8",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 88,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20626",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x45038",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x554da",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 89,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20648",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4505a",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x554fc",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 90,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2066a",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4507c",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x5551e",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 91,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x2068c",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x4509e",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55540",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 92,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x206ae",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x450c0",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55562",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 93,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x206d0",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x450e2",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x55584",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 94,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x206f2",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x45104",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x555a6",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "table": "affinities",
+    "index": 95,
+    "locations": [
+      {
+        "source": "NORMCOM.BIN",
+        "file_offset": "0x20714",
+        "word_count": 17
+      },
+      {
+        "source": "DA_3D.BIN",
+        "file_offset": "0x45126",
+        "word_count": 17
+      },
+      {
+        "source": "EVENT.BIN",
+        "file_offset": "0x555c8",
+        "word_count": 17
+      }
+    ],
+    "jp": "リザーブ",
+    "tr": "Reserve",
+    "reviewed": false,
+    "excluded": false
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "kind": "prompt_first",
+    "spans": [
+      {
+        "file_offset": "0x20b78",
+        "word_count": 8
+      }
+    ],
+    "jp": "あなたの氏名は？",
+    "tr": "First name?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "prompt_last",
+    "spans": [
+      {
+        "file_offset": "0x20b78",
+        "word_count": 8
+      }
+    ],
+    "jp": "あなたの氏名は？",
+    "tr": "Last name?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "prompt_codename",
+    "spans": [
+      {
+        "file_offset": "0x20ba0",
+        "word_count": 8
+      }
+    ],
+    "jp": "コードネームは？",
+    "tr": "Codename?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "prompt_city",
+    "spans": [
+      {
+        "file_offset": "0x20bc8",
+        "word_count": 8
+      }
+    ],
+    "jp": "あなたの住所は？",
+    "tr": "City?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "prompt_ward",
+    "spans": [
+      {
+        "file_offset": "0x20bc8",
+        "word_count": 8
+      }
+    ],
+    "jp": "あなたの住所は？",
+    "tr": "Ward?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "prompt_confirm",
+    "spans": [
+      {
+        "file_offset": "0x20c18",
+        "word_count": 10
+      }
+    ],
+    "jp": "これでいいですか？",
+    "tr": "All OK?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "label_yes",
+    "spans": [
+      {
+        "file_offset": "0x20c30",
+        "word_count": 3
+      }
+    ],
+    "jp": "YES",
+    "tr": "YES",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "label_no",
+    "spans": [
+      {
+        "file_offset": "0x20c38",
+        "word_count": 2
+      }
+    ],
+    "jp": "NO",
+    "tr": "NO",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "prompt_occupation",
+    "spans": [
+      {
+        "file_offset": "0x20cb8",
+        "word_count": 8
+      }
+    ],
+    "jp": "あなたの職業は？",
+    "tr": "Occupation",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "label_occupation",
+    "spans": [
+      {
+        "file_offset": "0x20cb8",
+        "word_count": 8
+      }
+    ],
+    "jp": "あなたの職業は？",
+    "tr": "Occupation",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "tab_upper",
+    "spans": [
+      {
+        "file_offset": "0x20c40",
+        "word_count": 4
+      }
+    ],
+    "jp": "漢字",
+    "tr": "UPPER",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "tab_lower",
+    "spans": [
+      {
+        "file_offset": "0x20c68",
+        "word_count": 4
+      }
+    ],
+    "jp": "ひらがな",
+    "tr": "lower",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "tab_symbol",
+    "spans": [
+      {
+        "file_offset": "0x20dd0",
+        "word_count": 4
+      }
+    ],
+    "jp": "英字数字",
+    "tr": "SYMBOL",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "occupation_employee",
+    "spans": [
+      {
+        "file_offset": "0x20ce0",
+        "word_count": 3
+      }
+    ],
+    "jp": "会社員",
+    "tr": "Employee",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "occupation_student",
+    "spans": [
+      {
+        "file_offset": "0x20d08",
+        "word_count": 3
+      }
+    ],
+    "jp": "学生",
+    "tr": "Student",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "occupation_official",
+    "spans": [
+      {
+        "file_offset": "0x20d30",
+        "word_count": 3
+      }
+    ],
+    "jp": "公務員",
+    "tr": "Civil Servant",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "occupation_part_time",
+    "spans": [
+      {
+        "file_offset": "0x20d58",
+        "word_count": 3
+      }
+    ],
+    "jp": "バイト",
+    "tr": "Part-time",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "occupation_business",
+    "spans": [
+      {
+        "file_offset": "0x20d80",
+        "word_count": 3
+      }
+    ],
+    "jp": "自営業",
+    "tr": "Self-employed",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "occupation_jobless",
+    "spans": [
+      {
+        "file_offset": "0x20da8",
+        "word_count": 3
+      }
+    ],
+    "jp": "無職",
+    "tr": "Unemployed",
+    "reviewed": false,
+    "excluded": false
+  }
+]

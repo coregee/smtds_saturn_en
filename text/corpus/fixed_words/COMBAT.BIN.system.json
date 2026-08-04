@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "cash",
+    "file_offset": "0x528f4",
+    "word_count": 3,
+    "jp": "現金",
+    "tr": "Cash",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "magnetite",
+    "file_offset": "0x5291c",
+    "word_count": 7,
+    "jp": "マグネタイト",
+    "tr": "Magnetite",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "item",
+    "file_offset": "0x52944",
+    "word_count": 5,
+    "jp": "アイテム",
+    "tr": "Item",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "give_nothing",
+    "file_offset": "0x5454e",
+    "word_count": 7,
+    "jp": "何も渡さない",
+    "tr": "Nothing",
+    "reviewed": false,
+    "excluded": false
+  }
+]

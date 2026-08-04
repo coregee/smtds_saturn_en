@@ -1,0 +1,22 @@
+License
+========================================
+
+Except for the excluded materials listed below, the project-authored source code and documentation in this repository are licensed under the BSD Zero Clause License (SPDX identifier: 0BSD).
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+Excluded materials
+------------------
+
+The 0BSD license above does not apply to:
+
+1. All JSON files under `text/corpus/`;
+2. All PNG files under `visual/translation_images/`;
+3. The subtitle script contained in `fmv/subtitles/BGDATA/START2.ass`; and
+4. Preview screenshots of the patch under `docs/`.
+
+These files are protected by ATLUS's copyright, and are included here on the basis of fair use. No rights to these files are granted beyond those provided by applicable law, and they must not be redistributed for profit.
+
+The font files under `font/source/ark-pixel-font/` and `font/source/galmuri7/` are also excluded from 0BSD. They are governed by their respective third-party license conditions in the adjacent `OFL.txt` files; provenance is recorded in the adjacent `README.md` files.

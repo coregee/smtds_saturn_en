@@ -1,0 +1,200 @@
+[
+  {
+    "kind": "location_home",
+    "spans": [
+      {
+        "file_offset": "0x51b2c",
+        "word_count": 2
+      }
+    ],
+    "jp": "自宅",
+    "tr": "Home",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "location_office",
+    "spans": [
+      {
+        "file_offset": "0x51b30",
+        "word_count": 5
+      }
+    ],
+    "jp": "探偵事務所",
+    "tr": "Detective Agency",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "location_asahi",
+    "spans": [
+      {
+        "file_offset": "0x51b3a",
+        "word_count": 4
+      }
+    ],
+    "jp": "朝日区",
+    "tr": "Asahi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "location_rinkai_park",
+    "spans": [
+      {
+        "file_offset": "0x51b42",
+        "word_count": 4
+      }
+    ],
+    "jp": "臨海公園",
+    "tr": "Rinkai Park",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "location_mount_kasagi",
+    "spans": [
+      {
+        "file_offset": "0x51b4a",
+        "word_count": 4
+      }
+    ],
+    "jp": "笠置山",
+    "tr": "Mount Kasagi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "location_yarai",
+    "spans": [
+      {
+        "file_offset": "0x51b52",
+        "word_count": 4
+      }
+    ],
+    "jp": "矢来区",
+    "tr": "Yarai Ward",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "location_chuo",
+    "spans": [
+      {
+        "file_offset": "0x51b5a",
+        "word_count": 4
+      }
+    ],
+    "jp": "中央区",
+    "tr": "Chuo Ward",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "location_hibarigaoka",
+    "spans": [
+      {
+        "file_offset": "0x51b62",
+        "word_count": 4
+      }
+    ],
+    "jp": "雲雀ヶ丘",
+    "tr": "Hibarigaoka",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "empty",
+    "spans": [
+      {
+        "file_offset": "0x50760",
+        "word_count": 5
+      }
+    ],
+    "jp": "未使用",
+    "tr": "EMPTY",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "prompt_overwrite",
+    "spans": [
+      {
+        "file_offset": "0x508a4",
+        "word_count": 11
+      }
+    ],
+    "jp": "記録の更新をしますか？",
+    "tr": "Overwrite?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "prompt_quit_game",
+    "spans": [
+      {
+        "file_offset": "0x508c6",
+        "word_count": 11
+      }
+    ],
+    "jp": "ゲームを終了しますか？",
+    "tr": "Quit game?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "save_write_failure",
+    "spans": [
+      {
+        "file_offset": "0x50658",
+        "word_count": 17
+      },
+      {
+        "file_offset": "0x50684",
+        "word_count": 10
+      }
+    ],
+    "jp": "正しく記録を保存できませんでした。{n}やり直してください。",
+    "tr": "Unable to save.{n}Please try again.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "save_capacity_error",
+    "spans": [
+      {
+        "file_offset": "0x5076a",
+        "word_count": 15
+      },
+      {
+        "file_offset": "0x50788",
+        "word_count": 17
+      }
+    ],
+    "jp": "容量不足のためセーブできません{n}セーブには129ブロックが必要です",
+    "tr": "Not enough space to save.{n}Save requires 129 blocks.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "save_capacity_failure",
+    "spans": [
+      {
+        "file_offset": "0x508dc",
+        "word_count": 11
+      },
+      {
+        "file_offset": "0x508f2",
+        "word_count": 11
+      },
+      {
+        "file_offset": "0x50908",
+        "word_count": 11
+      }
+    ],
+    "jp": "記録を保存できません。{n}記録には129ブロック{n}の容量が必要です。",
+    "tr": "Unable to save data.{n}129 free blocks are{n}required.",
+    "reviewed": false,
+    "excluded": false
+  }
+]

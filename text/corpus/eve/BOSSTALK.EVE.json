@@ -1,0 +1,306 @@
+[
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 0,
+        "page": 0,
+        "file_offset": "0x5000",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲゲェ{BEAT}{n}おまえとは話したくねぇゾォ",
+    "tr": "GRRRGH, GRAAAGH!{BEAT}\nI ain't talking to you!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 1,
+        "page": 0,
+        "file_offset": "0x5034",
+        "content_start_word": 0,
+        "content_end_word": 25,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "グゲグゲグゲゲゲェ{BEAT}{n}話すよりおまえの血だぁ！！",
+    "tr": "GRRRGH, GRAAAGH!{BEAT}\nForget talk—I want your blood!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 2,
+        "page": 0,
+        "file_offset": "0x5068",
+        "content_start_word": 0,
+        "content_end_word": 14,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "おまえと話すことなど無い！！",
+    "tr": "I've got nothing to say to you!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 3,
+        "page": 0,
+        "file_offset": "0x5086",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "話そうだと？{BEAT}{n}これでもくらえ！！",
+    "tr": "You want to talk?{BEAT}\nThen listen to this!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 4,
+        "page": 0,
+        "file_offset": "0x50aa",
+        "content_start_word": 0,
+        "content_end_word": 16,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "あたしと何か話すことがあるの！？",
+    "tr": "You got something to say to me!?",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 5,
+        "page": 0,
+        "file_offset": "0x50cc",
+        "content_start_word": 0,
+        "content_end_word": 13,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "あたしの答えはこれよ！！",
+    "tr": "Here's my answer!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 6,
+        "page": 0,
+        "file_offset": "0x50e8",
+        "content_start_word": 0,
+        "content_end_word": 17,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "きさまと話すことなど何も無い！！",
+    "tr": "I have nothing to say to the likes of you!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 7,
+        "page": 0,
+        "file_offset": "0x510c",
+        "content_start_word": 0,
+        "content_end_word": 29,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "話をしたいか？{BEAT}{n}ならばきさまの身体に聞いてやろう！！",
+    "tr": "You want to talk?{BEAT}\nThen I'll make sure your body hears me!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 8,
+        "page": 0,
+        "file_offset": "0x5148",
+        "content_start_word": 0,
+        "content_end_word": 35,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "語リ合ウコトカラハ何モ生マレヌ{n}人ノ言葉ナド全テイツワリジャ！！",
+    "tr": "NOTHING GOOD COMES FROM TALKING.\nALL HUMANS ARE LIARS!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 9,
+        "page": 0,
+        "file_offset": "0x5190",
+        "content_start_word": 0,
+        "content_end_word": 27,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "言葉ヲモテアソビシ者ヨ{n}コレガワラワノ答エジャ！！",
+    "tr": "YOU WHO PLAYS WITH WORDS,\nHEAR MY ANSWER!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 10,
+        "page": 0,
+        "file_offset": "0x51c8",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "あなたと話すことハ何もありませン！！",
+    "tr": "I have nothing to discuss with you!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 11,
+        "page": 0,
+        "file_offset": "0x51f0",
+        "content_start_word": 0,
+        "content_end_word": 49,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "そんなに話したけれバお話ししましょウ{BEAT}{n}フッフッフッフッフ{BEAT}{n}こんにちハ！おはようございまス！",
+    "tr": "If you must insist, let's talk.{BEAT}\nHeh heh heh heh heh...{BEAT}\nHello! Good morning!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 12,
+        "page": 0,
+        "file_offset": "0x5254",
+        "content_start_word": 0,
+        "content_end_word": 26,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "メイレイジッコウ{n}コンディション{BEAT}{OP:8025}O{BEAT}K！！{OP:8020}",
+    "tr": "EXECUTING ORDERS.\nSTATUS:{BEAT}{OP:8025}O{BEAT}K!!{OP:8020}",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 13,
+        "page": 0,
+        "file_offset": "0x528a",
+        "content_start_word": 0,
+        "content_end_word": 19,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "メイレイカクニン{n}オマエコロス！！",
+    "tr": "ORDERS CONFIRMED.\nTERMINATE YOU!!",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 14,
+        "page": 0,
+        "file_offset": "0x52b2",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "・・・・・・・・。",
+    "tr": "........",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "locations": [
+      {
+        "bank": 0,
+        "message": 15,
+        "page": 0,
+        "file_offset": "0x52c6",
+        "content_start_word": 0,
+        "content_end_word": 9,
+        "boundary_codes": [
+          "8000"
+        ]
+      }
+    ],
+    "jp": "・・・・・・・・！",
+    "tr": "........!",
+    "reviewed": true,
+    "excluded": false
+  }
+]

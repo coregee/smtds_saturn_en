@@ -1,0 +1,38 @@
+/rom/*
+!/rom/original/
+/rom/original/*
+!/rom/original/PLACE_ROM_HERE.txt
+/bios/
+/save_states/
+
+# Generated reverse-engineering references.
+/engine/script/equipment_ui/reference/
+
+# Extra local font sources.
+/font/source/local/
+
+# Python bytecode, environments, and tool caches.
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editor and OS metadata.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local scratch files.
+/tmp/
+*.log
+*.tmp
+*.bak
+*~

@@ -1,0 +1,289 @@
+[
+  {
+    "source_hex": "0095009c00ad00000000",
+    "jp": "ミラー",
+    "tr": "Mirror",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "007b00ad00f500000000",
+    "jp": "カード",
+    "tr": "Card",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "01870188005401f70040",
+    "jp": "物理に強い",
+    "tr": "Resists: Phys",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "01160133005401f70040",
+    "jp": "魔法に強い",
+    "tr": "Resists: Magic",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "014d013e013f005401f7",
+    "jp": "全攻撃に強",
+    "tr": "Resists: All",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "01460147006b0189018a",
+    "jp": "火炎を反射",
+    "tr": "Reflects: Fire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "014601470162015b0000",
+    "jp": "火炎無効",
+    "tr": "Nulls: Fire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "014e014f0189018a0000",
+    "jp": "氷結反射",
+    "tr": "Reflects: Ice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "01460147005403c40040",
+    "jp": "火炎に弱い",
+    "tr": "Weak: Fire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "014e014f0162015b0000",
+    "jp": "氷結無効",
+    "tr": "Nulls: Ice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "0151013f0189018a0000",
+    "jp": "電撃反射",
+    "tr": "Reflects: Elec",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "0151013f0162015b0000",
+    "jp": "電撃無効",
+    "tr": "Nulls: Elec",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "0152013f0189018a0000",
+    "jp": "衝撃反射",
+    "tr": "Reflects: Force",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "015501560189018a0000",
+    "jp": "呪殺反射",
+    "tr": "Reflects: Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "0153015401e901ea0000",
+    "jp": "念動吸収",
+    "tr": "Drains: Psy",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "018f03380189018a0000",
+    "jp": "特技反射",
+    "tr": "Reflects: Demon Atk",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "01550156005401f70040",
+    "jp": "呪殺に強い",
+    "tr": "Resists: Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "013601160189018a0000",
+    "jp": "破魔反射",
+    "tr": "Reflects: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "03c5013f005403c40040",
+    "jp": "突撃に弱い",
+    "tr": "Weak: Rush",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "0152013f005401f70040",
+    "jp": "衝撃に強い",
+    "tr": "Resists: Force",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "0151013f005401f70040",
+    "jp": "電撃に強い",
+    "tr": "Resists: Elec",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "015301540189018a0000",
+    "jp": "念動反射",
+    "tr": "Reflects: Psy",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "0338005403c400400000",
+    "jp": "技に弱い",
+    "tr": "Weak: Skill",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "0146014701e901ea0000",
+    "jp": "火炎吸収",
+    "tr": "Drains: Fire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "0151013f01e901ea0000",
+    "jp": "電撃吸収",
+    "tr": "Drains: Elec",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "00e700a3005403c40040",
+    "jp": "ガンに弱い",
+    "tr": "Weak: Gun",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "01460147005401f70040",
+    "jp": "火炎に強い",
+    "tr": "Resists: Fire",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "01870188005403c40040",
+    "jp": "物理に弱い",
+    "tr": "Weak: Phys",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "01530154005401f70040",
+    "jp": "念動に強い",
+    "tr": "Resists: Psy",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "01550156005403c40040",
+    "jp": "呪殺に弱い",
+    "tr": "Weak: Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "0151013f005403c40040",
+    "jp": "電撃に弱い",
+    "tr": "Weak: Elec",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "011601330189018a0000",
+    "jp": "魔法反射",
+    "tr": "Reflects: Magic",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "014e014f005403c40040",
+    "jp": "氷結に弱い",
+    "tr": "Weak: Ice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "014e014f01e901ea0000",
+    "jp": "氷結吸収",
+    "tr": "Drains: Ice",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "0155015601e901ea0000",
+    "jp": "呪殺吸収",
+    "tr": "Drains: Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "032d0338005403c40040",
+    "jp": "剣技に弱い",
+    "tr": "Weak: Sword Skill",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "01360116005403c40040",
+    "jp": "破魔に弱い",
+    "tr": "Weak: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "018701880189018a0000",
+    "jp": "物理反射",
+    "tr": "Reflects: Phys",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "013601160162015b0000",
+    "jp": "破魔無効",
+    "tr": "Nulls: Expel",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "015501560162015b0000",
+    "jp": "呪殺無効",
+    "tr": "Nulls: Death",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "source_hex": "013600ae01550162015b",
+    "jp": "破・呪無効",
+    "tr": "Nulls: Expel/Death",
+    "reviewed": false,
+    "excluded": false
+  }
+]

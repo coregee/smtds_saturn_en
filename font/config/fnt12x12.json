@@ -1,0 +1,18 @@
+{
+  "file": "FNT12X12.FON",
+  "atlas": {
+    "file": "../atlas/fnt12x12.json",
+    "columns": 16,
+    "scale": 4
+  },
+  "format": {
+    "width": 12,
+    "height": 12,
+    "bpp": 1,
+    "row_stride": 2,
+    "glyph_stride": 32
+  },
+  "repack": {
+    "use_font_file": false
+  }
+}

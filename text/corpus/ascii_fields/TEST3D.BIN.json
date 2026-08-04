@@ -1,0 +1,65 @@
+[
+  {
+    "kind": "title",
+    "file_offset": "0x695c",
+    "capacity_bytes": 20,
+    "jp": "3d maze prm set ",
+    "tr": "3d maze prm set ",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "kind": "control",
+    "file_offset": "0x6970",
+    "capacity_bytes": 8,
+    "jp": "ctl   ",
+    "tr": "ctl   ",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "kind": "map_number",
+    "file_offset": "0x6978",
+    "capacity_bytes": 8,
+    "jp": "mapno ",
+    "tr": "mapno ",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "kind": "direction",
+    "file_offset": "0x6980",
+    "capacity_bytes": 8,
+    "jp": "muki  ",
+    "tr": "muki  ",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "kind": "x_position",
+    "file_offset": "0x6988",
+    "capacity_bytes": 8,
+    "jp": "posix ",
+    "tr": "posix ",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "kind": "y_position",
+    "file_offset": "0x6990",
+    "capacity_bytes": 8,
+    "jp": "posiy ",
+    "tr": "posiy ",
+    "reviewed": false,
+    "excluded": true
+  },
+  {
+    "kind": "launch",
+    "file_offset": "0x69a0",
+    "capacity_bytes": 20,
+    "jp": "GO TO 3D MAIN PROC",
+    "tr": "GO TO 3D MAIN PROC",
+    "reviewed": false,
+    "excluded": true
+  }
+]

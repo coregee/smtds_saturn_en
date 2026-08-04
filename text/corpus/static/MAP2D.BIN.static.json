@@ -1,0 +1,106 @@
+[
+  {
+    "kind": "location_rinkai_park",
+    "spans": [
+      {
+        "file_offset": "0x1e68e",
+        "word_count": 4
+      }
+    ],
+    "jp": "臨海公園",
+    "tr": "Rinkai Park",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "location_mount_kasagi",
+    "spans": [
+      {
+        "file_offset": "0x1e698",
+        "word_count": 3
+      }
+    ],
+    "jp": "笠置山",
+    "tr": "Mt. Kasagi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "location_yarai",
+    "spans": [
+      {
+        "file_offset": "0x1e6a2",
+        "word_count": 3
+      }
+    ],
+    "jp": "矢来区",
+    "tr": "Yarai Ward",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "location_chuo",
+    "spans": [
+      {
+        "file_offset": "0x1e6ac",
+        "word_count": 3
+      }
+    ],
+    "jp": "中央区",
+    "tr": "Chuo Ward",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "location_hibarigaoka",
+    "spans": [
+      {
+        "file_offset": "0x1e6b6",
+        "word_count": 4
+      }
+    ],
+    "jp": "雲雀ヶ丘",
+    "tr": "Hibarigaoka",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "talk_prompt",
+    "spans": [
+      {
+        "file_offset": "0x1e756",
+        "word_count": 14
+      }
+    ],
+    "jp": "＞誰かいる。話しかけますか？",
+    "tr": "> Someone is here. Talk to them?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "label_yes",
+    "spans": [
+      {
+        "file_offset": "0x1e774",
+        "word_count": 3
+      }
+    ],
+    "jp": "YES",
+    "tr": "YES",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "label_no",
+    "spans": [
+      {
+        "file_offset": "0x1e77c",
+        "word_count": 2
+      }
+    ],
+    "jp": "NO",
+    "tr": "NO",
+    "reviewed": false,
+    "excluded": false
+  }
+]

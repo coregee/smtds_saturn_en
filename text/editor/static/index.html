@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A local visual workbench for reviewing and editing Devil Summoner corpus text."
+    >
+    <title>DDS Text Lab</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">DS</span>
+          <div>
+            <h1>DDS Text Lab</h1>
+            <p>Corpus review / consumer preview bench</p>
+          </div>
+        </div>
+
+        <label class="search-box">
+          <span class="search-label">Search corpus</span>
+          <input
+            id="search"
+            type="search"
+            placeholder="Japanese, English reference, translation, kind, offset…"
+            autocomplete="off"
+          >
+          <kbd>/</kbd>
+        </label>
+
+        <div class="top-status">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span id="corpus-status">Loading corpus…</span>
+        </div>
+      </header>
+
+      <main class="workbench">
+        <aside class="file-rail" aria-label="Corpus files">
+          <div class="rail-heading">
+            <div>
+              <span class="eyebrow">Sources</span>
+              <strong id="file-count">—</strong>
+            </div>
+            <button id="reload" class="icon-button" type="button" title="Reload corpus">
+              ↻
+            </button>
+          </div>
+          <nav id="file-list" class="file-list"></nav>
+        </aside>
+
+        <section class="entry-browser" aria-label="Corpus entries">
+          <div class="entry-heading">
+            <div>
+              <span class="eyebrow" id="scope-label">All corpus</span>
+              <strong id="result-count">—</strong>
+              <span id="query-breakdown" class="query-breakdown"></span>
+              <div id="query-progress" class="status-progress" aria-label="Status progress">
+                <span data-status="untranslated"></span>
+                <span data-status="translated"></span>
+                <span data-status="reviewed"></span>
+                <span data-status="excluded"></span>
+              </div>
+            </div>
+            <div class="entry-heading-actions">
+              <label class="status-filter">
+                <span>Status</span>
+                <select id="status-filter">
+                  <option value="all">All</option>
+                  <option value="untranslated">Untranslated</option>
+                  <option value="translated">Translated</option>
+                  <option value="reviewed">Reviewed</option>
+                  <option value="excluded">Excluded</option>
+                </select>
+              </label>
+              <span id="dirty-chip" class="dirty-chip" hidden>Unsaved</span>
+            </div>
+          </div>
+
+          <div id="entry-list" class="entry-list" role="listbox" tabindex="0"></div>
+          <button id="load-more" class="load-more" type="button" hidden>
+            Load more entries
+          </button>
+        </section>
+
+        <section class="editor" aria-label="Translation editor">
+          <div id="empty-state" class="empty-state">
+            <div class="empty-grid" aria-hidden="true"></div>
+            <span class="eyebrow">Ready for review</span>
+            <h2>Select a corpus entry</h2>
+            <p>
+              Choose a source and line to compare the Japanese against a
+              pixel-measured Ark preview.
+            </p>
+          </div>
+
+          <div id="editor-content" class="editor-content" hidden>
+            <header class="record-bar">
+              <div class="record-title">
+                <span id="record-file" class="eyebrow"></span>
+                <h2 id="record-label"></h2>
+              </div>
+              <div class="record-actions">
+                <button id="previous" class="quiet-button" type="button">↑ Prev</button>
+                <button id="next" class="quiet-button" type="button">↓ Next</button>
+              </div>
+            </header>
+
+            <section class="preview-section" aria-labelledby="preview-title">
+              <div class="section-heading">
+                <div>
+                  <span class="eyebrow">Live render</span>
+                  <h3 id="preview-title">Pipeline dialogue comparison</h3>
+                </div>
+                <div class="preview-controls">
+                  <label id="variant-control" class="variant-control" hidden>
+                    Consumer
+                    <select id="preview-variant"></select>
+                  </label>
+                  <span id="preview-profile" class="contract-pill">Profile —</span>
+                  <span id="preview-geometry" class="contract-pill">Geometry —</span>
+                  <span id="preview-capacity" class="contract-pill">Capacity —</span>
+                </div>
+              </div>
+
+              <div class="preview-grid">
+                <article class="render-card source-card">
+                  <header>
+                    <div>
+                      <span id="source-language-tag" class="language-tag">JP</span>
+                      <strong>Source context</strong>
+                    </div>
+                    <span id="source-context-kind">original text</span>
+                  </header>
+                  <div class="screen-scroll">
+                    <div id="source-preview" class="game-screen source-screen" lang="ja">
+                      <div id="source-preview-text" class="source-preview-text"></div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="render-card translation-card">
+                  <header>
+                    <div>
+                      <span class="language-tag">TR</span>
+                      <strong id="preview-font">FONT16 / Ark 12px</strong>
+                    </div>
+                    <span id="preview-summary">—</span>
+                  </header>
+                  <div class="screen-scroll">
+                    <div id="translation-preview" class="game-screen translation-screen"></div>
+                  </div>
+                </article>
+              </div>
+
+              <div id="preview-notices" class="preview-notices" aria-live="polite"></div>
+            </section>
+
+            <section class="fields-section">
+              <div class="field-card">
+                <div class="field-label">
+                  <label id="source-field-label" for="source-field">Japanese source</label>
+                  <span>read only</span>
+                </div>
+                <textarea id="source-field" readonly spellcheck="false" lang="ja"></textarea>
+              </div>
+
+              <div class="field-card translation-field-card">
+                <div class="field-label">
+                  <label for="translation-field">Translation</label>
+                  <span id="character-count">0 chars</span>
+                </div>
+                <textarea
+                  id="translation-field"
+                  spellcheck="true"
+                  aria-describedby="save-hint"
+                ></textarea>
+                <div class="field-footer">
+                  <div class="field-status">
+                    <label class="review-toggle" title="Editing a translation marks it reviewed">
+                      <input id="reviewed-field" type="checkbox">
+                      <span>Reviewed</span>
+                    </label>
+                    <label class="review-toggle excluded-toggle">
+                      <input id="excluded-field" type="checkbox">
+                      <span>Excluded</span>
+                    </label>
+                    <span id="save-hint"><kbd>Ctrl</kbd> + <kbd>S</kbd> to save in place</span>
+                  </div>
+                  <div class="save-actions">
+                    <button id="discard" class="quiet-button" type="button" disabled>
+                      Discard
+                    </button>
+                    <button id="save" class="save-button" type="button" disabled>
+                      Save to corpus
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <details class="metadata-panel">
+              <summary>
+                <span>Record metadata</span>
+                <span id="metadata-summary"></span>
+              </summary>
+              <dl id="metadata-list"></dl>
+            </details>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+</html>

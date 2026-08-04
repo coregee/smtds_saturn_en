@@ -1,0 +1,12 @@
+{
+  "file": "FNT12X12.FON",
+  "source": "FNT12X12.FON bitmap OCR, cross-checked against BTL_MES.MD8 message context",
+  "atlas": {
+    "kanji": [
+      {
+        "start": 0,
+        "characters": "会心必殺反射吸収防御壁無効果回避範囲外量不足復活攻撃力命中魔出現解除弾切失敗続消滅持正気奪威法呪殺物理所"
+      }
+    ]
+  }
+}

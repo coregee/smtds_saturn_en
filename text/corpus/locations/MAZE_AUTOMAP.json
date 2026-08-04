@@ -1,0 +1,146 @@
+[
+  {
+    "jp": "図書館",
+    "tr": "Library",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "矢東ビル",
+    "tr": "Yatou Building",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "工事現場",
+    "tr": "Construction Site",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "臨海病院",
+    "tr": "Rinkai Hospital",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "矢来銀座",
+    "tr": "Ginza Arcade",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "異界",
+    "tr": "Otherworld",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "警察署",
+    "tr": "Police Station",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "カーサ乾",
+    "tr": "Casa Inui",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "北山大学",
+    "tr": "Kitayama University",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "大学本館",
+    "tr": "University Main Bldg.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "地下水道",
+    "tr": "Underground Sewer",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "笠置山",
+    "tr": "Mount Kasagi",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "かさぎ荘",
+    "tr": "Kasagi Manor",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "氷川神社",
+    "tr": "Hikawa Shrine",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "博物館",
+    "tr": "Museum",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "東亜TV",
+    "tr": "Toa TV",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "電波塔",
+    "tr": "Radio Tower",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "中華街",
+    "tr": "Chinatown",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "首領邸",
+    "tr": "Tendou Mansion",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "擬似異界",
+    "tr": "Astral Plane",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "無間地獄",
+    "tr": "Avici Hell",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "新市庁舎",
+    "tr": "New City Hall",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "妖樹林",
+    "tr": "Fairy Forest",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "jp": "古墳迷宮",
+    "tr": "Ancient Tomb",
+    "reviewed": false,
+    "excluded": false
+  }
+]

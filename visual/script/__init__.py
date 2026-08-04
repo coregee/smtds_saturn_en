@@ -1,0 +1,1 @@
+"""Visual asset command modules."""

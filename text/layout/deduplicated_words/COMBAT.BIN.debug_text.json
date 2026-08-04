@@ -1,0 +1,186 @@
+[
+  {
+    "index": 0,
+    "kind": "battle_test_actor",
+    "locations": [
+      {
+        "file_offset": "0x5451c",
+        "word_count": 7,
+        "boundary_word": "0x8000"
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "kind": "battle_test_actor",
+    "locations": [
+      {
+        "file_offset": "0x5452c",
+        "word_count": 3,
+        "boundary_word": "0x8000"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55a08",
+        "word_count": 5,
+        "boundary_word": "0x8000"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55a32",
+        "word_count": 6,
+        "boundary_word": "0x8000"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55a5c",
+        "word_count": 7,
+        "boundary_word": "0x8000"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55a86",
+        "word_count": 8,
+        "boundary_word": "0x8000"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55ab0",
+        "word_count": 2,
+        "boundary_word": "0x00ca"
+      },
+      {
+        "file_offset": "0x55ada",
+        "word_count": 2,
+        "boundary_word": "0x00ca"
+      },
+      {
+        "file_offset": "0x55b04",
+        "word_count": 2,
+        "boundary_word": "0x00ca"
+      },
+      {
+        "file_offset": "0x55b2e",
+        "word_count": 2,
+        "boundary_word": "0x00ca"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55ab6",
+        "word_count": 10,
+        "boundary_word": "0x00cb"
+      },
+      {
+        "file_offset": "0x55ae0",
+        "word_count": 10,
+        "boundary_word": "0x00cb"
+      },
+      {
+        "file_offset": "0x55b0a",
+        "word_count": 10,
+        "boundary_word": "0x00cb"
+      },
+      {
+        "file_offset": "0x55b34",
+        "word_count": 10,
+        "boundary_word": "0x00cb"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55acc",
+        "word_count": 2,
+        "boundary_word": "0x0000"
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55ad2",
+        "word_count": 3,
+        "boundary_word": "0x8000"
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55af6",
+        "word_count": 3,
+        "boundary_word": "0x0000"
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55afe",
+        "word_count": 2,
+        "boundary_word": "0x8000"
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55b20",
+        "word_count": 6,
+        "boundary_word": "0x8000"
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "kind": "battle_debug_field",
+    "locations": [
+      {
+        "file_offset": "0x55b4a",
+        "word_count": 6,
+        "boundary_word": "0x8000"
+      }
+    ]
+  }
+]

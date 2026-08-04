@@ -1,0 +1,4 @@
+PLACE ROM HERE
+
+Copy your legally obtained Japanese Rev B CUE and both BIN tracks into this
+folder. Keep the BIN filenames exactly as referenced by the CUE.

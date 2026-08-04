@@ -1,0 +1,18 @@
+{
+  "file": "KANJI.FON",
+  "atlas": {
+    "file": "../atlas/kanji.json",
+    "columns": 64,
+    "scale": 1
+  },
+  "format": {
+    "width": 16,
+    "height": 16,
+    "bpp": 1,
+    "row_stride": 2,
+    "glyph_stride": 32
+  },
+  "repack": {
+    "use_font_file": false
+  }
+}

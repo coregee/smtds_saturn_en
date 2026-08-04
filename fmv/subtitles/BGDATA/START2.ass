@@ -1,0 +1,33 @@
+[Script Info]
+Title: Devil Summoner - START2
+ScriptType: v4.00+
+PlayResX: 320
+PlayResY: 224
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.601
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Ark Pixel 16px Prop latin,16,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,1.5,0,2,12,12,12,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.90,0:00:02.60,Default,TV,0,0,0,,それでは次のニュースです。
+Dialogue: 0,0:00:00.90,0:00:02.60,Default,TV,0,0,0,,And now for our next story.
+Comment: 0,0:00:03.05,0:00:05.25,Default,TV,0,0,0,,昨夜未明、市内各所で目撃された
+Dialogue: 0,0:00:03.05,0:00:05.25,Default,TV,0,0,0,,We still cannot confirm anything\Nregarding the mysterious creatures
+Comment: 0,0:00:05.25,0:00:07.50,Default,TV,0,0,0,,謎の生物の手がかりは依然つかめておらず、
+Dialogue: 0,0:00:05.25,0:00:07.50,Default,TV,0,0,0,,sighted throughout the city\Nin the early hours of last night.
+Comment: 0,0:00:07.50,0:00:10.95,Default,TV,0,0,0,,地域住民の不安が高まっています。
+Dialogue: 0,0:00:07.50,0:00:10.95,Default,TV,0,0,0,,However, anxiety is growing\Namong local residents.
+Comment: 0,0:00:11.65,0:00:16.80,Default,TV,0,0,0,,目撃者の証言では、この生物について、西洋の悪魔のような姿であるという声が多く、
+Dialogue: 0,0:00:11.65,0:00:16.80,Default,TV,0,0,0,,Witnesses claim the creatures resemble\Ndemons from Western mythology.
+Comment: 0,0:00:16.80,0:00:20.30,Default,TV,0,0,0,,現場周辺での調査が続いています。
+Dialogue: 0,0:00:16.80,0:00:20.30,Default,TV,0,0,0,,Investigations into these sightings\Nare ongoing.
+Comment: 0,0:00:20.75,0:00:24.15,Default,TV,0,0,0,,そうした中、捜査当局では同夜起こった
+Dialogue: 0,0:00:20.75,0:00:24.15,Default,TV,0,0,0,,The police haven't ruled out a connection\Nbetween these sightings and
+Comment: 0,0:00:24.15,0:00:27.60,Default,TV,0,0,0,,連続殺人事件との関連もあるのではないかと見て、
+Dialogue: 0,0:00:24.15,0:00:27.60,Default,TV,0,0,0,,the series of murders that occurred\Nthe same night.
+Comment: 0,0:00:27.60,0:00:33.25,Default,TV,0,0,0,,引き続き付近の住民に警戒を呼びかけています。
+Dialogue: 0,0:00:27.60,0:00:33.25,Default,TV,0,0,0,,Residents in the surrounding areas are urged\Nto remain vigilant.

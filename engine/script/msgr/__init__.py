@@ -1,0 +1,1 @@
+"""MSGR text patch composition."""

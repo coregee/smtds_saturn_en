@@ -1,0 +1,182 @@
+{
+  "talk_labels": [
+    {
+      "record": 1,
+      "jp": "マスター",
+      "tr": "Master",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "948285AD00000000"
+    },
+    {
+      "record": 2,
+      "jp": "わかい おとこ",
+      "tr": "Young Man",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "6A44400043524800"
+    },
+    {
+      "record": 3,
+      "jp": "ホワイトレディ",
+      "tr": "White Lady",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "93A177899FF4A500"
+    },
+    {
+      "record": 4,
+      "jp": "おくの フタり",
+      "tr": "Pair in Back",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "4346570091856600"
+    },
+    {
+      "record": 5,
+      "jp": "わかい おんな",
+      "tr": "Young Lady",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "6A444000436C5300"
+    },
+    {
+      "record": 6,
+      "jp": "すみの オンナ",
+      "tr": "Corner Lady",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "4B5E57007AA38A00"
+    }
+  ],
+  "drinks": [
+    {
+      "jp": "かちわりロック",
+      "tr": "Crushed Ice",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "444F6A66A0A97D00",
+      "price": 480
+    },
+    {
+      "jp": "スパークミクサー",
+      "tr": "Spark Mixer",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "82FBAD7D957D80AD",
+      "price": 500
+    },
+    {
+      "jp": "クールスライダー",
+      "tr": "Cool Slider",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "7DAD9E829C77F1AD",
+      "price": 520
+    },
+    {
+      "jp": "かるこざかワイン",
+      "tr": "Karuko Wine",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "446748D244A177A3",
+      "price": 520
+    },
+    {
+      "jp": "ジン＆ビンガラ",
+      "tr": "Gin-Bingara",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "EDA3B7F7A3E79C00",
+      "price": 580
+    },
+    {
+      "jp": "ナチュラルハイ",
+      "tr": "Natural High",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "8A86AB9C9E8F7700",
+      "price": 600
+    },
+    {
+      "jp": "アドレナルソーダ",
+      "tr": "Adrenal Pop",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "76F59F8A9E84ADF1",
+      "price": 640
+    },
+    {
+      "jp": "メグスリビア",
+      "tr": "Megu Beer",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "97E9829DF7760000",
+      "price": 640
+    },
+    {
+      "jp": "ノーザンエチル",
+      "tr": "North Ethyl",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "8EADECA379869E00",
+      "price": 960
+    },
+    {
+      "jp": "ガムシロップ",
+      "tr": "Gum Syrup",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "E79681A0A9FD0000",
+      "price": 980
+    },
+    {
+      "jp": "バイオリキュール",
+      "tr": "Bio Liqueur",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "F6777A9D7CABAD9E",
+      "price": 980
+    },
+    {
+      "jp": "メタモルトニック",
+      "tr": "Metamol Mix",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "9785989E898BA97D",
+      "price": 1000
+    },
+    {
+      "jp": "オーガスクイーズ",
+      "tr": "Ogre Juice",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "7AADE7827D77ADEE",
+      "price": 1000
+    },
+    {
+      "jp": "せいしゅねこまた",
+      "tr": "Neko Sake",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "4C404A7456485D4E",
+      "price": 1000
+    },
+    {
+      "jp": "マッハシトロン",
+      "tr": "Mach Citron",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "94A98F8189A0A300",
+      "price": 1000
+    },
+    {
+      "jp": "デモンズミネラル",
+      "tr": "Demon Water",
+      "reviewed": false,
+      "excluded": false,
+      "source_hex": "F498A3EE958D9C9E",
+      "price": 1200
+    }
+  ]
+}

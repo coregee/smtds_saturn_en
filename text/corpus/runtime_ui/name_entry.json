@@ -1,0 +1,20 @@
+{
+  "tabs": [
+    {
+      "key": "upper",
+      "rows": ["ABCDEFGHIJKLM", "NOPQRSTUVWXYZ"]
+    },
+    {
+      "key": "lower",
+      "rows": ["abcdefghijklm", "nopqrstuvwxyz"]
+    },
+    {
+      "key": "symbol",
+      "rows": ["0123456789.,'", "-!?/&: "]
+    }
+  ],
+  "defaults": {
+    "city": "Hirasaki",
+    "ward": "Asahi"
+  }
+}

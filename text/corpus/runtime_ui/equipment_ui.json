@@ -1,0 +1,48 @@
+{
+  "actions": {
+    "recommend": {
+      "text": "Auto",
+      "offset_x": 0,
+      "offset_y": 0,
+      "selection_box": {
+        "offset_x": 0,
+        "offset_y": 0,
+        "width": 40,
+        "height": 16
+      }
+    },
+    "unequip": {
+      "text": "Unequip",
+      "offset_x": 0,
+      "offset_y": 0,
+      "selection_box": {
+        "offset_x": 0,
+        "offset_y": 0,
+        "width": 40,
+        "height": 16
+      }
+    }
+  },
+  "item_names": {
+    "offset_x": 0,
+    "offset_y": -1
+  },
+  "base_stats": {
+    "strength": { "text": "St", "offset_x": -6, "offset_y": 0 },
+    "intelligence": { "text": "In", "offset_x": -6, "offset_y": 0 },
+    "magic": { "text": "Ma", "offset_x": -6, "offset_y": 0 },
+    "vitality": { "text": "Vi", "offset_x": -6, "offset_y": 0 },
+    "agility": { "text": "Ag", "offset_x": -6, "offset_y": 0 },
+    "luck": { "text": "Lu", "offset_x": -6, "offset_y": 0 }
+  },
+  "derived_stats": {
+    "sword_attack": { "text": "Swd Atk", "offset_x": -16, "offset_y": 0 },
+    "sword_accuracy": { "text": "Swd Acc", "offset_x": -16, "offset_y": 0 },
+    "gun_attack": { "text": "Gun Atk", "offset_x": -16, "offset_y": 0 },
+    "gun_accuracy": { "text": "Gun Acc", "offset_x": -16, "offset_y": 0 },
+    "defense": { "text": "Def", "offset_x": -16, "offset_y": 0 },
+    "evasion": { "text": "Eva", "offset_x": -16, "offset_y": 0 },
+    "magic_power": { "text": "Mag Pwr", "offset_x": -16, "offset_y": 0 },
+    "magic_effect": { "text": "Mag Efc", "offset_x": -16, "offset_y": 0 }
+  }
+}

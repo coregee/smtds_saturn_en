@@ -1,0 +1,32 @@
+[
+  {
+    "kind": "marker_no_data",
+    "file_offset": "0x9aa8",
+    "capacity_bytes": 8,
+    "runtime_capacity_bytes": 10,
+    "jp": "NO DATA",
+    "tr": "(No data)",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "marker_yes",
+    "file_offset": "0xa5e0",
+    "capacity_bytes": 4,
+    "runtime_capacity_bytes": 4,
+    "jp": "YES",
+    "tr": "Yes",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "marker_no",
+    "file_offset": "0xa5e4",
+    "capacity_bytes": 4,
+    "runtime_capacity_bytes": 4,
+    "jp": " NO",
+    "tr": "No",
+    "reviewed": false,
+    "excluded": false
+  }
+]

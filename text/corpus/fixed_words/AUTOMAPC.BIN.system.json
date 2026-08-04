@@ -1,0 +1,11 @@
+[
+  {
+    "kind": "marker_delete",
+    "file_offset": "0xa69c",
+    "word_count": 6,
+    "jp": "マーカー削除",
+    "tr": "Delete?",
+    "reviewed": false,
+    "excluded": false
+  }
+]

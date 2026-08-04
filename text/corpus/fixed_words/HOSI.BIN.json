@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "horoscope_00",
+    "file_offset": "0x10f62",
+    "word_count": 21,
+    "jp": "第1の地点は、笠置山近くの更地……",
+    "tr": "The first point is an empty lot near Mount Kasagi...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "horoscope_01",
+    "file_offset": "0x10f8c",
+    "word_count": 21,
+    "jp": "第2の地点は、氷川神社……",
+    "tr": "The second point is Hikawa Shrine...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "horoscope_02",
+    "file_offset": "0x10fb6",
+    "word_count": 21,
+    "jp": "第3の地点は、臨海公園の市立博物館……",
+    "tr": "The third point is the City Museum in Rinkai Park...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "horoscope_03",
+    "file_offset": "0x10fe0",
+    "word_count": 21,
+    "jp": "第4の地点は、矢来区の東亜テレビ……",
+    "tr": "The fourth point is the Toa TV Station in Yarai...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "horoscope_04",
+    "file_offset": "0x1100a",
+    "word_count": 21,
+    "jp": "4つの場所を結ぶと……",
+    "tr": "Connecting the four locations...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "horoscope_05",
+    "file_offset": "0x11034",
+    "word_count": 21,
+    "jp": "……魔法陣ができるわ。",
+    "tr": "...A magic circle can be formed.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "horoscope_06",
+    "file_offset": "0x1105e",
+    "word_count": 21,
+    "jp": "第5の地点に当たる場所は、雲雀ヶ丘……",
+    "tr": "The fifth point is Hibarigaoka...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "horoscope_07",
+    "file_offset": "0x11088",
+    "word_count": 21,
+    "jp": "天堂組組長の屋敷が建っているあたりよ。",
+    "tr": "It is where the Tendou Yakuza boss's mansion resides.",
+    "reviewed": false,
+    "excluded": false
+  }
+]

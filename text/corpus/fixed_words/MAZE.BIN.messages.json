@@ -1,0 +1,137 @@
+[
+  {
+    "kind": "talk_prompt",
+    "file_offset": "0x250e4",
+    "word_count": 14,
+    "jp": "＞誰かいる。話しかけますか？",
+    "tr": "> Someone is here. Talk to them?",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "operation_disabled",
+    "file_offset": "0x25124",
+    "word_count": 14,
+    "jp": "操作不能です",
+    "tr": "It's inoperable.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "nothing_notable",
+    "file_offset": "0x25150",
+    "word_count": 14,
+    "jp": "めぼしい物は無かった",
+    "tr": "There's nothing of note.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "nothing_found",
+    "file_offset": "0x2516c",
+    "word_count": 14,
+    "jp": "何も見つからなかった",
+    "tr": "There's nothing here.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "items_full",
+    "file_offset": "0x25188",
+    "word_count": 14,
+    "jp": "アイテムがいっぱいだ",
+    "tr": "Your inventory is full.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "already_searched",
+    "file_offset": "0x251a4",
+    "word_count": 14,
+    "jp": "すでにしらべている",
+    "tr": "You've already checked here.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "obtained_suffix_a",
+    "file_offset": "0x251d0",
+    "word_count": 6,
+    "jp": "を手に入れた",
+    "tr": "Obtained {insert}.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "obtained_suffix_b",
+    "file_offset": "0x251dc",
+    "word_count": 6,
+    "jp": "を手に入れた",
+    "tr": "Obtained {insert}.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "full_suffix",
+    "file_offset": "0x251e8",
+    "word_count": 6,
+    "jp": "はいっぱいだ",
+    "tr": "{insert} is full.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "found_suffix",
+    "file_offset": "0x251f4",
+    "word_count": 6,
+    "jp": "を見つけた",
+    "tr": "Found {insert}.",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "enemy_surprise",
+    "file_offset": "0x25234",
+    "word_count": 14,
+    "jp": "悪魔に不意をつかれた",
+    "tr": "The enemy took you by surprise!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "enemy_behind",
+    "file_offset": "0x25250",
+    "word_count": 14,
+    "jp": "悪魔に後ろをとられた",
+    "tr": "The enemy attacked from behind!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "preemptive_chance",
+    "file_offset": "0x2526c",
+    "word_count": 14,
+    "jp": "先制攻撃のチャンス",
+    "tr": "You caught the enemy off-guard!",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "auto_recover_on",
+    "file_offset": "0x252b4",
+    "word_count": 10,
+    "jp": "オートリカバーON",
+    "tr": "Auto Recovering...",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "kind": "no_effect",
+    "file_offset": "0x252d0",
+    "word_count": 14,
+    "jp": "効果がなかった",
+    "tr": "It had no effect.",
+    "reviewed": false,
+    "excluded": false
+  }
+]

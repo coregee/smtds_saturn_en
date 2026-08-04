@@ -1,0 +1,50 @@
+[
+  {
+    "record": 0,
+    "file_offset": "0x0000",
+    "jp": "たにがわ ハジメ",
+    "tr": "Hajime Tanigawa",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 1,
+    "file_offset": "0x0008",
+    "jp": "レイ‐レイホゥ",
+    "tr": "Rei Reiho",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 2,
+    "file_offset": "0x0010",
+    "jp": "キョウジ",
+    "tr": "Kyouji",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 3,
+    "file_offset": "0x0018",
+    "jp": "たにがわたろう",
+    "tr": "Taro Tanigawa",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 4,
+    "file_offset": "0x0020",
+    "jp": "たにがわじろう",
+    "tr": "Jiro Tanigawa",
+    "reviewed": false,
+    "excluded": false
+  },
+  {
+    "record": 5,
+    "file_offset": "0x0028",
+    "jp": "たにがわさぶろう",
+    "tr": "Saburo Tanigawa",
+    "reviewed": false,
+    "excluded": false
+  }
+]

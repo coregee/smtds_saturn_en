@@ -1,0 +1,3827 @@
+[
+  {
+    "file_offset": "0x0000",
+    "name": {
+      "jp": "アギ",
+      "tr": "Agi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力23{n}敵1体に火炎系ダメージ",
+      "tr": "Offensive magic / Front / Power 23{n}Deals Fire damage to one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0060",
+    "name": {
+      "jp": "アギラオ",
+      "tr": "Agilao",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力50{n}敵1体に複数回の火炎系ダメージ",
+      "tr": "Offensive magic / Front / Power 50{n}Hits one foe repeatedly with Fire.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x00c0",
+    "name": {
+      "jp": "マハ‐ラギ",
+      "tr": "Maragi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力27{n}敵1列全体に火炎系ダメージ",
+      "tr": "Offensive magic / Front / Power 27{n}Deals Fire damage to one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0120",
+    "name": {
+      "jp": "マハ‐ラギオン",
+      "tr": "Maragion",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 全体 威力77{n}すべての敵に火炎系ダメージ",
+      "tr": "Offensive magic / All foes / Power 77{n}Deals Fire damage to all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0180",
+    "name": {
+      "jp": "ブフ",
+      "tr": "Bufu",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力23{n}敵1体に氷結系ダメージ",
+      "tr": "Offensive magic / Front / Power 23{n}Deals Ice damage to one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x01e0",
+    "name": {
+      "jp": "ブフーラ",
+      "tr": "Bufula",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力50{n}複数の敵に氷結系ダメージ",
+      "tr": "Offensive magic / Front / Power 50{n}Deals Ice damage to multiple foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0240",
+    "name": {
+      "jp": "マハ‐ブフ",
+      "tr": "Mabufu",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力25{n}敵1列全体に氷結系ダメージ",
+      "tr": "Offensive magic / Front / Power 25{n}Deals Ice damage to one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x02a0",
+    "name": {
+      "jp": "マハ‐ブフーラ",
+      "tr": "Mabufula",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 全体 威力85{n}すべての敵に氷結系ダメージ",
+      "tr": "Offensive magic / All foes / Power 85{n}Deals Ice damage to all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0300",
+    "name": {
+      "jp": "ジオ",
+      "tr": "Zio",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列／後列 威力28{n}敵1体に電撃系ダメージ",
+      "tr": "Offensive magic / Either row / Power 28{n}Deals Elec damage to one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0360",
+    "name": {
+      "jp": "ジオンガ",
+      "tr": "Zionga",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列／後列 威力98{n}敵1体に電撃系ダメージ",
+      "tr": "Offensive magic / Either row / Power 98{n}Deals Elec damage to one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x03c0",
+    "name": {
+      "jp": "マハ‐ジオ",
+      "tr": "Mazio",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列／後列 威力30{n}敵1列全体に電撃系ダメージ",
+      "tr": "Offensive magic / Either row / Power 30{n}Deals Elec damage to one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0420",
+    "name": {
+      "jp": "マハ‐ジオンガ",
+      "tr": "Mazionga",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 全体 威力86{n}すべての敵に電撃系ダメージ",
+      "tr": "Offensive magic / All foes / Power 86{n}Deals Elec damage to all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0480",
+    "name": {
+      "jp": "ザン",
+      "tr": "Zan",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力28{n}敵1体に衝撃系ダメージ",
+      "tr": "Offensive magic / Front / Power 28{n}Deals Force damage to one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x04e0",
+    "name": {
+      "jp": "ザンマ",
+      "tr": "Zanma",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力40{n}複数の敵に衝撃系ダメージ",
+      "tr": "Offensive magic / Front / Power 40{n}Deals Force damage to multiple foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0540",
+    "name": {
+      "jp": "マハ‐ザン",
+      "tr": "Mazan",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力31{n}敵1列全体に衝撃系ダメージ",
+      "tr": "Offensive magic / Front / Power 31{n}Deals Force damage to one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x05a0",
+    "name": {
+      "jp": "マハ‐ザンマ",
+      "tr": "Mazanma",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 全体 威力87{n}すべての敵に衝撃系ダメージ",
+      "tr": "Offensive magic / All foes / Power 87{n}Deals Force damage to all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0600",
+    "name": {
+      "jp": "サイ",
+      "tr": "Psi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列／後列 威力25{n}敵1体に念動系ダメージ",
+      "tr": "Offensive magic / Either row / Power 25{n}Deals Psy damage to one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0660",
+    "name": {
+      "jp": "サイオ",
+      "tr": "Psio",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列／後列 威力98{n}敵1体に念動系ダメージ",
+      "tr": "Offensive magic / Either row / Power 98{n}Deals Psy damage to one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x06c0",
+    "name": {
+      "jp": "マハ‐サイ",
+      "tr": "Mapsi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列／後列 威力31{n}敵1列全体に念動系ダメージ",
+      "tr": "Offensive magic / Either row / Power 31{n}Deals Psy damage to one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0720",
+    "name": {
+      "jp": "マハ‐サイオ",
+      "tr": "Mapsio",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 全体 威力98{n}すべての敵に念動系ダメージ",
+      "tr": "Offensive magic / All foes / Power 98{n}Deals Psy damage to all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0780",
+    "name": {
+      "jp": "ハマ",
+      "tr": "Hama",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力24{n}敵1体に破魔系ダメージ",
+      "tr": "Offensive magic / Front / Power 24{n}Deals Expel damage to one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x07e0",
+    "name": {
+      "jp": "ハンマ",
+      "tr": "Hanma",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力20{n}敵1列全体に破魔系ダメージ",
+      "tr": "Offensive magic / Front / Power 20{n}Deals Expel damage to one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0840",
+    "name": {
+      "jp": "ハマオン",
+      "tr": "Hamaon",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 全体 威力16{n}すべての敵に破魔系ダメージ",
+      "tr": "Offensive magic / All foes / Power 16{n}Deals Expel damage to all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x08a0",
+    "name": {
+      "jp": "ムド",
+      "tr": "Mudo",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列／後列{n}敵1体を呪殺",
+      "tr": "Offensive magic / Either row{n}May inflict Death on one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0900",
+    "name": {
+      "jp": "ムドラ",
+      "tr": "Mudola",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列／後列{n}敵1列全体を呪殺",
+      "tr": "Offensive magic / Either row{n}May inflict Death on one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0960",
+    "name": {
+      "jp": "ムドオン",
+      "tr": "Mudoon",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 全体{n}すべての敵を呪殺",
+      "tr": "Offensive magic / All foes{n}May inflict Death on all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x09c0",
+    "name": {
+      "jp": "メギド",
+      "tr": "Megido",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力200{n}敵1体に大ダメージ",
+      "tr": "Offensive magic / Front / Power 200{n}Deals heavy Almighty damage to one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0a20",
+    "name": {
+      "jp": "メギドラ",
+      "tr": "Megidola",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 前列 威力150{n}敵1列全体に大ダメージ",
+      "tr": "Offensive magic / Front / Power 150{n}Deals heavy Almighty damage to one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0a80",
+    "name": {
+      "jp": "メギドラオン",
+      "tr": "Megidolaon",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃魔法 全体 威力160{n}すべての敵に大ダメージ",
+      "tr": "Offensive magic / All foes / Power 160{n}Deals heavy Almighty damage.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0ae0",
+    "name": {
+      "jp": "ドルミナー",
+      "tr": "Dormina",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 前列／後列 バッドステータス{n}敵1列全体にSLEEPの効果",
+      "tr": "Ailment magic / Either row{n}Inflicts Sleep on one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0b40",
+    "name": {
+      "jp": "マリンカリン",
+      "tr": "Marin Karin",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 前列／後列 バッドステータス{n}敵1体にCHARMの効果",
+      "tr": "Ailment magic / Either row{n}Inflicts Charm on one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0ba0",
+    "name": {
+      "jp": "シバブー",
+      "tr": "Shibaboo",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 前列／後列 バッドステータス{n}敵1列全体にBINDの効果",
+      "tr": "Ailment magic / Either row{n}Inflicts Bind on one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0c00",
+    "name": {
+      "jp": "シャッフ",
+      "tr": "Shuff",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 前列／後列 バッドステータス{n}敵1体にCARDの効果",
+      "tr": "Ailment magic / Either row{n}Inflicts Card on one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0c60",
+    "name": {
+      "jp": "シャッフル",
+      "tr": "Shuffle",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 前列／後列 バッドステータス{n}敵1列全体にCARDの効果",
+      "tr": "Ailment magic / Either row{n}Inflicts Card on one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0cc0",
+    "name": {
+      "jp": "シャッフラー",
+      "tr": "Shuffler",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 全体 バッドステータス{n}すべての敵にCARDの効果",
+      "tr": "Ailment magic / All foes{n}Inflicts Card on all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0d20",
+    "name": {
+      "jp": "キョウ",
+      "tr": "Kyou",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 前列 バッドステータス{n}敵1体にMIRRORの効果",
+      "tr": "Ailment magic / Front{n}Inflicts Mirror on one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0d80",
+    "name": {
+      "jp": "ハ‐キョウ",
+      "tr": "Hakyou",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 前列 バッドステータス{n}敵1列全体にMIRRORの効果",
+      "tr": "Ailment magic / Front{n}Inflicts Mirror on one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0de0",
+    "name": {
+      "jp": "シ‐キョウ",
+      "tr": "Shikyou",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 全体 バッドステータス{n}すべての敵にMIRRORの効果",
+      "tr": "Ailment magic / All foes{n}Inflicts Mirror on all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0e40",
+    "name": {
+      "jp": "シパニ",
+      "tr": "Shipani",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 全体 バッドステータス{n}すべての敵にPANICの効果",
+      "tr": "Ailment magic / All foes{n}Inflicts Panic on all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0ea0",
+    "name": {
+      "jp": "ハピルマ",
+      "tr": "Hapilma",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 前列 バッドステータス{n}敵1列全体にHAPPYの効果",
+      "tr": "Ailment magic / Front{n}Inflicts Happy on one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0f00",
+    "name": {
+      "jp": "マカフージ",
+      "tr": "Makafuji",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 前列／後列 バッドステータス{n}敵1体にCLOSEの効果",
+      "tr": "Ailment magic / Either row{n}Inflicts Mute on one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0f60",
+    "name": {
+      "jp": "タル‐ンダ",
+      "tr": "Tarunda",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 全体{n}すべての敵の攻撃力ダウン",
+      "tr": "Debuff magic / All foes{n}Lowers Attack.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x0fc0",
+    "name": {
+      "jp": "ラク‐ンダ",
+      "tr": "Rakunda",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 全体{n}すべての敵の防御力ダウン",
+      "tr": "Debuff magic / All foes{n}Lowers Defense.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1020",
+    "name": {
+      "jp": "スク‐ンダ",
+      "tr": "Sukunda",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 全体{n}すべての敵の命中力ダウン",
+      "tr": "Debuff magic / All foes{n}Lowers Accuracy.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1080",
+    "name": {
+      "jp": "デ‐カジャ",
+      "tr": "Dekaja",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "攻撃補助 全体{n}すべての敵の能力値アップを無効化",
+      "tr": "Debuff magic / All foes{n}Removes all stat increases.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x10e0",
+    "name": {
+      "jp": "ディア",
+      "tr": "Dia",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体のHPを少しだけ回復",
+      "tr": "Recovery magic / One ally{n}Restores a small amount of HP.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1140",
+    "name": {
+      "jp": "ディアラマ",
+      "tr": "Diarama",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体のHPを中程度回復",
+      "tr": "Recovery magic / One ally{n}Restores a moderate amount of HP.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x11a0",
+    "name": {
+      "jp": "ディアラハン",
+      "tr": "Diarahan",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体のHPをMAXまで回復",
+      "tr": "Recovery magic / One ally{n}Fully restores HP.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1200",
+    "name": {
+      "jp": "メ‐ディア",
+      "tr": "Media",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 全体{n}味方全員のHPを少しだけ回復",
+      "tr": "Recovery magic / All allies{n}Restores a small amount of HP.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1260",
+    "name": {
+      "jp": "メ‐ディアラマ",
+      "tr": "Mediarama",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 全体{n}味方全員のHPを中程度回復",
+      "tr": "Recovery magic / All allies{n}Restores a moderate amount of HP.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x12c0",
+    "name": {
+      "jp": "メ‐ディアラハン",
+      "tr": "Mediarahan",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 全体{n}味方全員のHPをMAXまで回復",
+      "tr": "Recovery magic / All allies{n}Fully restores HP.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1320",
+    "name": {
+      "jp": "ポズムディ",
+      "tr": "Posumudi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体の毒の状態を治療",
+      "tr": "Recovery magic / One ally{n}Cures Poison.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1380",
+    "name": {
+      "jp": "パァスディ",
+      "tr": "Phasedi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体の混乱・至福・睡眠を治療",
+      "tr": "Recovery magic / One ally{n}Cures Panic, Happy, and Sleep.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x13e0",
+    "name": {
+      "jp": "カルムディ",
+      "tr": "Charmdi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体の魅了を治療",
+      "tr": "Recovery magic / One ally{n}Cures Charm.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1440",
+    "name": {
+      "jp": "ペトラディ",
+      "tr": "Petradi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体の石化を治療",
+      "tr": "Recovery magic / One ally{n}Cures Stone.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x14a0",
+    "name": {
+      "jp": "クロズディ",
+      "tr": "Mutudi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体の沈黙を治療",
+      "tr": "Recovery magic / One ally{n}Cures Mute.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1500",
+    "name": {
+      "jp": "パララディ",
+      "tr": "Paraladi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体の麻痺を治療",
+      "tr": "Recovery magic / One ally{n}Cures Paralysis.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1560",
+    "name": {
+      "jp": "メタモディ",
+      "tr": "Metamodi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体の変身を解く",
+      "tr": "Recovery magic / One ally{n}Reverses transformation.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x15c0",
+    "name": {
+      "jp": "パトラ",
+      "tr": "Patra",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体の混乱・至福・睡眠・呪縛を治療",
+      "tr": "Recovery magic / One ally{n}Cures Panic, Happy, Sleep, and Bind.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1620",
+    "name": {
+      "jp": "メ‐パトラ",
+      "tr": "Me Patra",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 全体{n}味方全員の混乱・至福・睡眠・呪縛を治療",
+      "tr": "Recovery magic / All allies{n}Cures Panic, Happy, Sleep, and Bind.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1680",
+    "name": {
+      "jp": "リカーム",
+      "tr": "Recarm",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体を復活",
+      "tr": "Recovery magic / One ally{n}Revives the target.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x16e0",
+    "name": {
+      "jp": "サマリカーム",
+      "tr": "Samarecarm",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 単体{n}味方1体をHP最大で復活",
+      "tr": "Recovery magic / One ally{n}Revives the target with full HP.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1740",
+    "name": {
+      "jp": "リカーム‐ドラ",
+      "tr": "Recarmdra",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "回復魔法 全体{n}味方全員のHPを最大回復し術者は死亡",
+      "tr": "Recovery magic / All allies{n}Fully restores HP, but kills the caster.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x17a0",
+    "name": {
+      "jp": "テトラジャ",
+      "tr": "Tetraja",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "防御魔法 全体{n}破魔・呪殺・エナジードレインを1回防止",
+      "tr": "Defensive magic / All allies{n}Blocks Expel, Death, or Energy Drain once.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1800",
+    "name": {
+      "jp": "テトラカーン",
+      "tr": "Tetrakarn",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "防御魔法 全体{n}物理攻撃を1ターン防ぎ敵に反射",
+      "tr": "Defensive magic / All allies{n}Reflects physical attacks for one turn.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1860",
+    "name": {
+      "jp": "マカラカーン",
+      "tr": "Makarakarn",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "防御魔法 全体{n}魔法攻撃を1ターン防ぎ敵に反射",
+      "tr": "Defensive magic / All allies{n}Reflects magic attacks for one turn.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x18c0",
+    "name": {
+      "jp": "タル‐カジャ",
+      "tr": "Tarukaja",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "補助魔法 全体{n}味方全員の攻撃力アップ",
+      "tr": "Buff magic / All allies{n}Raises Attack.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1920",
+    "name": {
+      "jp": "ラク‐カジャ",
+      "tr": "Rakukaja",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "補助魔法 全体{n}味方全員の防御力アップ",
+      "tr": "Buff magic / All allies{n}Raises Defense.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1980",
+    "name": {
+      "jp": "スク‐カジャ",
+      "tr": "Sukukaja",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "補助魔法 全体{n}味方全員の命中力アップ",
+      "tr": "Buff magic / All allies{n}Raises Accuracy.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x19e0",
+    "name": {
+      "jp": "マカ‐カジャ",
+      "tr": "Makakaja",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "補助魔法 全体{n}味方全員の魔法威力アップ",
+      "tr": "Buff magic / All allies{n}Raises Magic Power.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1a40",
+    "name": {
+      "jp": "デ‐クンダ",
+      "tr": "Dekunda",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "補助魔法 全体{n}味方全員の能力値ダウンを無効化",
+      "tr": "Buff magic / All allies{n}Removes all stat decreases.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1aa0",
+    "name": {
+      "jp": "ネクロマ",
+      "tr": "Necroma",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "補助魔法 単体{n}死亡した味方1体を戦闘参加",
+      "tr": "Support magic / One ally{n}Lets one dead ally participate in battle.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1b00",
+    "name": {
+      "jp": "サバト",
+      "tr": "Sabbath",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法 移動時・戦闘時{n}マグネタイトを消費しないで仲魔1体を召喚",
+      "tr": "Field/Battle magic{n}Summons one demon without consuming MAG.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1b60",
+    "name": {
+      "jp": "トラエスト",
+      "tr": "Traesto",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法 移動時{n}ダンジョンより脱出",
+      "tr": "Field magic{n}Escapes from the dungeon.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1bc0",
+    "name": {
+      "jp": "エストマ",
+      "tr": "Estoma",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法 移動時{n}月1周の間 低レベル悪魔の出現を抑止",
+      "tr": "Field magic{n}Repels low-level demons for one moon cycle.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1c20",
+    "name": {
+      "jp": "マッパー",
+      "tr": "Mapper",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法 移動時{n}パーティー周辺のマップを表示",
+      "tr": "Field magic{n}Displays a map of the surrounding area.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1c80",
+    "name": {
+      "jp": "リフトマ",
+      "tr": "Liftoma",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法 移動時{n}月1周の間 ダメージゾーンを無効化",
+      "tr": "Field magic{n}Negates damage zones for one moon cycle.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1ce0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "                    {n}",
+      "tr": "{n}",
+      "reviewed": false,
+      "excluded": true
+    }
+  },
+  {
+    "file_offset": "0x1d40",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "                    {n}",
+      "tr": "{n}",
+      "reviewed": false,
+      "excluded": true
+    }
+  },
+  {
+    "file_offset": "0x1da0",
+    "name": {
+      "jp": "ファイヤーブレス",
+      "tr": "Fire Breath",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 前列 威力37{n}敵1列全体に火炎系ダメージ",
+      "tr": "Special magic / Front / Power 37{n}Deals Fire damage to one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1e00",
+    "name": {
+      "jp": "ごうかしょうかん",
+      "tr": "Hellfire",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 威力77{n}すべての敵に火炎系ダメージ",
+      "tr": "Special magic / All foes / Power 77{n}Deals Fire damage to all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1e60",
+    "name": {
+      "jp": "ブリザードブレス",
+      "tr": "Blizzard Breath",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 前列 威力39{n}敵1列全体に氷結系ダメージ",
+      "tr": "Special magic / Front / Power 39{n}Deals Ice damage to one row.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1ec0",
+    "name": {
+      "jp": "ぜったいれいど",
+      "tr": "Glacial Blast",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 威力77{n}すべての敵に氷結系ダメージ",
+      "tr": "Special magic / All foes / Power 77{n}Deals Ice damage to all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1f20",
+    "name": {
+      "jp": "ほうでん",
+      "tr": "Shock",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 前列 威力24{n}複数の敵に電撃系ダメージ",
+      "tr": "Special magic / Front / Power 24{n}Deals Elec damage to multiple foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1f80",
+    "name": {
+      "jp": "サンダーブレイク",
+      "tr": "Thunder Break",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 威力77{n}すべての敵に電撃系ダメージ",
+      "tr": "Special magic / All foes / Power 77{n}Deals Elec damage to all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x1fe0",
+    "name": {
+      "jp": "ブレインバースト",
+      "tr": "Brain Burst",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 前列 威力43{n}複数の敵に念動系ダメージ／BINDの効果",
+      "tr": "Special magic / Front / Power 43{n}Hits multiple foes with Psy and Bind.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2040",
+    "name": {
+      "jp": "げどうのほう",
+      "tr": "Foul Law",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 威力120{n}敵1体に大ダメージ",
+      "tr": "Special magic / Power 120{n}Deals heavy Almighty damage to one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x20a0",
+    "name": {
+      "jp": "どくのひかり",
+      "tr": "Venom Flash",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 威力65{n}すべての敵にダメージ／POISONの効果",
+      "tr": "Special magic / All foes / Power 65{n}Deals damage and inflicts Poison.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2100",
+    "name": {
+      "jp": "ブラフマーストラ",
+      "tr": "Brahmastra",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 威力180{n}敵すべての敵に大ダメージ",
+      "tr": "Special magic / All foes / Power 180{n}Deals heavy damage to all foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2160",
+    "name": {
+      "jp": "バインドボイス",
+      "tr": "Bind Voice",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 バッドステータス{n}すべての敵にBINDの効果",
+      "tr": "Special magic / All foes{n}Inflicts Bind.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x21c0",
+    "name": {
+      "jp": "マグネストーム",
+      "tr": "Magnetic Storm",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 バッドステータス{n}敵1列全体にBINDの効果",
+      "tr": "Special magic / One row{n}Inflicts Bind.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2220",
+    "name": {
+      "jp": "パニックボイス",
+      "tr": "Panic Voice",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 バッドステータス{n}すべての敵にPANICの効果",
+      "tr": "Special magic / All foes{n}Inflicts Panic.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2280",
+    "name": {
+      "jp": "ハッピーダンス",
+      "tr": "Happy Dance",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 バッドステータス{n}すべての敵にHAPPYの効果",
+      "tr": "Special magic / All foes{n}Inflicts Happy.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x22e0",
+    "name": {
+      "jp": "やくしぶっしょう",
+      "tr": "Buddha's Laugh",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 バッドステータス{n}すべての敵にCLOSEの効果",
+      "tr": "Special magic / All foes{n}Inflicts Mute.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2340",
+    "name": {
+      "jp": "ベノンブレス",
+      "tr": "Venom Breath",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 バッドステータス{n}すべての敵にPOISONの効果",
+      "tr": "Special magic / All foes{n}Inflicts Poison.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x23a0",
+    "name": {
+      "jp": "インサニティアイ",
+      "tr": "Insanity Eyes",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 前列 バッドステータス{n}複数の敵にCHARMの効果",
+      "tr": "Special magic / Front{n}Inflicts Charm on multiple foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2400",
+    "name": {
+      "jp": "セクシーダンス",
+      "tr": "Sexy Dance",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 バッドステータス{n}すべての敵にCHARMの効果",
+      "tr": "Special magic / All foes{n}Inflicts Charm.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2460",
+    "name": {
+      "jp": "こもりうた",
+      "tr": "Lullaby",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 バッドステータス{n}すべての敵にSLEEPの効果",
+      "tr": "Special magic / All foes{n}Inflicts Sleep.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x24c0",
+    "name": {
+      "jp": "まひにらみ",
+      "tr": "Paralyzing Glare",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 バッドステータス{n}敵1体にPALYSEの効果",
+      "tr": "Special magic / One foe{n}Inflicts Paralyze.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2520",
+    "name": {
+      "jp": "アラクノワイヤー",
+      "tr": "Arachno Wire",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 前列 バッドステータス{n}複数の敵にPALYZEの効果",
+      "tr": "Special magic / Front{n}Inflicts Paralyze on multiple foes.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2580",
+    "name": {
+      "jp": "せきかにらみ",
+      "tr": "Petrifying Glare",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体 バッドステータス{n}敵1体にSTONEの効果",
+      "tr": "Special magic / One foe{n}Inflicts Stone.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x25e0",
+    "name": {
+      "jp": "かいほう",
+      "tr": "Nurse",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 単体{n}味方1体のHPを少しだけ回復",
+      "tr": "Special magic / One ally{n}Restores a small amount of HP.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2640",
+    "name": {
+      "jp": "せいじゃのうた",
+      "tr": "Saint's Song",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}味方全員のHPを少しだけ回復",
+      "tr": "Special magic / All allies{n}Restores a small amount of HP.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x26a0",
+    "name": {
+      "jp": "あついほうよう",
+      "tr": "Warm Embrace",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}味方全員のHPを中程度回復",
+      "tr": "Special magic / All allies{n}Restores a moderate amount of HP.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2700",
+    "name": {
+      "jp": "けっかい",
+      "tr": "Barrier",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}破魔・呪殺・エナジードレインを1回防止",
+      "tr": "Special magic / All allies{n}Blocks Expel, Death, or Energy Drain once.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2760",
+    "name": {
+      "jp": "だいちのかべ",
+      "tr": "Earth Wall",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}物理攻撃を1ターン防ぎ敵に反射",
+      "tr": "Special magic / All allies{n}Reflects physical attacks for one turn.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x27c0",
+    "name": {
+      "jp": "ペンタウォール",
+      "tr": "Penta Wall",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}魔法攻撃を1ターン防ぎ敵に反射",
+      "tr": "Special magic / All allies{n}Reflects magic attacks for one turn.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2820",
+    "name": {
+      "jp": "きゅうけつ",
+      "tr": "Life Drain",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "敵のみ",
+      "tr": "Enemy-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2880",
+    "name": {
+      "jp": "ミラープリズン",
+      "tr": "Mirror Prison",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x28e0",
+    "name": {
+      "jp": "フォトンショット",
+      "tr": "Photon Shot",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2940",
+    "name": {
+      "jp": "げほうげんかじん",
+      "tr": "Fiore Splendido",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x29a0",
+    "name": {
+      "jp": "イーヴィルアイ",
+      "tr": "Evil Gaze",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}敵1体を呪殺",
+      "tr": "Special magic / One foe{n}May inflict Death.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2a00",
+    "name": {
+      "jp": "デスリング",
+      "tr": "Death Ring",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2a60",
+    "name": {
+      "jp": "あくまのゆうわく",
+      "tr": "Demon's Lure",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "敵のみ",
+      "tr": "Enemy-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2ac0",
+    "name": {
+      "jp": "うらみのどうこく",
+      "tr": "Spite Shout",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2b20",
+    "name": {
+      "jp": "みずのかべ",
+      "tr": "Water Wall",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}火炎攻撃を1ターン無効化",
+      "tr": "Special magic / All allies{n}Nullifies Fire attacks for one turn.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2b80",
+    "name": {
+      "jp": "ほのおのかべ",
+      "tr": "Flame Wall",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}氷結攻撃を1ターン無効化",
+      "tr": "Special magic / All allies{n}Nullifies Ice attacks for one turn.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2be0",
+    "name": {
+      "jp": "サイコバリアー",
+      "tr": "Psycho Barrier",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}念動攻撃を1ターン無効化",
+      "tr": "Special magic / All allies{n}Nullifies Psy attacks for one turn.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2c40",
+    "name": {
+      "jp": "ジャッジメント",
+      "tr": "Judgment",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 敵・味方全体{n}術者と属性の異なる者すべてにダメージ",
+      "tr": "Special magic / Everyone{n}Damages targets of a different alignment.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2ca0",
+    "name": {
+      "jp": "てんばつ",
+      "tr": "Holy Wrath",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 敵・味方全体{n}術者と属性の異なる者すべてに大ダメージ",
+      "tr": "Special magic / Everyone{n}Heavy damage to targets of a different alignment.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2d00",
+    "name": {
+      "jp": "ヴァンパイアキス",
+      "tr": "Vampire Kiss",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "敵のみ",
+      "tr": "Enemy-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2d60",
+    "name": {
+      "jp": "ソウルジャック",
+      "tr": "Soul Jack",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "敵のみ",
+      "tr": "Enemy-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2dc0",
+    "name": {
+      "jp": "あくまのゆうわく",
+      "tr": "Demon's Lure",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "敵のみ",
+      "tr": "Enemy-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2e20",
+    "name": {
+      "jp": "ボルカニッカー",
+      "tr": "Volcanicker",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2e80",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2ee0",
+    "name": {
+      "jp": "なげきのほうこう",
+      "tr": "Lamentation Roar",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2f40",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x2fa0",
+    "name": {
+      "jp": "まてきだん",
+      "tr": "Magic Bullet",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3000",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3060",
+    "name": {
+      "jp": "てんしのキス",
+      "tr": "Angel's Kiss",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 単体{n}ロウ・ニュートラルの味方のHPを回復",
+      "tr": "Special magic / One ally{n}Restores HP to a Law or Neutral ally.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x30c0",
+    "name": {
+      "jp": "あくまのキス",
+      "tr": "Demon's Kiss",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 単体{n}カオス・ニュートラルの味方のHPを回復",
+      "tr": "Special magic / One ally{n}Restores HP to a Chaos or Neutral ally.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3120",
+    "name": {
+      "jp": "オトメノイノリ",
+      "tr": "Maiden's Prayer",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}味方1体をHP1／2で復活",
+      "tr": "Special magic / One ally{n}Revives the target with half HP.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3180",
+    "name": {
+      "jp": "サイコブラスト",
+      "tr": "Psycho Blast",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}すべての敵の命中力・魔法威力ダウン",
+      "tr": "Special magic / All foes{n}Lowers Accuracy and Magic Power.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x31e0",
+    "name": {
+      "jp": "ラッキーステップ",
+      "tr": "Lucky Step",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}味方全員の命中力アップ",
+      "tr": "Special magic / All allies{n}Raises Accuracy.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3240",
+    "name": {
+      "jp": "しんくうは",
+      "tr": "Vacuum Wave",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}味方全体の命中力・攻撃力アップ",
+      "tr": "Special magic / All allies{n}Raises Accuracy and Attack.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x32a0",
+    "name": {
+      "jp": "ちょうはつ",
+      "tr": "Taunt",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}敵全体の攻撃力アップ・防御力ダウン",
+      "tr": "Special magic / All foes{n}Raises Attack but lowers Defense.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3300",
+    "name": {
+      "jp": "いかく",
+      "tr": "Intimidate",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}敵全体の防御力アップ・攻撃力ダウン",
+      "tr": "Special magic / All foes{n}Raises Defense but lowers Attack.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3360",
+    "name": {
+      "jp": "たかぶりのうた",
+      "tr": "Rousing Song",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}味方全体の攻撃力・魔法威力アップ",
+      "tr": "Special magic / All allies{n}Raises Attack and Magic Power.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x33c0",
+    "name": {
+      "jp": "ダイ‐ハード",
+      "tr": "Die Hard",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊魔法行動 全体{n}味方全体の防御力・命中力アップ",
+      "tr": "Special magic / All allies{n}Raises Defense and Accuracy.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3420",
+    "name": {
+      "jp": "バイス‐ゴスペル",
+      "tr": "Vice Gospel",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3480",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x34e0",
+    "name": {
+      "jp": "しちせいこうてん",
+      "tr": "Qixing Jiangtian",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3540",
+    "name": {
+      "jp": "ろくせいきこう",
+      "tr": "Six Shining Stars",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x35a0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3600",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3660",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x36c0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3720",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3780",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x37e0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3840",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x38a0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3900",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3960",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x39c0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3a20",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3a80",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3ae0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3b40",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3ba0",
+    "name": {
+      "jp": "りょううでおとし",
+      "tr": "Arm Chopper",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力12 0～2回攻撃{n}PALYZEの効果",
+      "tr": "Physical skill / Power 12 / 0-2 hits{n}May inflict Paralyze.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3c00",
+    "name": {
+      "jp": "かいてんぎり",
+      "tr": "Spin Slash",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力14 4～6回攻撃",
+      "tr": "Physical skill / Power 14 / 4-6 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3c60",
+    "name": {
+      "jp": "スカルクラック",
+      "tr": "Skull Crack",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力100 0～1回攻撃",
+      "tr": "Physical skill / Power 100 / 0-1 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3cc0",
+    "name": {
+      "jp": "デスバウンド",
+      "tr": "Deathbound",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力24 0～7回攻撃",
+      "tr": "Physical skill / Power 24 / 0-7 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3d20",
+    "name": {
+      "jp": "ベノンザッパー",
+      "tr": "Blight",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力15 2～4回攻撃{n}POISONの効果",
+      "tr": "Physical skill / Power 15 / 2-4 hits{n}May inflict Poison.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3d80",
+    "name": {
+      "jp": "だいせつだん",
+      "tr": "Giant Slice",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力80",
+      "tr": "Physical skill / Power 80",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3de0",
+    "name": {
+      "jp": "マッハづき",
+      "tr": "Mach Thrust",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力12 0～7回攻撃",
+      "tr": "Physical skill / Power 12 / 0-7 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3e40",
+    "name": {
+      "jp": "くしざし",
+      "tr": "Skewer",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力30 前列／後列攻撃",
+      "tr": "Physical skill / Power 30 / Either row",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3ea0",
+    "name": {
+      "jp": "こっぱみじんぎり",
+      "tr": "Atom Slicer",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力22 0～7回攻撃",
+      "tr": "Physical skill / Power 22 / 0-7 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3f00",
+    "name": {
+      "jp": "かすみぎり",
+      "tr": "Mist Slash",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力44 前列全体攻撃",
+      "tr": "Physical skill / Power 44 / Front row",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3f60",
+    "name": {
+      "jp": "いなづまぎり",
+      "tr": "Lightning Slash",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力120 0～1回攻撃{n}SHOCKの効果",
+      "tr": "Physical skill / Power 120 / 0-1 hits{n}May inflict Shock.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x3fc0",
+    "name": {
+      "jp": "しっぷうじんらい",
+      "tr": "Lightning Speed",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力20 0～1回攻撃{n}BINDの効果",
+      "tr": "Physical skill / Power 20 / 0-1 hits{n}May inflict Bind.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4020",
+    "name": {
+      "jp": "100にんぎり",
+      "tr": "Mass Genocide",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力32 全体攻撃",
+      "tr": "Physical skill / Power 32 / All foes",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4080",
+    "name": {
+      "jp": "きょくうざんぱ",
+      "tr": "Empty Wave",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力54 前列／後列攻撃",
+      "tr": "Physical skill / Power 54 / Either row",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x40e0",
+    "name": {
+      "jp": "ジャンピングニー",
+      "tr": "Jumping Knee",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力10 0～1回攻撃",
+      "tr": "Physical skill / Power 10 / 0-1 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4140",
+    "name": {
+      "jp": "バルカンキック",
+      "tr": "Vulcan Kick",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力3 2～7回攻撃",
+      "tr": "Physical skill / Power 3 / 2-7 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x41a0",
+    "name": {
+      "jp": "スタンクラッシュ",
+      "tr": "Stun Crash",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力8 全体攻撃{n}SHOCKの効果",
+      "tr": "Physical skill / Power 8 / All foes{n}May inflict Shock.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4200",
+    "name": {
+      "jp": "とびひざげり",
+      "tr": "Flying Knee",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力10",
+      "tr": "Physical skill / Power 10",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4260",
+    "name": {
+      "jp": "メテオフィスト",
+      "tr": "Meteor Fist",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力7 3～6回攻撃",
+      "tr": "Physical skill / Power 7 / 3-6 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x42c0",
+    "name": {
+      "jp": "ぐんろうけん",
+      "tr": "Wolfpack Fist",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力12 前列全体攻撃",
+      "tr": "Physical skill / Power 12 / Front row",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4320",
+    "name": {
+      "jp": "じごくづき",
+      "tr": "Hell Thrust",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力10 0～1回攻撃{n}CLOSEの効果",
+      "tr": "Physical skill / Power 10 / 0-1 hits{n}May inflict Mute.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4380",
+    "name": {
+      "jp": "コーズニフェクト",
+      "tr": "Cause 'n' Effect",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力50",
+      "tr": "Physical skill / Power 50",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x43e0",
+    "name": {
+      "jp": "スクリュスラップ",
+      "tr": "Screw Slap",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力25 0～7回攻撃",
+      "tr": "Physical skill / Power 25 / 0-7 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4440",
+    "name": {
+      "jp": "ひきさき",
+      "tr": "Tear Apart",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力10 1～2回攻撃",
+      "tr": "Physical skill / Power 10 / 1-2 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x44a0",
+    "name": {
+      "jp": "どくひっかき",
+      "tr": "Venom Claw",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力10 2回攻撃{n}POISONの効果",
+      "tr": "Physical skill / Power 10 / 2 hits{n}May inflict Poison.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4500",
+    "name": {
+      "jp": "まひひっかき",
+      "tr": "Stun Claw",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力5 0～2回攻撃{n}PALYZEの効果",
+      "tr": "Physical skill / Power 5 / 0-2 hits{n}May inflict Paralyze.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4560",
+    "name": {
+      "jp": "はばたき",
+      "tr": "Wing Flap",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力6 全体攻撃",
+      "tr": "Physical skill / Power 6 / All foes",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x45c0",
+    "name": {
+      "jp": "ベノンニードル",
+      "tr": "Venom Needle",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力9 前列全体攻撃{n}POISONの効果",
+      "tr": "Physical skill / Power 9 / Front row{n}May inflict Poison.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4620",
+    "name": {
+      "jp": "パララニードル",
+      "tr": "Paralyze Needle",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力4 前列全体攻撃{n}PALYZEの効果",
+      "tr": "Physical skill / Power 4 / Front row{n}May inflict Paralyze.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4680",
+    "name": {
+      "jp": "ミンチニードル",
+      "tr": "Mince Needle",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力20 前列全体攻撃",
+      "tr": "Physical skill / Power 20 / Front row",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x46e0",
+    "name": {
+      "jp": "ねらいうち",
+      "tr": "Aim",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力20",
+      "tr": "Physical skill / Power 20",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4740",
+    "name": {
+      "jp": "みだれうち",
+      "tr": "Random Fire",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力16 前列／後列に攻撃",
+      "tr": "Physical skill / Power 16 / Either row",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x47a0",
+    "name": {
+      "jp": "かずうちゃあたる",
+      "tr": "Lucky Trigger",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力22 0～7回攻撃",
+      "tr": "Physical skill / Power 22 / 0-7 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4800",
+    "name": {
+      "jp": "ついばみ",
+      "tr": "Peck",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力10",
+      "tr": "Physical skill / Power 10",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4860",
+    "name": {
+      "jp": "バードギムレット",
+      "tr": "Bird Gimlet",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "殊物理行動 威力15",
+      "tr": "Physical skill / Power 15",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x48c0",
+    "name": {
+      "jp": "かみちぎり",
+      "tr": "Bite Off",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力5 2～4回攻撃",
+      "tr": "Physical skill / Power 5 / 2-4 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4920",
+    "name": {
+      "jp": "スパイラルバイト",
+      "tr": "Spiral Bite",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力15",
+      "tr": "Physical skill / Power 15",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4980",
+    "name": {
+      "jp": "たいあたり",
+      "tr": "Tackle",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力20 2～3回攻撃",
+      "tr": "Physical skill / Power 20 / 2-3 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x49e0",
+    "name": {
+      "jp": "ラリアット",
+      "tr": "Lariat",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力40 0～1回攻撃",
+      "tr": "Physical skill / Power 40 / 0-1 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4a40",
+    "name": {
+      "jp": "ギロチンヒール",
+      "tr": "Guillotine Heel",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力20",
+      "tr": "Physical skill / Power 20",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4aa0",
+    "name": {
+      "jp": "どくかみつき",
+      "tr": "Venom Bite",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力15{n}POISONの効果",
+      "tr": "Physical skill / Power 15{n}May inflict Poison.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4b00",
+    "name": {
+      "jp": "みわくかみつき",
+      "tr": "Charm Bite",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力10 0～1回攻撃{n}CHARMの効果",
+      "tr": "Physical skill / Power 10 / 0-1 hits{n}May inflict Charm.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4b60",
+    "name": {
+      "jp": "せきかかみつき",
+      "tr": "Stone Bite",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力16 0～1回攻撃{n}STONEの効果",
+      "tr": "Physical skill / Power 16 / 0-1 hits{n}May inflict Stone.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4bc0",
+    "name": {
+      "jp": "エーテルメイス",
+      "tr": "Ether Mace",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力20 全体攻撃{n}PALYZEの効果",
+      "tr": "Physical skill / Power 20 / All foes{n}May inflict Paralyze.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4c20",
+    "name": {
+      "jp": "フレアーラッシュ",
+      "tr": "Flare Rush",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力16 0～7回攻撃",
+      "tr": "Physical skill / Power 16 / 0-7 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4c80",
+    "name": {
+      "jp": "ランブルラッシュ",
+      "tr": "Rumble Rush",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力12 全体攻撃",
+      "tr": "Physical skill / Power 12 / All foes",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4ce0",
+    "name": {
+      "jp": "ちまつり",
+      "tr": "Chi Blast",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力15 0～7回攻撃",
+      "tr": "Physical skill / Power 15 / 0-7 hits",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4d40",
+    "name": {
+      "jp": "しょうしゃくけん",
+      "tr": "Cauterizing Fist",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力20 全体攻撃",
+      "tr": "Physical skill / Power 20 / All foes",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4da0",
+    "name": {
+      "jp": "ばきゃくげり",
+      "tr": "Horse-Leg Kick",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "敵のみ",
+      "tr": "Enemy-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4e00",
+    "name": {
+      "jp": "からたけわり",
+      "tr": "Bamboo Slice",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力50",
+      "tr": "Physical skill / Power 50",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4e60",
+    "name": {
+      "jp": "1とうりょうだん",
+      "tr": "Critical Slash",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力38 前列全体攻撃",
+      "tr": "Physical skill / Power 38 / Front row",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4ec0",
+    "name": {
+      "jp": "しめおとし",
+      "tr": "Strangle Drop",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "敵のみ",
+      "tr": "Enemy-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4f20",
+    "name": {
+      "jp": "キリングステップ",
+      "tr": "Killing Step",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "敵のみ",
+      "tr": "Enemy-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4f80",
+    "name": {
+      "jp": "はっそうとび",
+      "tr": "Hassou Tobi",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力80 全体攻撃",
+      "tr": "Physical skill / Power 80 / All foes",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x4fe0",
+    "name": {
+      "jp": "まるかじり",
+      "tr": "Eat Whole",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "敵のみ",
+      "tr": "Enemy-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5040",
+    "name": {
+      "jp": "まるのみ",
+      "tr": "Swallow",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "敵のみ",
+      "tr": "Enemy-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x50a0",
+    "name": {
+      "jp": "にくたいのあくま",
+      "tr": "Devil in the Flesh",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5100",
+    "name": {
+      "jp": "かいなのひとふり",
+      "tr": "Arm Swing",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5160",
+    "name": {
+      "jp": "にくだん",
+      "tr": "Meat Bullet",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力98{n}術者の命とひきかえに敵1体へ大ダメージ",
+      "tr": "Physical skill / Power 98{n}Kills the caster to heavily damage one foe.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x51c0",
+    "name": {
+      "jp": "さんげ",
+      "tr": "Scattered Flowers",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 威力150 全体攻撃{n}術者の命とひきかえに敵全体へ大ダメージ",
+      "tr": "Physical skill / Power 150 / All foes{n}Kills caster to deal heavy damage.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5220",
+    "name": {
+      "jp": "たたみがえし",
+      "tr": "Tatami Shield",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 全体{n}物理攻撃を1ターン防ぐ",
+      "tr": "Physical skill / All allies{n}Blocks physical attacks for one turn.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5280",
+    "name": {
+      "jp": "フリフリウォール",
+      "tr": "Frilly Wall",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 全体{n}魔法攻撃を1ターン防ぎ敵に反射",
+      "tr": "Physical skill / All allies{n}Reflects magic attacks for one turn.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x52e0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5340",
+    "name": {
+      "jp": "にげる",
+      "tr": "Escape",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "敵のみ",
+      "tr": "Enemy-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x53a0",
+    "name": {
+      "jp": "ぜつめつはけん",
+      "tr": "Genocide Fist",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5400",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5460",
+    "name": {
+      "jp": "むじょうのまい",
+      "tr": "Heartless Dance",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ボスのみ",
+      "tr": "Boss-only skill.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x54c0",
+    "name": {
+      "jp": "やすむ",
+      "tr": "Rest",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "特殊物理行動 術者{n}使用HPの3倍を回復",
+      "tr": "Physical skill / Self{n}Restores HP equal to three times the cost.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5520",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5580",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x55e0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5640",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x56a0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5700",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5760",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x57c0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5820",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5880",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x58e0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5940",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x59a0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5a00",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5a60",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5ac0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5b20",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5b80",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5be0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5c40",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5ca0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5d00",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5d60",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5dc0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5e20",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5e80",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5ee0",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  },
+  {
+    "file_offset": "0x5f40",
+    "name": {
+      "jp": "リザーブ",
+      "tr": "Reserve",
+      "reviewed": false,
+      "excluded": false
+    },
+    "description": {
+      "jp": "ミテイ",
+      "tr": "Unimplemented.",
+      "reviewed": false,
+      "excluded": false
+    }
+  }
+]
