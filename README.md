@@ -6,7 +6,7 @@ This repo provides various translation tools for modifying a .bin/.cue dump of S
 
 ## AI Disclosure
 
-The source code in this repository was developed with the assistance of AI tools. While the author believes that current AI products are inflicting tremendous social, economic, and environmental harms, they also believe that, when used and deployed responsibly, the underlying technology has genuine potential and value.
+This repository was developed with the assistance of AI tools. While the author believes that current AI products are inflicting tremendous social, economic, and environmental harms, they also believe that, when used and deployed responsibly, the underlying technology has genuine potential and value.
 
 If you're dissatisfied with this, the author encourages you to fork or otherwise create your own tools, translation, and/or documentation. The goal of an open-source project like this is to provide a high-quality translation for a game that has gone without one for over 30 years (and to leave behind resources the community can freely use to modify, or expand that translation into even more languages).
 
