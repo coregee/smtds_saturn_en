@@ -77,6 +77,7 @@ from engine.script.status_ui.model import (
     LEVEL_UP_CHARACTER_SELECTOR,
     LEVEL_UP_FONT16_DRAWER,
     LEVEL_UP_LEARNED_MAGIC_MAX_WORDS,
+    LEVEL_UP_LEARNED_SKILL_LIST_PTR,
     LEVEL_UP_NAME_PREPARE,
     LEVEL_UP_NAME_SURFACE,
     LEVEL_UP_RUNTIME_CAVE_FILE,
@@ -99,6 +100,12 @@ from engine.script.status_ui.model import (
 )
 from engine.script.text_render.font8_blitter import build_surface_pixel_blitter
 from engine.script.text_render.font8_metrics import font8_metrics
+from text.script.encoding.tokens import normalize_english
+
+LEVEL_UP_SKILL_NAME_MAX_BYTES = 32
+LEVEL_UP_SKILL_NAME_MAX_FONT8_PIXELS = 80
+LEVEL_UP_SKILL_NAME_MAX_FONT16_PIXELS = 128
+LEVEL_UP_SKILL_SCRATCH_BYTES = (LEVEL_UP_SKILL_NAME_MAX_BYTES + 1) * 2
 
 
 def build_atlas_wrapper(
@@ -545,10 +552,126 @@ def build_level_up_text_copy(
     return code + bytes.fromhex("0009") * ((window_size - len(code)) // 2)
 
 
+def level_up_font8_to_font16(code: int) -> int | None:
+    if code == 63:
+        return 267
+    if 63 < code < 118:
+        return code - 63
+    if 205 <= code < 213:
+        return code - 150
+    return {
+        213: 173,
+        214: 175,
+        217: 177,
+        229: 204,
+    }.get(code)
+
+
+def _normalized_level_up_skill_names(names: Sequence[str]) -> tuple[str, ...]:
+    if len(names) != 255:
+        raise ValueError("level-up learned-skill runtime needs 255 translated names")
+    normalized = tuple(
+        normalize_english(name.strip()) if isinstance(name, str) else ""
+        for name in names
+    )
+    if any(not name for name in normalized):
+        raise ValueError("level-up learned-skill runtime needs 255 translated names")
+    return normalized
+
+
+def validate_level_up_skill_names(names: Sequence[str]) -> None:
+    names = _normalized_level_up_skill_names(names)
+    widths8, codes8 = font8_metrics()
+    widths16, codes16 = load_font16_metrics()
+    for index, name in enumerate(names):
+        try:
+            encoded = tuple(codes8[character] for character in name)
+            expected = tuple(codes16[character] for character in name)
+        except KeyError as error:
+            raise ValueError(
+                f"level-up MAGNAME row {index} uses unsupported character "
+                f"{error.args[0]!r}"
+            ) from error
+        if len(encoded) > LEVEL_UP_SKILL_NAME_MAX_BYTES:
+            raise ValueError(
+                f"level-up MAGNAME row {index} exceeds "
+                f"{LEVEL_UP_SKILL_NAME_MAX_BYTES} bytes"
+            )
+        if (
+            sum(widths8[code] for code in encoded)
+            > LEVEL_UP_SKILL_NAME_MAX_FONT8_PIXELS
+        ):
+            raise ValueError(
+                f"level-up MAGNAME row {index} exceeds "
+                f"{LEVEL_UP_SKILL_NAME_MAX_FONT8_PIXELS} FONT8 pixels"
+            )
+        if (
+            sum(widths16[code] for code in expected)
+            > LEVEL_UP_SKILL_NAME_MAX_FONT16_PIXELS
+        ):
+            raise ValueError(
+                f"level-up MAGNAME row {index} exceeds "
+                f"{LEVEL_UP_SKILL_NAME_MAX_FONT16_PIXELS} FONT16 pixels"
+            )
+        mapped = tuple(level_up_font8_to_font16(code) for code in encoded)
+        if None in mapped or mapped != expected:
+            raise ValueError(f"level-up MAGNAME row {index} cannot map FONT8 to FONT16")
+
+
+def validate_level_up_packed_skill_names(
+    packed: bytes,
+    names: Sequence[str],
+) -> None:
+    validate_level_up_skill_names(names)
+    names = _normalized_level_up_skill_names(names)
+    expected_size = MAGNAME_END - MAGNAME_BASE
+    if len(packed) != expected_size:
+        raise ValueError(
+            f"level-up MAGNAME build has {len(packed):#x} bytes; "
+            f"expected {expected_size:#x}"
+        )
+    record_size = expected_size // len(names)
+    pointer_offset = 4 + MAGNAME_POINTER_FROM_NAME
+    _widths, codes = font8_metrics()
+    for index, name in enumerate(names):
+        pointer = struct.unpack_from(
+            ">H", packed, index * record_size + pointer_offset
+        )[0]
+        expected = bytes(codes[character] for character in name) + b"\xff"
+        if packed[pointer : pointer + len(expected)] != expected:
+            raise ValueError(f"level-up MAGNAME row {index} full-name payload is stale")
+
+
+def build_level_up_learned_dispatcher(
+    address: int,
+    font16_vwf: int,
+    scratch: int,
+) -> bytes:
+    if scratch & 1:
+        raise ValueError("level-up learned-skill scratch must be word-aligned")
+    source = (ASM_ROOT / "level_up_learned_dispatcher.s").read_text(encoding="utf-8")
+    return bytes(
+        assemble_checked(
+            source,
+            address,
+            {
+                "LEARNED_LIST_POINTER": LEVEL_UP_LEARNED_SKILL_LIST_PTR,
+                "MAGIC_BASE": MAGNAME_BASE,
+                "NAME_POINTER": MAGNAME_POINTER_FROM_NAME,
+                "MAX_NAME_BYTES": LEVEL_UP_SKILL_NAME_MAX_BYTES,
+                "SCRATCH": scratch,
+                "FONT16_VWF": font16_vwf,
+            },
+            context="level-up learned-row dispatcher",
+        )
+    )
+
+
 def build_level_up_name_runtime(
     learned_magic: tuple[int, ...],
     character_names: tuple[str, ...],
-) -> tuple[bytes, int, int, int]:
+    magic_names: tuple[str, ...],
+) -> tuple[bytes, int, int, int, int]:
     if (
         not 1 <= len(learned_magic) <= LEVEL_UP_LEARNED_MAGIC_MAX_WORDS
         or learned_magic[-1] != 0x8000
@@ -557,6 +680,7 @@ def build_level_up_name_runtime(
         raise ValueError("invalid level-up learned-magic runtime text")
     if len(character_names) != 6 or any(not name for name in character_names):
         raise ValueError("level-up status needs six translated character names")
+    validate_level_up_skill_names(magic_names)
     widths, codes = load_font16_metrics()
     validate_shiftable_bitmap(
         FONT16_PATH.read_bytes(),
@@ -619,13 +743,37 @@ def build_level_up_name_runtime(
         if sum(widths[glyph] for glyph in glyphs) > 96:
             raise ValueError(f"level-up character name exceeds 96px: {name!r}")
         payload.extend(struct.pack(f">{len(glyphs) + 1}H", *glyphs, 0x8000))
+    payload.extend(bytes((-(BASE + LEVEL_UP_RUNTIME_CAVE_FILE + len(payload))) % 4))
+    dispatcher_address = BASE + LEVEL_UP_RUNTIME_CAVE_FILE + len(payload)
+    dispatcher_probe = build_level_up_learned_dispatcher(
+        dispatcher_address,
+        cave_address,
+        dispatcher_address,
+    )
+    scratch_address = (dispatcher_address + len(dispatcher_probe) + 1) & ~1
+    dispatcher = build_level_up_learned_dispatcher(
+        dispatcher_address,
+        cave_address,
+        scratch_address,
+    )
+    if len(dispatcher) != len(dispatcher_probe):
+        raise ValueError("level-up learned-row scratch changed dispatcher size")
+    payload.extend(dispatcher)
+    payload.extend(
+        bytes(scratch_address - (BASE + LEVEL_UP_RUNTIME_CAVE_FILE + len(payload)))
+    )
+    payload.extend(bytes(LEVEL_UP_SKILL_SCRATCH_BYTES))
     if LEVEL_UP_RUNTIME_CAVE_FILE + len(payload) > LEVEL_UP_RUNTIME_CAVE_LIMIT:
-        raise ValueError("level-up status runtime exceeds its verified cave")
+        raise ValueError(
+            "level-up status runtime exceeds its verified cave by "
+            f"{LEVEL_UP_RUNTIME_CAVE_FILE + len(payload) - LEVEL_UP_RUNTIME_CAVE_LIMIT:#x} bytes"
+        )
     return (
         bytes(payload),
         wrapper_address,
         learned_magic_address,
         character_table_address,
+        dispatcher_address,
     )
 
 

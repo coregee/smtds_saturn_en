@@ -113,8 +113,10 @@ from engine.script.status_ui.model import (
     GENERIC_ATTACK_FILE,
     ITEM_ICON_DRAWER,
     ITEM_ICON_DRAWER_PTRS,
+    LEVEL_UP_FONT16_DRAWER,
     LEVEL_UP_GENERIC_ACCURACY_FILE,
     LEVEL_UP_GENERIC_ATTACK_FILE,
+    LEVEL_UP_LEARNED_DRAWER_PTR,
     LEVEL_UP_LEARNED_MAGIC_COPY_END_FILE,
     LEVEL_UP_LEARNED_MAGIC_COPY_FILE,
     LEVEL_UP_LEARNED_MAGIC_FIELD_FILE,
@@ -152,6 +154,7 @@ from engine.script.status_ui.runtime import (
     build_level_up_name_runtime,
     build_level_up_text_copy,
     build_status_runtime,
+    validate_level_up_packed_skill_names,
 )
 
 LEVEL_UP_TEXT_ASSET = Path("fixed_words/LEVEL_UP.BIN.json")
@@ -778,7 +781,8 @@ def build_level_up_patch(context: EngineBuildContext) -> PatchGroup:
         or learned_magic.file_offset != LEVEL_UP_LEARNED_MAGIC_FIELD_FILE
     ):
         raise ValueError("LEVEL_UP learned-magic runtime field is missing")
-    character_rows = load_runtime_ui(context).section("character_names")
+    runtime_ui = load_runtime_ui(context)
+    character_rows = runtime_ui.section("character_names")
     if not isinstance(character_rows, list) or len(character_rows) != 6:
         raise ValueError("LEVEL_UP needs six generated character-name rows")
     character_names = []
@@ -789,12 +793,31 @@ def build_level_up_patch(context: EngineBuildContext) -> PatchGroup:
         if not isinstance(text, str) or not text:
             raise ValueError(f"LEVEL_UP character-name row {index} is untranslated")
         character_names.append(text)
+    magic_rows = runtime_ui.section("magic_names")
+    if not isinstance(magic_rows, list) or len(magic_rows) != 255:
+        raise ValueError("LEVEL_UP needs 255 generated magic-name rows")
+    magic_names = []
+    for index, row in enumerate(magic_rows):
+        name = row.get("name") if isinstance(row, dict) else None
+        text = name.get("tr") if isinstance(name, dict) else None
+        if not isinstance(text, str) or not text:
+            raise ValueError(f"LEVEL_UP magic-name row {index} is untranslated")
+        magic_names.append(text)
+    validate_level_up_packed_skill_names(
+        (context.build_root / "MAGNAME.DAT").read_bytes(),
+        tuple(magic_names),
+    )
     (
         name_runtime,
         name_drawer,
         learned_magic_address,
         _character_table_address,
-    ) = build_level_up_name_runtime(learned_magic.words, tuple(character_names))
+        learned_drawer,
+    ) = build_level_up_name_runtime(
+        learned_magic.words,
+        tuple(character_names),
+        tuple(magic_names),
+    )
     copy_address = BASE + LEVEL_UP_LEARNED_MAGIC_COPY_FILE
     copy_window = (
         LEVEL_UP_LEARNED_MAGIC_COPY_END_FILE - LEVEL_UP_LEARNED_MAGIC_COPY_FILE
@@ -819,6 +842,12 @@ def build_level_up_patch(context: EngineBuildContext) -> PatchGroup:
                 LEVEL_UP_NAME_DRAWER_PTR,
                 struct.pack(">I", LEVEL_UP_STOCK_NAME_DRAWER),
                 struct.pack(">I", name_drawer),
+            ),
+            BytePatch(
+                "level_up_learned_drawer",
+                LEVEL_UP_LEARNED_DRAWER_PTR,
+                struct.pack(">I", LEVEL_UP_FONT16_DRAWER),
+                struct.pack(">I", learned_drawer),
             ),
             BytePatch(
                 "level_up_learned_magic_pointer",
