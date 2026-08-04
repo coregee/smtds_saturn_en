@@ -16,6 +16,7 @@ DESTINATION_LITERAL = 0x06057914
 TABLE_LITERAL = 0x06057918
 MAIN_FILE = 0x5458E
 MAIN_SIZE = 0xA0
+POINTER_TABLE_OFFSET = 2
 LABEL_YES_FILE = MAIN_FILE + MAIN_SIZE
 LABEL_NO_FILE = LABEL_YES_FILE + 8
 STORAGE_END_FILE = LABEL_NO_FILE + 8
@@ -67,7 +68,10 @@ def build_storage(asset: StaticTextAsset) -> FusionConfirmationStorage:
     label_yes = _block_data(asset, "label_yes")
     label_no = _block_data(asset, "label_no")
 
-    confirm_address = BASE + MAIN_FILE + 16
+    table_address = BASE + MAIN_FILE + POINTER_TABLE_OFFSET
+    if table_address % 4:
+        raise ValueError("fusion-confirmation pointer table is not longword-aligned")
+    confirm_address = table_address + 16
     duplicate_address = confirm_address + len(confirm)
     begin_address = duplicate_address + len(duplicate)
     pointers = (
@@ -76,7 +80,8 @@ def build_storage(asset: StaticTextAsset) -> FusionConfirmationStorage:
         duplicate_address,
         begin_address,
     )
-    main = bytearray(struct.pack(">4I", *pointers))
+    main = bytearray(POINTER_TABLE_OFFSET)
+    main.extend(struct.pack(">4I", *pointers))
     main.extend(confirm)
     main.extend(duplicate)
     main.extend(begin)
@@ -126,8 +131,8 @@ def pointer_lookup_patch() -> CodePatch:
             mov     r8, r0
             shll2   r0
             mov.l   TABLE_LITERAL, r1
+            add     #2, r1
             mov.l   @(r0,r1), r4
-            nop
         """,
         symbols={
             "DESTINATION_LITERAL": DESTINATION_LITERAL,

@@ -1,6 +1,16 @@
 # Devil Summoner Saturn Translation Tools
 
-This repo provides various translation tools for modifying a .bin/.cue dump of Shin Megami Tensei: Devil Summoner (Rev. B), with the intent of translating the game into English, and potentially other languages.
+**This is not a finished translation or patch. It is not yet intended for release.**
+
+This repo provides various translation tools for modifying a .bin/.cue dump of Shin Megami Tensei: Devil Summoner (Rev. B), with the intent of facilitating easy translation of the game into English, and potentially other languages.
+
+## Remaining Work
+
+* **The entire EN translation is provisional MTL and un-reviewed**
+* In-game textures still need to be translated
+* Substantial amounts of the game are untested
+* Miscellaneous polish; text alignment, adding hooks for already-EN text consumers
+* Further support in the font package to better facilitate defining and rendering other languages' glyphs
 
 ## Getting Started
 

@@ -16,6 +16,7 @@ from engine.script.status_ui.fusion_confirmation import (
     LOOKUP_SITE,
     MAIN_FILE,
     MAIN_SIZE,
+    POINTER_TABLE_OFFSET,
     STORAGE_END_FILE,
     build_storage,
     pointer_lookup_patch,
@@ -85,14 +86,24 @@ class FusionConfirmationRuntimeTests(unittest.TestCase):
 
     def test_pointer_table_reaches_all_four_full_confirmation_lines(self) -> None:
         storage = build_storage(self.runtime_asset)
+        table_address = BASE + MAIN_FILE + POINTER_TABLE_OFFSET
         expected_pointers = (
-            BASE + MAIN_FILE + 16,
+            table_address + 16,
             FUSION_CONFIRMATION_OVERFLOW_ADDRESS,
-            BASE + MAIN_FILE + 56,
-            BASE + MAIN_FILE + 116,
+            table_address + 56,
+            table_address + 116,
         )
+        self.assertEqual(table_address % 4, 0)
         self.assertEqual(storage.pointers, expected_pointers)
-        self.assertEqual(struct.unpack(">4I", storage.main[:16]), expected_pointers)
+        self.assertEqual(
+            struct.unpack(
+                ">4I",
+                storage.main[
+                    POINTER_TABLE_OFFSET : POINTER_TABLE_OFFSET + 16
+                ],
+            ),
+            expected_pointers,
+        )
         self.assertEqual(len(storage.main), MAIN_SIZE)
         self.assertEqual(len(storage.level_too_low), 68)
         self.assertEqual(
@@ -110,7 +121,7 @@ class FusionConfirmationRuntimeTests(unittest.TestCase):
         self.assertEqual(len(patch.expected), 22)
         self.assertEqual(
             patch.replacement,
-            bytes.fromhex("d21c2f26e200e700e602e51460834008d119041e0009"),
+            bytes.fromhex("d21c2f26e200e700e602e51460834008d1197102041e"),
         )
 
     def test_fusion_menu_cave_stops_before_the_reserved_overflow(self) -> None:
