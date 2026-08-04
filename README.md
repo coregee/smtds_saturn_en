@@ -4,6 +4,12 @@
 
 This repo provides various translation tools for modifying a .bin/.cue dump of Shin Megami Tensei: Devil Summoner (Rev. B), with the intent of facilitating easy translation of the game into English, and potentially other languages.
 
+## AI Disclosure
+
+The source code in this repository was developed with the assistance of AI tools. While the author believes that current AI products are inflicting tremendous social, economic, and environmental harms, they also believe that, when used and deployed responsibly, the underlying technology has genuine potential and value.
+
+If you're dissatisfied with this, the author encourages you to fork or otherwise create your own tools, translation, and/or documentation. The goal of an open-source project like this is to provide a high-quality translation for a game that has gone without one for over 30 years (and to leave behind resources the community can freely use to modify, or expand that translation into even more languages).
+
 ## Remaining Work
 
 * **The entire EN translation is provisional MTL and un-reviewed**
@@ -122,12 +128,6 @@ and patch application.
 - [FMV](docs/fmv.md): movie extraction, subtitles, and Saturn constraints.
 - [Engine](docs/engine.md): runtime patches and generated contracts.
 - [Disc](docs/disc.md): source validation, assembly, and xdelta.
-
-## AI Disclosure
-
-The source code in this repository was developed with the assistance of AI tools. While the author believes that current AI products are inflicting tremendous social, economic, and environmental harms, they also believe that, when used and deployed responsibly, the underlying technology has genuine potential and value.
-
-If you're dissatisfied with this, the author encourages you to fork or otherwise create your own tools, translation, and/or documentation. The goal of an open-source project like this is to provide a high-quality translation for a game that has gone without one for over 30 years (and to leave behind resources the community can freely use to modify, or expand that translation into even more languages).
 
 ## License
 

@@ -16,6 +16,8 @@ DESTINATION_LITERAL = 0x06057914
 TABLE_LITERAL = 0x06057918
 MAIN_FILE = 0x5458E
 MAIN_SIZE = 0xA0
+# The stock region begins at 0x...8e, but SH-2 mov.l requires a four-byte
+# aligned source.  Its two spare bytes are enough to align the pointer table.
 POINTER_TABLE_OFFSET = 2
 LABEL_YES_FILE = MAIN_FILE + MAIN_SIZE
 LABEL_NO_FILE = LABEL_YES_FILE + 8
@@ -121,7 +123,7 @@ def pointer_lookup_patch() -> CodePatch:
             mov.l   TABLE_LITERAL, r1
             add     r1, r4
         """,
-        """
+        f"""
             mov.l   DESTINATION_LITERAL, r2
             mov.l   r2, @-r15
             mov     #0, r2
@@ -131,7 +133,7 @@ def pointer_lookup_patch() -> CodePatch:
             mov     r8, r0
             shll2   r0
             mov.l   TABLE_LITERAL, r1
-            add     #2, r1
+            add     #{POINTER_TABLE_OFFSET}, r1
             mov.l   @(r0,r1), r4
         """,
         symbols={
