@@ -10,6 +10,8 @@ The source code in this repository was developed with the assistance of AI tools
 
 If you're dissatisfied with this, the author encourages you to fork or otherwise create your own tools, translation, and/or documentation. The goal of an open-source project like this is to provide a high-quality translation for a game that has gone without one for over 30 years (and to leave behind resources the community can freely use to modify, or expand that translation into even more languages).
 
+And if you believe that a technology like AI is fundamentally theft, no matter how it is deployed, [I have some recommended reading.](https://archive.org/details/in.ernet.dli.2015.124455)
+
 ## Remaining Work
 
 * **The entire EN translation is provisional MTL and un-reviewed**
