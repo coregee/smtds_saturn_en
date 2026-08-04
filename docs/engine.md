@@ -104,6 +104,12 @@ as a glyph width.
 - Generate equipment stock references with
   `python -B -m engine.script.equipment_ui.reference`; use `--check` only after
   the ignored source-derived listing exists.
+- Demon-name collation uses the shared `engine.script.demon_sort` policy:
+  case-insensitive ASCII alphanumerics, ignoring spaces, hyphens, and
+  apostrophes. `fusion_menu` orders all 319 EVENT records by sorted pool offset
+  with demon ID as the duplicate-name tie-break; `status_ui` supplies DA_3D's
+  Name mode with ranks for its stock ID 1..255 domain. Race, LV, HP, MP, ATK,
+  and DEF modes and the compatibility bytes in `DVLNAME.DAT` remain unchanged.
 - The confirmed fusion-status chain is `0x06041f8c` -> `0x060414d0` ->
   `0x0602f272` (`DA52.EVC`) -> `0x0605751c`. It is separate from NORMCOM status.
 

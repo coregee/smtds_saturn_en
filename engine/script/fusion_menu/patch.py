@@ -13,6 +13,7 @@ from engine.script.fusion_menu.data import (
     build_font8_code_map as build_font8_code_map,
 )
 from engine.script.fusion_menu.data import (
+    encode_demon_sort_pool,
     encode_pool,
     load_codes,
     load_names,
@@ -56,7 +57,7 @@ from engine.script.fusion_menu.model import (
 )
 from engine.script.generated_asset import RuntimeUiContract, load_runtime_ui
 from engine.script.name.fields import FIELD_BY_KIND, NameField
-from engine.script.patching import BytePatch, CodePatch, PatchGroup
+from engine.script.patching import BytePatch, CodePatch, DigestPatch, PatchGroup
 from engine.script.sh2 import assemble_checked
 from engine.script.text_render.font8_blitter import build_surface_pixel_blitter
 from engine.script.text_render.font8_metrics import load_metrics
@@ -67,6 +68,17 @@ from engine.script.text_render.font_metrics import (
 )
 
 CAVE_ADDRESS = 0x06021800
+NAME_SORT_REGION = 0x060451E0
+NAME_SORT_REGION_SIZE = 0x200
+NAME_SORT_REGION_SHA256 = (
+    "125d4a15c59aabee09003bba2ee91e81e5d5fde47c9c5a5d98f3133ad86b1638"
+)
+NAME_SORT_POINTER_SITE = 0x060457BC
+STOCK_NAME_SORT = 0x060452AC
+ROSTER_COUNT = 0x060768A8
+ROSTER_IDS_PTR = 0x06068E78
+ROSTER_AUX0_PTR = 0x06068E7C
+ROSTER_AUX1_PTR = 0x06068E80
 ACTOR_LIST_POINTER_SITE = 0x06041488
 DEMON_LIST_POINTER_SITE = 0x06041498
 PREVIEW_RACE_POINTER_SITE = 0x060419DC
@@ -154,6 +166,27 @@ def build_drawers(
     return bytes(blob), blob.labels
 
 
+def build_name_sort(demon_offsets_address: int) -> bytes:
+    source = (ASM_ROOT / "name_sort.s").read_text(encoding="utf-8")
+    blob = assemble_checked(
+        source,
+        NAME_SORT_REGION,
+        {
+            "DVL_OFFSETS": demon_offsets_address,
+            "ROSTER_COUNT": ROSTER_COUNT,
+            "ROSTER_IDS_PTR": ROSTER_IDS_PTR,
+            "ROSTER_AUX0_PTR": ROSTER_AUX0_PTR,
+            "ROSTER_AUX1_PTR": ROSTER_AUX1_PTR,
+        },
+        context="fusion English demon-name sort",
+    )
+    if len(blob) > NAME_SORT_REGION_SIZE:
+        raise ValueError(
+            "fusion English demon-name sort exceeds the stock helper/sorter region"
+        )
+    return bytes(blob).ljust(NAME_SORT_REGION_SIZE, b"\0")
+
+
 def build_patch(
     contract: RuntimeUiContract | None = None,
     context: EngineBuildContext = DEFAULT_CONTEXT,
@@ -223,7 +256,7 @@ def build_patch(
     chart_race_widths = bytes(width for _race, width in chart_races_and_widths)
     race_offsets, race_pool = encode_pool(FUSION_RACE_LABELS, codes)
     table_race_offsets, table_race_pool = encode_pool(races, codes)
-    demon_offsets, demon_pool = encode_pool(demon_names, codes)
+    demon_offsets, demon_pool = encode_demon_sort_pool(demon_names, codes)
     character_offsets, character_pool = encode_pool(character_names, codes)
 
     payload = bytearray(font12_widths)
@@ -310,6 +343,7 @@ def build_patch(
         raise ValueError(
             "fusion menu cave overlaps the reserved fusion-confirmation tail"
         )
+    name_sort = build_name_sort(demon_offsets_address)
 
     guide_patches = ()
     if guide_lines is not None:
@@ -375,6 +409,18 @@ def build_patch(
         patches=(
             BytePatch(
                 "fusion_menu_cave", CAVE_ADDRESS, bytes(len(payload)), bytes(payload)
+            ),
+            DigestPatch(
+                "fusion_english_name_sort",
+                NAME_SORT_REGION,
+                NAME_SORT_REGION_SHA256,
+                name_sort,
+            ),
+            BytePatch(
+                "fusion_name_sort_pointer",
+                NAME_SORT_POINTER_SITE,
+                struct.pack(">I", STOCK_NAME_SORT),
+                struct.pack(">I", NAME_SORT_REGION),
             ),
             BytePatch(
                 "fusion_actor_list_name_pointer",

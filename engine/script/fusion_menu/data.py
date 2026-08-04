@@ -6,6 +6,7 @@ import struct
 from pathlib import Path
 
 from engine.script.context import DEFAULT_CONTEXT
+from engine.script.demon_sort import encode_sorted_pool
 from engine.script.fusion_menu.model import (
     GUIDE_FIRST_MESSAGE,
     GUIDE_GLYPH_LIMIT,
@@ -79,6 +80,14 @@ def encode_pool(names: tuple[str, ...], codes: dict[str, int]) -> tuple[bytes, b
     if len(pool) > 0xFFFF:
         raise ValueError("fusion name pool exceeds 16-bit offsets")
     return struct.pack(f">{len(offsets)}H", *offsets), bytes(pool)
+
+
+def encode_demon_sort_pool(
+    names: tuple[str, ...],
+    codes: dict[str, int],
+) -> tuple[bytes, bytes]:
+    """Pack demon names so their u16 offsets are English collation ranks."""
+    return encode_sorted_pool(names, codes)
 
 
 def build_font8_code_map(

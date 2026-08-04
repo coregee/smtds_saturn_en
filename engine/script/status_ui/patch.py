@@ -5,11 +5,18 @@ import struct
 from pathlib import Path
 
 from engine.script.context import EngineBuildContext
+from engine.script.demon_sort import dense_rank_table
 from engine.script.event.model import FUSION_CONFIRMATION_OVERFLOW_ADDRESS
 from engine.script.event.packed_layout import next_runtime_address
 from engine.script.fixed_text_fields.generated import load_runtime_fields
 from engine.script.generated_asset import load_runtime_ui
-from engine.script.patching import BinaryTarget, BytePatch, DigestPatch, PatchGroup
+from engine.script.patching import (
+    BinaryTarget,
+    BytePatch,
+    CodePatch,
+    DigestPatch,
+    PatchGroup,
+)
 from engine.script.static_text import load_static_asset
 from engine.script.status_ui.assets import (
     direct_color_assets,
@@ -19,7 +26,7 @@ from engine.script.status_ui.assets import (
     status_atlas_tile,
     status_mask,
 )
-from engine.script.status_ui.data import derived_rows, status_labels
+from engine.script.status_ui.data import derived_rows, load_status_terms, status_labels
 from engine.script.status_ui.fusion_confirmation import (
     LABEL_NO_FILE,
     LABEL_YES_FILE,
@@ -46,6 +53,10 @@ from engine.script.status_ui.model import (
     DA3D_GENERIC_ATTACK_FILE,
     DA3D_LOYALTY_LABEL_FILE,
     DA3D_NAME_RACE_DRAWER_PTR,
+    DA3D_NAME_SORT_COMPARE_SITE,
+    DA3D_NAME_SORT_COUNT,
+    DA3D_NAME_SORT_RANK_TABLE,
+    DA3D_NAME_SORT_RANK_TABLE_SHA256,
     DA3D_NODE_BITMAP_FILE,
     DA3D_ROW_BITMAP_FILE,
     DA3D_SHA256,
@@ -596,6 +607,8 @@ def build_da3d_patch() -> PatchGroup:
         affinity_drawer,
         table_drawer,
     ) = build_da3d_status_runtime(DA3D_STATUS_BLOCK)
+    _races, _affinities, demon_names = load_status_terms("DA_3D name sort")
+    name_ranks = dense_rank_table(demon_names, count=DA3D_NAME_SORT_COUNT)
     return PatchGroup(
         "status_ui",
         DA3D_TARGET,
@@ -644,6 +657,60 @@ def build_da3d_patch() -> PatchGroup:
                 DA3D_TABLE_HIGHLIGHT_DRAWER_PTR,
                 struct.pack(">I", DA3D_TABLE_FONT8_DRAWER),
                 struct.pack(">I", table_drawer),
+            ),
+            CodePatch(
+                "demon_analyzer_english_name_compare",
+                DA3D_NAME_SORT_COMPARE_SITE,
+                """
+                    mov.w   @(r0,r3), r1
+                    mov     #8, r8
+                    extu.w  r1, r1
+                    add     #-1, r1
+                    mul.l   r8, r1
+                    add     r6, r2
+                    mov.l   0x0602ee14, r0
+                    sts     macl, r1
+                    add     r1, r0
+                    mov.l   r0, @(4,r15)
+                    mov     r2, r0
+                    mov.w   @(r0,r3), r1
+                    mov.l   0x0602ee14, r4
+                    extu.w  r1, r1
+                    add     #-1, r1
+                    mul.l   r8, r1
+                    mov     #0, r7
+                    mov     r2, r9
+                    sts     macl, r1
+                    add     r1, r4
+                """,
+                """
+                    mov     r3, r4
+                    mov.w   @(r0,r4), r1
+                    extu.w  r1, r1
+                    add     #-1, r1
+                    mov     r1, r0
+                    mov.l   0x0602ee18, r7
+                    mov.b   @(r0,r7), r3
+                    extu.b  r3, r3
+                    mov     r6, r2
+                    add     r6, r2
+                    mov     r2, r9
+                    mov     r2, r0
+                    mov.w   @(r0,r4), r1
+                    extu.w  r1, r1
+                    add     #-1, r1
+                    mov     r1, r0
+                    mov.b   @(r0,r7), r1
+                    extu.b  r1, r1
+                    bra     0x0602ed76
+                    nop
+                """,
+            ),
+            DigestPatch(
+                "demon_analyzer_english_name_ranks",
+                DA3D_NAME_SORT_RANK_TABLE,
+                DA3D_NAME_SORT_RANK_TABLE_SHA256,
+                name_ranks,
             ),
             digest_patch(
                 DA3D_TARGET,
