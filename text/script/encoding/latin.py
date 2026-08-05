@@ -25,8 +25,6 @@ class LatinGlyph:
 @dataclass(frozen=True)
 class LatinEncoding:
     font: str
-    width_table_storage_glyph: int | None
-    width_table_code_limit: int
     glyphs: tuple[LatinGlyph, ...]
 
     @cached_property
@@ -205,8 +203,6 @@ def load_latin_encoding(path: Path = DEFAULT_METRICS_PATH) -> LatinEncoding:
 
     encoding = LatinEncoding(
         font=data["font"],
-        width_table_storage_glyph=storage_glyph,
-        width_table_code_limit=code_limit,
         glyphs=glyphs,
     )
     required = set(" 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")

@@ -18,7 +18,6 @@ def sha256(data: bytes) -> str:
 class RuntimeUiContract:
     path: Path
     sections: dict[str, object]
-    required_capabilities: tuple[str, ...]
 
     def section(self, name: str):
         try:
@@ -76,4 +75,4 @@ def load_runtime_ui(context: EngineBuildContext) -> RuntimeUiContract:
             raise ValueError(f"{path}: stale runtime UI section {name!r}")
     if not all(isinstance(name, str) and name for name in requirements):
         raise ValueError(f"{path}: invalid runtime UI capability requirement")
-    return RuntimeUiContract(path, sections, tuple(requirements))
+    return RuntimeUiContract(path, sections)

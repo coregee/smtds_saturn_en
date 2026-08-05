@@ -27,7 +27,6 @@ from font.script.util.font_codec import (
 class Replacement:
     glyph_index: int
     character: str
-    category: str
 
 
 @dataclass
@@ -55,7 +54,7 @@ def collect_replacements(
                         f"glyph {glyph_index} is mapped by more than one category"
                     )
                 used_indices.add(glyph_index)
-                replacements.append(Replacement(glyph_index, character, category))
+                replacements.append(Replacement(glyph_index, character))
 
     if not replacements:
         raise ValueError("no replacement categories are enabled")

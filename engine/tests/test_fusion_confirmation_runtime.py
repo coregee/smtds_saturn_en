@@ -98,9 +98,7 @@ class FusionConfirmationRuntimeTests(unittest.TestCase):
         self.assertEqual(
             struct.unpack(
                 ">4I",
-                storage.main[
-                    POINTER_TABLE_OFFSET : POINTER_TABLE_OFFSET + 16
-                ],
+                storage.main[POINTER_TABLE_OFFSET : POINTER_TABLE_OFFSET + 16],
             ),
             expected_pointers,
         )

@@ -24,7 +24,6 @@ class TwoGlyphPacing:
     update_entry: int
     blitter_entry: int
     tail_entry: int
-    visible_count: int
 
 
 def build_two_glyph_pacing(
@@ -73,7 +72,6 @@ def build_two_glyph_pacing(
         update_entry=code.labels["two_glyph_update"],
         blitter_entry=code.labels["two_glyph_blit"],
         tail_entry=code.labels["two_glyph_tail"],
-        visible_count=visible_count,
     )
 
 

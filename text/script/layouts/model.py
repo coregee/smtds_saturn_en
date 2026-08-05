@@ -6,7 +6,6 @@ from typing import Mapping
 class WidthUnit(Enum):
     NONE = "none"
     PIXELS = "pixels"
-    CELLS = "cells"
 
 
 @dataclass(frozen=True)

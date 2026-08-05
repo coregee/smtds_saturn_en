@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import os
 import secrets
@@ -16,7 +15,7 @@ from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
-from urllib.parse import parse_qs, unquote, urlsplit
+from urllib.parse import parse_qs, urlsplit
 
 from project_paths import FONT_GENERATED_ROOT, FONT_ROOT, TEXT_CORPUS_ROOT
 from text.editor.capacity import analyze_capacity
@@ -38,6 +37,20 @@ FONT12_METRICS_PATH = FONT_GENERATED_ROOT / "font12_metrics.json"
 FONT8_METRICS_PATH = FONT_GENERATED_ROOT / "font8_metrics.json"
 MAX_REQUEST_BYTES = 1024 * 1024
 TRANSLATION_STATUSES = ("untranslated", "translated", "reviewed", "excluded")
+CLIENT_ENTRY_FIELDS = (
+    "file",
+    "pointer",
+    "tr",
+    "reviewed",
+    "excluded",
+    "status",
+    "source",
+    "source_language",
+    "metadata",
+    "ordinal",
+    "id",
+    "label",
+)
 
 
 def translation_status(*, tr: str, reviewed: bool, excluded: bool) -> str:
@@ -254,12 +267,16 @@ def discover_translation_entries(
         entry["ordinal"] = ordinal
         entry["id"] = f"{file}::{json.dumps(entry['pointer'], separators=(',', ':'))}"
         entry["label"] = _entry_label(entry)
+        source_terms = (
+            (entry["jp"],)
+            if entry["source"] == entry["jp"]
+            else (entry["jp"], entry["source"])
+        )
         entry["_search"] = " ".join(
             (
                 file,
                 entry["label"],
-                entry["jp"],
-                entry["source"],
+                *source_terms,
                 entry["tr"],
                 json.dumps(entry["metadata"], ensure_ascii=False),
             )
@@ -327,7 +344,7 @@ def update_translation_entry(
     new_reviewed: bool,
     expected_excluded: bool,
     new_excluded: bool,
-) -> tuple[str, bool, bool]:
+) -> tuple[bool, bool]:
     """Atomically update one target string and its workflow flags."""
 
     if (
@@ -397,11 +414,7 @@ def update_translation_entry(
         raise ValueError("updated JSON did not retain the requested record")
 
     if updated == source:
-        return (
-            hashlib.sha256(source.encode("utf-8")).hexdigest(),
-            effective_reviewed,
-            new_excluded,
-        )
+        return effective_reviewed, new_excluded
 
     mode = stat.S_IMODE(path.stat().st_mode)
     temporary_path: Path | None = None
@@ -425,11 +438,7 @@ def update_translation_entry(
         if temporary_path is not None and temporary_path.exists():
             temporary_path.unlink()
 
-    return (
-        hashlib.sha256(updated.encode("utf-8")).hexdigest(),
-        effective_reviewed,
-        new_excluded,
-    )
+    return effective_reviewed, new_excluded
 
 
 class CorpusIndex:
@@ -753,9 +762,7 @@ class CorpusIndex:
             raise ValueError(f"status filter must be one of: {allowed}")
         visible = []
         for entry in matches[offset : offset + limit]:
-            visible.append(
-                {key: value for key, value in entry.items() if not key.startswith("_")}
-            )
+            visible.append({key: entry[key] for key in CLIENT_ENTRY_FIELDS})
         return visible, len(matches), counts
 
     def entry(
@@ -861,7 +868,7 @@ class EditorRequestHandler(BaseHTTPRequestHandler):
             # Without this lock, two tabs can both pass their optimistic checks
             # before either replacement reaches disk.
             with self.server.save_lock:
-                digest, reviewed, excluded = update_translation_entry(
+                reviewed, excluded = update_translation_entry(
                     path,
                     pointer,
                     expected_tr=expected_tr,
@@ -876,8 +883,6 @@ class EditorRequestHandler(BaseHTTPRequestHandler):
                 self.server.index.refresh()
             self._json(
                 {
-                    "saved": True,
-                    "sha256": digest,
                     "tr": new_tr,
                     "reviewed": reviewed,
                     "excluded": excluded,
@@ -943,7 +948,6 @@ class EditorRequestHandler(BaseHTTPRequestHandler):
                 proposed_tr=translation,
                 refresh_index=False,
             )
-            preview["capacity"] = None
             self._json(preview)
         except (KeyError, StopIteration, ValueError) as error:
             self._json({"error": str(error)}, HTTPStatus.BAD_REQUEST)
@@ -981,7 +985,7 @@ class EditorRequestHandler(BaseHTTPRequestHandler):
 
     def _entries(self, query: dict[str, list[str]]) -> None:
         try:
-            file = unquote(query.get("file", [""])[0])
+            file = query.get("file", [""])[0]
             search = query.get("q", [""])[0]
             status_filter = query.get("status", ["all"])[0]
             offset = max(0, int(query.get("offset", ["0"])[0]))
@@ -997,8 +1001,6 @@ class EditorRequestHandler(BaseHTTPRequestHandler):
                 {
                     "entries": entries,
                     "total": total,
-                    "offset": offset,
-                    "limit": limit,
                     "status_counts": counts,
                 }
             )

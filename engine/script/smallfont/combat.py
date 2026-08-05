@@ -22,8 +22,6 @@ from engine.script.text_render.font_metrics import font16_metrics, font16_width_
 
 ASM_ROOT = Path(__file__).with_name("asm")
 
-COMBAT_EXTRACTED_PATH = DEFAULT_CONTEXT.extracted_root / "COMBAT.BIN"
-
 COMBAT_RACE_SOURCE = 0x06070DD0
 
 COMBAT_RACE_SOURCE_STRIDE = 7

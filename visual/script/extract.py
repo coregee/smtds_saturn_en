@@ -17,6 +17,7 @@ from visual.script.util.images import (
     asset_from_row,
     build_manifest,
     decode_image,
+    load_manifest,
     manifest_text,
 )
 
@@ -98,7 +99,7 @@ def main() -> None:
         if args.check:
             if not MANIFEST_PATH.is_file():
                 raise ValueError(f"visual image manifest is missing: {MANIFEST_PATH}")
-            if MANIFEST_PATH.read_text(encoding="utf-8") != expected_text:
+            if manifest_text(load_manifest()) != expected_text:
                 raise ValueError(f"{MANIFEST_PATH}: manifest is stale")
             print(
                 f"visual images: verified {preserved:,} working-set PNGs / "

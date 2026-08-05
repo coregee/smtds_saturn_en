@@ -81,28 +81,6 @@ SPECS = (
 )
 
 
-def name_scale_positions(
-    source_width: int,
-    count: int,
-    target_width: int = SAVE_NAME_WIDTH,
-) -> tuple[int, ...]:
-    """Reference SAVE's overflow-only joined-name X mapping."""
-    if not target_width < source_width <= 0xFF:
-        raise ValueError(f"invalid SAVE scaled source width {source_width}")
-    if not 0 <= count <= 0xFF:
-        raise ValueError(f"invalid SAVE scale-map length {count}")
-    screen_x = 0
-    error = 0
-    positions = []
-    for _source_x in range(count):
-        positions.append(screen_x)
-        error += target_width
-        if error >= source_width:
-            error -= source_width
-            screen_x += 1
-    return tuple(positions)
-
-
 def build_source(spec: NameStripSpec) -> str:
     source = spec.source_path.read_text(encoding="utf-8")
     codes = byte_to_atlas_table()

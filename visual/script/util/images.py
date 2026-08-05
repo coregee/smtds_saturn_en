@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import hashlib
-import io
 import json
 import struct
 from collections import Counter
@@ -13,11 +12,8 @@ from pathlib import Path
 
 from PIL import Image
 
-from project_paths import VISUAL_ROOT
+from project_paths import EXTRACTED_ROOT, VISUAL_ROOT
 
-SATURN_ROOT = VISUAL_ROOT.parent
-EXTRACTED_ROOT = SATURN_ROOT / "rom" / "extracted"
-BUILD_ROOT = SATURN_ROOT / "rom" / "build"
 IMAGE_ROOT = VISUAL_ROOT / "image"
 GENERATED_ROOT = VISUAL_ROOT / "generated"
 MANIFEST_PATH = GENERATED_ROOT / "images.json"
@@ -26,6 +22,8 @@ RGB555_ENCODING = "saturn_rgb555_be"
 RGB888_ENCODING = "saturn_rgb888_be"
 INDEXED8_RGB555_ENCODING = "saturn_indexed8_rgb555_be"
 MANIFEST_ENCODING = "saturn_images"
+LEGACY_MANIFEST_VERSION = 3
+MANIFEST_VERSION = 4
 TEXTURE_LOAD_BASE = 0x00250000
 TITLE_LOAD_BASE = 0x06020000
 TITLE_DESCRIPTOR_SCAN_START = 0x16000
@@ -69,7 +67,6 @@ class ImageAsset:
             "width": self.width,
             "height": self.height,
             "pixel_sha256": pixel_sha256(image),
-            "png_sha256": hashlib.sha256(png_bytes(image)).hexdigest(),
         }
 
 
@@ -404,12 +401,6 @@ def pixel_sha256(image: Image.Image) -> str:
     digest.update(struct.pack(">II", rgb.width, rgb.height))
     digest.update(rgb.tobytes())
     return digest.hexdigest()
-
-
-def png_bytes(image: Image.Image) -> bytes:
-    output = io.BytesIO()
-    image.save(output, format="PNG")
-    return output.getvalue()
 
 
 def decode_rgb555(source_data: bytes, asset: ImageAsset) -> Image.Image:
@@ -1116,7 +1107,7 @@ def build_manifest() -> dict[str, object]:
             sources[asset.source] = {"size": len(data), "sha256": file_sha256(data)}
         rows.append(asset.manifest_row(source_data[asset.source]))
     return {
-        "version": 3,
+        "version": MANIFEST_VERSION,
         "encoding": MANIFEST_ENCODING,
         "selection": (
             "proven standalone RGB555 rasters, TITLE.BIN declared title graphics "
@@ -1134,7 +1125,10 @@ def manifest_text(document: dict[str, object]) -> str:
 
 def load_manifest(path: Path = MANIFEST_PATH) -> dict[str, object]:
     document = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(document, dict) or document.get("version") != 3:
+    if not isinstance(document, dict) or document.get("version") not in {
+        LEGACY_MANIFEST_VERSION,
+        MANIFEST_VERSION,
+    }:
         raise ValueError(f"{path}: unsupported visual image manifest")
     if document.get("encoding") != MANIFEST_ENCODING:
         raise ValueError(f"{path}: unsupported visual encoding")
@@ -1142,6 +1136,15 @@ def load_manifest(path: Path = MANIFEST_PATH) -> dict[str, object]:
         document.get("assets"), list
     ):
         raise ValueError(f"{path}: malformed visual image manifest")
+    if document["version"] == LEGACY_MANIFEST_VERSION:
+        assets = []
+        for row in document["assets"]:
+            if not isinstance(row, dict) or "png_sha256" not in row:
+                raise ValueError(f"{path}: malformed legacy visual image manifest")
+            normalized = dict(row)
+            del normalized["png_sha256"]
+            assets.append(normalized)
+        document = {**document, "version": MANIFEST_VERSION, "assets": assets}
     return document
 
 
@@ -1160,7 +1163,6 @@ def asset_from_row(row: object) -> ImageAsset:
         "width",
         "height",
         "pixel_sha256",
-        "png_sha256",
     }
     if set(row) != required or row["encoding"] not in {
         RGB555_ENCODING,

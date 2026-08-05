@@ -151,7 +151,6 @@ def repack_name_descriptions(
     name_fallbacks = 0
     longest_name = 0
     longest_name_pixels = 0
-    packed_name_bytes = 0
     for record, row in enumerate(rows):
         record_base = record * source.record_size
         translation = row["name"]["tr"].strip()
@@ -188,7 +187,6 @@ def repack_name_descriptions(
         output[name_start : name_start + source.name_bytes] = fallback
         struct.pack_into(">H", output, record_base + source.pointer_offset, offset)
         longest_name = max(longest_name, len(encoded))
-        packed_name_bytes += len(payload)
 
     for record in range(source.record_count):
         base = record * source.record_size
@@ -215,6 +213,5 @@ def repack_name_descriptions(
         longest_name_pixels=longest_name_pixels,
         longest_description_words=longest_description,
         description_capacity_words=capacity,
-        packed_name_bytes=packed_name_bytes,
         free_bytes=sum(stop - start for start, stop in ranges),
     )

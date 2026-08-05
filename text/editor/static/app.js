@@ -49,7 +49,6 @@ const elements = {
   recordLabel: document.querySelector("#record-label"),
   previous: document.querySelector("#previous"),
   next: document.querySelector("#next"),
-  previewTitle: document.querySelector("#preview-title"),
   variantControl: document.querySelector("#variant-control"),
   previewVariant: document.querySelector("#preview-variant"),
   previewProfile: document.querySelector("#preview-profile"),

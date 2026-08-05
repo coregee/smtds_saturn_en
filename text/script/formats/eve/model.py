@@ -11,10 +11,6 @@ class EveMessage:
     file_offset: int
     words: tuple[int, ...]
 
-    @property
-    def size_bytes(self) -> int:
-        return (self.end_word - self.start_word) * 2
-
 
 @dataclass(frozen=True)
 class EvePage:

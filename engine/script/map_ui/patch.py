@@ -59,7 +59,6 @@ PROMPT_SCRATCH_ADDR = BASE + PROMPT_SCRATCH_FILE
 ORIGINAL_FIXED_DRAW = 0x06039534
 FIXED_DRAW_POINTER = 0x19518
 FONT16_POINTER = 0x0603DAF0
-WARD_ROW = 0x0603E684
 CITY_ROW = 0x0603E6C0
 
 NAME_FW_CITY = FIELD_BY_KIND[NameField.CITY].runtime_address
@@ -153,24 +152,6 @@ def encode_ascii(text: str) -> tuple[int, ...]:
         except KeyError as error:
             raise ValueError(f"unsupported MAP2D character {character!r}") from error
     return tuple(output)
-
-
-def name_scale_positions(source_width: int, count: int) -> tuple[int, ...]:
-    """Reference the MAP2D runtime's overflow-only 64px X mapping."""
-    if not 65 <= source_width <= SCALE_MAP_BYTES:
-        raise ValueError(f"invalid MAP2D scaled source width {source_width}")
-    if not 0 <= count <= SCALE_MAP_BYTES:
-        raise ValueError(f"invalid MAP2D scale-map length {count}")
-    screen_x = 0
-    error = 0
-    positions = []
-    for _source_x in range(count):
-        positions.append(screen_x)
-        error += 64
-        if error >= source_width:
-            error -= source_width
-            screen_x += 1
-    return tuple(positions)
 
 
 def render_bitmap_strip(font16: bytes, text: str, cell_count: int) -> bytes:

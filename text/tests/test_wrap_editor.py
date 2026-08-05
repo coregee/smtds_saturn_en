@@ -1,4 +1,3 @@
-import hashlib
 import http.client
 import json
 import tempfile
@@ -64,6 +63,7 @@ class EditorDiscoveryTests(unittest.TestCase):
         self.assertNotIn("excluded", name["metadata"])
         self.assertEqual(description["source_language"], "jp")
         self.assertEqual(description["status"], "excluded")
+        self.assertEqual(description["_search"].count(description["jp"].casefold()), 1)
 
     def test_canonical_flags_are_required_booleans(self) -> None:
         invalid_records = (
@@ -131,7 +131,7 @@ class EditorSaveTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "example.json"
             write_exact(path, source)
-            digest, reviewed, excluded = update_translation_entry(
+            reviewed, excluded = update_translation_entry(
                 path,
                 [0],
                 expected_tr="Old",
@@ -147,14 +147,13 @@ class EditorSaveTests(unittest.TestCase):
         self.assertEqual(saved, expected)
         self.assertTrue(reviewed)
         self.assertTrue(excluded)
-        self.assertEqual(digest, hashlib.sha256(expected.encode("utf-8")).hexdigest())
 
     def test_review_and_exclusion_can_change_without_a_text_edit(self) -> None:
         source = '[{"jp":"JP","tr":"Target","reviewed":true,"excluded":true}]'
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "example.json"
             write_exact(path, source)
-            _digest, reviewed, excluded = update_translation_entry(
+            reviewed, excluded = update_translation_entry(
                 path,
                 [0],
                 expected_tr="Target",
@@ -295,6 +294,61 @@ class CorpusIndexTests(unittest.TestCase):
 
 
 class EditorHTTPTests(unittest.TestCase):
+    def test_entries_contract_decodes_file_once_and_omits_internal_fields(self) -> None:
+        row = {
+            "jp": "JP",
+            "tr": "Target",
+            "reviewed": False,
+            "excluded": False,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_exact(root / "percent%2Fsource.json", json.dumps([row]))
+            index = CorpusIndex(root)
+            index.refresh(force=True)
+            server = EditorHTTPServer(("127.0.0.1", 0), index)
+            thread = threading.Thread(target=server.serve_forever, daemon=True)
+            thread.start()
+            try:
+                connection = http.client.HTTPConnection(
+                    "127.0.0.1", server.server_address[1], timeout=3
+                )
+                connection.request(
+                    "GET",
+                    "/api/entries?file=percent%252Fsource.json&offset=0&limit=100",
+                )
+                response = connection.getresponse()
+                result = json.loads(response.read())
+                connection.close()
+            finally:
+                server.shutdown()
+                server.server_close()
+                thread.join(timeout=3)
+
+        self.assertEqual(response.status, 200)
+        self.assertEqual(set(result), {"entries", "total", "status_counts"})
+        self.assertEqual(result["total"], 1)
+        self.assertEqual(len(result["entries"]), 1)
+        entry = result["entries"][0]
+        self.assertEqual(entry["file"], "percent%2Fsource.json")
+        self.assertEqual(
+            set(entry),
+            {
+                "file",
+                "pointer",
+                "tr",
+                "reviewed",
+                "excluded",
+                "status",
+                "source",
+                "source_language",
+                "metadata",
+                "ordinal",
+                "id",
+                "label",
+            },
+        )
+
     def test_patch_contract_forces_review_and_keeps_exclusion_explicit(self) -> None:
         row = {
             "jp": "JP",
@@ -346,6 +400,10 @@ class EditorHTTPTests(unittest.TestCase):
             indexed = index.entry(file="example.json", pointer=[0])
 
         self.assertEqual(response.status, 200)
+        self.assertEqual(
+            set(result),
+            {"tr", "reviewed", "excluded", "status"},
+        )
         self.assertTrue(result["reviewed"])
         self.assertTrue(result["excluded"])
         self.assertEqual(result["status"], "excluded")
@@ -409,7 +467,7 @@ class EditorHTTPTests(unittest.TestCase):
                 thread.join(timeout=3)
 
         self.assertEqual(preview_status, 200)
-        self.assertIsNone(preview["capacity"])
+        self.assertNotIn("capacity", preview)
         self.assertTrue(preview["variants"])
         self.assertEqual(capacity_status, 200)
         self.assertEqual(measured, capacity_result)

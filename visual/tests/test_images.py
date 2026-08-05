@@ -15,6 +15,9 @@ from visual.script.translation_images import (
 from visual.script.util.images import (
     EXTRACTED_ROOT,
     INDEXED8_RGB555_ENCODING,
+    LEGACY_MANIFEST_VERSION,
+    MANIFEST_ENCODING,
+    MANIFEST_VERSION,
     RGB555_ENCODING,
     RGB888_ENCODING,
     SAVELOAD_IMAGE_RECORDS,
@@ -27,6 +30,7 @@ from visual.script.util.images import (
     TITLE_PRESS_START_GLYPHS,
     TITLE_START_BUTTON_GLYPHS,
     ImageAsset,
+    asset_from_row,
     decode_image,
     decode_indexed8,
     decode_rgb555,
@@ -36,6 +40,7 @@ from visual.script.util.images import (
     encode_indexed8,
     encode_rgb555,
     encode_rgb888,
+    load_manifest,
     pixel_sha256,
     saveload_image_records,
     validate_saveload_image_records,
@@ -356,6 +361,57 @@ class ImageCodecTests(unittest.TestCase):
             )
 
 
+class ManifestTests(unittest.TestCase):
+    def test_asset_row_uses_only_normalized_pixel_hash(self) -> None:
+        asset = ImageAsset("test.bin", "test.png", 0, 2, 1)
+        row = asset.manifest_row(bytes.fromhex("001F 03E0"))
+
+        self.assertEqual(
+            set(row),
+            {
+                "source",
+                "image",
+                "encoding",
+                "layout",
+                "offset",
+                "palette_offset",
+                "palette_entries",
+                "length",
+                "width",
+                "height",
+                "pixel_sha256",
+            },
+        )
+        self.assertEqual(asset_from_row(row), asset)
+
+    def test_legacy_manifest_is_normalized_and_unknown_version_is_rejected(
+        self,
+    ) -> None:
+        asset = ImageAsset("test.bin", "test.png", 0, 2, 1)
+        row = asset.manifest_row(bytes.fromhex("001F 03E0"))
+        row["png_sha256"] = "legacy-unused-hash"
+        document = {
+            "version": LEGACY_MANIFEST_VERSION,
+            "encoding": MANIFEST_ENCODING,
+            "sources": {},
+            "assets": [row],
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "images.json"
+            path.write_text(json.dumps(document), encoding="utf-8")
+            loaded = load_manifest(path)
+            self.assertEqual(loaded["version"], MANIFEST_VERSION)
+            self.assertNotIn("png_sha256", loaded["assets"][0])
+            self.assertEqual(asset_from_row(loaded["assets"][0]), asset)
+
+            document["version"] = MANIFEST_VERSION + 1
+            path.write_text(json.dumps(document), encoding="utf-8")
+            with self.assertRaisesRegex(
+                ValueError, "unsupported visual image manifest"
+            ):
+                load_manifest(path)
+
+
 class TranslationImageTests(unittest.TestCase):
     @staticmethod
     def manifest_row(
@@ -376,7 +432,6 @@ class TranslationImageTests(unittest.TestCase):
             "width": 2,
             "height": 1,
             "pixel_sha256": pixel_hash,
-            "png_sha256": "unused",
         }
 
     def test_one_flat_image_can_repack_identical_source_targets(self) -> None:

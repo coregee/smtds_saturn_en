@@ -55,10 +55,6 @@ class EntryBuild:
     def cave_address(self) -> int:
         return NAME_BASE + self.cave_offset
 
-    @property
-    def end_offset(self) -> int:
-        return self.cave_offset + len(self.cave)
-
 
 def symbols(layout: NameDataLayout) -> dict[str, int]:
     block = layout.block

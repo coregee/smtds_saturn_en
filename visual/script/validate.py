@@ -5,10 +5,8 @@ import hashlib
 import json
 from pathlib import Path
 
-from project_paths import VISUAL_ROOT
+from project_paths import EXTRACTED_ROOT, VISUAL_ROOT
 
-SATURN_ROOT = VISUAL_ROOT.parent
-EXTRACTED_ROOT = SATURN_ROOT / "rom" / "extracted"
 CATALOG_PATH = VISUAL_ROOT / "catalog.json"
 
 

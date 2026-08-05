@@ -15,5 +15,4 @@ class NameDescriptionResult:
     longest_name_pixels: int
     longest_description_words: int
     description_capacity_words: int
-    packed_name_bytes: int
     free_bytes: int

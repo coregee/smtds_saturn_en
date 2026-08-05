@@ -10,6 +10,7 @@ from typing import cast
 
 from PIL import Image
 
+from project_paths import BUILD_ROOT
 from visual.script.translation_images import (
     ORIGINAL_IMAGE_ROOT,
     TRANSLATED_IMAGE_ROOT,
@@ -18,7 +19,6 @@ from visual.script.translation_images import (
     split_translation_image,
 )
 from visual.script.util.images import (
-    BUILD_ROOT,
     EXTRACTED_ROOT,
     INDEXED8_RGB555_ENCODING,
     MANIFEST_PATH,
