@@ -5,7 +5,10 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
-from project_paths import EXTRACTED_ROOT, TEXT_GENERATED_ROOT
+from engine.script.context import DEFAULT_CONTEXT
+
+EXTRACTED_ROOT = DEFAULT_CONTEXT.extracted_root
+TEXT_GENERATED_ROOT = DEFAULT_CONTEXT.text_generated_root
 
 
 @dataclass(frozen=True)

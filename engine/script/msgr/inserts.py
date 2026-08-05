@@ -2,16 +2,16 @@
 
 import struct
 
-from engine.script.context import EngineBuildContext
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
 from engine.script.generated_asset import load_runtime_ui
 from engine.script.msgr.model import MSGR_TARGET
 from engine.script.patching import BytePatch, PatchGroup
-from engine.script.status_ui.data import load_font16_metrics
 from engine.script.status_ui.runtime import (
     build_dialogue_character_insert,
     build_dialogue_inserts,
 )
 from engine.script.text_render.font8_metrics import font8_metrics
+from engine.script.text_render.font_metrics import font16_metrics
 
 RUNTIME_ADDRESS = 0x06065000
 RUNTIME_LIMIT = 0x06066500
@@ -64,10 +64,20 @@ def build_runtime(
     demon_names: tuple[str, ...],
     character_names: tuple[str, ...],
     races: tuple[str, ...],
+    codes8: dict[str, int] | None = None,
+    codes16: dict[str, int] | None = None,
+    engine_context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> tuple[bytes, dict[str, int]]:
     """Pack the source-bound tables and shared VM adapters into one cave."""
-    _widths8, codes8 = font8_metrics()
-    _widths16, codes16 = load_font16_metrics()
+    if codes8 is None:
+        _widths8, codes8 = font8_metrics()
+    if codes16 is None:
+        metrics = font16_metrics()
+        codes16 = {}
+        for row in metrics["glyphs"]:
+            for text in (row["text"], *row.get("aliases", ())):
+                if len(text) == 1:
+                    codes16.setdefault(text, row["code"])
     names = (*demon_names, *character_names)
     data = bytearray(2 * len(names))
     name_pool_address = RUNTIME_ADDRESS + len(data)
@@ -128,6 +138,7 @@ def build_runtime(
         stock_race_insert=RACE_INSERT_STOCK,
         insert_buffer=None,
         context="MSGR dialogue inserts",
+        engine_context=engine_context,
     )
     data.extend(code)
     data.extend(bytes((-(RUNTIME_ADDRESS + len(data))) % 4))
@@ -158,7 +169,21 @@ def build_patch_groups(context: EngineBuildContext) -> PatchGroup:
         contract.section("character_names"), 6, "character"
     )
     races = _race_terms(contract.section("status_tables"))
-    runtime, labels = build_runtime(demon_names, character_names, races)
+    _widths8, codes8 = font8_metrics(context.font_generated_root / "font8_metrics.json")
+    metrics16 = font16_metrics(context.font_generated_root / "font16_metrics.json")
+    codes16 = {}
+    for row in metrics16["glyphs"]:
+        for text in (row["text"], *row.get("aliases", ())):
+            if len(text) == 1:
+                codes16.setdefault(text, row["code"])
+    runtime, labels = build_runtime(
+        demon_names,
+        character_names,
+        races,
+        codes8,
+        codes16,
+        context,
+    )
     return PatchGroup(
         "msgr_text",
         MSGR_TARGET,

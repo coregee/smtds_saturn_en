@@ -15,6 +15,7 @@ from engine.script.generated_asset import load_runtime_ui
 from engine.script.name.fields import FIELD_BY_KIND, NameField
 from engine.script.name.model import encode_full_name
 from engine.script.patching import BytePatch, CodePatch, PatchGroup
+from engine.script.text_render.font8_metrics import font8_metrics
 from engine.script.text_render.font16_vwf import align_up, build_surface_blitter_cave
 from engine.script.text_render.font_metrics import (
     font16_metrics,
@@ -263,6 +264,7 @@ def build_insert_data(
     metrics: dict,
     name_rows: list[dict],
     race_rows: list[dict],
+    font8_data: tuple[bytes, dict[str, int]] | None = None,
 ) -> tuple[bytes, dict[str, int]]:
     """Build full English dynamic-name pools and their dispatcher adapters."""
     names, races = load_insert_terms(name_rows, race_rows)
@@ -319,9 +321,7 @@ def build_insert_data(
 
     # ITEMNAME's complete strings are FONT8 bytes.  Convert every mapped
     # single-character atlas cell to the corresponding FONT16 dialogue code.
-    from engine.script.text_render.font8_metrics import font8_metrics
-
-    _, codes8_by_text = font8_metrics()
+    _, codes8_by_text = font8_data or font8_metrics()
     for text, code8 in codes8_by_text.items():
         if len(text) != 1 or text not in codes16:
             continue
@@ -391,6 +391,7 @@ def build_dialogue_vwf(
     code_limit: int,
     width_offset: int,
     layout: CombatVwfLayout,
+    name_codes: dict[str, int] | None = None,
 ) -> tuple[bytes, dict[str, int], int, int]:
     """Build the shared VM blitter and widened COMBAT dialogue consumer."""
     if not FONT16_GLYPH_COUNT <= STATIC_HINT_BASE < STATIC_HINT_LIMIT:
@@ -457,7 +458,7 @@ def build_dialogue_vwf(
     payload.extend(bytes(code_address - cave_address - len(payload)))
     payload.extend(code)
     stock_kyouji_address = cave_address + len(payload)
-    stock_kyouji = encode_full_name("Kyouji", "Kuzunoha")
+    stock_kyouji = encode_full_name("Kyouji", "Kuzunoha", name_codes)
     payload.extend(struct.pack(f">{len(stock_kyouji)}H", *stock_kyouji))
     if cave_address + len(payload) > MEASURE_MODE:
         raise ValueError("COMBAT dialogue code overlaps its width-hint state")
@@ -543,6 +544,7 @@ def build_patch_groups(context: EngineBuildContext) -> PatchGroup:
         code_limit=layout.code_limit,
         width_offset=layout.width_offset,
         layout=layout,
+        name_codes=font16_codes(layout.metrics),
     )
     if CAVE_ADDRESS + len(dialogue_vwf) > CAVE_LIMIT:
         raise ValueError("COMBAT dialogue VWF exceeds the verified free window")
@@ -552,6 +554,7 @@ def build_patch_groups(context: EngineBuildContext) -> PatchGroup:
         layout.metrics,
         name_rows,
         race_rows,
+        font8_metrics(context.font_generated_root / "font8_metrics.json"),
     )
     if INSERT_DATA_ADDRESS + len(insert_data) > INSERT_DATA_LIMIT:
         raise ValueError("COMBAT English insert data exceeds its reserved window")

@@ -5,15 +5,14 @@ import struct
 from functools import cache
 from pathlib import Path
 
-from engine.script.context import EngineBuildContext
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
 from engine.script.name.fields import FIELD_BY_KIND, NameField
 from engine.script.patching import BinaryTarget, DigestPatch, PatchGroup
-from engine.script.static_text import load_static_asset
+from engine.script.static_text import StaticTextAsset, load_static_asset
 from engine.script.text_render.precomposed import (
     PrecomposedStrip,
     precompose_font16_strip,
 )
-from project_paths import BUILD_ROOT, EXTRACTED_ROOT, FONT_GENERATED_ROOT
 from tools.sh2asm import assemble
 
 BASE = 0x06020000
@@ -73,25 +72,27 @@ FIXED_TARGETS = (
     (5, "location_hibarigaoka"),
 )
 
-METRICS_PATH = FONT_GENERATED_ROOT / "font16_metrics.json"
-FONT16_PATH = BUILD_ROOT / "FONT16.FON"
+METRICS_PATH = DEFAULT_CONTEXT.font_generated_root / "font16_metrics.json"
+FONT16_PATH = DEFAULT_CONTEXT.build_root / "FONT16.FON"
 ASM_ROOT = Path(__file__).with_name("asm")
 
 
-def load_font_metrics() -> tuple[bytes, dict[str, int]]:
-    document = json.loads(METRICS_PATH.read_text(encoding="utf-8"))
+def load_font_metrics(
+    metrics_path: Path = METRICS_PATH,
+) -> tuple[bytes, dict[str, int]]:
+    document = json.loads(metrics_path.read_text(encoding="utf-8"))
     if document.get("version") != 2 or not document.get("complete"):
-        raise ValueError(f"{METRICS_PATH}: incomplete FONT16 metrics")
+        raise ValueError(f"{metrics_path}: incomplete FONT16 metrics")
     code_limit = document["width_table"]["code_limit"]
     if not isinstance(code_limit, int) or not 1 <= code_limit <= 0x7FFF:
-        raise ValueError(f"{METRICS_PATH}: invalid width-table limit")
+        raise ValueError(f"{metrics_path}: invalid width-table limit")
     widths = bytearray(code_limit)
     codes = {}
     for row in document["glyphs"]:
         code = row["code"]
         advance = row["advance"]
         if not 0 <= code < code_limit or not 1 <= advance <= 0xFF:
-            raise ValueError(f"{METRICS_PATH}: invalid glyph metrics")
+            raise ValueError(f"{metrics_path}: invalid glyph metrics")
         widths[code] = advance
         for text in (row["text"], *row.get("aliases", ())):
             if len(text) == 1:
@@ -100,37 +101,51 @@ def load_font_metrics() -> tuple[bytes, dict[str, int]]:
 
 
 @cache
-def static_asset():
+def static_asset(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> StaticTextAsset:
     return load_static_asset(
         Path("static") / "MAP2D.BIN.static.json",
         TARGET.path,
+        context.text_generated_root,
+        context.extracted_root,
     )
 
 
 @cache
-def runtime_metrics() -> tuple[bytes, dict[str, int]]:
-    return load_font_metrics()
+def runtime_metrics(
+    metrics_path: Path = METRICS_PATH,
+) -> tuple[bytes, dict[str, int]]:
+    return load_font_metrics(metrics_path)
 
 
-def asset_block(name: str, storage: str) -> bytes:
+def asset_block(
+    name: str,
+    storage: str,
+    asset: StaticTextAsset | None = None,
+) -> bytes:
+    asset = asset or static_asset()
     try:
-        block = static_asset().blocks[name]
+        block = asset.blocks[name]
     except KeyError as error:
         raise ValueError(f"MAP2D.BIN static text is missing block {name!r}") from error
     if block.storage != storage:
         raise ValueError(f"MAP2D.BIN block {name!r} is not {storage}")
-    return static_asset().data[block.offset : block.offset + block.size]
+    return asset.data[block.offset : block.offset + block.size]
 
 
-def asset_ascii(name: str) -> str:
-    data = asset_block(name, "bytes")
+def asset_ascii(name: str, asset: StaticTextAsset | None = None) -> str:
+    data = asset_block(name, "bytes", asset)
     if not data.endswith(b"\0") or b"\0" in data[:-1]:
         raise ValueError(f"MAP2D.BIN block {name!r} is not one ASCII string")
     return data[:-1].decode("ascii")
 
 
-def asset_codes(name: str) -> tuple[int, ...]:
-    data = asset_block(name, "u16be")
+def asset_codes(
+    name: str,
+    asset: StaticTextAsset | None = None,
+) -> tuple[int, ...]:
+    data = asset_block(name, "u16be", asset)
     return struct.unpack(f">{len(data) // 2}H", data)
 
 
@@ -143,33 +158,45 @@ def require(data: bytes | bytearray, offset: int, expected: bytes, name: str) ->
         )
 
 
-def encode_ascii(text: str) -> tuple[int, ...]:
+def encode_ascii(
+    text: str,
+    metrics_path: Path = METRICS_PATH,
+) -> tuple[int, ...]:
     output = []
     for character in text:
         try:
-            output.append(runtime_metrics()[1][character])
+            output.append(runtime_metrics(metrics_path)[1][character])
         except KeyError as error:
             raise ValueError(f"unsupported MAP2D character {character!r}") from error
     return tuple(output)
 
 
-def render_bitmap_strip(font16: bytes, text: str, cell_count: int) -> bytes:
+def render_bitmap_strip(
+    font16: bytes,
+    text: str,
+    cell_count: int,
+    metrics_path: Path = METRICS_PATH,
+) -> bytes:
     """Compose proportional FONT16 glyphs into fixed 16x16 bitmap cells."""
     return precompose_font16_strip(
         font16,
-        encode_ascii(text),
-        runtime_metrics()[0],
+        encode_ascii(text, metrics_path),
+        runtime_metrics(metrics_path)[0],
         cell_count,
         context=f"MAP2D text {text!r}",
     ).bitmap
 
 
-def build_choice_strips(font16: bytes) -> tuple[PrecomposedStrip, ...]:
+def build_choice_strips(
+    font16: bytes,
+    metrics_path: Path = METRICS_PATH,
+    asset: StaticTextAsset | None = None,
+) -> tuple[PrecomposedStrip, ...]:
     return tuple(
         precompose_font16_strip(
             font16,
-            asset_codes(name),
-            runtime_metrics()[0],
+            asset_codes(name, asset),
+            runtime_metrics(metrics_path)[0],
             cells,
             context=f"MAP2D {name}",
         )
@@ -177,9 +204,13 @@ def build_choice_strips(font16: bytes) -> tuple[PrecomposedStrip, ...]:
     )
 
 
-def build_fixed_bitmaps(font16: bytes) -> bytes:
+def build_fixed_bitmaps(
+    font16: bytes,
+    metrics_path: Path = METRICS_PATH,
+    asset: StaticTextAsset | None = None,
+) -> bytes:
     return b"".join(
-        render_bitmap_strip(font16, asset_ascii(name), 4)
+        render_bitmap_strip(font16, asset_ascii(name, asset), 4, metrics_path)
         for _target_index, name in FIXED_TARGETS
     )
 
@@ -208,7 +239,7 @@ def build_prompt_wrapper() -> bytes:
     return bytes(blob)
 
 
-def build_name_compositor() -> bytes:
+def build_name_compositor(metrics_path: Path = METRICS_PATH) -> bytes:
     fixed_cell_count = len(FIXED_TARGETS) * 4
     if FIXED_SCRATCH_CODE < CITY_SCRATCH_CODE + 4:
         raise ValueError("MAP2D fixed labels overlap the dynamic city scratch cells")
@@ -225,7 +256,7 @@ def build_name_compositor() -> bytes:
             "CITY_ROW_ADDR": CITY_ROW,
             "FONT_BASE": FONT16_BASE,
             "TERM": 0x8000,
-            "WIDTH_LIMIT": len(runtime_metrics()[0]),
+            "WIDTH_LIMIT": len(runtime_metrics(metrics_path)[0]),
             "NAME_WIDTH": 64,
             "SCALE_MAP": SCALE_MAP_ADDR,
             "FIXED_SRC": FIXED_BITMAP_ADDR,
@@ -238,31 +269,37 @@ def build_name_compositor() -> bytes:
     if code.labels["widths"] != CAVE_ADDR + len(code):
         raise ValueError("MAP2D name compositor width-table boundary drifted")
     payload = bytearray(code)
-    payload.extend(runtime_metrics()[0])
+    payload.extend(runtime_metrics(metrics_path)[0])
     payload.extend(bytes((-len(payload)) % 4))
     if CAVE_FILE + len(payload) > SCALE_MAP_FILE:
         raise ValueError("MAP2D name compositor overlaps its runtime scale map")
     return bytes(payload)
 
 
-def build_map(original: bytes) -> bytes:
+def build_map(
+    original: bytes,
+    font16_path: Path = FONT16_PATH,
+    metrics_path: Path = METRICS_PATH,
+    asset: StaticTextAsset | None = None,
+) -> bytes:
+    asset = asset or static_asset()
     if len(original) != 126600:
         raise ValueError("MAP2D.BIN has an unexpected size")
-    font16 = FONT16_PATH.read_bytes()
+    font16 = font16_path.read_bytes()
     if len(font16) < 1872 * 32:
-        raise ValueError(f"{FONT16_PATH}: FONT16 build is incomplete")
+        raise ValueError(f"{font16_path}: FONT16 build is incomplete")
     data = bytearray(original)
 
-    compositor = build_name_compositor()
+    compositor = build_name_compositor(metrics_path)
     require(data, CAVE_FILE, bytes(len(compositor)), "name-compositor cave")
     require(data, SCALE_MAP_FILE, bytes(SCALE_MAP_BYTES), "name scale-map scratch")
     data[CAVE_FILE : CAVE_FILE + len(compositor)] = compositor
 
-    fixed_bitmaps = build_fixed_bitmaps(font16)
+    fixed_bitmaps = build_fixed_bitmaps(font16, metrics_path, asset)
     require(data, FIXED_BITMAP_FILE, bytes(len(fixed_bitmaps)), "fixed-label bitmaps")
     data[FIXED_BITMAP_FILE : FIXED_BITMAP_FILE + len(fixed_bitmaps)] = fixed_bitmaps
 
-    yes_strip, no_strip = build_choice_strips(font16)
+    yes_strip, no_strip = build_choice_strips(font16, metrics_path, asset)
     for offset, strip, name in (
         (CHOICE_YES_BITMAP_FILE, yes_strip, "Yes choice bitmap"),
         (CHOICE_NO_BITMAP_FILE, no_strip, "No choice bitmap"),
@@ -283,8 +320,9 @@ def build_map(original: bytes) -> bytes:
     data[PROMPT_CAVE_FILE : PROMPT_CAVE_FILE + len(prompt_wrapper)] = prompt_wrapper
     prompt_bitmap = render_bitmap_strip(
         font16,
-        asset_ascii("talk_prompt"),
+        asset_ascii("talk_prompt", asset),
         PROMPT_CELLS,
+        metrics_path,
     )
     require(data, PROMPT_BITMAP_FILE, bytes(len(prompt_bitmap)), "prompt bitmap")
     require(data, PROMPT_SCRATCH_FILE, bytes(8), "prompt scratch")
@@ -348,15 +386,15 @@ def build_map(original: bytes) -> bytes:
         (CHOICE_YES_FIELD_FILE, "label_yes"),
         (CHOICE_NO_FIELD_FILE, "label_no"),
     ):
-        block = asset_block(name, "u16be")
+        block = asset_block(name, "u16be", asset)
         data[offset : offset + len(block)] = block
         require(data, offset + len(block), bytes.fromhex("8000"), f"{name} terminator")
 
     return bytes(data)
 
 
-def build_patch() -> PatchGroup:
-    source_path = EXTRACTED_ROOT / TARGET.path
+def build_patch(context: EngineBuildContext = DEFAULT_CONTEXT) -> PatchGroup:
+    source_path = context.extracted_root / TARGET.path
     return PatchGroup(
         "map_ui",
         TARGET,
@@ -365,11 +403,16 @@ def build_patch() -> PatchGroup:
                 name="map_overlay",
                 address=BASE,
                 expected_sha256=ORIGINAL_SHA256,
-                replacement=build_map(source_path.read_bytes()),
+                replacement=build_map(
+                    source_path.read_bytes(),
+                    context.build_root / "FONT16.FON",
+                    context.font_generated_root / "font16_metrics.json",
+                    static_asset(context),
+                ),
             ),
         ),
     )
 
 
-def build_patch_groups(_context: EngineBuildContext) -> PatchGroup:
-    return build_patch()
+def build_patch_groups(context: EngineBuildContext) -> PatchGroup:
+    return build_patch(context)

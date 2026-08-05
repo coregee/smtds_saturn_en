@@ -1,14 +1,17 @@
 """Assembly builders and cave composition for detailed status UI."""
 
-import json
 import struct
 from collections.abc import Sequence
 
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
+from engine.script.generated_asset import RuntimeUiContract
 from engine.script.sh2 import assemble_checked
 from engine.script.status_ui.data import (
     ambiguous_magname_fallbacks,
     da3d_compact_status_data,
     event_status_english_data,
+    load_character_names,
+    load_font8_metrics,
     load_font16_metrics,
     load_status_terms,
     status_english_data,
@@ -21,7 +24,6 @@ from engine.script.status_ui.model import (
     BASE,
     BUILD_ATLAS,
     BUILD_ATLAS_TILE,
-    CHARACTER_NAMES_PATH,
     CURRENT_NAME_PTR,
     CURRENT_PARTY_TYPE,
     DA3D_AFFINITY_SELECTOR,
@@ -72,7 +74,6 @@ from engine.script.status_ui.model import (
     FONT8_GLYPH_DRAWER,
     FONT16_BITMAP,
     FONT16_DRAWER,
-    FONT16_PATH,
     ITEM_ICON_DRAWER,
     LEVEL_UP_CHARACTER_SELECTOR,
     LEVEL_UP_FONT16_DRAWER,
@@ -99,7 +100,6 @@ from engine.script.status_ui.model import (
     STATUS_STOCK_MASKS,
 )
 from engine.script.text_render.font8_blitter import build_surface_pixel_blitter
-from engine.script.text_render.font8_metrics import font8_metrics
 from text.script.encoding.tokens import normalize_english
 
 LEVEL_UP_SKILL_NAME_MAX_BYTES = 32
@@ -261,11 +261,16 @@ def build_event_dialogue_inserts(
     name_offsets: int,
     name_pool: int,
     race_table: int,
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
 ) -> tuple[bytes, dict[str, int]]:
     """Stage translated character, demon, and race terms through EVENT's VM."""
-    _races, _affinities, demon_names = load_status_terms("EVENT dialogue inserts")
-    characters = json.loads(CHARACTER_NAMES_PATH.read_text(encoding="utf-8"))
-    character_names = [row["tr"] for row in characters]
+    _races, _affinities, demon_names = load_status_terms(
+        "EVENT dialogue inserts", runtime_ui, context
+    )
+    character_names = load_character_names(
+        "EVENT dialogue inserts", runtime_ui, context
+    )
     return build_dialogue_inserts(
         address,
         name_offsets,
@@ -285,6 +290,7 @@ def build_event_dialogue_inserts(
         stock_race_insert=EVENT_RACE_INSERT_STOCK,
         insert_buffer=None,
         context="EVENT dialogue inserts",
+        engine_context=context,
     )
 
 
@@ -308,14 +314,15 @@ def build_dialogue_inserts(
     stock_race_insert: int,
     insert_buffer: int | None,
     context: str,
+    engine_context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> tuple[bytes, dict[str, int]]:
     """Build the shared two-phase VM adapters for full generated terms."""
     if len(demon_names) != 319 or len(character_names) < 3:
         raise ValueError(f"{context} needs 319 demon and at least 3 character names")
     if any(not name or len(name) > 20 for name in (*demon_names, *character_names[:3])):
         raise ValueError(f"{context} name is empty or exceeds 20 glyphs")
-    _widths8, codes8 = font8_metrics()
-    _widths16, codes16 = load_font16_metrics()
+    _widths8, codes8 = load_font8_metrics(engine_context)
+    _widths16, codes16 = load_font16_metrics(engine_context)
 
     def expected_code(code: int) -> int | None:
         if code == codes8[" "]:
@@ -336,11 +343,13 @@ def build_dialogue_inserts(
         if source is None or target is None or expected_code(source) != target:
             raise ValueError(f"{context} mapper cannot convert {character!r}")
 
-    source = (ASM_ROOT / "event_dialogue_inserts.s").read_text(encoding="utf-8")
+    assembly_source = (ASM_ROOT / "event_dialogue_inserts.s").read_text(
+        encoding="utf-8"
+    )
 
     def assemble_at(buffer: int):
         return assemble_checked(
-            source,
+            assembly_source,
             address,
             {
                 "CURRENT_DEMON_IDS": current_demon_ids,
@@ -560,10 +569,13 @@ def _normalized_level_up_skill_names(names: Sequence[str]) -> tuple[str, ...]:
     return normalized
 
 
-def validate_level_up_skill_names(names: Sequence[str]) -> None:
+def validate_level_up_skill_names(
+    names: Sequence[str],
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> None:
     names = _normalized_level_up_skill_names(names)
-    widths8, codes8 = font8_metrics()
-    widths16, codes16 = load_font16_metrics()
+    widths8, codes8 = load_font8_metrics(context)
+    widths16, codes16 = load_font16_metrics(context)
     for index, name in enumerate(names):
         try:
             encoded = tuple(codes8[character] for character in name)
@@ -602,8 +614,9 @@ def validate_level_up_skill_names(names: Sequence[str]) -> None:
 def validate_level_up_packed_skill_names(
     packed: bytes,
     names: Sequence[str],
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> None:
-    validate_level_up_skill_names(names)
+    validate_level_up_skill_names(names, context)
     names = _normalized_level_up_skill_names(names)
     expected_size = MAGNAME_END - MAGNAME_BASE
     if len(packed) != expected_size:
@@ -613,7 +626,7 @@ def validate_level_up_packed_skill_names(
         )
     record_size = expected_size // len(names)
     pointer_offset = 4 + MAGNAME_POINTER_FROM_NAME
-    _widths, codes = font8_metrics()
+    _widths, codes = load_font8_metrics(context)
     for index, name in enumerate(names):
         pointer = struct.unpack_from(
             ">H", packed, index * record_size + pointer_offset
@@ -654,6 +667,7 @@ def build_level_up_name_runtime(
     learned_magic: tuple[int, ...],
     character_names: tuple[str, ...],
     magic_names: tuple[str, ...],
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> tuple[bytes, int, int, int, int]:
     if (
         not 1 <= len(learned_magic) <= LEVEL_UP_LEARNED_MAGIC_MAX_WORDS
@@ -663,10 +677,11 @@ def build_level_up_name_runtime(
         raise ValueError("invalid level-up learned-magic runtime text")
     if len(character_names) != 6 or any(not name for name in character_names):
         raise ValueError("level-up status needs six translated character names")
-    validate_level_up_skill_names(magic_names)
-    widths, codes = load_font16_metrics()
+    validate_level_up_skill_names(magic_names, context)
+    widths, codes = load_font16_metrics(context)
+    font16_path = context.build_root / "FONT16.FON"
     validate_shiftable_bitmap(
-        FONT16_PATH.read_bytes(),
+        font16_path.read_bytes(),
         widths,
         32,
         2,
@@ -762,7 +777,11 @@ def build_level_up_name_runtime(
     )
 
 
-def build_status_runtime(masks: bytes) -> tuple[bytes, int, int, int, int, int]:
+def build_status_runtime(
+    masks: bytes,
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
+) -> tuple[bytes, int, int, int, int, int]:
     (
         data,
         widths16,
@@ -771,7 +790,7 @@ def build_status_runtime(masks: bytes) -> tuple[bytes, int, int, int, int, int]:
         affinity_table,
         name_lookup,
         name_count,
-    ) = status_english_data()
+    ) = status_english_data(context, runtime_ui)
     data = bytearray(data)
     while (RUNTIME_DATA_FILE + len(data)) & 3:
         data.append(0)
@@ -820,6 +839,8 @@ def build_status_runtime(masks: bytes) -> tuple[bytes, int, int, int, int, int]:
 
 def build_event_status_runtime(
     runtime_cave: int,
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
 ) -> tuple[
     bytes,
     int,
@@ -833,7 +854,7 @@ def build_event_status_runtime(
     int,
     int,
     int,
-    int,
+    bytes,
     int,
     int,
 ]:
@@ -853,7 +874,7 @@ def build_event_status_runtime(
         talk_offsets,
         talk_pool,
         healing_all,
-    ) = event_status_english_data(runtime_cave)
+    ) = event_status_english_data(runtime_cave, context, runtime_ui)
     payload = bytearray(data)
 
     def append(builder, *args, **kwargs) -> int:
@@ -876,7 +897,7 @@ def build_event_status_runtime(
     status_skill = append(
         build_event_status_skill_dispatcher,
         skill_vwf,
-        ambiguous_magname_fallbacks(),
+        ambiguous_magname_fallbacks(context, runtime_ui),
     )
     name_race = append(
         build_name_race_dispatcher,
@@ -921,6 +942,8 @@ def build_event_status_runtime(
         name_offsets,
         name_pool,
         race_table,
+        context,
+        runtime_ui,
     )
     payload.extend(dialogue_blob)
     character_handler, _character_labels = build_dialogue_character_insert(
@@ -965,6 +988,8 @@ def build_event_status_runtime(
 
 def build_da3d_status_runtime(
     runtime_block: int,
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
 ) -> tuple[bytes, bytes, int, int, int, int, int, int]:
     """Build separate DA_3D table and detailed-status text consumers."""
     (
@@ -980,6 +1005,8 @@ def build_da3d_status_runtime(
         affinity_tokens,
     ) = da3d_compact_status_data(
         runtime_block,
+        context,
+        runtime_ui,
     )
     payload = bytearray(data)
 

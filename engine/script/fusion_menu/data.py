@@ -5,7 +5,6 @@ import re
 import struct
 from pathlib import Path
 
-from engine.script.context import DEFAULT_CONTEXT
 from engine.script.demon_sort import encode_sorted_pool
 from engine.script.fusion_menu.model import (
     GUIDE_FIRST_MESSAGE,
@@ -19,24 +18,16 @@ from engine.script.fusion_menu.model import (
     HELP_LAST_MESSAGE,
     HELP_LINE_WIDTH,
 )
-from engine.script.generated_asset import load_runtime_ui
 
 TERMINATOR = 0xFF
 GUIDE_GLYPH_TOKEN = re.compile(r"\{GLYPH:([0-9a-fA-F]{4})\}")
-
-
-def runtime_rows(name: str) -> list[dict]:
-    rows = load_runtime_ui(DEFAULT_CONTEXT).section(name)
-    if not isinstance(rows, list):
-        raise ValueError(f"runtime UI section {name!r} must be an array")
-    return rows
 
 
 def load_codes(metrics_path: Path) -> dict[str, int]:
     document = json.loads(metrics_path.read_text(encoding="utf-8"))
     if document.get("version") != 2 or not document.get("complete"):
         raise ValueError(f"{metrics_path}: incomplete FONT12 metrics")
-    codes = {}
+    codes: dict[str, int] = {}
     for glyph in document["glyphs"]:
         for text in (glyph["text"], *glyph.get("aliases", ())):
             if len(text) == 1:
@@ -53,8 +44,7 @@ def load_names(rows: list[dict], context: str) -> tuple[str, ...]:
     return names
 
 
-def load_races(rows: list[dict] | None = None) -> tuple[str, ...]:
-    rows = rows or runtime_rows("status_tables")
+def load_races(rows: list[dict]) -> tuple[str, ...]:
     races = tuple(row.get("tr", "").strip() for row in rows if row["table"] == "races")
     if len(races) != 43 or not all(races):
         raise ValueError("runtime UI contract: expected 43 translated races")
@@ -160,9 +150,8 @@ def load_optional_lines(
 
 
 def load_optional_guide_lines(
-    rows: list[dict] | None = None,
+    rows: list[dict],
 ) -> tuple[str, ...] | None:
-    rows = rows or runtime_rows("fusion_messages")
     return load_optional_lines(
         rows,
         GUIDE_FIRST_MESSAGE,
@@ -171,7 +160,7 @@ def load_optional_guide_lines(
     )
 
 
-def load_guide_lines(rows: list[dict] | None = None) -> tuple[str, ...]:
+def load_guide_lines(rows: list[dict]) -> tuple[str, ...]:
     lines = load_optional_guide_lines(rows)
     if lines is None:
         raise ValueError("runtime UI contract: Guide lines have no translations")
@@ -179,9 +168,8 @@ def load_guide_lines(rows: list[dict] | None = None) -> tuple[str, ...]:
 
 
 def load_optional_help_lines(
-    rows: list[dict] | None = None,
+    rows: list[dict],
 ) -> tuple[str, ...] | None:
-    rows = rows or runtime_rows("fusion_messages")
     return load_optional_lines(
         rows,
         HELP_FIRST_MESSAGE,
@@ -190,7 +178,7 @@ def load_optional_help_lines(
     )
 
 
-def load_help_lines(rows: list[dict] | None = None) -> tuple[str, ...]:
+def load_help_lines(rows: list[dict]) -> tuple[str, ...]:
     lines = load_optional_help_lines(rows)
     if lines is None:
         raise ValueError("runtime UI contract: Help lines have no translations")

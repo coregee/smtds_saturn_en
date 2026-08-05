@@ -4,10 +4,10 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
-from project_paths import ENGINE_ROOT, TEXT_GENERATED_ROOT
+from engine.script.generated_asset import RuntimeUiContract
+from project_paths import ENGINE_ROOT
 
 CONFIG_PATH = ENGINE_ROOT / "config" / "equipment_ui.json"
-TEXT_PATH = TEXT_GENERATED_ROOT / "runtime_ui" / "sections" / "equipment_ui.json"
 BASE_KEYS = ("strength", "intelligence", "magic", "vitality", "agility", "luck")
 DERIVED_KEYS = (
     "sword_attack",
@@ -138,9 +138,14 @@ def keyed_labels(document: object, keys: tuple[str, ...], context: str):
     return tuple(placed_label(document[key], f"{context}.{key}") for key in keys)
 
 
-def load_config(path: Path = CONFIG_PATH, text_path: Path = TEXT_PATH) -> EquipmentUI:
+def load_config(
+    contract: RuntimeUiContract,
+    path: Path = CONFIG_PATH,
+) -> EquipmentUI:
     document = json.loads(path.read_text(encoding="utf-8"))
-    text_document = json.loads(text_path.read_text(encoding="utf-8"))
+    text_document = contract.section("equipment_ui")
+    if not isinstance(text_document, dict):
+        raise ValueError(f"{contract.path}: invalid equipment_ui section")
     if not isinstance(document, dict) or set(document) != {
         "actions",
         "item_names",

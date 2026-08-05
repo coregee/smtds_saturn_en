@@ -1,14 +1,13 @@
 import argparse
 from collections import defaultdict
 
-from engine.script.context import DEFAULT_CONTEXT
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
 from engine.script.patching import (
     BinaryTarget,
     PatchGroup,
     apply_patch_groups,
 )
 from engine.script.registry import capability_names, select_patch_groups
-from project_paths import BUILD_ROOT, EXTRACTED_ROOT
 
 
 def group_by_target(
@@ -29,11 +28,15 @@ def group_by_target(
     return {target: tuple(target_groups) for target, target_groups in grouped.items()}
 
 
-def build_engine(groups: tuple[PatchGroup, ...], check: bool) -> None:
+def build_engine(
+    groups: tuple[PatchGroup, ...],
+    check: bool,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> None:
     stale = []
     for target, target_groups in group_by_target(groups).items():
-        source_path = EXTRACTED_ROOT / target.path
-        output_path = BUILD_ROOT / target.path
+        source_path = context.extracted_root / target.path
+        output_path = context.build_root / target.path
         patched = apply_patch_groups(source_path.read_bytes(), target_groups)
 
         if check:
@@ -91,7 +94,7 @@ def main() -> None:
         if not groups:
             print("No engine patches are registered yet; nothing to build.")
             return
-        build_engine(groups, arguments.check)
+        build_engine(groups, arguments.check, DEFAULT_CONTEXT)
     except (FileNotFoundError, OSError, ValueError) as error:
         parser.error(str(error))
 

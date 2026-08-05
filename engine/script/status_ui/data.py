@@ -1,18 +1,13 @@
 """Corpus and generated-table preparation for detailed status UI."""
 
-import json
 import re
 import struct
-from functools import cache
 
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
+from engine.script.equipment_ui.model import EquipmentLabels, load_config
+from engine.script.generated_asset import RuntimeUiContract, load_runtime_ui
 from engine.script.status_ui.model import (
     BASE,
-    BUILT_CHARNAME_PATH,
-    BUILT_DVLNAME_PATH,
-    CHARACTER_NAMES_PATH,
-    CHARNAME_PATH,
-    DEMON_NAMES_PATH,
-    DVLNAME_PATH,
     EVENT_BAR_DRINK_COUNT,
     EVENT_BAR_DRINK_SOURCE,
     EVENT_BAR_DRINK_STRIDE,
@@ -20,19 +15,11 @@ from engine.script.status_ui.model import (
     EVENT_BAR_TALK_ROLE_SOURCE,
     EVENT_BAR_TALK_ROLE_STRIDE,
     EVENT_HEALING_ALL_SOURCE_SITES,
-    EVENT_PATH,
-    FONT8_PATH,
-    FONT16_PATH,
-    HEALING_UI_PATH,
-    MAGIC_NAMES_PATH,
     RUNTIME_DATA_FILE,
-    SHOP_UI_PATH,
-    STATUS_TABLES_PATH,
 )
 from engine.script.status_ui.name_lookup import NAME_LOOKUP_STRIDE, build_name_lookup
 from engine.script.text_render.font8_metrics import font8_metrics
 from engine.script.text_render.font_metrics import font16_metrics
-from project_paths import BUILD_ROOT
 
 
 def validate_shiftable_bitmap(
@@ -67,12 +54,19 @@ def validate_shiftable_bitmap(
             )
 
 
-@cache
-def status_labels():
-    """Load the shared equipment/status terminology without building patches."""
-    from engine.script.equipment_ui.model import load_config
+def _runtime_ui(
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract | None,
+) -> RuntimeUiContract:
+    return load_runtime_ui(context) if runtime_ui is None else runtime_ui
 
-    return load_config().labels
+
+def status_labels(
+    runtime_ui: RuntimeUiContract | None = None,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> EquipmentLabels:
+    """Load shared equipment/status terminology from the validated contract."""
+    return load_config(_runtime_ui(context, runtime_ui)).labels
 
 
 def derived_rows(labels=None) -> tuple[tuple[str, ...], ...]:
@@ -83,14 +77,22 @@ def derived_rows(labels=None) -> tuple[tuple[str, ...], ...]:
     return rows
 
 
-def load_font16_metrics() -> tuple[bytes, dict[str, int]]:
-    document = font16_metrics()
+def load_font8_metrics(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> tuple[bytes, dict[str, int]]:
+    return font8_metrics(context.font_generated_root / "font8_metrics.json")
+
+
+def load_font16_metrics(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> tuple[bytes, dict[str, int]]:
+    document = font16_metrics(context.font_generated_root / "font16_metrics.json")
     table = document.get("width_table", {})
     limit = table.get("code_limit")
     if document.get("version") != 2 or not document.get("complete") or limit != 268:
         raise ValueError("incomplete FONT16 metrics for status UI")
     widths = bytearray(limit)
-    codes = {}
+    codes: dict[str, int] = {}
     for row in document.get("glyphs", ()):
         code, advance = row.get("code"), row.get("advance")
         if not isinstance(code, int) or not 0 <= code < limit:
@@ -105,20 +107,55 @@ def load_font16_metrics() -> tuple[bytes, dict[str, int]]:
 
 
 def load_status_terms(
-    context: str,
+    label: str,
+    runtime_ui: RuntimeUiContract | None = None,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> tuple[list[str], list[str], list[str]]:
-    tables = json.loads(STATUS_TABLES_PATH.read_text(encoding="utf-8"))
-    races = [row["tr"] for row in tables if row["table"] == "races"]
-    affinities = [row["tr"] for row in tables if row["table"] == "affinities"][:66]
-    names = json.loads(DEMON_NAMES_PATH.read_text(encoding="utf-8"))
-    demon_names = [row["tr"] for row in names]
-    if len(races) != 43 or len(affinities) != 66:
-        raise ValueError(f"{context} needs 43 races and 66 affinities")
-    if len(demon_names) != 319:
-        raise ValueError(f"{context} needs 319 demon names")
-    if any(not text for text in (*races, *affinities, *demon_names)):
-        raise ValueError(f"{context} terminology contains untranslated rows")
+    contract = _runtime_ui(context, runtime_ui)
+    tables = contract.section("status_tables")
+    names = contract.section("demon_names")
+    if not isinstance(tables, list) or not isinstance(names, list):
+        raise ValueError(f"{label} runtime terminology sections must be lists")
+    raw_races = [
+        row.get("tr")
+        for row in tables
+        if isinstance(row, dict) and row.get("table") == "races"
+    ]
+    raw_affinities = [
+        row.get("tr")
+        for row in tables
+        if isinstance(row, dict) and row.get("table") == "affinities"
+    ][:66]
+    raw_demon_names = [
+        row.get("tr") if isinstance(row, dict) else None for row in names
+    ]
+    if len(raw_races) != 43 or len(raw_affinities) != 66:
+        raise ValueError(f"{label} needs 43 races and 66 affinities")
+    if len(raw_demon_names) != 319:
+        raise ValueError(f"{label} needs 319 demon names")
+    if any(
+        not isinstance(text, str) or not text
+        for text in (*raw_races, *raw_affinities, *raw_demon_names)
+    ):
+        raise ValueError(f"{label} terminology contains untranslated rows")
+    races = [text for text in raw_races if isinstance(text, str)]
+    affinities = [text for text in raw_affinities if isinstance(text, str)]
+    demon_names = [text for text in raw_demon_names if isinstance(text, str)]
     return races, affinities, demon_names
+
+
+def load_character_names(
+    label: str,
+    runtime_ui: RuntimeUiContract,
+    context: EngineBuildContext,
+) -> list[str]:
+    rows = runtime_ui.section("character_names")
+    if not isinstance(rows, list) or len(rows) != 6:
+        raise ValueError(f"{label} needs six character-name rows")
+    raw_names = [row.get("tr") if isinstance(row, dict) else None for row in rows]
+    if any(not isinstance(name, str) or not name for name in raw_names):
+        raise ValueError(f"{label} character names contain untranslated rows")
+    return [name for name in raw_names if isinstance(name, str)]
 
 
 def add_name_hashes(
@@ -182,21 +219,27 @@ def populate_term_tables(
         )
 
 
-def status_english_data() -> tuple[bytes, int, int, int, int, int, int]:
+def status_english_data(
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
+) -> tuple[bytes, int, int, int, int, int, int]:
     """Build compact pointer tables and an interned FONT16 string pool."""
-    widths8, _ = font8_metrics()
-    widths16, codes16 = load_font16_metrics()
+    font16_path = context.build_root / "FONT16.FON"
+    font8_path = context.build_root / "FONT8.FON"
+    widths8, _ = load_font8_metrics(context)
+    widths16, codes16 = load_font16_metrics(context)
     validate_shiftable_bitmap(
-        FONT16_PATH.read_bytes(), widths16, 32, 2, "status FONT16"
+        font16_path.read_bytes(), widths16, 32, 2, "status FONT16"
     )
-    validate_shiftable_bitmap(FONT8_PATH.read_bytes(), widths8, 8, 1, "status FONT8")
-    races, affinities, demon_names = load_status_terms("status terminology")
-    original_names = DVLNAME_PATH.read_bytes()
-    built_names = BUILT_DVLNAME_PATH.read_bytes()
-    characters = json.loads(CHARACTER_NAMES_PATH.read_text(encoding="utf-8"))
-    character_names = [row["tr"] for row in characters]
-    original_characters = CHARNAME_PATH.read_bytes()
-    built_characters = BUILT_CHARNAME_PATH.read_bytes()
+    validate_shiftable_bitmap(font8_path.read_bytes(), widths8, 8, 1, "status FONT8")
+    races, affinities, demon_names = load_status_terms(
+        "status terminology", runtime_ui, context
+    )
+    original_names = (context.extracted_root / "DVLNAME.DAT").read_bytes()
+    built_names = (context.build_root / "DVLNAME.DAT").read_bytes()
+    character_names = load_character_names("status", runtime_ui, context)
+    original_characters = (context.extracted_root / "CHARNAME.DAT").read_bytes()
+    built_characters = (context.build_root / "CHARNAME.DAT").read_bytes()
     if any(len(asset) != 319 * 8 for asset in (original_names, built_names)):
         raise ValueError("status demon-name lookup needs 319 records")
     if len(character_names) != 6 or any(
@@ -225,7 +268,7 @@ def status_english_data() -> tuple[bytes, int, int, int, int, int, int]:
     race_offset, race_address = reserve(len(races) * 4)
     affinity_offset, affinity_address = reserve(len(affinities) * 8)
 
-    hashes = {}
+    hashes: dict[int, str] = {}
     add_name_hashes(
         hashes,
         (original_names, built_names),
@@ -314,18 +357,45 @@ def status_english_data() -> tuple[bytes, int, int, int, int, int, int]:
 
 def event_status_english_data(
     address: int,
-) -> tuple[bytes, int, int, int, int, int, int, int, int, int, int, int, int, int]:
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
+) -> tuple[
+    bytes,
+    int,
+    int,
+    int,
+    int,
+    int,
+    int,
+    int,
+    int,
+    int,
+    int,
+    int,
+    int,
+    int,
+    int,
+]:
     """Build compact fusion-status and bar/shop text tables."""
-    return _event_status_english_data(address, "fusion status")
+    return _event_status_english_data(
+        address,
+        "fusion status",
+        context,
+        runtime_ui,
+    )
 
 
 def da3d_compact_status_data(
     address: int,
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
 ) -> tuple[bytes, bytes, int, int, int, int, int, int, int, int]:
     """Pack DA_3D terms without retaining either stock fixed-width limit."""
-    widths8, codes8 = font8_metrics()
-    widths16, codes16 = load_font16_metrics()
-    races, affinities, demon_names = load_status_terms("DA_3D status")
+    widths8, codes8 = load_font8_metrics(context)
+    widths16, codes16 = load_font16_metrics(context)
+    races, affinities, demon_names = load_status_terms(
+        "DA_3D status", runtime_ui, context
+    )
     data = bytearray()
 
     def append(payload: bytes, alignment: int = 1) -> int:
@@ -380,7 +450,7 @@ def da3d_compact_status_data(
 
     # Demon names use five-bit title-case tokens packed three per word.  Token
     # 30 inverts the inferred case of the next letter; token 31 represents 8.
-    built_names = BUILT_DVLNAME_PATH.read_bytes()
+    built_names = (context.build_root / "DVLNAME.DAT").read_bytes()
     if len(built_names) != len(demon_names) * 8:
         raise ValueError("DA_3D status needs 319 built demon-name records")
     long_name_bits = bytearray((len(demon_names) + 7) // 8)
@@ -519,7 +589,9 @@ def da3d_compact_status_data(
 
 def _event_status_english_data(
     address: int,
-    context: str,
+    label: str,
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
 ) -> tuple[
     bytes,
     int,
@@ -538,36 +610,35 @@ def _event_status_english_data(
     int,
 ]:
     """Pack EVENT status names once for both FONT16 and bar FONT8 consumers."""
-    widths8, codes8 = font8_metrics()
-    widths16, codes16 = load_font16_metrics()
+    font16_path = context.build_root / "FONT16.FON"
+    font8_path = context.build_root / "FONT8.FON"
+    widths8, codes8 = load_font8_metrics(context)
+    widths16, codes16 = load_font16_metrics(context)
     validate_shiftable_bitmap(
-        FONT16_PATH.read_bytes(), widths16, 32, 2, f"{context} FONT16"
+        font16_path.read_bytes(), widths16, 32, 2, f"{label} FONT16"
     )
-    validate_shiftable_bitmap(
-        FONT8_PATH.read_bytes(), widths8, 8, 1, f"{context} FONT8"
-    )
-    races, affinities, demon_names = load_status_terms(context)
-    characters = json.loads(CHARACTER_NAMES_PATH.read_text(encoding="utf-8"))
-    character_names = [row["tr"] for row in characters]
-    built_names = BUILT_DVLNAME_PATH.read_bytes()
-    original_characters = CHARNAME_PATH.read_bytes()
-    built_characters = BUILT_CHARNAME_PATH.read_bytes()
+    validate_shiftable_bitmap(font8_path.read_bytes(), widths8, 8, 1, f"{label} FONT8")
+    races, affinities, demon_names = load_status_terms(label, runtime_ui, context)
+    character_names = load_character_names(label, runtime_ui, context)
+    built_names = (context.build_root / "DVLNAME.DAT").read_bytes()
+    original_characters = (context.extracted_root / "CHARNAME.DAT").read_bytes()
+    built_characters = (context.build_root / "CHARNAME.DAT").read_bytes()
     if len(built_names) != 319 * 8:
-        raise ValueError(f"{context} needs 319 built demon-name records")
+        raise ValueError(f"{label} needs 319 built demon-name records")
     if len(character_names) != 6 or any(
         len(asset) != 6 * 8 for asset in (original_characters, built_characters)
     ):
-        raise ValueError(f"{context} needs six built character-name records")
+        raise ValueError(f"{label} needs six built character-name records")
     if any(not name for name in character_names):
-        raise ValueError(f"{context} character names contain untranslated rows")
+        raise ValueError(f"{label} character names contain untranslated rows")
 
-    hashes = {}
-    add_name_hashes(hashes, (built_names,), demon_names, context)
+    hashes: dict[int, str] = {}
+    add_name_hashes(hashes, (built_names,), demon_names, label)
     add_name_hashes(
         hashes,
         (original_characters, built_characters),
         character_names,
-        context,
+        label,
     )
 
     data = bytearray()
@@ -610,14 +681,14 @@ def _event_status_english_data(
             target_code = codes16[character]
         except KeyError as error:
             raise ValueError(
-                f"{context} FONT16 name mapping is missing {error.args[0]!r}"
+                f"{label} FONT16 name mapping is missing {error.args[0]!r}"
             ) from error
         if not 63 <= source_code <= 229:
-            raise ValueError(f"{context} FONT8 name code {source_code} is out of range")
+            raise ValueError(f"{label} FONT8 name code {source_code} is out of range")
         font16_advances[source_code - 63] = widths16[target_code]
     compact_font16_advances = font16_advances[: 118 - 63] + font16_advances[205 - 63 :]
     if len(compact_font16_advances) != 80:
-        raise ValueError(f"{context} compact FONT16 table must be 80 bytes")
+        raise ValueError(f"{label} compact FONT16 table must be 80 bytes")
     compact16_offset, compact16_address = reserve(len(compact_font16_advances))
     data[compact16_offset : compact16_offset + len(compact_font16_advances)] = (
         compact_font16_advances
@@ -627,7 +698,7 @@ def _event_status_english_data(
     affinity_offset, affinity_address = reserve(len(affinities) * 8)
     lookup_offset, lookup_address = reserve(len(hashes) * NAME_LOOKUP_STRIDE)
 
-    font16_pool = {}
+    font16_pool: dict[str, int] = {}
 
     def encode_font16(text: str) -> int:
         cached = font16_pool.get(text)
@@ -635,7 +706,7 @@ def _event_status_english_data(
             return cached
         align(2)
         pointer = address + len(data)
-        glyphs = encode_font16_glyphs(text, codes16, widths16, context)
+        glyphs = encode_font16_glyphs(text, codes16, widths16, label)
         data.extend(struct.pack(f">{len(glyphs) + 1}H", *glyphs, 0x8000))
         font16_pool[text] = pointer
         return pointer
@@ -656,12 +727,12 @@ def _event_status_english_data(
         if name in name_offsets:
             continue
         name_offsets[name] = len(name_pool)
-        name_pool.extend(encode_font8(name, f"{context} name", 104))
+        name_pool.extend(encode_font8(name, f"{label} name", 104))
     record_offsets = bytearray()
     for name in (*demon_names, *character_names):
         offset = name_offsets[name]
         if offset > 0xFFFF:
-            raise ValueError(f"{context} name pool exceeds 16-bit offsets")
+            raise ValueError(f"{label} name pool exceeds 16-bit offsets")
         record_offsets.extend(struct.pack(">H", offset))
     record_offsets_address = address + len(data)
     data.extend(record_offsets)
@@ -673,11 +744,13 @@ def _event_status_english_data(
     )
     data[lookup_offset : lookup_offset + len(lookup)] = lookup
 
-    shop = json.loads(SHOP_UI_PATH.read_text(encoding="utf-8"))
+    shop = runtime_ui.section("shop_ui")
+    if not isinstance(shop, dict):
+        raise ValueError("shop UI runtime section must be an object")
     drinks = shop.get("drinks")
     if not isinstance(drinks, list) or len(drinks) != EVENT_BAR_DRINK_COUNT:
         raise ValueError(f"shop UI needs {EVENT_BAR_DRINK_COUNT} drink records")
-    event = EVENT_PATH.read_bytes()
+    event = (context.extracted_root / "EVENT.BIN").read_bytes()
     source_offset = EVENT_BAR_DRINK_SOURCE - BASE
     drink_pool = bytearray()
     drink_offsets = bytearray()
@@ -761,7 +834,9 @@ def _event_status_english_data(
     talk_pool_address = address + len(data)
     data.extend(talk_pool)
 
-    healing = json.loads(HEALING_UI_PATH.read_text(encoding="utf-8"))
+    healing = runtime_ui.section("healing_ui")
+    if not isinstance(healing, dict):
+        raise ValueError("healing UI runtime section must be an object")
     all_members = healing.get("all_members")
     if not isinstance(all_members, dict):
         raise ValueError("healing UI needs an all_members record")
@@ -803,14 +878,19 @@ def _event_status_english_data(
     )
 
 
-def ambiguous_magname_fallbacks() -> tuple[bytes, ...]:
+def ambiguous_magname_fallbacks(
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
+) -> tuple[bytes, ...]:
     """Return eight-byte fallbacks shared by different English skill names."""
-    names = json.loads(MAGIC_NAMES_PATH.read_text(encoding="utf-8"))
-    built = (BUILD_ROOT / "MAGNAME.DAT").read_bytes()
+    names = runtime_ui.section("magic_names")
+    built = (context.build_root / "MAGNAME.DAT").read_bytes()
+    if not isinstance(names, list):
+        raise ValueError("magic_names runtime section must be a list")
     if len(names) != 255 or len(built) != 255 * 96:
         raise ValueError("fusion status needs 255 MAGNAME records")
-    seen = {}
-    ambiguous = set()
+    seen: dict[bytes, str] = {}
+    ambiguous: set[bytes] = set()
     for index, row in enumerate(names):
         fallback = built[index * 96 + 4 : index * 96 + 12]
         name = row["name"]["tr"]

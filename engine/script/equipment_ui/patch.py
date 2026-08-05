@@ -4,11 +4,12 @@ import struct
 from dataclasses import dataclass
 from pathlib import Path
 
-from engine.script.context import EngineBuildContext
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
 from engine.script.equipment_ui.model import EquipmentUI, load_config
+from engine.script.generated_asset import load_runtime_ui
 from engine.script.patching import BinaryTarget, BytePatch, CodePatch, PatchGroup
 from engine.script.sh2 import render_template
-from engine.script.text_render.font8_metrics import font8_metrics, load_metrics
+from engine.script.text_render.font8_metrics import load_metrics
 from tools.sh2asm import assemble
 
 BASE = 0x06020000
@@ -127,7 +128,7 @@ def drawer_values(
         label_position(label, DERIVED_LABEL_ORIGINAL_X, row, f"derived_stats[{row}]")
         for row, label in enumerate(ui.derived)
     )
-    values = {
+    values: dict[str, object] = {
         "RECOMMEND_X_ADJUST": adjustment(
             "r10", ui.recommend.offset.x, "actions.recommend.offset_x"
         ),
@@ -265,10 +266,11 @@ def build_group(
     ui: EquipmentUI | None = None,
     widths: bytes | None = None,
     codes: dict[str, int] | None = None,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> PatchGroup:
-    ui = ui or load_config()
+    ui = ui or load_config(load_runtime_ui(context))
     if widths is None or codes is None:
-        widths, codes = font8_metrics()
+        widths, codes = load_metrics(context.font_generated_root / "font8_metrics.json")
     address = BASE + spec.cave_file
     drawer = build_drawer(address, spec, ui, widths, codes)
     if spec.target.name == "EVENT.BIN" and spec.cave_file + len(drawer) > 0x0900:
@@ -307,10 +309,6 @@ def build_group(
 
 
 def build_patch_groups(context: EngineBuildContext) -> tuple[PatchGroup, ...]:
-    ui = load_config(
-        text_path=(
-            context.text_generated_root / "runtime_ui/sections/equipment_ui.json"
-        )
-    )
+    ui = load_config(load_runtime_ui(context))
     widths, codes = load_metrics(context.font_generated_root / "font8_metrics.json")
-    return tuple(build_group(spec, ui, widths, codes) for spec in SPECS)
+    return tuple(build_group(spec, ui, widths, codes, context) for spec in SPECS)

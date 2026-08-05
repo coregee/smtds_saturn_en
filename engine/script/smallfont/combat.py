@@ -2,9 +2,8 @@
 
 import struct
 from pathlib import Path
+from typing import Any
 
-from engine.script.context import DEFAULT_CONTEXT
-from engine.script.generated_asset import load_runtime_ui
 from engine.script.name.fields import CODENAME_BYTES
 from engine.script.sh2 import assemble_checked
 from engine.script.smallfont.model import BASE
@@ -12,13 +11,12 @@ from engine.script.smallfont.renderer import (
     build_character_panel_data,
     build_packed_full_name_drawer,
 )
-from engine.script.text_render.font8_metrics import font8_metrics
 from engine.script.text_render.font16_vwf import (
     align_up,
     build_surface_blitter_cave,
     build_width_returning_surface_cave,
 )
-from engine.script.text_render.font_metrics import font16_metrics, font16_width_layout
+from engine.script.text_render.font_metrics import font16_width_layout
 
 ASM_ROOT = Path(__file__).with_name("asm")
 
@@ -178,10 +176,7 @@ COMBAT_ANALYSIS_CAVE_LIMIT = 0x06024000
 COMBAT_ANALYSIS_SKILL_POINTER_SITE = 0x0604FEF0
 
 
-def build_combat_race_pool(
-    codes: dict[str, int], rows: list[dict] | None = None
-) -> bytes:
-    rows = rows or runtime_rows("status_tables")
+def build_combat_race_pool(codes: dict[str, int], rows: list[dict]) -> bytes:
     races = tuple(
         row.get("tr", "").strip() for row in rows if row.get("table") == "races"
     )
@@ -307,13 +302,9 @@ def build_combat_name_data(
 
 
 def load_combat_affinity_strings(
-    rows: list[dict] | None = None,
-    combat_source: bytes | None = None,
+    rows: list[dict],
+    combat_source: bytes,
 ) -> tuple[str, ...]:
-    rows = rows or runtime_rows("combat_affinities")
-    combat_source = (
-        combat_source or (DEFAULT_CONTEXT.extracted_root / "COMBAT.BIN").read_bytes()
-    )
     if not isinstance(rows, list) or not rows:
         raise ValueError("runtime UI contract: expected combat affinities")
     translations = {}
@@ -401,9 +392,8 @@ def build_combat_affinity_data(
 
 
 def load_combat_result_labels(
-    rows: list[dict] | None = None,
+    rows: list[dict],
 ) -> dict[str, str]:
-    rows = rows or runtime_rows("combat_result_labels")
     if not isinstance(rows, list):
         raise ValueError("runtime UI contract: expected combat result labels")
     labels = {}
@@ -638,21 +628,14 @@ def build_combat_analysis_cave(
     widths_address: int,
     panel_fallback_address: int | None = None,
     *,
-    demon_rows: list[dict] | None = None,
-    affinity_rows: list[dict] | None = None,
-    result_label_rows: list[dict] | None = None,
-    character_rows: list[dict] | None = None,
-    combat_source: bytes | None = None,
-    font8_data: tuple[bytes, dict[str, int]] | None = None,
+    demon_rows: list[dict],
+    affinity_rows: list[dict],
+    result_label_rows: list[dict],
+    character_rows: list[dict],
+    combat_source: bytes,
+    font8_data: tuple[bytes, dict[str, int]],
 ) -> tuple[bytes, dict[str, int]]:
-    demon_rows = demon_rows or runtime_rows("demon_names")
-    affinity_rows = affinity_rows or runtime_rows("combat_affinities")
-    result_label_rows = result_label_rows or runtime_rows("combat_result_labels")
-    character_rows = character_rows or runtime_rows("character_names")
-    combat_source = (
-        combat_source or (DEFAULT_CONTEXT.extracted_root / "COMBAT.BIN").read_bytes()
-    )
-    widths8, codes8 = font8_data or font8_metrics()
+    widths8, codes8 = font8_data
     name_offsets, name_pool = build_combat_name_data(codes8, widths8, demon_rows)
     affinity_offsets, affinity_pool = build_combat_affinity_data(
         codes8,
@@ -813,9 +796,10 @@ def build_combat_analysis_cave(
 
 def build_combat_surface_renderer(
     address: int,
+    font16_document: dict[str, Any],
 ) -> tuple[bytes, dict[str, int]]:
     """Build one shared subpixel blitter and COMBAT's surface adapters."""
-    code_limit, width_offset = font16_width_layout(font16_metrics())
+    code_limit, width_offset = font16_width_layout(font16_document)
     blitter = build_surface_blitter_cave(
         address,
         font16_pointer=COMBAT_FONT16_POINTER,
@@ -891,10 +875,3 @@ def build_combat_battle_item_drawer(
             context="COMBAT battle ITEMNAME/MAGNAME small-font",
         )
     )
-
-
-def runtime_rows(name: str) -> list[dict]:
-    rows = load_runtime_ui(DEFAULT_CONTEXT).section(name)
-    if not isinstance(rows, list):
-        raise ValueError(f"runtime UI section {name!r} must be an array")
-    return rows

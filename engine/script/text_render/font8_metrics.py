@@ -4,7 +4,9 @@ import json
 from functools import cache
 from pathlib import Path
 
-from project_paths import FONT_GENERATED_ROOT
+from engine.script.context import DEFAULT_CONTEXT
+
+FONT_GENERATED_ROOT = DEFAULT_CONTEXT.font_generated_root
 
 METRICS_PATH = FONT_GENERATED_ROOT / "font8_metrics.json"
 
@@ -36,5 +38,8 @@ def load_metrics(
 
 
 @cache
-def font8_metrics() -> tuple[bytes, dict[str, int]]:
-    return load_metrics()
+def font8_metrics(
+    path: Path = METRICS_PATH,
+) -> tuple[bytes, dict[str, int]]:
+    """Load and cache FONT8 metrics from an explicit generated path."""
+    return load_metrics(path)

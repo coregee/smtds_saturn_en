@@ -4,7 +4,10 @@ import hashlib
 import json
 from pathlib import Path
 
-from project_paths import BUILD_ROOT, TEXT_GENERATED_ROOT
+from engine.script.context import DEFAULT_CONTEXT
+
+BUILD_ROOT = DEFAULT_CONTEXT.build_root
+TEXT_GENERATED_ROOT = DEFAULT_CONTEXT.text_generated_root
 
 PACKED_TOKEN_BASE = 8
 PACKED_TOKEN_RANGE = 120

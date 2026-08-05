@@ -18,6 +18,7 @@ from engine.script.text_render.font_metrics import (
     font16_metrics,
     font16_width_layout,
 )
+from engine.script.text_render.packed_codec import bound_dictionary_table
 from engine.script.text_render.typewriter import (
     build_two_glyph_pacing,
     tail_normalize_patch,
@@ -62,11 +63,16 @@ GLYPH_MASK_LUT = 0x0606EAC0
 FONT_MODE_FLAG = 0x060217FC
 
 
-def build_patch_groups(_context: EngineBuildContext) -> PatchGroup:
-    metrics = font16_metrics()
+def build_patch_groups(context: EngineBuildContext) -> PatchGroup:
+    metrics = font16_metrics(context.font_generated_root / "font16_metrics.json")
     code_limit, width_offset = font16_width_layout(metrics)
-    font12_widths = font12_dialogue_widths()
-    signature_offset, signature_value = font12_signature()
+    font12_widths = font12_dialogue_widths(
+        context.font_generated_root / "font12_metrics.json"
+    )
+    signature_offset, signature_value = font12_signature(
+        context.build_root / "FONT12.FON",
+        context.build_root / "FONT16.FON",
+    )
     advance = build_advance_cave(
         CAVE_ADDRESS,
         text_advance=TEXT_ADVANCE,
@@ -82,7 +88,17 @@ def build_patch_groups(_context: EngineBuildContext) -> PatchGroup:
         font12_widths=font12_widths,
     )
     fetch_address = align_up(CAVE_ADDRESS + len(advance), 4)
-    fetch = build_fetch_cave(fetch_address, RETURN_CODE, RETURN_ZERO)
+    dictionary_table = bound_dictionary_table(
+        context.text_generated_root / "event_codec.json",
+        context.text_generated_root / "event_codec_binding.json",
+        context.build_root,
+    )
+    fetch = build_fetch_cave(
+        fetch_address,
+        RETURN_CODE,
+        RETURN_ZERO,
+        dictionary_table,
+    )
     blitter_address = align_up(fetch_address + len(fetch), 8)
     blitter = build_blitter_cave(
         blitter_address,

@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from functools import cache
 from pathlib import Path
 
-from engine.script.context import EngineBuildContext
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
 from engine.script.event.model import EVENT_TARGET
 from engine.script.patching import BytePatch, PatchGroup
 from engine.script.text_render.font16_vwf import (
@@ -162,11 +162,18 @@ class EventVwfArtifacts:
 
 
 @cache
-def build_artifacts() -> EventVwfArtifacts:
-    metrics = font16_metrics()
+def build_artifacts(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> EventVwfArtifacts:
+    metrics = font16_metrics(context.font_generated_root / "font16_metrics.json")
     code_limit, width_offset = font16_width_layout(metrics)
-    font12_widths = font12_dialogue_widths()
-    signature_offset, signature_value = font12_signature()
+    font12_widths = font12_dialogue_widths(
+        context.font_generated_root / "font12_metrics.json"
+    )
+    signature_offset, signature_value = font12_signature(
+        context.build_root / "FONT12.FON",
+        context.build_root / "FONT16.FON",
+    )
     advance = build_advance_cave(
         VWF_CAVE_ADDRESS,
         text_advance=TEXT_ADVANCE,
@@ -245,8 +252,10 @@ def build_artifacts() -> EventVwfArtifacts:
     )
 
 
-def _build_patch_group() -> PatchGroup:
-    artifacts = build_artifacts()
+def _build_patch_group(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> PatchGroup:
+    artifacts = build_artifacts(context)
     return PatchGroup(
         capability="event_vwf",
         target=EVENT_TARGET,
@@ -386,5 +395,5 @@ def _build_patch_group() -> PatchGroup:
     )
 
 
-def build_patch_groups(_context: EngineBuildContext) -> PatchGroup:
-    return _build_patch_group()
+def build_patch_groups(context: EngineBuildContext) -> PatchGroup:
+    return _build_patch_group(context)

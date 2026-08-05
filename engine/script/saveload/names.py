@@ -4,7 +4,12 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from engine.script.context import EngineBuildContext
-from engine.script.name.model import byte_to_advance_table, byte_to_atlas_table
+from engine.script.name.model import (
+    byte_to_advance_table,
+    byte_to_atlas_table,
+    load_atlas_metrics,
+    load_font8_codes,
+)
 from engine.script.patching import BinaryTarget, BytePatch, PatchGroup
 from engine.script.saveload.load import (
     CAVE_OFFSET as LOAD_REBUILD_OFFSET,
@@ -81,10 +86,16 @@ SPECS = (
 )
 
 
-def build_source(spec: NameStripSpec) -> str:
+def build_source(
+    spec: NameStripSpec,
+    atlas_metrics: tuple[dict[str, int], dict[str, int]] | None = None,
+) -> str:
     source = spec.source_path.read_text(encoding="utf-8")
-    codes = byte_to_atlas_table()
-    widths = byte_to_advance_table()
+    if atlas_metrics is None:
+        atlas_metrics = load_atlas_metrics()
+    atlas_codes, advances = atlas_metrics
+    codes = byte_to_atlas_table(atlas_codes)
+    widths = byte_to_advance_table(advances)
     mutable = ""
     layout_note = ""
     if spec.source_path == JOINED_SOURCE_PATH:
@@ -111,12 +122,15 @@ def build_source(spec: NameStripSpec) -> str:
     )
 
 
-def build_cave(spec: NameStripSpec) -> AsmBlob:
+def build_cave(
+    spec: NameStripSpec,
+    atlas_metrics: tuple[dict[str, int], dict[str, int]] | None = None,
+) -> AsmBlob:
     symbols = {"FONT16_BASE": FONT16_BASE}
     if spec.source_path == JOINED_SOURCE_PATH:
         symbols["NAME_WIDTH"] = SAVE_NAME_WIDTH
     cave = assemble(
-        build_source(spec),
+        build_source(spec, atlas_metrics),
         spec.cave_address,
         symbols=symbols,
     )
@@ -140,8 +154,11 @@ def read_patch(target: BinaryTarget, offset: int, original: int) -> BytePatch:
     )
 
 
-def build_patch_group(spec: NameStripSpec) -> PatchGroup:
-    cave = build_cave(spec)
+def build_patch_group(
+    spec: NameStripSpec,
+    atlas_metrics: tuple[dict[str, int], dict[str, int]] | None = None,
+) -> PatchGroup:
+    cave = build_cave(spec, atlas_metrics)
     source = spec.target.path.name.lower().removesuffix(".bin")
     patches = [
         BytePatch(
@@ -191,8 +208,14 @@ def build_patch_group(spec: NameStripSpec) -> PatchGroup:
     )
 
 
-def build_patch_groups(_context: EngineBuildContext) -> tuple[PatchGroup, ...]:
-    load_name_cave = build_load_name_cave()
+def build_patch_groups(context: EngineBuildContext) -> tuple[PatchGroup, ...]:
+    atlas_metrics = load_atlas_metrics(
+        context.font_generated_root / "font16_metrics.json"
+    )
+    load_name_cave = build_load_name_cave(
+        atlas_metrics,
+        load_font8_codes(context.font_generated_root / "font8_metrics.json"),
+    )
     if SPECS[1].cave_offset < LOAD_REBUILD_OFFSET + len(load_name_cave):
         raise ValueError("LOAD.BIN name-strip cave overlaps the name-row rebuild cave")
-    return tuple(map(build_patch_group, SPECS))
+    return tuple(build_patch_group(spec, atlas_metrics) for spec in SPECS)

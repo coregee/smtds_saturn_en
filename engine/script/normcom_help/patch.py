@@ -61,8 +61,8 @@ def instruction(source: str, address: int, length: int) -> bytes:
     return bytes(blob)
 
 
-def build_patch_groups(_context: EngineBuildContext) -> PatchGroup:
-    metrics = font16_metrics()
+def build_patch_groups(context: EngineBuildContext) -> PatchGroup:
+    metrics = font16_metrics(context.font_generated_root / "font16_metrics.json")
     width_limit, width_offset = font16_width_layout(metrics)
     width_table = FONT16_BASE + width_offset
     scratch = struct.pack(">IHHIBBH", FONT16_BASE, 0x0200, 0, 0x25E60000, 2, 0, 16)

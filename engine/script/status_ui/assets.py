@@ -3,14 +3,16 @@
 import hashlib
 import struct
 
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
 from engine.script.patching import BinaryTarget
-from engine.script.status_ui.model import FONT8_PATH, STOCK_FONT16_PATH
-from engine.script.text_render.font8_metrics import font8_metrics
-from project_paths import EXTRACTED_ROOT
+from engine.script.status_ui.data import load_font8_metrics
 
 
-def glyph_code(character: str) -> int:
-    widths, codes = font8_metrics()
+def glyph_code(
+    character: str,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> int:
+    widths, codes = load_font8_metrics(context)
     try:
         code = codes[character]
     except KeyError as error:
@@ -20,17 +22,22 @@ def glyph_code(character: str) -> int:
     return code
 
 
-def status_atlas_tile(text: str, font: bytes) -> bytes:
+def status_atlas_tile(
+    text: str,
+    font: bytes,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> bytes:
     """Create one 12x12 4bpp tile using compressed FONT8 letter slots."""
     if len(text) > 3:
         raise ValueError(f"status atlas chunk exceeds three characters: {text!r}")
     pixels = [[0] * 12 for _ in range(12)]
     slot_width = 6 if len(text) <= 2 else 4
     for slot, character in enumerate(text):
-        code = glyph_code(character)
+        code = glyph_code(character, context)
         cell = font[code * 8 : (code + 1) * 8]
         if len(cell) != 8:
-            raise ValueError(f"{FONT8_PATH}: glyph {code} exceeds the font")
+            font8_path = context.build_root / "FONT8.FON"
+            raise ValueError(f"{font8_path}: glyph {code} exceeds the font")
         ink_columns = [x for row in cell for x in range(8) if row & (0x80 >> x)]
         if not ink_columns:
             continue
@@ -69,12 +76,16 @@ def status_mask(tile: bytes) -> bytes:
     return struct.pack(">16H", *rows)
 
 
-def font8_pixels(text: str, font: bytes) -> tuple[list[tuple[int, int]], int]:
-    widths, _ = font8_metrics()
+def font8_pixels(
+    text: str,
+    font: bytes,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> tuple[list[tuple[int, int]], int]:
+    widths, _ = load_font8_metrics(context)
     pixels = []
     x = 0
     for character in text:
-        code = glyph_code(character)
+        code = glyph_code(character, context)
         cell = font[code * 8 : (code + 1) * 8]
         for y, bits in enumerate(cell):
             for glyph_x in range(8):
@@ -84,9 +95,14 @@ def font8_pixels(text: str, font: bytes) -> tuple[list[tuple[int, int]], int]:
     return pixels, x
 
 
-def direct_color_row(text: str, font: bytes, width: int = 48) -> bytes:
+def direct_color_row(
+    text: str,
+    font: bytes,
+    width: int = 48,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> bytes:
     height = 12
-    pixels, advance = font8_pixels(text, font)
+    pixels, advance = font8_pixels(text, font, context)
     if advance > width - 2:
         raise ValueError(f"status row exceeds {width - 2}px: {text!r}")
     image = [[0x0000] * width for _ in range(height)]
@@ -103,17 +119,22 @@ def direct_color_row(text: str, font: bytes, width: int = 48) -> bytes:
     return b"".join(struct.pack(">H", value) for row in image for value in row)
 
 
-def node_background(original: bytes, node_offset: int) -> list[int]:
+def node_background(
+    original: bytes,
+    node_offset: int,
+    context: EngineBuildContext,
+) -> list[int]:
     size = 16 * 16 * 2
     cell = original[node_offset : node_offset + size]
     image = [
         int.from_bytes(cell[position : position + 2], "big")
         for position in range(0, len(cell), 2)
     ]
-    stock_font16 = STOCK_FONT16_PATH.read_bytes()
+    stock_font16_path = context.extracted_root / "FONT16.FON"
+    stock_font16 = stock_font16_path.read_bytes()
     glyph = stock_font16[0x143 * 32 : 0x144 * 32]
     if len(glyph) != 32:
-        raise ValueError(f"{STOCK_FONT16_PATH}: missing status-node mask glyph")
+        raise ValueError(f"{stock_font16_path}: missing status-node mask glyph")
     ink = set()
     for y in range(16):
         bits = int.from_bytes(glyph[y * 2 : y * 2 + 2], "big")
@@ -166,9 +187,14 @@ def node_background(original: bytes, node_offset: int) -> list[int]:
     return [known[x, y] for y in range(16) for x in range(16)]
 
 
-def direct_color_node(text: str, font: bytes, background: list[int]) -> bytes:
+def direct_color_node(
+    text: str,
+    font: bytes,
+    background: list[int],
+    context: EngineBuildContext,
+) -> bytes:
     image = background.copy()
-    tile = status_atlas_tile(text, font)
+    tile = status_atlas_tile(text, font, context)
     for y in range(12):
         for x in range(12):
             value = tile[y * 6 + x // 2]
@@ -184,17 +210,24 @@ def direct_color_assets(
     font8: bytes,
     base_labels: tuple[str, ...],
     derived_rows: tuple[tuple[str, ...], ...],
+    context: EngineBuildContext,
 ) -> tuple[bytes, bytes]:
-    background = node_background(original, node_offset)
+    background = node_background(original, node_offset, context)
     node_data = b"".join(
-        direct_color_node(label, font8, background) for label in base_labels
+        direct_color_node(label, font8, background, context) for label in base_labels
     )
-    row_data = b"".join(direct_color_row(" ".join(row), font8) for row in derived_rows)
+    row_data = b"".join(
+        direct_color_row(" ".join(row), font8, context=context) for row in derived_rows
+    )
     return node_data, row_data
 
 
-def read_original(target: BinaryTarget, expected_sha256: str) -> bytes:
-    source_path = EXTRACTED_ROOT / target.path
+def read_original(
+    target: BinaryTarget,
+    expected_sha256: str,
+    context: EngineBuildContext,
+) -> bytes:
+    source_path = context.extracted_root / target.path
     original = source_path.read_bytes()
     digest = hashlib.sha256(original).hexdigest()
     if digest != expected_sha256:
@@ -204,8 +237,9 @@ def read_original(target: BinaryTarget, expected_sha256: str) -> bytes:
     return original
 
 
-def read_font8() -> bytes:
-    font8 = FONT8_PATH.read_bytes()
+def read_font8(context: EngineBuildContext = DEFAULT_CONTEXT) -> bytes:
+    font8_path = context.build_root / "FONT8.FON"
+    font8 = font8_path.read_bytes()
     if len(font8) != 256 * 8:
-        raise ValueError(f"{FONT8_PATH}: expected a 256-cell FONT8 build")
+        raise ValueError(f"{font8_path}: expected a 256-cell FONT8 build")
     return font8

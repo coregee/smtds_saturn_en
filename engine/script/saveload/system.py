@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from engine.script.context import EngineBuildContext
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
 from engine.script.patching import BytePatch, PatchGroup
 from engine.script.saveload.load import LOAD_TARGET
 from engine.script.saveload.names import SAVE_TARGET
@@ -38,9 +38,12 @@ def instruction_patch(
     )
 
 
-def data_start(target) -> int:
+def data_start(
+    target,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> int:
     ui_spec = next(spec for spec in UI_SPECS if spec.target == target)
-    return align_up(ui_spec.cave_offset + len(build_ui_cave(ui_spec)))
+    return align_up(ui_spec.cave_offset + len(build_ui_cave(ui_spec, context)))
 
 
 def require_blocks(asset: StaticTextAsset, expected: set[str], source: str) -> None:
@@ -70,8 +73,10 @@ def relocate_blocks(
     return bytes(data), offsets
 
 
-def build_save_patch() -> PatchGroup:
-    asset = save_text_asset()
+def build_save_patch(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> PatchGroup:
+    asset = save_text_asset(context)
     system_blocks = (
         "save_write_failure",
         "save_capacity_error_0",
@@ -101,7 +106,7 @@ def build_save_patch() -> PatchGroup:
             raise ValueError(f"SAVE.BIN {name} has an invalid cell count")
 
     system_data, block_offsets = relocate_blocks(asset, system_blocks)
-    offset = data_start(SAVE_TARGET)
+    offset = data_start(SAVE_TARGET, context)
     address = SAVE_TARGET.load_address + offset
     if offset + len(system_data) > FREE_WINDOW_END:
         raise ValueError("SAVE.BIN static-text data exceeds the zero window")
@@ -220,10 +225,14 @@ def build_save_patch() -> PatchGroup:
     return PatchGroup("saveload_ui", SAVE_TARGET, tuple(patches))
 
 
-def build_load_patch() -> PatchGroup:
+def build_load_patch(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> PatchGroup:
     asset = load_static_asset(
         Path("static") / "LOAD.BIN.static.json",
         LOAD_TARGET.path,
+        context.text_generated_root,
+        context.extracted_root,
     )
     expected_blocks = {
         "start_without_save_warning",
@@ -267,7 +276,7 @@ def build_load_patch() -> PatchGroup:
         if not 1 <= block.word_count <= 0x7F:
             raise ValueError(f"LOAD.BIN {name} has an invalid cell count")
 
-    offset = data_start(LOAD_TARGET)
+    offset = data_start(LOAD_TARGET, context)
     address = LOAD_TARGET.load_address + offset
     if offset + len(asset.data) > FREE_WINDOW_END:
         raise ValueError("LOAD.BIN static-text data exceeds the zero window")
@@ -362,5 +371,5 @@ def build_load_patch() -> PatchGroup:
     return PatchGroup("saveload_ui", LOAD_TARGET, tuple(patches))
 
 
-def build_patch_groups(_context: EngineBuildContext) -> tuple[PatchGroup, ...]:
-    return build_save_patch(), build_load_patch()
+def build_patch_groups(context: EngineBuildContext) -> tuple[PatchGroup, ...]:
+    return build_save_patch(context), build_load_patch(context)

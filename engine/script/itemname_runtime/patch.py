@@ -276,11 +276,10 @@ def build_trampoline(address: int, target: int) -> bytes:
 
 def build_group(
     spec: EquipmentSpec,
-    ui: EquipmentUI | None = None,
-    font8_data: tuple[bytes, dict[str, int]] | None = None,
-    character_data: tuple[bytes, bytes] | None = None,
+    ui: EquipmentUI,
+    font8_data: tuple[bytes, dict[str, int]],
+    character_data: tuple[bytes, bytes],
 ) -> PatchGroup:
-    ui = ui or load_config()
     address = BASE + spec.cave_offset
     drawer = build_equipment_drawer(address, spec, ui, font8_data)
     patches = [BytePatch("equipment_name_cave", address, bytes(len(drawer)), drawer)]
@@ -294,8 +293,6 @@ def build_group(
             )
         )
     if spec.target.name == "EVENT.BIN":
-        if character_data is None:
-            raise ValueError("EVENT.BIN: missing generated shop character-name data")
         pixel = build_pixel_blitter(BUY_CAVE)
         drawer_offset = (len(pixel) + 3) & ~3
         drawer_address = BUY_CAVE + drawer_offset
@@ -363,11 +360,7 @@ def build_group(
 
 def build_patch_groups(context: EngineBuildContext) -> tuple[PatchGroup, ...]:
     contract = load_runtime_ui(context)
-    ui = load_config(
-        text_path=(
-            context.text_generated_root / "runtime_ui/sections/equipment_ui.json"
-        )
-    )
+    ui = load_config(contract)
     # Validate the context-bound font contract before composing target groups.
     font8_data = load_metrics(context.font_generated_root / "font8_metrics.json")
     character_rows = contract.section("character_names")

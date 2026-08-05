@@ -6,7 +6,6 @@ from engine.script.event.model import EVENT_BASE as BASE
 from engine.script.event.model import EVENT_TARGET as EVENT_TARGET
 from engine.script.name.fields import CODENAME_BYTES, FIELD_BY_KIND, NameField
 from engine.script.patching import BinaryTarget
-from project_paths import BUILD_ROOT, EXTRACTED_ROOT, TEXT_GENERATED_ROOT
 
 NORMCOM_TARGET = BinaryTarget("NORMCOM.BIN", Path("NORMCOM.BIN"), BASE)
 DA3D_TARGET = BinaryTarget("DA_3D.BIN", Path("DA_3D.BIN"), BASE)
@@ -16,24 +15,6 @@ DA3D_SHA256 = "3d7fd55f01eb6aeec410ddb89a8dae6cde3a7dbf1c2b36830af35341ff53d384"
 EVENT_SHA256 = "73a24f782f6618081028511e9fcc4c845a79a577e1907a6a6affc9e9f1e2ce84"
 LEVEL_UP_SHA256 = "bea68b010a95b34f69fbc84bbdcd65f5bed004c50739f257675b24045277b536"
 
-FONT8_PATH = BUILD_ROOT / "FONT8.FON"
-FONT16_PATH = BUILD_ROOT / "FONT16.FON"
-STOCK_FONT16_PATH = EXTRACTED_ROOT / "FONT16.FON"
-STATUS_TABLES_PATH = (
-    TEXT_GENERATED_ROOT / "runtime_ui" / "sections" / "status_tables.json"
-)
-DEMON_NAMES_PATH = TEXT_GENERATED_ROOT / "runtime_ui" / "sections" / "demon_names.json"
-MAGIC_NAMES_PATH = TEXT_GENERATED_ROOT / "runtime_ui" / "sections" / "magic_names.json"
-DVLNAME_PATH = EXTRACTED_ROOT / "DVLNAME.DAT"
-BUILT_DVLNAME_PATH = BUILD_ROOT / "DVLNAME.DAT"
-CHARACTER_NAMES_PATH = (
-    TEXT_GENERATED_ROOT / "runtime_ui" / "sections" / "character_names.json"
-)
-SHOP_UI_PATH = TEXT_GENERATED_ROOT / "runtime_ui" / "sections" / "shop_ui.json"
-HEALING_UI_PATH = TEXT_GENERATED_ROOT / "runtime_ui" / "sections" / "healing_ui.json"
-EVENT_PATH = EXTRACTED_ROOT / "EVENT.BIN"
-CHARNAME_PATH = EXTRACTED_ROOT / "CHARNAME.DAT"
-BUILT_CHARNAME_PATH = BUILD_ROOT / "CHARNAME.DAT"
 ASM_ROOT = Path(__file__).with_name("asm")
 
 WRAPPER_FILE = 0x1480

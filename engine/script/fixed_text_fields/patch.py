@@ -5,7 +5,7 @@ import json
 import struct
 from pathlib import Path
 
-from engine.script.context import EngineBuildContext
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
 from engine.script.fixed_text_fields.end_roll import (
     build_patch_group as build_end_roll_patch,
 )
@@ -23,8 +23,10 @@ from engine.script.text_render.precomposed import (
     PrecomposedStrip,
     precompose_font16_strip,
 )
-from project_paths import EXTRACTED_ROOT, TEXT_GENERATED_ROOT
 from tools.sh2asm import assemble
+
+EXTRACTED_ROOT = DEFAULT_CONTEXT.extracted_root
+TEXT_GENERATED_ROOT = DEFAULT_CONTEXT.text_generated_root
 
 MAZE_BASE = 0x06020000
 MAZE_TARGET = BinaryTarget("MAZE.BIN", Path("MAZE.BIN"), MAZE_BASE)
@@ -116,8 +118,9 @@ def maze_choice_words(asset: StaticTextAsset, name: str) -> tuple[int, ...]:
     return struct.unpack(f">{MAZE_CHOICE_CELLS}H", data)
 
 
-def font16_advances() -> bytes:
-    metrics = font16_metrics()
+def font16_advances(metrics: dict | None = None) -> bytes:
+    if metrics is None:
+        metrics = font16_metrics()
     code_limit, _width_offset = font16_width_layout(metrics)
     widths = bytearray(code_limit)
     for glyph in metrics["glyphs"]:
@@ -133,9 +136,10 @@ def build_maze_choice_strips(
     font16: bytes,
     generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
+    metrics16: dict | None = None,
 ) -> tuple[PrecomposedStrip, ...]:
     asset = load_maze_choice_asset(generated_root, extracted_root)
-    widths = font16_advances()
+    widths = font16_advances(metrics16)
     strips = []
     for name, _address, _expected in MAZE_CHOICE_FIELDS:
         physical_words = maze_choice_words(asset, name)
@@ -161,6 +165,7 @@ def build_maze_choice_runtime(
     generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
     font16_path: Path = FONT16_PATH,
+    metrics16: dict | None = None,
 ) -> tuple[bytes, dict[str, int]]:
     scratch_end = FONT16_BASE + (MAZE_CHOICE_SCRATCH_CODE + MAZE_CHOICE_CELLS) * 32
     message_scratch_end = FONT16_BASE + (MAZE_SCRATCH_CODE + MAZE_MESSAGE_CELLS) * 32
@@ -173,6 +178,7 @@ def build_maze_choice_runtime(
         font16_path.read_bytes(),
         generated_root,
         extracted_root,
+        metrics16,
     )
     source = (ASM_ROOT / "maze_choice_vwf.s").read_text(encoding="utf-8")
     base_symbols = {
@@ -274,15 +280,19 @@ def load_maze_runtime_fields(
     return tuple(fields)
 
 
-def build_maze_item_code_map() -> bytes:
-    metrics16 = font16_metrics()
+def build_maze_item_code_map(
+    metrics16: dict | None = None,
+    font8_data: tuple[bytes, dict[str, int]] | None = None,
+) -> bytes:
+    if metrics16 is None:
+        metrics16 = font16_metrics()
     codes16 = {}
     for row in metrics16["glyphs"]:
         for text in (row["text"], *row.get("aliases", ())):
             if len(text) == 1:
                 codes16.setdefault(text, row["code"])
 
-    _widths8, codes8 = font8_metrics()
+    _widths8, codes8 = font8_data or font8_metrics()
     output = bytearray(512)
     for text, code8 in codes8.items():
         if len(text) != 1 or text not in codes16:
@@ -292,8 +302,12 @@ def build_maze_item_code_map() -> bytes:
     return bytes(output)
 
 
-def encode_maze_literal(text: str) -> tuple[int, ...]:
-    metrics16 = font16_metrics()
+def encode_maze_literal(
+    text: str,
+    metrics16: dict | None = None,
+) -> tuple[int, ...]:
+    if metrics16 is None:
+        metrics16 = font16_metrics()
     codes = {}
     for row in metrics16["glyphs"]:
         for glyph_text in (row["text"], *row.get("aliases", ())):
@@ -328,15 +342,23 @@ def decode_maze_packed_words(words: tuple[int, ...]) -> tuple[int, ...]:
     return tuple(decoded)
 
 
-def maze_message_width(words: tuple[int, ...]) -> int:
-    advances = {row["code"]: row["advance"] for row in font16_metrics()["glyphs"]}
+def maze_message_width(
+    words: tuple[int, ...],
+    metrics16: dict | None = None,
+) -> int:
+    if metrics16 is None:
+        metrics16 = font16_metrics()
+    advances = {row["code"]: row["advance"] for row in metrics16["glyphs"]}
     return sum(advances.get(code, 16) for code in words)
 
 
-def maze_composed_width(words: tuple[int, ...]) -> int:
+def maze_composed_width(
+    words: tuple[int, ...],
+    metrics16: dict | None = None,
+) -> int:
     if words and words[0] == MAZE_PROMPT_CODE:
-        return 16 + maze_message_width(words[1:])
-    return maze_message_width(words)
+        return 16 + maze_message_width(words[1:], metrics16)
+    return maze_message_width(words, metrics16)
 
 
 def build_item_hook(start: int, end: int, target: int) -> bytes:
@@ -353,7 +375,11 @@ def build_maze_message_runtime(
     generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
     font16_path: Path = FONT16_PATH,
+    metrics16: dict | None = None,
+    font8_data: tuple[bytes, dict[str, int]] | None = None,
 ) -> tuple[bytes, dict[str, int]]:
+    if metrics16 is None:
+        metrics16 = font16_metrics()
     packed_fields = load_maze_runtime_fields(generated_root, extracted_root)
     runtime_fields = tuple(
         (name, offset, decode_maze_packed_words(words))
@@ -361,14 +387,13 @@ def build_maze_message_runtime(
         if 0xFFF0 not in words
     )
     for name, _offset, words in runtime_fields:
-        width = maze_composed_width(words)
+        width = maze_composed_width(words, metrics16)
         if width > MAZE_MESSAGE_CELLS * 16:
             raise ValueError(
                 f"MAZE message {name!r} is {width} pixels wide; "
                 f"maximum is {MAZE_MESSAGE_CELLS * 16}"
             )
-    metrics = font16_metrics()
-    code_limit, width_offset = font16_width_layout(metrics)
+    code_limit, width_offset = font16_width_layout(metrics16)
     compositor_address = cave_address
     compositor_source = (ASM_ROOT / "maze_message_compositor.s").read_text(
         encoding="utf-8"
@@ -439,17 +464,17 @@ def build_maze_message_runtime(
     if item_probe.warnings:
         raise ValueError(f"MAZE item-name warnings: {item_probe.warnings}")
 
-    token_map = build_maze_item_code_map()
+    token_map = build_maze_item_code_map(metrics16, font8_data)
     token_map_address = align_up(item_address + len(item_probe), 4)
-    found_words = encode_maze_literal("Found ")
-    full_words = encode_maze_literal(" is full")
+    found_words = encode_maze_literal("Found ", metrics16)
+    full_words = encode_maze_literal(" is full", metrics16)
     if len(found_words) != 6 or len(full_words) != 8:
         raise ValueError("MAZE item-message phrase encoding changed")
     found_prefix = struct.pack(">6H", *found_words)
     full_suffix = struct.pack(">8H", *full_words)
     found_prefix_address = token_map_address + len(token_map)
     full_suffix_address = found_prefix_address + len(found_prefix)
-    currency_prefix_words = encode_maze_literal("Obtained ")
+    currency_prefix_words = encode_maze_literal("Obtained ", metrics16)
     if len(currency_prefix_words) != 9:
         raise ValueError("MAZE currency-message prefix encoding changed")
     currency_prefix = struct.pack(">9H", *currency_prefix_words)
@@ -531,6 +556,7 @@ def build_maze_message_runtime(
         generated_root,
         extracted_root,
         font16_path,
+        metrics16,
     )
     payload.extend(bytes(choice_address - cave_address - len(payload)))
     payload.extend(choice_runtime)
@@ -557,12 +583,16 @@ def build_maze_patch(
     generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
     font16_path: Path = FONT16_PATH,
+    metrics16: dict | None = None,
+    font8_data: tuple[bytes, dict[str, int]] | None = None,
 ) -> PatchGroup:
     runtime, labels = build_maze_message_runtime(
         MAZE_MESSAGE_CAVE,
         generated_root,
         extracted_root,
         font16_path,
+        metrics16,
+        font8_data,
     )
     original = (extracted_root / MAZE_TARGET.path).read_bytes()
     choice_asset = load_maze_choice_asset(generated_root, extracted_root)
@@ -654,6 +684,8 @@ def build_patch_groups(context: EngineBuildContext) -> tuple[PatchGroup, ...]:
             context.text_generated_root,
             context.extracted_root,
             context.build_root / "FONT16.FON",
+            font16_metrics(context.font_generated_root / "font16_metrics.json"),
+            font8_metrics(context.font_generated_root / "font8_metrics.json"),
         ),
         build_end_roll_patch(context),
     )

@@ -19,7 +19,7 @@ class RuntimeUiContract:
     path: Path
     sections: dict[str, object]
 
-    def section(self, name: str):
+    def section(self, name: str) -> object:
         try:
             return self.sections[name]
         except KeyError as error:

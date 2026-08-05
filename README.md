@@ -124,6 +124,7 @@ and patch application.
 
 ## Documentation
 
+- [Development](docs/development.md): repository flow, ownership, and validation.
 - [Text](docs/text.md): corpus formats, tokens, layout, and repacking.
 - [Font](docs/font.md): font atlases, mappings, and generated metrics.
 - [Visual](docs/visual.md): still-image extraction and repacking.

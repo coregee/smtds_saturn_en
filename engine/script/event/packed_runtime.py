@@ -13,11 +13,13 @@ def build_fetch_cave(
     cave_address: int,
     return_code: int,
     return_zero: int,
+    dictionary_table: bytes | None = None,
 ) -> bytes:
     """Expand two packed tokens, including corpus-trained dictionary entries."""
     if cave_address % 4:
         raise ValueError("packed fetch cave must be four-byte aligned")
-    dictionary_table = bound_dictionary_table()
+    if dictionary_table is None:
+        dictionary_table = bound_dictionary_table()
     source = (ASM_ROOT / "packed_fetch.s").read_text(encoding="utf-8")
     probe = assemble(
         source,

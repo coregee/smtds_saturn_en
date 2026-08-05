@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from functools import cache
 from pathlib import Path
 
-from engine.script.context import EngineBuildContext
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
 from engine.script.dungeon_text import (
     PADDING_CODE,
     SAVELOAD_DUNGEON_CELLS,
@@ -31,7 +31,6 @@ from engine.script.saveload.names import (
     build_cave as build_name_cave,
 )
 from engine.script.static_text import StaticTextAsset, load_static_asset
-from project_paths import EXTRACTED_ROOT
 from text.script.dungeon_locations import ASSET_PATH as DUNGEON_ASSET_PATH
 from text.script.dungeon_locations import SOURCE_PATH as DUNGEON_SOURCE_PATH
 from tools.sh2asm import AsmBlob, assemble
@@ -131,27 +130,35 @@ UI_SPECS = (
 
 
 @cache
-def save_text_asset() -> StaticTextAsset:
+def save_text_asset(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> StaticTextAsset:
     return load_static_asset(
         Path("static") / "SAVE.BIN.static.json",
         SAVE_TARGET.path,
+        context.text_generated_root,
+        context.extracted_root,
     )
 
 
 @cache
-def dungeon_source() -> bytes:
-    return (EXTRACTED_ROOT / DUNGEON_SOURCE_PATH).read_bytes()
+def dungeon_source(context: EngineBuildContext = DEFAULT_CONTEXT) -> bytes:
+    return (context.extracted_root / DUNGEON_SOURCE_PATH).read_bytes()
 
 
 @cache
-def dungeon_records():
-    codes, advances = load_atlas_metrics()
+def dungeon_records(context: EngineBuildContext = DEFAULT_CONTEXT):
+    codes, advances = load_atlas_metrics(
+        context.font_generated_root / "font16_metrics.json"
+    )
     return build_saveload_dungeon_records(
         load_static_asset(
             DUNGEON_ASSET_PATH,
             DUNGEON_SOURCE_PATH,
+            context.text_generated_root,
+            context.extracted_root,
         ),
-        dungeon_source(),
+        dungeon_source(context),
         codes,
         advances,
     )
@@ -170,8 +177,12 @@ def block_words(asset: StaticTextAsset, name: str) -> tuple[int, ...]:
     return struct.unpack(f">{len(data) // 2}H", data)
 
 
-def atlas_width_table() -> bytes:
-    codes, advances = load_atlas_metrics()
+def atlas_width_table(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> bytes:
+    codes, advances = load_atlas_metrics(
+        context.font_generated_root / "font16_metrics.json"
+    )
     limit = max(codes.values()) + 1
     table = bytearray(limit)
     for character, code in codes.items():
@@ -183,10 +194,13 @@ def atlas_width_table() -> bytes:
     return bytes(table)
 
 
-def location_records() -> tuple[tuple[int, ...], ...]:
+def location_records(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> tuple[tuple[int, ...], ...]:
+    asset = save_text_asset(context)
     records = []
     for name in LOCATION_BLOCKS:
-        words = block_words(save_text_asset(), name)
+        words = block_words(asset, name)
         if len(words) != LOCATION_CELLS:
             raise ValueError(f"SAVE.BIN {name} must contain {LOCATION_CELLS} cells")
         records.append(words)
@@ -203,12 +217,12 @@ def used_location_cells(record: tuple[int, ...], name: str) -> int:
     return count
 
 
-def build_source() -> str:
-    widths = atlas_width_table()
-    locations = tuple(code for record in location_records() for code in record)
+def build_source(context: EngineBuildContext = DEFAULT_CONTEXT) -> str:
+    widths = atlas_width_table(context)
+    locations = tuple(code for record in location_records(context) for code in record)
     dungeon_rows = "".join(
         f"    .word {', '.join(str(code) for code in record)}\n"
-        for record in dungeon_records()
+        for record in dungeon_records(context)
     )
     return (
         SOURCE_PATH.read_text(encoding="utf-8")
@@ -223,10 +237,13 @@ def build_source() -> str:
     )
 
 
-def build_ui_cave(spec: UISpec) -> AsmBlob:
-    widths = atlas_width_table()
+def build_ui_cave(
+    spec: UISpec,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> AsmBlob:
+    widths = atlas_width_table(context)
     cave = assemble(
-        build_source(),
+        build_source(context),
         spec.cave_address,
         symbols={
             "ORIGINAL_BLITTER": spec.original_blitter,
@@ -281,17 +298,21 @@ def storage_selector_patches(
     )
 
 
-def build_ui_patch(spec: UISpec) -> PatchGroup:
-    cave = build_ui_cave(spec)
+def build_ui_patch(
+    spec: UISpec,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> PatchGroup:
+    cave = build_ui_cave(spec, context)
+    asset = save_text_asset(context)
     source = spec.target.path.name.lower().removesuffix(".bin")
-    target_source = (EXTRACTED_ROOT / spec.target.path).read_bytes()
+    target_source = (context.extracted_root / spec.target.path).read_bytes()
     validate_dungeon_prefix_mirror(
-        dungeon_source(),
+        dungeon_source(context),
         target_source,
         spec.dungeon_table_offset,
         spec.target.name,
     )
-    locations = location_records()
+    locations = location_records(context)
     location_address = cave.labels["location_table"]
     home_pool, office_pool, array_pool = spec.location_pool_offsets
     home_count, office_count, stride, array_count = spec.location_instruction_offsets
@@ -361,7 +382,7 @@ def build_ui_patch(spec: UISpec) -> PatchGroup:
             name=f"{source}_empty_label",
             address=spec.target.load_address + spec.empty_offset,
             expected=bytes.fromhex("01 cd 00 00 01 27 00 00 01 db"),
-            replacement=block_data(save_text_asset(), "empty"),
+            replacement=block_data(asset, "empty"),
         ),
         CodePatch(
             name=f"{source}_dungeon_location_hook",
@@ -385,7 +406,7 @@ def build_ui_patch(spec: UISpec) -> PatchGroup:
             name=f"{source}_prompt_{index}",
             address=spec.target.load_address + offset,
             expected=expected,
-            replacement=block_data(save_text_asset(), PROMPT_BLOCKS[index]),
+            replacement=block_data(asset, PROMPT_BLOCKS[index]),
         )
         for index, (offset, expected) in enumerate(spec.prompt_sites)
     )
@@ -397,11 +418,16 @@ def build_ui_patch(spec: UISpec) -> PatchGroup:
     )
 
 
-def build_patch_groups(_context: EngineBuildContext) -> tuple[PatchGroup, ...]:
+def build_patch_groups(context: EngineBuildContext) -> tuple[PatchGroup, ...]:
+    atlas_metrics = load_atlas_metrics(
+        context.font_generated_root / "font16_metrics.json"
+    )
     for name_spec, ui_spec in zip(NAME_STRIP_SPECS, UI_SPECS):
-        name_end = name_spec.cave_offset + len(build_name_cave(name_spec))
+        name_end = name_spec.cave_offset + len(
+            build_name_cave(name_spec, atlas_metrics)
+        )
         if name_spec.target != ui_spec.target or ui_spec.cave_offset < name_end:
             raise ValueError(
                 f"{ui_spec.target.name} UI cave overlaps its name-strip cave"
             )
-    return tuple(map(build_ui_patch, UI_SPECS))
+    return tuple(build_ui_patch(spec, context) for spec in UI_SPECS)

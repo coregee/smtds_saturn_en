@@ -60,7 +60,8 @@ from engine.script.smallfont.renderer import (
     build_packed_full_name_drawer,
 )
 from engine.script.text_render.font8_blitter import build_pixel_blitter
-from engine.script.text_render.font8_metrics import font8_metrics, load_metrics
+from engine.script.text_render.font8_metrics import load_metrics
+from engine.script.text_render.font_metrics import load_font16_metrics
 from text.script.source_models import IndexedBytesSource
 from text.script.sources import get_source
 
@@ -181,11 +182,9 @@ def build_group(
     contract: RuntimeUiContract | None = None,
     context: EngineBuildContext | None = None,
 ) -> PatchGroup:
-    font8_data = (
-        font8_metrics()
-        if context is None
-        else load_metrics(context.font_generated_root / "font8_metrics.json")
-    )
+    context = context or DEFAULT_CONTEXT
+    contract = contract or load_runtime_ui(context)
+    font8_data = load_metrics(context.font_generated_root / "font8_metrics.json")
     widths, codes = font8_data
     cave_address = BASE + overlay.cave_offset
     blitter = build_pixel_blitter(cave_address)
@@ -237,8 +236,6 @@ def build_group(
         if drawer.name == "panel":
             panel_fallback_address = fallback_address
 
-    context = context or DEFAULT_CONTEXT
-    contract = contract or load_runtime_ui(context)
     character_rows = contract.section("character_names")
     if not isinstance(character_rows, list):
         raise ValueError(f"{contract.path}: invalid character_names section")
@@ -331,7 +328,8 @@ def build_group(
             payload.append(0)
         surface_renderer_address = BASE + overlay.cave_offset + len(payload)
         surface_renderer, surface_drawers = build_combat_surface_renderer(
-            surface_renderer_address
+            surface_renderer_address,
+            load_font16_metrics(context.font_generated_root / "font16_metrics.json"),
         )
         surface_drawer_address = surface_drawers["escape"]
         help_drawer_address = surface_drawers["help"]

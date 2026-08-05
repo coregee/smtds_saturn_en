@@ -5,14 +5,19 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from engine.script.context import EngineBuildContext
+from engine.script.generated_asset import load_runtime_ui
 from engine.script.name.data import (
     DATA_END,
     DATA_START,
     NAME_BASE,
     ORIGINAL_DATA_SHA256,
+    AtlasMetrics,
     NameDataLayout,
+    NameEntryConfig,
     build_data_layout,
     build_template_patches,
+    load_config,
+    name_text_asset,
 )
 from engine.script.name.model import (
     CODENAME_BYTES,
@@ -21,8 +26,10 @@ from engine.script.name.model import (
     NAME_FW_FULL,
     NameField,
     load_atlas_metrics,
+    load_font8_codes,
 )
 from engine.script.patching import BinaryTarget, BytePatch, DigestPatch, PatchGroup
+from engine.script.static_text import StaticTextAsset
 from tools.sh2asm import AsmBlob, assemble
 
 SOURCE_PATH = Path(__file__).with_name("entry.s")
@@ -56,7 +63,7 @@ class EntryBuild:
         return NAME_BASE + self.cave_offset
 
 
-def symbols(layout: NameDataLayout) -> dict[str, int]:
+def symbols(layout: NameDataLayout, metrics: AtlasMetrics) -> dict[str, int]:
     block = layout.block
     return {
         "g_type": 0x06045E8A,
@@ -109,15 +116,20 @@ def symbols(layout: NameDataLayout) -> dict[str, int]:
         "NAME_FW_FULL": NAME_FW_FULL,
         "CODENAME": CODENAME_BYTES,
         "DEF_CITY": FIELD_BY_KIND[NameField.CITY].stage_address,
-        "space_glyph": load_atlas_metrics()[0][" "],
+        "space_glyph": metrics[0][" "],
     }
 
 
-def build_entry() -> EntryBuild:
-    layout = build_data_layout()
+def build_entry(
+    config: NameEntryConfig,
+    metrics: AtlasMetrics,
+    font8_codes: dict[str, int],
+    text_asset: StaticTextAsset | None = None,
+) -> EntryBuild:
+    layout = build_data_layout(config, metrics, font8_codes, text_asset)
     cave_offset = (layout.next_free + 3) & ~3
     source = SOURCE_PATH.read_text(encoding="utf-8")
-    cave = assemble(source, NAME_BASE + cave_offset, symbols(layout))
+    cave = assemble(source, NAME_BASE + cave_offset, symbols(layout, metrics))
     if cave.warnings:
         details = "\n  ".join(cave.warnings)
         raise ValueError(f"NAME.BIN assembly warnings:\n  {details}")
@@ -175,9 +187,18 @@ def controller_patches(labels: dict[str, int]) -> tuple[BytePatch, ...]:
     )
 
 
-def build_patch_groups(_context: EngineBuildContext) -> PatchGroup:
-    entry = build_entry()
-    template_patches = build_template_patches()
+def build_patch_groups(context: EngineBuildContext) -> PatchGroup:
+    contract = load_runtime_ui(context)
+    metrics = load_atlas_metrics(context.font_generated_root / "font16_metrics.json")
+    font8_codes = load_font8_codes(context.font_generated_root / "font8_metrics.json")
+    text_asset = name_text_asset(context)
+    entry = build_entry(
+        load_config(contract, metrics),
+        metrics,
+        font8_codes,
+        text_asset,
+    )
+    template_patches = build_template_patches(text_asset)
     return PatchGroup(
         capability="name_runtime",
         target=NAME_TARGET,

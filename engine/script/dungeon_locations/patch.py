@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from functools import cache
 from pathlib import Path
 
-from engine.script.context import EngineBuildContext
+from engine.script.context import DEFAULT_CONTEXT, EngineBuildContext
 from engine.script.dungeon_locations.model import (
     AUTOMAP_ASCII_CHOICES_DRAWER_SITE,
     AUTOMAP_ASCII_DRAWER,
@@ -46,12 +46,6 @@ from engine.script.fixed_text_fields.generated import (
 from engine.script.generated_asset import load_runtime_ui
 from engine.script.patching import BinaryTarget, BytePatch, DigestPatch, PatchGroup
 from engine.script.static_text import load_static_asset
-from project_paths import (
-    BUILD_ROOT,
-    EXTRACTED_ROOT,
-    FONT_GENERATED_ROOT,
-    TEXT_GENERATED_ROOT,
-)
 from text.script.dungeon_locations import ASSET_PATH as DUNGEON_ASSET_PATH
 from text.script.dungeon_locations import (
     RECORD_COUNT,
@@ -62,8 +56,10 @@ from text.script.dungeon_locations import (
 from text.script.dungeon_locations import SOURCE_PATH as DUNGEON_SOURCE_PATH
 from tools.sh2asm import assemble
 
-METRICS_PATH = FONT_GENERATED_ROOT / "font16_metrics.json"
-FONT16_PATH = BUILD_ROOT / "FONT16.FON"
+EXTRACTED_ROOT = DEFAULT_CONTEXT.extracted_root
+TEXT_GENERATED_ROOT = DEFAULT_CONTEXT.text_generated_root
+METRICS_PATH = DEFAULT_CONTEXT.font_generated_root / "font16_metrics.json"
+FONT16_PATH = DEFAULT_CONTEXT.build_root / "FONT16.FON"
 ASM_ROOT = Path(__file__).with_name("asm")
 AUTOMAP_ASCII_ASSET = Path("ascii_fields/AUTOMAPC.BIN.marker_ui.json")
 AUTOMAP_WORD_ASSET = Path("fixed_words/AUTOMAPC.BIN.system.json")
@@ -91,20 +87,20 @@ class MarkerUiStrip:
     width: int
 
 
-def load_metrics() -> tuple[bytes, dict[str, int]]:
-    document = json.loads(METRICS_PATH.read_text(encoding="utf-8"))
+def load_metrics(path: Path = METRICS_PATH) -> tuple[bytes, dict[str, int]]:
+    document = json.loads(path.read_text(encoding="utf-8"))
     if document.get("version") != 2 or not document.get("complete"):
-        raise ValueError(f"{METRICS_PATH}: incomplete FONT16 metrics")
+        raise ValueError(f"{path}: incomplete FONT16 metrics")
     code_limit = document["width_table"]["code_limit"]
     if not isinstance(code_limit, int) or not 1 <= code_limit <= 0x7FFF:
-        raise ValueError(f"{METRICS_PATH}: invalid width-table limit")
+        raise ValueError(f"{path}: invalid width-table limit")
     widths = bytearray(code_limit)
     codes = {}
     for row in document["glyphs"]:
         code = row["code"]
         advance = row["advance"]
         if not 0 <= code < code_limit or not 1 <= advance <= 0xFF:
-            raise ValueError(f"{METRICS_PATH}: invalid glyph metrics")
+            raise ValueError(f"{path}: invalid glyph metrics")
         widths[code] = advance
         for text in (row["text"], *row.get("aliases", ())):
             if len(text) == 1:
@@ -113,29 +109,36 @@ def load_metrics() -> tuple[bytes, dict[str, int]]:
 
 
 @cache
-def static_asset():
+def static_asset(context: EngineBuildContext = DEFAULT_CONTEXT):
     return load_static_asset(
         DUNGEON_ASSET_PATH,
         DUNGEON_SOURCE_PATH,
+        context.text_generated_root,
+        context.extracted_root,
     )
 
 
 @cache
-def runtime_metrics() -> tuple[bytes, dict[str, int]]:
-    return load_metrics()
+def runtime_metrics(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> tuple[bytes, dict[str, int]]:
+    return load_metrics(context.font_generated_root / "font16_metrics.json")
 
 
-def load_location_texts() -> tuple[str, ...]:
+def load_location_texts(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> tuple[str, ...]:
+    asset = static_asset(context)
     output = []
     for index in range(RECORD_COUNT):
         name = record_kind(index)
         try:
-            block = static_asset().blocks[name]
+            block = asset.blocks[name]
         except KeyError as error:
             raise ValueError(f"dungeon-location asset is missing {name}") from error
         if block.storage != "bytes":
             raise ValueError(f"dungeon-location block {name} is not bytes")
-        raw = static_asset().data[block.offset : block.offset + block.size]
+        raw = asset.data[block.offset : block.offset + block.size]
         if not raw.endswith(b"\0") or b"\0" in raw[:-1]:
             raise ValueError(f"dungeon-location block {name} is not one string")
         output.append(raw[:-1].decode("ascii"))
@@ -143,25 +146,31 @@ def load_location_texts() -> tuple[str, ...]:
 
 
 @cache
-def location_texts() -> tuple[str, ...]:
-    return load_location_texts()
+def location_texts(
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> tuple[str, ...]:
+    return load_location_texts(context)
 
 
 CANONICAL_TABLE_PATH = EXTRACTED_ROOT / DUNGEON_SOURCE_PATH
 
 
-def text_width(text: str) -> int:
+def text_width(
+    text: str,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> int:
+    widths, codes = runtime_metrics(context)
     width = 0
     for character in text:
         try:
-            code = runtime_metrics()[1][character]
+            code = codes[character]
         except KeyError as error:
             raise ValueError(
                 f"unsupported dungeon-location character {character!r}"
             ) from error
-        if code >= len(runtime_metrics()[0]) or not runtime_metrics()[0][code]:
+        if code >= len(widths) or not widths[code]:
             raise ValueError(f"dungeon-location glyph {code} has no width")
-        width += runtime_metrics()[0][code]
+        width += widths[code]
     return width
 
 
@@ -172,13 +181,17 @@ def floor_text(raw: int) -> str:
     return f"B{-floor}F" if floor < 0 else f"{floor}F"
 
 
-def location_lines(text: str, floor_width: int) -> tuple[str, str]:
+def location_lines(
+    text: str,
+    floor_width: int,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> tuple[str, str]:
     lines = text.replace("\r\n", "\n").replace("{n}", "\n").split("\n")
     if len(lines) > 2:
         raise ValueError(f"location label has more than two lines: {text!r}")
     if len(lines) == 2:
         return lines[0], lines[1]
-    if text_width(text) <= 64:
+    if text_width(text, context) <= 64:
         return text, ""
 
     words = text.split()
@@ -189,19 +202,22 @@ def location_lines(text: str, floor_width: int) -> tuple[str, str]:
     for split in range(1, len(words)):
         upper = " ".join(words[:split])
         lower = " ".join(words[split:])
-        upper_width = text_width(upper)
-        lower_width = text_width(lower)
+        upper_width = text_width(upper, context)
+        lower_width = text_width(lower, context)
         pressure = max(upper_width / 64, lower_width / max(1, lower_limit))
         candidates.append((pressure, abs(upper_width - lower_width), upper, lower))
     _pressure, _balance, upper, lower = min(candidates)
     return upper, lower
 
 
-def load_marker_name_aliases(document: object) -> dict[str, str]:
+def load_marker_name_aliases(
+    document: object,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> dict[str, str]:
     if not isinstance(document, dict):
         raise ValueError("dungeon marker names must be an object")
     aliases = {}
-    names = set(location_texts())
+    names = set(location_texts(context))
     for full_name, marker_name in document.items():
         if (
             not isinstance(full_name, str)
@@ -211,13 +227,15 @@ def load_marker_name_aliases(document: object) -> dict[str, str]:
             or marker_name != marker_name.strip()
         ):
             raise ValueError("dungeon marker name mapping is invalid")
-        if text_width(marker_name) >= text_width(full_name):
+        if text_width(marker_name, context) >= text_width(full_name, context):
             raise ValueError(
                 f"dungeon marker name {marker_name!r} does not shorten {full_name!r}"
             )
         aliases[full_name] = marker_name
 
-    displayed = [aliases.get(name, name) for name in dict.fromkeys(location_texts())]
+    displayed = [
+        aliases.get(name, name) for name in dict.fromkeys(location_texts(context))
+    ]
     if len(displayed) != len(set(displayed)):
         raise ValueError("dungeon marker display names must remain unique")
     return aliases
@@ -227,16 +245,17 @@ def label_catalog(
     data: bytes,
     spec: LocationSpec,
     marker_aliases: dict[str, str] | None = None,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> tuple[tuple[str, str, int], ...]:
     labels = []
-    for index, text in enumerate(location_texts()):
+    for index, text in enumerate(location_texts(context)):
         floor = floor_text(data[spec.table_file + index * RECORD_SIZE])
-        floor_width = text_width(floor) if floor else 0
+        floor_width = text_width(floor, context) if floor else 0
         if spec.automap:
             display = (marker_aliases or {}).get(text, text)
             label = (display, "", floor_width)
         else:
-            label = (*location_lines(text, floor_width), floor_width)
+            label = (*location_lines(text, floor_width, context), floor_width)
         if label not in labels:
             labels.append(label)
     if len(labels) > 0x100:
@@ -250,11 +269,12 @@ def render_codes(
     *,
     limit: int = 64,
     cells: int = 4,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> bytes:
     pixel_width = cells * 16
     if not 1 <= cells <= 8 or not 1 <= limit <= pixel_width:
         raise ValueError(f"invalid dungeon-location width limit {limit}")
-    widths = runtime_metrics()[0]
+    widths = runtime_metrics(context)[0]
     for code in codes:
         if code >= len(widths) or not widths[code]:
             raise ValueError(f"dungeon-location glyph {code} has no width")
@@ -290,19 +310,22 @@ def render_label(
     *,
     limit: int = 64,
     cells: int = 4,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> bytes:
+    _widths, code_by_text = runtime_metrics(context)
     try:
-        codes = tuple(runtime_metrics()[1][character] for character in text)
+        codes = tuple(code_by_text[character] for character in text)
     except KeyError as error:
         raise ValueError(
             f"unsupported dungeon-location character {error.args[0]!r}"
         ) from error
-    return render_codes(font16, codes, limit=limit, cells=cells)
+    return render_codes(font16, codes, limit=limit, cells=cells, context=context)
 
 
 def load_marker_ui_codes(
     generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path | None = None,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> dict[str, tuple[int, ...]]:
     extracted_root = extracted_root or CANONICAL_TABLE_PATH.parent
     load_address, ascii_fields = load_runtime_byte_fields(
@@ -322,7 +345,7 @@ def load_marker_ui_codes(
     for field in ascii_fields:
         try:
             text = field.data[:-1].decode("ascii")
-            codes = tuple(runtime_metrics()[1][character] for character in text)
+            codes = tuple(runtime_metrics(context)[1][character] for character in text)
         except (UnicodeDecodeError, KeyError) as error:
             raise ValueError(
                 f"AUTOMAP marker field {field.name!r} is not FONT16-compatible ASCII"
@@ -357,9 +380,10 @@ def build_marker_ui_strips(
     font16: bytes,
     generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path | None = None,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> tuple[MarkerUiStrip, ...]:
-    codes_by_name = load_marker_ui_codes(generated_root, extracted_root)
-    widths = runtime_metrics()[0]
+    codes_by_name = load_marker_ui_codes(generated_root, extracted_root, context)
+    widths = runtime_metrics(context)[0]
     strips = []
     for name in MARKER_UI_ORDER:
         codes = codes_by_name[name]
@@ -375,7 +399,7 @@ def build_marker_ui_strips(
         strips.append(
             MarkerUiStrip(
                 name=name,
-                bitmap=render_codes(font16, codes),
+                bitmap=render_codes(font16, codes, context=context),
                 cells=cells,
                 width=width,
             )
@@ -388,25 +412,45 @@ def build_label_bitmaps(
     labels: tuple[tuple[str, str, int], ...],
     *,
     automap: bool = False,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> bytes:
     output = bytearray()
     for upper, lower, floor_width in labels:
         if automap:
             if lower:
                 raise ValueError("AUTOMAP marker labels must use one display name")
-            automap_label_geometry(upper, floor_width)
-            output.extend(render_label(font16, upper, limit=128, cells=8))
+            automap_label_geometry(upper, floor_width, context)
+            output.extend(
+                render_label(
+                    font16,
+                    upper,
+                    limit=128,
+                    cells=8,
+                    context=context,
+                )
+            )
             continue
         lower_limit = 64 - floor_width - (LABEL_GAP if lower and floor_width else 0)
         if lower and lower_limit < 1:
             raise ValueError(f"no room for location lower row {lower!r}")
-        output.extend(render_label(font16, upper))
-        output.extend(render_label(font16, lower, limit=max(1, lower_limit)))
+        output.extend(render_label(font16, upper, context=context))
+        output.extend(
+            render_label(
+                font16,
+                lower,
+                limit=max(1, lower_limit),
+                context=context,
+            )
+        )
     return bytes(output)
 
 
-def automap_label_geometry(name: str, floor_width: int) -> tuple[int, int]:
-    name_width = text_width(name)
+def automap_label_geometry(
+    name: str,
+    floor_width: int,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
+) -> tuple[int, int]:
+    name_width = text_width(name, context)
     append_offset = (
         max(0, name_width - 64) + LABEL_GAP if floor_width and name_width >= 64 else 0
     )
@@ -423,19 +467,24 @@ def label_append_offsets(
     labels: tuple[tuple[str, str, int], ...],
     *,
     automap: bool = False,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> bytes:
     offsets = bytearray()
     for upper, lower, floor_width in labels:
         if automap:
             if lower:
                 raise ValueError("AUTOMAP marker labels must use one display name")
-            append_offset, _right_edge = automap_label_geometry(upper, floor_width)
+            append_offset, _right_edge = automap_label_geometry(
+                upper, floor_width, context
+            )
             offsets.append(append_offset)
             continue
         lower_limit = 64 - floor_width - (LABEL_GAP if lower and floor_width else 0)
         if lower and lower_limit < 1:
             raise ValueError(f"no room for location lower row {lower!r}")
-        lower_width = min(text_width(lower), max(1, lower_limit)) if lower else 0
+        lower_width = (
+            min(text_width(lower, context), max(1, lower_limit)) if lower else 0
+        )
         append_offset = lower_width + (LABEL_GAP if lower and floor_width else 0)
         if append_offset + floor_width > 64:
             raise ValueError(f"location floor does not fit after {lower!r}")
@@ -448,21 +497,22 @@ def patched_table(
     spec: LocationSpec,
     labels: tuple[tuple[str, str, int], ...],
     marker_aliases: dict[str, str] | None = None,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> bytes:
     table = bytearray(
         data[spec.table_file : spec.table_file + RECORD_COUNT * RECORD_SIZE]
     )
-    for index, text in enumerate(location_texts()):
+    for index, text in enumerate(location_texts(context)):
         offset = index * RECORD_SIZE
         if table[offset + 1] != 0 or not any(table[offset + 2 : offset + TEXT_BYTES]):
             raise ValueError(f"{spec.target.name}: invalid location record {index}")
         floor = floor_text(table[offset])
-        floor_width = text_width(floor) if floor else 0
+        floor_width = text_width(floor, context) if floor else 0
         if spec.automap:
             display = (marker_aliases or {}).get(text, text)
             label = (display, "", floor_width)
         else:
-            label = (*location_lines(text, floor_width), floor_width)
+            label = (*location_lines(text, floor_width, context), floor_width)
         struct.pack_into(
             ">5H", table, offset + 2, LABEL_SENTINEL + labels.index(label), 0, 0, 0, 0
         )
@@ -472,8 +522,9 @@ def patched_table(
 def canonical_prefix_replacements(
     canonical: bytes,
     labels: tuple[tuple[str, str, int], ...],
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> dict[bytes, bytes]:
-    patched = patched_table(canonical, SPECS[0], labels)
+    patched = patched_table(canonical, SPECS[0], labels, context=context)
     replacements = {}
     for index in range(RECORD_COUNT):
         offset = SPECS[0].table_file + index * RECORD_SIZE
@@ -492,8 +543,9 @@ def canonical_prefix_replacements(
 def canonical_name_replacements(
     canonical: bytes,
     labels: tuple[tuple[str, str, int], ...],
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> dict[tuple[int, bytes], bytes]:
-    patched = patched_table(canonical, SPECS[0], labels)
+    patched = patched_table(canonical, SPECS[0], labels, context=context)
     replacements = {}
     for index in range(RECORD_COUNT):
         source_offset = SPECS[0].table_file + index * RECORD_SIZE
@@ -594,6 +646,7 @@ def build_floor_cave(
     append_offsets: bytes,
     label_count: int,
     marker_strips: tuple[MarkerUiStrip, ...] = (),
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> tuple[bytes, dict[str, int]]:
     if bool(marker_strips) != spec.automap:
         raise ValueError(
@@ -605,15 +658,16 @@ def build_floor_cave(
         source_parts.append((ASM_ROOT / "marker_ui.s").read_text(encoding="utf-8"))
     source_parts.append((ASM_ROOT / "floor_compositor.s").read_text(encoding="utf-8"))
     source = "\n".join(source_parts)
+    widths, codes = runtime_metrics(context)
     symbols = {
         "TOP_CODE": TOP_CODE,
         "BOTTOM_CODE": BOTTOM_CODE,
         "TOP_ADDR": FONT16_BASE + TOP_CODE * 32,
         "BOTTOM_ADDR": FONT16_BASE + BOTTOM_CODE * 32,
         "FONT_BASE": FONT16_BASE,
-        "CODE_0": runtime_metrics()[1]["0"],
-        "CODE_B": runtime_metrics()[1]["B"],
-        "CODE_F": runtime_metrics()[1]["F"],
+        "CODE_0": codes["0"],
+        "CODE_B": codes["B"],
+        "CODE_F": codes["F"],
         "RETURN_ADDR": spec.return_address,
         "DRAW_NAME": spec.stock_name_drawer,
         "LABEL_BASE": LABEL_SENTINEL,
@@ -667,7 +721,7 @@ def build_floor_cave(
             f"{spec.target.name}: dungeon-location warnings: {probe.warnings}"
         )
     widths_address = address + len(probe)
-    append_offsets_address = widths_address + len(runtime_metrics()[0])
+    append_offsets_address = widths_address + len(widths)
     if append_offsets_address & 3:
         raise ValueError("dungeon-location append-offset table is not aligned")
     bitmaps_address = (append_offsets_address + len(append_offsets) + 3) & ~3
@@ -696,7 +750,7 @@ def build_floor_cave(
     if code.labels[entry] != address:
         raise ValueError(f"{spec.target.name}: dungeon-location entry moved")
     payload = bytearray(code)
-    payload.extend(runtime_metrics()[0])
+    payload.extend(widths)
     payload.extend(append_offsets)
     payload.extend(bytes((-len(payload)) % 4))
     if address + len(payload) != bitmaps_address:
@@ -719,6 +773,7 @@ def build_group(
     canonical: bytes | None = None,
     generated_root: Path = TEXT_GENERATED_ROOT,
     marker_aliases: dict[str, str] | None = None,
+    context: EngineBuildContext = DEFAULT_CONTEXT,
 ) -> PatchGroup:
     extracted_root = extracted_root or CANONICAL_TABLE_PATH.parent
     source_path = extracted_root / spec.target.path
@@ -736,11 +791,20 @@ def build_group(
 
     if spec.automap and marker_aliases is None:
         raise ValueError("AUTOMAP marker display names were not supplied")
-    labels = label_catalog(original, spec, marker_aliases)
-    bitmaps = build_label_bitmaps(font16, labels, automap=spec.automap)
-    append_offsets = label_append_offsets(labels, automap=spec.automap)
+    labels = label_catalog(original, spec, marker_aliases, context)
+    bitmaps = build_label_bitmaps(
+        font16,
+        labels,
+        automap=spec.automap,
+        context=context,
+    )
+    append_offsets = label_append_offsets(
+        labels,
+        automap=spec.automap,
+        context=context,
+    )
     marker_strips = (
-        build_marker_ui_strips(font16, generated_root, extracted_root)
+        build_marker_ui_strips(font16, generated_root, extracted_root, context)
         if spec.automap
         else ()
     )
@@ -752,6 +816,7 @@ def build_group(
         append_offsets,
         len(labels),
         marker_strips,
+        context,
     )
     if spec.cave_file + len(cave) > spec.cave_limit:
         raise ValueError(
@@ -823,7 +888,7 @@ def build_group(
             "location_table",
             BASE + spec.table_file,
             hashlib.sha256(table_original).hexdigest(),
-            patched_table(original, spec, labels, marker_aliases),
+            patched_table(original, spec, labels, marker_aliases, context),
         ),
     )
     return PatchGroup("dungeon_locations", spec.target, patches)
@@ -913,14 +978,20 @@ def build_kai_group(
 def build_patch_groups(context: EngineBuildContext) -> tuple[PatchGroup, ...]:
     canonical = (context.extracted_root / "MAZE.BIN").read_bytes()
     marker_aliases = load_marker_name_aliases(
-        load_runtime_ui(context).section("dungeon_marker_names")
+        load_runtime_ui(context).section("dungeon_marker_names"),
+        context,
     )
-    canonical_labels = label_catalog(canonical, SPECS[0])
+    canonical_labels = label_catalog(canonical, SPECS[0], context=context)
     landing_replacements = canonical_prefix_replacements(
         canonical,
         canonical_labels,
+        context,
     )
-    kai_replacements = canonical_name_replacements(canonical, canonical_labels)
+    kai_replacements = canonical_name_replacements(
+        canonical,
+        canonical_labels,
+        context,
+    )
     kai_specs = discover_kai_specs(kai_replacements, context.extracted_root)
     font16_path = context.build_root / "FONT16.FON"
     return (
@@ -932,6 +1003,7 @@ def build_patch_groups(context: EngineBuildContext) -> tuple[PatchGroup, ...]:
                 canonical,
                 context.text_generated_root,
                 marker_aliases,
+                context,
             )
             for spec in SPECS
         ),

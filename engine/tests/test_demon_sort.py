@@ -118,7 +118,10 @@ class EnglishDemonSortTests(unittest.TestCase):
     def test_analyse_patch_uses_shared_ranks_and_preserves_stock_sort_shell(
         self,
     ) -> None:
-        group = build_da3d_patch()
+        group = build_da3d_patch(
+            DEFAULT_CONTEXT,
+            load_runtime_ui(DEFAULT_CONTEXT),
+        )
         patches = {patch.name: patch for patch in group.patches}
         compare = patches["demon_analyzer_english_name_compare"]
         ranks = patches["demon_analyzer_english_name_ranks"]

@@ -73,10 +73,25 @@ for name in {modules!r}:
         self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_capability_listing_imports_no_feature_patches(self) -> None:
-        self.assertEqual(registry.capability_names(), EXPECTED_CAPABILITIES)
-        self.assertNotIn("engine.script.config_menu.patch", sys.modules)
-        self.assertNotIn("engine.script.event.vwf", sys.modules)
-        self.assertNotIn("engine.script.status_ui.patch", sys.modules)
+        script = f"""
+import sys
+from engine.script import registry
+
+assert registry.capability_names() == {EXPECTED_CAPABILITIES!r}
+for name in (
+    "engine.script.config_menu.patch",
+    "engine.script.event.vwf",
+    "engine.script.status_ui.patch",
+):
+    assert name not in sys.modules, name
+"""
+        result = subprocess.run(
+            [sys.executable, "-B", "-c", script],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_feature_packages_are_lazy(self) -> None:
         packages = (

@@ -5,7 +5,10 @@ from functools import cache
 from pathlib import Path
 from typing import Any
 
-from project_paths import BUILD_ROOT, FONT_GENERATED_ROOT
+from engine.script.context import DEFAULT_CONTEXT
+
+BUILD_ROOT = DEFAULT_CONTEXT.build_root
+FONT_GENERATED_ROOT = DEFAULT_CONTEXT.font_generated_root
 
 FONT16_METRICS_PATH = FONT_GENERATED_ROOT / "font16_metrics.json"
 FONT12_METRICS_PATH = FONT_GENERATED_ROOT / "font12_metrics.json"
@@ -88,23 +91,28 @@ def find_font12_signature(
 
 
 @cache
-def font16_metrics() -> dict[str, Any]:
-    return load_font16_metrics()
+def font16_metrics(path: Path = FONT16_METRICS_PATH) -> dict[str, Any]:
+    """Load and cache FONT16 metrics from an explicit generated path."""
+    return load_font16_metrics(path)
 
 
 @cache
-def font12_metrics() -> dict[str, Any]:
-    return load_font12_metrics()
+def font12_metrics(path: Path = FONT12_METRICS_PATH) -> dict[str, Any]:
+    """Load and cache FONT12 metrics from an explicit generated path."""
+    return load_font12_metrics(path)
 
 
 @cache
-def font12_dialogue_widths() -> bytes:
-    return build_font12_dialogue_widths(font12_metrics())
+def font12_dialogue_widths(path: Path = FONT12_METRICS_PATH) -> bytes:
+    return build_font12_dialogue_widths(font12_metrics(path))
 
 
 @cache
-def font12_signature() -> tuple[int, int]:
+def font12_signature(
+    font12_path: Path = FONT12_PATH,
+    font16_path: Path = FONT16_PATH,
+) -> tuple[int, int]:
     return find_font12_signature(
-        FONT12_PATH.read_bytes(),
-        FONT16_PATH.read_bytes(),
+        font12_path.read_bytes(),
+        font16_path.read_bytes(),
     )

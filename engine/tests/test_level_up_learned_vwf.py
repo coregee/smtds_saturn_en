@@ -35,7 +35,10 @@ class LevelUpLearnedVwfTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.original = (DEFAULT_CONTEXT.extracted_root / "LEVEL_UP.BIN").read_bytes()
-        cls.group = build_level_up_patch(DEFAULT_CONTEXT)
+        cls.group = build_level_up_patch(
+            DEFAULT_CONTEXT,
+            load_runtime_ui(DEFAULT_CONTEXT),
+        )
         cls.patches = {patch.name: patch for patch in cls.group.patches}
 
     def test_shared_stock_drawer_has_label_and_skill_callers(self) -> None:

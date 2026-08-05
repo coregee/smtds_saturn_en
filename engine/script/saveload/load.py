@@ -11,6 +11,7 @@ from engine.script.name.model import (
     byte_to_atlas_table,
     byte_to_font8_table,
     load_atlas_metrics,
+    load_font8_codes,
 )
 from engine.script.patching import BinaryTarget, BytePatch, PatchGroup
 from tools.sh2asm import AsmBlob, assemble
@@ -27,11 +28,14 @@ ORIGINAL_PREP_NAMES = 0x0602AB5C
 SOURCE_PATH = Path(__file__).with_name("load_names.s")
 
 
-def build_source() -> str:
+def build_source(
+    atlas_codes: dict[str, int] | None = None,
+    font8_codes: dict[str, int] | None = None,
+) -> str:
     source = SOURCE_PATH.read_text(encoding="utf-8")
     stage_addresses = ", ".join(f"{spec.stage_address:#010x}" for spec in NAME_FIELDS)
-    atlas_words = ", ".join(str(code) for code in byte_to_atlas_table())
-    font8_bytes = ", ".join(str(code) for code in byte_to_font8_table())
+    atlas_words = ", ".join(str(code) for code in byte_to_atlas_table(atlas_codes))
+    font8_bytes = ", ".join(str(code) for code in byte_to_font8_table(font8_codes))
     return (
         source
         + "\n.align 4\nstage_ptrs:\n"
@@ -43,16 +47,22 @@ def build_source() -> str:
     )
 
 
-def build_cave() -> AsmBlob:
+def build_cave(
+    atlas_metrics: tuple[dict[str, int], dict[str, int]] | None = None,
+    font8_codes: dict[str, int] | None = None,
+) -> AsmBlob:
+    if atlas_metrics is None:
+        atlas_metrics = load_atlas_metrics()
+    atlas_codes, _advances = atlas_metrics
     cave = assemble(
-        build_source(),
+        build_source(atlas_codes, font8_codes),
         CAVE_ADDRESS,
         symbols={
             "NAME_FW": NAME_FW,
             "NAME_FW_FULL": NAME_FW_FULL,
             "CODENAME": CODENAME_BYTES,
             "prep_names": ORIGINAL_PREP_NAMES,
-            "space_glyph": load_atlas_metrics()[0][" "],
+            "space_glyph": atlas_codes[" "],
         },
     )
     if cave.warnings:
@@ -63,8 +73,11 @@ def build_cave() -> AsmBlob:
     return cave
 
 
-def build_patch_groups(_context: EngineBuildContext) -> PatchGroup:
-    cave = build_cave()
+def build_patch_groups(context: EngineBuildContext) -> PatchGroup:
+    cave = build_cave(
+        load_atlas_metrics(context.font_generated_root / "font16_metrics.json"),
+        load_font8_codes(context.font_generated_root / "font8_metrics.json"),
+    )
     return PatchGroup(
         capability="name_runtime",
         target=LOAD_TARGET,

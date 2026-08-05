@@ -9,7 +9,7 @@ from engine.script.demon_sort import dense_rank_table
 from engine.script.event.model import FUSION_CONFIRMATION_OVERFLOW_ADDRESS
 from engine.script.event.packed_layout import next_runtime_address
 from engine.script.fixed_text_fields.generated import load_runtime_fields
-from engine.script.generated_asset import load_runtime_ui
+from engine.script.generated_asset import RuntimeUiContract, load_runtime_ui
 from engine.script.patching import (
     BinaryTarget,
     BytePatch,
@@ -174,11 +174,14 @@ def digest_patch(
     )
 
 
-def build_normcom_patch() -> PatchGroup:
-    original = read_original(NORMCOM_TARGET, NORMCOM_SHA256)
-    font8 = read_font8()
+def build_normcom_patch(
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
+) -> PatchGroup:
+    original = read_original(NORMCOM_TARGET, NORMCOM_SHA256, context)
+    font8 = read_font8(context)
 
-    labels = status_labels()
+    labels = status_labels(runtime_ui, context)
     rows_config = derived_rows(labels)
     chunks = []
     for row in rows_config:
@@ -192,7 +195,7 @@ def build_normcom_patch() -> PatchGroup:
     if len(atlas_labels) != 21:
         raise ValueError("status atlas must contain 21 tiles")
 
-    atlas = b"".join(status_atlas_tile(text, font8) for text in atlas_labels)
+    atlas = b"".join(status_atlas_tile(text, font8, context) for text in atlas_labels)
     masks = b"".join(
         status_mask(atlas[index * 0x48 : (index + 1) * 0x48]) for index in range(21)
     )
@@ -212,6 +215,7 @@ def build_normcom_patch() -> PatchGroup:
         font8,
         labels.base,
         rows_config,
+        context,
     )
     (
         runtime,
@@ -220,7 +224,7 @@ def build_normcom_patch() -> PatchGroup:
         affinity_drawer,
         masks_address,
         stock_icon_drawer,
-    ) = build_status_runtime(masks)
+    ) = build_status_runtime(masks, context, runtime_ui)
     dirty_address = masks_address + len(masks)
 
     atlas_address = BASE + ATLAS_FILE
@@ -301,14 +305,14 @@ def build_normcom_patch() -> PatchGroup:
             "generic_attack_label",
             GENERIC_ATTACK_FILE,
             original,
-            direct_color_row("Attack", font8),
+            direct_color_row("Attack", font8, context=context),
         ),
         digest_patch(
             NORMCOM_TARGET,
             "generic_accuracy_label",
             GENERIC_ACCURACY_FILE,
             original,
-            direct_color_row("Accuracy", font8),
+            direct_color_row("Accuracy", font8, context=context),
         ),
         *(
             digest_patch(
@@ -316,7 +320,7 @@ def build_normcom_patch() -> PatchGroup:
                 f"personality_label_{index}",
                 LOYALTY_LABEL_FILE + index * PERSONALITY_STRIDE,
                 original,
-                direct_color_row(label, font8, 40),
+                direct_color_row(label, font8, 40, context),
             )
             for index, label in enumerate(PERSONALITY_LABELS)
         ),
@@ -369,16 +373,21 @@ def build_normcom_patch() -> PatchGroup:
     return PatchGroup("status_ui", NORMCOM_TARGET, tuple(patches))
 
 
-def build_event_patch() -> PatchGroup:
+def build_event_patch(
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
+) -> PatchGroup:
     event_runtime_cave = next_runtime_address()
     fusion_confirmation_asset = load_static_asset(
         Path("static") / "EVENT.fusion_confirmation.json",
         Path("EVENT.BIN"),
+        context.text_generated_root,
+        context.extracted_root,
     )
     fusion_confirmation = build_fusion_confirmation_storage(fusion_confirmation_asset)
-    original = read_original(EVENT_TARGET, EVENT_SHA256)
-    font8 = read_font8()
-    labels = status_labels()
+    original = read_original(EVENT_TARGET, EVENT_SHA256, context)
+    font8 = read_font8(context)
+    labels = status_labels(runtime_ui, context)
     rows_config = derived_rows(labels)
     node_data, row_data = direct_color_assets(
         original,
@@ -386,6 +395,7 @@ def build_event_patch() -> PatchGroup:
         font8,
         labels.base,
         rows_config,
+        context,
     )
     (
         runtime,
@@ -403,7 +413,7 @@ def build_event_patch() -> PatchGroup:
         dialogue_character_name_insert,
         dialogue_demon_name_insert,
         dialogue_race_insert,
-    ) = build_event_status_runtime(event_runtime_cave)
+    ) = build_event_status_runtime(event_runtime_cave, context, runtime_ui)
     return PatchGroup(
         "status_ui",
         EVENT_TARGET,
@@ -427,14 +437,14 @@ def build_event_patch() -> PatchGroup:
                 "fusion_generic_attack_label",
                 EVENT_GENERIC_ATTACK_FILE,
                 original,
-                direct_color_row("Attack", font8),
+                direct_color_row("Attack", font8, context=context),
             ),
             digest_patch(
                 EVENT_TARGET,
                 "fusion_generic_accuracy_label",
                 EVENT_GENERIC_ACCURACY_FILE,
                 original,
-                direct_color_row("Accuracy", font8),
+                direct_color_row("Accuracy", font8, context=context),
             ),
             *(
                 digest_patch(
@@ -442,7 +452,7 @@ def build_event_patch() -> PatchGroup:
                     f"fusion_personality_label_{index}",
                     EVENT_LOYALTY_LABEL_FILE + index * PERSONALITY_STRIDE,
                     original,
-                    direct_color_row(label, font8, 40),
+                    direct_color_row(label, font8, 40, context),
                 )
                 for index, label in enumerate(PERSONALITY_LABELS)
             ),
@@ -584,10 +594,13 @@ def build_event_patch() -> PatchGroup:
     )
 
 
-def build_da3d_patch() -> PatchGroup:
-    original = read_original(DA3D_TARGET, DA3D_SHA256)
-    font8 = read_font8()
-    labels = status_labels()
+def build_da3d_patch(
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
+) -> PatchGroup:
+    original = read_original(DA3D_TARGET, DA3D_SHA256, context)
+    font8 = read_font8(context)
+    labels = status_labels(runtime_ui, context)
     rows_config = derived_rows(labels)
     node_data, row_data = direct_color_assets(
         original,
@@ -595,6 +608,7 @@ def build_da3d_patch() -> PatchGroup:
         font8,
         labels.base,
         rows_config,
+        context,
     )
     (
         runtime,
@@ -605,8 +619,10 @@ def build_da3d_patch() -> PatchGroup:
         skill_drawer,
         affinity_drawer,
         table_drawer,
-    ) = build_da3d_status_runtime(DA3D_STATUS_BLOCK)
-    _races, _affinities, demon_names = load_status_terms("DA_3D name sort")
+    ) = build_da3d_status_runtime(DA3D_STATUS_BLOCK, context, runtime_ui)
+    _races, _affinities, demon_names = load_status_terms(
+        "DA_3D name sort", runtime_ui, context
+    )
     name_ranks = dense_rank_table(demon_names, count=DA3D_NAME_SORT_COUNT)
     return PatchGroup(
         "status_ui",
@@ -730,30 +746,33 @@ def build_da3d_patch() -> PatchGroup:
                 "demon_analyzer_generic_attack_label",
                 DA3D_GENERIC_ATTACK_FILE,
                 original,
-                direct_color_row("Attack", font8),
+                direct_color_row("Attack", font8, context=context),
             ),
             digest_patch(
                 DA3D_TARGET,
                 "demon_analyzer_generic_accuracy_label",
                 DA3D_GENERIC_ACCURACY_FILE,
                 original,
-                direct_color_row("Accuracy", font8),
+                direct_color_row("Accuracy", font8, context=context),
             ),
             digest_patch(
                 DA3D_TARGET,
                 "demon_analyzer_loyalty_label",
                 DA3D_LOYALTY_LABEL_FILE,
                 original,
-                direct_color_row(PERSONALITY_LABELS[0], font8, 40),
+                direct_color_row(PERSONALITY_LABELS[0], font8, 40, context),
             ),
         ),
     )
 
 
-def build_level_up_patch(context: EngineBuildContext) -> PatchGroup:
-    original = read_original(LEVEL_UP_TARGET, LEVEL_UP_SHA256)
-    font8 = read_font8()
-    labels = status_labels()
+def build_level_up_patch(
+    context: EngineBuildContext,
+    runtime_ui: RuntimeUiContract,
+) -> PatchGroup:
+    original = read_original(LEVEL_UP_TARGET, LEVEL_UP_SHA256, context)
+    font8 = read_font8(context)
+    labels = status_labels(runtime_ui, context)
     rows_config = derived_rows(labels)
     node_data, row_data = direct_color_assets(
         original,
@@ -761,6 +780,7 @@ def build_level_up_patch(context: EngineBuildContext) -> PatchGroup:
         font8,
         labels.base,
         rows_config,
+        context,
     )
     load_address, runtime_fields = load_runtime_fields(
         LEVEL_UP_TEXT_ASSET,
@@ -777,7 +797,6 @@ def build_level_up_patch(context: EngineBuildContext) -> PatchGroup:
         or learned_magic.file_offset != LEVEL_UP_LEARNED_MAGIC_FIELD_FILE
     ):
         raise ValueError("LEVEL_UP learned-magic runtime field is missing")
-    runtime_ui = load_runtime_ui(context)
     character_rows = runtime_ui.section("character_names")
     if not isinstance(character_rows, list) or len(character_rows) != 6:
         raise ValueError("LEVEL_UP needs six generated character-name rows")
@@ -802,6 +821,7 @@ def build_level_up_patch(context: EngineBuildContext) -> PatchGroup:
     validate_level_up_packed_skill_names(
         (context.build_root / "MAGNAME.DAT").read_bytes(),
         tuple(magic_names),
+        context,
     )
     (
         name_runtime,
@@ -813,6 +833,7 @@ def build_level_up_patch(context: EngineBuildContext) -> PatchGroup:
         learned_magic.words,
         tuple(character_names),
         tuple(magic_names),
+        context,
     )
     return PatchGroup(
         "status_ui",
@@ -855,24 +876,24 @@ def build_level_up_patch(context: EngineBuildContext) -> PatchGroup:
                 "level_up_generic_attack_label",
                 LEVEL_UP_GENERIC_ATTACK_FILE,
                 original,
-                direct_color_row("Attack", font8),
+                direct_color_row("Attack", font8, context=context),
             ),
             digest_patch(
                 LEVEL_UP_TARGET,
                 "level_up_generic_accuracy_label",
                 LEVEL_UP_GENERIC_ACCURACY_FILE,
                 original,
-                direct_color_row("Accuracy", font8),
+                direct_color_row("Accuracy", font8, context=context),
             ),
         ),
     )
 
 
 def build_patch_groups(context: EngineBuildContext) -> tuple[PatchGroup, ...]:
-    load_runtime_ui(context)
+    runtime_ui = load_runtime_ui(context)
     return (
-        build_normcom_patch(),
-        build_event_patch(),
-        build_da3d_patch(),
-        build_level_up_patch(context),
+        build_normcom_patch(context, runtime_ui),
+        build_event_patch(context, runtime_ui),
+        build_da3d_patch(context, runtime_ui),
+        build_level_up_patch(context, runtime_ui),
     )

@@ -3,6 +3,7 @@ import sys
 import unittest
 
 from engine.script.context import DEFAULT_CONTEXT
+from engine.script.generated_asset import load_runtime_ui
 from engine.script.name.fields import FIELD_BY_KIND
 from engine.script.patching import DigestPatch, PatchGroup, apply_patch_groups
 from engine.script.smallfont.model import OVERLAYS
@@ -163,7 +164,10 @@ class DialogueNameCoverageTests(unittest.TestCase):
         try:
             from engine.script.status_ui.patch import build_event_patch
 
-            group = build_event_patch()
+            group = build_event_patch(
+                DEFAULT_CONTEXT,
+                load_runtime_ui(DEFAULT_CONTEXT),
+            )
             patch = next(
                 patch
                 for patch in group.patches

@@ -2,7 +2,9 @@
 
 import json
 from functools import cache
+from pathlib import Path
 
+from engine.script.context import DEFAULT_CONTEXT
 from engine.script.name.fields import (
     CODENAME_BYTES,
     FIELD_BY_KIND,
@@ -17,8 +19,7 @@ from engine.script.name.fields import (
     NameField,
     NameFieldSpec,
 )
-from engine.script.text_render.font8_metrics import font8_metrics
-from project_paths import FONT_GENERATED_ROOT
+from engine.script.text_render.font8_metrics import METRICS_PATH, load_metrics
 
 __all__ = (
     "CODENAME_BYTES",
@@ -42,17 +43,19 @@ __all__ = (
     "load_font8_codes",
 )
 
-FONT16_METRICS_PATH = FONT_GENERATED_ROOT / "font16_metrics.json"
+FONT16_METRICS_PATH = DEFAULT_CONTEXT.font_generated_root / "font16_metrics.json"
 
 
 @cache
-def load_atlas_metrics() -> tuple[dict[str, int], dict[str, int]]:
-    data = json.loads(FONT16_METRICS_PATH.read_text(encoding="utf-8"))
+def load_atlas_metrics(
+    path: Path = FONT16_METRICS_PATH,
+) -> tuple[dict[str, int], dict[str, int]]:
+    data = json.loads(path.read_text(encoding="utf-8"))
     if data.get("version") != 2 or not data.get("complete"):
-        raise ValueError(f"{FONT16_METRICS_PATH}: incomplete FONT16 metrics")
+        raise ValueError(f"{path}: incomplete FONT16 metrics")
 
-    codes = {}
-    advances = {}
+    codes: dict[str, int] = {}
+    advances: dict[str, int] = {}
     for glyph in data["glyphs"]:
         for text in (glyph["text"], *glyph.get("aliases", ())):
             if len(text) == 1:
@@ -67,13 +70,16 @@ def load_atlas_metrics() -> tuple[dict[str, int], dict[str, int]]:
 
 
 @cache
-def load_font8_codes() -> dict[str, int]:
-    return font8_metrics()[1]
+def load_font8_codes(path: Path = METRICS_PATH) -> dict[str, int]:
+    return load_metrics(path)[1]
 
 
-def byte_to_atlas_table() -> tuple[int, ...]:
+def byte_to_atlas_table(
+    codes: dict[str, int] | None = None,
+) -> tuple[int, ...]:
     """Map every saved byte safely into the current FONT16 atlas."""
-    codes, _ = load_atlas_metrics()
+    if codes is None:
+        codes, _ = load_atlas_metrics()
     fallback = codes["?"]
     table = [fallback] * 256
     table[0] = codes[" "]
@@ -82,9 +88,12 @@ def byte_to_atlas_table() -> tuple[int, ...]:
     return tuple(table)
 
 
-def byte_to_advance_table() -> tuple[int, ...]:
+def byte_to_advance_table(
+    advances: dict[str, int] | None = None,
+) -> tuple[int, ...]:
     """Map every saved byte to its proportional display advance."""
-    _, advances = load_atlas_metrics()
+    if advances is None:
+        _, advances = load_atlas_metrics()
     fallback = advances["?"]
     table = [fallback] * 256
     table[0] = 0
@@ -93,9 +102,10 @@ def byte_to_advance_table() -> tuple[int, ...]:
     return tuple(table)
 
 
-def byte_to_font8_table() -> bytes:
+def byte_to_font8_table(codes: dict[str, int] | None = None) -> bytes:
     """Map saved ASCII names into the relocated narrow FONT8 alphabet."""
-    codes = load_font8_codes()
+    if codes is None:
+        codes = load_font8_codes()
     fallback = codes["?"]
     table = bytearray([fallback] * 256)
     table[0] = 0
@@ -104,12 +114,16 @@ def byte_to_font8_table() -> bytes:
     return bytes(table)
 
 
-def encode_runtime_row(text: str) -> tuple[int, ...]:
+def encode_runtime_row(
+    text: str,
+    codes: dict[str, int] | None = None,
+) -> tuple[int, ...]:
     """Encode one trimmed eight-character name as FONT16 cells plus 0x8000."""
     text = text.rstrip(" \x00")
     if len(text) > MAX_NAME_LENGTH:
         raise ValueError(f"name exceeds {MAX_NAME_LENGTH} characters: {text!r}")
-    codes, _ = load_atlas_metrics()
+    if codes is None:
+        codes, _ = load_atlas_metrics()
     try:
         encoded = tuple(codes[character] for character in text)
     except KeyError as error:
@@ -117,10 +131,15 @@ def encode_runtime_row(text: str) -> tuple[int, ...]:
     return (*encoded, TERMINATOR)
 
 
-def encode_full_name(first: str, last: str) -> tuple[int, ...]:
-    codes, _ = load_atlas_metrics()
-    first_codes = encode_runtime_row(first)[:-1]
-    last_codes = encode_runtime_row(last)[:-1]
+def encode_full_name(
+    first: str,
+    last: str,
+    codes: dict[str, int] | None = None,
+) -> tuple[int, ...]:
+    if codes is None:
+        codes, _ = load_atlas_metrics()
+    first_codes = encode_runtime_row(first, codes)[:-1]
+    last_codes = encode_runtime_row(last, codes)[:-1]
     words = (*first_codes, codes[" "], *last_codes, TERMINATOR)
     if len(words) > MAX_NAME_LENGTH * 2 + 2:
         raise ValueError("combined name exceeds its runtime row")
