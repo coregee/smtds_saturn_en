@@ -4,9 +4,9 @@ import json
 from functools import cache
 from pathlib import Path
 
-from project_paths import PROJECT_ROOT as REPO_ROOT
+from project_paths import FONT_GENERATED_ROOT
 
-METRICS_PATH = REPO_ROOT / "font" / "generated" / "font8_metrics.json"
+METRICS_PATH = FONT_GENERATED_ROOT / "font8_metrics.json"
 
 
 def load_metrics(

@@ -26,13 +26,13 @@ from engine.script.status_ui.model import (
     HEALING_UI_PATH,
     MAGIC_NAMES_PATH,
     RUNTIME_DATA_FILE,
-    SATURN_ROOT,
     SHOP_UI_PATH,
     STATUS_TABLES_PATH,
 )
 from engine.script.status_ui.name_lookup import NAME_LOOKUP_STRIDE, build_name_lookup
 from engine.script.text_render.font8_metrics import font8_metrics
 from engine.script.text_render.font_metrics import font16_metrics
+from project_paths import BUILD_ROOT
 
 
 def validate_shiftable_bitmap(
@@ -806,7 +806,7 @@ def _event_status_english_data(
 def ambiguous_magname_fallbacks() -> tuple[bytes, ...]:
     """Return eight-byte fallbacks shared by different English skill names."""
     names = json.loads(MAGIC_NAMES_PATH.read_text(encoding="utf-8"))
-    built = (SATURN_ROOT / "rom" / "build" / "MAGNAME.DAT").read_bytes()
+    built = (BUILD_ROOT / "MAGNAME.DAT").read_bytes()
     if len(names) != 255 or len(built) != 255 * 96:
         raise ValueError("fusion status needs 255 MAGNAME records")
     seen = {}

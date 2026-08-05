@@ -34,13 +34,8 @@ from text.script.formats.fixed_help.repack import (
 )
 from text.script.formats.fixed_help.repack import indentation
 from text.script.formats.fixed_words.repack import encode_fixed_text
-from text.script.formats.indexed_bytes.extract import (
-    load_atlases,
-    read_message_spans,
-    read_pointers,
-)
 from text.script.formats.indexed_bytes.repack import (
-    encode_message as encode_indexed_bytes_message,
+    plan_indexed_bytes,
 )
 from text.script.formats.indexed_words.extract import read_records
 from text.script.formats.indexed_words.repack import (
@@ -1017,51 +1012,12 @@ def _indexed_bytes(
     format_name = "indexed_bytes"
     exact = False
     try:
-        original = source.input_path.read_bytes()
-        pointers, sentinel_offset = read_pointers(original, source)
-        spans, original_body_end = read_message_spans(original, source, pointers)
-        if source.output_body_offset < sentinel_offset + 2:
-            raise ValueError("repacked body overlaps the pointer table")
-        if source.output_body_offset & 1:
-            raise ValueError("repacked body offset must be even")
-        primary, secondary = load_atlases(source)
-        original_messages = [original[start:end] for start, end in spans]
-        if len(document) != len(original_messages):
-            raise ValueError("corpus and indexed-byte message counts differ")
-        messages = []
-        translated_indices = set()
-        for index, (row, raw) in enumerate(zip(document, original_messages)):
-            candidate = translation if index == row_index else row["tr"]
-            if candidate.strip():
-                raw = encode_indexed_bytes_message(
-                    candidate,
-                    source,
-                    primary,
-                    secondary,
-                )
-                translated_indices.add(index)
-            messages.append(raw)
-        capacity = original_body_end - source.output_body_offset
-        if capacity <= 0:
-            raise ValueError("repacked body has no capacity")
-        projected_size = sum(map(len, messages))
-        projected_message = messages[row_index]
-        body_size = projected_size
-        fallback_indices = []
-        if body_size > capacity:
-            candidates = sorted(
-                (
-                    (len(messages[index]) - len(original_messages[index]), index)
-                    for index in translated_indices
-                    if len(messages[index]) > len(original_messages[index])
-                ),
-                key=lambda item: (-item[0], item[1]),
-            )
-            for savings, index in candidates:
-                body_size -= savings
-                fallback_indices.append(index)
-                if body_size <= capacity:
-                    break
+        plan = plan_indexed_bytes(
+            source,
+            document,
+            translation_overrides={row_index: translation},
+        )
+        projected_message = plan.projected_messages[row_index]
     except (IndexError, KeyError, OSError, ValueError) as error:
         return _encoding_failure(format_name, error, exact=exact)
 
@@ -1076,30 +1032,30 @@ def _indexed_bytes(
         _check(
             "shared_body_bytes",
             exact=exact,
-            used=projected_size,
-            capacity=capacity,
+            used=plan.projected_body_size,
+            capacity=plan.body_capacity,
             unit="bytes",
         ),
     ]
-    if fallback_indices:
+    if plan.fallback_indices:
         checks.append(
             _check(
                 "projected_fallbacks",
                 exact=exact,
-                used=len(fallback_indices),
+                used=len(plan.fallback_indices),
                 capacity=0,
                 unit="records",
                 outcome="fallback",
                 message=(
                     "The proposed record is among the projected fallbacks."
-                    if row_index in fallback_indices
+                    if row_index in plan.fallback_indices
                     else "Other translated records are projected to fall back."
                 ),
             )
         )
-    if body_size > capacity:
+    if not plan.fits:
         outcome: Outcome = "overflow"
-    elif not translation.strip() or fallback_indices:
+    elif not translation.strip() or plan.fallback_indices:
         outcome = "fallback"
     else:
         outcome = "fits"

@@ -2,7 +2,7 @@ import json
 import struct
 from pathlib import Path
 
-from project_paths import PROJECT_ROOT as TRANSLATION_ROOT
+from project_paths import FONT_GENERATED_ROOT
 from text.script.codec.atlas import FONT16_ATLAS
 from text.script.dialects import get_dialect
 from text.script.encoding.latin import load_latin_encoding, pack_direct_codes
@@ -11,7 +11,7 @@ from text.script.formats.name_description.extract import TERMINATOR, extract_cor
 from text.script.formats.name_description.model import NameDescriptionResult
 from text.script.source_models import NameDescriptionSource
 
-FONT8_METRICS_PATH = TRANSLATION_ROOT / "font" / "generated" / "font8_metrics.json"
+FONT8_METRICS_PATH = FONT_GENERATED_ROOT / "font8_metrics.json"
 NEWLINE = 0x8001
 NAME_TERMINATOR = 0xFF
 

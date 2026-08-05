@@ -2,9 +2,9 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
-from project_paths import PROJECT_ROOT as SATURN_ROOT
+from project_paths import FONT_ROOT
 
-FONT_ATLAS_PATH = SATURN_ROOT / "font" / "atlas"
+FONT_ATLAS_PATH = FONT_ROOT / "atlas"
 
 
 @dataclass(frozen=True)

@@ -1,14 +1,14 @@
 import json
 from pathlib import Path
 
-from project_paths import PROJECT_ROOT as TRANSLATION_ROOT
+from project_paths import FONT_GENERATED_ROOT
 from text.script.encoding.latin import load_latin_encoding
 from text.script.formats.fixed_bytes.extract import extract_corpus
 from text.script.formats.fixed_bytes.model import FixedBytesResult
 from text.script.profiles import RuntimeCapability
 from text.script.source_models import FixedBytesSource
 
-FONT8_METRICS_PATH = TRANSLATION_ROOT / "font" / "generated" / "font8_metrics.json"
+FONT8_METRICS_PATH = FONT_GENERATED_ROOT / "font8_metrics.json"
 
 
 def repack_fixed_bytes(

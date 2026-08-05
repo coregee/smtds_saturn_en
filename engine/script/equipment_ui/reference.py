@@ -6,9 +6,9 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from engine.script.sh2 import disassemble
-from project_paths import PROJECT_ROOT as SATURN_ROOT
+from project_paths import EXTRACTED_ROOT
 
-SOURCE_ROOT = SATURN_ROOT / "rom" / "extracted"
+SOURCE_ROOT = EXTRACTED_ROOT
 OUTPUT_ROOT = Path(__file__).with_name("reference")
 LOAD_ADDRESS = 0x06020000
 

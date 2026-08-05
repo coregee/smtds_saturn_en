@@ -3,8 +3,7 @@
 from dataclasses import dataclass
 from pathlib import Path
 
-from project_paths import PROJECT_ROOT as SATURN_ROOT
-from project_paths import TEXT_LAYOUT_ROOT
+from project_paths import EXTRACTED_ROOT, TEXT_LAYOUT_ROOT
 from text.script.dialects import TextDialect
 from text.script.formats.ascii_fields.model import AsciiField
 from text.script.formats.fixed_bytes.model import FixedBytesRuntimeCoverage
@@ -13,7 +12,7 @@ from text.script.formats.mirrored_words.model import MirroredWordTable
 from text.script.formats.static_overlay.model import StaticRecordSpec
 from text.script.profiles import RuntimeCapability, TextFont, TextProfile
 
-EXTRACTED_PATH = SATURN_ROOT / "rom" / "extracted"
+EXTRACTED_PATH = EXTRACTED_ROOT
 
 
 @dataclass(frozen=True)

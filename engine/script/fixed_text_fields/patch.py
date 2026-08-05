@@ -23,12 +23,9 @@ from engine.script.text_render.precomposed import (
     PrecomposedStrip,
     precompose_font16_strip,
 )
-from project_paths import PROJECT_ROOT as TRANSLATION_ROOT
+from project_paths import EXTRACTED_ROOT, TEXT_GENERATED_ROOT
 from tools.sh2asm import assemble
 
-SATURN_ROOT = TRANSLATION_ROOT
-GENERATED_ROOT = TRANSLATION_ROOT / "text" / "generated"
-EXTRACTED_ROOT = SATURN_ROOT / "rom" / "extracted"
 MAZE_BASE = 0x06020000
 MAZE_TARGET = BinaryTarget("MAZE.BIN", Path("MAZE.BIN"), MAZE_BASE)
 MAZE_MESSAGE_CAVE = 0x06022C00
@@ -93,7 +90,7 @@ ASM_ROOT = Path(__file__).with_name("asm")
 
 
 def load_maze_choice_asset(
-    generated_root: Path = GENERATED_ROOT,
+    generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
 ) -> StaticTextAsset:
     return load_static_asset(
@@ -134,7 +131,7 @@ def font16_advances() -> bytes:
 
 def build_maze_choice_strips(
     font16: bytes,
-    generated_root: Path = GENERATED_ROOT,
+    generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
 ) -> tuple[PrecomposedStrip, ...]:
     asset = load_maze_choice_asset(generated_root, extracted_root)
@@ -161,7 +158,7 @@ def build_maze_choice_strips(
 
 def build_maze_choice_runtime(
     address: int,
-    generated_root: Path = GENERATED_ROOT,
+    generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
     font16_path: Path = FONT16_PATH,
 ) -> tuple[bytes, dict[str, int]]:
@@ -233,7 +230,7 @@ def build_maze_choice_runtime(
 
 
 def load_maze_runtime_fields(
-    generated_root: Path = GENERATED_ROOT,
+    generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
 ) -> tuple[tuple[str, int, tuple[int, ...]], ...]:
     relative = Path("fixed_words") / "MAZE.BIN.messages.json"
@@ -353,7 +350,7 @@ def build_item_hook(start: int, end: int, target: int) -> bytes:
 
 def build_maze_message_runtime(
     cave_address: int,
-    generated_root: Path = GENERATED_ROOT,
+    generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
     font16_path: Path = FONT16_PATH,
 ) -> tuple[bytes, dict[str, int]]:
@@ -557,7 +554,7 @@ def build_maze_message_runtime(
 
 
 def build_maze_patch(
-    generated_root: Path = GENERATED_ROOT,
+    generated_root: Path = TEXT_GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
     font16_path: Path = FONT16_PATH,
 ) -> PatchGroup:

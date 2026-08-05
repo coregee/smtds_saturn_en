@@ -18,7 +18,6 @@ from fmv.script.util.film import (
     validate_saturn_compatibility,
 )
 from fmv.script.util.media import (
-    BUILD_ROOT,
     DECODED_ROOT,
     EDIT_MANIFEST_PATH,
     REPACK_MANIFEST_PATH,
@@ -36,7 +35,7 @@ from fmv.script.util.media import (
     subtitle_filter_path,
     subtitle_path,
 )
-from project_paths import FONT_ROOT
+from project_paths import BUILD_ROOT, FONT_ROOT
 
 SUBTITLE_FONT_ROOT = FONT_ROOT / "source" / "ark-pixel-font"
 SUBTITLE_FONT_PATH = SUBTITLE_FONT_ROOT / "ark-pixel-16px-proportional-latin.otf"

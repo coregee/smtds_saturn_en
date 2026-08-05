@@ -62,12 +62,11 @@ from engine.script.config_menu.sort_order import (
 from engine.script.context import EngineBuildContext
 from engine.script.patching import DigestPatch, PatchGroup
 from engine.script.static_text import load_static_asset
-from project_paths import PROJECT_ROOT as TRANSLATION_ROOT
+from project_paths import BUILD_ROOT, EXTRACTED_ROOT, FONT_GENERATED_ROOT
 from tools.sh2asm import assemble
 
-SATURN_ROOT = TRANSLATION_ROOT
-METRICS_PATH = TRANSLATION_ROOT / "font" / "generated" / "font16_metrics.json"
-FONT16_PATH = SATURN_ROOT / "rom" / "build" / "FONT16.FON"
+METRICS_PATH = FONT_GENERATED_ROOT / "font16_metrics.json"
+FONT16_PATH = BUILD_ROOT / "FONT16.FON"
 ASM_ROOT = Path(__file__).with_name("asm")
 
 
@@ -639,7 +638,7 @@ def build_config(original: bytes) -> bytes:
 
 
 def build_patch() -> PatchGroup:
-    source_path = SATURN_ROOT / "rom" / "extracted" / TARGET.path
+    source_path = EXTRACTED_ROOT / TARGET.path
     replacement = build_config(source_path.read_bytes())
     return PatchGroup(
         "config_ui",

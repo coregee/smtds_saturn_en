@@ -5,12 +5,12 @@ from functools import cache
 from pathlib import Path
 from typing import Any
 
-from project_paths import PROJECT_ROOT as REPO_ROOT
+from project_paths import BUILD_ROOT, FONT_GENERATED_ROOT
 
-FONT16_METRICS_PATH = REPO_ROOT / "font" / "generated" / "font16_metrics.json"
-FONT12_METRICS_PATH = REPO_ROOT / "font" / "generated" / "font12_metrics.json"
-FONT12_PATH = REPO_ROOT / "rom" / "build" / "FONT12.FON"
-FONT16_PATH = REPO_ROOT / "rom" / "build" / "FONT16.FON"
+FONT16_METRICS_PATH = FONT_GENERATED_ROOT / "font16_metrics.json"
+FONT12_METRICS_PATH = FONT_GENERATED_ROOT / "font12_metrics.json"
+FONT12_PATH = BUILD_ROOT / "FONT12.FON"
+FONT16_PATH = BUILD_ROOT / "FONT16.FON"
 FONT12_DIALOGUE_SPACE = 267
 
 

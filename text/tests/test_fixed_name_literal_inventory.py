@@ -1,8 +1,6 @@
 import unittest
 
-from project_paths import PROJECT_ROOT
-
-EXTRACTED_ROOT = PROJECT_ROOT / "rom" / "extracted"
+from project_paths import EXTRACTED_ROOT
 
 # Exact top-level Saturn resource occurrences. Nested CPK/MDEC payloads are
 # compressed media, not overlays which can consume these loaded table bases.

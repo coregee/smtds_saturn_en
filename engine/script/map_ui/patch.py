@@ -13,7 +13,7 @@ from engine.script.text_render.precomposed import (
     PrecomposedStrip,
     precompose_font16_strip,
 )
-from project_paths import PROJECT_ROOT as TRANSLATION_ROOT
+from project_paths import BUILD_ROOT, EXTRACTED_ROOT, FONT_GENERATED_ROOT
 from tools.sh2asm import assemble
 
 BASE = 0x06020000
@@ -73,9 +73,8 @@ FIXED_TARGETS = (
     (5, "location_hibarigaoka"),
 )
 
-SATURN_ROOT = TRANSLATION_ROOT
-METRICS_PATH = TRANSLATION_ROOT / "font" / "generated" / "font16_metrics.json"
-FONT16_PATH = SATURN_ROOT / "rom" / "build" / "FONT16.FON"
+METRICS_PATH = FONT_GENERATED_ROOT / "font16_metrics.json"
+FONT16_PATH = BUILD_ROOT / "FONT16.FON"
 ASM_ROOT = Path(__file__).with_name("asm")
 
 
@@ -357,7 +356,7 @@ def build_map(original: bytes) -> bytes:
 
 
 def build_patch() -> PatchGroup:
-    source_path = SATURN_ROOT / "rom" / "extracted" / TARGET.path
+    source_path = EXTRACTED_ROOT / TARGET.path
     return PatchGroup(
         "map_ui",
         TARGET,

@@ -4,8 +4,9 @@ import hashlib
 import struct
 
 from engine.script.patching import BinaryTarget
-from engine.script.status_ui.model import FONT8_PATH, SATURN_ROOT, STOCK_FONT16_PATH
+from engine.script.status_ui.model import FONT8_PATH, STOCK_FONT16_PATH
 from engine.script.text_render.font8_metrics import font8_metrics
+from project_paths import EXTRACTED_ROOT
 
 
 def glyph_code(character: str) -> int:
@@ -193,7 +194,7 @@ def direct_color_assets(
 
 
 def read_original(target: BinaryTarget, expected_sha256: str) -> bytes:
-    source_path = SATURN_ROOT / "rom" / "extracted" / target.path
+    source_path = EXTRACTED_ROOT / target.path
     original = source_path.read_bytes()
     digest = hashlib.sha256(original).hexdigest()
     if digest != expected_sha256:

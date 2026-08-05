@@ -30,7 +30,8 @@ from engine.script.saveload.names import (
 from engine.script.saveload.names import (
     build_cave as build_name_cave,
 )
-from engine.script.static_text import EXTRACTED_ROOT, StaticTextAsset, load_static_asset
+from engine.script.static_text import StaticTextAsset, load_static_asset
+from project_paths import EXTRACTED_ROOT
 from text.script.dungeon_locations import ASSET_PATH as DUNGEON_ASSET_PATH
 from text.script.dungeon_locations import SOURCE_PATH as DUNGEON_SOURCE_PATH
 from tools.sh2asm import AsmBlob, assemble

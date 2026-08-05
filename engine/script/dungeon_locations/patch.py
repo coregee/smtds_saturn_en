@@ -46,8 +46,12 @@ from engine.script.fixed_text_fields.generated import (
 from engine.script.generated_asset import load_runtime_ui
 from engine.script.patching import BinaryTarget, BytePatch, DigestPatch, PatchGroup
 from engine.script.static_text import load_static_asset
-from project_paths import PROJECT_ROOT as TRANSLATION_ROOT
-from project_paths import TEXT_GENERATED_ROOT
+from project_paths import (
+    BUILD_ROOT,
+    EXTRACTED_ROOT,
+    FONT_GENERATED_ROOT,
+    TEXT_GENERATED_ROOT,
+)
 from text.script.dungeon_locations import ASSET_PATH as DUNGEON_ASSET_PATH
 from text.script.dungeon_locations import (
     RECORD_COUNT,
@@ -58,9 +62,8 @@ from text.script.dungeon_locations import (
 from text.script.dungeon_locations import SOURCE_PATH as DUNGEON_SOURCE_PATH
 from tools.sh2asm import assemble
 
-SATURN_ROOT = TRANSLATION_ROOT
-METRICS_PATH = TRANSLATION_ROOT / "font" / "generated" / "font16_metrics.json"
-FONT16_PATH = SATURN_ROOT / "rom" / "build" / "FONT16.FON"
+METRICS_PATH = FONT_GENERATED_ROOT / "font16_metrics.json"
+FONT16_PATH = BUILD_ROOT / "FONT16.FON"
 ASM_ROOT = Path(__file__).with_name("asm")
 AUTOMAP_ASCII_ASSET = Path("ascii_fields/AUTOMAPC.BIN.marker_ui.json")
 AUTOMAP_WORD_ASSET = Path("fixed_words/AUTOMAPC.BIN.system.json")
@@ -144,7 +147,7 @@ def location_texts() -> tuple[str, ...]:
     return load_location_texts()
 
 
-CANONICAL_TABLE_PATH = SATURN_ROOT / "rom" / "extracted" / DUNGEON_SOURCE_PATH
+CANONICAL_TABLE_PATH = EXTRACTED_ROOT / DUNGEON_SOURCE_PATH
 
 
 def text_width(text: str) -> int:

@@ -10,11 +10,8 @@ import subprocess
 from fractions import Fraction
 from pathlib import Path
 
-from project_paths import FMV_ROOT
+from project_paths import EXTRACTED_ROOT, FMV_ROOT
 
-SATURN_ROOT = FMV_ROOT.parent
-EXTRACTED_ROOT = SATURN_ROOT / "rom" / "extracted"
-BUILD_ROOT = SATURN_ROOT / "rom" / "build"
 CATALOG_PATH = FMV_ROOT / "catalog.json"
 DECODED_ROOT = FMV_ROOT / "decoded"
 GENERATED_ROOT = FMV_ROOT / "generated"

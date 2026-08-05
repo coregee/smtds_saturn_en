@@ -1,7 +1,6 @@
 """FONT16 encoding helpers for player-entered names."""
 
 import json
-import struct
 from functools import cache
 
 from engine.script.name.fields import (
@@ -19,7 +18,7 @@ from engine.script.name.fields import (
     NameFieldSpec,
 )
 from engine.script.text_render.font8_metrics import font8_metrics
-from project_paths import PROJECT_ROOT as TRANSLATION_ROOT
+from project_paths import FONT_GENERATED_ROOT
 
 __all__ = (
     "CODENAME_BYTES",
@@ -41,11 +40,9 @@ __all__ = (
     "encode_runtime_row",
     "load_atlas_metrics",
     "load_font8_codes",
-    "pack_full_name",
-    "pack_runtime_row",
 )
 
-FONT16_METRICS_PATH = TRANSLATION_ROOT / "font" / "generated" / "font16_metrics.json"
+FONT16_METRICS_PATH = FONT_GENERATED_ROOT / "font16_metrics.json"
 
 
 @cache
@@ -120,11 +117,6 @@ def encode_runtime_row(text: str) -> tuple[int, ...]:
     return (*encoded, TERMINATOR)
 
 
-def pack_runtime_row(text: str) -> bytes:
-    words = encode_runtime_row(text)
-    return struct.pack(f">{len(words)}H", *words).ljust(ROW_STRIDE, b"\x00")
-
-
 def encode_full_name(first: str, last: str) -> tuple[int, ...]:
     codes, _ = load_atlas_metrics()
     first_codes = encode_runtime_row(first)[:-1]
@@ -133,11 +125,3 @@ def encode_full_name(first: str, last: str) -> tuple[int, ...]:
     if len(words) > MAX_NAME_LENGTH * 2 + 2:
         raise ValueError("combined name exceeds its runtime row")
     return words
-
-
-def pack_full_name(first: str, last: str) -> bytes:
-    words = encode_full_name(first, last)
-    return struct.pack(f">{len(words)}H", *words).ljust(
-        (MAX_NAME_LENGTH * 2 + 2) * 2,
-        b"\x00",
-    )

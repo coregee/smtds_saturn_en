@@ -3,12 +3,12 @@ from dataclasses import dataclass
 from functools import cached_property, lru_cache
 from pathlib import Path
 
-from project_paths import PROJECT_ROOT as SATURN_ROOT
+from project_paths import FONT_GENERATED_ROOT
 from text.script.dialects import DialectSpec
 from text.script.encoding.tokens import normalize_english, parse_inline_tokens
 
-DEFAULT_METRICS_PATH = SATURN_ROOT / "font" / "generated" / "font16_metrics.json"
-FONT12_METRICS_PATH = SATURN_ROOT / "font" / "generated" / "font12_metrics.json"
+DEFAULT_METRICS_PATH = FONT_GENERATED_ROOT / "font16_metrics.json"
+FONT12_METRICS_PATH = FONT_GENERATED_ROOT / "font12_metrics.json"
 PACKED_TOKEN_BASE = 8
 PACKED_CODE_LIMIT = 120
 PACKED_SPACE_CODE = 267

@@ -5,12 +5,12 @@ from typing import Mapping, Sequence
 
 from PIL import Image, ImageDraw, ImageFont
 
+from project_paths import BUILD_ROOT, EXTRACTED_ROOT, FONT_GENERATED_ROOT
 from project_paths import FONT_ROOT as FONT_PATH
-from project_paths import PROJECT_ROOT as SATURN_ROOT
 
-EXTRACTED_PATH = SATURN_ROOT / "rom" / "extracted"
-BUILD_PATH = SATURN_ROOT / "rom" / "build"
-GENERATED_PATH = FONT_PATH / "generated"
+EXTRACTED_PATH = EXTRACTED_ROOT
+BUILD_PATH = BUILD_ROOT
+GENERATED_PATH = FONT_GENERATED_ROOT
 ATLAS_PATH = FONT_PATH / "atlas"
 IMAGE_PATH = FONT_PATH / "image"
 CONFIG_PATH = FONT_PATH / "config"

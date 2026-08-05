@@ -4,7 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from project_paths import PROJECT_ROOT as REPO_ROOT
+from project_paths import BUILD_ROOT, TEXT_GENERATED_ROOT
 
 PACKED_TOKEN_BASE = 8
 PACKED_TOKEN_RANGE = 120
@@ -14,9 +14,8 @@ DICTIONARY_TOKENS = PACKED_TOKEN_RANGE - DICTIONARY_TOKEN_START
 DICTIONARY_RECORD_SIZE = 8
 MAX_EXPANSION = DICTIONARY_RECORD_SIZE - 1
 
-DICTIONARY_PATH = REPO_ROOT / "text" / "generated" / "event_codec.json"
-DICTIONARY_BINDING_PATH = REPO_ROOT / "text" / "generated" / "event_codec_binding.json"
-BUILD_ROOT = REPO_ROOT / "rom" / "build"
+DICTIONARY_PATH = TEXT_GENERATED_ROOT / "event_codec.json"
+DICTIONARY_BINDING_PATH = TEXT_GENERATED_ROOT / "event_codec_binding.json"
 
 
 if not 0 < PACKED_TOKEN_BASE <= 0x7F:

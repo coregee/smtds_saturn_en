@@ -107,7 +107,3 @@ def parse_inline_tokens(
             raise ValueError(f"unknown text token in {literal!r}")
         append_literal(literal)
     return tuple(parts)
-
-
-def strip_inline_tokens(text: str) -> str:
-    return INLINE_TOKEN_RE.sub("", normalize_english(text))
