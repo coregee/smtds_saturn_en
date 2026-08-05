@@ -4,6 +4,9 @@ level_up_learned_dispatcher:
     bt      level_up_learned_skill
 
 level_up_learned_label:
+    ; The stock skill staging pass overwrites the stack label after its first
+    ; draw.  Always reload the persistent translated stream for redraws.
+    mov.l   =LEARNED_LABEL, r4
     mov.l   =FONT16_VWF, r0
     jmp     @r0
     nop

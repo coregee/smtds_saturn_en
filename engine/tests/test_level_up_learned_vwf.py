@@ -64,7 +64,9 @@ class LevelUpLearnedVwfTests(unittest.TestCase):
             BASE + LEVEL_UP_RUNTIME_CAVE_LIMIT,
         )
         dispatcher_bytes = runtime.replacement[dispatcher - runtime.address :]
-        self.assertTrue(dispatcher_bytes.startswith(bytes.fromhex("e00835008902")))
+        self.assertTrue(
+            dispatcher_bytes.startswith(bytes.fromhex("e00835008903d429d029402b0009"))
+        )
         self.assertIn(bytes.fromhex("30ac70016000600c2008"), dispatcher_bytes)
         self.assertIn(bytes.fromhex("e1600017001a70a4"), dispatcher_bytes)
         self.assertIn(bytes.fromhex("705a6001600d"), dispatcher_bytes)
@@ -80,17 +82,17 @@ class LevelUpLearnedVwfTests(unittest.TestCase):
             dispatcher_bytes,
         )
 
+        _widths, codes = load_font16_metrics()
+        expected_label = (*[codes[character] for character in "Learned Magic"], 0x8000)
+        encoded_label = struct.pack(f">{len(expected_label)}H", *expected_label)
+        label_pointer = runtime.address + runtime.replacement.index(encoded_label)
+        self.assertIn(struct.pack(">I", label_pointer), dispatcher_bytes)
+
         patched = apply_patch_groups(self.original, (self.group,))
         self.assertEqual(
             struct.unpack_from(">I", patched, drawer.address - BASE)[0],
             dispatcher,
         )
-
-        label_pointer = struct.unpack(
-            ">I", self.patches["level_up_learned_magic_pointer"].replacement
-        )[0]
-        _widths, codes = load_font16_metrics()
-        expected_label = (*[codes[character] for character in "Learned Magic"], 0x8000)
         self.assertEqual(
             struct.unpack_from(
                 f">{len(expected_label)}H",
@@ -99,6 +101,10 @@ class LevelUpLearnedVwfTests(unittest.TestCase):
             ),
             expected_label,
         )
+        self.assertNotIn("level_up_learned_magic_pointer", self.patches)
+        self.assertNotIn("level_up_learned_magic_copy", self.patches)
+        self.assertEqual(patched[0x8F4C:0x8F74], self.original[0x8F4C:0x8F74])
+        self.assertEqual(patched[0x9000:0x9004], self.original[0x9000:0x9004])
 
     def test_dia_is_source_row_46_and_has_a_full_packed_name(self) -> None:
         rows = load_runtime_ui(DEFAULT_CONTEXT).section("magic_names")

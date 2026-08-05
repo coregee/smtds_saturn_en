@@ -117,11 +117,8 @@ from engine.script.status_ui.model import (
     LEVEL_UP_GENERIC_ACCURACY_FILE,
     LEVEL_UP_GENERIC_ATTACK_FILE,
     LEVEL_UP_LEARNED_DRAWER_PTR,
-    LEVEL_UP_LEARNED_MAGIC_COPY_END_FILE,
-    LEVEL_UP_LEARNED_MAGIC_COPY_FILE,
     LEVEL_UP_LEARNED_MAGIC_FIELD_FILE,
     LEVEL_UP_LEARNED_MAGIC_MAX_WORDS,
-    LEVEL_UP_LEARNED_MAGIC_POINTER,
     LEVEL_UP_NAME_DRAWER_PTR,
     LEVEL_UP_NODE_BITMAP_FILE,
     LEVEL_UP_ROW_BITMAP_FILE,
@@ -152,7 +149,6 @@ from engine.script.status_ui.runtime import (
     build_da3d_status_runtime,
     build_event_status_runtime,
     build_level_up_name_runtime,
-    build_level_up_text_copy,
     build_status_runtime,
     validate_level_up_packed_skill_names,
 )
@@ -810,22 +806,13 @@ def build_level_up_patch(context: EngineBuildContext) -> PatchGroup:
     (
         name_runtime,
         name_drawer,
-        learned_magic_address,
+        _learned_magic_address,
         _character_table_address,
         learned_drawer,
     ) = build_level_up_name_runtime(
         learned_magic.words,
         tuple(character_names),
         tuple(magic_names),
-    )
-    copy_address = BASE + LEVEL_UP_LEARNED_MAGIC_COPY_FILE
-    copy_window = (
-        LEVEL_UP_LEARNED_MAGIC_COPY_END_FILE - LEVEL_UP_LEARNED_MAGIC_COPY_FILE
-    )
-    text_copy = build_level_up_text_copy(
-        copy_address,
-        len(learned_magic.words),
-        copy_window,
     )
     return PatchGroup(
         "status_ui",
@@ -848,19 +835,6 @@ def build_level_up_patch(context: EngineBuildContext) -> PatchGroup:
                 LEVEL_UP_LEARNED_DRAWER_PTR,
                 struct.pack(">I", LEVEL_UP_FONT16_DRAWER),
                 struct.pack(">I", learned_drawer),
-            ),
-            BytePatch(
-                "level_up_learned_magic_pointer",
-                LEVEL_UP_LEARNED_MAGIC_POINTER,
-                struct.pack(">I", BASE + LEVEL_UP_LEARNED_MAGIC_FIELD_FILE),
-                struct.pack(">I", learned_magic_address),
-            ),
-            digest_patch(
-                LEVEL_UP_TARGET,
-                "level_up_learned_magic_copy",
-                LEVEL_UP_LEARNED_MAGIC_COPY_FILE,
-                original,
-                text_copy,
             ),
             digest_patch(
                 LEVEL_UP_TARGET,

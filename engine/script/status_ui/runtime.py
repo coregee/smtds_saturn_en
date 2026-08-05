@@ -533,25 +533,6 @@ def build_level_up_name_wrapper(
     )
 
 
-def build_level_up_text_copy(
-    address: int,
-    word_count: int,
-    window_size: int,
-) -> bytes:
-    source = (ASM_ROOT / "level_up_text_copy.s").read_text(encoding="utf-8")
-    code = bytes(
-        assemble_checked(
-            source,
-            address,
-            {"WORD_COUNT": word_count},
-            context="level-up learned-magic copy",
-        )
-    )
-    if len(code) > window_size or (window_size - len(code)) & 1:
-        raise ValueError("level-up learned-magic copy does not fill its window")
-    return code + bytes.fromhex("0009") * ((window_size - len(code)) // 2)
-
-
 def level_up_font8_to_font16(code: int) -> int | None:
     if code == 63:
         return 267
@@ -646,6 +627,7 @@ def build_level_up_learned_dispatcher(
     address: int,
     font16_vwf: int,
     scratch: int,
+    learned_label: int,
 ) -> bytes:
     if scratch & 1:
         raise ValueError("level-up learned-skill scratch must be word-aligned")
@@ -660,6 +642,7 @@ def build_level_up_learned_dispatcher(
                 "NAME_POINTER": MAGNAME_POINTER_FROM_NAME,
                 "MAX_NAME_BYTES": LEVEL_UP_SKILL_NAME_MAX_BYTES,
                 "SCRATCH": scratch,
+                "LEARNED_LABEL": learned_label,
                 "FONT16_VWF": font16_vwf,
             },
             context="level-up learned-row dispatcher",
@@ -749,12 +732,14 @@ def build_level_up_name_runtime(
         dispatcher_address,
         cave_address,
         dispatcher_address,
+        learned_magic_address,
     )
     scratch_address = (dispatcher_address + len(dispatcher_probe) + 1) & ~1
     dispatcher = build_level_up_learned_dispatcher(
         dispatcher_address,
         cave_address,
         scratch_address,
+        learned_magic_address,
     )
     if len(dispatcher) != len(dispatcher_probe):
         raise ValueError("level-up learned-row scratch changed dispatcher size")

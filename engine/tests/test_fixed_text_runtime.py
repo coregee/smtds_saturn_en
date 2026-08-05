@@ -19,7 +19,6 @@ from engine.script.status_ui.model import (
 )
 from engine.script.status_ui.runtime import (
     build_level_up_name_runtime,
-    build_level_up_text_copy,
     level_up_font8_to_font16,
 )
 from engine.script.text_render.font8_metrics import font8_metrics
@@ -75,15 +74,6 @@ class FixedTextRuntimeTests(unittest.TestCase):
         self.assertEqual(fields[0].name, "learned_magic")
         self.assertEqual(fields[0].file_offset, 0x20)
         self.assertEqual(fields[0].words, (0x0016, 0x0029, 0x8000))
-
-    def test_level_up_copy_uses_the_runtime_word_count(self) -> None:
-        code = build_level_up_text_copy(0x06028F4C, 14, 0x28)
-        self.assertEqual(len(code), 0x28)
-        self.assertEqual(
-            code[:16].hex(),
-            "62f3ed0e6315223172024d108bfaed24",
-        )
-        self.assertEqual(code[16:], bytes.fromhex("0009") * 12)
 
     def test_level_up_actor_names_use_the_generated_character_pool(self) -> None:
         names = (
