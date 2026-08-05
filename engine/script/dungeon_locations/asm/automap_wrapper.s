@@ -1,11 +1,13 @@
 automap_entry:
     add     #12, r15
     tst     r8, r8
-    bt      automap_return
+    ; Floorless labels can still occupy the second four-cell strip.
+    bt      automap_draw_tail
     nop
     mov     r8, r4
     bsr     floor_compose
     nop
+automap_draw_tail:
     mov.l   r12, @-r15
     mov.l   r11, @-r15
     mov     #0, r0

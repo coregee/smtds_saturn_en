@@ -9,6 +9,10 @@ from engine.script.context import EngineBuildContext
 from engine.script.name.fields import FIELD_BY_KIND, NameField
 from engine.script.patching import BinaryTarget, DigestPatch, PatchGroup
 from engine.script.static_text import load_static_asset
+from engine.script.text_render.precomposed import (
+    PrecomposedStrip,
+    precompose_font16_strip,
+)
 from project_paths import PROJECT_ROOT as TRANSLATION_ROOT
 from tools.sh2asm import assemble
 
@@ -31,12 +35,24 @@ PROMPT_CAVE_FILE = 0x1000
 PROMPT_CAVE_ADDR = BASE + PROMPT_CAVE_FILE
 FIXED_BITMAP_FILE = 0x1200
 FIXED_BITMAP_ADDR = BASE + FIXED_BITMAP_FILE
+CHOICE_YES_BITMAP_FILE = 0x1480
+CHOICE_YES_BITMAP_ADDR = BASE + CHOICE_YES_BITMAP_FILE
+CHOICE_NO_BITMAP_FILE = 0x14E0
+CHOICE_NO_BITMAP_ADDR = BASE + CHOICE_NO_BITMAP_FILE
+CHOICE_YES_ROW_FILE = 0x15E0
+CHOICE_YES_ROW_ADDR = BASE + CHOICE_YES_ROW_FILE
+CHOICE_NO_ROW_FILE = 0x15E8
+CHOICE_NO_ROW_ADDR = BASE + CHOICE_NO_ROW_FILE
 PROMPT_BITMAP_FILE = 0x1600
 PROMPT_BITMAP_ADDR = BASE + PROMPT_BITMAP_FILE
 PROMPT_CELLS = 14
 PROMPT_FIELD_FILE = 0x1E756
 PROMPT_FIELD_ADDR = BASE + PROMPT_FIELD_FILE
 PROMPT_FIELD_WORDS = PROMPT_CELLS + 1
+CHOICE_YES_FIELD_FILE = 0x1E774
+CHOICE_YES_FIELD_ADDR = BASE + CHOICE_YES_FIELD_FILE
+CHOICE_NO_FIELD_FILE = 0x1E77C
+CHOICE_NO_FIELD_ADDR = BASE + CHOICE_NO_FIELD_FILE
 PROMPT_SCRATCH_FILE = PROMPT_BITMAP_FILE + PROMPT_CELLS * 32
 PROMPT_SCRATCH_ADDR = BASE + PROMPT_SCRATCH_FILE
 
@@ -115,6 +131,11 @@ def asset_ascii(name: str) -> str:
     return data[:-1].decode("ascii")
 
 
+def asset_codes(name: str) -> tuple[int, ...]:
+    data = asset_block(name, "u16be")
+    return struct.unpack(f">{len(data) // 2}H", data)
+
+
 def require(data: bytes | bytearray, offset: int, expected: bytes, name: str) -> None:
     actual = bytes(data[offset : offset + len(expected)])
     if actual != expected:
@@ -154,37 +175,26 @@ def name_scale_positions(source_width: int, count: int) -> tuple[int, ...]:
 
 def render_bitmap_strip(font16: bytes, text: str, cell_count: int) -> bytes:
     """Compose proportional FONT16 glyphs into fixed 16x16 bitmap cells."""
-    width = cell_count * 16
-    rows = [0] * 16
-    x = 0
-    for code in encode_ascii(text):
-        if code >= len(runtime_metrics()[0]) or not runtime_metrics()[0][code]:
-            raise ValueError(f"MAP2D glyph {code} has no proportional width")
-        start = code * 32
-        cell = font16[start : start + 32]
-        if len(cell) != 32:
-            raise ValueError(f"{FONT16_PATH}: glyph {code} exceeds the font")
-        for row in range(16):
-            word = struct.unpack_from(">H", cell, row * 2)[0]
-            for column in range(16):
-                if not word & (1 << (15 - column)):
-                    continue
-                destination = x + column
-                if destination >= width:
-                    raise ValueError(
-                        f"MAP2D text exceeds {width}px with visible ink: {text!r}"
-                    )
-                rows[row] |= 1 << (width - 1 - destination)
-        x += runtime_metrics()[0][code]
-    if x > width:
-        raise ValueError(f"MAP2D text needs {x}px; limit is {width}px: {text!r}")
+    return precompose_font16_strip(
+        font16,
+        encode_ascii(text),
+        runtime_metrics()[0],
+        cell_count,
+        context=f"MAP2D text {text!r}",
+    ).bitmap
 
-    output = bytearray()
-    for cell_index in range(cell_count):
-        shift = (cell_count - cell_index - 1) * 16
-        for row in rows:
-            output.extend(struct.pack(">H", row >> shift & 0xFFFF))
-    return bytes(output)
+
+def build_choice_strips(font16: bytes) -> tuple[PrecomposedStrip, ...]:
+    return tuple(
+        precompose_font16_strip(
+            font16,
+            asset_codes(name),
+            runtime_metrics()[0],
+            cells,
+            context=f"MAP2D {name}",
+        )
+        for name, cells in (("label_yes", 3), ("label_no", 2))
+    )
 
 
 def build_fixed_bitmaps(font16: bytes) -> bytes:
@@ -201,10 +211,16 @@ def build_prompt_wrapper() -> bytes:
         PROMPT_CAVE_ADDR,
         symbols={
             "PROMPT_FIELD": PROMPT_FIELD_ADDR,
+            "YES_FIELD": CHOICE_YES_FIELD_ADDR,
+            "NO_FIELD": CHOICE_NO_FIELD_ADDR,
             "ORIGINAL_DRAW": ORIGINAL_FIXED_DRAW,
             "SCRATCH": PROMPT_SCRATCH_ADDR,
             "FONT_PTR": FONT16_POINTER,
-            "BITMAP": PROMPT_BITMAP_ADDR,
+            "PROMPT_BITMAP": PROMPT_BITMAP_ADDR,
+            "YES_BITMAP": CHOICE_YES_BITMAP_ADDR,
+            "NO_BITMAP": CHOICE_NO_BITMAP_ADDR,
+            "YES_ROW": CHOICE_YES_ROW_ADDR,
+            "NO_ROW": CHOICE_NO_ROW_ADDR,
         },
     )
     if blob.warnings:
@@ -265,6 +281,22 @@ def build_map(original: bytes) -> bytes:
     fixed_bitmaps = build_fixed_bitmaps(font16)
     require(data, FIXED_BITMAP_FILE, bytes(len(fixed_bitmaps)), "fixed-label bitmaps")
     data[FIXED_BITMAP_FILE : FIXED_BITMAP_FILE + len(fixed_bitmaps)] = fixed_bitmaps
+
+    yes_strip, no_strip = build_choice_strips(font16)
+    for offset, strip, name in (
+        (CHOICE_YES_BITMAP_FILE, yes_strip, "Yes choice bitmap"),
+        (CHOICE_NO_BITMAP_FILE, no_strip, "No choice bitmap"),
+    ):
+        require(data, offset, bytes(len(strip.bitmap)), name)
+        data[offset : offset + len(strip.bitmap)] = strip.bitmap
+    yes_row = struct.pack(">4H", 0, 1, 2, 0x8000)
+    no_row = struct.pack(">3H", 0, 1, 0x8000)
+    for offset, row, name in (
+        (CHOICE_YES_ROW_FILE, yes_row, "Yes choice row"),
+        (CHOICE_NO_ROW_FILE, no_row, "No choice row"),
+    ):
+        require(data, offset, bytes(len(row)), name)
+        data[offset : offset + len(row)] = row
 
     prompt_wrapper = build_prompt_wrapper()
     require(data, PROMPT_CAVE_FILE, bytes(len(prompt_wrapper)), "prompt-wrapper cave")
@@ -332,7 +364,10 @@ def build_map(original: bytes) -> bytes:
         require(data, offset, expected.to_bytes(2, "big"), "stock name truncation")
         struct.pack_into(">H", data, offset, 0x0009)
 
-    for offset, name in ((0x1E774, "label_yes"), (0x1E77C, "label_no")):
+    for offset, name in (
+        (CHOICE_YES_FIELD_FILE, "label_yes"),
+        (CHOICE_NO_FIELD_FILE, "label_no"),
+    ):
         block = asset_block(name, "u16be")
         data[offset : offset + len(block)] = block
         require(data, offset + len(block), bytes.fromhex("8000"), f"{name} terminator")

@@ -86,8 +86,8 @@
       }
     ],
     "jp": "YES",
-    "tr": "YES",
-    "reviewed": false,
+    "tr": "Yes",
+    "reviewed": true,
     "excluded": false
   },
   {
@@ -99,8 +99,8 @@
       }
     ],
     "jp": "NO",
-    "tr": "NO",
-    "reviewed": false,
+    "tr": "No",
+    "reviewed": true,
     "excluded": false
   }
 ]

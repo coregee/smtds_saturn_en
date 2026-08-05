@@ -89,7 +89,10 @@ def direct_color_row(text: str, font: bytes, width: int = 48) -> bytes:
     if advance > width - 2:
         raise ValueError(f"status row exceeds {width - 2}px: {text!r}")
     image = [[0x0000] * width for _ in range(height)]
-    x_origin, y_origin = 1, 2
+    # These pre-rendered labels sit beside values and above the independently
+    # drawn spell list.  FONT8's visible seven rows fit exactly at y=4 with the
+    # one-pixel shadow, aligning the labels without moving the spell-name path.
+    x_origin, y_origin = 1, 4
     for x, y in pixels:
         if x_origin + x + 1 < width and y_origin + y + 1 < height:
             image[y_origin + y + 1][x_origin + x + 1] = 0x8000

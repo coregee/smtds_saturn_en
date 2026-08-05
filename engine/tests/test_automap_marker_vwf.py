@@ -109,6 +109,11 @@ class AutomapMarkerVwfTests(unittest.TestCase):
         cave = patches["renderer_cave"]
         cave_end = cave.address + len(cave.replacement)
         self.assertLess(cave_end, BASE + SPECS[1].cave_limit)
+        # Preserve the stack cleanup and branch floorless labels to the tail draw.
+        self.assertEqual(
+            cave.replacement[:8].hex(),
+            "7f0c288889030009",
+        )
         self.assertTrue(cave.address <= ascii_wrapper < cave_end)
         self.assertTrue(cave.address <= delete_wrapper < cave_end)
         self.assertEqual(
@@ -138,6 +143,8 @@ class AutomapMarkerVwfTests(unittest.TestCase):
         self.assertIn(("Sewer", "", text_width("B1F")), automap_labels)
         self.assertIn(("Kitayama Uni", "", 0), automap_labels)
         self.assertIn(("Main Bldg.", "", text_width("1F")), automap_labels)
+        self.assertIn(("Ginza Arcade", "", 0), automap_labels)
+        self.assertGreater(text_width("Ginza Arcade"), 64)
         self.assertNotIn(("Sewer", "", text_width("B1F")), maze_labels)
 
         bitmaps = build_label_bitmaps(

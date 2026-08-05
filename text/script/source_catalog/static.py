@@ -557,6 +557,30 @@ STATIC_SOURCES = (
         ),
     ),
     StaticOverlaySource(
+        name="maze_speech_choices_static",
+        path=Path("MAZE.BIN"),
+        corpus_path=Path("static") / "MAZE.BIN.speech_choices.json",
+        generated_path=Path("static") / "MAZE.BIN.speech_choices.json",
+        runtime_requirements=frozenset(
+            {
+                RuntimeCapability.FONT16_LATIN,
+                RuntimeCapability.FIXED_TEXT_FIELDS,
+            }
+        ),
+        records=(
+            StaticRecordSpec(
+                "label_yes",
+                (TextSpan(0x250D0, 3),),
+                FixedCells(cells=3, padding_code=0),
+            ),
+            StaticRecordSpec(
+                "label_no",
+                (TextSpan(0x250D6, 3),),
+                FixedCells(cells=3, padding_code=0),
+            ),
+        ),
+    ),
+    StaticOverlaySource(
         name="map_static",
         path=Path("MAP2D.BIN"),
         corpus_path=Path("static") / "MAP2D.BIN.static.json",

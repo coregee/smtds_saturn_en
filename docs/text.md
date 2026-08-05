@@ -284,7 +284,8 @@ without rewriting it.
 
 ### Static overlays and locations
 
-- EVENT fusion confirmation, NAME, SAVE/LOAD, CONFIG, and MAP2D records live in
+- EVENT fusion confirmation, NAME, SAVE/LOAD, CONFIG, MAP2D, and MAZE speech
+  option records live in
   `corpus/static/`. Records embed stable `kind` values, original spans,
   refreshed Japanese, and an editable target translation. SAVE is canonical
   for strings shared with LOAD. `fusion_confirmation_static` emits
@@ -293,8 +294,9 @@ without rewriting it.
   atlas in `CFG_SET.BIN`; repacking emits their translations as ASCII for the
   engine to rebuild it. The “change settings” and “finish settings” footers remain
   separate records. MAP2D destinations and its talk prompt are ASCII bitmap
-  strips, while YES/NO remain FONT16. Player city and ward come from
-  `name_entry.json` and live `NAME_FW` rows.
+  strips. MAP2D and MAZE speech choices retain source-owned raw FONT16 records,
+  while their engine adapters precompose proportional `Yes`/`No` strips. Player
+  city and ward come from `name_entry.json` and live `NAME_FW` rows.
 - `corpus/locations/` is canonical for dungeon labels. MAZE's 144 physical
   records deduplicate to 24 Japanese labels; repacking expands them again.
   Extraction rejects conflicting translation definitions. AUTOMAP's matching

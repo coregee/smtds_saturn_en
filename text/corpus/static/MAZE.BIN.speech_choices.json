@@ -1,0 +1,28 @@
+[
+  {
+    "kind": "label_yes",
+    "spans": [
+      {
+        "file_offset": "0x250d0",
+        "word_count": 3
+      }
+    ],
+    "jp": "YES",
+    "tr": "Yes",
+    "reviewed": true,
+    "excluded": false
+  },
+  {
+    "kind": "label_no",
+    "spans": [
+      {
+        "file_offset": "0x250d6",
+        "word_count": 3
+      }
+    ],
+    "jp": "NO",
+    "tr": "No",
+    "reviewed": true,
+    "excluded": false
+  }
+]

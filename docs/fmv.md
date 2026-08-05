@@ -55,8 +55,12 @@ python -B -m fmv.script.repack --check
 Only editables whose clean hash differs, or which have a mirrored subtitle
 script, produce CPKs under `rom/build/`. If neither condition applies, repacking
 removes any stale replacement. `fmv/generated/repacked.json` binds each output
-to the exact MKV, subtitle script, and output bytes, allowing `--check` to reject
-missing, stale, or unrelated replacements without re-encoding.
+to the exact source CPK, MKV, subtitle script, bundled subtitle fonts, encoding
+recipe, and output bytes. Normal builds reuse a matching existing CPK; changed
+inputs, a missing output, or an output hash mismatch force regeneration.
+`--check` rejects missing, stale, or unrelated replacements without encoding.
+Cache hits refresh only the output timestamp so release-manifest ownership
+remains explicit; the verified CPK bytes are not rewritten.
 
 Tracked ASS/SRT files under `fmv/subtitles/` mirror CPK paths; for example,
 `fmv/subtitles/BGDATA/START2.ass` applies automatically to

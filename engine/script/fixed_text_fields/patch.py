@@ -11,9 +11,18 @@ from engine.script.fixed_text_fields.end_roll import (
 )
 from engine.script.fixed_text_fields.generated import ASSETS, load_group
 from engine.script.patching import BinaryTarget, BytePatch, PatchGroup
+from engine.script.static_text import StaticTextAsset, load_static_asset
 from engine.script.text_render.font8_metrics import font8_metrics
 from engine.script.text_render.font16_vwf import align_up
-from engine.script.text_render.font_metrics import font16_metrics, font16_width_layout
+from engine.script.text_render.font_metrics import (
+    FONT16_PATH,
+    font16_metrics,
+    font16_width_layout,
+)
+from engine.script.text_render.precomposed import (
+    PrecomposedStrip,
+    precompose_font16_strip,
+)
 from project_paths import PROJECT_ROOT as TRANSLATION_ROOT
 from tools.sh2asm import assemble
 
@@ -24,6 +33,23 @@ MAZE_BASE = 0x06020000
 MAZE_TARGET = BinaryTarget("MAZE.BIN", Path("MAZE.BIN"), MAZE_BASE)
 MAZE_MESSAGE_CAVE = 0x06022C00
 MAZE_MESSAGE_CAVE_LIMIT = 0x06023800
+MAZE_CHOICE_ASSET = Path("static") / "MAZE.BIN.speech_choices.json"
+MAZE_CHOICE_YES = 0x060450D0
+MAZE_CHOICE_NO = 0x060450D6
+MAZE_CHOICE_DRAW = 0x06040AAC
+MAZE_CHOICE_DRAW_POINTERS = (
+    0x060330F8,
+    0x0603C680,
+    0x0603C884,
+    0x0603C9A0,
+    0x06040D40,
+)
+MAZE_CHOICE_SCRATCH_CODE = 0x0756
+MAZE_CHOICE_CELLS = 3
+MAZE_CHOICE_FIELDS = (
+    ("label_yes", MAZE_CHOICE_YES, (0x0023, 0x000F, 0x001D)),
+    ("label_no", MAZE_CHOICE_NO, (0x0018, 0x0019, 0x0000)),
+)
 MAZE_MESSAGE_DISPLAY = 0x06040BC4
 MAZE_MESSAGE_DISPLAY_POINTERS = (
     0x06032F90,
@@ -66,6 +92,146 @@ MAZE_ITEM_FOUND_HOOKS = (
 )
 MAZE_ITEM_FULL_HOOK = (0x06034332, 0x0603439A)
 ASM_ROOT = Path(__file__).with_name("asm")
+
+
+def load_maze_choice_asset(
+    generated_root: Path = GENERATED_ROOT,
+    extracted_root: Path = EXTRACTED_ROOT,
+) -> StaticTextAsset:
+    return load_static_asset(
+        MAZE_CHOICE_ASSET,
+        MAZE_TARGET.path,
+        generated_root,
+        extracted_root,
+    )
+
+
+def maze_choice_block(asset: StaticTextAsset, name: str) -> bytes:
+    try:
+        block = asset.blocks[name]
+    except KeyError as error:
+        raise ValueError(f"MAZE speech choices are missing block {name!r}") from error
+    if block.storage != "u16be" or block.word_count != MAZE_CHOICE_CELLS:
+        raise ValueError(f"MAZE speech choice {name!r} has an invalid span")
+    return asset.data[block.offset : block.offset + block.size]
+
+
+def maze_choice_words(asset: StaticTextAsset, name: str) -> tuple[int, ...]:
+    data = maze_choice_block(asset, name)
+    return struct.unpack(f">{MAZE_CHOICE_CELLS}H", data)
+
+
+def font16_advances() -> bytes:
+    metrics = font16_metrics()
+    code_limit, _width_offset = font16_width_layout(metrics)
+    widths = bytearray(code_limit)
+    for glyph in metrics["glyphs"]:
+        code = glyph["code"]
+        advance = glyph["advance"]
+        if not 0 <= code < code_limit or not 1 <= advance <= 0xFF:
+            raise ValueError(f"invalid FONT16 metrics for glyph {code}")
+        widths[code] = advance
+    return bytes(widths)
+
+
+def build_maze_choice_strips(
+    font16: bytes,
+    generated_root: Path = GENERATED_ROOT,
+    extracted_root: Path = EXTRACTED_ROOT,
+) -> tuple[PrecomposedStrip, ...]:
+    asset = load_maze_choice_asset(generated_root, extracted_root)
+    widths = font16_advances()
+    strips = []
+    for name, _address, _expected in MAZE_CHOICE_FIELDS:
+        physical_words = maze_choice_words(asset, name)
+        visible_words = physical_words
+        while visible_words and visible_words[-1] == 0:
+            visible_words = visible_words[:-1]
+        if not visible_words or 0 in visible_words:
+            raise ValueError(f"MAZE speech choice {name!r} has embedded padding")
+        strips.append(
+            precompose_font16_strip(
+                font16,
+                visible_words,
+                widths,
+                MAZE_CHOICE_CELLS,
+                context=f"MAZE {name}",
+            )
+        )
+    return tuple(strips)
+
+
+def build_maze_choice_runtime(
+    address: int,
+    generated_root: Path = GENERATED_ROOT,
+    extracted_root: Path = EXTRACTED_ROOT,
+    font16_path: Path = FONT16_PATH,
+) -> tuple[bytes, dict[str, int]]:
+    scratch_end = FONT16_BASE + (MAZE_CHOICE_SCRATCH_CODE + MAZE_CHOICE_CELLS) * 32
+    message_scratch_end = FONT16_BASE + (MAZE_SCRATCH_CODE + MAZE_MESSAGE_CELLS) * 32
+    if FONT16_BASE + MAZE_CHOICE_SCRATCH_CODE * 32 < message_scratch_end:
+        raise ValueError("MAZE speech-choice scratch overlaps message scratch")
+    if scratch_end > ITEMNAME_BASE:
+        raise ValueError("MAZE speech-choice scratch overlaps ITEMNAME")
+
+    yes_strip, no_strip = build_maze_choice_strips(
+        font16_path.read_bytes(),
+        generated_root,
+        extracted_root,
+    )
+    source = (ASM_ROOT / "maze_choice_vwf.s").read_text(encoding="utf-8")
+    base_symbols = {
+        "YES_FIELD": MAZE_CHOICE_YES,
+        "NO_FIELD": MAZE_CHOICE_NO,
+        "ORIGINAL_DRAW": MAZE_CHOICE_DRAW,
+        "FONT_DST": FONT16_BASE + MAZE_CHOICE_SCRATCH_CODE * 32,
+        "BITMAP_LONGS": MAZE_CHOICE_CELLS * 32 // 4,
+        "YES_BITMAP": address,
+        "NO_BITMAP": address,
+        "ROW": address,
+    }
+    probe = assemble(source, address, symbols=base_symbols)
+    if probe.warnings:
+        raise ValueError(f"MAZE speech-choice wrapper warnings: {probe.warnings}")
+
+    yes_bitmap_address = align_up(address + len(probe), 4)
+    no_bitmap_address = yes_bitmap_address + len(yes_strip.bitmap)
+    row_address = align_up(no_bitmap_address + len(no_strip.bitmap), 2)
+    wrapper = assemble(
+        source,
+        address,
+        symbols={
+            **base_symbols,
+            "YES_BITMAP": yes_bitmap_address,
+            "NO_BITMAP": no_bitmap_address,
+            "ROW": row_address,
+        },
+    )
+    if wrapper.warnings:
+        raise ValueError(
+            f"MAZE speech-choice final wrapper warnings: {wrapper.warnings}"
+        )
+    row = struct.pack(
+        f">{MAZE_CHOICE_CELLS}H",
+        *range(
+            MAZE_CHOICE_SCRATCH_CODE,
+            MAZE_CHOICE_SCRATCH_CODE + MAZE_CHOICE_CELLS,
+        ),
+    )
+    payload = bytearray(wrapper)
+    for part_address, part in (
+        (yes_bitmap_address, yes_strip.bitmap),
+        (no_bitmap_address, no_strip.bitmap),
+        (row_address, row),
+    ):
+        payload.extend(bytes(part_address - address - len(payload)))
+        payload.extend(part)
+    return bytes(payload), {
+        "choice_draw": address,
+        "choice_yes_bitmap": yes_bitmap_address,
+        "choice_no_bitmap": no_bitmap_address,
+        "choice_row": row_address,
+    }
 
 
 def load_maze_runtime_fields(
@@ -191,6 +357,7 @@ def build_maze_message_runtime(
     cave_address: int,
     generated_root: Path = GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
+    font16_path: Path = FONT16_PATH,
 ) -> tuple[bytes, dict[str, int]]:
     packed_fields = load_maze_runtime_fields(generated_root, extracted_root)
     runtime_fields = tuple(
@@ -363,6 +530,15 @@ def build_maze_message_runtime(
     payload.extend(bytes(buffer_address - cave_address - len(payload)))
     payload.extend(bytes(MAZE_MESSAGE_BUFFER_WORDS * 2))
     payload.extend(bytes(MAZE_MESSAGE_CELLS * 2))
+    choice_address = align_up(cave_address + len(payload), 4)
+    choice_runtime, choice_labels = build_maze_choice_runtime(
+        choice_address,
+        generated_root,
+        extracted_root,
+        font16_path,
+    )
+    payload.extend(bytes(choice_address - cave_address - len(payload)))
+    payload.extend(choice_runtime)
     if cave_address + len(payload) > MAZE_MESSAGE_CAVE_LIMIT:
         raise ValueError(
             "MAZE fixed-cell message runtime exceeds its verified free window"
@@ -378,17 +554,23 @@ def build_maze_message_runtime(
         "row": row_address,
         "mapping_table": mapping_table_address,
         "code_limit": code_limit,
+        **choice_labels,
     }
 
 
 def build_maze_patch(
     generated_root: Path = GENERATED_ROOT,
     extracted_root: Path = EXTRACTED_ROOT,
+    font16_path: Path = FONT16_PATH,
 ) -> PatchGroup:
     runtime, labels = build_maze_message_runtime(
-        MAZE_MESSAGE_CAVE, generated_root, extracted_root
+        MAZE_MESSAGE_CAVE,
+        generated_root,
+        extracted_root,
+        font16_path,
     )
     original = (extracted_root / MAZE_TARGET.path).read_bytes()
+    choice_asset = load_maze_choice_asset(generated_root, extracted_root)
 
     def original_span(start: int, end: int) -> bytes:
         return original[start - MAZE_BASE : end - MAZE_BASE]
@@ -402,6 +584,24 @@ def build_maze_patch(
                 MAZE_MESSAGE_CAVE,
                 bytes(len(runtime)),
                 runtime,
+            ),
+            *(
+                BytePatch(
+                    f"maze_speech_choice_draw_pointer_{address:08x}",
+                    address,
+                    struct.pack(">I", MAZE_CHOICE_DRAW),
+                    struct.pack(">I", labels["choice_draw"]),
+                )
+                for address in MAZE_CHOICE_DRAW_POINTERS
+            ),
+            *(
+                BytePatch(
+                    f"maze_speech_choice_{name}",
+                    address,
+                    struct.pack(f">{len(expected)}H", *expected),
+                    maze_choice_block(choice_asset, name),
+                )
+                for name, address, expected in MAZE_CHOICE_FIELDS
             ),
             *(
                 BytePatch(
@@ -455,6 +655,10 @@ def build_patch_groups(context: EngineBuildContext) -> tuple[PatchGroup, ...]:
     )
     return (
         *groups,
-        build_maze_patch(context.text_generated_root, context.extracted_root),
+        build_maze_patch(
+            context.text_generated_root,
+            context.extracted_root,
+            context.build_root / "FONT16.FON",
+        ),
         build_end_roll_patch(context),
     )

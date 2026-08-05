@@ -7,6 +7,21 @@ from pathlib import Path
 
 from engine.script.context import DEFAULT_CONTEXT
 from engine.script.fixed_text_fields.generated import load_runtime_fields
+from engine.script.fixed_text_fields.patch import (
+    FONT16_BASE,
+    FONT16_PATH,
+    ITEMNAME_BASE,
+    MAZE_CHOICE_DRAW,
+    MAZE_CHOICE_DRAW_POINTERS,
+    MAZE_CHOICE_FIELDS,
+    MAZE_CHOICE_SCRATCH_CODE,
+    MAZE_MESSAGE_CAVE,
+    MAZE_MESSAGE_CAVE_LIMIT,
+    MAZE_TARGET,
+    build_maze_choice_strips,
+    build_maze_message_runtime,
+    build_maze_patch,
+)
 from engine.script.generated_asset import load_runtime_ui
 from engine.script.status_ui.data import load_font16_metrics
 from engine.script.status_ui.model import (
@@ -30,6 +45,68 @@ def generated_magic_names() -> tuple[str, ...]:
 
 
 class FixedTextRuntimeTests(unittest.TestCase):
+    def test_maze_speech_choices_use_title_case_vwf_strips(self) -> None:
+        strips = build_maze_choice_strips(FONT16_PATH.read_bytes())
+
+        self.assertEqual(
+            tuple((strip.codes, strip.width, strip.cells) for strip in strips),
+            (
+                ((0x0023, 0x0029, 0x0037), 20, 3),
+                ((0x0018, 0x0033), 13, 3),
+            ),
+        )
+        self.assertTrue(all(len(strip.bitmap) == 96 for strip in strips))
+        self.assertLessEqual(
+            FONT16_BASE + (MAZE_CHOICE_SCRATCH_CODE + 3) * 32,
+            ITEMNAME_BASE,
+        )
+
+    def test_maze_speech_choice_wrapper_covers_initial_draw_and_redraws(self) -> None:
+        runtime, labels = build_maze_message_runtime(MAZE_MESSAGE_CAVE)
+        wrapper_start = labels["choice_draw"] - MAZE_MESSAGE_CAVE
+        wrapper_end = labels["choice_yes_bitmap"] - MAZE_MESSAGE_CAVE
+        wrapper = runtime[wrapper_start:wrapper_end]
+
+        self.assertLessEqual(MAZE_MESSAGE_CAVE + len(runtime), MAZE_MESSAGE_CAVE_LIMIT)
+        for address in (
+            *(field_address for _name, field_address, _stock in MAZE_CHOICE_FIELDS),
+            MAZE_CHOICE_DRAW,
+            FONT16_BASE + MAZE_CHOICE_SCRATCH_CODE * 32,
+            labels["choice_yes_bitmap"],
+            labels["choice_no_bitmap"],
+            labels["choice_row"],
+        ):
+            with self.subTest(address=f"{address:#010x}"):
+                self.assertIn(struct.pack(">I", address), wrapper)
+
+        group = build_maze_patch()
+        patches = {patch.name: patch for patch in group.patches}
+        pointer_patches = tuple(
+            patches[f"maze_speech_choice_draw_pointer_{address:08x}"]
+            for address in MAZE_CHOICE_DRAW_POINTERS
+        )
+        self.assertEqual(
+            tuple(patch.address for patch in pointer_patches),
+            MAZE_CHOICE_DRAW_POINTERS,
+        )
+        self.assertTrue(
+            all(
+                patch.expected == struct.pack(">I", MAZE_CHOICE_DRAW)
+                and patch.replacement == struct.pack(">I", labels["choice_draw"])
+                for patch in pointer_patches
+            )
+        )
+        original = (DEFAULT_CONTEXT.extracted_root / MAZE_TARGET.path).read_bytes()
+        for name, address, stock_words in MAZE_CHOICE_FIELDS:
+            patch = patches[f"maze_speech_choice_{name}"]
+            offset = address - MAZE_TARGET.load_address
+            with self.subTest(name=name):
+                self.assertEqual(
+                    original[offset : offset + len(patch.expected)],
+                    struct.pack(f">{len(stock_words)}H", *stock_words),
+                )
+                self.assertEqual(patch.expected, original[offset : offset + 6])
+
     def test_runtime_field_asset_is_source_bound(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:
             root = Path(temporary_directory)

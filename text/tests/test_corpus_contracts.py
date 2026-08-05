@@ -1,6 +1,7 @@
 import json
 import struct
 import unittest
+from pathlib import Path
 
 from project_paths import TEXT_CORPUS_ROOT
 from text.script.corpus_io import translation_pair
@@ -179,6 +180,28 @@ class CorpusContractTests(unittest.TestCase):
                 "begin_fusion": "Then let us begin.",
                 "label_yes": "Yes",
                 "label_no": "No",
+            },
+        )
+
+    def test_maze_speech_choices_are_source_owned_raw_records(self) -> None:
+        source = get_source("maze_speech_choices_static")
+        self.assertEqual(source.path, Path("MAZE.BIN"))
+        self.assertEqual(
+            {
+                row["kind"]: (row["tr"], row["reviewed"], row["spans"])
+                for row in corpus_rows("maze_speech_choices_static")
+            },
+            {
+                "label_yes": (
+                    "Yes",
+                    True,
+                    [{"file_offset": "0x250d0", "word_count": 3}],
+                ),
+                "label_no": (
+                    "No",
+                    True,
+                    [{"file_offset": "0x250d6", "word_count": 3}],
+                ),
             },
         )
 

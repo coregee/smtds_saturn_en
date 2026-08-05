@@ -23,7 +23,7 @@ EDIT_MANIFEST_PATH = GENERATED_ROOT / "movies.json"
 REPACK_MANIFEST_PATH = GENERATED_ROOT / "repacked.json"
 CATALOG_VERSION = 3
 EDIT_MANIFEST_VERSION = 1
-REPACK_MANIFEST_VERSION = 1
+REPACK_MANIFEST_VERSION = 2
 
 
 def executable(name: str, override: str | None) -> str:
@@ -265,22 +265,31 @@ def load_edit_manifest(path: Path = EDIT_MANIFEST_PATH) -> dict[str, object]:
 
 def load_repack_manifest(path: Path = REPACK_MANIFEST_PATH) -> dict[str, object]:
     document = json.loads(path.read_text(encoding="utf-8"))
+    version = document.get("version") if isinstance(document, dict) else None
     if (
         not isinstance(document, dict)
         or set(document) != {"version", "movies"}
-        or document.get("version") != REPACK_MANIFEST_VERSION
+        or version not in {1, REPACK_MANIFEST_VERSION}
         or not isinstance(document.get("movies"), list)
     ):
         raise ValueError(f"{path}: unsupported FMV repack manifest")
+    legacy_keys = {
+        "source",
+        "editable_sha256",
+        "transform_sha256",
+        "output_size",
+        "output_sha256",
+    }
+    current_keys = legacy_keys | {
+        "source_sha256",
+        "font_set_sha256",
+        "recipe_sha256",
+        "input_sha256",
+    }
+    expected_rows = (legacy_keys,) if version == 1 else (legacy_keys, current_keys)
     seen: set[str] = set()
     for row in document["movies"]:
-        if not isinstance(row, dict) or set(row) != {
-            "source",
-            "editable_sha256",
-            "transform_sha256",
-            "output_size",
-            "output_sha256",
-        }:
+        if not isinstance(row, dict) or set(row) not in expected_rows:
             raise ValueError(f"{path}: malformed FMV repack manifest row")
         source = safe_relative_path(str(row["source"]), ".cpk").as_posix()
         key = source.casefold()

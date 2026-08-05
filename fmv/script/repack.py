@@ -1,10 +1,14 @@
-"""Repack only hash-catalogued FMVs whose lossless editable files changed."""
+"""Materialize changed FMVs and reuse validated cached replacements."""
 
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import os
 import subprocess
+import tempfile
+from dataclasses import dataclass
 from pathlib import Path
 
 from fmv.script.util.film import (
@@ -36,6 +40,174 @@ from project_paths import FONT_ROOT
 
 SUBTITLE_FONT_ROOT = FONT_ROOT / "source" / "ark-pixel-font"
 SUBTITLE_FONT_PATH = SUBTITLE_FONT_ROOT / "ark-pixel-16px-proportional-latin.otf"
+# Bump whenever fixed encoder or Saturn-normalization behavior changes output bytes.
+REPACK_RECIPE_VERSION = 1
+REPACK_STATE_FIELDS = (
+    "source_sha256",
+    "editable_sha256",
+    "transform_sha256",
+    "font_set_sha256",
+    "recipe_sha256",
+    "input_sha256",
+)
+
+
+@dataclass(frozen=True)
+class RepackPlan:
+    relative: Path
+    source: Path
+    editable: Path
+    subtitles: Path | None
+    output: Path
+    max_bytes: int
+    input_state: dict[str, object]
+    cached: bool
+
+
+def document_sha256(document: object) -> str:
+    encoded = json.dumps(
+        document,
+        ensure_ascii=True,
+        separators=(",", ":"),
+        sort_keys=True,
+    ).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def qscale_candidates(qscale: int, auto_fit: bool) -> tuple[int, ...]:
+    values = [qscale]
+    if auto_fit:
+        values += [value for value in (8, 10, 12, 16, 20, 24, 28, 31) if value > qscale]
+    return tuple(values)
+
+
+def subtitle_font_set_sha256(subtitles: Path | None) -> str | None:
+    if subtitles is None:
+        return None
+    if not SUBTITLE_FONT_PATH.is_file():
+        raise ValueError(f"subtitle font is missing: {SUBTITLE_FONT_PATH}")
+    fonts = sorted(
+        (
+            path
+            for path in SUBTITLE_FONT_ROOT.rglob("*")
+            if path.is_file() and path.suffix.casefold() in {".otf", ".ttf", ".ttc"}
+        ),
+        key=lambda path: path.relative_to(SUBTITLE_FONT_ROOT).as_posix().casefold(),
+    )
+    if not fonts:
+        raise ValueError(f"subtitle font directory is empty: {SUBTITLE_FONT_ROOT}")
+    return document_sha256(
+        [
+            {
+                "path": path.relative_to(SUBTITLE_FONT_ROOT).as_posix(),
+                "sha256": file_sha256(path),
+            }
+            for path in fonts
+        ]
+    )
+
+
+def repack_input_state(
+    *,
+    relative: Path,
+    source: Path,
+    source_sha256: str,
+    editable: Path,
+    editable_sha256: str,
+    subtitles: Path | None,
+    max_bytes: int,
+    qscale: int,
+    auto_fit: bool,
+    codebook_iterations: int,
+) -> dict[str, object]:
+    if max_bytes <= 0 or max_bytes > source.stat().st_size:
+        raise ValueError("max bytes must be positive and no larger than the source CPK")
+    transform_sha256 = file_sha256(subtitles) if subtitles is not None else None
+    font_set_sha256 = subtitle_font_set_sha256(subtitles)
+    recipe_sha256 = document_sha256(
+        {
+            "version": REPACK_RECIPE_VERSION,
+            "qscales": qscale_candidates(qscale, auto_fit),
+            "codebook_iterations": codebook_iterations,
+            "max_bytes": max_bytes,
+            "video_codec": "cinepak",
+            "pixel_format": "rgb24",
+            "audio_codec": "pcm_s16be_planar",
+            "container": "film_cpk",
+            "saturn_normalization": True,
+        }
+    )
+    inputs = {
+        "source": relative.as_posix(),
+        "source_size": source.stat().st_size,
+        "source_sha256": source_sha256,
+        "editable_size": editable.stat().st_size,
+        "editable_sha256": editable_sha256,
+        "transform_kind": subtitles.suffix.casefold()
+        if subtitles is not None
+        else None,
+        "transform_sha256": transform_sha256,
+        "font_set_sha256": font_set_sha256,
+        "recipe_sha256": recipe_sha256,
+    }
+    return {
+        "source_sha256": source_sha256,
+        "editable_sha256": editable_sha256,
+        "transform_sha256": transform_sha256,
+        "font_set_sha256": font_set_sha256,
+        "recipe_sha256": recipe_sha256,
+        "input_sha256": document_sha256(inputs),
+    }
+
+
+def cache_matches(
+    record: dict[str, object] | None,
+    state: dict[str, object],
+    output: Path,
+) -> bool:
+    if record is None or not output.is_file():
+        return False
+    if any(record.get(field) != state[field] for field in REPACK_STATE_FIELDS):
+        return False
+    return record.get("output_size") == output.stat().st_size and record.get(
+        "output_sha256"
+    ) == file_sha256(output)
+
+
+def repack_record(
+    relative: Path,
+    state: dict[str, object],
+    output: Path,
+) -> dict[str, object]:
+    return {
+        "source": relative.as_posix(),
+        **state,
+        "output_size": output.stat().st_size,
+        "output_sha256": file_sha256(output),
+    }
+
+
+def write_repack_manifest(path: Path, document: dict[str, object]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            "w",
+            encoding="utf-8",
+            newline="\n",
+            prefix=f".{path.name}.",
+            suffix=".tmp",
+            dir=path.parent,
+            delete=False,
+        ) as stream:
+            temporary = Path(stream.name)
+            stream.write(manifest_text(document))
+            stream.flush()
+            os.fsync(stream.fileno())
+        temporary.replace(path)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
 
 
 def validate_editable(original: dict, edited: dict, relative: Path) -> None:
@@ -155,6 +327,7 @@ def repack_movie(
     qscale: int,
     auto_fit: bool,
     codebook_iterations: int,
+    input_state: dict[str, object],
     subtitles: Path | None = None,
 ) -> dict[str, object]:
     original = probe(source, ffprobe)
@@ -163,11 +336,7 @@ def repack_movie(
     validate_editable(original, edited, relative)
     if max_bytes <= 0 or max_bytes > source.stat().st_size:
         raise ValueError("max bytes must be positive and no larger than the source CPK")
-    qscales = [qscale]
-    if auto_fit:
-        qscales += [
-            value for value in (8, 10, 12, 16, 20, 24, 28, 31) if value > qscale
-        ]
+    qscales = qscale_candidates(qscale, auto_fit)
 
     output.parent.mkdir(parents=True, exist_ok=True)
     staged = output.with_name(f".{output.stem}.tmp{output.suffix}")
@@ -206,13 +375,7 @@ def repack_movie(
         f"validated {relative.as_posix()}; "
         f"{max_bytes - size:,} bytes remain in its disc allocation"
     )
-    return {
-        "source": relative.as_posix(),
-        "editable_sha256": file_sha256(input_path),
-        "transform_sha256": (file_sha256(subtitles) if subtitles is not None else None),
-        "output_size": size,
-        "output_sha256": file_sha256(output),
-    }
+    return repack_record(relative, input_state, output)
 
 
 def main() -> None:
@@ -290,13 +453,14 @@ def main() -> None:
             ):
                 raise ValueError("subtitles must be an existing ASS or SRT file")
 
-        changed: list[tuple[Path, Path, Path, Path | None, dict[str, object]]] = []
+        active: list[RepackPlan] = []
         for key in sorted(wanted):
             row = rows[key]
             relative, source = source_path(str(row["source"]))
+            source_digest = file_sha256(source)
             if (
                 source.stat().st_size != row["source_size"]
-                or file_sha256(source) != row["source_sha256"]
+                or source_digest != row["source_sha256"]
             ):
                 raise ValueError(
                     f"{relative.as_posix()}: extracted source changed since extraction"
@@ -306,38 +470,57 @@ def main() -> None:
                 raise ValueError(f"editable FMV is missing: {editable}")
             digest = file_sha256(editable)
             subtitles = subtitle_override or subtitle_path(relative)
-            is_changed = digest != row["editable_sha256"] or subtitles is not None
-            state = "changed" if is_changed else "unchanged"
-            print(f"{state:9} {relative.as_posix()}")
-            if is_changed:
-                changed.append((relative, source, editable, subtitles, row))
+            is_active = digest != row["editable_sha256"] or subtitles is not None
+            if not is_active:
+                print(f"{'unchanged':9} {relative.as_posix()}")
+                continue
+            output = (args.output or BUILD_ROOT / relative).resolve()
+            max_bytes = (
+                source.stat().st_size if args.max_bytes is None else args.max_bytes
+            )
+            input_state = repack_input_state(
+                relative=relative,
+                source=source,
+                source_sha256=source_digest,
+                editable=editable,
+                editable_sha256=digest,
+                subtitles=subtitles,
+                max_bytes=max_bytes,
+                qscale=args.qscale,
+                auto_fit=not args.no_auto_fit,
+                codebook_iterations=args.codebook_iterations,
+            )
+            cached = cache_matches(prior_rows.get(key), input_state, output)
+            print(f"{('cached' if cached else 'changed'):9} {relative.as_posix()}")
+            active.append(
+                RepackPlan(
+                    relative=relative,
+                    source=source,
+                    editable=editable,
+                    subtitles=subtitles,
+                    output=output,
+                    max_bytes=max_bytes,
+                    input_state=input_state,
+                    cached=cached,
+                )
+            )
 
-        print(f"FMV edit set: {len(changed)}/{len(wanted)} selected movies changed")
+        cached_count = sum(plan.cached for plan in active)
+        print(
+            f"FMV edit set: {len(active)}/{len(wanted)} active; "
+            f"{cached_count} cached, {len(active) - cached_count} need repack"
+        )
         if args.list:
             return
 
         if args.check:
-            changed_keys = {
-                relative.as_posix().casefold()
-                for relative, _source, _editable, _subtitles, _row in changed
-            }
-            for relative, source, editable, subtitles, _row in changed:
-                key = relative.as_posix().casefold()
-                output = (args.output or BUILD_ROOT / relative).resolve()
-                record = prior_rows.get(key)
-                if record is None or not output.is_file():
+            changed_keys = {plan.relative.as_posix().casefold() for plan in active}
+            for plan in active:
+                if not plan.cached:
                     raise ValueError(
-                        f"{output}: FMV replacement or repack hash is missing"
+                        f"{plan.output}: FMV replacement or repack state is stale"
                     )
-                if (
-                    record["editable_sha256"] != file_sha256(editable)
-                    or record["transform_sha256"]
-                    != (file_sha256(subtitles) if subtitles is not None else None)
-                    or record["output_size"] != output.stat().st_size
-                    or record["output_sha256"] != file_sha256(output)
-                ):
-                    raise ValueError(f"{output}: FMV replacement is stale")
-                validate_saturn_compatibility(source, output)
+                validate_saturn_compatibility(plan.source, plan.output)
             for key in wanted - changed_keys:
                 relative = Path(str(rows[key]["source"]))
                 output = (BUILD_ROOT / relative).resolve()
@@ -348,10 +531,7 @@ def main() -> None:
             print("FMV replacements: verified successfully")
             return
 
-        changed_keys = {
-            relative.as_posix().casefold()
-            for relative, _source, _editable, _subtitles, _row in changed
-        }
+        changed_keys = {plan.relative.as_posix().casefold() for plan in active}
         for key in wanted - changed_keys:
             relative = Path(str(rows[key]["source"]))
             output = (BUILD_ROOT / relative).resolve()
@@ -359,28 +539,40 @@ def main() -> None:
                 output.unlink()
                 print(f"removed unchanged FMV output: {output}")
             prior_rows.pop(key, None)
-        if changed:
+        pending = []
+        for plan in active:
+            if plan.output == plan.source.resolve():
+                raise ValueError("output would overwrite the extracted source")
+            key = plan.relative.as_posix().casefold()
+            if not plan.cached:
+                pending.append(plan)
+                continue
+            prior_rows[key] = repack_record(
+                plan.relative, plan.input_state, plan.output
+            )
+            # Release manifests discover owned outputs by refreshed mtime.
+            plan.output.touch()
+            print(f"reused cached FMV replacement: {plan.output}")
+        if pending:
             ffmpeg = executable("ffmpeg", args.ffmpeg)
             ffprobe = executable("ffprobe", args.ffprobe)
-            for relative, source, editable, subtitles, _row in changed:
-                output = (args.output or BUILD_ROOT / relative).resolve()
-                if output == source.resolve():
-                    raise ValueError("output would overwrite the extracted source")
+            for plan in pending:
                 record = repack_movie(
-                    relative=relative,
-                    source=source,
-                    input_path=editable,
-                    output=output,
+                    relative=plan.relative,
+                    source=plan.source,
+                    input_path=plan.editable,
+                    output=plan.output,
                     ffmpeg=ffmpeg,
                     ffprobe=ffprobe,
-                    max_bytes=args.max_bytes or source.stat().st_size,
+                    max_bytes=plan.max_bytes,
                     qscale=args.qscale,
                     auto_fit=not args.no_auto_fit,
                     codebook_iterations=args.codebook_iterations,
-                    subtitles=subtitles,
+                    input_state=plan.input_state,
+                    subtitles=plan.subtitles,
                 )
-                prior_rows[relative.as_posix().casefold()] = record
-                print(f"disc-ready replacement: {output}")
+                prior_rows[plan.relative.as_posix().casefold()] = record
+                print(f"disc-ready replacement: {plan.output}")
 
         repack_document = {
             "version": REPACK_MANIFEST_VERSION,
@@ -388,10 +580,7 @@ def main() -> None:
                 prior_rows.values(), key=lambda row: str(row["source"]).casefold()
             ),
         }
-        args.repack_manifest.parent.mkdir(parents=True, exist_ok=True)
-        args.repack_manifest.write_text(
-            manifest_text(repack_document), encoding="utf-8", newline="\n"
-        )
+        write_repack_manifest(args.repack_manifest, repack_document)
         print("FMV replacements: repacked successfully")
     except (
         FileNotFoundError,
